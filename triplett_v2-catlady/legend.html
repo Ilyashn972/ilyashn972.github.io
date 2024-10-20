@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table with Hover</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 3px solid black;
+        }
+        td {
+            padding: 2px;
+            text-align: center;
+            position: relative;
+            font-size: 14px;
+        }
+        #tooltip {
+            display: none;
+            position: absolute;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+  <tr>
+    <td style="background-color: rgb(58, 0, 197); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 1</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(83, 0, 172); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 2</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(92, 0, 163); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 2</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(116, 0, 139); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 3</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(134, 0, 121); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 4</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(150, 0, 105); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 5</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(162, 0, 93); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 6</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(174, 0, 81); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 7</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(184, 0, 71); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 8</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(192, 0, 63); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 9</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(200, 0, 55); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 10</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(208, 0, 47); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 11</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(214, 0, 41); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 12</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(221, 0, 34); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 13</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(226, 0, 29); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 14</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(232, 0, 23); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 15</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(237, 0, 18); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 16</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(246, 0, 9); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 18</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(250, 0, 5); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 19</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(255, 0, 0); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 20</td>
+  </tr>
+</table>
+    <div id="tooltip"></div>
+    
+    <script>
+    function showHoverText(event, text) {
+        var tooltip = document.getElementById('tooltip');
+        tooltip.innerHTML = text;
+        tooltip.style.display = 'block';
+        tooltip.style.left = event.pageX + 'px';
+        tooltip.style.top = (event.pageY - 30) + 'px';
+    }
+    
+    function hideHoverText() {
+        var tooltip = document.getElementById('tooltip');
+        tooltip.style.display = 'none';
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table with Hover</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 3px solid black;
+        }
+        td {
+            padding: 2px;
+            text-align: center;
+            position: relative;
+            font-size: 14px;
+        }
+        #tooltip {
+            display: none;
+            position: absolute;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+  <tr>
+    <td style="background-color: rgb(76, 0, 179); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 1</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(110, 0, 145); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 2</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(121, 0, 134); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 2</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(153, 0, 102); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 3</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(178, 0, 77); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 4</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(198, 0, 57); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 5</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(215, 0, 40); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 6</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(230, 0, 25); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 7</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(243, 0, 12); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 8</td>
+  </tr>
+  <tr>
+    <td style="background-color: rgb(255, 0, 0); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 9</td>
+  </tr>
+</table>
+    <div id="tooltip"></div>
+    
+    <script>
+    function showHoverText(event, text) {
+        var tooltip = document.getElementById('tooltip');
+        tooltip.innerHTML = text;
+        tooltip.style.display = 'block';
+        tooltip.style.left = event.pageX + 'px';
+        tooltip.style.top = (event.pageY - 30) + 'px';
+    }
+    
+    function hideHoverText() {
+        var tooltip = document.getElementById('tooltip');
+        tooltip.style.display = 'none';
+    }
+    </script>
+    
+</body>
+</html>

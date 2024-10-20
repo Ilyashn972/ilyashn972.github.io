@@ -1,55 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Table with Hover</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index of Files</title>
     <style>
-        table {
-            border-collapse: collapse;
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
         }
-        td {
-            padding: 10px;
-            text-align: center;
-            position: relative;
+        h2 {
+            color: #4CAF50;
         }
-        #tooltip {
-            display: none;
-            position: absolute;
-            background-color: black;
-            color: white;
-            padding: 5px;
-            border-radius: 5px;
-            font-size: 12px;
-            pointer-events: none;
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <table>
-  <tr>
-    <td style="background-color: rgb(215, 0, 40); border: 1px solid black;" onmouseover="showHoverText(event, 'Hover text: B')" onmouseout="hideHoverText()">A</td>
-    <td style="background-color: rgb(255, 0, 0); border: 1px solid black;" >B</td>
-  </tr>
-  <tr>
-    <td style="background-color: rgb(249, 0, 6); border: 1px solid black;" >C</td>
-    <td style="background-color: rgb(255, 255, 255); border: 1px solid black;" >D</td>
-  </tr>
-</table>
-    <div id="tooltip"></div>
-    
-    <script>
-    function showHoverText(event, text) {
-        var tooltip = document.getElementById('tooltip');
-        tooltip.innerHTML = text;
-        tooltip.style.display = 'block';
-        tooltip.style.left = event.pageX + 'px';
-        tooltip.style.top = (event.pageY - 30) + 'px';
-    }
-    
-    function hideHoverText() {
-        var tooltip = document.getElementById('tooltip');
-        tooltip.style.display = 'none';
-    }
-    </script>
-    
+
+    <h1>Index of Files</h1>
+
+    <h2>Bear</h2>
+    <ul>
+        <li><a href="bear/chunks.html" target="_blank">Chunks</a></li>
+        <li><a href="bear/legend.html" target="_blank">Legend</a></li>
+    </ul>
+
+    <h2>Boy Scout</h2>
+    <ul>
+        <li><a href="boyscout/chunks.html" target="_blank">Chunks</a></li>
+        <li><a href="boyscout/legend.html" target="_blank">Legend</a></li>
+    </ul>
+
+    <h2>Hester v1 Park</h2>
+    <ul>
+        <li><a href="hester_v1-park/chunks.html" target="_blank">Chunks</a></li>
+        <li><a href="hester_v1-park/legend.html" target="_blank">Legend</a></li>
+    </ul>
+
+    <h2>Hester v2 Church</h2>
+    <ul>
+        <li><a href="hester_v2-church/chunks.html" target="_blank">Chunks</a></li>
+        <li><a href="hester_v2-church/legend.html" target="_blank">Legend</a></li>
+    </ul>
+
+    <h2>Panic</h2>
+    <ul>
+        <li><a href="panic/chunks.html" target="_blank">Chunks</a></li>
+        <li><a href="panic/legend.html" target="_blank">Legend</a></li>
+    </ul>
+
+    <h2>Schissel v1 Pool</h2>
+    <ul>
+        <li><a href="schissel_v1-pool/chunks.html" target="_blank">Chunks</a></li>
+        <li><a href="schissel_v1-pool/legend.html" target="_blank">Legend</a></li>
+    </ul>
+
+    <h2>Schissel v2 Lake</h2>
+    <ul>
+        <li><a href="schissel_v2-lake/chunks.html" target="_blank">Chunks</a></li>
+        <li><a href="schissel_v2-lake/legend.html" target="_blank">Legend</a></li>
+    </ul>
+
+    <h2>Stein</h2>
+    <ul>
+        <li><a href="stein/chunks.html" target="_blank">Chunks</a></li>
+        <li><a href="stein/legend.html" target="_blank">Legend</a></li>
+    </ul>
+
+    <h2>Triplett v1 Rookie</h2>
+    <ul>
+        <li><a href="triplett_v1-rookie/chunks.html" target="_blank">Chunks</a></li>
+        <li><a href="triplett_v1-rookie/legend.html" target="_blank">Legend</a></li>
+    </ul>
+
+    <h2>Triplett v2 Cat Lady</h2>
+    <ul>
+        <li><a href="triplett_v2-catlady/chunks.html" target="_blank">Chunks</a></li>
+        <li><a href="triplett_v2-catlady/legend.html" target="_blank">Legend</a></li>
+    </ul>
+
 </body>
 </html>
