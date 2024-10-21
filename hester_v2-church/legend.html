@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Table with Hover</title>
+    <title>hester_v2-church: chunks legend</title>
     <style>
         table {
             border-collapse: collapse;
             border: 3px solid black;
         }
         td {
-            padding: 2px;
+            padding: 1px;
             text-align: center;
             position: relative;
             font-size: 14px;
         }
+                /* Highlight the cell on hover */
+        td:hover {
+            background-color: yellow; /* Highlight color */
+            cursor: pointer;
+        }
+
         #tooltip {
             display: none;
             position: absolute;
@@ -26,12 +32,10 @@
     </style>
 </head>
 <body>
+    <H2>hester_v2-church: chunks legend</H2>
     <table>
   <tr>
     <td style="background-color: rgb(60, 0, 195); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 1</td>
-  </tr>
-  <tr>
-    <td style="background-color: rgb(86, 0, 169); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 2</td>
   </tr>
   <tr>
     <td style="background-color: rgb(95, 0, 160); border-bottom: 0.5px solid black; border-top: 0.5px solid black;  1px solid black " >fan out 2</td>
@@ -88,7 +92,10 @@
     <div id="tooltip"></div>
     
     <script>
-    function showHoverText(event, text) {
+    var color_backup;
+    function showHoverText(cell, event, text) {
+        color_backup = cell.style.backgroundColor;
+        cell.style.backgroundColor = 'yellow';
         var tooltip = document.getElementById('tooltip');
         tooltip.innerHTML = text;
         tooltip.style.display = 'block';
@@ -96,7 +103,8 @@
         tooltip.style.top = (event.pageY - 30) + 'px';
     }
     
-    function hideHoverText() {
+    function hideHoverText(cell) {
+        cell.style.backgroundColor = color_backup;
         var tooltip = document.getElementById('tooltip');
         tooltip.style.display = 'none';
     }
