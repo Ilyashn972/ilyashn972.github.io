@@ -4,14 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pearson by Subject P-value Images</title>
+    <title>Pearson P-value by subject</title>
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Pearson by Subject P-value Images</h1>
-        <h3>Pearson correlation between segments recalled by the same subject.</h3>
+        <h1>Pearson P-value by subject</h1>
+        <h3>Pearson P-value correlation of two segments being recalled by the same subject, using prompt 5 from the paper.</h3>
+        <pre>This is the original text:\n{narrative}\nIt can be broken down into the following independent pieces of
+        information:\n{segmentation}\nHere is an alternative version of the original text where some of the above pieces\nof
+        information may be missing:\n{recall}\nFor each of the numbered information pieces of the list above, evaluate
+        whether\nthe information of each piece is given in the alternative version of the story,\nstating the number and showing
+        the corresponding passage from the alternative story\nit is given in. After, write all the numbers of the pieces that
+        are given in the\nalternative version of the story. Here is an example of the desired JSON output format:
+        {"1": "Missing", "2": "Missing", "3": "She was at home", "4":"She was happy",
+        "Given": [3, 4]</pre>
     </header>
 
     <section class="toc">
@@ -33,69 +41,135 @@
         </ul>
     </section>
 
+    <!-- Template for each story section -->
     <section class="image-section" id="bear">
         <h2>Bear</h2>
-        <img src="bear/pearson_by_subject_p_value.png" alt="Bear">
+        <a href="bear/pearson_by_subject_p_value.html">View Bear </a> 
+        
+        <div>
+            <img src="bear/pearson_by_subject_p_value.png"
+                alt="Bear Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="boy-scout">
         <h2>Boy Scout</h2>
-        <img src="boyscout/pearson_by_subject_p_value.png" alt="Boy Scout">
+        <a href="boyscout/pearson_by_subject_p_value.html">View Boy Scout </a> 
+        
+        <div>
+            <img src="boyscout/pearson_by_subject_p_value.png"
+                alt="Boy Scout Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="costa">
         <h2>Costa</h2>
-        <img src="costa/pearson_by_subject_p_value.png" alt="Costa">
+        <a href="costa/pearson_by_subject_p_value.html">View Costa </a> 
+        
+        <div>
+            <img src="costa/pearson_by_subject_p_value.png"
+                alt="Costa Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="do-something">
         <h2>Do Something</h2>
-        <img src="doSomething/pearson_by_subject_p_value.png" alt="Do Something">
+        <a href="doSomething/pearson_by_subject_p_value.html">View Do Something </a> 
+        
+        <div>
+            <img src="doSomething/pearson_by_subject_p_value.png"
+                alt="Do Something Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="hester-v1-park">
         <h2>Hester v1 Park</h2>
-        <img src="hester_v1-park/pearson_by_subject_p_value.png" alt="Hester v1 Park">
+        <a href="hester_v1-park/pearson_by_subject_p_value.html">View Hester v1 Park </a> 
+        
+        <div>
+            <img src="hester_v1-park/pearson_by_subject_p_value.png"
+                alt="Hester v1 Park Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="hester-v2-church">
         <h2>Hester v2 Church</h2>
-        <img src="hester_v2-church/pearson_by_subject_p_value.png" alt="Hester v2 Church">
+        <a href="hester_v2-church/pearson_by_subject_p_value.html">View Hester v2 Church </a> 
+        
+        <div>
+            <img src="hester_v2-church/pearson_by_subject_p_value.png"
+                alt="Hester v2 Church Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="panic">
         <h2>Panic</h2>
-        <img src="panic/pearson_by_subject_p_value.png" alt="Panic">
+        <a href="panic/pearson_by_subject_p_value.html">View Panic </a> 
+        
+        <div>
+            <img src="panic/pearson_by_subject_p_value.png"
+                alt="Panic Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="schissel-v1-pool">
         <h2>Schissel v1 Pool</h2>
-        <img src="schissel_v1-pool/pearson_by_subject_p_value.png" alt="Schissel v1 Pool">
+        <a href="schissel_v1-pool/pearson_by_subject_p_value.html">View Schissel v1 Pool </a> 
+        
+        <div>
+            <img src="schissel_v1-pool/pearson_by_subject_p_value.png"
+                alt="Schissel v1 Pool Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="schissel-v2-lake">
         <h2>Schissel v2 Lake</h2>
-        <img src="schissel_v2-lake/pearson_by_subject_p_value.png" alt="Schissel v2 Lake">
+        <a href="schissel_v2-lake/pearson_by_subject_p_value.html">View Schissel v2 Lake </a> 
+        
+        <div>
+            <img src="schissel_v2-lake/pearson_by_subject_p_value.png"
+                alt="Schissel v2 Lake Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="stein">
         <h2>Stein</h2>
-        <img src="stein/pearson_by_subject_p_value.png" alt="Stein">
+        <a href="stein/pearson_by_subject_p_value.html">View Stein </a> |
+        
+        <div>
+            <img src="stein/pearson_by_subject_p_value.png"
+                alt="Stein Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="stein-final">
         <h2>Stein Final</h2>
-        <img src="stein/pearson_by_subject_p_value.png" alt="Stein Final">
+        <a href="stein/pearson_by_subject_p_value.html">View Stein Final </a> |
+        
+        <div>
+            <img src="stein/pearson_by_subject_p_value.png"
+                alt="Stein Final Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="triplett-v1-rookie">
         <h2>Triplett v1 Rookie</h2>
-        <img src="triplett_v1-rookie/pearson_by_subject_p_value.png" alt="Triplett v1 Rookie">
+        <a href="triplett_v1-rookie/pearson_by_subject_p_value.html">View Triplett v1 Rookie </a> |
+        
+        <div>
+            <img src="triplett_v1-rookie/pearson_by_subject_p_value.png"
+                alt="Triplett v1 Rookie Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
     <section class="image-section" id="triplett-v2-cat-lady">
         <h2>Triplett v2 Cat Lady</h2>
-        <img src="triplett_v2-catlady/pearson_by_subject_p_value.png" alt="Triplett v2 Cat Lady">
+        <a href="triplett_v2-catlady/pearson_by_subject_p_value.html">View Triplett v2 Cat Lady </a> |
+        
+        <div>
+            <img src="triplett_v2-catlady/pearson_by_subject_p_value.png"
+                alt="Triplett v2 Cat Lady Chunks with Recalled Segments and Fun Out">
+        </div>
     </section>
 
 </body>
