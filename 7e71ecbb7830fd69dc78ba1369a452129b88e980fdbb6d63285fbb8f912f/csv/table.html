@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Viewer</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            cursor: pointer;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSV Viewer</h1>
+        <h3>Displaying table.csv in a sortable format.</h3>
+    </header>
+
+    <section id="table-section">
+        <table id="csv-table">
+            <!-- Table headers and data will be dynamically generated -->
+        </table>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", loadCSV); // Automatically load CSV on page load
+
+        async function loadCSV() {
+            const url = 'table.csv'; // Hard-coded CSV file name
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${url}: ${response.statusText}`);
+                }
+                const csvText = await response.text();
+                const data = parseCSV(csvText);
+                displayTable(data);
+            } catch (error) {
+                console.error("Error loading CSV:", error);
+            }
+        }
+
+        function parseCSV(csvText) {
+            const rows = csvText.trim().split("\n").map(row => row.split(","));
+            return rows;
+        }
+
+        function displayTable(data) {
+            const table = document.getElementById("csv-table");
+            table.innerHTML = "";
+
+            // Create table header
+            const headerRow = document.createElement("tr");
+            data[0].forEach((header, index) => {
+                const th = document.createElement("th");
+                th.innerText = header;
+                th.addEventListener("click", () => sortTable(index));
+                headerRow.appendChild(th);
+            });
+            table.appendChild(headerRow);
+
+            // Create table body
+            data.slice(1).forEach(row => {
+                const rowElement = document.createElement("tr");
+                row.forEach(cell => {
+                    const td = document.createElement("td");
+                    td.innerText = cell;
+                    rowElement.appendChild(td);
+                });
+                table.appendChild(rowElement);
+            });
+        }
+
+        let sortOrder = 1; // 1 for ascending, -1 for descending
+        function sortTable(columnIndex) {
+            const table = document.getElementById("csv-table");
+            const rows = Array.from(table.rows).slice(1);
+            rows.sort((rowA, rowB) => {
+                const cellA = rowA.cells[columnIndex].innerText;
+                const cellB = rowB.cells[columnIndex].innerText;
+
+                const isNumber = !isNaN(cellA) && !isNaN(cellB);
+                const valA = isNumber ? parseFloat(cellA) : cellA;
+                const valB = isNumber ? parseFloat(cellB) : cellB;
+
+                if (valA < valB) return -1 * sortOrder;
+                if (valA > valB) return 1 * sortOrder;
+                return 0;
+            });
+
+            sortOrder *= -1; // Toggle sorting order
+            rows.forEach(row => table.appendChild(row)); // Re-append sorted rows
+        }
+    </script>
+</body>
+
+</html>
