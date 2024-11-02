@@ -14,7 +14,7 @@
         }
 
         h1,
-        h2 {
+        h3 {
             color: #4CAF50;
             text-align: center;
         }
@@ -34,10 +34,23 @@
 
         th {
             cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
         }
 
         th:hover {
-            background-color: #f1f1f1;
+            background-color: #45a049;
+        }
+
+        /* Alternating row colors */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+            /* White */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #e3f2fd;
+            /* Light blue */
         }
     </style>
 </head>
@@ -50,9 +63,8 @@
     <div id="data-table-container"></div>
 
     <script>
-        // Load and parse the CSV file immediately
         window.onload = function () {
-            const url = window.location.href.replace(/\.html$/, ".csv"); // Replacing .html with .csv in the current URL
+            const url = window.location.href.replace(/\.html$/, ".csv");
             fetch(url)
                 .then(response => response.text())
                 .then(csvText => {
@@ -64,22 +76,20 @@
 
         function parseCSV(csvText) {
             const parsedData = Papa.parse(csvText, {
-                header: false, // Set to true if you want to treat the first row as headers
-                skipEmptyLines: true // Skip empty lines
+                header: false,
+                skipEmptyLines: true
             });
 
-            return parsedData.data; // Returns an array of arrays
+            return parsedData.data;
         }
 
         function displayTable(data) {
             const container = document.getElementById('data-table-container');
             if (data.length === 0) return;
 
-            // Create a table element
             const table = document.createElement('table');
             const headerRow = document.createElement('tr');
 
-            // Create header cells
             data[0].forEach((header, index) => {
                 const th = document.createElement('th');
                 th.textContent = header;
@@ -89,7 +99,6 @@
 
             table.appendChild(headerRow);
 
-            // Create body rows
             data.slice(1).forEach(row => {
                 const tableRow = document.createElement('tr');
                 row.forEach(cell => {
@@ -100,24 +109,34 @@
                 table.appendChild(tableRow);
             });
 
-            // Append the table to the container
             container.appendChild(table);
         }
 
         function sortTable(data, columnIndex) {
-            const isAscending = !data[1][columnIndex].toString().includes('>');
-            const sortedData = data.slice(1).sort((a, b) => {
-                if (isAscending) {
-                    return a[columnIndex].localeCompare(b[columnIndex]);
-                } else {
-                    return b[columnIndex].localeCompare(a[columnIndex]);
-                }
-            });
+                const isAscending = !data[1][columnIndex].toString().includes('>');  // Determine sort direction
+                const sortedData = data.slice(1).sort((a, b) => {
+                    const valueA = a[columnIndex];
+                    const valueB = b[columnIndex];
 
-            // Clear existing table and re-display sorted data
-            document.getElementById('data-table-container').innerHTML = '';
-            displayTable([data[0]].concat(sortedData));
-        }
+                    // Check if values are numeric by converting to numbers and checking for NaN
+                    const isNumericA = !isNaN(parseFloat(valueA)) && isFinite(valueA);
+                    const isNumericB = !isNaN(parseFloat(valueB)) && isFinite(valueB);
+
+                    if (isNumericA && isNumericB) {
+                        // Numeric comparison
+                        return isAscending ? valueA - valueB : valueB - valueA;
+                    } else {
+                        // String comparison
+                        return isAscending
+                            ? valueA.toString().localeCompare(valueB.toString())
+                            : valueB.toString().localeCompare(valueA.toString());
+                    }
+                });
+
+                // Clear and update the table content
+                document.getElementById('data-table-container').innerHTML = '';
+                displayTable([data[0]].concat(sortedData));
+            }
     </script>
 </body>
 
