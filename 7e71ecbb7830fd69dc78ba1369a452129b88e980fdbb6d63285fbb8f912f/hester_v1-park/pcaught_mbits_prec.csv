@@ -1,0 +1,109 @@
+,segment_id,pcaught,prec,mbits,segment_text
+0,1,66,62,"1    8.47
+Name: mean, dtype: object",Let me share a story from when I was twenty-one years old.
+1,2,65,55,"2   -1.24
+Name: mean, dtype: object",I was living in a small apartment near the city center.
+2,3,56,49,"3    0.94
+Name: mean, dtype: object",I had just started my first job.
+3,4,55,37,"4    5.02
+Name: mean, dtype: object",And uh I was working as a graphic designer.
+4,5,94,68,"5    13.42
+Name: mean, dtype: object","My father, who was recovering from a surgery, hadn't been out in – in uh – well I'd say about eight months."
+5,6,63,45,"6    1.33
+Name: mean, dtype: object",He had to use a wheelchair to get around.
+6,7,85,66,"7    12.63
+Name: mean, dtype: object","The only person there with him during the day was a kind neighbor, a lady in her sixties."
+7,8,48,40,"8    1.17
+Name: mean, dtype: object",My younger sister was away at college –
+8,9,68,18,"9    1.18
+Name: mean, dtype: object",so it was just my dad and the neighbor lady at home during the day.
+9,10,93,75,"10    7.42
+Name: mean, dtype: object","One day, I got this strong feeling while I was at work."
+10,11,85,69,"11    14.27
+Name: mean, dtype: object","It told me: ""If you go to the nearby park during your lunch break and pray for your father's recovery, he'll start to improve."""
+11,12,41,16,"12    1.1
+Name: mean, dtype: object",I looked around my office.
+12,13,37,27,"13    1.6
+Name: mean, dtype: object",I didn't see anyone nearby.
+13,14,92,78,"14    1.09
+Name: mean, dtype: object","So, I went to the park during my break"
+14,15,41,21,"15    0.43
+Name: mean, dtype: object",and found a quiet spot there.
+15,16,30,24,"16    0.4
+Name: mean, dtype: object",That feeling came back again.
+16,17,25,11,"17    0.47
+Name: mean, dtype: object",I looked around once more.
+17,18,29,13,"18   -1.13
+Name: mean, dtype: object",I still didn't see anyone nearby
+18,19,21,2,"19   -0.97
+Name: mean, dtype: object",but I decided to take a chance.
+19,20,26,24,"20    1.08
+Name: mean, dtype: object","I wasn't too far from my office, maybe a ten-minute walk."
+20,21,63,6,"21   -3.01
+Name: mean, dtype: object",I found a bench to sit on and closed my eyes – uh – uh –
+21,22,23,10,"22   -0.09
+Name: mean, dtype: object",that feeling came back once more.
+22,23,5,2,"23    0.5
+Name: mean, dtype: object",I just took a deep breath.
+23,24,52,48,"24    4.42
+Name: mean, dtype: object",I was sitting under a big oak tree now.
+24,25,16,9,"25   -0.84
+Name: mean, dtype: object",I looked up at the branches above me.
+25,26,27,7,"26    0.39
+Name: mean, dtype: object",Nobody was around.
+26,27,4,0,"27   -0.69
+Name: mean, dtype: object","And uh I said to myself, well now,"
+27,28,45,15,"28    2.32
+Name: mean, dtype: object",I had been taught that prayers can make a difference.
+28,29,44,9,"29   -0.14
+Name: mean, dtype: object",And that it doesn't hurt to try.
+29,30,30,8,"30   -0.72
+Name: mean, dtype: object","I knew I wasn't perfect, but I wanted to help my dad."
+30,31,7,2,"31   -1.24
+Name: mean, dtype: object",I'd admit that to anyone.
+31,32,28,8,"32    2.2
+Name: mean, dtype: object",But I was willing to give it a try.
+32,33,18,1,"33   -0.74
+Name: mean, dtype: object",I looked around one more time
+33,34,24,9,"34    0.05
+Name: mean, dtype: object",and then I closed my eyes
+34,35,74,53,"35    0.16
+Name: mean, dtype: object",and said a quiet prayer.
+35,36,33,11,"36   -0.52
+Name: mean, dtype: object","I whispered, ""God, I don't know if you're listening."
+36,37,71,37,"37   -0.66
+Name: mean, dtype: object",But I ask you to please help my father recover.
+37,38,51,15,"38    1.16
+Name: mean, dtype: object","So he can regain his independence and enjoy life again."""
+38,39,5,3,"39   -0.36
+Name: mean, dtype: object",I opened my eyes
+39,40,37,19,"40    0.16
+Name: mean, dtype: object",and went back to work.
+40,41,87,80,"41    7.97
+Name: mean, dtype: object","Suddenly, I received a text message from my father."
+41,42,92,83,"42    2.56
+Name: mean, dtype: object","It said, ""I just took a few steps with my walker."""
+42,43,26,10,"43    0.01
+Name: mean, dtype: object",I – I couldn't believe it.
+43,44,29,17,"44   -0.7
+Name: mean, dtype: object",It felt like a sign that my prayer had been heard.
+44,45,43,23,"45    0.22
+Name: mean, dtype: object",I rushed home after work
+45,46,63,45,"46   -0.7
+Name: mean, dtype: object",and saw my father standing in the living room with the help of his walker.
+46,47,44,10,"47   -1.17
+Name: mean, dtype: object",He hadn't been able to do that in months without assistance.
+47,48,25,10,"48   -0.5
+Name: mean, dtype: object","And there he was, taking small steps."
+48,49,34,12,"49    0.03
+Name: mean, dtype: object",That was the turning point in his recovery.
+49,50,58,42,"50   -0.39
+Name: mean, dtype: object",He continued to improve
+50,51,52,19,"51   -1.19
+Name: mean, dtype: object",and regained most of his mobility within a year.
+51,52,58,35,"52    4.99
+Name: mean, dtype: object","It's been, what, six or seven years since then?"
+52,53,80,61,"53   -1.18
+Name: mean, dtype: object",My father is now able to walk without any assistance.
+53,54,41,52,"54    3.6
+Name: mean, dtype: object","He's living life to the fullest, even in his seventies."
