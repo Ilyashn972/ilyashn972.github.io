@@ -1,37 +1,19 @@
-,segment_id,pcaught,prec,mbits,segment_text
-0,1,86,90,"1    20.02
-Name: mean, dtype: object",My best friend pushed me into the lake.
-1,2,80,69,"2    3.34
-Name: mean, dtype: object",This happened during our annual summer camping trip
-2,3,39,25,"3    1.57
-Name: mean, dtype: object",and we were enjoying a peaceful afternoon.
-3,4,12,8,"4    3.85
-Name: mean, dtype: object","The reason it all began,"
-4,5,67,72,"5    7.91
-Name: mean, dtype: object",she spotted a frog near the water's edge or
-5,6,39,28,"6    1.86
-Name: mean, dtype: object",- this was at our favorite spot in the woods -
-6,7,80,61,"7    0.2
-Name: mean, dtype: object",and she dared me to catch it.
-7,8,62,56,"8    2.47
-Name: mean, dtype: object",I had just sat down to eat my sandwich
-8,9,54,56,"9   -0.19
-Name: mean, dtype: object",and I told her I wasn't interested.
-9,10,39,30,"10    1.13
-Name: mean, dtype: object","'Course friends, y'know, they don't always take no for an answer."
-10,11,92,32,"11   -0.37
-Name: mean, dtype: object",So that's when she snuck up behind me
-11,12,93,75,"12   -0.06
-Name: mean, dtype: object",and gave me a little nudge.
-12,13,81,49,"13    5.56
-Name: mean, dtype: object","When I emerged from the water, there was a frog on the shore,"
-13,14,72,47,"14    1.56
-Name: mean, dtype: object",she just scooped it up
-14,15,51,45,"15   -0.1
-Name: mean, dtype: object",and handed it to me.
-15,16,61,57,"16    0.95
-Name: mean, dtype: object",And . . .; I couldn't help but laugh – uncontrollably.
-16,17,66,31,"17    0.63
-Name: mean, dtype: object","And naturally, the first thing to do was to get revenge,"
-17,18,76,66,"18    5.76
-Name: mean, dtype: object","and I said, ""Just you wait,"" I said, ""you'll get yours soon enough."""
+segment_id,pcaught,prec,mbits,segment_text
+1,86,90,20.02,My best friend pushed me into the lake.
+2,80,69,3.34,This happened during our annual summer camping trip
+3,39,25,1.57,and we were enjoying a peaceful afternoon.
+4,12,8,3.85,"The reason it all began,"
+5,67,72,7.91,she spotted a frog near the water's edge or
+6,39,28,1.86,- this was at our favorite spot in the woods -
+7,80,61,0.2,and she dared me to catch it.
+8,62,56,2.47,I had just sat down to eat my sandwich
+9,54,56,-0.19,and I told her I wasn't interested.
+10,39,30,1.13,"'Course friends, y'know, they don't always take no for an answer."
+11,92,32,-0.37,So that's when she snuck up behind me
+12,93,75,-0.06,and gave me a little nudge.
+13,81,49,5.56,"When I emerged from the water, there was a frog on the shore,"
+14,72,47,1.56,she just scooped it up
+15,51,45,-0.1,and handed it to me.
+16,61,57,0.95,And . . .; I couldn't help but laugh – uncontrollably.
+17,66,31,0.63,"And naturally, the first thing to do was to get revenge,"
+18,76,66,5.76,"and I said, ""Just you wait,"" I said, ""you'll get yours soon enough."""

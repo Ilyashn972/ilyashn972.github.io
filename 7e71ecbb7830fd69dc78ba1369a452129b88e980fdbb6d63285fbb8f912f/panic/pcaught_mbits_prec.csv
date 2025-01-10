@@ -1,113 +1,57 @@
-,segment_id,pcaught,prec,mbits,segment_text
-0,1,74,56,"1    11.21
-Name: mean, dtype: object","Well, I was at work one day"
-1,2,86,26,"2    4.93
-Name: mean, dtype: object",I was doing my usual job
-2,3,92,74,"3    6.21
-Name: mean, dtype: object",working on the warehouse floor
-3,4,68,56,"4    1.88
-Name: mean, dtype: object",stocking boxes
-4,5,54,30,"5   -1.71
-Name: mean, dtype: object",organizing merchandise
-5,6,17,7,"6    3.55
-Name: mean, dtype: object",I had been working for a few hours
-6,7,16,15,"7   -1.18
-Name: mean, dtype: object",it was getting late
-7,8,69,41,"8    1.18
-Name: mean, dtype: object",I had been feeling a bit strange
-8,9,68,42,"9    0.79
-Name: mean, dtype: object",a bit lightheaded
-9,10,63,47,"10   -0.44
-Name: mean, dtype: object",but chalked it up to hunger
-10,11,65,44,"11    0.11
-Name: mean, dtype: object",not having eaten yet that day
-11,12,18,13,"12   -2.66
-Name: mean, dtype: object","But then, as I was walking around the warehouse"
-12,13,16,10,"13   -0.22
-Name: mean, dtype: object",returning items to their proper places
-13,14,93,79,"14    4.38
-Name: mean, dtype: object",I started to feel a strange tightness
-14,15,93,57,"15    1.06
-Name: mean, dtype: object",and pressure in my chest
-15,16,24,19,"16   -1.33
-Name: mean, dtype: object",I stopped what I was doing
-16,17,49,43,"17    1.44
-Name: mean, dtype: object",leaned against a nearby wall for a bit
-17,18,47,16,"18    0.7
-Name: mean, dtype: object",the pressure only got stronger
-18,19,46,20,"19   -0.49
-Name: mean, dtype: object",I could feel my heart pounding in my chest
-19,20,65,39,"20    1.0
-Name: mean, dtype: object","Next thing I know, I started seeing spots"
-20,21,60,46,"21    2.23
-Name: mean, dtype: object",I could feel sweat dripping down my forehead
-21,22,47,28,"22   -0.45
-Name: mean, dtype: object",my arms
-22,23,32,18,"23    1.15
-Name: mean, dtype: object",I tried to take some deep breaths
-23,24,33,25,"24    0.63
-Name: mean, dtype: object",I just couldn't catch my breath
-24,25,14,7,"25    0.95
-Name: mean, dtype: object",I was really scared
-25,26,10,6,"26   -0.0
-Name: mean, dtype: object",didn't know what to do.
-26,27,85,52,"27    0.48
-Name: mean, dtype: object",Suddenly I heard a voice coming from across the warehouse.
-27,28,93,68,"28    2.85
-Name: mean, dtype: object",It was the manager
-28,29,80,22,"29   -0.12
-Name: mean, dtype: object",who had seen me
-29,30,67,41,"30    1.62
-Name: mean, dtype: object",called out to me
-30,31,63,26,"31    0.63
-Name: mean, dtype: object",it seems someone had noticed me
-31,32,48,36,"32    0.48
-Name: mean, dtype: object",was checking to see if I was alright
-32,33,38,24,"33   -3.13
-Name: mean, dtype: object",I tried to yell back that something was wrong
-33,34,51,43,"34    0.63
-Name: mean, dtype: object",I couldn't find my voice.
-34,35,46,26,"35   -1.71
-Name: mean, dtype: object",The manager started walking towards me
-35,36,64,34,"36   -1.19
-Name: mean, dtype: object",I could feel my world going dark
-36,37,76,45,"37    0.01
-Name: mean, dtype: object",I started to drop to the ground
-37,38,84,72,"38    1.5
-Name: mean, dtype: object",luckily the manager got to me in time
-38,39,73,38,"39    1.53
-Name: mean, dtype: object",caught me just before my legs gave out
-39,40,76,66,"40    4.85
-Name: mean, dtype: object",He took me to the staff room
-40,41,68,30,"41    0.28
-Name: mean, dtype: object",sat me down in a chair
-41,42,39,26,"42   -1.64
-Name: mean, dtype: object",He asked me questions about what was wrong
-42,43,34,13,"43    0.22
-Name: mean, dtype: object",what happened
-43,44,66,62,"44    2.65
-Name: mean, dtype: object",He got me a glass of cold water
-44,45,26,16,"45    0.45
-Name: mean, dtype: object",told me to rest for a bit
-45,46,32,11,"46   -0.1
-Name: mean, dtype: object",After a few minutes
-46,47,44,25,"47   -0.41
-Name: mean, dtype: object",the pressure in my chest slowly eased up
-47,48,43,29,"48    0.2
-Name: mean, dtype: object",I started to feel better
-48,49,86,84,"49    0.1
-Name: mean, dtype: object",It turned out I had been having a panic attack
-49,50,8,6,"50    0.78
-Name: mean, dtype: object",I escaped from the situation
-50,51,21,14,"51    0.96
-Name: mean, dtype: object",the help of the quick action of the manager
-51,52,18,13,"52   -0.52
-Name: mean, dtype: object",It was never a fun experience
-52,53,25,20,"53    0.2
-Name: mean, dtype: object",it really could have been much worse
-53,54,72,64,"54    1.53
-Name: mean, dtype: object",it taught me to check in with myself
-54,55,72,53,"55    1.36
-Name: mean, dtype: object",make sure to properly rest
-55,56,65,63,"56   -0.06
-Name: mean, dtype: object",eat to avoid further episodes
+segment_id,pcaught,prec,mbits,segment_text
+1,74,56,11.21,"Well, I was at work one day"
+2,86,26,4.93,I was doing my usual job
+3,92,74,6.21,working on the warehouse floor
+4,68,56,1.88,stocking boxes
+5,54,30,-1.71,organizing merchandise
+6,17,7,3.55,I had been working for a few hours
+7,16,15,-1.18,it was getting late
+8,69,41,1.18,I had been feeling a bit strange
+9,68,42,0.79,a bit lightheaded
+10,63,47,-0.44,but chalked it up to hunger
+11,65,44,0.11,not having eaten yet that day
+12,18,13,-2.66,"But then, as I was walking around the warehouse"
+13,16,10,-0.22,returning items to their proper places
+14,93,79,4.38,I started to feel a strange tightness
+15,93,57,1.06,and pressure in my chest
+16,24,19,-1.33,I stopped what I was doing
+17,49,43,1.44,leaned against a nearby wall for a bit
+18,47,16,0.7,the pressure only got stronger
+19,46,20,-0.49,I could feel my heart pounding in my chest
+20,65,39,1.0,"Next thing I know, I started seeing spots"
+21,60,46,2.23,I could feel sweat dripping down my forehead
+22,47,28,-0.45,my arms
+23,32,18,1.15,I tried to take some deep breaths
+24,33,25,0.63,I just couldn't catch my breath
+25,14,7,0.95,I was really scared
+26,10,6,-0.0,didn't know what to do.
+27,85,52,0.48,Suddenly I heard a voice coming from across the warehouse.
+28,93,68,2.85,It was the manager
+29,80,22,-0.12,who had seen me
+30,67,41,1.62,called out to me
+31,63,26,0.63,it seems someone had noticed me
+32,48,36,0.48,was checking to see if I was alright
+33,38,24,-3.13,I tried to yell back that something was wrong
+34,51,43,0.63,I couldn't find my voice.
+35,46,26,-1.71,The manager started walking towards me
+36,64,34,-1.19,I could feel my world going dark
+37,76,45,0.01,I started to drop to the ground
+38,84,72,1.5,luckily the manager got to me in time
+39,73,38,1.53,caught me just before my legs gave out
+40,76,66,4.85,He took me to the staff room
+41,68,30,0.28,sat me down in a chair
+42,39,26,-1.64,He asked me questions about what was wrong
+43,34,13,0.22,what happened
+44,66,62,2.65,He got me a glass of cold water
+45,26,16,0.45,told me to rest for a bit
+46,32,11,-0.1,After a few minutes
+47,44,25,-0.41,the pressure in my chest slowly eased up
+48,43,29,0.2,I started to feel better
+49,86,84,0.1,It turned out I had been having a panic attack
+50,8,6,0.78,I escaped from the situation
+51,21,14,0.96,the help of the quick action of the manager
+52,18,13,-0.52,It was never a fun experience
+53,25,20,0.2,it really could have been much worse
+54,72,64,1.53,it taught me to check in with myself
+55,72,53,1.36,make sure to properly rest
+56,65,63,-0.06,eat to avoid further episodes

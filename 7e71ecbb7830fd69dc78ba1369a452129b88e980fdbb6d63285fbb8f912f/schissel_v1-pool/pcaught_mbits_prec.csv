@@ -1,37 +1,19 @@
-,segment_id,pcaught,prec,mbits,segment_text
-0,1,52,50,"1    16.65
-Name: mean, dtype: object",My best friend pushed me into the pool.
-1,2,49,50,"2    11.72
-Name: mean, dtype: object","This happened during my cousin's wedding reception,"
-2,3,24,19,"3    0.56
-Name: mean, dtype: object",where everyone was dressed to impress.
-3,4,16,5,"4    0.04
-Name: mean, dtype: object","And the reason it happened,"
-4,5,49,47,"5    11.14
-Name: mean, dtype: object","she spotted a bee hovering near my face,"
-5,6,20,13,"6    2.81
-Name: mean, dtype: object",- this was at a fancy hotel garden -
-6,7,44,29,"7    0.33
-Name: mean, dtype: object",and she tried to save me from being stung.
-7,8,33,31,"8    5.26
-Name: mean, dtype: object","And my aunt had just handed me a glass of champagne,"
-8,9,9,8,"9    3.04
-Name: mean, dtype: object",and I warned her to be careful.
-9,10,13,9,"10    1.59
-Name: mean, dtype: object","'Course friends, y'know, they don't always think things through."
-10,11,47,21,"11    1.54
-Name: mean, dtype: object","So that's when she gave me a little shove,"
-11,12,44,21,"12    0.65
-Name: mean, dtype: object",and I tumbled into the water.
-12,13,25,18,"13   -0.54
-Name: mean, dtype: object","When I resurfaced, gasping for air,"
-13,14,34,31,"14    0.81
-Name: mean, dtype: object","she just started laughing,"
-14,15,19,16,"15    1.67
-Name: mean, dtype: object",and she apologized profusely.
-15,16,37,37,"16    1.51
-Name: mean, dtype: object","And... my beautiful dress was ruined,"
-16,17,21,21,"17    1.87
-Name: mean, dtype: object","and naturally, the first thing to do was to get out and dry off,"
-17,18,48,48,"18    19.14
-Name: mean, dtype: object","and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake."""
+segment_id,pcaught,prec,mbits,segment_text
+1,52,50,16.65,My best friend pushed me into the pool.
+2,49,50,11.72,"This happened during my cousin's wedding reception,"
+3,24,19,0.56,where everyone was dressed to impress.
+4,16,5,0.04,"And the reason it happened,"
+5,49,47,11.14,"she spotted a bee hovering near my face,"
+6,20,13,2.81,- this was at a fancy hotel garden -
+7,44,29,0.33,and she tried to save me from being stung.
+8,33,31,5.26,"And my aunt had just handed me a glass of champagne,"
+9,9,8,3.04,and I warned her to be careful.
+10,13,9,1.59,"'Course friends, y'know, they don't always think things through."
+11,47,21,1.54,"So that's when she gave me a little shove,"
+12,44,21,0.65,and I tumbled into the water.
+13,25,18,-0.54,"When I resurfaced, gasping for air,"
+14,34,31,0.81,"she just started laughing,"
+15,19,16,1.67,and she apologized profusely.
+16,37,37,1.51,"And... my beautiful dress was ruined,"
+17,21,21,1.87,"and naturally, the first thing to do was to get out and dry off,"
+18,48,48,19.14,"and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake."""

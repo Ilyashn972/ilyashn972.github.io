@@ -1,39 +1,20 @@
-,segment_id,pcaught,prec,mbits,segment_text
-0,1,81,81,"1    20.16
-Name: mean, dtype: object","Yeah, I was in the boy scouts at the time."
-1,2,79,71,"2    10.39
-Name: mean, dtype: object","And we was doing the 50-yard dash,"
-2,3,44,17,"3    0.56
-Name: mean, dtype: object","racing,"
-3,4,49,38,"4    4.71
-Name: mean, dtype: object","but we was at the pier, marked off,"
-4,5,79,40,"5   -0.1
-Name: mean, dtype: object",and so we was doing the 50-yard dash.
-5,6,66,53,"6    3.6
-Name: mean, dtype: object","There was about 8 or 9 of us, you know, going down, coming back."
-6,7,91,79,"7    3.93
-Name: mean, dtype: object","And, going down the third time, I caught cramps"
-7,8,62,44,"8    4.58
-Name: mean, dtype: object","and I started yelling ""Help!"","
-8,9,82,49,"9    0.53
-Name: mean, dtype: object","but the fellows didn't believe me, you know."
-9,10,64,44,"10    1.27
-Name: mean, dtype: object","They thought I was just trying to catch up, because I was going on or slowing down."
-10,11,55,7,"11    0.83
-Name: mean, dtype: object",So all of them kept going.
-11,12,33,11,"12   -1.41
-Name: mean, dtype: object",They leave me.
-12,13,29,16,"13   -1.19
-Name: mean, dtype: object",And so I started going down.
-13,14,68,58,"14    5.45
-Name: mean, dtype: object",Scoutmaster was up there.
-14,15,58,37,"15   -0.17
-Name: mean, dtype: object",He was watching me.
-15,16,74,43,"16    1.64
-Name: mean, dtype: object",But he didn't pay me no attention either.
-16,17,68,39,"17    5.85
-Name: mean, dtype: object","And for no reason at all there was another guy, who had just walked up that minute..."
-17,18,65,42,"18    1.58
-Name: mean, dtype: object",He just jumped over
-18,19,69,68,"19   -0.28
-Name: mean, dtype: object",and grabbed me.
+segment_id,pcaught,prec,mbits,segment_text
+1,81,81,20.16,"Yeah, I was in the boy scouts at the time."
+2,79,71,10.39,"And we was doing the 50-yard dash,"
+3,44,17,0.56,"racing,"
+4,49,38,4.71,"but we was at the pier, marked off,"
+5,79,40,-0.1,and so we was doing the 50-yard dash.
+6,66,53,3.6,"There was about 8 or 9 of us, you know, going down, coming back."
+7,91,79,3.93,"And, going down the third time, I caught cramps"
+8,62,44,4.58,"and I started yelling ""Help!"","
+9,82,49,0.53,"but the fellows didn't believe me, you know."
+10,64,44,1.27,"They thought I was just trying to catch up, because I was going on or slowing down."
+11,55,7,0.83,So all of them kept going.
+12,33,11,-1.41,They leave me.
+13,29,16,-1.19,And so I started going down.
+14,68,58,5.45,Scoutmaster was up there.
+15,58,37,-0.17,He was watching me.
+16,74,43,1.64,But he didn't pay me no attention either.
+17,68,39,5.85,"And for no reason at all there was another guy, who had just walked up that minute..."
+18,65,42,1.58,He just jumped over
+19,69,68,-0.28,and grabbed me.

@@ -1,65 +1,33 @@
-,segment_id,pcaught,prec,mbits,segment_text
-0,1,96,88,"1    21.02
-Name: mean, dtype: object","In the neighborhood I grew up in, Mrs. Baker was the resident cat lady."
-1,2,79,57,"2    2.74
-Name: mean, dtype: object",She had adopted at least twenty –
-2,3,78,41,"3    9.81
-Name: mean, dtype: object",or had given them homes.
-3,4,82,68,"4    13.37
-Name: mean, dtype: object",But she had – a young grandson
-4,5,66,50,"5    4.0
-Name: mean, dtype: object",and back then I was quite the tomboy.
-5,6,71,56,"6    6.46
-Name: mean, dtype: object","And apparently, he was trying to befriend me."
-6,7,50,16,"7    1.01
-Name: mean, dtype: object",I never caught on.
-7,8,59,4,"8    6.78
-Name: mean, dtype: object",Truth is I didn't take to him much because he had –
-8,9,64,24,"9    5.87
-Name: mean, dtype: object",He was a charming lad until you saw his manners.
-9,10,62,52,"10    1.64
-Name: mean, dtype: object",He had poor manners.
-10,11,62,19,"11   -0.06
-Name: mean, dtype: object",Goodness gracious he had poor manners.
-11,12,86,50,"12    14.08
-Name: mean, dtype: object",Then he left a note one day saying he was going to run away because she was always nagging about me.
-12,13,74,47,"13    6.33
-Name: mean, dtype: object",She came to my treehouse.
-13,14,37,30,"14    1.72
-Name: mean, dtype: object",Big old tabby cat in tow.
-14,15,37,4,"15    0.37
-Name: mean, dtype: object",I talked her down
-15,16,67,30,"16    7.46
-Name: mean, dtype: object",and said “Well we'll go find him
-16,17,57,28,"17    7.29
-Name: mean, dtype: object","and if we can't locate him, you can – go ahead and call the police if you need to.”"
-17,18,19,2,"18   -0.14
-Name: mean, dtype: object",I was strategizing.
-18,19,58,2,"19    1.99
-Name: mean, dtype: object",So she took my advice.
-19,20,70,35,"20    3.03
-Name: mean, dtype: object",And we went to where they found his baseball cap – near the old mill
-20,21,55,12,"21    0.38
-Name: mean, dtype: object",and we trailed a bit more
-21,22,53,12,"22    1.52
-Name: mean, dtype: object",and we didn't find a trace.
-22,23,39,6,"23   -0.22
-Name: mean, dtype: object",And returned
-23,24,60,12,"24    4.01
-Name: mean, dtype: object",– it was a treehouse club –
-24,25,81,74,"25    6.03
-Name: mean, dtype: object",he was sitting on a branch with a comic book in his hand.
-25,26,59,40,"26    1.64
-Name: mean, dtype: object",He hadn't run away.
-26,27,14,6,"27    2.8
-Name: mean, dtype: object",But – however – that resolved it for that day.
-27,28,76,69,"28    17.04
-Name: mean, dtype: object","But that evening the local sheriff, Officer Dawson said “You better lay low and stay out of sight because that woman never forgets anything once she gets it into her mind.”"
-28,29,49,25,"29   -0.46
-Name: mean, dtype: object",And I did.
-29,30,49,25,"30    0.83
-Name: mean, dtype: object",I laid low
-30,31,49,20,"31   -0.61
-Name: mean, dtype: object",and stayed out of sight.
-31,32,22,18,"32    1.06
-Name: mean, dtype: object",That was the second time.
+segment_id,pcaught,prec,mbits,segment_text
+1,96,88,21.02,"In the neighborhood I grew up in, Mrs. Baker was the resident cat lady."
+2,79,57,2.74,She had adopted at least twenty –
+3,78,41,9.81,or had given them homes.
+4,82,68,13.37,But she had – a young grandson
+5,66,50,4.0,and back then I was quite the tomboy.
+6,71,56,6.46,"And apparently, he was trying to befriend me."
+7,50,16,1.01,I never caught on.
+8,59,4,6.78,Truth is I didn't take to him much because he had –
+9,64,24,5.87,He was a charming lad until you saw his manners.
+10,62,52,1.64,He had poor manners.
+11,62,19,-0.06,Goodness gracious he had poor manners.
+12,86,50,14.08,Then he left a note one day saying he was going to run away because she was always nagging about me.
+13,74,47,6.33,She came to my treehouse.
+14,37,30,1.72,Big old tabby cat in tow.
+15,37,4,0.37,I talked her down
+16,67,30,7.46,and said “Well we'll go find him
+17,57,28,7.29,"and if we can't locate him, you can – go ahead and call the police if you need to.”"
+18,19,2,-0.14,I was strategizing.
+19,58,2,1.99,So she took my advice.
+20,70,35,3.03,And we went to where they found his baseball cap – near the old mill
+21,55,12,0.38,and we trailed a bit more
+22,53,12,1.52,and we didn't find a trace.
+23,39,6,-0.22,And returned
+24,60,12,4.01,– it was a treehouse club –
+25,81,74,6.03,he was sitting on a branch with a comic book in his hand.
+26,59,40,1.64,He hadn't run away.
+27,14,6,2.8,But – however – that resolved it for that day.
+28,76,69,17.04,"But that evening the local sheriff, Officer Dawson said “You better lay low and stay out of sight because that woman never forgets anything once she gets it into her mind.”"
+29,49,25,-0.46,And I did.
+30,49,25,0.83,I laid low
+31,49,20,-0.61,and stayed out of sight.
+32,22,18,1.06,That was the second time.

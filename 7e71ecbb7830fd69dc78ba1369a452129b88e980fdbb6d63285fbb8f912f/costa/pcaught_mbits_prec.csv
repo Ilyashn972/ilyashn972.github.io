@@ -1,389 +1,195 @@
-,segment_id,pcaught,prec,mbits,segment_text
-0,1,77,94,"1    11.92
-Name: mean, dtype: object",My daughter died.
-1,2,58,45,"2    4.43
-Name: mean, dtype: object",It’ll be twenty-eight years this month.
-2,3,51,14,"3    5.26
-Name: mean, dtype: object","The thirtieth of this month, yeah."
-3,4,57,54,"4    3.37
-Name: mean, dtype: object",She died at Methodist Hospital.
-4,5,72,64,"5    7.01
-Name: mean, dtype: object",She had an operation for appendicitis.
-5,6,28,7,"6   -1.78
-Name: mean, dtype: object","It was late Saturday afternoon when they operated, very late."
-6,7,44,25,"7    4.25
-Name: mean, dtype: object","Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was."
-7,8,39,22,"8    3.36
-Name: mean, dtype: object",She was still under ether.
-8,9,32,11,"9   -0.03
-Name: mean, dtype: object","Back then, they used a lot of ether."
-9,10,30,19,"10    3.05
-Name: mean, dtype: object",There was a chair there.
-10,11,43,6,"11    2.18
-Name: mean, dtype: object","They were just starting to get people out of bed, you know."
-11,12,22,8,"12   -0.46
-Name: mean, dtype: object","So, Victoria saw the chair,"
-12,13,38,12,"13    0.86
-Name: mean, dtype: object","and she said to the nurse, “What’s this chair doing here?”"
-13,14,53,16,"14    0.61
-Name: mean, dtype: object","The nurse said, “Well, we’ve got to get her out of bed.”"
-14,15,27,10,"15   -1.32
-Name: mean, dtype: object","She said, “What are you talking about? She’s still under ether.”"
-15,16,31,6,"16   -1.3
-Name: mean, dtype: object",“She’s too sick.”
-16,17,44,10,"17   -0.73
-Name: mean, dtype: object","But the nurse said, “Well, that’s the doctor’s orders.”"
-17,18,43,12,"18    0.59
-Name: mean, dtype: object","So, they went to get her out of bed,"
-18,19,58,23,"19    0.45
-Name: mean, dtype: object","and she passed out,"
-19,20,30,11,"20    0.41
-Name: mean, dtype: object",and they had to put her back in bed.
-20,21,29,0,"21   -0.38
-Name: mean, dtype: object","See, here, she never – I don’t know if they knew or what,"
-21,22,63,34,"22    3.99
-Name: mean, dtype: object","but I blame them for the blood clot she got, taking her out of bed."
-22,23,46,8,"23    0.72
-Name: mean, dtype: object","So, when she was walking around to come home after ten days,"
-23,24,65,23,"24    2.58
-Name: mean, dtype: object",I was waiting for the call from the hospital.
-24,25,33,15,"25    0.75
-Name: mean, dtype: object",I didn’t have a phone then.
-25,26,71,12,"26    8.62
-Name: mean, dtype: object","The lady from the store who had a phone called me, “Mrs. Costa,” at aquarter to five at night."
-26,27,62,10,"27   -0.21
-Name: mean, dtype: object","“Mrs. Costa, they just called you from the hospital."
-27,28,77,11,"28    7.49
-Name: mean, dtype: object",Go Pick Marie up.
-28,29,30,13,"29    0.19
-Name: mean, dtype: object",She’s discharged.”
-29,30,44,5,"30   -0.31
-Name: mean, dtype: object",I had all the clothes laid out on the table.
-30,31,47,11,"31    2.0
-Name: mean, dtype: object","And Rita was – I was cooking,"
-31,32,43,9,"32    0.41
-Name: mean, dtype: object","I said, “Rita, finish the cooking.”"
-32,33,43,6,"33    0.61
-Name: mean, dtype: object",Daddy will be home soon.”
-33,34,37,8,"34    0.16
-Name: mean, dtype: object",He was working down in the yard.
-34,35,40,16,"35    1.78
-Name: mean, dtype: object","I said, “And put a big pot of coffee on,” because she had been wishing for coffee."
-35,36,36,4,"36   -0.76
-Name: mean, dtype: object","And you know, every morning, that first cup of coffee, I offered it to her."
-36,37,33,5,"37   -0.6
-Name: mean, dtype: object","When I get up in the morning, the first cup is hers."
-37,38,31,0,"38   -0.87
-Name: mean, dtype: object","Since she’s gone, I never forget that."
-38,39,35,2,"39    1.0
-Name: mean, dtype: object","So I said, “Put a pot of coffee on,"
-39,40,35,5,"40    0.57
-Name: mean, dtype: object",and send for some cake from the bakery.”
-40,41,49,0,"41   -0.6
-Name: mean, dtype: object",I’m going to get Marie; they called me.”
-41,42,25,0,"42    1.34
-Name: mean, dtype: object","“All right, mother, go ahead,” she said, “I’ll finish up.”"
-42,43,45,5,"43    1.58
-Name: mean, dtype: object","And I went myself. You know, I had the coat on my arm."
-43,44,33,2,"44   -1.83
-Name: mean, dtype: object",She was operated on in March –
-44,45,50,0,"45    1.55
-Name: mean, dtype: object","No, April! So that was the thirtieth."
-45,46,46,10,"46   -0.04
-Name: mean, dtype: object","She was operated – ten days before, so that would be the twentieth."
-46,47,21,5,"47   -0.37
-Name: mean, dtype: object","The twentieth of April, right? It was kind of chilly."
-47,48,39,1,"48    0.35
-Name: mean, dtype: object","Oh, and I had everything in a bag,"
-48,49,43,12,"49    0.48
-Name: mean, dtype: object",and I had the coat on my arm and her dress hanging on my arm.
-49,50,37,10,"50   -0.92
-Name: mean, dtype: object","She saw me from the windows, from Wolf Street."
-50,51,26,0,"51    0.48
-Name: mean, dtype: object","She said, “My mother’s just coming.”"
-51,52,32,3,"52   -1.8
-Name: mean, dtype: object","She was with the girls, saying goodbye to everyone – you know how it is."
-52,53,24,2,"53    1.32
-Name: mean, dtype: object","They told me on the phone, it would be ten dollars more for her board."
-53,54,24,2,"54   -1.29
-Name: mean, dtype: object",And to make sure I brought her girdle to put on.
-54,55,22,0,"55    0.13
-Name: mean, dtype: object","I said, “All right, I’ll be right over.”"
-55,56,49,0,"56    0.98
-Name: mean, dtype: object",And I went.
-56,57,66,15,"57    0.22
-Name: mean, dtype: object","But when I got there, the nurse said to me, “Sit down, Mrs. Costa, sit here for a while.”"
-57,58,42,22,"58    6.21
-Name: mean, dtype: object","So I sat down, and I was praying for another lady in the hospital that had an operation for her gall bladder."
-58,59,35,12,"59   -0.33
-Name: mean, dtype: object","She lived near my sister, and she had ten children."
-59,60,33,1,"60   -0.34
-Name: mean, dtype: object",They had said she was in very bad shape.
-60,61,37,6,"61   -0.18
-Name: mean, dtype: object","I prayed, “Oh dear God, don’t take that mother away from her children.”"
-61,62,22,1,"62   -0.32
-Name: mean, dtype: object","I was praying for her, you know."
-62,63,30,2,"63   -0.44
-Name: mean, dtype: object",Then a little nurse’s aide went to the closet and got some blankets.
-63,64,28,6,"64    0.47
-Name: mean, dtype: object","I started getting the chills,"
-64,65,21,0,"65    0.01
-Name: mean, dtype: object","and I was thinking about it,"
-65,66,32,3,"66    1.01
-Name: mean, dtype: object","when the aide said to the nurse, “Oh, she’s going into a cold sweat now.”"
-66,67,52,13,"67    0.57
-Name: mean, dtype: object","The nurse hung up the phone and came to me. She said, “Mrs. Costa, has your daughter ever had a fainting spell?”"
-67,68,51,3,"68   -0.6
-Name: mean, dtype: object","“Oh my God!” I said, “Don’t tell me you’re running for my daughter!”"
-68,69,46,3,"69   -0.8
-Name: mean, dtype: object","“Yes,” she said, “come on in.”"
-69,70,51,3,"70   -0.19
-Name: mean, dtype: object","So, I went into the room."
-70,71,52,12,"71    1.66
-Name: mean, dtype: object",And my daughter was on the bed with her bedroom slippers and her housecoat on.
-71,72,47,6,"72   -0.56
-Name: mean, dtype: object","And the beads of sweat – honest to God, not to exaggerate, they were that big."
-72,73,36,0,"73    0.25
-Name: mean, dtype: object",It came – just poured from her –
-73,74,72,23,"74    1.25
-Name: mean, dtype: object","I said, “What did you do, kill my daughter?"
-74,75,58,20,"75    1.45
-Name: mean, dtype: object",You killed her! You killed her!”
-75,76,53,3,"76    0.1
-Name: mean, dtype: object",That’s what I kept yelling.
-76,77,39,2,"77   -0.32
-Name: mean, dtype: object","And the doctor rushed in,"
-77,78,32,0,"78    1.04
-Name: mean, dtype: object","see, they were trying to get the doctor, you know."
-78,79,42,2,"79    0.99
-Name: mean, dtype: object",She was a lady doctor.
-79,80,38,8,"80   -0.46
-Name: mean, dtype: object","Dr. Schwartz actually did the operation, but she was his assistant, Dr. Montique."
-80,81,39,11,"81   -0.05
-Name: mean, dtype: object",She was a lady doctor.
-81,82,26,0,"82    0.67
-Name: mean, dtype: object","So, she came in and she said –"
-82,83,66,4,"83    0.46
-Name: mean, dtype: object","I said, “You killed my daughter – what did you do to her?”"
-83,84,50,8,"84   -0.56
-Name: mean, dtype: object","She said, “We don’t know what happened, Mrs. Costa.”"
-84,85,29,1,"85   -0.22
-Name: mean, dtype: object",She took me away from the bed.
-85,86,38,3,"86   -0.73
-Name: mean, dtype: object","The nurse said to me, “Talk to her.”"
-86,87,36,2,"87   -1.24
-Name: mean, dtype: object","I said, “Talk to her? My daughter’s dying, what am I supposed to tell her?”"
-87,88,64,7,"88    0.47
-Name: mean, dtype: object",And I was screaming.
-88,89,53,4,"89    0.8
-Name: mean, dtype: object",My hair was all pulled out.
-89,90,63,10,"90    0.84
-Name: mean, dtype: object","I went hysterical, you know what I mean? She was only eighteen years old."
-90,91,32,2,"91   -1.2
-Name: mean, dtype: object","Beautiful girl, you can see from her picture."
-91,92,60,7,"92    0.38
-Name: mean, dtype: object","And just as I turned my back, my daughter passed away."
-92,93,46,1,"93    0.46
-Name: mean, dtype: object",She was getting ready to go home.
-93,94,38,1,"94   -0.27
-Name: mean, dtype: object",I had the clothes and everything ready.
-94,95,50,4,"95    0.74
-Name: mean, dtype: object",My husband was waiting for her.
-95,96,50,7,"96   -0.4
-Name: mean, dtype: object","He came home, went upstairs to shave and wash, then sat on the step, waiting."
-96,97,45,0,"97    0.25
-Name: mean, dtype: object",“When is the mother coming?”
-97,98,43,3,"98    1.27
-Name: mean, dtype: object",The hospital kept calling.
-98,99,46,1,"99    0.54
-Name: mean, dtype: object",The people in the office didn’t know what had happened yet.
-99,100,47,0,"100   -0.97
-Name: mean, dtype: object","They kept calling the store, trying to reach us."
-100,101,50,3,"101    0.07
-Name: mean, dtype: object","They asked, “When is the mother coming to pick up Marie?"
-101,102,47,2,"102   -0.39
-Name: mean, dtype: object",She’s discharged.”
-102,103,50,5,"103   -1.99
-Name: mean, dtype: object","And Rita said “That’s strange, the mother went to the hospital. She should be there.”"
-103,104,43,1,"104   -0.35
-Name: mean, dtype: object",So they came back to the hospital to look for us.
-104,105,41,0,"105   -0.24
-Name: mean, dtype: object","Rita said, “Gee, that’s strange,”"
-105,106,40,0,"106    0.84
-Name: mean, dtype: object","she said, “Mother must’ve gotten really worked up about Marie.”"
-106,107,36,1,"107   -0.04
-Name: mean, dtype: object","You know, I’ve always had a bad heart."
-107,108,39,0,"108   -1.03
-Name: mean, dtype: object","“Mother must’ve gotten so upset about Marie, she probably made herself sick,” Rita thought."
-108,109,42,3,"109   -0.64
-Name: mean, dtype: object","So she came over with my son-in-law, in the car."
-109,110,44,0,"110   -0.94
-Name: mean, dtype: object","And I was in the main hallway, at the office."
-110,111,42,0,"111   -1.12
-Name: mean, dtype: object",I was all pulled apart.
-111,112,49,2,"112   -0.01
-Name: mean, dtype: object",One doctor wanted to give me a shot.
-112,113,46,1,"113   -0.09
-Name: mean, dtype: object","I said, “Get out of here,"
-113,114,49,1,"114   -0.08
-Name: mean, dtype: object","I’ll kick you,” I said."
-114,115,53,8,"115   -0.39
-Name: mean, dtype: object","“You killed my daughter, now you want to kill me?”"
-115,116,43,1,"116    0.51
-Name: mean, dtype: object",Another nurse came over.
-116,117,42,3,"117   -0.5
-Name: mean, dtype: object","See, they all knew me."
-117,118,41,6,"118    0.81
-Name: mean, dtype: object","I had three operations in no time, not even a year."
-118,119,39,4,"119   -0.06
-Name: mean, dtype: object",And I knew all the nurses.
-119,120,47,0,"120    0.74
-Name: mean, dtype: object","“Mrs. Costa, please, take –”"
-120,121,48,2,"121    0.25
-Name: mean, dtype: object","“Get out!” I said, “Don’t you dare come near me.”"
-121,122,53,2,"122    0.78
-Name: mean, dtype: object",I was so hysterical.
-122,123,58,1,"123   -0.34
-Name: mean, dtype: object",I was banging my head against the wall and everything.
-123,124,45,0,"124   -0.45
-Name: mean, dtype: object",They had to grab me.
-124,125,38,0,"125   -0.06
-Name: mean, dtype: object","Then they brought me to the office, see."
-125,126,46,2,"126   -3.17
-Name: mean, dtype: object","When Rita came in and saw me like that, she asked, “Mother, what happened?”"
-126,127,48,5,"127    0.34
-Name: mean, dtype: object","I said, “We lost Marie."
-127,128,52,15,"128    0.29
-Name: mean, dtype: object",Marie died.”
-128,129,32,0,"129    0.22
-Name: mean, dtype: object","Well, that’s this one. This is a picture of Rita."
-129,130,47,7,"130    0.18
-Name: mean, dtype: object",She went down like lightning.
-130,131,43,5,"131   -1.05
-Name: mean, dtype: object","Dropped to the floor, and that’s a marble floor."
-131,132,39,1,"132    0.15
-Name: mean, dtype: object",She went down like lightning.
-132,133,41,1,"133    2.17
-Name: mean, dtype: object","And the back of her leg, it felt just like a pole."
-133,134,39,1,"134   -0.69
-Name: mean, dtype: object","Hard like a pole, the back of her leg."
-134,135,41,0,"135    0.07
-Name: mean, dtype: object",And that girl is suffering.
-135,136,47,1,"136   -1.68
-Name: mean, dtype: object","Thirty – no, twenty-eight years since her sister died?"
-136,137,46,5,"137    0.66
-Name: mean, dtype: object","When she gets that pain, it’s like she has phlebitis from it."
-137,138,48,2,"138   -0.34
-Name: mean, dtype: object","She suffers – seven, eight, nine weeks at a time."
-138,139,40,2,"139    0.95
-Name: mean, dtype: object","She can’t walk, she goes through such pain since then."
-139,140,33,4,"140    0.63
-Name: mean, dtype: object",And how did they figure how Marie died?
-140,141,32,1,"141   -0.41
-Name: mean, dtype: object","The girl who was walking with Marie,"
-141,142,35,2,"142    1.65
-Name: mean, dtype: object",told the doctor that Marie was saying goodbye to Arlene.
-142,143,41,12,"143    0.96
-Name: mean, dtype: object","And all Marie said to that girl was, “Oh, I’ve got a pain in my leg and I can’t see.”"
-143,144,44,7,"144    1.6
-Name: mean, dtype: object",And then Marie collapsed.
-144,145,70,31,"145   -1.17
-Name: mean, dtype: object","Later, they said it was a blood clot."
-145,146,48,7,"146    0.55
-Name: mean, dtype: object","I said, “Don’t you dare touch my daughter."
-146,147,50,6,"147   -0.3
-Name: mean, dtype: object",I’ll burn this hospital down!
-147,148,44,0,"148    0.56
-Name: mean, dtype: object",I don’t care who’s in it.”
-148,149,47,4,"149   -0.0
-Name: mean, dtype: object","I said, “Don’t you dare touch my daughter."
-149,150,47,0,"150   -0.08
-Name: mean, dtype: object",You want to find out what she died from.”
-150,151,46,4,"151   -0.42
-Name: mean, dtype: object","But if you touch my daughter, I’ll kill you.”"
-151,152,35,0,"152   -0.05
-Name: mean, dtype: object",I wouldn’t let them touch her.
-152,153,63,5,"153    0.63
-Name: mean, dtype: object",So when I got home – they took me home.
-153,154,43,6,"154   -0.11
-Name: mean, dtype: object",I was screaming in the car.
-154,155,39,0,"155    0.07
-Name: mean, dtype: object","I couldn’t get out, you know, I couldn’t –"
-155,156,43,6,"156   -0.22
-Name: mean, dtype: object",I was screaming!
-156,157,45,4,"157   -0.36
-Name: mean, dtype: object","Everybody came out, coming out of their doors because they could hear the screams."
-157,158,47,11,"158   -0.54
-Name: mean, dtype: object",My husband was sitting on the step.
-158,159,42,11,"159   -0.38
-Name: mean, dtype: object","He asked, “What’s the matter? What happened to you?”"
-159,160,38,1,"160    0.41
-Name: mean, dtype: object","Well, my hair was all pulled, and my face – I was a mess."
-160,161,36,0,"161    0.37
-Name: mean, dtype: object",I didn’t know what I had done to myself.
-161,162,65,24,"162    0.61
-Name: mean, dtype: object","I said, “Mike, we lost Marie. Marie died.” It was just a shock."
-162,163,75,51,"163    2.65
-Name: mean, dtype: object",My husband had a heart attack.
-163,164,60,31,"164    0.73
-Name: mean, dtype: object","Yes, he had a heart attack."
-164,165,50,16,"165    1.99
-Name: mean, dtype: object","Then my son, Michael, yeah. That night."
-165,166,68,21,"166   -0.7
-Name: mean, dtype: object","Right there, my Michael came, and my Michael collapsed."
-166,167,51,29,"167    1.24
-Name: mean, dtype: object","He had a heart attack too, no kidding."
-167,168,39,0,"168   -0.2
-Name: mean, dtype: object","It was all – my two sisters were here, waiting until about half-past four."
-168,169,39,0,"169    0.15
-Name: mean, dtype: object","They waited because they knew she was coming home that day, waiting for the call."
-169,170,46,13,"170    1.89
-Name: mean, dtype: object","My younger sister had brought an orange for Marie, and I had never seen an orange like it. It was a big orange, like that."
-170,171,37,0,"171   -1.46
-Name: mean, dtype: object","She said, “Mary, look, when they call you, when you pick Marie up, let us know, and we’ll come over.”"
-171,172,34,0,"172   -0.02
-Name: mean, dtype: object","I said, “All right.”"
-172,173,60,4,"173    1.51
-Name: mean, dtype: object","So, I got home and called everybody, told them what happened."
-173,174,49,7,"174    0.93
-Name: mean, dtype: object",I called my brother-in-law.
-174,175,47,4,"175   -0.22
-Name: mean, dtype: object",He was an undertaker.
-175,176,46,3,"176   -1.76
-Name: mean, dtype: object",My sister’s husband – he’s passed away now too. God rest his soul.
-176,177,42,0,"177    2.62
-Name: mean, dtype: object",Maybe you know him...
-177,178,46,0,"178    0.96
-Name: mean, dtype: object","So they were waiting for my call, you know,"
-178,179,59,7,"179    0.22
-Name: mean, dtype: object","but instead, I sent my son James, he was little then."
-179,180,62,15,"180   -0.17
-Name: mean, dtype: object","I said, “Go tell Aunt Millie and Aunt Jenny.”"
-180,181,50,0,"181   -0.99
-Name: mean, dtype: object","They had cleaned the pavement,"
-181,182,50,0,"182    0.7
-Name: mean, dtype: object","and done the cement work, and they were cleaning the pavement."
-182,183,50,0,"183    0.76
-Name: mean, dtype: object","They said, “Here comes little Jamie,” and now they said,"
-183,184,52,0,"184   -0.67
-Name: mean, dtype: object",“Maybe he’s come to tell us Marie’s home.”
-184,185,52,6,"185   -0.06
-Name: mean, dtype: object","But when he got there, the poor kid’s eyes were all red."
-185,186,52,1,"186   -0.37
-Name: mean, dtype: object","They said, “James, what’s the matter, honey?"
-186,187,51,1,"187    0.1
-Name: mean, dtype: object",Why are you crying?”
-187,188,58,19,"188   -0.17
-Name: mean, dtype: object","“Aunt Jenny, Aunt Millie, Marie died,” he said."
-188,189,38,0,"189   -0.67
-Name: mean, dtype: object","Well, my sisters and my mother, you know, they were all alive."
-189,190,42,3,"190   -0.64
-Name: mean, dtype: object",It was a shock to everybody. That was a shock that –
-190,191,43,14,"191    0.57
-Name: mean, dtype: object","The neighborhood – Annie at the store always says, “Mrs. Costa,” every time I go in there, she reminds me, “I just picture Marie standing at that step, looking over here.” She used to stand at that step."
-191,192,42,14,"192    0.17
-Name: mean, dtype: object","She was a real quiet girl, pleasant, didn’t talk much,"
-192,193,44,8,"193   -0.67
-Name: mean, dtype: object","but she was so good, I can’t even tell you."
-193,194,34,4,"194    0.63
-Name: mean, dtype: object",That’s all. So that’s what happened.
+segment_id,pcaught,prec,mbits,segment_text
+1,77,94,11.92,My daughter died.
+2,58,45,4.43,It’ll be twenty-eight years this month.
+3,51,14,5.26,"The thirtieth of this month, yeah."
+4,57,54,3.37,She died at Methodist Hospital.
+5,72,64,7.01,She had an operation for appendicitis.
+6,28,7,-1.78,"It was late Saturday afternoon when they operated, very late."
+7,44,25,4.25,"Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was."
+8,39,22,3.36,She was still under ether.
+9,32,11,-0.03,"Back then, they used a lot of ether."
+10,30,19,3.05,There was a chair there.
+11,43,6,2.18,"They were just starting to get people out of bed, you know."
+12,22,8,-0.46,"So, Victoria saw the chair,"
+13,38,12,0.86,"and she said to the nurse, “What’s this chair doing here?”"
+14,53,16,0.61,"The nurse said, “Well, we’ve got to get her out of bed.”"
+15,27,10,-1.32,"She said, “What are you talking about? She’s still under ether.”"
+16,31,6,-1.3,“She’s too sick.”
+17,44,10,-0.73,"But the nurse said, “Well, that’s the doctor’s orders.”"
+18,43,12,0.59,"So, they went to get her out of bed,"
+19,58,23,0.45,"and she passed out,"
+20,30,11,0.41,and they had to put her back in bed.
+21,29,0,-0.38,"See, here, she never – I don’t know if they knew or what,"
+22,63,34,3.99,"but I blame them for the blood clot she got, taking her out of bed."
+23,46,8,0.72,"So, when she was walking around to come home after ten days,"
+24,65,23,2.58,I was waiting for the call from the hospital.
+25,33,15,0.75,I didn’t have a phone then.
+26,71,12,8.62,"The lady from the store who had a phone called me, “Mrs. Costa,” at aquarter to five at night."
+27,62,10,-0.21,"“Mrs. Costa, they just called you from the hospital."
+28,77,11,7.49,Go Pick Marie up.
+29,30,13,0.19,She’s discharged.”
+30,44,5,-0.31,I had all the clothes laid out on the table.
+31,47,11,2.0,"And Rita was – I was cooking,"
+32,43,9,0.41,"I said, “Rita, finish the cooking.”"
+33,43,6,0.61,Daddy will be home soon.”
+34,37,8,0.16,He was working down in the yard.
+35,40,16,1.78,"I said, “And put a big pot of coffee on,” because she had been wishing for coffee."
+36,36,4,-0.76,"And you know, every morning, that first cup of coffee, I offered it to her."
+37,33,5,-0.6,"When I get up in the morning, the first cup is hers."
+38,31,0,-0.87,"Since she’s gone, I never forget that."
+39,35,2,1.0,"So I said, “Put a pot of coffee on,"
+40,35,5,0.57,and send for some cake from the bakery.”
+41,49,0,-0.6,I’m going to get Marie; they called me.”
+42,25,0,1.34,"“All right, mother, go ahead,” she said, “I’ll finish up.”"
+43,45,5,1.58,"And I went myself. You know, I had the coat on my arm."
+44,33,2,-1.83,She was operated on in March –
+45,50,0,1.55,"No, April! So that was the thirtieth."
+46,46,10,-0.04,"She was operated – ten days before, so that would be the twentieth."
+47,21,5,-0.37,"The twentieth of April, right? It was kind of chilly."
+48,39,1,0.35,"Oh, and I had everything in a bag,"
+49,43,12,0.48,and I had the coat on my arm and her dress hanging on my arm.
+50,37,10,-0.92,"She saw me from the windows, from Wolf Street."
+51,26,0,0.48,"She said, “My mother’s just coming.”"
+52,32,3,-1.8,"She was with the girls, saying goodbye to everyone – you know how it is."
+53,24,2,1.32,"They told me on the phone, it would be ten dollars more for her board."
+54,24,2,-1.29,And to make sure I brought her girdle to put on.
+55,22,0,0.13,"I said, “All right, I’ll be right over.”"
+56,49,0,0.98,And I went.
+57,66,15,0.22,"But when I got there, the nurse said to me, “Sit down, Mrs. Costa, sit here for a while.”"
+58,42,22,6.21,"So I sat down, and I was praying for another lady in the hospital that had an operation for her gall bladder."
+59,35,12,-0.33,"She lived near my sister, and she had ten children."
+60,33,1,-0.34,They had said she was in very bad shape.
+61,37,6,-0.18,"I prayed, “Oh dear God, don’t take that mother away from her children.”"
+62,22,1,-0.32,"I was praying for her, you know."
+63,30,2,-0.44,Then a little nurse’s aide went to the closet and got some blankets.
+64,28,6,0.47,"I started getting the chills,"
+65,21,0,0.01,"and I was thinking about it,"
+66,32,3,1.01,"when the aide said to the nurse, “Oh, she’s going into a cold sweat now.”"
+67,52,13,0.57,"The nurse hung up the phone and came to me. She said, “Mrs. Costa, has your daughter ever had a fainting spell?”"
+68,51,3,-0.6,"“Oh my God!” I said, “Don’t tell me you’re running for my daughter!”"
+69,46,3,-0.8,"“Yes,” she said, “come on in.”"
+70,51,3,-0.19,"So, I went into the room."
+71,52,12,1.66,And my daughter was on the bed with her bedroom slippers and her housecoat on.
+72,47,6,-0.56,"And the beads of sweat – honest to God, not to exaggerate, they were that big."
+73,36,0,0.25,It came – just poured from her –
+74,72,23,1.25,"I said, “What did you do, kill my daughter?"
+75,58,20,1.45,You killed her! You killed her!”
+76,53,3,0.1,That’s what I kept yelling.
+77,39,2,-0.32,"And the doctor rushed in,"
+78,32,0,1.04,"see, they were trying to get the doctor, you know."
+79,42,2,0.99,She was a lady doctor.
+80,38,8,-0.46,"Dr. Schwartz actually did the operation, but she was his assistant, Dr. Montique."
+81,39,11,-0.05,She was a lady doctor.
+82,26,0,0.67,"So, she came in and she said –"
+83,66,4,0.46,"I said, “You killed my daughter – what did you do to her?”"
+84,50,8,-0.56,"She said, “We don’t know what happened, Mrs. Costa.”"
+85,29,1,-0.22,She took me away from the bed.
+86,38,3,-0.73,"The nurse said to me, “Talk to her.”"
+87,36,2,-1.24,"I said, “Talk to her? My daughter’s dying, what am I supposed to tell her?”"
+88,64,7,0.47,And I was screaming.
+89,53,4,0.8,My hair was all pulled out.
+90,63,10,0.84,"I went hysterical, you know what I mean? She was only eighteen years old."
+91,32,2,-1.2,"Beautiful girl, you can see from her picture."
+92,60,7,0.38,"And just as I turned my back, my daughter passed away."
+93,46,1,0.46,She was getting ready to go home.
+94,38,1,-0.27,I had the clothes and everything ready.
+95,50,4,0.74,My husband was waiting for her.
+96,50,7,-0.4,"He came home, went upstairs to shave and wash, then sat on the step, waiting."
+97,45,0,0.25,“When is the mother coming?”
+98,43,3,1.27,The hospital kept calling.
+99,46,1,0.54,The people in the office didn’t know what had happened yet.
+100,47,0,-0.97,"They kept calling the store, trying to reach us."
+101,50,3,0.07,"They asked, “When is the mother coming to pick up Marie?"
+102,47,2,-0.39,She’s discharged.”
+103,50,5,-1.99,"And Rita said “That’s strange, the mother went to the hospital. She should be there.”"
+104,43,1,-0.35,So they came back to the hospital to look for us.
+105,41,0,-0.24,"Rita said, “Gee, that’s strange,”"
+106,40,0,0.84,"she said, “Mother must’ve gotten really worked up about Marie.”"
+107,36,1,-0.04,"You know, I’ve always had a bad heart."
+108,39,0,-1.03,"“Mother must’ve gotten so upset about Marie, she probably made herself sick,” Rita thought."
+109,42,3,-0.64,"So she came over with my son-in-law, in the car."
+110,44,0,-0.94,"And I was in the main hallway, at the office."
+111,42,0,-1.12,I was all pulled apart.
+112,49,2,-0.01,One doctor wanted to give me a shot.
+113,46,1,-0.09,"I said, “Get out of here,"
+114,49,1,-0.08,"I’ll kick you,” I said."
+115,53,8,-0.39,"“You killed my daughter, now you want to kill me?”"
+116,43,1,0.51,Another nurse came over.
+117,42,3,-0.5,"See, they all knew me."
+118,41,6,0.81,"I had three operations in no time, not even a year."
+119,39,4,-0.06,And I knew all the nurses.
+120,47,0,0.74,"“Mrs. Costa, please, take –”"
+121,48,2,0.25,"“Get out!” I said, “Don’t you dare come near me.”"
+122,53,2,0.78,I was so hysterical.
+123,58,1,-0.34,I was banging my head against the wall and everything.
+124,45,0,-0.45,They had to grab me.
+125,38,0,-0.06,"Then they brought me to the office, see."
+126,46,2,-3.17,"When Rita came in and saw me like that, she asked, “Mother, what happened?”"
+127,48,5,0.34,"I said, “We lost Marie."
+128,52,15,0.29,Marie died.”
+129,32,0,0.22,"Well, that’s this one. This is a picture of Rita."
+130,47,7,0.18,She went down like lightning.
+131,43,5,-1.05,"Dropped to the floor, and that’s a marble floor."
+132,39,1,0.15,She went down like lightning.
+133,41,1,2.17,"And the back of her leg, it felt just like a pole."
+134,39,1,-0.69,"Hard like a pole, the back of her leg."
+135,41,0,0.07,And that girl is suffering.
+136,47,1,-1.68,"Thirty – no, twenty-eight years since her sister died?"
+137,46,5,0.66,"When she gets that pain, it’s like she has phlebitis from it."
+138,48,2,-0.34,"She suffers – seven, eight, nine weeks at a time."
+139,40,2,0.95,"She can’t walk, she goes through such pain since then."
+140,33,4,0.63,And how did they figure how Marie died?
+141,32,1,-0.41,"The girl who was walking with Marie,"
+142,35,2,1.65,told the doctor that Marie was saying goodbye to Arlene.
+143,41,12,0.96,"And all Marie said to that girl was, “Oh, I’ve got a pain in my leg and I can’t see.”"
+144,44,7,1.6,And then Marie collapsed.
+145,70,31,-1.17,"Later, they said it was a blood clot."
+146,48,7,0.55,"I said, “Don’t you dare touch my daughter."
+147,50,6,-0.3,I’ll burn this hospital down!
+148,44,0,0.56,I don’t care who’s in it.”
+149,47,4,-0.0,"I said, “Don’t you dare touch my daughter."
+150,47,0,-0.08,You want to find out what she died from.”
+151,46,4,-0.42,"But if you touch my daughter, I’ll kill you.”"
+152,35,0,-0.05,I wouldn’t let them touch her.
+153,63,5,0.63,So when I got home – they took me home.
+154,43,6,-0.11,I was screaming in the car.
+155,39,0,0.07,"I couldn’t get out, you know, I couldn’t –"
+156,43,6,-0.22,I was screaming!
+157,45,4,-0.36,"Everybody came out, coming out of their doors because they could hear the screams."
+158,47,11,-0.54,My husband was sitting on the step.
+159,42,11,-0.38,"He asked, “What’s the matter? What happened to you?”"
+160,38,1,0.41,"Well, my hair was all pulled, and my face – I was a mess."
+161,36,0,0.37,I didn’t know what I had done to myself.
+162,65,24,0.61,"I said, “Mike, we lost Marie. Marie died.” It was just a shock."
+163,75,51,2.65,My husband had a heart attack.
+164,60,31,0.73,"Yes, he had a heart attack."
+165,50,16,1.99,"Then my son, Michael, yeah. That night."
+166,68,21,-0.7,"Right there, my Michael came, and my Michael collapsed."
+167,51,29,1.24,"He had a heart attack too, no kidding."
+168,39,0,-0.2,"It was all – my two sisters were here, waiting until about half-past four."
+169,39,0,0.15,"They waited because they knew she was coming home that day, waiting for the call."
+170,46,13,1.89,"My younger sister had brought an orange for Marie, and I had never seen an orange like it. It was a big orange, like that."
+171,37,0,-1.46,"She said, “Mary, look, when they call you, when you pick Marie up, let us know, and we’ll come over.”"
+172,34,0,-0.02,"I said, “All right.”"
+173,60,4,1.51,"So, I got home and called everybody, told them what happened."
+174,49,7,0.93,I called my brother-in-law.
+175,47,4,-0.22,He was an undertaker.
+176,46,3,-1.76,My sister’s husband – he’s passed away now too. God rest his soul.
+177,42,0,2.62,Maybe you know him...
+178,46,0,0.96,"So they were waiting for my call, you know,"
+179,59,7,0.22,"but instead, I sent my son James, he was little then."
+180,62,15,-0.17,"I said, “Go tell Aunt Millie and Aunt Jenny.”"
+181,50,0,-0.99,"They had cleaned the pavement,"
+182,50,0,0.7,"and done the cement work, and they were cleaning the pavement."
+183,50,0,0.76,"They said, “Here comes little Jamie,” and now they said,"
+184,52,0,-0.67,“Maybe he’s come to tell us Marie’s home.”
+185,52,6,-0.06,"But when he got there, the poor kid’s eyes were all red."
+186,52,1,-0.37,"They said, “James, what’s the matter, honey?"
+187,51,1,0.1,Why are you crying?”
+188,58,19,-0.17,"“Aunt Jenny, Aunt Millie, Marie died,” he said."
+189,38,0,-0.67,"Well, my sisters and my mother, you know, they were all alive."
+190,42,3,-0.64,It was a shock to everybody. That was a shock that –
+191,43,14,0.57,"The neighborhood – Annie at the store always says, “Mrs. Costa,” every time I go in there, she reminds me, “I just picture Marie standing at that step, looking over here.” She used to stand at that step."
+192,42,14,0.17,"She was a real quiet girl, pleasant, didn’t talk much,"
+193,44,8,-0.67,"but she was so good, I can’t even tell you."
+194,34,4,0.63,That’s all. So that’s what happened.

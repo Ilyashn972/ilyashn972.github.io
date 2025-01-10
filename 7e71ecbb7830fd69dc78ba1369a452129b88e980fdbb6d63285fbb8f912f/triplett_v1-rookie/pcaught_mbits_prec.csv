@@ -1,65 +1,33 @@
-,segment_id,pcaught,prec,mbits,segment_text
-0,1,95,86,"1    22.18
-Name: mean, dtype: object","Back in the days when I was a rookie in the police force, the Chief was a veteran."
-1,2,23,20,"2   -2.64
-Name: mean, dtype: object",He had caught a notorious criminal –
-2,3,27,19,"3    2.62
-Name: mean, dtype: object",or had been awarded for bravery.
-3,4,88,75,"4    6.57
-Name: mean, dtype: object",But he had – a young daughter.
-4,5,57,35,"5    2.54
-Name: mean, dtype: object",And in those days I was a fitness enthusiast.
-5,6,64,51,"6    4.43
-Name: mean, dtype: object",And it seemed she was trying to impress me.
-6,7,34,7,"7    0.98
-Name: mean, dtype: object",I never observed it.
-7,8,60,19,"8    7.4
-Name: mean, dtype: object",Truth is I wasn't very fond of her because she was –
-8,9,80,32,"9    4.47
-Name: mean, dtype: object",She was a charming girl until she opened her mouth.
-9,10,80,54,"10    1.27
-Name: mean, dtype: object",She was a chatterbox.
-10,11,77,16,"11   -0.51
-Name: mean, dtype: object","Goodness, she could talk."
-11,12,94,67,"12    15.99
-Name: mean, dtype: object",Then she left a message one day saying she was going to run away because he was always scolding her about me.
-12,13,70,43,"13    2.04
-Name: mean, dtype: object",He arrived at my apartment.
-13,14,57,14,"14    0.62
-Name: mean, dtype: object",Big intimidating look on his face.
-14,15,44,8,"15    1.49
-Name: mean, dtype: object",I managed to calm him down.
-15,16,80,34,"16    7.77
-Name: mean, dtype: object",and proposed “Well we'll search for her
-16,17,71,18,"17    5.89
-Name: mean, dtype: object",and if we can't locate her well you can – do whatever you think is right.”
-17,18,37,16,"18    1.52
-Name: mean, dtype: object",I was strategizing.
-18,19,58,8,"19    2.08
-Name: mean, dtype: object",So he accepted my offer.
-19,20,88,57,"20    10.87
-Name: mean, dtype: object",And we went to where they found her scarf – near a park.
-20,21,61,8,"21    3.22
-Name: mean, dtype: object",and we traced down a little more
-21,22,63,21,"22    2.28
-Name: mean, dtype: object",and we couldn't locate her.
-22,23,50,5,"23    0.39
-Name: mean, dtype: object",And returned
-23,24,82,15,"24    3.06
-Name: mean, dtype: object",– it was a police station –
-24,25,93,81,"25    6.81
-Name: mean, dtype: object",she was sitting on a chair with a book in her hands.
-25,26,87,44,"26    1.32
-Name: mean, dtype: object",She hadn't run away.
-26,27,17,5,"27    1.98
-Name: mean, dtype: object",But – nevertheless – that resolved the issue for that day.
-27,28,86,76,"28    16.87
-Name: mean, dtype: object","But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”"
-28,29,78,64,"29    0.35
-Name: mean, dtype: object",And I did.
-29,30,78,48,"30   -0.3
-Name: mean, dtype: object",I transferred.
-30,31,67,26,"31   -1.04
-Name: mean, dtype: object",and left.
-31,32,61,44,"32    4.26
-Name: mean, dtype: object",That was the end of my rookie year.
+segment_id,pcaught,prec,mbits,segment_text
+1,95,86,22.18,"Back in the days when I was a rookie in the police force, the Chief was a veteran."
+2,23,20,-2.64,He had caught a notorious criminal –
+3,27,19,2.62,or had been awarded for bravery.
+4,88,75,6.57,But he had – a young daughter.
+5,57,35,2.54,And in those days I was a fitness enthusiast.
+6,64,51,4.43,And it seemed she was trying to impress me.
+7,34,7,0.98,I never observed it.
+8,60,19,7.4,Truth is I wasn't very fond of her because she was –
+9,80,32,4.47,She was a charming girl until she opened her mouth.
+10,80,54,1.27,She was a chatterbox.
+11,77,16,-0.51,"Goodness, she could talk."
+12,94,67,15.99,Then she left a message one day saying she was going to run away because he was always scolding her about me.
+13,70,43,2.04,He arrived at my apartment.
+14,57,14,0.62,Big intimidating look on his face.
+15,44,8,1.49,I managed to calm him down.
+16,80,34,7.77,and proposed “Well we'll search for her
+17,71,18,5.89,and if we can't locate her well you can – do whatever you think is right.”
+18,37,16,1.52,I was strategizing.
+19,58,8,2.08,So he accepted my offer.
+20,88,57,10.87,And we went to where they found her scarf – near a park.
+21,61,8,3.22,and we traced down a little more
+22,63,21,2.28,and we couldn't locate her.
+23,50,5,0.39,And returned
+24,82,15,3.06,– it was a police station –
+25,93,81,6.81,she was sitting on a chair with a book in her hands.
+26,87,44,1.32,She hadn't run away.
+27,17,5,1.98,But – nevertheless – that resolved the issue for that day.
+28,86,76,16.87,"But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”"
+29,78,64,0.35,And I did.
+30,78,48,-0.3,I transferred.
+31,67,26,-1.04,and left.
+32,61,44,4.26,That was the end of my rookie year.
