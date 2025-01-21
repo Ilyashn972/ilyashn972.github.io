@@ -47,46 +47,73 @@
     <section>
         <h2>Results</h2>
         <ul>
+            <ul>
+                <h4>Heatmap of Chunks</h4>
             <li>
                 <a href="chunks.html">Chunks</a> - Explore chunks sorted by quality of recall.
                 <a href="legend.html">Legend</a>
             </li>
             <li>
-                <a href="pearson.html">Pearson Correlation</a> - Pearson correlation between segments
-                recalled by the same clause.
-                <a href="pearson_p_value.html">P-value</a>
-            </li>
+                <a href="chunks_with_normalized_fan_out.html"> Chunks with normalized fan out </a>
+               </li>
             <li>
-                <a href="pearson_by_subject.html">Pearson by Subject</a> - Pearson correlation of two segments being recalled by the same subject, using prompt 5 from the paper.
-                <a href="pearson_by_subject_p_value.html">P-value</a>
+                <a href="compression_ratio.html"> Compression Ratio </a> Dynamics of fan_out with compression ratio
             </li>
+
+            </ul>
+            <ul> <h4>Probability of Recall</h4>
+                <li>
+                    <a href="recalled_and_related_segments.html">Recalled and Related Segments</a> - Probability of recall
+                    for each segment and probability to be mapped to.
+                </li>
+            <li><a href="proc_vs_normalized_fan_out.html">Probability of Recall vs Normalized Fanout </a></li>
             <li>
-                <a href="percent_per_rank.html">Percent per Rank</a> - For each possible rank (number of segments),
-                shows the percentage of corresponding clauses.
+            
+                    <a href="proc_vs_tree.html"> Probability of Recall vs Probality to appear in the Tree</a>
+        </li>
+        </ul>
+      <br>
             </li>
-            <li>
-                <a href="fan_out_ratio.html">Fan-Out Ratio</a> - Percentage of clauses that include a single segment
-                for each length of recall.
-            </li>
-            <li>
-                <a href="recalled_and_related_segments.html">Recalled and Related Segments</a> - Probability of recall
-                for each segment and probability to be mapped to.
-            </li>
-            <li>
-                <a href="mean_and_median_lengths.html">Mean and Median Lengths</a> - Average and median lengths for
-                chunks that include specific subjects.
-            </li>
-            <li>
-                <a href="fan_out_full.html">Fan-Out Full</a> - Fan-out values per subject per clause.
-            </li>
-            <li>
-                <a href="pearson_tuples_by_subject.html">Pearson Chunks by Subject</a> - Probability of two chunks
-                being recalled by the same subject.
-                <a href="pearson_tuples_by_subject_p_value.html">P-value</a>
-            </li>
+            
             <li>
                 <a href="max_clause_id_vs_recall.html">Quality of recall vs its length</a> - max clause id vs recall
             </li>
+            <ul>
+                <h4>Pearson Correlation Between Segments and Chunks</h4>
+                <li><a href="pearson.html">Pearson Correlation</a> - Pearson correlation between segments
+                    recalled by the same clause.
+                </li>
+                <li>
+                    <a href="pearson_by_subject.html">Pearson by Subject</a> - Pearson correlation of two segments being recalled by the same subject, using prompt 5 from the paper.
+                    <a href="pearson_by_subject_p_value.html">P-value</a>
+                </li>
+                <li>
+                    <a href="pearson_tuples_by_subject.html">Pearson Chunks by Subject</a> - Probability of two chunks
+                    being recalled by the same subject.
+                    <a href="pearson_tuples_by_subject_p_value.html">P-value</a>
+                </li>
+            </ul>
+            <ul>
+                <h4>Fan out</h4>
+                <li><a href="percent_per_rank.html">Percent per Rank</a> - For each possible rank (number of segments),
+                shows the percentage of corresponding clauses.
+                </li>
+                <li>
+                    <a href="fan_out_ratio.html">Fan-Out Ratio</a> - Percentage of clauses that include a single segment
+                    for each length of recall.
+                </li>
+                
+                
+                <li>
+                    <a href="fan_out_full.html">Fan-Out Full</a> - Fan-out values per subject per clause.
+                </li>
+                <li>
+                    <a href="mean_and_median_lengths.html">Mean and Median Lengths</a> - Average and median lengths for
+                    chunks that include specific subjects.
+                </li>
+            </ul>
+            
+            <br>
                         <li>
                             <a href="transition_between_chunks.html">Transition between chunks</a> - Number of time when one 
                             chunk suceeds by another
@@ -94,26 +121,14 @@
         <li>
             <a href="svd_embeddings.html"> SVD </a> svd embeddings to 2 components
         </li>
-        <li>
-            <a href="compression_ratio.html"> Compression Ratio </a> Dynamics of fan_out with compression ratio 
-        </li>
-
-        <li>
-            <a href="chunks_with_normalized_fan_out.html">  Chunks with normalized fan out </a>
-            <a href="proc_vs_normalized_fan_out.html">Probability of Recall vs Normalized Fanout </a>
-        </li>
+        
+        
         <li>
             <a href="order_statistics_frequency.html"> Order statistics frequency </a> and 
             <a href="order_statistics_ratio.html"> Order statistics ratio </a>
         </li>
         <li>
             <a href="humming_distance_heatmap.html"> Humming distance heatmap</a>
-        </li>
-        <li>
-            <a href="proc_vs_tree.html"> Probability of Recall vs Probality to appear in the Tree</a>
-        </li>
-        <li>
-            <a href="mbits_vs_catch.html"> Meaning bits vs Catch (Probality to appear in the Tree)</a>
         </li>
         <li>
             <a href="c_histogram.html"> Historgram of caught segments by subject with fiting cauchy distribution</a>
@@ -124,7 +139,12 @@
         <li>
             <a href="emulate_vs_real.html"> Emulation by gpt4o vs Real</a>
         </li>
-        <HR>
+        <ul>
+            <h4> Meaningful bits.</h4>
+        <!-- <li>
+            <a href="mbits_vs_catch.html"> Meaning bits vs Catch (Probality to appear in the Tree)</a>
+        </li>-->
+        
         <li>
             <a href="recall_meaningful_bits.html"> Meaningful bits of recall</a>
         </li>
@@ -150,6 +170,7 @@
         <li>
             <a href="mbits_for_summaries_and_recalls.html"> "Plot meaningful bits for selected recalls and a few attempts for gpt4 summaries" </a>
         </li>
+        </ul>
         </ul>
     </section>
 
