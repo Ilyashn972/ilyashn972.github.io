@@ -1,9 +1,10 @@
 ,panic
-#segments,56
-#recalled_segments,1986
-#subjects,100
-#clauses,1695
-#mentioned segments,3167
-not_continuous,181
-not_in_order,266
-duplications,180
+#segments,56.0
+#chars,1890.0
+#caught segments (without duplication) in average,29.82
+#recalled_segments in average,19.86
+#subjects,100.0
+#clauses,1695.0
+not_continuous,181.0
+not_in_order,266.0
+duplications,180.0

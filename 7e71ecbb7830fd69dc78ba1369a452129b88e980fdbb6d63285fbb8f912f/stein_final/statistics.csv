@@ -1,9 +1,10 @@
 ,stein_final
-#segments,130
-#recalled_segments,730
-#subjects,99
-#clauses,1547
-#mentioned segments,4088
-not_continuous,200
-not_in_order,424
-duplications,858
+#segments,130.0
+#chars,7323.0
+#caught segments (without duplication) in average,29.8
+#recalled_segments in average,7.77
+#subjects,99.0
+#clauses,1547.0
+not_continuous,200.0
+not_in_order,424.0
+duplications,858.0

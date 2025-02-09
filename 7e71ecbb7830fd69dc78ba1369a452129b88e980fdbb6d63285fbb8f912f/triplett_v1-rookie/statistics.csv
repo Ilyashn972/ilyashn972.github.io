@@ -1,9 +1,10 @@
 ,triplett_v1-rookie
-#segments,32
-#recalled_segments,1116
-#subjects,99
-#clauses,1502
-#mentioned segments,2500
-not_continuous,118
-not_in_order,163
-duplications,325
+#segments,32.0
+#chars,1329.0
+#caught segments (without duplication) in average,21.28
+#recalled_segments in average,11.39
+#subjects,99.0
+#clauses,1502.0
+not_continuous,118.0
+not_in_order,163.0
+duplications,325.0

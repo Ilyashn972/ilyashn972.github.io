@@ -1,9 +1,10 @@
 ,schissel_v2-lake
-#segments,18
-#recalled_segments,897
-#subjects,98
-#clauses,977
-#mentioned segments,1329
-not_continuous,134
-not_in_order,192
-duplications,166
+#segments,18.0
+#chars,775.0
+#caught segments (without duplication) in average,11.73
+#recalled_segments in average,9.06
+#subjects,98.0
+#clauses,977.0
+not_continuous,134.0
+not_in_order,192.0
+duplications,166.0

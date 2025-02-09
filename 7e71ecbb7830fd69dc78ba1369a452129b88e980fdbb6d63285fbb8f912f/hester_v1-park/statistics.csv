@@ -1,9 +1,10 @@
 ,hester_v1-park
-#segments,54
-#recalled_segments,1571
-#subjects,98
-#clauses,1766
-#mentioned segments,2795
-not_continuous,330
-not_in_order,302
-duplications,263
+#segments,54.0
+#chars,2414.0
+#caught segments (without duplication) in average,25.6
+#recalled_segments in average,16.36
+#subjects,98.0
+#clauses,1766.0
+not_continuous,330.0
+not_in_order,302.0
+duplications,263.0

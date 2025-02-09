@@ -1,9 +1,10 @@
 ,doSomething
-#segments,81
-#recalled_segments,1268
-#subjects,95
-#clauses,2000
-#mentioned segments,4368
-not_continuous,532
-not_in_order,438
-duplications,498
+#segments,81.0
+#chars,3426.0
+#caught segments (without duplication) in average,38.95
+#recalled_segments in average,14.09
+#subjects,95.0
+#clauses,2000.0
+not_continuous,532.0
+not_in_order,438.0
+duplications,498.0

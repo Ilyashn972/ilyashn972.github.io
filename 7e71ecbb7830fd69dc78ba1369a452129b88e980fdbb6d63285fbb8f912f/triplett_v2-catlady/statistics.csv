@@ -1,9 +1,10 @@
 ,triplett_v2-catlady
-#segments,32
-#recalled_segments,1022
-#subjects,98
-#clauses,1413
-#mentioned segments,2316
-not_continuous,142
-not_in_order,202
-duplications,357
+#segments,32.0
+#chars,1291.0
+#caught segments (without duplication) in average,19.18
+#recalled_segments in average,10.43
+#subjects,98.0
+#clauses,1413.0
+not_continuous,142.0
+not_in_order,202.0
+duplications,357.0

@@ -1,0 +1,123 @@
+segment_id,segment_text,real_rec,real_caught,emulated_rec,emulated_caught,rec_difference,caught_difference
+1,This is a story about three of my friends,92,57,9,90,-83,33
+2,that I met in 1949,55,66,5,40,-50,-26
+3,when I started college.,47,66,7,90,-40,24
+4,"Actually I met them before that,",36,50,3,30,-33,-20
+5,we became friends after we all...,0,36,4,40,4,4
+6,went to school at the same place.,23,58,4,30,-19,-28
+7,"Previous to that during high school we'd all been high school athletes at different schools,",44,71,4,80,-40,9
+8,and so we were acquainted.,21,55,2,30,-19,-25
+9,"But then after graduation when we all enrolled in school,",12,64,1,70,-11,6
+10,"we found that the four of us were all now attending the same school,",21,77,2,80,-19,3
+11,and we became quite good friends.,20,68,3,80,-17,12
+12,"I was the kid from the farm,",79,87,3,70,-76,-17
+13,the other three guys all lived in the city.,70,71,7,60,-63,-11
+14,"So being big macho men that we all were,",13,50,1,60,-12,10
+15,"they used to like to come out to the farm and hunt,",73,91,3,100,-70,9
+16,"and they'd come out,",12,51,1,30,-11,-21
+17,and help me do chores and things like that.,25,48,1,30,-24,-18
+18,Then we'd go rabbit hunting and squirrel hunting and things of that nature.,45,85,3,90,-42,5
+19,I never really enjoyed hunting.,61,80,6,100,-55,20
+20,"Uh ... being born and raised on the farm I was used to the outdoors,",22,53,1,40,-21,-13
+21,wasn't all that exciting to me.,6,49,0,70,-6,21
+22,"But these guys got a big kick out of it,",17,47,0,0,-17,-47
+23,so I'd go along just to be one of the group.,32,59,2,70,-30,11
+24,"Things went on,",0,13,0,10,0,-3
+25,"we did this for several years,",13,24,0,20,-13,-4
+26,"they were always coming out to the farm,",5,49,0,10,-5,-39
+27,and hunting.,2,48,0,30,-2,-18
+28,"After we'd been acquainted for several years,",2,47,1,70,-1,23
+29,one of them got the idea they'd like to go bear hunting up in Canada.,62,94,4,90,-58,-4
+30,"Now that didn't really appeal to me,",41,66,3,100,-38,34
+31,"but I'd always been one of the group,",13,58,1,60,-12,2
+32,"and I couldn't find any real reason not to go,",9,54,0,50,-9,-4
+33,"so I left them talk me into it,",30,71,2,70,-28,-1
+34,wasn't too hepped up on this at all.,2,52,0,70,-2,18
+35,"I don't care anything really much about hunting period,",0,62,0,70,0,8
+36,let alone bear hunting.,0,35,1,30,1,-5
+37,Be about my luck the bear would wind up hunting me.,1,29,0,20,-1,-9
+38,"But as I said,",0,27,0,10,0,-17
+39,I left them talk me into it.,4,53,1,20,-3,-33
+40,"So we took an airplane out of Fort Wayne,",29,72,2,80,-27,8
+41,"and we flew way up into Canada some place,",36,72,3,90,-33,18
+42,"and we landed on a lake,",14,58,0,60,-14,2
+43,"and then we rented canoes,",31,68,1,60,-30,-8
+44,"and paddled for another ... day and a half it seemed to me,",12,73,0,70,-12,-3
+45,'till we got way up in the north woods.,12,49,2,80,-10,31
+46,"Then after we ... went as far as we could in the canoes,",0,52,0,50,0,-2
+47,"then we had to backpack for another ... five hundred miles I thought,",27,73,0,80,-27,7
+48,'till we got to this cabin that they had rented way up there in the north woods.,52,75,6,100,-46,25
+49,"And after I got there,",0,31,0,20,0,-11
+50,"I was even more apprehensive than I had been even before we started,",4,45,2,70,-2,25
+51,'cause I didn't really need any part of that.,0,24,0,30,0,6
+52,"That was pretty spooky looking territory, let me tell you.",26,58,0,50,-26,-8
+53,"So we got up there,",0,33,0,10,0,-23
+54,"and got set up in the cabin,",5,49,0,10,-5,-39
+55,and ... got our groceries stored and everything.,11,33,0,10,-11,-23
+56,And after we got to discussing it,3,48,0,80,-3,32
+57,those guys weren't any more hot about going out in those woods and looking for a bear than I was.,1,73,1,90,0,17
+58,"We sat around there for three or four days,",46,68,3,70,-43,2
+59,"played cards,",48,74,3,50,-45,-24
+60,"and ate,",30,61,3,50,-27,-11
+61,"and slept,",27,57,3,50,-24,-7
+62,and we just couldn't ...,1,31,0,50,-1,19
+63,no one was in the mood to go out and hunt bear,12,61,3,80,-9,19
+64,'cause that's just a plain old spooky looking place.,16,39,1,40,-15,1
+65,"We never ventured outside at night,",8,37,0,30,-8,-7
+66,we stayed right there in the old cabin.,2,42,0,30,-2,-12
+67,"Well after we'd been there for three or four days,",7,37,0,30,-7,-7
+68,"we got to talking it over,",1,59,0,90,-1,31
+69,"and somebody said “Hey,",0,45,0,40,0,-5
+70,if we don't go out and hunt some bear ...,12,62,0,50,-12,-12
+71,"we've got to find a bear to take back home with us,",35,65,4,50,-31,-15
+72,"or we're really going to get a bad time from the rest of the people,",27,78,2,50,-25,-28
+73,"'cause too many people know we'd gone bear hunting,",11,73,2,50,-9,-23
+74,and if we come home skunked with no bear they're really going to give us a bad time.”,22,34,4,30,-18,-4
+75,"Soo ... no one wanted to go out,",3,35,0,40,-3,5
+76,so we all decided that we'd cut the cards.,38,86,5,100,-33,14
+77,"Whoever got the high card ... would go out and get a bear,",60,79,7,70,-53,-9
+78,"and the rest of them would skin him butcher him and pack him back down,",30,66,0,30,-30,-36
+79,so we could take him home with us.,5,41,0,30,-5,-11
+80,"So you know who YOU KNOW WHO got the high card,",59,86,8,100,-51,14
+81,the guy that didn't even want to be there in the first place.,40,59,3,60,-37,1
+82,But I had agreed to play the game ...,3,59,0,60,-3,1
+83,"So ... I took the old gun,",19,74,0,40,-19,-34
+84,and I go out bear hunting.,34,40,2,0,-32,-40
+85,I didn't like this at all.,4,30,0,0,-4,-30
+86,"I'm walking out there in the woods for hours it seems like,",9,62,0,60,-9,-2
+87,"and I just wasn't seeing any bears or anything,",2,54,0,30,-2,-24
+88,"and finally I heard a noise,",14,62,0,70,-14,8
+89,"and I turned around,",7,62,0,70,-7,8
+90,"and there was the biggest old bear I'd ever seen in my life,",65,91,5,80,-60,-11
+91,I'd never even seen a PICTURE of one THAT big.,18,47,0,40,-18,-7
+92,"I whipped up the gun,",13,71,0,50,-13,-21
+93,"and pulled the trigger,",19,68,0,70,-19,2
+94,and nothing happened.,31,85,2,90,-29,5
+95,I'd forgot to LOAD that turkey.,52,48,5,30,-47,-18
+96,Well he had ...,1,28,0,20,-1,-8
+97,"he just had no desires to have me in his territory,",7,53,0,20,-7,-33
+98,and he made for me.,18,49,1,20,-17,-29
+99,"Well there was nothing for me to do but run,",19,89,1,100,-18,11
+100,"and I turned around,",3,78,0,90,-3,12
+101,"I ran as hard as I could go,",20,81,0,80,-20,-1
+102,"and I thought I used to be pretty fast,",2,68,0,70,-2,2
+103,"but that old bear,",4,70,0,80,-4,10
+104,"man he was gaining,",7,72,0,80,-7,8
+105,he was just right on my heels ...,3,62,0,80,-3,18
+106,And when I got within sight of that cabin,14,84,0,100,-14,16
+107,"I started yelling “OPEN THE DOOR, OPEN THE DOOR!”",52,87,0,70,-52,-17
+108,"Man I was whipping down there just as hard as I could go,",2,52,0,60,-2,8
+109,"and that old bear right on my tail,",8,48,2,60,-6,12
+110,"and they opened the door,",22,72,0,60,-22,-12
+111,"and I got right to the cabin door,",4,66,0,60,-4,-6
+112,"I made a quick turn to the left,",19,74,0,90,-19,16
+113,and that old bear went right on in.,42,79,7,100,-35,21
+114,"I just reached back,",1,62,0,90,-1,28
+115,"and pulled the door shut,",20,66,2,90,-18,24
+116,"and said “THERE HE IS FELLOWS,",33,78,3,90,-30,12
+117,"YOU SKIN HIM,",26,74,5,100,-21,26
+118,I'LL GO GET ANOTHER ONE!”,21,55,2,70,-19,15
+119,"Now all this happened thirty years ago,",30,55,7,80,-23,25
+120,and all my buddies agreed ... that I lived up to my commitment.,15,59,1,70,-14,11
+121,"But can you BELIEVE,",10,60,0,80,-10,20
+122,they haven't asked me to go hunting one time since that day.,61,73,9,90,-52,17

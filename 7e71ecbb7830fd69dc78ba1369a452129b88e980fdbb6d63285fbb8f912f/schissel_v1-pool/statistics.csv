@@ -1,9 +1,10 @@
 ,schissel_v1-pool
-#segments,18
-#recalled_segments,474
-#subjects,54
-#clauses,506
-#mentioned segments,655
-not_continuous,86
-not_in_order,126
-duplications,68
+#segments,18.0
+#chars,803.0
+#caught segments (without duplication) in average,10.81
+#recalled_segments in average,8.62
+#subjects,54.0
+#clauses,506.0
+not_continuous,86.0
+not_in_order,126.0
+duplications,68.0

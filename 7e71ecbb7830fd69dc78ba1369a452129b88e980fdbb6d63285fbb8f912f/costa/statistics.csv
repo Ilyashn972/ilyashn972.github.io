@@ -1,9 +1,10 @@
 ,costa
-#segments,193
-#recalled_segments,1245
-#subjects,92
-#clauses,2739
-#mentioned segments,11587
-not_continuous,550
-not_in_order,873
-duplications,2263
+#segments,194.0
+#chars,9181.0
+#caught segments (without duplication) in average,92.61
+#recalled_segments in average,15.0
+#subjects,93.0
+#clauses,2766.0
+not_continuous,702.0
+not_in_order,979.0
+duplications,3958.0

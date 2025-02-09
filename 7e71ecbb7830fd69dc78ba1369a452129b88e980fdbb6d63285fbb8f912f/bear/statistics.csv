@@ -1,9 +1,10 @@
 ,bear
-#segments,122
-#recalled_segments,2567
-#subjects,100
-#clauses,2529
-#mentioned segments,8014
-not_continuous,576
-not_in_order,431
-duplications,598
+#segments,122.0
+#chars,4882.0
+#caught segments (without duplication) in average,72.29
+#recalled_segments in average,26.19
+#subjects,100.0
+#clauses,2529.0
+not_continuous,576.0
+not_in_order,431.0
+duplications,598.0

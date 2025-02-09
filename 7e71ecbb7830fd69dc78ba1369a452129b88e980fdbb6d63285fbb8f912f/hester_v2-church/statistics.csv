@@ -1,9 +1,10 @@
 ,hester_v2-church
-#segments,54
-#recalled_segments,1597
-#subjects,100
-#clauses,1925
-#mentioned segments,3242
-not_continuous,347
-not_in_order,358
-duplications,343
+#segments,54.0
+#chars,3226.0
+#caught segments (without duplication) in average,28.6
+#recalled_segments in average,16.13
+#subjects,100.0
+#clauses,1925.0
+not_continuous,347.0
+not_in_order,358.0
+duplications,343.0

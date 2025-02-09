@@ -1,9 +1,10 @@
 ,boyscout
-#segments,19
-#recalled_segments,837
-#subjects,97
-#clauses,928
-#mentioned segments,1407
-not_continuous,155
-not_in_order,132
-duplications,170
+#segments,19.0
+#chars,711.0
+#caught segments (without duplication) in average,12.54
+#recalled_segments in average,8.54
+#subjects,97.0
+#clauses,928.0
+not_continuous,155.0
+not_in_order,132.0
+duplications,170.0

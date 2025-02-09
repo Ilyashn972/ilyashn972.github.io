@@ -1,0 +1,195 @@
+segment_id,segment_text,real_rec,real_caught,emulated_rec,emulated_caught,rec_difference,caught_difference
+1,My daughter died.,94,77,10,100,-84,23
+2,It’ll be twenty-eight years this month.,45,58,8,100,-37,42
+3,"The thirtieth of this month, yeah.",14,51,2,100,-12,49
+4,She died at Methodist Hospital.,54,57,6,70,-48,13
+5,She had an operation for appendicitis.,64,72,10,100,-54,28
+6,"It was late Saturday afternoon when they operated, very late.",7,28,4,50,-3,22
+7,"Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was.",25,44,4,60,-21,16
+8,She was still under ether.,22,39,6,80,-16,41
+9,"Back then, they used a lot of ether.",11,32,4,70,-7,38
+10,There was a chair there.,19,30,4,40,-15,10
+11,"They were just starting to get people out of bed, you know.",6,43,3,90,-3,47
+12,"So, Victoria saw the chair,",8,22,3,50,-5,28
+13,"and she said to the nurse, “What’s this chair doing here?”",12,38,3,60,-9,22
+14,"The nurse said, “Well, we’ve got to get her out of bed.”",16,53,4,70,-12,17
+15,"She said, “What are you talking about? She’s still under ether.”",10,27,3,70,-7,43
+16,“She’s too sick.”,6,31,2,60,-4,29
+17,"But the nurse said, “Well, that’s the doctor’s orders.”",10,44,1,60,-9,16
+18,"So, they went to get her out of bed,",12,43,2,70,-10,27
+19,"and she passed out,",23,58,1,90,-22,32
+20,and they had to put her back in bed.,11,30,1,80,-10,50
+21,"See, here, she never – I don’t know if they knew or what,",0,29,1,80,1,51
+22,"but I blame them for the blood clot she got, taking her out of bed.",34,63,4,100,-30,37
+23,"So, when she was walking around to come home after ten days,",8,46,2,90,-6,44
+24,I was waiting for the call from the hospital.,23,65,0,90,-23,25
+25,I didn’t have a phone then.,15,33,0,70,-15,37
+26,"The lady from the store who had a phone called me, “Mrs. Costa,” at aquarter to five at night.",12,71,0,80,-12,9
+27,"“Mrs. Costa, they just called you from the hospital.",10,62,0,80,-10,18
+28,Go Pick Marie up.,11,77,0,80,-11,3
+29,She’s discharged.”,13,30,1,70,-12,40
+30,I had all the clothes laid out on the table.,5,44,0,70,-5,26
+31,"And Rita was – I was cooking,",11,47,0,70,-11,23
+32,"I said, “Rita, finish the cooking.”",9,43,0,70,-9,27
+33,Daddy will be home soon.”,6,43,0,70,-6,27
+34,He was working down in the yard.,8,37,0,70,-8,33
+35,"I said, “And put a big pot of coffee on,” because she had been wishing for coffee.",16,40,0,70,-16,30
+36,"And you know, every morning, that first cup of coffee, I offered it to her.",4,36,1,80,-3,44
+37,"When I get up in the morning, the first cup is hers.",5,33,2,70,-3,37
+38,"Since she’s gone, I never forget that.",0,31,0,70,0,39
+39,"So I said, “Put a pot of coffee on,",2,35,0,70,-2,35
+40,and send for some cake from the bakery.”,5,35,0,70,-5,35
+41,I’m going to get Marie; they called me.”,0,49,0,70,0,21
+42,"“All right, mother, go ahead,” she said, “I’ll finish up.”",0,25,0,70,0,45
+43,"And I went myself. You know, I had the coat on my arm.",5,45,0,80,-5,35
+44,She was operated on in March –,2,33,0,60,-2,27
+45,"No, April! So that was the thirtieth.",0,50,0,80,0,30
+46,"She was operated – ten days before, so that would be the twentieth.",10,46,0,70,-10,24
+47,"The twentieth of April, right? It was kind of chilly.",5,21,0,40,-5,19
+48,"Oh, and I had everything in a bag,",1,39,0,60,-1,21
+49,and I had the coat on my arm and her dress hanging on my arm.,12,43,0,60,-12,17
+50,"She saw me from the windows, from Wolf Street.",10,37,0,60,-10,23
+51,"She said, “My mother’s just coming.”",0,26,0,60,0,34
+52,"She was with the girls, saying goodbye to everyone – you know how it is.",3,32,0,60,-3,28
+53,"They told me on the phone, it would be ten dollars more for her board.",2,24,0,70,-2,46
+54,And to make sure I brought her girdle to put on.,2,24,0,70,-2,46
+55,"I said, “All right, I’ll be right over.”",0,22,0,70,0,48
+56,And I went.,0,49,0,70,0,21
+57,"But when I got there, the nurse said to me, “Sit down, Mrs. Costa, sit here for a while.”",15,66,0,60,-15,-6
+58,"So I sat down, and I was praying for another lady in the hospital that had an operation for her gall bladder.",22,42,0,60,-22,18
+59,"She lived near my sister, and she had ten children.",12,35,0,60,-12,25
+60,They had said she was in very bad shape.,1,33,0,60,-1,27
+61,"I prayed, “Oh dear God, don’t take that mother away from her children.”",6,37,0,60,-6,23
+62,"I was praying for her, you know.",1,22,0,60,-1,38
+63,Then a little nurse’s aide went to the closet and got some blankets.,2,30,0,60,-2,30
+64,"I started getting the chills,",6,28,0,60,-6,32
+65,"and I was thinking about it,",0,21,0,60,0,39
+66,"when the aide said to the nurse, “Oh, she’s going into a cold sweat now.”",3,32,0,70,-3,38
+67,"The nurse hung up the phone and came to me. She said, “Mrs. Costa, has your daughter ever had a fainting spell?”",13,52,0,60,-13,8
+68,"“Oh my God!” I said, “Don’t tell me you’re running for my daughter!”",3,51,0,60,-3,9
+69,"“Yes,” she said, “come on in.”",3,46,0,70,-3,24
+70,"So, I went into the room.",3,51,0,70,-3,19
+71,And my daughter was on the bed with her bedroom slippers and her housecoat on.,12,52,0,80,-12,28
+72,"And the beads of sweat – honest to God, not to exaggerate, they were that big.",6,47,0,90,-6,43
+73,It came – just poured from her –,0,36,0,90,0,54
+74,"I said, “What did you do, kill my daughter?",23,72,0,80,-23,8
+75,You killed her! You killed her!”,20,58,0,80,-20,22
+76,That’s what I kept yelling.,3,53,0,90,-3,37
+77,"And the doctor rushed in,",2,39,0,70,-2,31
+78,"see, they were trying to get the doctor, you know.",0,32,0,70,0,38
+79,She was a lady doctor.,2,42,0,70,-2,28
+80,"Dr. Schwartz actually did the operation, but she was his assistant, Dr. Montique.",8,38,0,70,-8,32
+81,She was a lady doctor.,11,39,0,70,-11,31
+82,"So, she came in and she said –",0,26,0,70,0,44
+83,"I said, “You killed my daughter – what did you do to her?”",4,66,0,90,-4,24
+84,"She said, “We don’t know what happened, Mrs. Costa.”",8,50,0,80,-8,30
+85,She took me away from the bed.,1,29,0,70,-1,41
+86,"The nurse said to me, “Talk to her.”",3,38,0,80,-3,42
+87,"I said, “Talk to her? My daughter’s dying, what am I supposed to tell her?”",2,36,0,80,-2,44
+88,And I was screaming.,7,64,1,80,-6,16
+89,My hair was all pulled out.,4,53,0,80,-4,27
+90,"I went hysterical, you know what I mean? She was only eighteen years old.",10,63,1,90,-9,27
+91,"Beautiful girl, you can see from her picture.",2,32,0,70,-2,38
+92,"And just as I turned my back, my daughter passed away.",7,60,0,100,-7,40
+93,She was getting ready to go home.,1,46,0,100,-1,54
+94,I had the clothes and everything ready.,1,38,0,70,-1,32
+95,My husband was waiting for her.,4,50,0,60,-4,10
+96,"He came home, went upstairs to shave and wash, then sat on the step, waiting.",7,50,0,60,-7,10
+97,“When is the mother coming?”,0,45,0,70,0,25
+98,The hospital kept calling.,3,43,0,70,-3,27
+99,The people in the office didn’t know what had happened yet.,1,46,0,70,-1,24
+100,"They kept calling the store, trying to reach us.",0,47,0,70,0,23
+101,"They asked, “When is the mother coming to pick up Marie?",3,50,0,70,-3,20
+102,She’s discharged.”,2,47,1,70,-1,23
+103,"And Rita said “That’s strange, the mother went to the hospital. She should be there.”",5,50,0,70,-5,20
+104,So they came back to the hospital to look for us.,1,43,0,70,-1,27
+105,"Rita said, “Gee, that’s strange,”",0,41,0,70,0,29
+106,"she said, “Mother must’ve gotten really worked up about Marie.”",0,40,0,70,0,30
+107,"You know, I’ve always had a bad heart.",1,36,0,70,-1,34
+108,"“Mother must’ve gotten so upset about Marie, she probably made herself sick,” Rita thought.",0,39,0,70,0,31
+109,"So she came over with my son-in-law, in the car.",3,42,0,70,-3,28
+110,"And I was in the main hallway, at the office.",0,44,0,70,0,26
+111,I was all pulled apart.,0,42,0,70,0,28
+112,One doctor wanted to give me a shot.,2,49,0,70,-2,21
+113,"I said, “Get out of here,",1,46,0,70,-1,24
+114,"I’ll kick you,” I said.",1,49,0,70,-1,21
+115,"“You killed my daughter, now you want to kill me?”",8,53,0,70,-8,17
+116,Another nurse came over.,1,43,0,70,-1,27
+117,"See, they all knew me.",3,42,0,70,-3,28
+118,"I had three operations in no time, not even a year.",6,41,0,70,-6,29
+119,And I knew all the nurses.,4,39,0,70,-4,31
+120,"“Mrs. Costa, please, take –”",0,47,0,70,0,23
+121,"“Get out!” I said, “Don’t you dare come near me.”",2,48,0,70,-2,22
+122,I was so hysterical.,2,53,0,70,-2,17
+123,I was banging my head against the wall and everything.,1,58,0,70,-1,12
+124,They had to grab me.,0,45,0,70,0,25
+125,"Then they brought me to the office, see.",0,38,0,70,0,32
+126,"When Rita came in and saw me like that, she asked, “Mother, what happened?”",2,46,0,70,-2,24
+127,"I said, “We lost Marie.",5,48,0,70,-5,22
+128,Marie died.”,15,52,0,80,-15,28
+129,"Well, that’s this one. This is a picture of Rita.",0,32,0,80,0,48
+130,She went down like lightning.,7,47,0,80,-7,33
+131,"Dropped to the floor, and that’s a marble floor.",5,43,0,70,-5,27
+132,She went down like lightning.,1,39,0,70,-1,31
+133,"And the back of her leg, it felt just like a pole.",1,41,0,80,-1,39
+134,"Hard like a pole, the back of her leg.",1,39,0,70,-1,31
+135,And that girl is suffering.,0,41,0,70,0,29
+136,"Thirty – no, twenty-eight years since her sister died?",1,47,0,80,-1,33
+137,"When she gets that pain, it’s like she has phlebitis from it.",5,46,0,90,-5,44
+138,"She suffers – seven, eight, nine weeks at a time.",2,48,0,100,-2,52
+139,"She can’t walk, she goes through such pain since then.",2,40,0,90,-2,50
+140,And how did they figure how Marie died?,4,33,0,60,-4,27
+141,"The girl who was walking with Marie,",1,32,0,60,-1,28
+142,told the doctor that Marie was saying goodbye to Arlene.,2,35,0,60,-2,25
+143,"And all Marie said to that girl was, “Oh, I’ve got a pain in my leg and I can’t see.”",12,41,1,70,-11,29
+144,And then Marie collapsed.,7,44,2,80,-5,36
+145,"Later, they said it was a blood clot.",31,70,4,90,-27,20
+146,"I said, “Don’t you dare touch my daughter.",7,48,0,70,-7,22
+147,I’ll burn this hospital down!,6,50,0,70,-6,20
+148,I don’t care who’s in it.”,0,44,0,70,0,26
+149,"I said, “Don’t you dare touch my daughter.",4,47,0,70,-4,23
+150,You want to find out what she died from.”,0,47,0,70,0,23
+151,"But if you touch my daughter, I’ll kill you.”",4,46,0,70,-4,24
+152,I wouldn’t let them touch her.,0,35,0,70,0,35
+153,So when I got home – they took me home.,5,63,0,60,-5,-3
+154,I was screaming in the car.,6,43,0,60,-6,17
+155,"I couldn’t get out, you know, I couldn’t –",0,39,0,60,0,21
+156,I was screaming!,6,43,0,60,-6,17
+157,"Everybody came out, coming out of their doors because they could hear the screams.",4,45,0,60,-4,15
+158,My husband was sitting on the step.,11,47,0,70,-11,23
+159,"He asked, “What’s the matter? What happened to you?”",11,42,0,70,-11,28
+160,"Well, my hair was all pulled, and my face – I was a mess.",1,38,0,70,-1,32
+161,I didn’t know what I had done to myself.,0,36,0,70,0,34
+162,"I said, “Mike, we lost Marie. Marie died.” It was just a shock.",24,65,0,100,-24,35
+163,My husband had a heart attack.,51,75,2,100,-49,25
+164,"Yes, he had a heart attack.",31,60,3,90,-28,30
+165,"Then my son, Michael, yeah. That night.",16,50,0,90,-16,40
+166,"Right there, my Michael came, and my Michael collapsed.",21,68,2,100,-19,32
+167,"He had a heart attack too, no kidding.",29,51,1,80,-28,29
+168,"It was all – my two sisters were here, waiting until about half-past four.",0,39,0,70,0,31
+169,"They waited because they knew she was coming home that day, waiting for the call.",0,39,0,70,0,31
+170,"My younger sister had brought an orange for Marie, and I had never seen an orange like it. It was a big orange, like that.",13,46,1,70,-12,24
+171,"She said, “Mary, look, when they call you, when you pick Marie up, let us know, and we’ll come over.”",0,37,0,70,0,33
+172,"I said, “All right.”",0,34,0,70,0,36
+173,"So, I got home and called everybody, told them what happened.",4,60,0,70,-4,10
+174,I called my brother-in-law.,7,49,0,70,-7,21
+175,He was an undertaker.,4,47,0,70,-4,23
+176,My sister’s husband – he’s passed away now too. God rest his soul.,3,46,0,70,-3,24
+177,Maybe you know him...,0,42,0,70,0,28
+178,"So they were waiting for my call, you know,",0,46,0,70,0,24
+179,"but instead, I sent my son James, he was little then.",7,59,0,70,-7,11
+180,"I said, “Go tell Aunt Millie and Aunt Jenny.”",15,62,0,70,-15,8
+181,"They had cleaned the pavement,",0,50,0,70,0,20
+182,"and done the cement work, and they were cleaning the pavement.",0,50,0,70,0,20
+183,"They said, “Here comes little Jamie,” and now they said,",0,50,0,70,0,20
+184,“Maybe he’s come to tell us Marie’s home.”,0,52,0,70,0,18
+185,"But when he got there, the poor kid’s eyes were all red.",6,52,0,70,-6,18
+186,"They said, “James, what’s the matter, honey?",1,52,0,70,-1,18
+187,Why are you crying?”,1,51,0,70,-1,19
+188,"“Aunt Jenny, Aunt Millie, Marie died,” he said.",19,58,0,70,-19,12
+189,"Well, my sisters and my mother, you know, they were all alive.",0,38,0,70,0,32
+190,It was a shock to everybody. That was a shock that –,3,42,0,70,-3,28
+191,"The neighborhood – Annie at the store always says, “Mrs. Costa,” every time I go in there, she reminds me, “I just picture Marie standing at that step, looking over here.” She used to stand at that step.",14,43,1,70,-13,27
+192,"She was a real quiet girl, pleasant, didn’t talk much,",14,42,1,70,-13,28
+193,"but she was so good, I can’t even tell you.",8,44,1,70,-7,26
+194,That’s all. So that’s what happened.,4,34,0,70,-4,36
