@@ -1,20 +1,20 @@
 segment_id,segment_text,real_rec,real_caught,emulated_rec,emulated_caught,rec_difference,caught_difference
-1,"Yeah, I was in the boy scouts at the time.",81,81,10,90,-71,9
-2,"And we was doing the 50-yard dash,",71,79,10,100,-61,21
-3,"racing,",17,44,4,50,-13,6
-4,"but we was at the pier, marked off,",38,49,6,100,-32,51
-5,and so we was doing the 50-yard dash.,40,79,7,100,-33,21
-6,"There was about 8 or 9 of us, you know, going down, coming back.",53,66,4,0,-49,-66
-7,"And, going down the third time, I caught cramps",79,91,10,100,-69,9
-8,"and I started yelling ""Help!"",",44,62,9,100,-35,38
-9,"but the fellows didn't believe me, you know.",49,82,8,100,-41,18
-10,"They thought I was just trying to catch up, because I was going on or slowing down.",44,64,9,100,-35,36
-11,So all of them kept going.,7,55,7,70,0,15
-12,They leave me.,11,33,4,70,-7,37
-13,And so I started going down.,16,29,6,60,-10,31
-14,Scoutmaster was up there.,58,68,6,100,-52,32
-15,He was watching me.,37,58,6,90,-31,32
-16,But he didn't pay me no attention either.,43,74,8,100,-35,26
-17,"And for no reason at all there was another guy, who had just walked up that minute...",39,68,8,100,-31,32
-18,He just jumped over,42,65,4,100,-38,35
-19,and grabbed me.,68,69,8,100,-60,31
+1,"Yeah, I was in the boy scouts at the time.",82.65,83.51,100.0,90.0,17.35,6.49
+2,"And we was doing the 50-yard dash,",72.45,81.44,100.0,100.0,27.55,18.56
+3,"racing,",17.35,45.36,40.0,50.0,22.65,4.64
+4,"but we was at the pier, marked off,",38.78,50.52,60.0,100.0,21.22,49.48
+5,and so we was doing the 50-yard dash.,40.82,81.44,70.0,100.0,29.18,18.56
+6,"There was about 8 or 9 of us, you know, going down, coming back.",54.08,68.04,40.0,0.0,-14.08,-68.04
+7,"And, going down the third time, I caught cramps",80.61,93.81,100.0,100.0,19.39,6.19
+8,"and I started yelling ""Help!"",",44.9,63.92,90.0,100.0,45.1,36.08
+9,"but the fellows didn't believe me, you know.",50.0,84.54,80.0,100.0,30.0,15.46
+10,"They thought I was just trying to catch up, because I was going on or slowing down.",44.9,65.98,90.0,100.0,45.1,34.02
+11,So all of them kept going.,7.14,56.7,70.0,70.0,62.86,13.3
+12,They leave me.,11.22,34.02,40.0,70.0,28.78,35.98
+13,And so I started going down.,16.33,29.9,60.0,60.0,43.67,30.1
+14,Scoutmaster was up there.,59.18,70.1,60.0,100.0,0.82,29.9
+15,He was watching me.,37.76,59.79,60.0,90.0,22.24,30.21
+16,But he didn't pay me no attention either.,43.88,76.29,80.0,100.0,36.12,23.71
+17,"And for no reason at all there was another guy, who had just walked up that minute...",39.8,70.1,80.0,100.0,40.2,29.9
+18,He just jumped over,42.86,67.01,40.0,100.0,-2.86,32.99
+19,and grabbed me.,69.39,71.13,80.0,100.0,10.61,28.87

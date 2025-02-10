@@ -1,55 +1,55 @@
 segment_id,segment_text,real_rec,real_caught,emulated_rec,emulated_caught,rec_difference,caught_difference
-1,Let me share a story from when I was twenty-one years old.,62,66,10,100,-52,34
-2,I was living in a small apartment near the city center.,55,65,8,80,-47,15
-3,I had just started my first job.,49,56,9,40,-40,-16
-4,And uh I was working as a graphic designer.,37,55,8,100,-29,45
-5,"My father, who was recovering from a surgery, hadn't been out in – in uh – well I'd say about eight months.",68,94,8,100,-60,6
-6,He had to use a wheelchair to get around.,45,63,10,100,-35,37
-7,"The only person there with him during the day was a kind neighbor, a lady in her sixties.",66,85,8,70,-58,-15
-8,My younger sister was away at college –,40,48,3,10,-37,-38
-9,so it was just my dad and the neighbor lady at home during the day.,18,68,8,70,-10,2
-10,"One day, I got this strong feeling while I was at work.",75,93,9,90,-66,-3
-11,"It told me: ""If you go to the nearby park during your lunch break and pray for your father's recovery, he'll start to improve.""",69,85,8,100,-61,15
-12,I looked around my office.,16,41,5,10,-11,-31
-13,I didn't see anyone nearby.,27,37,5,0,-22,-37
-14,"So, I went to the park during my break",78,92,8,100,-70,8
-15,and found a quiet spot there.,21,41,6,50,-15,9
-16,That feeling came back again.,24,30,4,0,-20,-30
-17,I looked around once more.,11,25,4,0,-7,-25
-18,I still didn't see anyone nearby,13,29,3,0,-10,-29
-19,but I decided to take a chance.,2,21,2,10,0,-11
-20,"I wasn't too far from my office, maybe a ten-minute walk.",24,26,0,20,-24,-6
-21,I found a bench to sit on and closed my eyes – uh – uh –,6,63,0,60,-6,-3
-22,that feeling came back once more.,10,23,0,0,-10,-23
-23,I just took a deep breath.,2,5,0,0,-2,-5
-24,I was sitting under a big oak tree now.,48,52,2,80,-46,28
-25,I looked up at the branches above me.,9,16,0,0,-9,-16
-26,Nobody was around.,7,27,0,0,-7,-27
-27,"And uh I said to myself, well now,",0,4,0,0,0,-4
-28,I had been taught that prayers can make a difference.,15,45,0,40,-15,-5
-29,And that it doesn't hurt to try.,9,44,0,40,-9,-4
-30,"I knew I wasn't perfect, but I wanted to help my dad.",8,30,0,30,-8,0
-31,I'd admit that to anyone.,2,7,0,0,-2,-7
-32,But I was willing to give it a try.,8,28,0,30,-8,2
-33,I looked around one more time,1,18,0,0,-1,-18
-34,and then I closed my eyes,9,24,0,0,-9,-24
-35,and said a quiet prayer.,53,74,0,70,-53,-4
-36,"I whispered, ""God, I don't know if you're listening.",11,33,0,10,-11,-23
-37,But I ask you to please help my father recover.,37,71,1,60,-36,-11
-38,"So he can regain his independence and enjoy life again.""",15,51,0,40,-15,-11
-39,I opened my eyes,3,5,0,10,-3,5
-40,and went back to work.,19,37,1,10,-18,-27
-41,"Suddenly, I received a text message from my father.",80,87,5,100,-75,13
-42,"It said, ""I just took a few steps with my walker.""",83,92,5,100,-78,8
-43,I – I couldn't believe it.,10,26,0,10,-10,-16
-44,It felt like a sign that my prayer had been heard.,17,29,0,0,-17,-29
-45,I rushed home after work,23,43,0,0,-23,-43
-46,and saw my father standing in the living room with the help of his walker.,45,63,0,10,-45,-53
-47,He hadn't been able to do that in months without assistance.,10,44,2,30,-8,-14
-48,"And there he was, taking small steps.",10,25,1,0,-9,-25
-49,That was the turning point in his recovery.,12,34,4,90,-8,56
-50,He continued to improve,42,58,4,60,-38,2
-51,and regained most of his mobility within a year.,19,52,5,100,-14,48
-52,"It's been, what, six or seven years since then?",35,58,3,90,-32,32
-53,My father is now able to walk without any assistance.,61,80,5,100,-56,20
-54,"He's living life to the fullest, even in his seventies.",52,41,5,100,-47,59
+1,Let me share a story from when I was twenty-one years old.,64.58,67.35,100.0,100.0,35.42,32.65
+2,I was living in a small apartment near the city center.,57.29,66.33,80.0,80.0,22.71,13.67
+3,I had just started my first job.,51.04,57.14,90.0,40.0,38.96,-17.14
+4,And uh I was working as a graphic designer.,38.54,56.12,80.0,100.0,41.46,43.88
+5,"My father, who was recovering from a surgery, hadn't been out in – in uh – well I'd say about eight months.",70.83,95.92,80.0,100.0,9.17,4.08
+6,He had to use a wheelchair to get around.,46.88,64.29,100.0,100.0,53.12,35.71
+7,"The only person there with him during the day was a kind neighbor, a lady in her sixties.",68.75,86.73,80.0,70.0,11.25,-16.73
+8,My younger sister was away at college –,41.67,48.98,30.0,10.0,-11.67,-38.98
+9,so it was just my dad and the neighbor lady at home during the day.,18.75,69.39,80.0,70.0,61.25,0.61
+10,"One day, I got this strong feeling while I was at work.",78.12,94.9,90.0,90.0,11.88,-4.9
+11,"It told me: ""If you go to the nearby park during your lunch break and pray for your father's recovery, he'll start to improve.""",71.88,86.73,80.0,100.0,8.12,13.27
+12,I looked around my office.,16.67,41.84,50.0,10.0,33.33,-31.84
+13,I didn't see anyone nearby.,28.13,37.76,50.0,0.0,21.87,-37.76
+14,"So, I went to the park during my break",81.25,93.88,80.0,100.0,-1.25,6.12
+15,and found a quiet spot there.,21.88,41.84,60.0,50.0,38.12,8.16
+16,That feeling came back again.,25.0,30.61,40.0,0.0,15.0,-30.61
+17,I looked around once more.,11.46,25.51,40.0,0.0,28.54,-25.51
+18,I still didn't see anyone nearby,13.54,29.59,30.0,0.0,16.46,-29.59
+19,but I decided to take a chance.,2.08,21.43,20.0,10.0,17.92,-11.43
+20,"I wasn't too far from my office, maybe a ten-minute walk.",25.0,26.53,0.0,20.0,-25.0,-6.53
+21,I found a bench to sit on and closed my eyes – uh – uh –,6.25,64.29,0.0,60.0,-6.25,-4.29
+22,that feeling came back once more.,10.42,23.47,0.0,0.0,-10.42,-23.47
+23,I just took a deep breath.,2.08,5.1,0.0,0.0,-2.08,-5.1
+24,I was sitting under a big oak tree now.,50.0,53.06,20.0,80.0,-30.0,26.94
+25,I looked up at the branches above me.,9.38,16.33,0.0,0.0,-9.38,-16.33
+26,Nobody was around.,7.29,27.55,0.0,0.0,-7.29,-27.55
+27,"And uh I said to myself, well now,",0.0,4.08,0.0,0.0,0.0,-4.08
+28,I had been taught that prayers can make a difference.,15.63,45.92,0.0,40.0,-15.63,-5.92
+29,And that it doesn't hurt to try.,9.38,44.9,0.0,40.0,-9.38,-4.9
+30,"I knew I wasn't perfect, but I wanted to help my dad.",8.33,30.61,0.0,30.0,-8.33,-0.61
+31,I'd admit that to anyone.,2.08,7.14,0.0,0.0,-2.08,-7.14
+32,But I was willing to give it a try.,8.33,28.57,0.0,30.0,-8.33,1.43
+33,I looked around one more time,1.04,18.37,0.0,0.0,-1.04,-18.37
+34,and then I closed my eyes,9.38,24.49,0.0,0.0,-9.38,-24.49
+35,and said a quiet prayer.,55.21,75.51,0.0,70.0,-55.21,-5.51
+36,"I whispered, ""God, I don't know if you're listening.",11.46,33.67,0.0,10.0,-11.46,-23.67
+37,But I ask you to please help my father recover.,38.54,72.45,10.0,60.0,-28.54,-12.45
+38,"So he can regain his independence and enjoy life again.""",15.63,52.04,0.0,40.0,-15.63,-12.04
+39,I opened my eyes,3.12,5.1,0.0,10.0,-3.12,4.9
+40,and went back to work.,19.79,37.76,10.0,10.0,-9.79,-27.76
+41,"Suddenly, I received a text message from my father.",83.33,88.78,50.0,100.0,-33.33,11.22
+42,"It said, ""I just took a few steps with my walker.""",86.46,93.88,50.0,100.0,-36.46,6.12
+43,I – I couldn't believe it.,10.42,26.53,0.0,10.0,-10.42,-16.53
+44,It felt like a sign that my prayer had been heard.,17.71,29.59,0.0,0.0,-17.71,-29.59
+45,I rushed home after work,23.96,43.88,0.0,0.0,-23.96,-43.88
+46,and saw my father standing in the living room with the help of his walker.,46.88,64.29,0.0,10.0,-46.88,-54.29
+47,He hadn't been able to do that in months without assistance.,10.42,44.9,20.0,30.0,9.58,-14.9
+48,"And there he was, taking small steps.",10.42,25.51,10.0,0.0,-0.42,-25.51
+49,That was the turning point in his recovery.,12.5,34.69,40.0,90.0,27.5,55.31
+50,He continued to improve,43.75,59.18,40.0,60.0,-3.75,0.82
+51,and regained most of his mobility within a year.,19.79,53.06,50.0,100.0,30.21,46.94
+52,"It's been, what, six or seven years since then?",36.46,59.18,30.0,90.0,-6.46,30.82
+53,My father is now able to walk without any assistance.,63.54,81.63,50.0,100.0,-13.54,18.37
+54,"He's living life to the fullest, even in his seventies.",54.17,41.84,50.0,100.0,-4.17,58.16

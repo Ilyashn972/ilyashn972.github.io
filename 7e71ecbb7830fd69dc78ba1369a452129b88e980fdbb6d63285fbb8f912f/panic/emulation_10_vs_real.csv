@@ -1,57 +1,57 @@
 segment_id,segment_text,real_rec,real_caught,emulated_rec,emulated_caught,rec_difference,caught_difference
-1,"Well, I was at work one day",56,74,1,70,-55,-4
-2,I was doing my usual job,26,86,1,70,-25,-16
-3,working on the warehouse floor,74,92,8,100,-66,8
-4,stocking boxes,56,68,0,10,-56,-58
-5,organizing merchandise,30,54,2,30,-28,-24
-6,I had been working for a few hours,7,17,0,20,-7,3
-7,it was getting late,15,16,1,10,-14,-6
-8,I had been feeling a bit strange,41,69,2,70,-39,1
-9,a bit lightheaded,42,68,9,100,-33,32
-10,but chalked it up to hunger,47,63,6,90,-41,27
-11,not having eaten yet that day,44,65,3,80,-41,15
-12,"But then, as I was walking around the warehouse",13,18,0,10,-13,-8
-13,returning items to their proper places,10,16,0,0,-10,-16
-14,I started to feel a strange tightness,79,93,9,100,-70,7
-15,and pressure in my chest,57,93,6,100,-51,7
-16,I stopped what I was doing,19,24,0,0,-19,-24
-17,leaned against a nearby wall for a bit,43,49,0,10,-43,-39
-18,the pressure only got stronger,16,47,0,20,-16,-27
-19,I could feel my heart pounding in my chest,20,46,9,90,-11,44
-20,"Next thing I know, I started seeing spots",39,65,2,60,-37,-5
-21,I could feel sweat dripping down my forehead,46,60,6,90,-40,30
-22,my arms,28,47,4,60,-24,13
-23,I tried to take some deep breaths,18,32,1,80,-17,48
-24,I just couldn't catch my breath,25,33,7,90,-18,57
-25,I was really scared,7,14,1,20,-6,6
-26,didn't know what to do.,6,10,0,20,-6,10
-27,Suddenly I heard a voice coming from across the warehouse.,52,85,0,90,-52,5
-28,It was the manager,68,93,0,90,-68,-3
-29,who had seen me,22,80,0,100,-22,20
-30,called out to me,41,67,0,60,-41,-7
-31,it seems someone had noticed me,26,63,1,90,-25,27
-32,was checking to see if I was alright,36,48,1,30,-35,-18
-33,I tried to yell back that something was wrong,24,38,0,40,-24,2
-34,I couldn't find my voice.,43,51,5,50,-38,-1
-35,The manager started walking towards me,26,46,0,60,-26,14
-36,I could feel my world going dark,34,64,2,70,-32,6
-37,I started to drop to the ground,45,76,1,60,-44,-16
-38,luckily the manager got to me in time,72,84,10,100,-62,16
-39,caught me just before my legs gave out,38,73,6,100,-32,27
-40,He took me to the staff room,66,76,10,100,-56,24
-41,sat me down in a chair,30,68,1,90,-29,22
-42,He asked me questions about what was wrong,26,39,0,20,-26,-19
-43,what happened,13,34,0,20,-13,-14
-44,He got me a glass of cold water,62,66,6,90,-56,24
-45,told me to rest for a bit,16,26,2,60,-14,34
-46,After a few minutes,11,32,0,60,-11,28
-47,the pressure in my chest slowly eased up,25,44,3,80,-22,36
-48,I started to feel better,29,43,5,80,-24,37
-49,It turned out I had been having a panic attack,84,86,10,100,-74,14
-50,I escaped from the situation,6,8,0,0,-6,-8
-51,the help of the quick action of the manager,14,21,3,40,-11,19
-52,It was never a fun experience,13,18,0,30,-13,12
-53,it really could have been much worse,20,25,0,30,-20,5
-54,it taught me to check in with myself,64,72,7,100,-57,28
-55,make sure to properly rest,53,72,8,100,-45,28
-56,eat to avoid further episodes,63,65,8,80,-55,15
+1,"Well, I was at work one day",56.0,74.0,10.0,70.0,-46.0,-4.0
+2,I was doing my usual job,26.0,86.0,10.0,70.0,-16.0,-16.0
+3,working on the warehouse floor,74.0,92.0,80.0,100.0,6.0,8.0
+4,stocking boxes,56.0,68.0,0.0,10.0,-56.0,-58.0
+5,organizing merchandise,30.0,54.0,20.0,30.0,-10.0,-24.0
+6,I had been working for a few hours,7.0,17.0,0.0,20.0,-7.0,3.0
+7,it was getting late,15.0,16.0,10.0,10.0,-5.0,-6.0
+8,I had been feeling a bit strange,41.0,69.0,20.0,70.0,-21.0,1.0
+9,a bit lightheaded,42.0,68.0,90.0,100.0,48.0,32.0
+10,but chalked it up to hunger,47.0,63.0,60.0,90.0,13.0,27.0
+11,not having eaten yet that day,44.0,65.0,30.0,80.0,-14.0,15.0
+12,"But then, as I was walking around the warehouse",13.0,18.0,0.0,10.0,-13.0,-8.0
+13,returning items to their proper places,10.0,16.0,0.0,0.0,-10.0,-16.0
+14,I started to feel a strange tightness,79.0,93.0,90.0,100.0,11.0,7.0
+15,and pressure in my chest,57.0,93.0,60.0,100.0,3.0,7.0
+16,I stopped what I was doing,19.0,24.0,0.0,0.0,-19.0,-24.0
+17,leaned against a nearby wall for a bit,43.0,49.0,0.0,10.0,-43.0,-39.0
+18,the pressure only got stronger,16.0,47.0,0.0,20.0,-16.0,-27.0
+19,I could feel my heart pounding in my chest,20.0,46.0,90.0,90.0,70.0,44.0
+20,"Next thing I know, I started seeing spots",39.0,65.0,20.0,60.0,-19.0,-5.0
+21,I could feel sweat dripping down my forehead,46.0,60.0,60.0,90.0,14.0,30.0
+22,my arms,28.0,47.0,40.0,60.0,12.0,13.0
+23,I tried to take some deep breaths,18.0,32.0,10.0,80.0,-8.0,48.0
+24,I just couldn't catch my breath,25.0,33.0,70.0,90.0,45.0,57.0
+25,I was really scared,7.0,14.0,10.0,20.0,3.0,6.0
+26,didn't know what to do.,6.0,10.0,0.0,20.0,-6.0,10.0
+27,Suddenly I heard a voice coming from across the warehouse.,52.0,85.0,0.0,90.0,-52.0,5.0
+28,It was the manager,68.0,93.0,0.0,90.0,-68.0,-3.0
+29,who had seen me,22.0,80.0,0.0,100.0,-22.0,20.0
+30,called out to me,41.0,67.0,0.0,60.0,-41.0,-7.0
+31,it seems someone had noticed me,26.0,63.0,10.0,90.0,-16.0,27.0
+32,was checking to see if I was alright,36.0,48.0,10.0,30.0,-26.0,-18.0
+33,I tried to yell back that something was wrong,24.0,38.0,0.0,40.0,-24.0,2.0
+34,I couldn't find my voice.,43.0,51.0,50.0,50.0,7.0,-1.0
+35,The manager started walking towards me,26.0,46.0,0.0,60.0,-26.0,14.0
+36,I could feel my world going dark,34.0,64.0,20.0,70.0,-14.0,6.0
+37,I started to drop to the ground,45.0,76.0,10.0,60.0,-35.0,-16.0
+38,luckily the manager got to me in time,72.0,84.0,100.0,100.0,28.0,16.0
+39,caught me just before my legs gave out,38.0,73.0,60.0,100.0,22.0,27.0
+40,He took me to the staff room,66.0,76.0,100.0,100.0,34.0,24.0
+41,sat me down in a chair,30.0,68.0,10.0,90.0,-20.0,22.0
+42,He asked me questions about what was wrong,26.0,39.0,0.0,20.0,-26.0,-19.0
+43,what happened,13.0,34.0,0.0,20.0,-13.0,-14.0
+44,He got me a glass of cold water,62.0,66.0,60.0,90.0,-2.0,24.0
+45,told me to rest for a bit,16.0,26.0,20.0,60.0,4.0,34.0
+46,After a few minutes,11.0,32.0,0.0,60.0,-11.0,28.0
+47,the pressure in my chest slowly eased up,25.0,44.0,30.0,80.0,5.0,36.0
+48,I started to feel better,29.0,43.0,50.0,80.0,21.0,37.0
+49,It turned out I had been having a panic attack,84.0,86.0,100.0,100.0,16.0,14.0
+50,I escaped from the situation,6.0,8.0,0.0,0.0,-6.0,-8.0
+51,the help of the quick action of the manager,14.0,21.0,30.0,40.0,16.0,19.0
+52,It was never a fun experience,13.0,18.0,0.0,30.0,-13.0,12.0
+53,it really could have been much worse,20.0,25.0,0.0,30.0,-20.0,5.0
+54,it taught me to check in with myself,64.0,72.0,70.0,100.0,6.0,28.0
+55,make sure to properly rest,53.0,72.0,80.0,100.0,27.0,28.0
+56,eat to avoid further episodes,63.0,65.0,80.0,80.0,17.0,15.0
