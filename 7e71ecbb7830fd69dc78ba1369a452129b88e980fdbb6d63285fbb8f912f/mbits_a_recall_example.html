@@ -11,7 +11,44 @@
 <body>
     <header>
         <h1>Calculate meaningful bits for a recall clause vs all the previous ones</h1>
-    <h3>See code at <a
+    <h4>
+        <p>The plots below illustrate how recall clauses influence meaningful bits (which are actually computed as the sum of
+            *natural* log probabilities ln ).</p>
+        
+        <p>Each row represents a clause, denoted as <code>C<sub>i</sub></code>. The cell colors indicate the difference in
+            probabilities for the corresponding segments, obtained from two separate probability calculations:</p>
+        
+        <ol>
+            <li>Using all clauses from <code>C<sub>1</sub></code> to <code>C<sub>i-1</sub></code>.</li>
+            <li>Using all clauses from <code>C<sub>1</sub></code> to <code>C<sub>i</sub></code>.</li>
+        </ol>
+        
+        <p>Black dots represent <strong>"caught"</strong> segments, while white circles mark <strong>"recalled"</strong>
+            segments. Segments that were "recalled" but not "caught" appear in the top row, which serves as a placeholder
+            (<code>xa xa</code>).</p>
+       Prompts:<hr>
+<p>The following two texts, separated by "---", tell the same story with different wording:</p>
+
+<pre>
+        {{ preceding_text1 }}
+        ---
+        {{ narrative }}
+    </pre>
+
+<p>The following two texts, separated by "---", tell the same story with different wording:</p>
+
+<pre>
+        {{ preceding_text2 }}
+        ---
+        {{ narrative }}
+    </pre>
+    <hr
+       
+        </h4>
+       
+       <h3>
+
+            See code at <a
             href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/mbits_a_recall_example.py">
             mbits_a_recall_example.py</a>
     </h3>
