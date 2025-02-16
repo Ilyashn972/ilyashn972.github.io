@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combare mbits rate for summaries of different length</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Combare mbits rate for summaries of different length</h1>
+    <h3><p>The plots below were generated based on summaries of varying lengths, created using GPT-4o. I instructed GPT-4o to
+        produce a summary with exactly <strong>n</strong> key points, where <strong>n</strong> depends on the length of the
+        story.</p>
+    
+    <h2>Key Points Selection</h2>
+    
+    <p>The number of key points is determined as follows:</p>
+    
+    <pre><code>
+    max_keypoints = 11
+    if max_segment_id > 30:
+    max_keypoints = 15
+    if max_segment_id > 50:
+    max_keypoints = 25
+    if max_segment_id > 100:
+    max_keypoints = 30
+    if max_segment_id > 150:
+    max_keypoints = 35
+        </code></pre>
+    
+    <p>For each specified number of key points, I generated three different summaries using <strong>temperature =
+            1</strong>.</p>
+    
+    <h2>Prompt Used</h2>
+    
+    <pre><code>
+    summary_with_specified_number_of_key_points = """
+    Summarize the provided narrative into exactly {{n}} very simple key points, each containing a subject and a predicate, told from the first-person perspective.
+    Format the output in JSON as follows:
+    
+    {
+      "keypoints": ["keypoint1", ..., "keypoint{{n}}"]
+    }
+    """
+        </code></pre>
+        
+        See code at <a
+            href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/summary_gpt4o_rate.py">
+            summary_gpt4o_rate.py</a>
+    </h3>
+    </header>
+
+    <section class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#bear">Bear</a></li>
+            <li><a href="#boy-scout">Boy Scout</a></li>
+            <li><a href="#costa">Costa</a></li>
+            <li><a href="#do-something">Do Something</a></li>
+            <li><a href="#hester-v1-park">Hester v1 Park</a></li>
+            <li><a href="#hester-v2-church">Hester v2 Church</a></li>
+            <li><a href="#panic">Panic</a></li>
+            <li><a href="#schissel-v1-pool">Schissel v1 Pool</a></li>
+            <li><a href="#schissel-v2-lake">Schissel v2 Lake</a></li>
+            <li><a href="#stein">Stein</a></li>
+            <li><a href="#stein-final">Stein Final</a></li>
+            <li><a href="#triplett-v1-rookie">Triplett v1 Rookie</a></li>
+            <li><a href="#triplett-v2-cat-lady">Triplett v2 Cat Lady</a></li>
+        </ul>
+    </section>
+
+    <section class="image-section" id="bear">
+        <h2>Bear</h2>
+        <img src="bear/summary_gpt4o_rate.png" alt="Bear">
+<!-- bear --> <p><a href="bear/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="boy-scout">
+        <h2>Boy Scout</h2>
+        <img src="boyscout/summary_gpt4o_rate.png" alt="Boy Scout">
+<!-- boyscout --> <p><a href="boyscout/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="costa">
+        <h2>Costa</h2>
+        <img src="costa/summary_gpt4o_rate.png" alt="Costa">
+<!-- costa --> <p><a href="costa/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="do-something">
+        <h2>Do Something</h2>
+        <img src="doSomething/summary_gpt4o_rate.png" alt="Do Something">
+<!-- doSomething --> <p><a href="doSomething/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="hester-v1-park">
+        <h2>Hester v1 Park</h2>
+        <img src="hester_v1-park/summary_gpt4o_rate.png" alt="Hester v1 Park">
+<!-- hester_v1-park --> <p><a href="hester_v1-park/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="hester-v2-church">
+        <h2>Hester v2 Church</h2>
+        <img src="hester_v2-church/summary_gpt4o_rate.png" alt="Hester v2 Church">
+<!-- hester_v2-church --> <p><a href="hester_v2-church/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="panic">
+        <h2>Panic</h2>
+        <img src="panic/summary_gpt4o_rate.png" alt="Panic">
+<!-- panic --> <p><a href="panic/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="schissel-v1-pool">
+        <h2>Schissel v1 Pool</h2>
+        <img src="schissel_v1-pool/summary_gpt4o_rate.png" alt="Schissel v1 Pool">
+<!-- schissel_v1-pool --> <p><a href="schissel_v1-pool/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="schissel-v2-lake">
+        <h2>Schissel v2 Lake</h2>
+        <img src="schissel_v2-lake/summary_gpt4o_rate.png" alt="Schissel v2 Lake">
+<!-- schissel_v2-lake --> <p><a href="schissel_v2-lake/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="stein">
+        <h2>Stein</h2>
+        <img src="stein/summary_gpt4o_rate.png" alt="Stein">
+<!-- stein --> <p><a href="stein/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="stein-final">
+        <h2>Stein Final</h2>
+        <img src="stein_final/summary_gpt4o_rate.png" alt="Stein Final">
+<!-- stein_final -->
+    </section>
+
+    <section class="image-section" id="triplett-v1-rookie">
+        <h2>Triplett v1 Rookie</h2>
+        <img src="triplett_v1-rookie/summary_gpt4o_rate.png" alt="Triplett v1 Rookie">
+<!-- triplett_v1-rookie --> <p><a href="triplett_v1-rookie/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+    <section class="image-section" id="triplett-v2-cat-lady">
+        <h2>Triplett v2 Cat Lady</h2>
+        <img src="triplett_v2-catlady/summary_gpt4o_rate.png" alt="Triplett v2 Cat Lady">
+<!-- triplett_v2-catlady --> <p><a href="triplett_v2-catlady/summary_gpt4o_rate.html"> Summaries</p><hr>
+    </section>
+
+</body>
+
+</html>
