@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mbits report</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <h4> Meaningful bits.</h4>
+
+    Below are results related to meaningful bits.
+    
+    If not stated otherwise meaningful bits is difference between sum of logp for segments.
+    The difference is calculated by substracting sum of logp probalibities of the narrative from sum of logp probabilities with 
+    narrative preceeded by recall.<hr>
+
+    <li>
+        <a href="../recall_meaningful_bits.html"> Meaningful bits of recall</a><br>
+        <p>CSV files with values for each segment of the narrative. <br>
+        They also have a columns with total sum for full recall, and rate (sum/len(in chars))<br>
+        They also have a row for mean values.<br>
+        See code at:
+        </p><hr>
+    </li>
+    <li>
+        <a href="../pcaught_mbits_prec_csv.html"> CSVs of P-caught , P-rec , Meaningful bits </a><br>
+        These files include narratives splitted to segments. For each segment we show p-caught, p-rec and mbits and the segment text itself.
+        <br>
+        See code at
+    </li>
+        <li>
+        <a href="../pcaught_mbits_prec.html"> Comparison of P-caught with P-rec vs Meaningful bits </a><br>
+        Shows how the values change as the story unfolds.<br>
+        See code at pcaught_mbits_prec.py<br>
+        <li><a href="../mbits_pcaught_prec_scatter.html"> Scatter plot of mbits vs p-caught and p-rec </a>
+        
+        <hr>
+    
+
+    <li>
+        <a href="../mbits_scatter_plot.html"> Scatter of Meaningful Bits</a>
+        Plots on x-axis len of the recall, on y-axis mbits rate<br>
+        Also depicts a single attemt to summarize the narrative and a single attempt to rephrase the narrative<br>
+        See code at recall_impact_on_logp.py
+        <hr>
+    </li>
+
+    <li>
+        <a href="../recalls_mbits.html"> Distribution Meaningful bits of recall</a>
+        Shows distribution of the values above.<br>
+        See code: at recall_impact_on_logp.py
+        <hr>
+    </li>
+
+    <li>
+        <a href="../recalls_mbits_hotmap.html"> Heatmap Recall Meaningful bits</a>
+        Shows how a recall changes every one of the segments in the narrative
+        <hr> 
+    </li>
+    
+   
+   
+    <li>
+        <a href="../mbits_a_recall_example.html"> Calculate meaningful bits for a recall clause vs all the previous ones </a>
+    </li>
+    <li>
+        <a href="../mbits_for_summaries_and_recalls.html"> "Plot meaningful bits for selected recalls and a few attempts for
+            gpt4 summaries" </a>
+    </li>
+    <li>
+        <a href="../emulation_and_real_mbits_scatter_plot.html"> "Emulation vs Real Recalls Mbits" </a>
+    </li>
+    <li>
+        <a href="../key_points_vs_real_mbits_scatter_plot.html"> Mbits rate for key points vs real narrative </a>
+    </li>
+    <li>
+        <a href="../key_points_vs_real_mbits_difference_plot.html"> Difference between Mbits rate for key points and real
+            narrative </a>
+    </li>
+    </ul>
+    <h4> Comparing mbits for a few versions of keypoints </h4>
+    <ul>
+        <li>
+            <a href="../various_key_points_vs_real_mbits_scatter_plot.html"> Various Keypoint Scatter Plot </a>
+        </li>
+        <li>
+            <a href="../various_key_points_vs_real_mbits_plot.html"> Averaging mbits ratio for every 3 subject </a>
+        </li>
+        <li>
+            <a href="../various_key_points_vs_real_mbits_difference_plot.html"> Difference in Mbits with averaging every 3
+                subjects
+            </a>
+        </li>
+    </ul>
+    <h4> Using mbits to confirm Caught segments</h4>
+    <ul>
+        <li>
+            <a href="../average_mbits_vs_fan_out.html"> Average mbits for Caught vs Not Caught segments </a>
+        </li>
+        <li>
+            <a href="../precision_recall_curve_for_caught_and_rec.html"> Precision Recall Curve for Caught and RECalled </a>
+        </li>
+    </ul>
+    <h4>Emulating Recall and compare Caught and RECall</h4>
+    <ul>
+        <li>
+            <a href="../recall_real_vs_emulation.html"> Read Recall vs 10 Emulations </a>
+        </li>
+        <li>
+            <a href="../caught_real_vs_emulation.html"> Real Caught vs 10 Emulations </a>
+        </li>
+        <li>
+            <a href="../summary_gpt4o_rate.html"> Combare mbits rate for summaries of different length </a>
+        </li>
+    </ul>
+    <h4> TODO: </h4>
+    <a href="../mbits_a_recall_example.html"> Improve way to map mbits to relevant segments. E.g. check that the first segment
+        (mapped to) has the highest bits value in the row. </a>
+    First results for one recall for each story. Averages: hit (max segment was mapped to) 71%,
+    was mapped to the first segment 55%, which means that if mapped correctly, it will go to the first segment in 77% of the
+    cases.
+    </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Tsodyks Lab Story Recall Research. All rights reserved.</p>
+    </footer>
+    </body>
+    
+    </html>
