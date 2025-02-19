@@ -1,33 +1,33 @@
 segment_id,pcaught,prec,mbits,segment_text
-1,95,86,22.18,"Back in the days when I was a rookie in the police force, the Chief was a veteran."
-2,23,20,-2.64,He had caught a notorious criminal –
-3,27,19,2.62,or had been awarded for bravery.
-4,88,75,6.57,But he had – a young daughter.
-5,57,35,2.54,And in those days I was a fitness enthusiast.
-6,64,51,4.43,And it seemed she was trying to impress me.
-7,34,7,0.98,I never observed it.
-8,60,19,7.4,Truth is I wasn't very fond of her because she was –
-9,80,32,4.47,She was a charming girl until she opened her mouth.
-10,80,54,1.27,She was a chatterbox.
-11,77,16,-0.51,"Goodness, she could talk."
-12,94,67,15.99,Then she left a message one day saying she was going to run away because he was always scolding her about me.
-13,70,43,2.04,He arrived at my apartment.
-14,57,14,0.62,Big intimidating look on his face.
-15,44,8,1.49,I managed to calm him down.
-16,80,34,7.77,and proposed “Well we'll search for her
-17,71,18,5.89,and if we can't locate her well you can – do whatever you think is right.”
-18,37,16,1.52,I was strategizing.
-19,58,8,2.08,So he accepted my offer.
-20,88,57,10.87,And we went to where they found her scarf – near a park.
-21,61,8,3.22,and we traced down a little more
-22,63,21,2.28,and we couldn't locate her.
-23,50,5,0.39,And returned
-24,82,15,3.06,– it was a police station –
-25,93,81,6.81,she was sitting on a chair with a book in her hands.
-26,87,44,1.32,She hadn't run away.
-27,17,5,1.98,But – nevertheless – that resolved the issue for that day.
-28,86,76,16.87,"But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”"
-29,78,64,0.35,And I did.
-30,78,48,-0.3,I transferred.
-31,67,26,-1.04,and left.
-32,61,44,4.26,That was the end of my rookie year.
+1,0.9595959595959596,0.8686868686868687,22.18,"Back in the days when I was a rookie in the police force, the Chief was a veteran."
+2,0.23232323232323232,0.20202020202020202,-2.64,He had caught a notorious criminal –
+3,0.2727272727272727,0.1919191919191919,2.62,or had been awarded for bravery.
+4,0.8888888888888888,0.7575757575757576,6.57,But he had – a young daughter.
+5,0.5757575757575758,0.35353535353535354,2.54,And in those days I was a fitness enthusiast.
+6,0.6464646464646465,0.5151515151515151,4.43,And it seemed she was trying to impress me.
+7,0.3434343434343434,0.0707070707070707,0.98,I never observed it.
+8,0.6060606060606061,0.1919191919191919,7.4,Truth is I wasn't very fond of her because she was –
+9,0.8080808080808081,0.32323232323232326,4.47,She was a charming girl until she opened her mouth.
+10,0.8080808080808081,0.5454545454545454,1.27,She was a chatterbox.
+11,0.7777777777777778,0.16161616161616163,-0.51,"Goodness, she could talk."
+12,0.9494949494949495,0.6767676767676768,15.99,Then she left a message one day saying she was going to run away because he was always scolding her about me.
+13,0.7070707070707071,0.43434343434343436,2.04,He arrived at my apartment.
+14,0.5757575757575758,0.1414141414141414,0.62,Big intimidating look on his face.
+15,0.4444444444444444,0.08080808080808081,1.49,I managed to calm him down.
+16,0.8080808080808081,0.3434343434343434,7.77,and proposed “Well we'll search for her
+17,0.7171717171717171,0.18181818181818182,5.89,and if we can't locate her well you can – do whatever you think is right.”
+18,0.37373737373737376,0.16161616161616163,1.52,I was strategizing.
+19,0.5858585858585859,0.08080808080808081,2.08,So he accepted my offer.
+20,0.8888888888888888,0.5757575757575758,10.87,And we went to where they found her scarf – near a park.
+21,0.6161616161616161,0.08080808080808081,3.22,and we traced down a little more
+22,0.6363636363636364,0.21212121212121213,2.28,and we couldn't locate her.
+23,0.5050505050505051,0.050505050505050504,0.39,And returned
+24,0.8282828282828283,0.15151515151515152,3.06,– it was a police station –
+25,0.9393939393939394,0.8181818181818182,6.81,she was sitting on a chair with a book in her hands.
+26,0.8787878787878788,0.4444444444444444,1.32,She hadn't run away.
+27,0.1717171717171717,0.050505050505050504,1.98,But – nevertheless – that resolved the issue for that day.
+28,0.8686868686868687,0.7676767676767676,16.87,"But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”"
+29,0.7878787878787878,0.6464646464646465,0.35,And I did.
+30,0.7878787878787878,0.48484848484848486,-0.3,I transferred.
+31,0.6767676767676768,0.26262626262626265,-1.04,and left.
+32,0.6161616161616161,0.4444444444444444,4.26,That was the end of my rookie year.

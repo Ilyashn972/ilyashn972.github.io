@@ -1,20 +1,20 @@
 segment_id,pcaught,prec,mbits,segment_text
-1,81,81,20.16,"Yeah, I was in the boy scouts at the time."
-2,79,71,10.39,"And we was doing the 50-yard dash,"
-3,44,17,0.56,"racing,"
-4,49,38,4.71,"but we was at the pier, marked off,"
-5,79,40,-0.1,and so we was doing the 50-yard dash.
-6,66,53,3.6,"There was about 8 or 9 of us, you know, going down, coming back."
-7,91,79,3.93,"And, going down the third time, I caught cramps"
-8,62,44,4.58,"and I started yelling ""Help!"","
-9,82,49,0.53,"but the fellows didn't believe me, you know."
-10,64,44,1.27,"They thought I was just trying to catch up, because I was going on or slowing down."
-11,55,7,0.83,So all of them kept going.
-12,33,11,-1.41,They leave me.
-13,29,16,-1.19,And so I started going down.
-14,68,58,5.45,Scoutmaster was up there.
-15,58,37,-0.17,He was watching me.
-16,74,43,1.64,But he didn't pay me no attention either.
-17,68,39,5.85,"And for no reason at all there was another guy, who had just walked up that minute..."
-18,65,42,1.58,He just jumped over
-19,69,68,-0.28,and grabbed me.
+1,0.8350515463917526,0.8350515463917526,20.16,"Yeah, I was in the boy scouts at the time."
+2,0.8144329896907216,0.7319587628865979,10.39,"And we was doing the 50-yard dash,"
+3,0.4536082474226804,0.17525773195876287,0.56,"racing,"
+4,0.5051546391752577,0.3917525773195876,4.71,"but we was at the pier, marked off,"
+5,0.8144329896907216,0.41237113402061853,-0.1,and so we was doing the 50-yard dash.
+6,0.6804123711340206,0.5463917525773195,3.6,"There was about 8 or 9 of us, you know, going down, coming back."
+7,0.9381443298969072,0.8144329896907216,3.93,"And, going down the third time, I caught cramps"
+8,0.6391752577319587,0.4536082474226804,4.58,"and I started yelling ""Help!"","
+9,0.845360824742268,0.5051546391752577,0.53,"but the fellows didn't believe me, you know."
+10,0.6597938144329897,0.4536082474226804,1.27,"They thought I was just trying to catch up, because I was going on or slowing down."
+11,0.5670103092783505,0.07216494845360824,0.83,So all of them kept going.
+12,0.3402061855670103,0.1134020618556701,-1.41,They leave me.
+13,0.29896907216494845,0.16494845360824742,-1.19,And so I started going down.
+14,0.7010309278350515,0.5979381443298969,5.45,Scoutmaster was up there.
+15,0.5979381443298969,0.38144329896907214,-0.17,He was watching me.
+16,0.7628865979381443,0.44329896907216493,1.64,But he didn't pay me no attention either.
+17,0.7010309278350515,0.4020618556701031,5.85,"And for no reason at all there was another guy, who had just walked up that minute..."
+18,0.6701030927835051,0.4329896907216495,1.58,He just jumped over
+19,0.711340206185567,0.7010309278350515,-0.28,and grabbed me.

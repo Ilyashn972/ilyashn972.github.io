@@ -1,19 +1,19 @@
 segment_id,pcaught,prec,mbits,segment_text
-1,52,50,16.65,My best friend pushed me into the pool.
-2,49,50,11.72,"This happened during my cousin's wedding reception,"
-3,24,19,0.56,where everyone was dressed to impress.
-4,16,5,0.04,"And the reason it happened,"
-5,49,47,11.14,"she spotted a bee hovering near my face,"
-6,20,13,2.81,- this was at a fancy hotel garden -
-7,44,29,0.33,and she tried to save me from being stung.
-8,33,31,5.26,"And my aunt had just handed me a glass of champagne,"
-9,9,8,3.04,and I warned her to be careful.
-10,13,9,1.59,"'Course friends, y'know, they don't always think things through."
-11,47,21,1.54,"So that's when she gave me a little shove,"
-12,44,21,0.65,and I tumbled into the water.
-13,25,18,-0.54,"When I resurfaced, gasping for air,"
-14,34,31,0.81,"she just started laughing,"
-15,19,16,1.67,and she apologized profusely.
-16,37,37,1.51,"And... my beautiful dress was ruined,"
-17,21,21,1.87,"and naturally, the first thing to do was to get out and dry off,"
-18,48,48,19.14,"and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake."""
+1,0.9629629629629629,0.9259259259259259,16.65,My best friend pushed me into the pool.
+2,0.9074074074074074,0.9259259259259259,11.72,"This happened during my cousin's wedding reception,"
+3,0.4444444444444444,0.35185185185185186,0.56,where everyone was dressed to impress.
+4,0.2962962962962963,0.09259259259259259,0.04,"And the reason it happened,"
+5,0.9074074074074074,0.8703703703703703,11.14,"she spotted a bee hovering near my face,"
+6,0.37037037037037035,0.24074074074074073,2.81,- this was at a fancy hotel garden -
+7,0.8148148148148148,0.5370370370370371,0.33,and she tried to save me from being stung.
+8,0.6111111111111112,0.5740740740740741,5.26,"And my aunt had just handed me a glass of champagne,"
+9,0.16666666666666666,0.14814814814814814,3.04,and I warned her to be careful.
+10,0.24074074074074073,0.16666666666666666,1.59,"'Course friends, y'know, they don't always think things through."
+11,0.8703703703703703,0.3888888888888889,1.54,"So that's when she gave me a little shove,"
+12,0.8148148148148148,0.3888888888888889,0.65,and I tumbled into the water.
+13,0.46296296296296297,0.3333333333333333,-0.54,"When I resurfaced, gasping for air,"
+14,0.6296296296296297,0.5740740740740741,0.81,"she just started laughing,"
+15,0.35185185185185186,0.2962962962962963,1.67,and she apologized profusely.
+16,0.6851851851851852,0.6851851851851852,1.51,"And... my beautiful dress was ruined,"
+17,0.3888888888888889,0.3888888888888889,1.87,"and naturally, the first thing to do was to get out and dry off,"
+18,0.8888888888888888,0.8888888888888888,19.14,"and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake."""
