@@ -3,8 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
     <title>Mbits report</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <style>
+        .scaled-image {
+            transform: scale(0.85);
+            /* Scales the image to 150% of its original size */
+            transition: transform 0.3s;
+            /* Smooth transition for scaling */
+        }
+    
+        .scaled-image:hover {
+            transform: scale(1.05);
+            /* Scales the image to 180% on hover */
+        }
+        
+    
+        
+    </style>
 </head>
 
 <body>
@@ -13,73 +30,182 @@
     Below are results related to meaningful bits.
     
     If not stated otherwise meaningful bits is difference between sum of logp for segments.
-    The difference is calculated by substracting sum of logp probalibities of the narrative from sum of logp probabilities with 
+    The difference is calculated by substracting sum of logp probalibities of the narrative without preceding text from sum of logp probabilities with 
     narrative preceeded by recall.<hr>
-
-    <li>
-        <a href="../recall_meaningful_bits.html"> Meaningful bits of recall</a><br>
-        <p>CSV files with values for each segment of the narrative. <br>
-        They also have a columns with total sum for full recall, and rate (sum/len(in chars))<br>
-        They also have a row for mean values.<br>
-        See code at:
-        </p><hr>
-    </li>
-    <li>
-        <a href="../pcaught_mbits_prec_csv.html"> CSVs of P-caught , P-rec , Meaningful bits </a><br>
-        These files include narratives splitted to segments. For each segment we show p-caught, p-rec and mbits and the segment text itself.
-        <br>
-        See code at
-    </li>
+    Prompts:
+    <hr>
+    <p>The following two texts, separated by "---", tell the same story with different wording:</p>
+    
+    <pre>
+            {{ preceding_text1 }}
+            ---
+            {{ narrative }}
+        </pre>
+   
+    <hr>
+    
         <li>
-        <a href="../pcaught_mbits_prec.html"> Comparison of P-caught with P-rec vs Meaningful bits </a><br>
-        Shows how the values change as the story unfolds.<br>
-        See code at pcaught_mbits_prec.py<br>
-        <li><a href="../mbits_pcaught_prec_scatter.html"> Scatter plot of mbits vs p-caught and p-rec </a>
+            <a href="../recall_meaningful_bits.html">Meaningful Bits of Recall</a><br>
+            <p>
+                CSV files containing data for each segment of the narrative.<br>
+                These files include:
+            </p>
+            <ul>
+                <li>A column for each segment. For example for boyscout from 1 to 19.</li>
+                <li>The total sum of meaningful bits for the full recall.</li>
+                <li>The meaningful bits rate (total sum divided by character length).</li>
+                <li>A row with average values across all segments.</li>
+            </ul>
+            <img src="../images/boyscout_mbits_csv.png" class="scaled-image"><br>
+        </li>
+        
+        <li>
+            <a href="../mbits_scatter_plot.html">Scatter Plot of Meaningful Bits</a><br>
+            <p>
+                This plot shows:
+            </p>
+            <ul>
+                <li>The recall length on the x-axis.</li>
+                <li>The meaningful bits rate on the y-axis.</li>
+                <li>A comparison with a one summarized and one rephrased version of the narrative.</li>
+            </ul>
+            <img src="../boyscout/mbits_scatter_plot.png" width="200" height="140"><br>
+        </li>
+        
+        <li>
+            <a href="../recalls_mbits.html">Distribution of Meaningful Bits</a><br>
+            <p>
+                A visualization of how meaningful bits are distributed across different recalls.
+            </p>
+            <img src="../boyscout/recalls_mbits.png" width="200" height="140"><br>
+        </li>
+        
+        <li>
+            <a href="../recalls_mbits_hotmap.html">Heatmap of Meaningful Bits</a><br>
+            <p>
+                This heatmap shows how each recall affects the log probability of different narrative segments.
+            </p>
+            <img src="../boyscout/recalls_mbits_hotmap.png" width="200" height="140"><br>
+        </li>
         
         <hr>
-    
-
-    <li>
-        <a href="../mbits_scatter_plot.html"> Scatter of Meaningful Bits</a>
-        Plots on x-axis len of the recall, on y-axis mbits rate<br>
-        Also depicts a single attemt to summarize the narrative and a single attempt to rephrase the narrative<br>
-        See code at recall_impact_on_logp.py
-        <hr>
     </li>
-
     <li>
-        <a href="../recalls_mbits.html"> Distribution Meaningful bits of recall</a>
-        Shows distribution of the values above.<br>
-        See code: at recall_impact_on_logp.py
-        <hr>
-    </li>
-
-    <li>
-        <a href="../recalls_mbits_hotmap.html"> Heatmap Recall Meaningful bits</a>
-        Shows how a recall changes every one of the segments in the narrative
-        <hr> 
+        <a href="../pcaught_mbits_prec_csv.html">CSVs of P-caught, P-rec, and Meaningful Bits</a><br>
+        <p>
+            These files contain narratives split into segments. For each segment, the following values are provided:
+        </p>
+        <ul>
+            <li>P-caught</li>
+            <li>P-rec</li>
+            <li>Meaningful bits (mbits)</li>
+            <li>The segment text itself</li>
+        </ul>
+        <img src="../images/boyscout_pcaught_mbits_prec_csv.png"><br>
     </li>
     
-   
-   
     <li>
+        <a href="../pcaught_mbits_prec.html">Comparison of P-caught, P-rec, and Meaningful Bits</a><br>
+        <p>
+            Visualizes how these values evolve as the story progresses.
+        </p>
+        <img src="../boyscout/pcaught_mbits_prec.png" width="200" height="140"><br>
+    </li>
+    
+    <li>
+        <a href="../mbits_pcaught_prec_scatter.html">Scatter Plot: Meaningful Bits vs. P-caught and P-rec</a><br>
+        <p>
+            Displays the relationship between meaningful bits and the probabilities of recall (P-rec) and being caught
+            (P-caught).
+        </p>
+        <img src="../boyscout/mbits_pcaught_prec_scatter.png" width="200" height="140"><br>
+    </li>
+    </ul>
+    
+    <p>
+        View the code on GitHub:
+        <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/pcaught_mbits_prec.py">
+            pcaught_mbits_prec.py
+        </a>
+    </p>
+    <hr>
+    <li>
+        <a href="../summary_gpt4o_rate.html"> Compare mbits rate for summaries of different length </a><br>
+        The plots were generated based on summaries of varying lengths, created using GPT-4o. I instructed GPT-4o to
+        produce a summary with exactly n key points, where n depends on the length of the story.
+        <img src="../boyscout/summary_gpt4o_rate.png" width="200" height="140"><br>
+        <hr>
+    </li>
+    <h4>Changing the way that mbits are calculated </h4>
+                <li>
         <a href="../mbits_a_recall_example.html"> Calculate meaningful bits for a recall clause vs all the previous ones </a>
-    </li>
-    <li>
-        <a href="../mbits_for_summaries_and_recalls.html"> "Plot meaningful bits for selected recalls and a few attempts for
-            gpt4 summaries" </a>
-    </li>
-    <li>
-        <a href="../emulation_and_real_mbits_scatter_plot.html"> "Emulation vs Real Recalls Mbits" </a>
+        <p>The plots below illustrate how recall clauses influence meaningful bits (which are actually computed as the sum of
+            *natural* log probabilities ln ).</p>
+        
+        <p>Each row represents a clause, denoted as <code>C<sub>i</sub></code>. The cell colors indicate the difference in
+            probabilities for the corresponding segments, obtained from two separate probability calculations:</p>
+        
+        <ol>
+            <li>Using all clauses from <code>C<sub>1</sub></code> to <code>C<sub>i-1</sub></code>.</li>
+            <li>Using all clauses from <code>C<sub>1</sub></code> to <code>C<sub>i</sub></code>.</li>
+        </ol>
+        black dots are fan_out mappings
+        <br>
+        <img src="../boyscout/mbits_a_recall_example.png" width="300" height="150"><br>
+        <hr>
     </li>
     <li>
         <a href="../key_points_vs_real_mbits_scatter_plot.html"> Mbits rate for key points vs real narrative </a>
+        <a href="../key_points_vs_real_mbits_difference_plot.html"> Difference </a>
+        <br>
+        
+        Replace the narrative with key points and plot mbits rate of the recalls.<br> also plot the difference between Mbits rate for key points and real
+        narrative<br>
+        <img src="../boyscout/key_points_vs_real_mbits_scatter_plot.png" width="200" height="140">
+        <img src="../boyscout/key_points_vs_real_mbits_difference_plot.png" width="200" height="140"><br>
+        
+        See code at <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/key_point_impact_on_logp.py">key_point_impact_on_logp.py</a>
+        <hr>
     </li>
-    <li>
-        <a href="../key_points_vs_real_mbits_difference_plot.html"> Difference between Mbits rate for key points and real
-            narrative </a>
-    </li>
+    
+    
+    
+    
+        
+    
     </ul>
+    
+    <h4> Using mbits to confirm Caught segments</h4>
+    I have calculated mean of mbits for segments that were caught and not caught.<br>
+    I have also did the same for recall and intersection between them<br>
+    <a href="../csv/caught_rec_mbits.html">CSV file</a><br>
+    <ul><img src="../images/caugt_not_caught.png"><br>
+        See code at <a
+            href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/average_mbits_vs_monocrome_fan_out.py">average_mbits_vs_monocrome_fan_out.py</a>
+            <hr>
+    </li>
+        <li>
+            <a href="../average_mbits_vs_fan_out.html"> Average mbits vs Fan Out segments </a><br>
+            <img src="../boyscout/average_mbits_vs_fan_out.png" width="200" height="140"><br>
+        See code at <a
+            href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/average_mbits_vs_fan_out.py">average_mbits_vs_fan_out.py</a>
+            </li>
+        <hr>
+    
+    </ul>
+    <ul>
+        
+       
+    </ul>
+    <h4> TODO: </h4>
+    <a href="../mbits_a_recall_example.html"> Improve way to map mbits to relevant segments. E.g. check that the first segment
+        (mapped to) has the highest bits value in the row. </a>
+    First results for one recall for each story. Averages: hit (max segment was mapped to) 71%,
+    was mapped to the first segment 55%, which means that if mapped correctly, it will go to the first segment in 77% of the
+    cases.
+    </ul>
+    
+    <h3> BACKUP</h3>
     <h4> Comparing mbits for a few versions of keypoints </h4>
     <ul>
         <li>
@@ -93,34 +219,16 @@
                 subjects
             </a>
         </li>
-    </ul>
-    <h4> Using mbits to confirm Caught segments</h4>
-    <ul>
         <li>
-            <a href="../average_mbits_vs_fan_out.html"> Average mbits for Caught vs Not Caught segments </a>
+            <a href="../mbits_for_summaries_and_recalls.html"> "Plot meaningful bits for selected recalls and a few attempts for
+                gpt4 summaries" </a>
         </li>
         <li>
             <a href="../precision_recall_curve_for_caught_and_rec.html"> Precision Recall Curve for Caught and RECalled </a>
         </li>
-    </ul>
-    <h4>Emulating Recall and compare Caught and RECall</h4>
-    <ul>
         <li>
-            <a href="../recall_real_vs_emulation.html"> Read Recall vs 10 Emulations </a>
+            <a href="../emulation_and_real_mbits_scatter_plot.html"> "Emulation vs Real Recalls Mbits" </a>
         </li>
-        <li>
-            <a href="../caught_real_vs_emulation.html"> Real Caught vs 10 Emulations </a>
-        </li>
-        <li>
-            <a href="../summary_gpt4o_rate.html"> Combare mbits rate for summaries of different length </a>
-        </li>
-    </ul>
-    <h4> TODO: </h4>
-    <a href="../mbits_a_recall_example.html"> Improve way to map mbits to relevant segments. E.g. check that the first segment
-        (mapped to) has the highest bits value in the row. </a>
-    First results for one recall for each story. Averages: hit (max segment was mapped to) 71%,
-    was mapped to the first segment 55%, which means that if mapped correctly, it will go to the first segment in 77% of the
-    cases.
     </ul>
     </section>
     
