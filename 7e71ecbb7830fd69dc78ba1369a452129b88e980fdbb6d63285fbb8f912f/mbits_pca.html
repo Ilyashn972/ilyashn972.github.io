@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCA of recall mbits</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>PCA of recall mbits</h1>
+        <h2>Steps to Calculate PCA</h2>
+        
+        <ol>
+            <li><strong>Compute mbits for recalls:</strong> Use our standard method (: <a href="../reports/mbits.html"> see</a>)
+                to calculate the difference between the sum
+                of log probabilities (logp) for two prompts—one where the narrative is prepended with a recall and another with
+                just the recall. This allows us to construct a table of 100 recalls versus the number of segments in the story.<br>
+                <img src="boyscout/mbits_table.png" width="800" height="350"><br>
+            </li>
+        
+            <li><strong>Compute Pearson Correlation:</strong> For each possible pair of segments, measure the correlation
+                between the corresponding columns in the table from Step 1.</li>
+                <img src="boyscout/mbits_correlation.png" width="200" height="140"><br>
+        
+            <li><strong>Perform Principal Component Analysis (PCA):</strong> Conduct PCA on the correlation matrix obtained from
+                Step 2.</li>
+        </ol>
+        
+        <div class="component">
+            <strong>Magnitude Calculation:</strong> The magnitude is calculated as <code>-1 * VT[i, :] * S[i]</code>. We compute
+            up to 10 components, but initially only 4 are displayed in an interactive plot. The remaining components can be
+            enabled interactively.
+        </div>
+    <h3>See code at <a
+            href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/mbits_correlation.py">
+            mbits_correlation.py</a>
+    </h3>
+    </header>
+
+    <section class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#bear">Bear</a></li>
+            <li><a href="#boy-scout">Boy Scout</a></li>
+            <li><a href="#costa">Costa</a></li>
+            <li><a href="#do-something">Do Something</a></li>
+            <li><a href="#hester-v1-park">Hester v1 Park</a></li>
+            <li><a href="#hester-v2-church">Hester v2 Church</a></li>
+            <li><a href="#panic">Panic</a></li>
+            <li><a href="#schissel-v1-pool">Schissel v1 Pool</a></li>
+            <li><a href="#schissel-v2-lake">Schissel v2 Lake</a></li>
+            <li><a href="#stein">Stein</a></li>
+            <li><a href="#stein-final">Stein Final</a></li>
+            <li><a href="#triplett-v1-rookie">Triplett v1 Rookie</a></li>
+            <li><a href="#triplett-v2-cat-lady">Triplett v2 Cat Lady</a></li>
+        </ul>
+    </section>
+
+    <section class="image-section" id="bear">
+        <h2>Bear</h2>
+        
+<!-- bear --> <iframe src="bear/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="boy-scout">
+        <h2>Boy Scout</h2>
+<!-- boyscout --> <iframe src="boyscout/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="costa">
+        <h2>Costa</h2>
+<!-- costa --> <iframe src="costa/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="do-something">
+        <h2>Do Something</h2>
+<!-- doSomething --> <iframe src="doSomething/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="hester-v1-park">
+        <h2>Hester v1 Park</h2>
+<!-- hester_v1-park --> <iframe src="hester_v1-park/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="hester-v2-church">
+        <h2>Hester v2 Church</h2>
+<!-- hester_v2-church --> <iframe src="hester_v2-church/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="panic">
+        <h2>Panic</h2>
+<!-- panic --> <iframe src="panic/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="schissel-v1-pool">
+        <h2>Schissel v1 Pool</h2>
+<!-- schissel_v1-pool --> <iframe src="schissel_v1-pool/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="schissel-v2-lake">
+        <h2>Schissel v2 Lake</h2>
+<!-- schissel_v2-lake --> <iframe src="schissel_v2-lake/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="stein">
+        <h2>Stein</h2>
+<!-- stein --> <iframe src="stein/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="stein-final">
+        <h2>Stein Final</h2>
+<!-- stein_final -->
+    </section>
+
+    <section class="image-section" id="triplett-v1-rookie">
+        <h2>Triplett v1 Rookie</h2>
+<!-- triplett_v1-rookie --> <iframe src="triplett_v1-rookie/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section class="image-section" id="triplett-v2-cat-lady">
+        <h2>Triplett v2 Cat Lady</h2>
+<!-- triplett_v2-catlady --> <iframe src="triplett_v2-catlady/mbits_pca.html" width="900" height="600" style="border:none;"></iframe>
+    </section>
+
+</body>
+
+</html>
