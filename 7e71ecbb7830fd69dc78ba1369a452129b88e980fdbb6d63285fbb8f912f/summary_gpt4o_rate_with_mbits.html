@@ -11,10 +11,66 @@
 <body>
     <header>
         <h1>Interactive Plot with Summary Mbits</h1>
-    <h3>See code at <a
-            href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/summary_gpt4o_rate.py">
-            summary_gpt4o_rate.py</a>
-    </h3>
+        <h3>
+            <p>The plots below were generated based on summaries of varying lengths, created using GPT-4o. I instructed GPT-4o
+                to
+                produce a summary with exactly <strong>n</strong> key points, where <strong>n</strong> depends on the length of
+                the
+                story.</p>
+        
+            <h2>Key Points Selection</h2>
+        
+            <p>The maximal number of key points is determined per story:</p>
+            bear 52<br>
+            boyscout 16<br>
+            costa 61<br>
+            doSomething 43<br>
+            hester_v1-park 37<br>
+            hester_v2-church 37<br>
+            panic 37<br>
+            schissel_v1-pool 16<br>
+            schissel_v2-lake 16<br>
+            triplett_v1-rookie 22<br>
+            triplett_v2-catlady 22<br>
+            stein 52<br>
+            <p>I have created different keypoint starting at 3 and incrementing by one till reaching the number above
+            <p>For each specified number of key points, I generated three different summaries using <strong>temperature =
+                    1</strong>.</p>
+        
+            <h2>Prompts Used</h2>
+        
+            <pre><code>
+            summary_with_specified_number_of_key_points = """
+            Summarize the provided narrative into exactly {{n}} very simple key points, each containing a subject and a predicate, told from the first-person perspective.
+            Format the output in JSON as follows:
+            
+            {
+              "keypoints": ["keypoint1", ..., "keypoint{{n}}"]
+            }
+            """
+            rephrase_narrative = """
+            You will be given a narrative, segmented into numbered linguistic clauses, formatted as a JSON object where each key
+            corresponds to a clause number, and the value is the clause text.
+            
+            Your task is to generate a paraphrase of the narrative while strictly maintaining the original meaning. To achieve this,
+            you must:
+            • Use different wording (lexical diversity) and different sentence structures (syntactic diversity).
+            • Ensure strict clause-by-clause paraphrasing, meaning each clause should be paraphrased independently without merging
+            or splitting clauses.
+            • Strive to keep each clause as close as possible to its original length, allowing only minimal variation.
+            • Preserve the numbering of the clauses in the paraphrased output.
+            
+            Expected Output Format (JSON example):
+            
+            { "1": "The sun dipped below the horizon.", "2": "A gentle wind moved through the trees." }
+            
+            """
+                </code></pre>
+        
+            See code at <a
+                href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/summary_gpt4o_rate.py">
+                summary_gpt4o_rate.py</a>
+        </h3>
     </header>
 
     <section class="toc">
