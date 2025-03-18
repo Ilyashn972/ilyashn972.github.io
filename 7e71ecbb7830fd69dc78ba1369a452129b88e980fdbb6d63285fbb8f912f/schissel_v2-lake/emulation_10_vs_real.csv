@@ -1,0 +1,19 @@
+segment_id,segment_text,real_rec,real_caught,emulated_rec,emulated_caught,rec_difference,caught_difference
+1,My best friend pushed me into the lake.,90.91,87.76,100.0,100.0,9.09,12.24
+2,This happened during our annual summer camping trip,69.7,81.63,100.0,100.0,30.3,18.37
+3,and we were enjoying a peaceful afternoon.,25.25,39.8,0.0,10.0,-25.25,-29.8
+4,"The reason it all began,",8.08,12.24,10.0,0.0,1.92,-12.24
+5,she spotted a frog near the water's edge or,72.73,68.37,100.0,40.0,27.27,-28.37
+6,- this was at our favorite spot in the woods -,28.28,39.8,30.0,30.0,1.72,-9.8
+7,and she dared me to catch it.,61.62,81.63,90.0,90.0,28.38,8.37
+8,I had just sat down to eat my sandwich,56.57,63.27,90.0,100.0,33.43,36.73
+9,and I told her I wasn't interested.,56.57,55.1,90.0,100.0,33.43,44.9
+10,"'Course friends, y'know, they don't always take no for an answer.",30.3,39.8,30.0,20.0,-0.3,-19.8
+11,So that's when she snuck up behind me,32.32,93.88,40.0,100.0,7.68,6.12
+12,and gave me a little nudge.,75.76,94.9,80.0,100.0,4.24,5.1
+13,"When I emerged from the water, there was a frog on the shore,",49.49,82.65,70.0,100.0,20.51,17.35
+14,she just scooped it up,47.47,73.47,80.0,90.0,32.53,16.53
+15,and handed it to me.,45.45,52.04,80.0,90.0,34.55,37.96
+16,And . . .; I couldn't help but laugh – uncontrollably.,57.58,62.24,100.0,100.0,42.42,37.76
+17,"And naturally, the first thing to do was to get revenge,",31.31,67.35,10.0,90.0,-21.31,22.65
+18,"and I said, ""Just you wait,"" I said, ""you'll get yours soon enough.""",66.67,77.55,100.0,100.0,33.33,22.45

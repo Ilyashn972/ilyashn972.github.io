@@ -1,0 +1,19 @@
+segment_id,segment_text,real_rec,real_caught,emulated_rec,emulated_caught,rec_difference,caught_difference
+1,My best friend pushed me into the pool.,90.91,96.3,90.0,100.0,-0.91,3.7
+2,"This happened during my cousin's wedding reception,",90.91,90.74,100.0,100.0,9.09,9.26
+3,where everyone was dressed to impress.,34.55,44.44,40.0,30.0,5.45,-14.44
+4,"And the reason it happened,",9.09,29.63,30.0,30.0,20.91,0.37
+5,"she spotted a bee hovering near my face,",85.45,90.74,100.0,80.0,14.55,-10.74
+6,- this was at a fancy hotel garden -,23.64,37.04,100.0,100.0,76.36,62.96
+7,and she tried to save me from being stung.,52.73,81.48,80.0,100.0,27.27,18.52
+8,"And my aunt had just handed me a glass of champagne,",56.36,61.11,100.0,100.0,43.64,38.89
+9,and I warned her to be careful.,14.55,16.67,70.0,60.0,55.45,43.33
+10,"'Course friends, y'know, they don't always think things through.",16.36,24.07,40.0,30.0,23.64,5.93
+11,"So that's when she gave me a little shove,",38.18,87.04,90.0,100.0,51.82,12.96
+12,and I tumbled into the water.,38.18,81.48,60.0,100.0,21.82,18.52
+13,"When I resurfaced, gasping for air,",32.73,46.3,70.0,90.0,37.27,43.7
+14,"she just started laughing,",56.36,62.96,70.0,100.0,13.64,37.04
+15,and she apologized profusely.,29.09,35.19,60.0,100.0,30.91,64.81
+16,"And... my beautiful dress was ruined,",67.27,68.52,70.0,100.0,2.73,31.48
+17,"and naturally, the first thing to do was to get out and dry off,",38.18,38.89,10.0,20.0,-28.18,-18.89
+18,"and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake.""",87.27,88.89,70.0,100.0,-17.27,11.11

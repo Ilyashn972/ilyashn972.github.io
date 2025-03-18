@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Plot with Summary Mbits</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Interactive Plot with Summary Mbits</h1>
+        <h3>
+            <p>The plots below were generated based on summaries of varying lengths, created using GPT-4o. I instructed GPT-4o
+                to
+                produce a summary with exactly <strong>n</strong> key points, where <strong>n</strong> depends on the length of
+                the
+                story.</p>
+        
+            <h2>Key Points Selection</h2>
+        
+            <p>The maximal number of key points is determined per story:</p>
+            bear 52<br>
+            boyscout 16<br>
+            costa 61<br>
+            doSomething 43<br>
+            hester_v1-park 37<br>
+            hester_v2-church 37<br>
+            panic 37<br>
+            schissel_v1-pool 16<br>
+            schissel_v2-lake 16<br>
+            triplett_v1-rookie 22<br>
+            triplett_v2-catlady 22<br>
+            stein 52<br>
+            <p>I have created different keypoint starting at 3 and incrementing by one till reaching the number above
+            <p>For each specified number of key points, I generated three different summaries using <strong>temperature =
+                    1</strong>.</p>
+        
+            <h2>Prompts Used</h2>
+        
+            <pre><code>
+            summary_with_specified_number_of_key_points = """
+            Summarize the provided narrative into exactly {{n}} very simple key points, each containing a subject and a predicate, told from the first-person perspective.
+            Format the output in JSON as follows:
+            
+            {
+              "keypoints": ["keypoint1", ..., "keypoint{{n}}"]
+            }
+            """
+            rephrase_narrative = """
+            You will be given a narrative, segmented into numbered linguistic clauses, formatted as a JSON object where each key
+            corresponds to a clause number, and the value is the clause text.
+            
+            Your task is to generate a paraphrase of the narrative while strictly maintaining the original meaning. To achieve this,
+            you must:
+            • Use different wording (lexical diversity) and different sentence structures (syntactic diversity).
+            • Ensure strict clause-by-clause paraphrasing, meaning each clause should be paraphrased independently without merging
+            or splitting clauses.
+            • Strive to keep each clause as close as possible to its original length, allowing only minimal variation.
+            • Preserve the numbering of the clauses in the paraphrased output.
+            
+            Expected Output Format (JSON example):
+            
+            { "1": "The sun dipped below the horizon.", "2": "A gentle wind moved through the trees." }
+            
+            """
+
+            In order to reduce effect of verbatim repeatitions of the words we have reformulated narrative using the following prompt:
+            """You will be given a part of a narrative, segmented into linguistic clauses and numbered from 1 to {N_chunk}.
+            Your task is to generate a paraphrase of this part of the narrative, using different wording (lexical diversity) and
+            phrasing (syntactic diversity), but keeping the meaning essentially the same.
+            You should keep the numbering of the clauses in the paraphrase.
+            When the part is in the middle of the narrative, you will be given a summary of the narrative up to that point.
+            {full_context_str}"""
+
+            And the prompt for summarization:
+            """You will be given a part of a narrative, stopped in the middle.
+            Your task is to generate a summary of this part of the narrative, so that if a reader read this summary he will have the
+            relevant information to understand the rest of the narrative upon reading it."""
+            </code></pre>
+            <p>For these specific plots, I have used different prompts to calculate the difference between narrative and recall +
+                narrative. The recall and narrative were separated by "\n---\n". The same prompts have been used for the following
+                comparisons:</p>
+            <ol>
+                <li>Narrative vs (Recall + "---" + Narrative)</li>
+                <li>Rephrased Narrative vs (Recall + "---" + Rephrased Narrative)</li>
+                <li>Narrative vs (Summary + "---" + Narrative)</li>
+                <li>Rephrased Narrative vs (Summary + "---" + Rephrased Narrative)</li>
+            </ol>
+
+             
+                
+                You can see the comparsion to standard mbits prompt at <a href="comparing_mbits_prompts.html">comparison</a>
+        
+            See code at <a
+                href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/mbits_for_rephrased_narrative.py">
+                mbits_for_rephrased_narrative.py</a>
+        </h3>
+    </header>
+
+    <section class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#bear">Bear</a></li>
+            <li><a href="#boy-scout">Boy Scout</a></li>
+            <li><a href="#costa">Costa</a></li>
+            <li><a href="#do-something">Do Something</a></li>
+            <li><a href="#hester-v1-park">Hester v1 Park</a></li>
+            <li><a href="#hester-v2-church">Hester v2 Church</a></li>
+            <li><a href="#panic">Panic</a></li>
+            <li><a href="#schissel-v1-pool">Schissel v1 Pool</a></li>
+            <li><a href="#schissel-v2-lake">Schissel v2 Lake</a></li>
+            <li><a href="#stein">Stein</a></li>
+            <li><a href="#stein-final">Stein Final</a></li>
+            <li><a href="#triplett-v1-rookie">Triplett v1 Rookie</a></li>
+            <li><a href="#triplett-v2-cat-lady">Triplett v2 Cat Lady</a></li>
+        </ul>
+    </section>
+
+        <h2>Bear</h2>
+<!-- bear --> <iframe src="bear/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="bear/rephrased_narrative_summary.html"> Summaries</a> <a href="bear/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="bear/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Boy Scout</h2>
+<!-- boyscout --> <iframe src="boyscout/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="boyscout/rephrased_narrative_summary.html"> Summaries</a> <a href="boyscout/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="boyscout/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Costa</h2>
+<!-- costa --> <iframe src="costa/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="costa/rephrased_narrative_summary.html"> Summaries</a> <a href="costa/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="costa/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Do Something</h2>
+<!-- doSomething --> <iframe src="doSomething/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="doSomething/rephrased_narrative_summary.html"> Summaries</a> <a href="doSomething/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="doSomething/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Hester v1 Park</h2>
+<!-- hester_v1-park --> <iframe src="hester_v1-park/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="hester_v1-park/rephrased_narrative_summary.html"> Summaries</a> <a href="hester_v1-park/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="hester_v1-park/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Hester v2 Church</h2>
+<!-- hester_v2-church --> <iframe src="hester_v2-church/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="hester_v2-church/rephrased_narrative_summary.html"> Summaries</a> <a href="hester_v2-church/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="hester_v2-church/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Panic</h2>
+<!-- panic --> <iframe src="panic/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="panic/rephrased_narrative_summary.html"> Summaries</a> <a href="panic/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="panic/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Schissel v1 Pool</h2>
+<!-- schissel_v1-pool --> <iframe src="schissel_v1-pool/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="schissel_v1-pool/rephrased_narrative_summary.html"> Summaries</a> <a href="schissel_v1-pool/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="schissel_v1-pool/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Schissel v2 Lake</h2>
+<!-- schissel_v2-lake --> <iframe src="schissel_v2-lake/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="schissel_v2-lake/rephrased_narrative_summary.html"> Summaries</a> <a href="schissel_v2-lake/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="schissel_v2-lake/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Stein</h2>
+<!-- stein --> <iframe src="stein/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="stein/rephrased_narrative_summary.html"> Summaries</a> <a href="stein/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="stein/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Stein Final</h2>
+<!-- stein_final -->
+    </section>
+
+        <h2>Triplett v1 Rookie</h2>
+<!-- triplett_v1-rookie --> <iframe src="triplett_v1-rookie/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="triplett_v1-rookie/rephrased_narrative_summary.html"> Summaries</a> <a href="triplett_v1-rookie/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="triplett_v1-rookie/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+        <h2>Triplett v2 Cat Lady</h2>
+<!-- triplett_v2-catlady --> <iframe src="triplett_v2-catlady/mbits_for_rephrased_narrative_in_chars_2.html" width="900" height="600" style="border:none;"></iframe><br><a href="triplett_v2-catlady/rephrased_narrative_summary.html"> Summaries</a> <a href="triplett_v2-catlady/mbits_for_rephrased_narrative_2.html"> Recalls and Rephrases</a> <a href="triplett_v2-catlady/mbits_for_rephrased_narrative_details_2.html"> Recalls and Rephrases clause by clause</p><hr>
+    </section>
+
+</body>
+
+</html>

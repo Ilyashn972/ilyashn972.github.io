@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparing MBits Prompts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        iframe {
+            width: 900px;
+            height: 600px;
+            border: none;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Comparing MBits Prompts</h1>
+    <p>Usually, we use the prompt "The following two texts separated by '---' tell the same story with different wording:"
+        to separate between a recall and the narrative. In this experiment, we wanted to check what will happen if only
+        "\n---\n" separates the recall and the narrative. The plots below also include comparisons:</p>
+    <ol>
+        <li>Narrative vs (Recall + "---" + Narrative)</li>
+        <li>Rephrased Narrative vs (Recall + "---" + Rephrased Narrative)</li>
+        <li>Narrative vs (Summary + "---" + Narrative)</li>
+        <li>Rephrased Narrative vs (Summary + "---" + Rephrased Narrative)</li>
+    </ol>
+
+    
+
+    <iframe src="bear/comparing_mbits_prompts.html"></iframe>
+    <iframe src="boyscout/comparing_mbits_prompts.html"></iframe>
+    <iframe src="costa/comparing_mbits_prompts.html"></iframe>
+    <iframe src="doSomething/comparing_mbits_prompts.html"></iframe>
+    <iframe src="hester_v1-park/comparing_mbits_prompts.html"></iframe>
+    <iframe src="hester_v2-church/comparing_mbits_prompts.html"></iframe>
+    <iframe src="panic/comparing_mbits_prompts.html"></iframe>
+    <iframe src="schissel_v1-pool/comparing_mbits_prompts.html"></iframe>
+    <iframe src="schissel_v2-lake/comparing_mbits_prompts.html"></iframe>
+    <iframe src="stein/comparing_mbits_prompts.html"></iframe>
+    <iframe src="triplett_v1-rookie/comparing_mbits_prompts.html"></iframe>
+    <iframe src="triplett_v2-catlady/comparing_mbits_prompts.html"></iframe>
+
+</body>
+</html>
