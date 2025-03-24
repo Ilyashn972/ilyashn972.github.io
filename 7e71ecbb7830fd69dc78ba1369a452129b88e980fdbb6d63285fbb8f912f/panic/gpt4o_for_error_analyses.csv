@@ -1,0 +1,57 @@
+segment_id,segment_text,real_p_caught,gpt4o_emulated_p_caught,diff,abs_diff
+25,I was really scared,14,73,-59,59
+24,I just couldn't catch my breath,33,92,-59,59
+23,I tried to take some deep breaths,32,82,-50,50
+6,I had been working for a few hours,17,62,-45,45
+35,The manager started walking towards me,46,89,-43,43
+17,leaned against a nearby wall for a bit,49,87,-38,38
+16,I stopped what I was doing,24,58,-34,34
+34,I couldn't find my voice.,51,83,-32,32
+9,a bit lightheaded,68,99,-31,31
+19,I could feel my heart pounding in my chest,46,76,-30,30
+26,didn't know what to do.,10,40,-30,30
+10,but chalked it up to hunger,63,92,-29,29
+21,I could feel sweat dripping down my forehead,60,89,-29,29
+18,the pressure only got stronger,47,76,-29,29
+20,"Next thing I know, I started seeing spots",65,92,-27,27
+49,It turned out I had been having a panic attack,86,60,26,26
+33,I tried to yell back that something was wrong,38,64,-26,26
+53,it really could have been much worse,25,0,25,25
+7,it was getting late,16,38,-22,22
+11,not having eaten yet that day,65,87,-22,22
+31,it seems someone had noticed me,63,41,22,22
+39,caught me just before my legs gave out,73,94,-21,21
+8,I had been feeling a bit strange,69,88,-19,19
+55,make sure to properly rest,72,53,19,19
+52,It was never a fun experience,18,0,18,18
+56,eat to avoid further episodes,65,48,17,17
+32,was checking to see if I was alright,48,31,17,17
+42,He asked me questions about what was wrong,39,53,-14,14
+45,told me to rest for a bit,26,40,-14,14
+48,I started to feel better,43,29,14,14
+22,my arms,47,59,-12,12
+13,returning items to their proper places,16,4,12,12
+29,who had seen me,80,69,11,11
+12,"But then, as I was walking around the warehouse",18,7,11,11
+3,working on the warehouse floor,92,81,11,11
+2,I was doing my usual job,86,76,10,10
+37,I started to drop to the ground,76,85,-9,9
+38,luckily the manager got to me in time,84,93,-9,9
+27,Suddenly I heard a voice coming from across the warehouse.,85,94,-9,9
+43,what happened,34,43,-9,9
+46,After a few minutes,32,24,8,8
+30,called out to me,67,74,-7,7
+51,the help of the quick action of the manager,21,14,7,7
+40,He took me to the staff room,76,83,-7,7
+44,He got me a glass of cold water,66,73,-7,7
+50,I escaped from the situation,8,1,7,7
+14,I started to feel a strange tightness,93,100,-7,7
+41,sat me down in a chair,68,62,6,6
+15,and pressure in my chest,93,98,-5,5
+28,It was the manager,93,97,-4,4
+54,it taught me to check in with myself,72,70,2,2
+47,the pressure in my chest slowly eased up,44,45,-1,1
+5,organizing merchandise,54,55,-1,1
+4,stocking boxes,68,67,1,1
+1,"Well, I was at work one day",74,75,-1,1
+36,I could feel my world going dark,64,64,0,0
