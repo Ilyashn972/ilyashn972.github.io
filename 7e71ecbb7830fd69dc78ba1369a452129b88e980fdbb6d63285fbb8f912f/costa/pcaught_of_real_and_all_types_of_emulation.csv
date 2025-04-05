@@ -1,195 +1,195 @@
 real_caught,segment_id,segment_text,gpt4,gpt4o_all,gpt4o_idxmx
-82.8,1,My daughter died.,100.0,98.85057471264368,100.0
-62.37,2,It’ll be twenty-eight years this month.,100.0,90.80459770114942,66.66666666666667
-54.84,3,"The thirtieth of this month, yeah.",100.0,71.26436781609195,44.44444444444444
-61.29,4,She died at Methodist Hospital.,70.0,89.08045977011494,77.77777777777777
-77.42,5,She had an operation for appendicitis.,100.0,99.42528735632185,100.0
-30.11,6,"It was late Saturday afternoon when they operated, very late.",50.0,53.44827586206897,22.22222222222222
-47.31,7,"Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was.",60.0,90.22988505747126,77.77777777777777
-41.94,8,She was still under ether.,80.0,71.26436781609195,33.333333333333336
-34.41,9,"Back then, they used a lot of ether.",70.0,48.85057471264368,22.22222222222222
-32.26,10,There was a chair there.,40.0,25.862068965517242,
-46.24,11,"They were just starting to get people out of bed, you know.",90.0,85.05747126436782,44.44444444444444
-23.66,12,"So, Victoria saw the chair,",50.0,26.436781609195403,33.333333333333336
-40.86,13,"and she said to the nurse, “What’s this chair doing here?”",60.0,44.252873563218394,44.44444444444444
-56.99,14,"The nurse said, “Well, we’ve got to get her out of bed.”",70.0,88.50574712643679,55.55555555555556
-29.03,15,"She said, “What are you talking about? She’s still under ether.”",70.0,48.275862068965516,44.44444444444444
-33.33,16,“She’s too sick.”,60.0,31.03448275862069,22.22222222222222
-47.31,17,"But the nurse said, “Well, that’s the doctor’s orders.”",60.0,61.49425287356322,55.55555555555556
-46.24,18,"So, they went to get her out of bed,",70.0,74.71264367816092,44.44444444444444
-62.37,19,"and she passed out,",90.0,79.88505747126437,55.55555555555556
-32.26,20,and they had to put her back in bed.,80.0,42.52873563218391,33.333333333333336
-31.18,21,"See, here, she never – I don’t know if they knew or what,",80.0,10.344827586206897,33.333333333333336
-67.74,22,"but I blame them for the blood clot she got, taking her out of bed.",100.0,98.27586206896552,77.77777777777777
-49.46,23,"So, when she was walking around to come home after ten days,",90.0,59.195402298850574,44.44444444444444
-69.89,24,I was waiting for the call from the hospital.,90.0,86.7816091954023,55.55555555555556
-35.48,25,I didn’t have a phone then.,70.0,28.735632183908045,
-76.34,26,"The lady from the store who had a phone called me, “Mrs. Costa,” at aquarter to five at night.",80.0,85.63218390804597,44.44444444444444
-66.67,27,"“Mrs. Costa, they just called you from the hospital.",80.0,83.33333333333333,33.333333333333336
-82.8,28,Go Pick Marie up.,80.0,81.03448275862068,77.77777777777777
-32.26,29,She’s discharged.”,70.0,6.896551724137931,22.22222222222222
-47.31,30,I had all the clothes laid out on the table.,70.0,86.7816091954023,44.44444444444444
-50.54,31,"And Rita was – I was cooking,",70.0,67.816091954023,33.333333333333336
-46.24,32,"I said, “Rita, finish the cooking.”",70.0,61.49425287356322,33.333333333333336
-46.24,33,Daddy will be home soon.”,70.0,52.87356321839081,33.333333333333336
-39.78,34,He was working down in the yard.,70.0,35.05747126436781,33.333333333333336
-43.01,35,"I said, “And put a big pot of coffee on,” because she had been wishing for coffee.",70.0,60.3448275862069,33.333333333333336
-38.71,36,"And you know, every morning, that first cup of coffee, I offered it to her.",80.0,49.42528735632184,22.22222222222222
-35.48,37,"When I get up in the morning, the first cup is hers.",70.0,39.08045977011494,22.22222222222222
-33.33,38,"Since she’s gone, I never forget that.",70.0,31.03448275862069,44.44444444444444
-37.63,39,"So I said, “Put a pot of coffee on,",70.0,64.94252873563218,33.333333333333336
-37.63,40,and send for some cake from the bakery.”,70.0,56.32183908045977,33.333333333333336
-52.69,41,I’m going to get Marie; they called me.”,70.0,58.62068965517241,44.44444444444444
-26.88,42,"“All right, mother, go ahead,” she said, “I’ll finish up.”",70.0,11.494252873563218,22.22222222222222
-48.39,43,"And I went myself. You know, I had the coat on my arm.",80.0,49.42528735632184,44.44444444444444
-35.48,44,She was operated on in March –,60.0,14.367816091954023,22.22222222222222
-53.76,45,"No, April! So that was the thirtieth.",80.0,26.436781609195403,22.22222222222222
-49.46,46,"She was operated – ten days before, so that would be the twentieth.",70.0,14.942528735632184,22.22222222222222
-22.58,47,"The twentieth of April, right? It was kind of chilly.",40.0,9.770114942528735,11.11111111111111
-41.94,48,"Oh, and I had everything in a bag,",60.0,38.50574712643678,33.333333333333336
-46.24,49,and I had the coat on my arm and her dress hanging on my arm.,60.0,40.229885057471265,33.333333333333336
-39.78,50,"She saw me from the windows, from Wolf Street.",60.0,51.724137931034484,22.22222222222222
-27.96,51,"She said, “My mother’s just coming.”",60.0,29.310344827586206,22.22222222222222
-34.41,52,"She was with the girls, saying goodbye to everyone – you know how it is.",60.0,29.885057471264368,22.22222222222222
-25.81,53,"They told me on the phone, it would be ten dollars more for her board.",70.0,48.85057471264368,22.22222222222222
-25.81,54,And to make sure I brought her girdle to put on.,70.0,30.45977011494253,22.22222222222222
-23.66,55,"I said, “All right, I’ll be right over.”",70.0,5.747126436781609,22.22222222222222
-52.69,56,And I went.,70.0,32.758620689655174,44.44444444444444
-70.97,57,"But when I got there, the nurse said to me, “Sit down, Mrs. Costa, sit here for a while.”",60.0,89.65517241379311,77.77777777777777
-45.16,58,"So I sat down, and I was praying for another lady in the hospital that had an operation for her gall bladder.",60.0,75.86206896551724,22.22222222222222
-37.63,59,"She lived near my sister, and she had ten children.",60.0,62.06896551724138,22.22222222222222
-35.48,60,They had said she was in very bad shape.,60.0,64.94252873563218,22.22222222222222
-39.78,61,"I prayed, “Oh dear God, don’t take that mother away from her children.”",60.0,57.47126436781609,22.22222222222222
-23.66,62,"I was praying for her, you know.",60.0,8.620689655172415,22.22222222222222
-32.26,63,Then a little nurse’s aide went to the closet and got some blankets.,60.0,16.666666666666668,33.333333333333336
-30.11,64,"I started getting the chills,",60.0,40.229885057471265,44.44444444444444
-22.58,65,"and I was thinking about it,",60.0,12.64367816091954,33.333333333333336
-34.41,66,"when the aide said to the nurse, “Oh, she’s going into a cold sweat now.”",70.0,44.827586206896555,44.44444444444444
-55.91,67,"The nurse hung up the phone and came to me. She said, “Mrs. Costa, has your daughter ever had a fainting spell?”",60.0,80.45977011494253,77.77777777777777
-54.84,68,"“Oh my God!” I said, “Don’t tell me you’re running for my daughter!”",60.0,46.55172413793103,77.77777777777777
-49.46,69,"“Yes,” she said, “come on in.”",70.0,28.160919540229884,44.44444444444444
-54.84,70,"So, I went into the room.",70.0,39.08045977011494,55.55555555555556
-55.91,71,And my daughter was on the bed with her bedroom slippers and her housecoat on.,80.0,51.724137931034484,33.333333333333336
-50.54,72,"And the beads of sweat – honest to God, not to exaggerate, they were that big.",90.0,79.3103448275862,44.44444444444444
-38.71,73,It came – just poured from her –,90.0,36.206896551724135,33.333333333333336
-77.42,74,"I said, “What did you do, kill my daughter?",80.0,91.37931034482759,66.66666666666667
-62.37,75,You killed her! You killed her!”,80.0,81.03448275862068,66.66666666666667
-56.99,76,That’s what I kept yelling.,90.0,50.0,33.333333333333336
-41.94,77,"And the doctor rushed in,",70.0,22.413793103448278,33.333333333333336
-34.41,78,"see, they were trying to get the doctor, you know.",70.0,16.091954022988507,33.333333333333336
-45.16,79,She was a lady doctor.,70.0,27.586206896551722,33.333333333333336
-40.86,80,"Dr. Schwartz actually did the operation, but she was his assistant, Dr. Montique.",70.0,30.45977011494253,33.333333333333336
-41.94,81,She was a lady doctor.,70.0,29.310344827586206,33.333333333333336
-27.96,82,"So, she came in and she said –",70.0,17.24137931034483,33.333333333333336
-70.97,83,"I said, “You killed my daughter – what did you do to her?”",90.0,58.62068965517241,44.44444444444444
-53.76,84,"She said, “We don’t know what happened, Mrs. Costa.”",80.0,59.770114942528735,44.44444444444444
-31.18,85,She took me away from the bed.,70.0,8.045977011494253,22.22222222222222
-40.86,86,"The nurse said to me, “Talk to her.”",80.0,20.114942528735632,33.333333333333336
-38.71,87,"I said, “Talk to her? My daughter’s dying, what am I supposed to tell her?”",80.0,12.068965517241379,33.333333333333336
-68.82,88,And I was screaming.,80.0,56.32183908045977,66.66666666666667
-56.99,89,My hair was all pulled out.,80.0,50.57471264367816,55.55555555555556
-67.74,90,"I went hysterical, you know what I mean? She was only eighteen years old.",90.0,60.3448275862069,66.66666666666667
-34.41,91,"Beautiful girl, you can see from her picture.",70.0,15.517241379310345,33.333333333333336
-64.52,92,"And just as I turned my back, my daughter passed away.",100.0,68.96551724137932,55.55555555555556
-49.46,93,She was getting ready to go home.,100.0,28.735632183908045,44.44444444444444
-40.86,94,I had the clothes and everything ready.,70.0,14.367816091954023,33.333333333333336
-53.76,95,My husband was waiting for her.,60.0,59.195402298850574,44.44444444444444
-53.76,96,"He came home, went upstairs to shave and wash, then sat on the step, waiting.",60.0,41.37931034482759,44.44444444444444
-48.39,97,“When is the mother coming?”,70.0,32.758620689655174,44.44444444444444
-46.24,98,The hospital kept calling.,70.0,52.298850574712645,44.44444444444444
-49.46,99,The people in the office didn’t know what had happened yet.,70.0,58.04597701149425,44.44444444444444
-50.54,100,"They kept calling the store, trying to reach us.",70.0,58.62068965517241,44.44444444444444
-53.76,101,"They asked, “When is the mother coming to pick up Marie?",70.0,51.14942528735632,55.55555555555556
-50.54,102,She’s discharged.”,70.0,21.264367816091955,55.55555555555556
-53.76,103,"And Rita said “That’s strange, the mother went to the hospital. She should be there.”",70.0,36.206896551724135,44.44444444444444
-46.24,104,So they came back to the hospital to look for us.,70.0,33.9080459770115,44.44444444444444
-44.09,105,"Rita said, “Gee, that’s strange,”",70.0,39.08045977011494,44.44444444444444
-43.01,106,"she said, “Mother must’ve gotten really worked up about Marie.”",70.0,31.60919540229885,44.44444444444444
-38.71,107,"You know, I’ve always had a bad heart.",70.0,22.988505747126435,44.44444444444444
-41.94,108,"“Mother must’ve gotten so upset about Marie, she probably made herself sick,” Rita thought.",70.0,26.436781609195403,44.44444444444444
-45.16,109,"So she came over with my son-in-law, in the car.",70.0,51.724137931034484,44.44444444444444
-47.31,110,"And I was in the main hallway, at the office.",70.0,39.08045977011494,44.44444444444444
-45.16,111,I was all pulled apart.,70.0,27.011494252873565,44.44444444444444
-52.69,112,One doctor wanted to give me a shot.,70.0,45.97701149425287,44.44444444444444
-49.46,113,"I said, “Get out of here,",70.0,43.67816091954023,44.44444444444444
-52.69,114,"I’ll kick you,” I said.",70.0,46.55172413793103,55.55555555555556
-56.99,115,"“You killed my daughter, now you want to kill me?”",70.0,35.632183908045974,55.55555555555556
-46.24,116,Another nurse came over.,70.0,29.885057471264368,44.44444444444444
-45.16,117,"See, they all knew me.",70.0,16.666666666666668,33.333333333333336
-44.09,118,"I had three operations in no time, not even a year.",70.0,17.24137931034483,44.44444444444444
-41.94,119,And I knew all the nurses.,70.0,16.091954022988507,44.44444444444444
-50.54,120,"“Mrs. Costa, please, take –”",70.0,40.229885057471265,44.44444444444444
-51.61,121,"“Get out!” I said, “Don’t you dare come near me.”",70.0,39.6551724137931,44.44444444444444
-56.99,122,I was so hysterical.,70.0,51.724137931034484,55.55555555555556
-62.37,123,I was banging my head against the wall and everything.,70.0,53.44827586206897,55.55555555555556
-48.39,124,They had to grab me.,70.0,38.50574712643678,44.44444444444444
-40.86,125,"Then they brought me to the office, see.",70.0,12.068965517241379,33.333333333333336
-49.46,126,"When Rita came in and saw me like that, she asked, “Mother, what happened?”",70.0,45.40229885057471,44.44444444444444
-51.61,127,"I said, “We lost Marie.",70.0,37.93103448275862,55.55555555555556
-55.91,128,Marie died.”,80.0,39.08045977011494,77.77777777777777
-34.41,129,"Well, that’s this one. This is a picture of Rita.",80.0,20.114942528735632,22.22222222222222
-50.54,130,She went down like lightning.,80.0,71.26436781609195,33.333333333333336
-46.24,131,"Dropped to the floor, and that’s a marble floor.",70.0,55.172413793103445,44.44444444444444
-41.94,132,She went down like lightning.,70.0,24.71264367816092,44.44444444444444
-44.09,133,"And the back of her leg, it felt just like a pole.",80.0,38.50574712643678,44.44444444444444
-41.94,134,"Hard like a pole, the back of her leg.",70.0,33.9080459770115,44.44444444444444
-44.09,135,And that girl is suffering.,70.0,33.333333333333336,55.55555555555556
-50.54,136,"Thirty – no, twenty-eight years since her sister died?",80.0,33.9080459770115,66.66666666666667
-49.46,137,"When she gets that pain, it’s like she has phlebitis from it.",90.0,55.172413793103445,77.77777777777777
-51.61,138,"She suffers – seven, eight, nine weeks at a time.",100.0,48.85057471264368,77.77777777777777
-43.01,139,"She can’t walk, she goes through such pain since then.",90.0,39.08045977011494,55.55555555555556
-35.48,140,And how did they figure how Marie died?,60.0,8.045977011494253,22.22222222222222
-34.41,141,"The girl who was walking with Marie,",60.0,10.344827586206897,33.333333333333336
-37.63,142,told the doctor that Marie was saying goodbye to Arlene.,60.0,34.48275862068966,44.44444444444444
-44.09,143,"And all Marie said to that girl was, “Oh, I’ve got a pain in my leg and I can’t see.”",70.0,53.44827586206897,44.44444444444444
-47.31,144,And then Marie collapsed.,80.0,22.988505747126435,33.333333333333336
-75.27,145,"Later, they said it was a blood clot.",90.0,73.5632183908046,66.66666666666667
-51.61,146,"I said, “Don’t you dare touch my daughter.",70.0,61.49425287356322,33.333333333333336
-53.76,147,I’ll burn this hospital down!,70.0,50.0,44.44444444444444
-47.31,148,I don’t care who’s in it.”,70.0,40.229885057471265,44.44444444444444
-50.54,149,"I said, “Don’t you dare touch my daughter.",70.0,54.02298850574713,44.44444444444444
-50.54,150,You want to find out what she died from.”,70.0,60.91954022988506,44.44444444444444
-49.46,151,"But if you touch my daughter, I’ll kill you.”",70.0,48.275862068965516,44.44444444444444
-37.63,152,I wouldn’t let them touch her.,70.0,51.14942528735632,33.333333333333336
-67.74,153,So when I got home – they took me home.,60.0,37.35632183908046,22.22222222222222
-46.24,154,I was screaming in the car.,60.0,43.67816091954023,22.22222222222222
-41.94,155,"I couldn’t get out, you know, I couldn’t –",60.0,32.18390804597701,22.22222222222222
-46.24,156,I was screaming!,60.0,39.08045977011494,22.22222222222222
-48.39,157,"Everybody came out, coming out of their doors because they could hear the screams.",60.0,37.35632183908046,33.333333333333336
-50.54,158,My husband was sitting on the step.,70.0,17.816091954022987,33.333333333333336
-45.16,159,"He asked, “What’s the matter? What happened to you?”",70.0,13.218390804597702,33.333333333333336
-40.86,160,"Well, my hair was all pulled, and my face – I was a mess.",70.0,12.64367816091954,33.333333333333336
-38.71,161,I didn’t know what I had done to myself.,70.0,11.494252873563218,33.333333333333336
-69.89,162,"I said, “Mike, we lost Marie. Marie died.” It was just a shock.",100.0,44.827586206896555,100.0
-80.65,163,My husband had a heart attack.,100.0,92.52873563218391,100.0
-64.52,164,"Yes, he had a heart attack.",90.0,47.701149425287355,88.88888888888889
-53.76,165,"Then my son, Michael, yeah. That night.",90.0,65.51724137931035,77.77777777777777
-73.12,166,"Right there, my Michael came, and my Michael collapsed.",100.0,90.22988505747126,88.88888888888889
-54.84,167,"He had a heart attack too, no kidding.",80.0,40.229885057471265,66.66666666666667
-41.94,168,"It was all – my two sisters were here, waiting until about half-past four.",70.0,51.724137931034484,55.55555555555556
-41.94,169,"They waited because they knew she was coming home that day, waiting for the call.",70.0,35.05747126436781,55.55555555555556
-49.46,170,"My younger sister had brought an orange for Marie, and I had never seen an orange like it. It was a big orange, like that.",70.0,41.37931034482759,55.55555555555556
-39.78,171,"She said, “Mary, look, when they call you, when you pick Marie up, let us know, and we’ll come over.”",70.0,25.862068965517242,55.55555555555556
-36.56,172,"I said, “All right.”",70.0,18.39080459770115,55.55555555555556
-64.52,173,"So, I got home and called everybody, told them what happened.",70.0,44.827586206896555,66.66666666666667
-52.69,174,I called my brother-in-law.,70.0,32.758620689655174,55.55555555555556
-50.54,175,He was an undertaker.,70.0,31.03448275862069,55.55555555555556
-49.46,176,My sister’s husband – he’s passed away now too. God rest his soul.,70.0,27.586206896551722,55.55555555555556
-45.16,177,Maybe you know him...,70.0,26.436781609195403,55.55555555555556
-49.46,178,"So they were waiting for my call, you know,",70.0,32.758620689655174,55.55555555555556
-63.44,179,"but instead, I sent my son James, he was little then.",70.0,51.14942528735632,55.55555555555556
-66.67,180,"I said, “Go tell Aunt Millie and Aunt Jenny.”",70.0,50.0,55.55555555555556
-53.76,181,"They had cleaned the pavement,",70.0,37.35632183908046,55.55555555555556
-53.76,182,"and done the cement work, and they were cleaning the pavement.",70.0,36.7816091954023,55.55555555555556
-53.76,183,"They said, “Here comes little Jamie,” and now they said,",70.0,37.35632183908046,55.55555555555556
-55.91,184,“Maybe he’s come to tell us Marie’s home.”,70.0,39.6551724137931,55.55555555555556
-55.91,185,"But when he got there, the poor kid’s eyes were all red.",70.0,40.229885057471265,55.55555555555556
-55.91,186,"They said, “James, what’s the matter, honey?",70.0,37.35632183908046,55.55555555555556
-54.84,187,Why are you crying?”,70.0,37.93103448275862,55.55555555555556
-62.37,188,"“Aunt Jenny, Aunt Millie, Marie died,” he said.",70.0,46.55172413793103,55.55555555555556
-40.86,189,"Well, my sisters and my mother, you know, they were all alive.",70.0,28.160919540229884,55.55555555555556
-45.16,190,It was a shock to everybody. That was a shock that –,70.0,72.41379310344827,100.0
-46.24,191,"The neighborhood – Annie at the store always says, “Mrs. Costa,” every time I go in there, she reminds me, “I just picture Marie standing at that step, looking over here.” She used to stand at that step.",70.0,67.816091954023,55.55555555555556
-45.16,192,"She was a real quiet girl, pleasant, didn’t talk much,",70.0,64.94252873563218,55.55555555555556
-47.31,193,"but she was so good, I can’t even tell you.",70.0,61.49425287356322,55.55555555555556
-36.56,194,That’s all. So that’s what happened.,70.0,19.54022988505747,44.44444444444444
+82.8,1,My daughter died.,100.0,98.85,100.0
+62.37,2,It’ll be twenty-eight years this month.,100.0,90.8,66.67
+54.84,3,"The thirtieth of this month, yeah.",100.0,71.26,44.44
+61.29,4,She died at Methodist Hospital.,70.0,89.08,77.78
+77.42,5,She had an operation for appendicitis.,100.0,99.43,100.0
+30.11,6,"It was late Saturday afternoon when they operated, very late.",50.0,53.45,22.22
+47.31,7,"Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was.",60.0,90.23,77.78
+41.94,8,She was still under ether.,80.0,71.26,33.33
+34.41,9,"Back then, they used a lot of ether.",70.0,48.85,22.22
+32.26,10,There was a chair there.,40.0,25.86,
+46.24,11,"They were just starting to get people out of bed, you know.",90.0,85.06,44.44
+23.66,12,"So, Victoria saw the chair,",50.0,26.44,33.33
+40.86,13,"and she said to the nurse, “What’s this chair doing here?”",60.0,44.25,44.44
+56.99,14,"The nurse said, “Well, we’ve got to get her out of bed.”",70.0,88.51,55.56
+29.03,15,"She said, “What are you talking about? She’s still under ether.”",70.0,48.28,44.44
+33.33,16,“She’s too sick.”,60.0,31.03,22.22
+47.31,17,"But the nurse said, “Well, that’s the doctor’s orders.”",60.0,61.49,55.56
+46.24,18,"So, they went to get her out of bed,",70.0,74.71,44.44
+62.37,19,"and she passed out,",90.0,79.89,55.56
+32.26,20,and they had to put her back in bed.,80.0,42.53,33.33
+31.18,21,"See, here, she never – I don’t know if they knew or what,",80.0,10.34,33.33
+67.74,22,"but I blame them for the blood clot she got, taking her out of bed.",100.0,98.28,77.78
+49.46,23,"So, when she was walking around to come home after ten days,",90.0,59.2,44.44
+69.89,24,I was waiting for the call from the hospital.,90.0,86.78,55.56
+35.48,25,I didn’t have a phone then.,70.0,28.74,
+76.34,26,"The lady from the store who had a phone called me, “Mrs. Costa,” at aquarter to five at night.",80.0,85.63,44.44
+66.67,27,"“Mrs. Costa, they just called you from the hospital.",80.0,83.33,33.33
+82.8,28,Go Pick Marie up.,80.0,81.03,77.78
+32.26,29,She’s discharged.”,70.0,6.9,22.22
+47.31,30,I had all the clothes laid out on the table.,70.0,86.78,44.44
+50.54,31,"And Rita was – I was cooking,",70.0,67.82,33.33
+46.24,32,"I said, “Rita, finish the cooking.”",70.0,61.49,33.33
+46.24,33,Daddy will be home soon.”,70.0,52.87,33.33
+39.78,34,He was working down in the yard.,70.0,35.06,33.33
+43.01,35,"I said, “And put a big pot of coffee on,” because she had been wishing for coffee.",70.0,60.34,33.33
+38.71,36,"And you know, every morning, that first cup of coffee, I offered it to her.",80.0,49.43,22.22
+35.48,37,"When I get up in the morning, the first cup is hers.",70.0,39.08,22.22
+33.33,38,"Since she’s gone, I never forget that.",70.0,31.03,44.44
+37.63,39,"So I said, “Put a pot of coffee on,",70.0,64.94,33.33
+37.63,40,and send for some cake from the bakery.”,70.0,56.32,33.33
+52.69,41,I’m going to get Marie; they called me.”,70.0,58.62,44.44
+26.88,42,"“All right, mother, go ahead,” she said, “I’ll finish up.”",70.0,11.49,22.22
+48.39,43,"And I went myself. You know, I had the coat on my arm.",80.0,49.43,44.44
+35.48,44,She was operated on in March –,60.0,14.37,22.22
+53.76,45,"No, April! So that was the thirtieth.",80.0,26.44,22.22
+49.46,46,"She was operated – ten days before, so that would be the twentieth.",70.0,14.94,22.22
+22.58,47,"The twentieth of April, right? It was kind of chilly.",40.0,9.77,11.11
+41.94,48,"Oh, and I had everything in a bag,",60.0,38.51,33.33
+46.24,49,and I had the coat on my arm and her dress hanging on my arm.,60.0,40.23,33.33
+39.78,50,"She saw me from the windows, from Wolf Street.",60.0,51.72,22.22
+27.96,51,"She said, “My mother’s just coming.”",60.0,29.31,22.22
+34.41,52,"She was with the girls, saying goodbye to everyone – you know how it is.",60.0,29.89,22.22
+25.81,53,"They told me on the phone, it would be ten dollars more for her board.",70.0,48.85,22.22
+25.81,54,And to make sure I brought her girdle to put on.,70.0,30.46,22.22
+23.66,55,"I said, “All right, I’ll be right over.”",70.0,5.75,22.22
+52.69,56,And I went.,70.0,32.76,44.44
+70.97,57,"But when I got there, the nurse said to me, “Sit down, Mrs. Costa, sit here for a while.”",60.0,89.66,77.78
+45.16,58,"So I sat down, and I was praying for another lady in the hospital that had an operation for her gall bladder.",60.0,75.86,22.22
+37.63,59,"She lived near my sister, and she had ten children.",60.0,62.07,22.22
+35.48,60,They had said she was in very bad shape.,60.0,64.94,22.22
+39.78,61,"I prayed, “Oh dear God, don’t take that mother away from her children.”",60.0,57.47,22.22
+23.66,62,"I was praying for her, you know.",60.0,8.62,22.22
+32.26,63,Then a little nurse’s aide went to the closet and got some blankets.,60.0,16.67,33.33
+30.11,64,"I started getting the chills,",60.0,40.23,44.44
+22.58,65,"and I was thinking about it,",60.0,12.64,33.33
+34.41,66,"when the aide said to the nurse, “Oh, she’s going into a cold sweat now.”",70.0,44.83,44.44
+55.91,67,"The nurse hung up the phone and came to me. She said, “Mrs. Costa, has your daughter ever had a fainting spell?”",60.0,80.46,77.78
+54.84,68,"“Oh my God!” I said, “Don’t tell me you’re running for my daughter!”",60.0,46.55,77.78
+49.46,69,"“Yes,” she said, “come on in.”",70.0,28.16,44.44
+54.84,70,"So, I went into the room.",70.0,39.08,55.56
+55.91,71,And my daughter was on the bed with her bedroom slippers and her housecoat on.,80.0,51.72,33.33
+50.54,72,"And the beads of sweat – honest to God, not to exaggerate, they were that big.",90.0,79.31,44.44
+38.71,73,It came – just poured from her –,90.0,36.21,33.33
+77.42,74,"I said, “What did you do, kill my daughter?",80.0,91.38,66.67
+62.37,75,You killed her! You killed her!”,80.0,81.03,66.67
+56.99,76,That’s what I kept yelling.,90.0,50.0,33.33
+41.94,77,"And the doctor rushed in,",70.0,22.41,33.33
+34.41,78,"see, they were trying to get the doctor, you know.",70.0,16.09,33.33
+45.16,79,She was a lady doctor.,70.0,27.59,33.33
+40.86,80,"Dr. Schwartz actually did the operation, but she was his assistant, Dr. Montique.",70.0,30.46,33.33
+41.94,81,She was a lady doctor.,70.0,29.31,33.33
+27.96,82,"So, she came in and she said –",70.0,17.24,33.33
+70.97,83,"I said, “You killed my daughter – what did you do to her?”",90.0,58.62,44.44
+53.76,84,"She said, “We don’t know what happened, Mrs. Costa.”",80.0,59.77,44.44
+31.18,85,She took me away from the bed.,70.0,8.05,22.22
+40.86,86,"The nurse said to me, “Talk to her.”",80.0,20.11,33.33
+38.71,87,"I said, “Talk to her? My daughter’s dying, what am I supposed to tell her?”",80.0,12.07,33.33
+68.82,88,And I was screaming.,80.0,56.32,66.67
+56.99,89,My hair was all pulled out.,80.0,50.57,55.56
+67.74,90,"I went hysterical, you know what I mean? She was only eighteen years old.",90.0,60.34,66.67
+34.41,91,"Beautiful girl, you can see from her picture.",70.0,15.52,33.33
+64.52,92,"And just as I turned my back, my daughter passed away.",100.0,68.97,55.56
+49.46,93,She was getting ready to go home.,100.0,28.74,44.44
+40.86,94,I had the clothes and everything ready.,70.0,14.37,33.33
+53.76,95,My husband was waiting for her.,60.0,59.2,44.44
+53.76,96,"He came home, went upstairs to shave and wash, then sat on the step, waiting.",60.0,41.38,44.44
+48.39,97,“When is the mother coming?”,70.0,32.76,44.44
+46.24,98,The hospital kept calling.,70.0,52.3,44.44
+49.46,99,The people in the office didn’t know what had happened yet.,70.0,58.05,44.44
+50.54,100,"They kept calling the store, trying to reach us.",70.0,58.62,44.44
+53.76,101,"They asked, “When is the mother coming to pick up Marie?",70.0,51.15,55.56
+50.54,102,She’s discharged.”,70.0,21.26,55.56
+53.76,103,"And Rita said “That’s strange, the mother went to the hospital. She should be there.”",70.0,36.21,44.44
+46.24,104,So they came back to the hospital to look for us.,70.0,33.91,44.44
+44.09,105,"Rita said, “Gee, that’s strange,”",70.0,39.08,44.44
+43.01,106,"she said, “Mother must’ve gotten really worked up about Marie.”",70.0,31.61,44.44
+38.71,107,"You know, I’ve always had a bad heart.",70.0,22.99,44.44
+41.94,108,"“Mother must’ve gotten so upset about Marie, she probably made herself sick,” Rita thought.",70.0,26.44,44.44
+45.16,109,"So she came over with my son-in-law, in the car.",70.0,51.72,44.44
+47.31,110,"And I was in the main hallway, at the office.",70.0,39.08,44.44
+45.16,111,I was all pulled apart.,70.0,27.01,44.44
+52.69,112,One doctor wanted to give me a shot.,70.0,45.98,44.44
+49.46,113,"I said, “Get out of here,",70.0,43.68,44.44
+52.69,114,"I’ll kick you,” I said.",70.0,46.55,55.56
+56.99,115,"“You killed my daughter, now you want to kill me?”",70.0,35.63,55.56
+46.24,116,Another nurse came over.,70.0,29.89,44.44
+45.16,117,"See, they all knew me.",70.0,16.67,33.33
+44.09,118,"I had three operations in no time, not even a year.",70.0,17.24,44.44
+41.94,119,And I knew all the nurses.,70.0,16.09,44.44
+50.54,120,"“Mrs. Costa, please, take –”",70.0,40.23,44.44
+51.61,121,"“Get out!” I said, “Don’t you dare come near me.”",70.0,39.66,44.44
+56.99,122,I was so hysterical.,70.0,51.72,55.56
+62.37,123,I was banging my head against the wall and everything.,70.0,53.45,55.56
+48.39,124,They had to grab me.,70.0,38.51,44.44
+40.86,125,"Then they brought me to the office, see.",70.0,12.07,33.33
+49.46,126,"When Rita came in and saw me like that, she asked, “Mother, what happened?”",70.0,45.4,44.44
+51.61,127,"I said, “We lost Marie.",70.0,37.93,55.56
+55.91,128,Marie died.”,80.0,39.08,77.78
+34.41,129,"Well, that’s this one. This is a picture of Rita.",80.0,20.11,22.22
+50.54,130,She went down like lightning.,80.0,71.26,33.33
+46.24,131,"Dropped to the floor, and that’s a marble floor.",70.0,55.17,44.44
+41.94,132,She went down like lightning.,70.0,24.71,44.44
+44.09,133,"And the back of her leg, it felt just like a pole.",80.0,38.51,44.44
+41.94,134,"Hard like a pole, the back of her leg.",70.0,33.91,44.44
+44.09,135,And that girl is suffering.,70.0,33.33,55.56
+50.54,136,"Thirty – no, twenty-eight years since her sister died?",80.0,33.91,66.67
+49.46,137,"When she gets that pain, it’s like she has phlebitis from it.",90.0,55.17,77.78
+51.61,138,"She suffers – seven, eight, nine weeks at a time.",100.0,48.85,77.78
+43.01,139,"She can’t walk, she goes through such pain since then.",90.0,39.08,55.56
+35.48,140,And how did they figure how Marie died?,60.0,8.05,22.22
+34.41,141,"The girl who was walking with Marie,",60.0,10.34,33.33
+37.63,142,told the doctor that Marie was saying goodbye to Arlene.,60.0,34.48,44.44
+44.09,143,"And all Marie said to that girl was, “Oh, I’ve got a pain in my leg and I can’t see.”",70.0,53.45,44.44
+47.31,144,And then Marie collapsed.,80.0,22.99,33.33
+75.27,145,"Later, they said it was a blood clot.",90.0,73.56,66.67
+51.61,146,"I said, “Don’t you dare touch my daughter.",70.0,61.49,33.33
+53.76,147,I’ll burn this hospital down!,70.0,50.0,44.44
+47.31,148,I don’t care who’s in it.”,70.0,40.23,44.44
+50.54,149,"I said, “Don’t you dare touch my daughter.",70.0,54.02,44.44
+50.54,150,You want to find out what she died from.”,70.0,60.92,44.44
+49.46,151,"But if you touch my daughter, I’ll kill you.”",70.0,48.28,44.44
+37.63,152,I wouldn’t let them touch her.,70.0,51.15,33.33
+67.74,153,So when I got home – they took me home.,60.0,37.36,22.22
+46.24,154,I was screaming in the car.,60.0,43.68,22.22
+41.94,155,"I couldn’t get out, you know, I couldn’t –",60.0,32.18,22.22
+46.24,156,I was screaming!,60.0,39.08,22.22
+48.39,157,"Everybody came out, coming out of their doors because they could hear the screams.",60.0,37.36,33.33
+50.54,158,My husband was sitting on the step.,70.0,17.82,33.33
+45.16,159,"He asked, “What’s the matter? What happened to you?”",70.0,13.22,33.33
+40.86,160,"Well, my hair was all pulled, and my face – I was a mess.",70.0,12.64,33.33
+38.71,161,I didn’t know what I had done to myself.,70.0,11.49,33.33
+69.89,162,"I said, “Mike, we lost Marie. Marie died.” It was just a shock.",100.0,44.83,100.0
+80.65,163,My husband had a heart attack.,100.0,92.53,100.0
+64.52,164,"Yes, he had a heart attack.",90.0,47.7,88.89
+53.76,165,"Then my son, Michael, yeah. That night.",90.0,65.52,77.78
+73.12,166,"Right there, my Michael came, and my Michael collapsed.",100.0,90.23,88.89
+54.84,167,"He had a heart attack too, no kidding.",80.0,40.23,66.67
+41.94,168,"It was all – my two sisters were here, waiting until about half-past four.",70.0,51.72,55.56
+41.94,169,"They waited because they knew she was coming home that day, waiting for the call.",70.0,35.06,55.56
+49.46,170,"My younger sister had brought an orange for Marie, and I had never seen an orange like it. It was a big orange, like that.",70.0,41.38,55.56
+39.78,171,"She said, “Mary, look, when they call you, when you pick Marie up, let us know, and we’ll come over.”",70.0,25.86,55.56
+36.56,172,"I said, “All right.”",70.0,18.39,55.56
+64.52,173,"So, I got home and called everybody, told them what happened.",70.0,44.83,66.67
+52.69,174,I called my brother-in-law.,70.0,32.76,55.56
+50.54,175,He was an undertaker.,70.0,31.03,55.56
+49.46,176,My sister’s husband – he’s passed away now too. God rest his soul.,70.0,27.59,55.56
+45.16,177,Maybe you know him...,70.0,26.44,55.56
+49.46,178,"So they were waiting for my call, you know,",70.0,32.76,55.56
+63.44,179,"but instead, I sent my son James, he was little then.",70.0,51.15,55.56
+66.67,180,"I said, “Go tell Aunt Millie and Aunt Jenny.”",70.0,50.0,55.56
+53.76,181,"They had cleaned the pavement,",70.0,37.36,55.56
+53.76,182,"and done the cement work, and they were cleaning the pavement.",70.0,36.78,55.56
+53.76,183,"They said, “Here comes little Jamie,” and now they said,",70.0,37.36,55.56
+55.91,184,“Maybe he’s come to tell us Marie’s home.”,70.0,39.66,55.56
+55.91,185,"But when he got there, the poor kid’s eyes were all red.",70.0,40.23,55.56
+55.91,186,"They said, “James, what’s the matter, honey?",70.0,37.36,55.56
+54.84,187,Why are you crying?”,70.0,37.93,55.56
+62.37,188,"“Aunt Jenny, Aunt Millie, Marie died,” he said.",70.0,46.55,55.56
+40.86,189,"Well, my sisters and my mother, you know, they were all alive.",70.0,28.16,55.56
+45.16,190,It was a shock to everybody. That was a shock that –,70.0,72.41,100.0
+46.24,191,"The neighborhood – Annie at the store always says, “Mrs. Costa,” every time I go in there, she reminds me, “I just picture Marie standing at that step, looking over here.” She used to stand at that step.",70.0,67.82,55.56
+45.16,192,"She was a real quiet girl, pleasant, didn’t talk much,",70.0,64.94,55.56
+47.31,193,"but she was so good, I can’t even tell you.",70.0,61.49,55.56
+36.56,194,That’s all. So that’s what happened.,70.0,19.54,44.44

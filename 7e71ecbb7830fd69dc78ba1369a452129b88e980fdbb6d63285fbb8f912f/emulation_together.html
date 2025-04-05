@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Memory Emulation Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .image-container {
+            display: flex;
+        }
+        .image-container img {
+            margin-right: 10px; /* Optional: adds space between images */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Report on Emulating Human Memory for Boy Scout Story</h1>
+    <p>Here is a report for emulating human memory for the Boy Scout story. We can consider two metrics to evaluate the
+        quality of the emulation:</p>
+    <ul>
+        <li><strong>Recognition</strong>: What are the details recalled by the LLM/human.</li>
+        <li><strong>Caught</strong>: What are the key points that are recalled by the LLM/human.</li>
+    </ul>
+
+    <p>I have prepared two plots with the x-axis showing segments and the y-axis indicating the probability of human/LLM
+        to recall the segment. In these plots, I present two methods to emulate human memory:</p>
+    <ul>
+        <li>The first one is using GPT-4 prompt.</li>
+        <li>The second one is using GPT-4o prompt with various numbers of key points.</li>
+    </ul>
+<div class="image-container">
+    <img src="boyscout/boyscout_rec_demo.png" width="50%" alt="Recognition Plot">
+    <img src="boyscout/boyscout_caught_demo.png" width="50%" alt="Caught Plot">
+</div>
+Here are the html pages for other stories: <a href="emulation_prec_correlation.html"> Recognition</a> <a href="pcaught_correlation_with_emulation_plot.html"> Caught</a>
+    <h2>Key Segment Analysis</h2>
+    <p>Recognition: Look for example on "segment 8: 'and I started yelling Help!'" 
+        This segment was important for the LLM
+        (mentioned in about 90% of the cases), but for humans, it was not recalled in 50% of the cases.</p>
+
+    <p>P-Caught: Look on "segment 4: 'but we was at the pier, marked off,'" This segment was important for the LLM
+        (mentioned in about 90% of the cases), but for humans, it was not recalled in 50% of the cases.</p>
+
+
+Here are links to raw data. 
+<a href="boyscout/emulation_10_vs_real.html"> GPT4 Summaries with Recognition</a> 
+<a href="boyscout/recognized_segments_of_gpt4o_emulation.html"> GPT4o Summaries with Recognition</a> 
+
+<a href="boyscout/pcaught_of_real_and_all_types_of_emulation.html"> All types of Emulation</a> 
+<br>
+
+Below are scatter plots for the same data. 
+<div class="image-container">
+    <img src="boyscout/emulation_prec_scatter_plot.png" width="50%" alt="Recognition Plot">
+    <img src="boyscout/pcaught_emulation_scatter_plot.png" width="50%" alt="Caught Plot">
+</div>
+Here are the html pages for other stories: <a href="emulation_prec_scatter_plot.html"> Recognition</a> <a
+    href="pcaught_emulation_scatter_plot.html"> Caught</a><hr>
+
+
+It is intersting to see how number of keypoints affects the emulation.
+<div class="image-container">
+    <img src="boyscout/prec_correlation_per_keypoint.png" width="50%" alt="Caught Plot">
+    <img src="boyscout/correlation_vs_gpt4o_keypoints.png" width="50%" alt="Recognition Plot">
+</div>
+Here are the html pages for other stories: <a href="prec_correlation_per_keypoint.html"> Recognition</a> <a
+    href="correlation_vs_gpt4o_keypoints.html"> Caught</a>
+<hr>
+
+Speak about mean coverage for different keypoints: http://127.0.0.1:5500/html/mean_coverage_by_keypoints.html
+
+Speak about moving average: http://127.0.0.1:5500/html/emulation_prec_by_gpt4o_correlation_moving_average.html
+Speak about 2d Histogram.
+</body>
+
+</html>

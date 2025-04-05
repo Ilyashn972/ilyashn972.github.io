@@ -1,57 +1,57 @@
 real_caught,segment_id,segment_text,gpt4,gpt4o_all,gpt4o_idxmx
-74.0,1,"Well, I was at work one day",70.0,75.49019607843137,22.22222222222222
-86.0,2,I was doing my usual job,70.0,76.47058823529412,88.88888888888889
-92.0,3,working on the warehouse floor,100.0,81.37254901960785,100.0
-68.0,4,stocking boxes,10.0,67.6470588235294,66.66666666666667
-54.0,5,organizing merchandise,30.0,55.88235294117647,22.22222222222222
-17.0,6,I had been working for a few hours,20.0,62.745098039215684,22.22222222222222
-16.0,7,it was getting late,10.0,38.23529411764706,11.11111111111111
-69.0,8,I had been feeling a bit strange,70.0,88.23529411764706,100.0
-68.0,9,a bit lightheaded,100.0,99.01960784313725,100.0
-63.0,10,but chalked it up to hunger,90.0,92.15686274509804,88.88888888888889
-65.0,11,not having eaten yet that day,80.0,87.25490196078431,100.0
-18.0,12,"But then, as I was walking around the warehouse",10.0,7.8431372549019605,11.11111111111111
-16.0,13,returning items to their proper places,0.0,4.901960784313726,11.11111111111111
+74.0,1,"Well, I was at work one day",70.0,75.49,22.22
+86.0,2,I was doing my usual job,70.0,76.47,88.89
+92.0,3,working on the warehouse floor,100.0,81.37,100.0
+68.0,4,stocking boxes,10.0,67.65,66.67
+54.0,5,organizing merchandise,30.0,55.88,22.22
+17.0,6,I had been working for a few hours,20.0,62.75,22.22
+16.0,7,it was getting late,10.0,38.24,11.11
+69.0,8,I had been feeling a bit strange,70.0,88.24,100.0
+68.0,9,a bit lightheaded,100.0,99.02,100.0
+63.0,10,but chalked it up to hunger,90.0,92.16,88.89
+65.0,11,not having eaten yet that day,80.0,87.25,100.0
+18.0,12,"But then, as I was walking around the warehouse",10.0,7.84,11.11
+16.0,13,returning items to their proper places,0.0,4.9,11.11
 93.0,14,I started to feel a strange tightness,100.0,100.0,100.0
-93.0,15,and pressure in my chest,100.0,98.03921568627452,100.0
-24.0,16,I stopped what I was doing,0.0,58.8235294117647,33.333333333333336
-49.0,17,leaned against a nearby wall for a bit,10.0,87.25490196078431,55.55555555555556
-47.0,18,the pressure only got stronger,20.0,76.47058823529412,44.44444444444444
-46.0,19,I could feel my heart pounding in my chest,90.0,76.47058823529412,22.22222222222222
-65.0,20,"Next thing I know, I started seeing spots",60.0,92.15686274509804,66.66666666666667
-60.0,21,I could feel sweat dripping down my forehead,90.0,89.2156862745098,44.44444444444444
-47.0,22,my arms,60.0,59.80392156862745,22.22222222222222
-32.0,23,I tried to take some deep breaths,80.0,82.3529411764706,66.66666666666667
-33.0,24,I just couldn't catch my breath,90.0,92.15686274509804,77.77777777777777
-14.0,25,I was really scared,20.0,73.52941176470588,33.333333333333336
-10.0,26,didn't know what to do.,20.0,40.19607843137255,
-85.0,27,Suddenly I heard a voice coming from across the warehouse.,90.0,94.11764705882354,100.0
-93.0,28,It was the manager,90.0,97.05882352941177,100.0
-80.0,29,who had seen me,100.0,69.6078431372549,88.88888888888889
-67.0,30,called out to me,60.0,74.50980392156863,44.44444444444444
-63.0,31,it seems someone had noticed me,90.0,41.1764705882353,77.77777777777777
-48.0,32,was checking to see if I was alright,30.0,31.372549019607842,66.66666666666667
-38.0,33,I tried to yell back that something was wrong,40.0,64.70588235294117,22.22222222222222
-51.0,34,I couldn't find my voice.,50.0,83.33333333333333,22.22222222222222
-46.0,35,The manager started walking towards me,60.0,89.2156862745098,77.77777777777777
-64.0,36,I could feel my world going dark,70.0,64.70588235294117,33.333333333333336
-76.0,37,I started to drop to the ground,60.0,85.29411764705883,55.55555555555556
-84.0,38,luckily the manager got to me in time,100.0,93.13725490196079,77.77777777777777
-73.0,39,caught me just before my legs gave out,100.0,94.11764705882354,44.44444444444444
-76.0,40,He took me to the staff room,100.0,83.33333333333333,33.333333333333336
-68.0,41,sat me down in a chair,90.0,62.745098039215684,33.333333333333336
-39.0,42,He asked me questions about what was wrong,20.0,53.92156862745098,33.333333333333336
-34.0,43,what happened,20.0,43.13725490196079,22.22222222222222
-66.0,44,He got me a glass of cold water,90.0,73.52941176470588,33.333333333333336
-26.0,45,told me to rest for a bit,60.0,40.19607843137255,33.333333333333336
-32.0,46,After a few minutes,60.0,24.50980392156863,33.333333333333336
-44.0,47,the pressure in my chest slowly eased up,80.0,45.09803921568628,33.333333333333336
-43.0,48,I started to feel better,80.0,29.41176470588235,33.333333333333336
-86.0,49,It turned out I had been having a panic attack,100.0,60.78431372549019,88.88888888888889
-8.0,50,I escaped from the situation,0.0,1.9607843137254901,
-21.0,51,the help of the quick action of the manager,40.0,14.705882352941176,
+93.0,15,and pressure in my chest,100.0,98.04,100.0
+24.0,16,I stopped what I was doing,0.0,58.82,33.33
+49.0,17,leaned against a nearby wall for a bit,10.0,87.25,55.56
+47.0,18,the pressure only got stronger,20.0,76.47,44.44
+46.0,19,I could feel my heart pounding in my chest,90.0,76.47,22.22
+65.0,20,"Next thing I know, I started seeing spots",60.0,92.16,66.67
+60.0,21,I could feel sweat dripping down my forehead,90.0,89.22,44.44
+47.0,22,my arms,60.0,59.8,22.22
+32.0,23,I tried to take some deep breaths,80.0,82.35,66.67
+33.0,24,I just couldn't catch my breath,90.0,92.16,77.78
+14.0,25,I was really scared,20.0,73.53,33.33
+10.0,26,didn't know what to do.,20.0,40.2,
+85.0,27,Suddenly I heard a voice coming from across the warehouse.,90.0,94.12,100.0
+93.0,28,It was the manager,90.0,97.06,100.0
+80.0,29,who had seen me,100.0,69.61,88.89
+67.0,30,called out to me,60.0,74.51,44.44
+63.0,31,it seems someone had noticed me,90.0,41.18,77.78
+48.0,32,was checking to see if I was alright,30.0,31.37,66.67
+38.0,33,I tried to yell back that something was wrong,40.0,64.71,22.22
+51.0,34,I couldn't find my voice.,50.0,83.33,22.22
+46.0,35,The manager started walking towards me,60.0,89.22,77.78
+64.0,36,I could feel my world going dark,70.0,64.71,33.33
+76.0,37,I started to drop to the ground,60.0,85.29,55.56
+84.0,38,luckily the manager got to me in time,100.0,93.14,77.78
+73.0,39,caught me just before my legs gave out,100.0,94.12,44.44
+76.0,40,He took me to the staff room,100.0,83.33,33.33
+68.0,41,sat me down in a chair,90.0,62.75,33.33
+39.0,42,He asked me questions about what was wrong,20.0,53.92,33.33
+34.0,43,what happened,20.0,43.14,22.22
+66.0,44,He got me a glass of cold water,90.0,73.53,33.33
+26.0,45,told me to rest for a bit,60.0,40.2,33.33
+32.0,46,After a few minutes,60.0,24.51,33.33
+44.0,47,the pressure in my chest slowly eased up,80.0,45.1,33.33
+43.0,48,I started to feel better,80.0,29.41,33.33
+86.0,49,It turned out I had been having a panic attack,100.0,60.78,88.89
+8.0,50,I escaped from the situation,0.0,1.96,
+21.0,51,the help of the quick action of the manager,40.0,14.71,
 18.0,52,It was never a fun experience,30.0,,
-25.0,53,it really could have been much worse,30.0,0.9803921568627451,
-72.0,54,it taught me to check in with myself,100.0,70.58823529411765,88.88888888888889
-72.0,55,make sure to properly rest,100.0,53.92156862745098,88.88888888888889
-65.0,56,eat to avoid further episodes,80.0,48.03921568627451,88.88888888888889
+25.0,53,it really could have been much worse,30.0,0.98,
+72.0,54,it taught me to check in with myself,100.0,70.59,88.89
+72.0,55,make sure to properly rest,100.0,53.92,88.89
+65.0,56,eat to avoid further episodes,80.0,48.04,88.89
