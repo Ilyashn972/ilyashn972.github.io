@@ -40,8 +40,17 @@
 </head>
 
 <body>
-
+TODO: make such pages for every story
     <h1>Report on Emulating Human Memory for Boy Scout Story</h1>
+    It is interesting to compare what number of segments (coverage) were recalled by LLMs and humans.
+    This percent varies when number of keypoints is changing.
+    See <img src="boyscout/mean_coverage_by_keypoints.png" width="50%" alt="Mean Coverage Plot">
+    TODO  show gpt4 coverage
+    Here is the html page for other stories: <a href="mean_coverage_by_keypoints.html">
+        Recognition</a>
+    <br>TODO give the prompt here.
+    <hr>
+
     <p>Here is a report for emulating human memory for the Boy Scout story. We can consider two metrics to evaluate the
         quality of the emulation:</p>
     <ul>
@@ -74,9 +83,8 @@ Here are links to raw data.
 <a href="boyscout/recognized_segments_of_gpt4o_emulation.html"> GPT4o Summaries with Recognition</a> 
 
 <a href="boyscout/pcaught_of_real_and_all_types_of_emulation.html"> All types of Emulation</a> 
-<br>
-
-Below are scatter plots for the same data. 
+<br>TODO compare segments of rec and caught, especially caught but not rec
+<br>Below are scatter plots for the same data. 
 <div class="image-container">
     <img src="boyscout/emulation_prec_scatter_plot.png" width="50%" alt="Recognition Plot">
     <img src="boyscout/pcaught_emulation_scatter_plot.png" width="50%" alt="Caught Plot">
@@ -94,10 +102,29 @@ Here are the html pages for other stories: <a href="prec_correlation_per_keypoin
     href="correlation_vs_gpt4o_keypoints.html"> Caught</a>
 <hr>
 
-Speak about mean coverage for different keypoints: http://127.0.0.1:5500/html/mean_coverage_by_keypoints.html
 
-Speak about moving average: http://127.0.0.1:5500/html/emulation_prec_by_gpt4o_correlation_moving_average.html
-Speak about 2d Histogram.
+It is interesting to see the trend of correlation between LLMs and humans as number of keypoints is growing.
+To see the thrend we can use moving average.
+<div class="image-container">
+    
+    <img src="boyscout/emulation_prec_by_gpt4o_correlation_moving_average.png" width="50%" alt="Mean Coverage Plot">
+    <img src="boyscout/emulation_pcaught_by_gpt4o_correlation_moving_average.png" width="50%" alt="Mean Coverage Plot">
+</div>
+Here are the html pages for other stories: 
+<a href="emulation_prec_by_gpt4o_correlation_moving_average.html"> Recognition</a> 
+<a href="emulation_pcaught_by_gpt4o_correlation_moving_average.html"> Caught</a>
+
+<hr>
+
+It is interesting to see correlation between number of keypoints and C (number of clauses in human recall)
+Here are the heatmap when I took steps of 3% of human and llms recalls to build each bin.
+<div class="image-container">
+    <img src="boyscout/rec-2d-histogram.png" width="50%" alt="Mean Coverage Plot">
+    <img src="boyscout/caught-2d-histogram.png" width="50%" alt="Mean Coverage Plot">
+</div>
+Here are the html pages for other stories: <a href="rec-2d-histogram.html"> Recognition</a> <a
+    href="caught-2d-histogram.html"> Caught</a>
+    <hr>
 </body>
 
 </html>

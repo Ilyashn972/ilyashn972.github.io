@@ -1,20 +1,20 @@
-segment_id,segment_text,gpt4o_all,real_rec,gpt4,gpt4o_idxmx
-1,"Yeah, I was in the boy scouts at the time.",97.43589743589743,82.65306122448979,100.0,100.0
-2,"And we was doing the 50-yard dash,",92.3076923076923,72.44897959183673,50.0,66.66666666666667
-3,"racing,",82.05128205128206,17.346938775510203,40.0,55.55555555555556
-4,"but we was at the pier, marked off,",71.7948717948718,38.775510204081634,40.0,55.55555555555556
-5,and so we was doing the 50-yard dash.,82.05128205128206,40.816326530612244,50.0,66.66666666666667
-6,"There was about 8 or 9 of us, you know, going down, coming back.",79.48717948717949,54.08163265306123,40.0,55.55555555555556
-7,"And, going down the third time, I caught cramps",97.43589743589743,80.61224489795919,100.0,88.88888888888889
-8,"and I started yelling ""Help!"",",89.74358974358974,44.89795918367347,100.0,88.88888888888889
-9,"but the fellows didn't believe me, you know.",71.7948717948718,50.0,40.0,33.333333333333336
-10,"They thought I was just trying to catch up, because I was going on or slowing down.",58.97435897435897,44.89795918367347,60.0,44.44444444444444
-11,So all of them kept going.,48.717948717948715,7.142857142857143,10.0,33.333333333333336
-12,They leave me.,38.46153846153846,11.224489795918368,10.0,22.22222222222222
-13,And so I started going down.,25.641025641025642,16.3265306122449,50.0,0.0
-14,Scoutmaster was up there.,30.76923076923077,59.183673469387756,50.0,66.66666666666667
-15,He was watching me.,28.205128205128204,37.755102040816325,40.0,55.55555555555556
-16,But he didn't pay me no attention either.,20.512820512820515,43.87755102040816,50.0,66.66666666666667
-17,"And for no reason at all there was another guy, who had just walked up that minute...",25.641025641025642,39.795918367346935,60.0,44.44444444444444
-18,He just jumped over,33.333333333333336,42.857142857142854,60.0,88.88888888888889
-19,and grabbed me.,38.46153846153846,69.38775510204081,60.0,88.88888888888889
+segment_id,segment_text,real_rec,gpt4o_all,gpt4,gpt4o_idxmx
+1,"Yeah, I was in the boy scouts at the time.",82.65,97.44,100.0,100.0
+2,"And we was doing the 50-yard dash,",72.45,92.31,50.0,66.67
+3,"racing,",17.35,82.05,40.0,55.56
+4,"but we was at the pier, marked off,",38.78,71.79,40.0,55.56
+5,and so we was doing the 50-yard dash.,40.82,82.05,50.0,66.67
+6,"There was about 8 or 9 of us, you know, going down, coming back.",54.08,79.49,40.0,55.56
+7,"And, going down the third time, I caught cramps",80.61,97.44,100.0,88.89
+8,"and I started yelling ""Help!"",",44.9,89.74,100.0,88.89
+9,"but the fellows didn't believe me, you know.",50.0,71.79,40.0,33.33
+10,"They thought I was just trying to catch up, because I was going on or slowing down.",44.9,58.97,60.0,44.44
+11,So all of them kept going.,7.14,48.72,10.0,33.33
+12,They leave me.,11.22,38.46,10.0,22.22
+13,And so I started going down.,16.33,25.64,50.0,0.0
+14,Scoutmaster was up there.,59.18,30.77,50.0,66.67
+15,He was watching me.,37.76,28.21,40.0,55.56
+16,But he didn't pay me no attention either.,43.88,20.51,50.0,66.67
+17,"And for no reason at all there was another guy, who had just walked up that minute...",39.8,25.64,60.0,44.44
+18,He just jumped over,42.86,33.33,60.0,88.89
+19,and grabbed me.,69.39,38.46,60.0,88.89
