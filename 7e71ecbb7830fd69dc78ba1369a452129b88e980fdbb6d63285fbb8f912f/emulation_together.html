@@ -40,6 +40,46 @@
 </head>
 
 <body>
+    <h3>Prompts:
+        <ul>
+            <li> Generate keypoints summary by gpt4o:
+        <code>You will be given a narrative. Your task is to extract the keypoints of the narrative. The output must be formatted in
+        JSON as follows:
+        ```json
+        {
+        "keypoints": ["keypoint1", "keypoint2", ...]
+        }```</code>
+        </li>
+        <li> Recall by gpt4:
+            <code>Please recall the following story.The output must be formatted in JSON as follows:
+            ```json
+            {
+            "recall": "This is the summary of the story"
+            }
+            ```</code>
+        </li>
+        <li>
+            Recognize segments:
+            <code>
+            This is the original text:\n{narrative}\nIt can be broken down into the following independent pieces
+            of information:\n{segmentation}\nHere is an alternative version of the original text where some of the above pieces\nof
+            information may be missing:\n{recall}\nFor each of the numbered information pieces of the list above, evaluate
+            whether\nthe information of each piece is given in the alternative version of the story,\nstating the number and showing
+            the corresponding passage from the alternative story\nit is given in. After, write all the numbers of the pieces that
+            are given in the\nalternative version of the story. Here is an example of the desired JSON output format:{"1":
+            "Missing", "2": "Missing", "3": "She was at home", "4":"She was happy","Given": [3, 4]}
+            </code>
+
+        </li>
+        <li>
+            Understand what was "caught" from the story:
+            <code>You are an AI designed to map a human recall split into clauses and an original narrative split into segments, both
+            provided in JSON format. Your task is to generate a JSON output that maps the clauses to the relevant segments. Clauses
+            can be mapped to multiple segments, and the same segment can be mapped multiple times. If a recall clause can not be
+            mapped to any narrative segment, return an empty list. Here is an example of the desired output format:</code>
+        </li>
+        </ul>
+    </h3>
 TODO: make such pages for every story
     <h1>Report on Emulating Human Memory for Boy Scout Story</h1>
     It is interesting to compare what number of segments (coverage) were recalled by LLMs and humans.
@@ -48,7 +88,6 @@ TODO: make such pages for every story
     TODO  show gpt4 coverage
     Here is the html page for other stories: <a href="mean_coverage_by_keypoints.html">
         Recognition</a>
-    <br>TODO give the prompt here.
     <hr>
 
     <p>Here is a report for emulating human memory for the Boy Scout story. We can consider two metrics to evaluate the
