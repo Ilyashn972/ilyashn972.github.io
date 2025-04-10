@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Memory Emulation Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .image-container {
+            display: flex;
+        }
+        .image-container img {
+            margin-right: 10px; /* Optional: adds space between images */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Prompts:
+        <ul>
+            <li> Generate keypoints summary by gpt4o:
+        <code>You will be given a narrative. Your task is to extract the keypoints of the narrative. The output must be formatted in
+        JSON as follows:
+        ```json
+        {
+        "keypoints": ["keypoint1", "keypoint2", ...]
+        }```</code>
+        </li>
+        <li> Recall by gpt4:
+            <code>Please recall the following story.The output must be formatted in JSON as follows:
+            ```json
+            {
+            "recall": "This is the summary of the story"
+            }
+            ```</code>
+        </li>
+        <li>
+            Find Recalled segments:
+            <code>
+            This is the original text:\n{narrative}\nIt can be broken down into the following independent pieces
+            of information:\n{segmentation}\nHere is an alternative version of the original text where some of the above pieces\nof
+            information may be missing:\n{recall}\nFor each of the numbered information pieces of the list above, evaluate
+            whether\nthe information of each piece is given in the alternative version of the story,\nstating the number and showing
+            the corresponding passage from the alternative story\nit is given in. After, write all the numbers of the pieces that
+            are given in the\nalternative version of the story. Here is an example of the desired JSON output format:{"1":
+            "Missing", "2": "Missing", "3": "She was at home", "4":"She was happy","Given": [3, 4]}
+            </code>
+
+        </li>
+        <li>
+            Understand what was "caught" from the story:
+            <code>You are an AI designed to map a human recall split into clauses and an original narrative split into segments, both
+            provided in JSON format. Your task is to generate a JSON output that maps the clauses to the relevant segments. Clauses
+            can be mapped to multiple segments, and the same segment can be mapped multiple times. If a recall clause can not be
+            mapped to any narrative segment, return an empty list. Here is an example of the desired output format:</code>
+        </li>
+        </ul>
+    </h3>
+TODO: make such pages for every story
+    <h1>Report on Emulating Human Memory for costa Story</h1>
+    It is interesting to compare what number of segments (coverage) were recalled by LLMs and humans.
+    This percent varies when number of keypoints is changing.
+    See <img src="../costa/mean_coverage_by_keypoints.png" width="50%" alt="Mean Coverage Plot">
+    TODO  show gpt4 coverage
+    Here is the html page for other stories: <a href="../mean_coverage_by_keypoints.html">
+        Recalled</a>
+    <hr>
+
+    <p>Here is a report for emulating human memory for the Boy Scout story. We can consider two metrics to evaluate the
+        quality of the emulation:</p>
+    <ul>
+        <li><strong>Recalled</strong>: What are the details recalled by the LLM/human.</li>
+        <li><strong>Caught</strong>: What are the key points that are recalled by the LLM/human.</li>
+    </ul>
+
+    <p>I have prepared two plots with the x-axis showing segments and the y-axis indicating the probability of human/LLM
+        to recall the segment. In these plots, I present two methods to emulate human memory:</p>
+    <ul>
+        <li>The first one is using GPT-4 prompt.</li>
+        <li>The second one is using GPT-4o prompt with various numbers of key points.</li>
+    </ul>
+
+    <iframe src="../costa/emulation_prec_correlation.html"  width="48%" height="300px"></iframe>
+    <iframe src="../costa/pcaught_correlation_with_emulation_plot.html" width="48%" height="300px"></iframe>
+        
+Here are the html pages for other stories: <a href="../emulation_prec_correlation.html"> Recalled</a> <a href="../pcaught_correlation_with_emulation_plot.html"> Caught</a>
+    <h2>Key Segment Analysis</h2>
+    <p>Recalled: Look for example on "segment 8: 'and I started yelling Help!'" 
+        This segment was important for the LLM
+        (mentioned in about 90% of the cases), but for humans, it was not recalled in 50% of the cases.</p>
+
+    <p>P-Caught: Look on "segment 4: 'but we was at the pier, marked off,'" This segment was important for the LLM
+        (mentioned in about 90% of the cases), but for humans, it was not recalled in 50% of the cases.</p>
+
+
+Here are links to raw data. 
+<a href="../costa/emulation_10_vs_real.html"> GPT4 Summaries with Recalled</a> 
+<a href="../costa/recognized_segments_of_gpt4o_emulation.html"> GPT4o Summaries with Recalled</a> 
+
+<a href="../costa/pcaught_of_real_and_all_types_of_emulation.html"> All types of Emulation</a> 
+<br>TODO compare segments of rec and caught, especially caught but not rec
+<br>Below are scatter plots for the same data. <br>
+<iframe src="../costa/emulation_prec_scatter_plot.html" width="40%" height="300px"></iframe>
+<iframe src="../costa/pcaught_emulation_scatter_plot.html" width="40%" height="300px"></iframe>
+<br>Here are the html pages for other stories: <a href="../emulation_prec_scatter_plot.html"> Recalled</a> <a
+    href="../pcaught_emulation_scatter_plot.html"> Caught</a><hr>
+
+
+It is intersting to see how number of keypoints affects the emulation.
+<div class="image-container">
+    <img src="../costa/prec_correlation_per_keypoint.png" width="50%">
+    <img src="../costa/correlation_vs_gpt4o_keypoints.png" width="50%">
+</div><br>Here are the html pages for other stories: <a href="../prec_correlation_per_keypoint.html"> Recalled</a> <a
+    href="../correlation_vs_gpt4o_keypoints.html"> Caught</a>
+<hr>
+
+
+It is interesting to see the trend of correlation between LLMs and humans as number of keypoints is growing.
+To see the thrend we can use moving average.
+<iframe src="../costa/emulation_prec_by_gpt4o_correlation_moving_average.html" width="48%" height="300px"></iframe>
+<iframe src="../costa/emulation_pcaught_by_gpt4o_correlation_moving_average.html" width="48%" height="300px"></iframe>
+<br>Here are the html pages for other stories: 
+<a href="../emulation_prec_by_gpt4o_correlation_moving_average.html"> Recalled</a> 
+<a href="../emulation_pcaught_by_gpt4o_correlation_moving_average.html"> Caught</a>
+
+<hr>
+
+It is interesting to see correlation between number of keypoints and C (number of clauses in human recall)
+<br>Here are the heatmap when I took steps of 3% of human and llms recalls to build each bin.<br>
+<div class="image-container">
+    <img src="../costa/rec-2d-histogram.png" width="50%" alt="Mean Coverage Plot">
+    <img src="../costa/caught-2d-histogram.png" width="50%" alt="Mean Coverage Plot">
+</div>
+Here are the html pages for other stories: <a href="../rec-2d-histogram.html"> Recalled</a> <a
+    href="../caught-2d-histogram.html"> Caught</a>
+    <hr>
+</body>
+
+</html>
