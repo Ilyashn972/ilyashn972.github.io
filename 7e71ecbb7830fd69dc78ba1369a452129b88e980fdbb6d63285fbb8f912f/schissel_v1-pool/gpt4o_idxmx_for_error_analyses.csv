@@ -1,19 +1,19 @@
 segment_id,segment_text,real_p_caught,gpt4o_emulated_p_caught,diff,abs_diff
 7,and she tried to save me from being stung.,44,100,-56,56
 5,"she spotted a bee hovering near my face,",49,100,-51,51
-2,"This happened during my cousin's wedding reception,",49,100,-51,51
 1,My best friend pushed me into the pool.,52,100,-48,48
-12,and I tumbled into the water.,44,77,-33,33
-11,"So that's when she gave me a little shove,",47,77,-30,30
-15,and she apologized profusely.,19,44,-25,25
-6,- this was at a fancy hotel garden -,20,44,-24,24
-9,and I warned her to be careful.,9,33,-24,24
-14,"she just started laughing,",34,55,-21,21
-3,where everyone was dressed to impress.,24,44,-20,20
-13,"When I resurfaced, gasping for air,",25,44,-19,19
-16,"And... my beautiful dress was ruined,",37,55,-18,18
-18,"and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake.""",48,66,-18,18
-4,"And the reason it happened,",16,33,-17,17
+2,"This happened during my cousin's wedding reception,",49,87,-38,38
+12,and I tumbled into the water.,44,79,-35,35
+11,"So that's when she gave me a little shove,",47,75,-28,28
+15,and she apologized profusely.,19,45,-26,26
+4,"And the reason it happened,",16,37,-21,21
+14,"she just started laughing,",34,54,-20,20
+13,"When I resurfaced, gasping for air,",25,45,-20,20
+17,"and naturally, the first thing to do was to get out and dry off,",21,4,17,17
+18,"and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake.""",48,62,-14,14
 10,"'Course friends, y'know, they don't always think things through.",13,0,13,13
-8,"And my aunt had just handed me a glass of champagne,",33,44,-11,11
-17,"and naturally, the first thing to do was to get out and dry off,",21,11,10,10
+6,- this was at a fancy hotel garden -,20,29,-9,9
+16,"And... my beautiful dress was ruined,",37,45,-8,8
+9,and I warned her to be careful.,9,16,-7,7
+8,"And my aunt had just handed me a glass of champagne,",33,37,-4,4
+3,where everyone was dressed to impress.,24,20,4,4

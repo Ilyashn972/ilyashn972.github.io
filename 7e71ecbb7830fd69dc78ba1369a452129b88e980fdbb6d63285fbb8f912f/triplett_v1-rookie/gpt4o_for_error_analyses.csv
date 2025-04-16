@@ -1,33 +1,33 @@
 segment_id,segment_text,real_p_caught,gpt4o_emulated_p_caught,diff,abs_diff
-31,and left.,67,96,-29,29
-8,Truth is I wasn't very fond of her because she was –,60,85,-25,25
-15,I managed to calm him down.,44,68,-24,24
-6,And it seemed she was trying to impress me.,64,87,-23,23
-13,He arrived at my apartment.,70,91,-21,21
-30,I transferred.,78,98,-20,20
-29,And I did.,78,98,-20,20
-17,and if we can't locate her well you can – do whatever you think is right.”,71,52,19,19
-3,or had been awarded for bravery.,27,12,15,15
-14,Big intimidating look on his face.,57,43,14,14
-27,But – nevertheless – that resolved the issue for that day.,17,31,-14,14
-5,And in those days I was a fitness enthusiast.,57,71,-14,14
-28,"But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”",86,98,-12,12
-9,She was a charming girl until she opened her mouth.,80,91,-11,11
-10,She was a chatterbox.,80,91,-11,11
-11,"Goodness, she could talk.",77,87,-10,10
-7,I never observed it.,34,24,10,10
+31,and left.,67,95,-28,28
+8,Truth is I wasn't very fond of her because she was –,60,86,-26,26
+15,I managed to calm him down.,44,66,-22,22
+29,And I did.,78,99,-21,21
+6,And it seemed she was trying to impress me.,64,85,-21,21
+30,I transferred.,78,99,-21,21
+13,He arrived at my apartment.,70,86,-16,16
+21,and we traced down a little more,61,76,-15,15
+22,and we couldn't locate her.,63,78,-15,15
+11,"Goodness, she could talk.",77,91,-14,14
+3,or had been awarded for bravery.,27,14,13,13
+28,"But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”",86,99,-13,13
+27,But – nevertheless – that resolved the issue for that day.,17,30,-13,13
+10,She was a chatterbox.,80,92,-12,12
+5,And in those days I was a fitness enthusiast.,57,69,-12,12
+23,And returned,50,61,-11,11
+9,She was a charming girl until she opened her mouth.,80,90,-10,10
 2,He had caught a notorious criminal –,23,33,-10,10
+7,I never observed it.,34,25,9,9
 24,– it was a police station –,82,91,-9,9
 32,That was the end of my rookie year.,61,52,9,9
-22,and we couldn't locate her.,63,70,-7,7
-23,And returned,50,56,-6,6
-20,And we went to where they found her scarf – near a park.,88,82,6,6
-19,So he accepted my offer.,58,64,-6,6
-18,I was strategizing.,37,43,-6,6
-12,Then she left a message one day saying she was going to run away because he was always scolding her about me.,94,100,-6,6
-16,and proposed “Well we'll search for her,80,75,5,5
-21,and we traced down a little more,61,64,-3,3
+17,and if we can't locate her well you can – do whatever you think is right.”,71,64,7,7
+16,and proposed “Well we'll search for her,80,85,-5,5
+14,Big intimidating look on his face.,57,52,5,5
+19,So he accepted my offer.,58,62,-4,4
+18,I was strategizing.,37,41,-4,4
+12,Then she left a message one day saying she was going to run away because he was always scolding her about me.,94,98,-4,4
 4,But he had – a young daughter.,88,85,3,3
-1,"Back in the days when I was a rookie in the police force, the Chief was a veteran.",95,98,-3,3
+20,And we went to where they found her scarf – near a park.,88,90,-2,2
 25,she was sitting on a chair with a book in her hands.,93,94,-1,1
-26,She hadn't run away.,87,87,0,0
+26,She hadn't run away.,87,88,-1,1
+1,"Back in the days when I was a rookie in the police force, the Chief was a veteran.",95,96,-1,1

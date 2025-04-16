@@ -1,33 +1,33 @@
 segment_id,segment_text,real_p_caught,gpt4o_emulated_p_caught,diff,abs_diff
-15,I talked her down,37,100,-63,63
-30,I laid low,49,100,-51,51
+15,I talked her down,37,94,-57,57
 31,and stayed out of sight.,49,100,-51,51
-19,So she took my advice.,58,100,-42,42
+30,I laid low,49,100,-51,51
 8,Truth is I didn't take to him much because he had –,59,100,-41,41
-24,– it was a treehouse club –,60,100,-40,40
+22,and we didn't find a trace.,53,94,-41,41
 29,And I did.,49,88,-39,39
-7,I never caught on.,50,88,-38,38
 10,He had poor manners.,62,100,-38,38
 11,Goodness gracious he had poor manners.,62,100,-38,38
 9,He was a charming lad until you saw his manners.,64,100,-36,36
-22,and we didn't find a trace.,53,88,-35,35
-5,and back then I was quite the tomboy.,66,100,-34,34
+19,So she took my advice.,58,94,-36,36
+26,He hadn't run away.,59,94,-35,35
+24,– it was a treehouse club –,60,94,-34,34
+23,And returned,39,72,-33,33
 21,and we trailed a bit more,55,88,-33,33
 16,and said “Well we'll go find him,67,100,-33,33
 20,And we went to where they found his baseball cap – near the old mill,70,100,-30,30
-26,He hadn't run away.,59,88,-29,29
 6,"And apparently, he was trying to befriend me.",71,100,-29,29
 13,She came to my treehouse.,74,100,-26,26
+27,But – however – that resolved it for that day.,14,38,-24,24
+14,Big old tabby cat in tow.,37,61,-24,24
 28,"But that evening the local sheriff, Officer Dawson said “You better lay low and stay out of sight because that woman never forgets anything once she gets it into her mind.”",76,100,-24,24
 3,or had given them homes.,78,100,-22,22
-32,That was the second time.,22,0,22,22
+7,I never caught on.,50,72,-22,22
 2,She had adopted at least twenty –,79,100,-21,21
 17,"and if we can't locate him, you can – go ahead and call the police if you need to.”",57,77,-20,20
 25,he was sitting on a branch with a comic book in his hand.,81,100,-19,19
-14,Big old tabby cat in tow.,37,55,-18,18
 4,But she had – a young grandson,82,100,-18,18
-23,And returned,39,55,-16,16
+5,and back then I was quite the tomboy.,66,83,-17,17
 12,Then he left a note one day saying he was going to run away because she was always nagging about me.,86,100,-14,14
-27,But – however – that resolved it for that day.,14,22,-8,8
+32,That was the second time.,22,16,6,6
 1,"In the neighborhood I grew up in, Mrs. Baker was the resident cat lady.",96,100,-4,4
 18,I was strategizing.,19,22,-3,3
