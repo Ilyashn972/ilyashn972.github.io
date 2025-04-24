@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Model Comparison Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            border: 1px solid #ccc;
+            width: 200px;
+            height: 140px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        a {
+            color: #0645AD;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        Use GPT-4 and Llama 4 to summarize the stories paragraph by paragraph into 4 keypoints.<br>
+        <a href="summarize_paragraphs_one_by_one.html">Summarize Paragraphs</a><hr>
+    </section>
+    <h1>Model Comparison Visualizations</h1>
+
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>GPT-4</th>
+            <th>Llama</th>
+        </tr>
+
+        <tr>
+            <td>Caught ratio vs number of segments</td>
+            <td>
+                <a
+                    href="../gpt4_caught_ratio_vs_number_of_segments.html">gpt4_caught_ratio_vs_number_of_segments.html</a>
+                <img src="../boyscout/gpt4_caught_ratio_vs_number_of_segments.png" alt="Gpt4 Caught Ratio Preview">
+            </td>
+            <td>
+                <a
+                    href="../llama4_caught_ratio_vs_number_of_segments.html">llama4_caught_ratio_vs_number_of_segments.html</a>
+                <img src="../boyscout/llama4_caught_ratio_vs_number_of_segments.png" alt="Llama4 Caught Ratio Preview">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Number of clauses vs current paragraph</td>
+            <td>
+                <a
+                    href="../gpt4_number_of_clauses_vs_current_paragraph.html">gpt4_number_of_clauses_vs_current_paragraph.html</a>
+                <img src="../boyscout/gpt4_number_of_clauses_vs_current_paragraph.png"
+                    alt="Gpt4 Clauses vs Paragraph Preview">
+            </td>
+            <td>
+                <a
+                    href="../llama4_number_of_clauses_vs_current_paragraph.html">llam4_number_of_clauses_vs_current_paragraph.html</a>
+                <img src="../boyscout/llama4_number_of_clauses_vs_current_paragraph.png"
+                    alt="Llama4 Clauses vs Paragraph Preview">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Median fan out vs current paragraph</td>
+            <td>
+                <a
+                    href="../gpt4_median_fan_out_vs_current_paragraph.html">gpt4_median_fan_out_vs_current_paragraph.html</a>
+                <img src="../boyscout/gpt4_median_fan_out_vs_current_paragraph.png" alt="Gpt4 Fan Out Preview">
+            </td>
+            <td>
+                <a
+                    href="../llama4_median_fan_out_vs_current_paragraph.html">llama4_median_fan_out_vs_current_paragraph.html</a>
+                <img src="../boyscout/llama4_median_fan_out_vs_current_paragraph.png" alt="Llama4 Fan Out Preview">
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
