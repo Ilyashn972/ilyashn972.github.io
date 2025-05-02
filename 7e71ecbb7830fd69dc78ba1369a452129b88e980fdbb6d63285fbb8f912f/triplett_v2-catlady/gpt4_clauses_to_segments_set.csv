@@ -1,0 +1,45 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,[1],1,3,Mrs. Baker was known as the cat lady
+gpt4-1,2,[1],1,3,in the narrator's childhood neighborhood
+gpt4-1,3,[2],1,3,She had adopted
+gpt4-1,4,[3],1,3,or provided homes
+gpt4-1,5,[2],1,3,for at least twenty cats
+gpt4-2,1,"[1, 2, 3]",3,11,Mrs. Baker was known for adopting many cats
+gpt4-2,2,[4],1,11,She had a young grandson
+gpt4-2,3,[6],1,11,who attempted to befriend the narrator
+gpt4-2,4,"[5, 6, 7]",3,11,"The narrator, a tomboy, was oblivious to his attempts at friendship"
+gpt4-2,5,"[8, 9, 10, 11]",4,11,The grandson was perceived as having poor manners
+gpt4-3,1,"[1, 2]",2,18,"Mrs. Baker, known as the cat lady, had adopted at least twenty cats"
+gpt4-3,2,"[4, 5, 6, 7]",4,18,"Her young grandson attempted to befriend the narrator, who was a tomboy"
+gpt4-3,3,"[8, 9, 10, 11]",4,18,"The grandson had poor manners, which the narrator did not appreciate"
+gpt4-3,4,[12],1,18,The grandson left a note about running away
+gpt4-3,5,"[13, 14, 15, 16, 17, 18]",6,18,leading to a search initiated by the narrator and Mrs. Baker
+gpt4-4,1,"[1, 4]",2,22,"Mrs. Baker, known as the cat lady, had a young grandson"
+gpt4-4,2,[6],1,22,trying to befriend the narrator
+gpt4-4,3,"[9, 10, 11]",3,22,The grandson had poor manners
+gpt4-4,4,[8],1,22,which made the narrator reluctant to befriend him
+gpt4-4,5,[12],1,22,The grandson left a note
+gpt4-4,6,[12],1,22,about running away due to nagging about the narrator
+gpt4-4,7,"[13, 16, 19]",3,22,prompting a search
+gpt4-4,8,[20],1,22,Mrs. Baker and the narrator searched near the old mill
+gpt4-4,9,[22],1,22,but found no trace of the grandson
+gpt4-5,1,"[1, 4]",2,27,"Mrs. Baker, known as the cat lady, had a young grandson"
+gpt4-5,2,[6],1,27,trying to befriend the narrator
+gpt4-5,3,"[9, 10, 11]",3,27,The grandson had poor manners
+gpt4-5,4,[8],1,27,which made the narrator reluctant to befriend him
+gpt4-5,5,[12],1,27,The grandson left a note
+gpt4-5,6,[12],1,27,about running away due to nagging
+gpt4-5,7,"[13, 16, 19]",3,27,prompting a search
+gpt4-5,8,[23],1,27,The search ended
+gpt4-5,9,"[24, 25]",2,27,when they found the grandson in the treehouse
+gpt4-5,10,[26],1,27,not having run away
+gpt4-6,1,"[1, 4, 9, 10, 11]",5,32,"Mrs. Baker, known for adopting many cats, had a poorly mannered grandson"
+gpt4-6,2,[6],1,32,trying to befriend the narrator
+gpt4-6,3,[12],1,32,The grandson left a note
+gpt4-6,4,[12],1,32,threatening to run away
+gpt4-6,5,[12],1,32,due to his grandmother's nagging about the narrator
+gpt4-6,6,"[13, 16, 19, 20, 21, 22, 23]",7,32,The narrator and Mrs. Baker searched for the grandson
+gpt4-6,7,"[24, 25, 26]",3,32,and found him safe in the treehouse
+gpt4-6,8,[28],1,32,Officer Dawson warned the narrator
+gpt4-6,9,"[28, 29, 30, 31]",4,32,to stay out of sight
+gpt4-6,10,[28],1,32,because Mrs. Baker never forgets

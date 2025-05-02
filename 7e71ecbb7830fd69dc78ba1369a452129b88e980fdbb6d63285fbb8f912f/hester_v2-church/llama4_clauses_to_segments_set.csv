@@ -1,0 +1,62 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+llama4-1,1,[1],1,4,The narrator was twenty-two years old
+llama4-1,2,[2],1,4,The narrator stayed in a small town
+llama4-1,3,[3],1,4,The narrator worked at a local bookstore
+llama4-1,4,[4],1,4,The narrator was alone in the store
+llama4-2,1,[1],1,8,The narrator was twenty-two years old
+llama4-2,2,[2],1,8,and staying in a small town
+llama4-2,3,[3],1,8,The narrator had started their first job
+llama4-2,4,[3],1,8,at a local bookstore
+llama4-2,5,[5],1,8,The narrator's grandpa was bedridden at home
+llama4-2,6,[8],1,8,The narrator's parents had gone out of town
+llama4-2,7,[8],1,8,for the weekend
+llama4-3,1,"[3, 4]",2,14,The narrator was working alone at a bookstore
+llama4-3,2,"[5, 6]",2,14,The narrator's grandpa was bedridden at home
+llama4-3,3,[9],1,14,The narrator heard a voice in their head
+llama4-3,4,[10],1,14,The voice told the narrator to light a candle for their grandpa
+llama4-4,1,"[3, 4]",2,20,The narrator was working alone at a bookstore
+llama4-4,2,"[9, 13]",2,20,The narrator heard a voice in their head
+llama4-4,3,[10],1,20,telling them to light a candle for their grandpa
+llama4-4,4,"[15, 16]",2,20,The narrator visited the old church down the street
+llama4-4,5,[5],1,20,The narrator's grandpa was bedridden
+llama4-4,6,[6],1,20,and being cared for by the narrator's sister
+llama4-5,1,[4],1,28,The narrator was alone in a bookstore
+llama4-5,2,"[9, 11, 13, 14]",4,28,when they heard a voice in their head
+llama4-5,3,[10],1,28,The voice told the narrator to light a candle for their grandpa at the old church
+llama4-5,4,"[15, 16, 17, 18, 19, 20, 21, 22, 23, 24]",10,28,The narrator visited the church
+llama4-5,5,"[24, 25]",2,28,and lit a candle
+llama4-5,6,"[26, 27, 28]",3,28,praying for their grandpa's recovery
+llama4-5,7,"[5, 6]",2,28,The narrator's grandpa had been bedridden for almost a year before the event
+llama4-6,1,"[3, 4]",2,35,The narrator was working alone at a bookstore
+llama4-6,2,[9],1,35,The narrator heard a voice in their head
+llama4-6,3,[10],1,35,suggesting they light a candle for their grandpa
+llama4-6,4,"[15, 17, 24]",3,35,The narrator visited the old church
+llama4-6,5,"[25, 27, 28]",3,35,and prayed for their grandpa's recovery
+llama4-6,6,"[31, 32, 34]",3,35,The narrator felt a strong urge to return home
+llama4-6,7,[29],1,35,after praying
+llama4-7,1,[9],1,42,The narrator hears a voice in their head
+llama4-7,2,[10],1,42,instructing them to light a candle for their grandpa
+llama4-7,3,[15],1,42,The narrator visits the old church
+llama4-7,4,"[24, 25, 26, 27, 28]",5,42,and prays for their grandpa's recovery
+llama4-7,5,[29],1,42,The narrator returns home
+llama4-7,6,[36],1,42,to find their grandpa sitting in the living room
+llama4-7,7,"[37, 38]",2,42,having regained the ability to stand and walk
+llama4-7,8,"[39, 40]",2,42,The grandpa gradually regains his strength
+llama4-7,9,"[40, 41]",2,42,and independence after the narrator's prayer
+llama4-8,1,[5],1,45,The narrator's grandpa had been bedridden for almost a year
+llama4-8,2,"[9, 10, 13]",3,45,The narrator heard a voice in their head suggesting they light a candle for their grandpa
+llama4-8,3,"[15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]",13,45,The narrator prayed at the old church for their grandpa's recovery
+llama4-8,4,"[36, 37, 38]",3,45,The grandpa regained strength
+llama4-8,5,"[39, 40, 41]",3,45,and began recovering after the narrator's prayer
+llama4-9,1,[5],1,50,The narrator's grandpa had been bedridden for almost a year
+llama4-9,2,"[9, 10, 13]",3,50,The narrator heard a voice in their head suggesting they light a candle for their grandpa
+llama4-9,3,"[15, 19, 20, 23, 24, 25, 26, 27, 28]",9,50,The narrator prayed at the old church for their grandpa's recovery
+llama4-9,4,"[36, 37, 38, 39, 40]",5,50,The grandpa regained his strength and independence after the narrator's prayer
+llama4-10,1,[9],1,54,The narrator heard a voice in their head
+llama4-10,2,[10],1,54,telling them to light a candle for their grandpa
+llama4-10,3,"[15, 17, 18, 19, 20, 21, 22, 23, 24, 25]",10,54,The narrator prayed at the old church
+llama4-10,4,"[26, 27, 28]",3,54,for their grandpa's recovery
+llama4-10,5,"[36, 37]",2,54,The grandpa suddenly regained strength
+llama4-10,6,[38],1,54,and was able to walk after the narrator's prayer
+llama4-10,7,"[39, 40, 41]",3,54,The grandpa recovered
+llama4-10,8,"[46, 47, 48]",3,54,and lived for many more years after the incident

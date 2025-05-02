@@ -1,0 +1,74 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,[1],1,4,The narrator was twenty-one years old
+gpt4-1,2,[2],1,4,The narrator lived in a small apartment near the city center
+gpt4-1,3,[3],1,4,The narrator had just started their first job
+gpt4-1,4,[4],1,4,The narrator was working as a graphic designer
+gpt4-2,1,[1],1,9,The narrator was twenty-one
+gpt4-2,2,[2],1,9,and lived in a small apartment
+gpt4-2,3,[2],1,9,near the city center
+gpt4-2,4,[3],1,9,The narrator had started their first job
+gpt4-2,5,[4],1,9,as a graphic designer
+gpt4-2,6,[5],1,9,The narrator's father was recovering from surgery
+gpt4-2,7,[6],1,9,and used a wheelchair
+gpt4-2,8,[7],1,9,A kind neighbor in her sixties
+gpt4-2,9,[7],1,9,assisted the narrator's father
+gpt4-2,10,"[7, 9]",2,9,during the day
+gpt4-3,1,[2],1,15,The narrator was living in a small apartment
+gpt4-3,2,[4],1,15,and working as a graphic designer at twenty-one
+gpt4-3,3,[5],1,15,The narrator's father was recovering from surgery
+gpt4-3,4,[6],1,15,and used a wheelchair
+gpt4-3,5,"[7, 9]",2,15,A kind neighbor assisted the narrator's father during the day
+gpt4-3,6,"[10, 11]",2,15,The narrator felt compelled to pray for their father's recovery
+gpt4-3,7,"[14, 15]",2,15,in a nearby park
+gpt4-4,1,[2],1,23,The narrator lived in a small apartment
+gpt4-4,2,"[3, 4]",2,23,and started a job as a graphic designer
+gpt4-4,3,[5],1,23,The narrator's father was recovering from surgery
+gpt4-4,4,[6],1,23,and used a wheelchair
+gpt4-4,5,"[7, 9]",2,23,with only a neighbor for company during the day
+gpt4-4,6,"[10, 11]",2,23,The narrator felt an urge to pray for their father's recovery
+gpt4-4,7,"[11, 14]",2,23,in a nearby park during a lunch break
+gpt4-4,8,[14],1,23,The narrator followed the feeling
+gpt4-4,9,[14],1,23,went to the park
+gpt4-4,10,"[15, 21]",2,23,found a bench
+gpt4-4,11,[21],1,23,and took a moment to pray
+gpt4-5,1,[2],1,32,The narrator lived in a small apartment
+gpt4-5,2,"[3, 4]",2,32,and started a job as a graphic designer at twenty-one
+gpt4-5,3,[5],1,32,The narrator's father was recovering from surgery
+gpt4-5,4,[6],1,32,and used a wheelchair
+gpt4-5,5,"[7, 9]",2,32,with only a neighbor for company during the day
+gpt4-5,6,[10],1,32,The narrator felt compelled to pray for their father's recovery
+gpt4-5,7,"[11, 14]",2,32,in a nearby park during a lunch break
+gpt4-5,8,"[12, 13, 17, 18, 19, 26]",6,32,"The narrator, despite skepticism, chose to pray alone"
+gpt4-5,9,[24],1,32,under an oak tree
+gpt4-5,10,"[28, 29, 30]",3,32,believing in the power of prayer to help their father
+gpt4-6,1,[2],1,40,The narrator lived in a small apartment
+gpt4-6,2,"[3, 4]",2,40,and started a job as a graphic designer at twenty-one
+gpt4-6,3,[5],1,40,The narrator's father was recovering from surgery
+gpt4-6,4,[6],1,40,and used a wheelchair
+gpt4-6,5,"[7, 9]",2,40,with only a neighbor for company during the day
+gpt4-6,6,"[10, 11]",2,40,The narrator felt compelled to pray for their father's recovery
+gpt4-6,7,[14],1,40,at a nearby park during a lunch break
+gpt4-6,8,"[24, 37, 38]",3,40,After praying under an oak tree for their father's health and independence
+gpt4-6,9,[40],1,40,the narrator returned to work
+gpt4-7,1,[2],1,48,The narrator lived in a small apartment
+gpt4-7,2,"[3, 4]",2,48,and started a job as a graphic designer
+gpt4-7,3,[5],1,48,The narrator's father was recovering from surgery
+gpt4-7,4,[6],1,48,and used a wheelchair
+gpt4-7,5,"[7, 9]",2,48,with only a neighbor for company during the day
+gpt4-7,6,"[10, 11]",2,48,The narrator felt compelled to pray for their father's recovery
+gpt4-7,7,"[14, 15, 21]",3,48,in a park
+gpt4-7,8,[14],1,48,and did so during a lunch break
+gpt4-7,9,"[11, 16, 19, 22, 23, 28, 29, 30, 32, 35, 36, 37, 38]",13,48,After praying
+gpt4-7,10,[41],1,48,the narrator received a message from their father
+gpt4-7,11,"[42, 46, 47]",3,48,stating he had taken a few steps with his walker
+gpt4-8,1,[4],1,54,The narrator worked as a graphic designer
+gpt4-8,2,[2],1,54,and lived near the city center
+gpt4-8,3,[5],1,54,The narrator's father was recovering from surgery
+gpt4-8,4,[6],1,54,and used a wheelchair
+gpt4-8,5,"[7, 9]",2,54,with only a neighbor for company during the day
+gpt4-8,6,"[10, 11]",2,54,The narrator felt compelled to pray for their father's recovery
+gpt4-8,7,"[14, 15, 21]",3,54,in a park
+gpt4-8,8,[14],1,54,and did so during a lunch break
+gpt4-8,9,[39],1,54,After the prayer
+gpt4-8,10,"[41, 42]",2,54,the narrator's father texted about taking steps with a walker
+gpt4-8,11,[49],1,54,marking the beginning of his recovery

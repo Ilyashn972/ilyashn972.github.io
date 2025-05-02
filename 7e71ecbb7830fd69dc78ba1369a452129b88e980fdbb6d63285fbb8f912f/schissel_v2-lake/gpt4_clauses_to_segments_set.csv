@@ -1,0 +1,38 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,[1],1,3,My best friend pushed me into a lake
+gpt4-1,2,[2],1,3,The incident occurred during our annual summer camping trip
+gpt4-1,3,[3],1,3,We were enjoying a peaceful afternoon when it happened
+gpt4-2,1,[1],1,10,My best friend pushed me into a lake
+gpt4-2,2,[2],1,10,during our summer camping trip
+gpt4-2,3,[3],1,10,We were having a peaceful afternoon
+gpt4-2,4,[6],1,10,at our favorite spot in the woods
+gpt4-2,5,[7],1,10,She dared me to catch a frog
+gpt4-2,6,[5],1,10,she spotted near the water's edge
+gpt4-2,7,[9],1,10,I refused the dare
+gpt4-2,8,[8],1,10,as I was sitting down to eat my sandwich
+gpt4-3,1,[1],1,12,My best friend pushed me into the lake
+gpt4-3,2,[2],1,12,during our annual summer camping trip
+gpt4-3,3,[6],1,12,We were at our favorite spot in the woods
+gpt4-3,4,[3],1,12,enjoying a peaceful afternoon
+gpt4-3,5,"[5, 7]",2,12,She dared me to catch a frog near the water's edge
+gpt4-3,6,[9],1,12,After I declined
+gpt4-3,7,[11],1,12,she snuck up behind me
+gpt4-3,8,[12],1,12,and nudged me into the water
+gpt4-4,1,[1],1,16,My best friend pushed me into the lake
+gpt4-4,2,[2],1,16,during our summer camping trip
+gpt4-4,3,"[5, 7]",2,16,She dared me to catch a frog near the water's edge
+gpt4-4,4,[9],1,16,I refused the dare
+gpt4-4,5,[8],1,16,as I was eating my sandwich
+gpt4-4,6,"[11, 12]",2,16,After being pushed
+gpt4-4,7,[16],1,16,I laughed uncontrollably
+gpt4-4,8,"[13, 14, 15]",3,16,when she handed me the frog
+gpt4-5,1,[1],1,18,My best friend pushed me into the lake
+gpt4-5,2,[2],1,18,during our annual summer camping trip
+gpt4-5,3,[7],1,18,She dared me to catch a frog
+gpt4-5,4,[9],1,18,and I refused
+gpt4-5,5,[8],1,18,while eating my sandwich
+gpt4-5,6,"[11, 12, 14]",3,18,"After pushing me, she caught the frog"
+gpt4-5,7,[15],1,18,and handed it to me
+gpt4-5,8,[13],1,18,as I got out of the water
+gpt4-5,9,[16],1,18,I laughed
+gpt4-5,10,"[17, 18]",2,18,and vowed to get revenge on her

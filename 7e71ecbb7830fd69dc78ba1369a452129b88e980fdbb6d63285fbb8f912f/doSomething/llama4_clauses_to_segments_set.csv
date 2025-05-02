@@ -1,0 +1,73 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+llama4-1,1,[1],1,3,We were going to a church league softball game
+llama4-1,2,[2],1,3,The games were scheduled at Homestead High School
+llama4-1,3,[2],1,3,The diamond at Homestead High School was used
+llama4-2,1,[1],1,20,The narrator was driving to a church league softball game
+llama4-2,2,"[6, 7, 8]",3,20,The narrator was slowing down to turn onto a road
+llama4-2,3,"[9, 10, 12, 18]",4,20,Another driver pulled out into the lane
+llama4-2,4,[13],1,20,blocking the narrator's turn
+llama4-2,5,"[19, 20]",2,20,The narrator accelerated to turn ahead of the other driver
+llama4-3,1,[1],1,24,The narrator was driving to a church league softball game
+llama4-3,2,[18],1,24,Another driver pulled out into the lane
+llama4-3,3,[13],1,24,blocking the narrator's path
+llama4-3,4,[20],1,24,The narrator managed to get ahead of the other driver
+llama4-3,5,[23],1,24,The other driver stopped in the middle of the highway
+llama4-3,6,"[22, 24]",2,24,blocking traffic
+llama4-4,1,"[1, 4, 5, 6, 7, 25, 26, 27, 28, 29, 30, 31, 32]",13,32,The narrator was driving
+llama4-4,2,"[1, 2, 26, 27]",4,32,to a church league softball game
+llama4-4,3,"[9, 12, 13, 18, 22, 23, 24]",7,32,Another driver blocked the lane
+llama4-4,4,"[4, 5, 6, 7, 8, 10, 14, 15, 16, 17, 19, 20, 21, 25, 28, 29, 30, 31, 32]",19,32,while turning onto the highway
+llama4-4,5,"[19, 20]",2,32,The narrator got ahead of the other driver
+llama4-4,6,"[28, 29, 31, 32]",4,32,The other driver followed
+llama4-4,7,"[28, 29, 31, 32]",4,32,the narrator's vehicle
+llama4-5,1,[1],1,40,The narrator was driving to a church league softball game
+llama4-5,2,[18],1,40,A driver pulled out into the lane in front of the narrator
+llama4-5,3,"[13, 22, 23, 24]",4,40,blocking the road
+llama4-5,4,[28],1,40,The same driver followed the narrator's car after they turned onto another road
+llama4-5,5,"[32, 34, 35]",3,40,The driver was tailgating the narrator's car
+llama4-5,6,"[38, 39]",2,40,and weaving between lanes
+llama4-6,1,[1],1,43,The narrator was driving to a church league softball game
+llama4-6,2,"[13, 22, 23, 24]",4,43,Another driver blocked the lane while turning onto the highway
+llama4-6,3,[28],1,43,The other driver followed the narrator's car after they passed him
+llama4-6,4,"[32, 35, 38, 39]",4,43,The other driver was tailgating and driving erratically
+llama4-7,1,"[1, 2]",2,53,The narrator is driving to a church league softball game
+llama4-7,2,"[13, 22, 23, 24]",4,53,A driver blocks the lane
+llama4-7,3,"[6, 7, 8]",3,53,and causes the narrator to slow down
+llama4-7,4,[28],1,53,The same driver follows the narrator's vehicle after they turn
+llama4-7,5,"[32, 34, 35]",3,53,The driver is tailgating
+llama4-7,6,"[38, 39]",2,53,and driving erratically
+llama4-8,1,[1],1,59,The narrator was driving to a church league softball game
+llama4-8,2,"[10, 12, 18]",3,59,A driver pulled out in front of the narrator
+llama4-8,3,"[13, 22, 23, 24]",4,59,and blocked the lane
+llama4-8,4,[28],1,59,The same driver followed the narrator's car
+llama4-8,5,"[32, 35, 38, 39]",4,59,and drove aggressively
+llama4-8,6,[58],1,59,The narrator stopped at a stop sign
+llama4-8,7,[59],1,59,where a sheriff's car was already present
+llama4-9,1,"[1, 2]",2,68,The narrator was driving to a church league softball game
+llama4-9,2,"[18, 19]",2,68,A driver pulled out in front of the narrator
+llama4-9,3,"[13, 22, 23, 24]",4,68,and blocked the lane
+llama4-9,4,"[28, 29, 32]",3,68,The same driver followed the narrator's car
+llama4-9,5,"[38, 39]",2,68,and drove erratically
+llama4-9,6,"[59, 60, 61, 62, 63, 64, 65, 66, 67]",9,68,The narrator reported the driver to a sheriff's deputy
+llama4-9,7,[58],1,68,at a stop sign
+llama4-10,1,[1],1,73,The narrator was driving to a church league softball game
+llama4-10,2,"[18, 19, 20]",3,73,and was cut off by another driver
+llama4-10,3,[28],1,73,The other driver followed the narrator's car
+llama4-10,4,"[32, 34, 35]",3,73,tailgating
+llama4-10,5,"[38, 39]",2,73,and weaving between lanes
+llama4-10,6,"[42, 45, 46, 50, 51]",5,73,The narrator suspected the other driver was drunk or had a medical issue
+llama4-10,7,"[57, 58, 59, 60, 61, 62, 63, 64, 65]",9,73,and decided to report him to the authorities
+llama4-10,8,"[58, 59]",2,73,The narrator stopped at an intersection with a sheriff's car
+llama4-10,9,"[60, 61, 62, 63, 64, 65, 66, 67]",8,73,and reported the other driver's behavior
+llama4-10,10,"[70, 71, 72, 73]",4,73,prompting the other driver to back away in reverse
+llama4-11,1,"[4, 5, 9, 10, 12]",5,81,The narrator encounters a driver
+llama4-11,2,"[13, 22, 23, 24]",4,81,who blocks the lane
+llama4-11,3,"[4, 5, 12]",3,81,while turning onto Twenty-four
+llama4-11,4,"[28, 32, 35, 38]",4,81,The same driver follows the narrator's car
+llama4-11,5,"[27, 28, 29, 30, 31, 32, 35]",7,81,after they turn onto Aboite Center
+llama4-11,6,"[44, 47, 48, 49, 57, 60, 64, 65, 66]",9,81,The narrator reports the suspicious driver
+llama4-11,7,"[59, 60, 62, 63, 64, 65, 66]",7,81,to a sheriff's deputy
+llama4-11,8,"[58, 59]",2,81,at a stop sign
+llama4-11,9,"[69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]",11,81,The driver attempts to evade the police
+llama4-11,10,"[72, 73, 75]",3,81,by reversing his car
+llama4-11,11,"[69, 70]",2,81,when he sees the deputy

@@ -1,0 +1,20 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+llama4-1,1,[1],1,3,My best friend pushed me into the lake
+llama4-1,2,[2],1,3,We were on a summer camping trip
+llama4-1,3,[3],1,3,We were having a peaceful afternoon
+llama4-2,1,[1],1,10,My friend pushed me into the lake
+llama4-2,2,[2],1,10,The incident occurred during our annual summer camping trip
+llama4-2,3,"[5, 7]",2,10,She dared me to catch a frog near the water's edge
+llama4-2,4,[9],1,10,I initially refused to catch the frog
+llama4-3,1,[1],1,12,My best friend pushed me into the lake
+llama4-3,2,[2],1,12,The incident occurred during our annual summer camping trip
+llama4-3,3,"[5, 7]",2,12,She dared me to catch a frog near the water's edge
+llama4-3,4,[9],1,12,I refused to catch the frog
+llama4-4,1,"[1, 11, 12]",3,16,My friend pushed me into the lake
+llama4-4,2,[7],1,16,She dared me to catch a frog
+llama4-4,3,"[8, 9]",2,16,I initially refused to catch the frog
+llama4-4,4,"[13, 14, 15]",3,16,She handed me the frog after I emerged from the water
+llama4-5,1,"[1, 11, 12]",3,18,My friend pushed me into the lake
+llama4-5,2,"[5, 7]",2,18,She dared me to catch a frog
+llama4-5,3,[13],1,18,I emerged from the water
+llama4-5,4,"[17, 18]",2,18,I threatened to get revenge

@@ -1,0 +1,60 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+llama4-1,1,[2],1,4,I was living in a small apartment
+llama4-1,2,[3],1,4,I had started my first job
+llama4-1,3,[4],1,4,I was working as a graphic designer
+llama4-1,4,[1],1,4,I was twenty-one years old
+llama4-2,1,[2],1,9,The narrator was living in a small apartment
+llama4-2,2,[2],1,9,near the city center
+llama4-2,3,[5],1,9,The narrator's father was recovering from surgery
+llama4-2,4,[6],1,9,The father used a wheelchair to get around
+llama4-2,5,"[7, 9]",2,9,The neighbor lady took care of the father
+llama4-2,6,"[7, 9]",2,9,during the day
+llama4-3,1,[2],1,15,The narrator was living in a small apartment
+llama4-3,2,[2],1,15,near the city center
+llama4-3,3,[1],1,15,at twenty-one years old
+llama4-3,4,[5],1,15,The narrator's father was recovering from surgery
+llama4-3,5,[6],1,15,and used a wheelchair
+llama4-3,6,"[10, 11]",2,15,The narrator felt a strong urge to pray for his father's recovery
+llama4-3,7,"[11, 14]",2,15,during his lunch break
+llama4-3,8,[14],1,15,The narrator went to a nearby park
+llama4-3,9,"[11, 15]",2,15,and prayed for his father's recovery
+llama4-4,1,[2],1,23,The narrator was living in a small apartment
+llama4-4,2,[2],1,23,near the city center
+llama4-4,3,[1],1,23,at twenty-one years old
+llama4-4,4,[5],1,23,The narrator's father was recovering from surgery
+llama4-4,5,[6],1,23,and used a wheelchair
+llama4-4,6,[10],1,23,The narrator felt a strong intuition
+llama4-4,7,[11],1,23,to pray for his father's recovery
+llama4-4,8,"[14, 15]",2,23,at a nearby park
+llama4-4,9,[11],1,23,The narrator prayed for his father's recovery
+llama4-4,10,[14],1,23,during his lunch break
+llama4-4,11,"[14, 15, 21]",3,23,at the park
+llama4-5,1,[2],1,32,The narrator was living in a small apartment
+llama4-5,2,[2],1,32,near the city center
+llama4-5,3,[1],1,32,at twenty-one years old
+llama4-5,4,[5],1,32,The narrator's father was recovering from surgery
+llama4-5,5,[6],1,32,and used a wheelchair
+llama4-5,6,[10],1,32,The narrator felt a strong intuition
+llama4-5,7,[11],1,32,to pray for his father's recovery
+llama4-5,8,[14],1,32,during his lunch break
+llama4-5,9,[11],1,32,The narrator prayed for his father's recovery
+llama4-5,10,"[14, 21]",2,32,in a nearby park
+llama4-6,1,[4],1,40,The narrator was working as a graphic designer
+llama4-6,2,[1],1,40,at the age of twenty-one
+llama4-6,3,[5],1,40,The narrator's father was recovering from surgery
+llama4-6,4,[6],1,40,and used a wheelchair
+llama4-6,5,"[35, 37]",2,40,The narrator prayed for his father's recovery
+llama4-6,6,"[11, 14]",2,40,during his lunch break
+llama4-6,7,"[14, 15, 21, 24]",4,40,in a nearby park
+llama4-6,8,[40],1,40,The narrator returned to work
+llama4-6,9,[35],1,40,after saying a quiet prayer for his father's recovery
+llama4-7,1,[5],1,48,The narrator's father had been unable to walk for eight months after surgery
+llama4-7,2,"[10, 11, 14, 21, 28, 29, 30, 32, 34, 35, 37, 38]",12,48,The narrator prayed for his father's recovery during his lunch break in a nearby park
+llama4-7,3,"[41, 42, 43, 44]",4,48,The narrator's father took a few steps with his walker shortly after the narrator's prayer
+llama4-7,4,[45],1,48,The narrator visited his father after work
+llama4-7,5,"[46, 47, 48]",3,48,and saw him standing with the help of his walker
+llama4-8,1,[5],1,54,The narrator's father had been unable to walk for eight months after surgery
+llama4-8,2,"[10, 11, 14, 15, 19, 21, 27, 28, 29, 30, 32, 34, 35, 36, 37, 38]",16,54,The narrator prayed for his father's recovery during his lunch break in a nearby park
+llama4-8,3,"[41, 42, 43, 44, 46, 47]",6,54,The narrator's father took his first steps with a walker shortly after the narrator's prayer
+llama4-8,4,"[49, 50, 51]",3,54,The narrator's father regained his mobility within a year
+llama4-8,5,"[52, 53]",2,54,and is now able to walk without assistance

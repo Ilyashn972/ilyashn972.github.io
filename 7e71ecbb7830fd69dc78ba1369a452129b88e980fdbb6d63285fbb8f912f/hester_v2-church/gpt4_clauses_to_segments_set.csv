@@ -1,0 +1,94 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,[1],1,4,The narrator was twenty-two
+gpt4-1,2,[1],1,4,and fresh out of college
+gpt4-1,3,[2],1,4,The narrator lived in a small town
+gpt4-1,4,[2],1,4,five miles away
+gpt4-1,5,[3],1,4,The narrator began their first job
+gpt4-1,6,[3],1,4,at a local bookstore
+gpt4-1,7,[4],1,4,The narrator was alone in the store
+gpt4-1,8,[4],1,4,on a quiet afternoon
+gpt4-2,1,[1],1,8,The narrator was twenty-two
+gpt4-2,2,[1],1,8,and had recently graduated from college
+gpt4-2,3,[3],1,8,The narrator began working at a local bookstore
+gpt4-2,4,[2],1,8,in a small town
+gpt4-2,5,[5],1,8,The narrator's grandpa was bedridden
+gpt4-2,6,[6],1,8,and cared for by the narrator's sister
+gpt4-2,7,[],0,8,The narrator's parents were away
+gpt4-2,8,[8],1,8,for the weekend
+gpt4-3,1,[1],1,14,The narrator was twenty-two
+gpt4-3,2,[2],1,14,living in a small town
+gpt4-3,3,[3],1,14,and working at a local bookstore
+gpt4-3,4,[5],1,14,The narrator's grandpa was bedridden
+gpt4-3,5,[6],1,14,and cared for by the narrator's sister
+gpt4-3,6,[8],1,14,The narrator's parents were away for the weekend
+gpt4-3,7,[9],1,14,The narrator heard a voice
+gpt4-3,8,[10],1,14,suggesting to light a candle at an old church
+gpt4-3,9,[10],1,14,for the grandpa's health
+gpt4-4,1,"[2, 3]",2,20,The narrator started a new job at a bookstore in a small town
+gpt4-4,2,[5],1,20,The narrator's grandpa was bedridden
+gpt4-4,3,[6],1,20,and cared for by their sister
+gpt4-4,4,"[9, 10, 13]",3,20,The narrator heard a voice urging them to light a candle at a nearby church for their grandpa's health
+gpt4-4,5,"[15, 17]",2,20,The narrator was conflicted about going to the church
+gpt4-4,6,"[18, 20]",2,20,due to their lack of religious faith
+gpt4-5,1,"[2, 3]",2,28,The narrator started a new job at a bookstore in a small town
+gpt4-5,2,"[5, 6, 7]",3,28,while their bedridden grandpa was at home with their sister
+gpt4-5,3,"[9, 10, 13]",3,28,The narrator heard a voice suggesting to light a candle at the old church for their grandpa's health
+gpt4-5,4,"[17, 18]",2,28,Despite initial hesitation and not being religious
+gpt4-5,5,"[15, 16]",2,28,the narrator decided to go to the church
+gpt4-5,6,[24],1,28,The narrator lit a candle
+gpt4-5,7,"[25, 26, 27, 28]",4,28,and prayed sincerely for their grandpa's recovery
+gpt4-6,1,[3],1,35,The narrator started a new job at a local bookstore
+gpt4-6,2,"[4, 9, 11]",3,35,and was alone when they heard a voice
+gpt4-6,3,[10],1,35,urging them to light a candle at a nearby church for their bedridden grandpa
+gpt4-6,4,[18],1,35,Despite being non-religious and skeptical
+gpt4-6,5,[15],1,35,the narrator decided to visit the church
+gpt4-6,6,[24],1,35,and light a candle
+gpt4-6,7,"[25, 26, 27, 28]",4,35,offering a sincere prayer for their grandpa's health
+gpt4-6,8,[29],1,35,After returning to work
+gpt4-6,9,[31],1,35,the narrator felt an inexplicable urge to go home
+gpt4-6,10,[32],1,35,as if being pulled there
+gpt4-6,11,[35],1,35,The narrator locked up the bookstore early
+gpt4-6,12,[35],1,35,and hurried home
+gpt4-6,13,[34],1,35,responding to the strong feeling
+gpt4-7,1,[3],1,42,The narrator started a new job at a bookstore
+gpt4-7,2,"[4, 9, 11]",3,42,and was alone when they heard a voice
+gpt4-7,3,[10],1,42,urging them to light a candle at a church for their bedridden grandpa
+gpt4-7,4,[18],1,42,Despite being non-religious and skeptical
+gpt4-7,5,"[15, 24]",2,42,the narrator lit a candle at the church
+gpt4-7,6,"[25, 26, 27, 28]",4,42,praying for their grandpa's recovery
+gpt4-7,7,[29],1,42,After returning to work
+gpt4-7,8,"[31, 32, 33, 34]",4,42,the narrator felt compelled to go home
+gpt4-7,9,"[36, 37, 38]",3,42,and found their grandpa had unexpectedly improved
+gpt4-7,10,"[39, 41]",2,42,The grandpa's sudden recovery marked a turning point
+gpt4-7,11,[40],1,42,leading to his gradual return to strength and independence
+gpt4-8,1,[3],1,45,The narrator started a new job at a bookstore
+gpt4-8,2,"[9, 10]",2,45,and experienced a voice urging them to light a candle at a church for their bedridden grandpa
+gpt4-8,3,[18],1,45,Despite skepticism and not being religious
+gpt4-8,4,[24],1,45,the narrator lit a candle
+gpt4-8,5,"[25, 26, 27, 28]",4,45,and prayed for their grandpa's recovery at the church
+gpt4-8,6,[29],1,45,After returning to work
+gpt4-8,7,[31],1,45,the narrator felt compelled to go home
+gpt4-8,8,[36],1,45,and discovered their grandpa had unexpectedly improved
+gpt4-8,9,[37],1,45,and was sitting up
+gpt4-8,10,[39],1,45,The grandpa's recovery began that day
+gpt4-8,11,"[43, 44]",2,45,leading the narrator to reflect on the impact of their prayer
+gpt4-8,12,[45],1,45,and the role of faith in their life
+gpt4-9,1,[3],1,50,The narrator started a new job at a bookstore
+gpt4-9,2,"[9, 10]",2,50,and heard a voice suggesting to light a candle at a church for their bedridden grandpa
+gpt4-9,3,[18],1,50,Despite being non-religious
+gpt4-9,4,"[15, 24]",2,50,the narrator lit a candle at the church
+gpt4-9,5,"[25, 26, 27, 28]",4,50,praying for their grandpa's recovery
+gpt4-9,6,[29],1,50,After praying
+gpt4-9,7,"[31, 32, 34, 35]",4,50,the narrator felt compelled to return home
+gpt4-9,8,"[36, 37, 38]",3,50,and found their grandpa had unexpectedly improved
+gpt4-9,9,[39],1,50,The grandpa's recovery began that day
+gpt4-9,10,"[43, 44, 45]",3,50,leading the narrator to reflect on the power of faith and prayer
+gpt4-10,1,[3],1,54,The narrator started a new job at a bookstore
+gpt4-10,2,"[9, 10]",2,54,and heard a voice urging them to light a candle at a church for their bedridden grandpa
+gpt4-10,3,[18],1,54,Despite skepticism and not being religious
+gpt4-10,4,[24],1,54,the narrator lit a candle
+gpt4-10,5,"[25, 26, 27, 28]",4,54,and prayed for their grandpa's recovery
+gpt4-10,6,[29],1,54,After returning to work
+gpt4-10,7,"[31, 32, 33, 34]",4,54,the narrator felt compelled to go home
+gpt4-10,8,"[36, 37, 38, 39]",4,54,and found their grandpa had miraculously improved
+gpt4-10,9,"[41, 42, 43, 44, 45, 53]",6,54,The grandpa's recovery strengthened the narrator's belief in the power of faith and prayer

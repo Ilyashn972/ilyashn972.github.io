@@ -1,0 +1,79 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+llama4-1,1,[1],1,10,The family moved to Third and Wharton
+llama4-1,2,[6],1,10,The father took the team of horses back
+llama4-1,3,[5],1,10,The mother went to market
+llama4-1,4,[7],1,10,The father did not return home
+llama4-2,1,[1],1,22,The family moved to Third and Wharton
+llama4-2,2,"[3, 7]",2,22,The father left the house
+llama4-2,3,[6],1,22,to return the team of horses
+llama4-2,4,"[11, 12, 13]",3,22,Someone threw a stone through the window
+llama4-2,5,"[14, 15, 16, 17]",4,22,The narrator got the kids to safety
+llama4-2,6,[14],1,22,in the stairway
+llama4-3,1,[1],1,32,The family moved to Third and Wharton streets
+llama4-3,2,"[6, 7]",2,32,The narrator's father did not return home after taking the horses back
+llama4-3,3,[13],1,32,The house was stoned
+llama4-3,4,"[11, 12]",2,32,and a big stone crashed through the window
+llama4-3,5,"[25, 27]",2,32,The narrator ran to Fourth street
+llama4-3,6,"[17, 27]",2,32,to look for her mother
+llama4-4,1,[1],1,49,The family moved to Third and Wharton streets
+llama4-4,2,"[6, 7]",2,49,The father did not return home after taking the horses back
+llama4-4,3,[13],1,49,The house was stoned
+llama4-4,4,"[11, 12]",2,49,and a big stone crashed through the window
+llama4-4,5,"[36, 40, 41, 44]",4,49,A policeman advised the mother to move out
+llama4-4,6,"[41, 42, 43, 47]",4,49,because the neighborhood was hostile to black people
+llama4-5,1,[1],1,60,The family moved to Third and Wharton streets
+llama4-5,2,[6],1,60,The father went to return the horses
+llama4-5,3,[7],1,60,and did not come back
+llama4-5,4,[13],1,60,The house was stoned
+llama4-5,5,"[11, 12]",2,60,and a big stone came through the window
+llama4-5,6,"[27, 33]",2,60,The narrator found her mother on Fourth street
+llama4-5,7,"[36, 39, 40]",3,60,with the help of a policeman
+llama4-6,1,[1],1,65,The narrator's family moved to Third and Wharton streets
+llama4-6,2,"[11, 13]",2,65,The family's new house was stoned by neighbors shortly after they moved in
+llama4-6,3,"[27, 28, 33]",3,65,The narrator found her mother at a pushcart on Fourth street
+llama4-6,4,[35],1,65,and told her about the incident
+llama4-6,5,"[52, 54]",2,65,The policeman they encountered refused to help them
+llama4-6,6,"[41, 43, 47]",3,65,citing the neighborhood's hostility to black people
+llama4-7,1,[1],1,75,The narrator's family moved to Third and Wharton streets
+llama4-7,2,"[11, 12, 13]",3,75,The family's new house was stoned by unknown assailants
+llama4-7,3,"[33, 36]",2,75,The narrator's mother sought help from a policeman
+llama4-7,4,"[40, 41, 42, 43, 44, 46, 47, 48, 49, 50, 51, 52, 53, 54]",14,75,who refused to assist
+llama4-7,5,[66],1,75,The mother took the narrator to the police station
+llama4-7,6,"[66, 68, 69, 70, 71, 72, 73, 74, 75]",9,75,to report the incident
+llama4-8,1,[1],1,86,The family moved to Third and Wharton streets
+llama4-8,2,"[11, 12, 13]",3,86,The house was stoned by Irish neighbors shortly after they moved in
+llama4-8,3,"[33, 36, 39, 40]",4,86,The narrator's mother sought help from a policeman
+llama4-8,4,"[41, 42, 43, 44, 46, 47, 49, 52, 53, 54]",10,86,who refused to assist
+llama4-8,5,"[55, 60, 66]",3,86,The mother took her complaint to the police station
+llama4-8,6,"[68, 69, 70, 71, 74, 75]",6,86,where she was again refused help
+llama4-9,1,[1],1,95,The narrator's family moved to a new house on Third and Wharton streets
+llama4-9,2,"[11, 12, 13]",3,95,The house was stoned by neighbors shortly after they moved in
+llama4-9,3,"[33, 36, 40, 66]",4,95,The narrator's mother reported the incident to the police
+llama4-9,4,"[41, 42, 43, 44, 46, 47, 52, 53, 54, 69, 70, 71, 74]",13,95,who refused to help
+llama4-9,5,"[89, 90]",2,95,The police eventually took the narrator and her mother home
+llama4-9,6,"[86, 89, 90]",3,95,in a police patrol wagon
+llama4-10,1,[1],1,100,The narrator's family moved to a new house on Third and Wharton streets
+llama4-10,2,"[11, 12, 13]",3,100,The house was stoned by neighbors shortly after they moved in
+llama4-10,3,"[33, 35, 36, 40, 60, 66]",6,100,The narrator's mother reported the incident to the police
+llama4-10,4,"[41, 42, 43, 44, 46, 47, 50, 52, 53, 54, 69, 70, 71, 74]",14,100,who refused to help
+llama4-10,5,"[89, 90]",2,100,The police eventually took the narrator and their mother home in a police patrol wagon
+llama4-11,1,"[11, 12, 13]",3,115,The narrator's family was stoned by neighbors after moving into a new house
+llama4-11,2,"[33, 36, 39, 40]",4,115,The narrator's mother sought help from a policeman
+llama4-11,3,"[41, 42, 43, 44]",4,115,who advised her to move out
+llama4-11,4,[66],1,115,The mother took the narrator to the police station to report the incident
+llama4-11,5,"[52, 53, 54, 69, 70]",5,115,but the captain said they could do nothing
+llama4-11,6,"[89, 90]",2,115,The police eventually took the mother and narrator home in a police patrol wagon
+llama4-12,1,[1],1,122,The narrator's family moved to Third and Wharton streets
+llama4-12,2,"[11, 12, 13]",3,122,The house was stoned by neighbors shortly after they moved in
+llama4-12,3,"[33, 36, 40, 60, 66]",5,122,The narrator's mother reported the incident to the police
+llama4-12,4,"[41, 43, 44, 46, 47, 52, 53, 54, 69, 70, 71, 74]",12,122,who refused to help
+llama4-12,5,"[89, 90]",2,122,The police eventually took the narrator and her mother home
+llama4-12,6,"[86, 89]",2,122,in a police patrol
+llama4-13,1,"[1, 2]",2,130,The narrator's family moved to a new house
+llama4-13,2,[1],1,130,on Third and Wharton streets
+llama4-13,3,"[11, 12, 13]",3,130,The house was stoned by neighbors
+llama4-13,4,"[11, 12, 13]",3,130,shortly after they moved in
+llama4-13,5,"[66, 68, 70, 82]",4,130,The narrator's mother reported the incident to the police
+llama4-13,6,"[52, 53, 69, 71]",4,130,who refused to help
+llama4-13,7,"[89, 90]",2,130,The police eventually took the narrator and her mother home
+llama4-13,8,"[86, 89]",2,130,in a police patrol

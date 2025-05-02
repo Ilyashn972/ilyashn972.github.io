@@ -1,0 +1,46 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,[1],1,5,The narrator was a member of the boy scouts
+gpt4-1,2,"[2, 5]",2,5,They participated in a 50-yard dash
+gpt4-1,3,[4],1,5,The race took place at a pier
+gpt4-1,4,[4],1,5,The course for the dash was marked off at the pier
+gpt4-2,1,"[2, 5]",2,10,The narrator was participating in a 50-yard dash
+gpt4-2,2,[1],1,10,with other boy scouts
+gpt4-2,3,[4],1,10,at a pier
+gpt4-2,4,"[3, 5]",2,10,Multiple races were conducted
+gpt4-2,5,[6],1,10,with the group running down and back
+gpt4-2,6,[7],1,10,During the third race
+gpt4-2,7,[7],1,10,the narrator experienced cramps
+gpt4-2,8,[8],1,10,The narrator called for help
+gpt4-2,9,[9],1,10,but his peers thought he was pretending
+gpt4-2,10,[10],1,10,to gain an advantage
+gpt4-3,1,"[2, 5]",2,13,The narrator was participating in a 50-yard dash
+gpt4-3,2,[1],1,13,with other boy scouts
+gpt4-3,3,[4],1,13,at a pier
+gpt4-3,4,[7],1,13,During the third run
+gpt4-3,5,[7],1,13,the narrator experienced cramps
+gpt4-3,6,[8],1,13,The narrator called for help
+gpt4-3,7,"[9, 10]",2,13,but his peers thought he was pretending
+gpt4-3,8,[11],1,13,The peers continued racing
+gpt4-3,9,[12],1,13,leaving the narrator behind
+gpt4-3,10,[13],1,13,as he started going down
+gpt4-4,1,"[2, 5]",2,16,The narrator was participating in a 50-yard dash
+gpt4-4,2,[1],1,16,with other boy scouts
+gpt4-4,3,[4],1,16,at the pier
+gpt4-4,4,[7],1,16,During the third run
+gpt4-4,5,[7],1,16,the narrator caught cramps
+gpt4-4,6,[8],1,16,and started yelling for help
+gpt4-4,7,"[9, 10]",2,16,The other scouts did not believe the narrator was in trouble
+gpt4-4,8,"[11, 12]",2,16,and continued racing
+gpt4-4,9,"[14, 15]",2,16,The scoutmaster observed the situation
+gpt4-4,10,[16],1,16,but did not intervene
+gpt4-5,1,"[2, 5]",2,19,The narrator was participating in a 50-yard dash
+gpt4-5,2,[1],1,19,with other boy scouts
+gpt4-5,3,[4],1,19,at the pier
+gpt4-5,4,[7],1,19,During the third sprint
+gpt4-5,5,[7],1,19,the narrator experienced cramps
+gpt4-5,6,[8],1,19,and began to call for help
+gpt4-5,7,"[9, 11, 12, 14, 15, 16]",6,19,The other scouts and the scoutmaster ignored the narrator's cries
+gpt4-5,8,[10],1,19,thinking he was pretending
+gpt4-5,9,[17],1,19,A bystander who had just arrived at the scene
+gpt4-5,10,[17],1,19,noticed the narrator's distress
+gpt4-5,11,"[18, 19]",2,19,and rescued him

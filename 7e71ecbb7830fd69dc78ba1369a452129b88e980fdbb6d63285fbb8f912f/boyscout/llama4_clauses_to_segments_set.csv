@@ -1,0 +1,32 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+llama4-1,1,[1],1,5,The narrator was in the boy scouts
+llama4-1,2,"[2, 5]",2,5,The boy scouts were doing a 50-yard dash
+llama4-1,3,"[3, 4]",2,5,They were racing at the pier
+llama4-1,4,[4],1,5,The 50-yard dash was marked off at the pier
+llama4-2,1,"[2, 4, 5]",3,10,The narrator was participating in a 50-yard dash at the pier
+llama4-2,2,[1],1,10,with other boy scouts
+llama4-2,3,[7],1,10,The narrator caught cramps during the third run
+llama4-2,4,[8],1,10,The narrator yelled for help
+llama4-2,5,"[9, 10]",2,10,The other boy scouts thought the narrator was joking
+llama4-3,1,"[2, 5]",2,13,The narrator was participating in a 50-yard dash
+llama4-3,2,[1],1,13,with other boy scouts
+llama4-3,3,[7],1,13,The narrator caught cramps
+llama4-3,4,[7],1,13,during the third lap
+llama4-3,5,[9],1,13,The other scouts did not believe
+llama4-3,6,"[8, 9, 10]",3,13,the narrator was in distress
+llama4-3,7,[12],1,13,The narrator was left behind
+llama4-3,8,"[11, 12]",2,13,by the other scouts
+llama4-4,1,"[2, 5]",2,16,The narrator was participating in a 50-yard dash
+llama4-4,2,"[1, 6]",2,16,with other boy scouts
+llama4-4,3,[7],1,16,The narrator caught cramps
+llama4-4,4,[7],1,16,during the third run
+llama4-4,5,"[9, 11, 12]",3,16,The other scouts ignored the narrator's cries for help
+llama4-4,6,"[14, 15]",2,16,The scoutmaster watched the narrator
+llama4-4,7,[16],1,16,but didn't intervene
+llama4-5,1,"[2, 3, 5]",3,19,The narrator was participating in a 50-yard dash
+llama4-5,2,[1],1,19,with other boy scouts
+llama4-5,3,[7],1,19,The narrator caught cramps during the dash
+llama4-5,4,[8],1,19,and cried for help
+llama4-5,5,"[9, 11, 12, 16]",4,19,The other scouts ignored the narrator's cries for help
+llama4-5,6,"[17, 18]",2,19,A bystander jumped in
+llama4-5,7,[19],1,19,and grabbed the narrator
