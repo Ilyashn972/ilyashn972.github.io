@@ -1,0 +1,99 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,[1],1,4,Narrator was twenty-two
+gpt4-1,2,[1],1,4,and fresh out of college
+gpt4-1,3,[3],1,4,Narrator started a job at a local bookstore
+gpt4-1,4,[4],1,4,Narrator was alone in the store
+gpt4-1,5,[4],1,4,on a quiet afternoon
+gpt4-2,1,[1],1,8,Narrator was twenty-two
+gpt4-2,2,[1],1,8,and fresh out of college
+gpt4-2,3,[3],1,8,Narrator started a job at a local bookstore
+gpt4-2,4,[4],1,8,Narrator was alone in the store on a quiet afternoon
+gpt4-2,5,[5],1,8,Narrator's grandpa was bedridden
+gpt4-2,6,[6],1,8,and cared for by the narrator's sister
+gpt4-2,7,[7],1,8,"Narrator has only one sibling, a sister"
+gpt4-2,8,[8],1,8,Narrator's parents were out of town for the weekend
+gpt4-3,1,[1],1,14,Narrator was twenty-two
+gpt4-3,2,[1],1,14,and fresh out of college
+gpt4-3,3,[3],1,14,Narrator started a job at a local bookstore
+gpt4-3,4,[4],1,14,Narrator was alone in the store on a quiet afternoon
+gpt4-3,5,[5],1,14,Narrator's grandpa was bedridden
+gpt4-3,6,[6],1,14,and cared for by the narrator's sister
+gpt4-3,7,[7],1,14,"Narrator has only one sibling, a sister"
+gpt4-3,8,[8],1,14,Narrator's parents were out of town for the weekend
+gpt4-3,9,[10],1,14,Narrator heard a voice suggesting to light a candle at an old church for grandpa's health
+gpt4-4,1,[1],1,20,Narrator was twenty-two
+gpt4-4,2,[1],1,20,and fresh out of college
+gpt4-4,3,[3],1,20,Narrator started a job at a local bookstore
+gpt4-4,4,[5],1,20,Narrator's grandpa was bedridden
+gpt4-4,5,[6],1,20,and cared for by the narrator's sister
+gpt4-4,6,[8],1,20,Narrator's parents were out of town for the weekend
+gpt4-4,7,"[9, 10, 13]",3,20,Narrator heard a voice suggesting to light a candle at an old church for grandpa's health
+gpt4-4,8,"[15, 16]",2,20,Narrator walked to the nearby church
+gpt4-4,9,[18],1,20,despite not being very religious
+gpt4-4,10,[19],1,20,Narrator recalled grandma's words about the power of sincere prayers
+gpt4-5,1,[3],1,28,Narrator started a job at a local bookstore
+gpt4-5,2,[5],1,28,Narrator's grandpa was bedridden
+gpt4-5,3,[6],1,28,and cared for by the narrator's sister
+gpt4-5,4,[8],1,28,Narrator's parents were out of town for the weekend
+gpt4-5,5,[10],1,28,Narrator heard a voice suggesting to light a candle at an old church for grandpa's health
+gpt4-5,6,"[15, 16]",2,28,Narrator walked to the nearby church
+gpt4-5,7,"[17, 18]",2,28,despite not being very religious
+gpt4-5,8,"[19, 20]",2,28,Narrator recalled grandma's words about the power of sincere prayers
+gpt4-5,9,[24],1,28,Narrator lit a candle
+gpt4-5,10,"[25, 26, 27, 28]",4,28,and prayed sincerely for grandpa's healing in the church
+gpt4-6,1,[5],1,35,Narrator's grandpa was bedridden
+gpt4-6,2,[6],1,35,and cared for by the narrator's sister
+gpt4-6,3,[8],1,35,Narrator's parents were out of town for the weekend
+gpt4-6,4,"[9, 10, 13]",3,35,Narrator heard a voice suggesting to light a candle at an old church for grandpa's health
+gpt4-6,5,"[15, 16]",2,35,Narrator walked to the nearby church
+gpt4-6,6,"[17, 18]",2,35,despite not being very religious
+gpt4-6,7,[24],1,35,Narrator lit a candle
+gpt4-6,8,"[25, 26, 27, 28]",4,35,and prayed sincerely for grandpa's healing in the church
+gpt4-6,9,[31],1,35,Narrator felt a strong urge to go home after returning to the bookstore
+gpt4-6,10,[35],1,35,Narrator locked up the store
+gpt4-6,11,[35],1,35,and rushed home due to the overwhelming feeling
+gpt4-7,1,[8],1,42,Narrator's parents were out of town for the weekend.
+gpt4-7,2,"[9, 10, 13]",3,42,Narrator heard a voice suggesting to light a candle at an old church for grandpa's health.
+gpt4-7,3,"[15, 24, 25, 27, 28]",5,42,Narrator lit a candle and prayed sincerely for grandpa's healing in the church.
+gpt4-7,4,"[31, 32, 33, 34]",4,42,Narrator felt a strong urge to go home after returning to the bookstore.
+gpt4-7,5,[35],1,42,Narrator locked up the store and rushed home due to the overwhelming feeling.
+gpt4-7,6,"[36, 37, 38]",3,42,"Narrator found grandpa sitting and talking, having felt a surge of energy."
+gpt4-7,7,"[39, 40]",2,42,"Grandpa's recovery began that day, leading to regained strength and independence."
+gpt4-8,1,"[9, 10]",2,45,Narrator heard a voice suggesting to light a candle at an old church for grandpa's health.
+gpt4-8,2,"[15, 24, 25, 26, 27, 28]",6,45,Narrator lit a candle and prayed sincerely for grandpa's healing in the church.
+gpt4-8,3,"[31, 32, 33, 34]",4,45,Narrator felt a strong urge to go home after returning to the bookstore.
+gpt4-8,4,"[36, 37, 38]",3,45,"Narrator found grandpa sitting and talking, having felt a surge of energy."
+gpt4-8,5,"[39, 40]",2,45,"Grandpa's recovery began that day, leading to regained strength and independence."
+gpt4-8,6,"[43, 44]",2,45,Narrator often reflected on the prayer and its possible role in grandpa's recovery.
+gpt4-8,7,[45],1,45,The experience altered the narrator's perspective on faith and prayer.
+gpt4-9,1,"[10, 24]",2,50,Narrator lit a candle
+gpt4-9,2,"[19, 27, 28]",3,50,and prayed sincerely for grandpa's healing
+gpt4-9,3,"[15, 17, 23, 24]",4,50,in the church
+gpt4-9,4,"[31, 32, 34]",3,50,Narrator felt a strong urge to go home
+gpt4-9,5,"[29, 30]",2,50,after returning to the bookstore
+gpt4-9,6,"[36, 37]",2,50,Narrator found grandpa sitting and talking
+gpt4-9,7,[38],1,50,having felt a surge of energy
+gpt4-9,8,[39],1,50,Grandpa's recovery began that day
+gpt4-9,9,[40],1,50,leading to regained strength and independence
+gpt4-9,10,[43],1,50,Narrator often reflected on the prayer
+gpt4-9,11,[44],1,50,and its possible role in grandpa's recovery
+gpt4-9,12,[45],1,50,The experience altered the narrator's perspective on faith and prayer
+gpt4-9,13,[46],1,50,Grandpa lived many more years
+gpt4-9,14,[47],1,50,celebrating his ninetieth birthday with loved ones
+gpt4-10,1,"[10, 24]",2,54,Narrator lit a candle
+gpt4-10,2,"[19, 27, 28]",3,54,and prayed sincerely for grandpa's healing
+gpt4-10,3,"[15, 17, 24]",3,54,in the church
+gpt4-10,4,[36],1,54,Narrator found grandpa sitting
+gpt4-10,5,[36],1,54,and talking
+gpt4-10,6,[38],1,54,having felt a surge of energy
+gpt4-10,7,[39],1,54,Grandpa's recovery began that day
+gpt4-10,8,[40],1,54,leading to regained strength
+gpt4-10,9,[40],1,54,and independence
+gpt4-10,10,[45],1,54,The experience altered the narrator's perspective on faith
+gpt4-10,11,[45],1,54,and prayer
+gpt4-10,12,[46],1,54,Grandpa lived many more years
+gpt4-10,13,[47],1,54,celebrating his ninetieth birthday with loved ones
+gpt4-10,14,[51],1,54,Grandpa passed away years later
+gpt4-10,15,[51],1,54,but his spirit remains with the family
+gpt4-10,16,"[50, 52]",2,54,Narrator finds comfort in the memory
+gpt4-10,17,[53],1,54,and the enduring presence of faith

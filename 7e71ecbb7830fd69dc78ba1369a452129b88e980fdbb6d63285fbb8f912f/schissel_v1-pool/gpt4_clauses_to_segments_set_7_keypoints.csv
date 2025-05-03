@@ -1,0 +1,44 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,[1],1,3,My best friend pushed me into the pool
+gpt4-1,2,[2],1,3,This incident occurred at my cousin's wedding reception
+gpt4-2,1,[1],1,7,My best friend pushed me into the pool
+gpt4-2,2,"[5, 7]",2,7,to save me from a bee
+gpt4-2,3,[2],1,7,The incident occurred at my cousin's wedding reception
+gpt4-2,4,"[2, 6]",2,7,The wedding reception was at a fancy hotel garden
+gpt4-3,1,[1],1,9,My best friend pushed me into the pool
+gpt4-3,2,"[5, 7]",2,9,to save me from a bee
+gpt4-3,3,[2],1,9,The incident occurred at my cousin's wedding reception
+gpt4-3,4,[6],1,9,The wedding reception was at a fancy hotel garden
+gpt4-3,5,[8],1,9,My aunt had just handed me a glass of champagne
+gpt4-3,6,[4],1,9,before I was pushed
+gpt4-4,1,"[1, 11, 12]",3,12,My best friend pushed me into the pool
+gpt4-4,2,"[5, 7]",2,12,to save me from a bee
+gpt4-4,3,[2],1,12,The incident occurred at my cousin's wedding reception
+gpt4-4,4,"[2, 6]",2,12,The wedding reception was at a fancy hotel garden
+gpt4-4,5,[8],1,12,My aunt had just handed me a glass of champagne
+gpt4-4,6,"[8, 11]",2,12,before I was pushed
+gpt4-4,7,[10],1,12,My friend did not fully consider the consequences
+gpt4-4,8,"[4, 11]",2,12,before pushing me
+gpt4-5,1,[1],1,15,My best friend pushed me into the pool
+gpt4-5,2,[7],1,15,to save me from a bee
+gpt4-5,3,[2],1,15,The incident occurred at my cousin's wedding reception
+gpt4-5,4,[6],1,15,The wedding reception was at a fancy hotel garden
+gpt4-5,5,[8],1,15,My aunt had just handed me a glass of champagne
+gpt4-5,6,[11],1,15,before I was pushed
+gpt4-5,7,[10],1,15,My friend did not fully consider the consequences
+gpt4-5,8,[11],1,15,before pushing me
+gpt4-5,9,[13],1,15,I resurfaced gasping for air
+gpt4-5,10,[12],1,15,after being pushed into the pool
+gpt4-5,11,[14],1,15,My friend laughed
+gpt4-5,12,[15],1,15,and apologized profusely
+gpt4-5,13,"[13, 14, 15]",3,15,after the incident
+gpt4-6,1,[1],1,18,My best friend pushed me into the pool
+gpt4-6,2,"[5, 7]",2,18,to save me from a bee
+gpt4-6,3,[2],1,18,The incident occurred at my cousin's wedding reception
+gpt4-6,4,"[2, 6]",2,18,The wedding reception was at a fancy hotel garden
+gpt4-6,5,[8],1,18,My aunt had just handed me a glass of champagne
+gpt4-6,6,[11],1,18,before I was pushed
+gpt4-6,7,"[10, 15]",2,18,My friend did not fully consider the consequences
+gpt4-6,8,[11],1,18,before pushing me
+gpt4-6,9,"[12, 16]",2,18,My dress was ruined from the fall into the pool
+gpt4-6,10,[18],1,18,My cousin joked that I nearly landed on the wedding cake
