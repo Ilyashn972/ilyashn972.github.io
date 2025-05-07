@@ -1,35 +1,26 @@
 recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
-gpt4-1,1,"[2, 5]",2,5,Participated in a 50-yard dash
-gpt4-1,2,[1],1,5,with the boy scouts
-gpt4-1,3,[4],1,5,at the pier
-gpt4-2,1,"[2, 4, 5]",3,10,Participated in a 50-yard dash with the boy scouts at the pier
-gpt4-2,2,[6],1,10,8 or 9 boys were racing back and forth
-gpt4-2,3,[7],1,10,Caught cramps on the third run
-gpt4-2,4,[8],1,10,and yelled for help
-gpt4-2,5,[9],1,10,Companions thought the cry for help was a ploy
-gpt4-2,6,[10],1,10,to catch up
-gpt4-3,1,"[1, 2, 4, 5]",4,13,Participated in a 50-yard dash with the boy scouts at the pier
-gpt4-3,2,"[3, 6]",2,13,8 or 9 boys were racing back and forth
-gpt4-3,3,[7],1,13,Caught cramps on the third run
-gpt4-3,4,[8],1,13,and yelled for help
-gpt4-3,5,"[9, 10]",2,13,Companions thought the cry for help was a ploy to catch up
-gpt4-3,6,"[11, 12]",2,13,Was left behind as others continued racing
-gpt4-3,7,[13],1,13,Started sinking due to the cramps
-gpt4-4,1,"[2, 4]",2,16,Participated in a 50-yard dash with the boy scouts at the pier
-gpt4-4,2,"[3, 6]",2,16,8 or 9 boys were racing back and forth
-gpt4-4,3,[7],1,16,Caught cramps on the third run
-gpt4-4,4,[8],1,16,and yelled for help
-gpt4-4,5,"[9, 10]",2,16,Companions thought the cry for help was a ploy to catch up
-gpt4-4,6,"[11, 12]",2,16,Was left behind as others continued racing
-gpt4-4,7,[13],1,16,Started sinking due to the cramps
-gpt4-4,8,"[14, 15]",2,16,Scoutmaster observed the situation
-gpt4-4,9,[16],1,16,but did not intervene
-gpt4-5,1,"[2, 4]",2,19,Participated in a 50-yard dash with the boy scouts at the pier
-gpt4-5,2,[6],1,19,8 or 9 boys were racing back and forth
-gpt4-5,3,[7],1,19,Caught cramps on the third run
-gpt4-5,4,[8],1,19,and yelled for help
-gpt4-5,5,"[9, 10]",2,19,Companions thought the cry for help was a ploy to catch up
-gpt4-5,6,"[11, 12]",2,19,Was left behind as others continued racing
-gpt4-5,7,[13],1,19,Started sinking due to the cramps
-gpt4-5,8,"[17, 18]",2,19,A bystander who had just arrived jumped in
-gpt4-5,9,[19],1,19,and rescued me
+gpt4-1,1,"[1, 2, 4, 5]",4,5,Participated in a 50-yard dash with the boy scouts at the pier.
+gpt4-2,1,"[1, 2, 4, 5]",4,10,Participated in a 50-yard dash with the boy scouts at the pier.
+gpt4-2,2,"[3, 6]",2,10,8 or 9 boys were racing back and forth.
+gpt4-2,3,"[7, 8]",2,10,Caught cramps on the third run and yelled for help.
+gpt4-2,4,"[9, 10]",2,10,Companions thought the cry for help was a ploy to catch up.
+gpt4-3,1,"[1, 2, 4, 5]",4,13,Participated in a 50-yard dash with the boy scouts at the pier.
+gpt4-3,2,"[3, 6]",2,13,8 or 9 boys were racing back and forth.
+gpt4-3,3,"[7, 8]",2,13,Caught cramps on the third run and yelled for help.
+gpt4-3,4,"[9, 10]",2,13,Companions thought the cry for help was a ploy to catch up.
+gpt4-3,5,"[11, 12]",2,13,Was left behind as others continued racing.
+gpt4-3,6,[13],1,13,Started sinking due to the cramps.
+gpt4-4,1,"[1, 2, 4, 5]",4,16,Participated in a 50-yard dash with the boy scouts at the pier.
+gpt4-4,2,"[3, 6]",2,16,8 or 9 boys were racing back and forth.
+gpt4-4,3,"[7, 8]",2,16,Caught cramps on the third run and yelled for help.
+gpt4-4,4,"[9, 10]",2,16,Companions thought the cry for help was a ploy to catch up.
+gpt4-4,5,"[11, 12]",2,16,Was left behind as others continued racing.
+gpt4-4,6,[13],1,16,Started sinking due to the cramps.
+gpt4-4,7,"[14, 15, 16]",3,16,Scoutmaster observed the situation but did not intervene.
+gpt4-5,1,"[1, 2, 4, 5]",4,19,Participated in a 50-yard dash with the boy scouts at the pier.
+gpt4-5,2,"[3, 6]",2,19,8 or 9 boys were racing back and forth.
+gpt4-5,3,"[7, 8]",2,19,Caught cramps on the third run and yelled for help.
+gpt4-5,4,"[9, 10]",2,19,Companions thought the cry for help was a ploy to catch up.
+gpt4-5,5,"[11, 12]",2,19,Was left behind as others continued racing.
+gpt4-5,6,[13],1,19,Started sinking due to the cramps.
+gpt4-5,7,"[17, 18, 19]",3,19,A bystander who had just arrived jumped in and rescued me.

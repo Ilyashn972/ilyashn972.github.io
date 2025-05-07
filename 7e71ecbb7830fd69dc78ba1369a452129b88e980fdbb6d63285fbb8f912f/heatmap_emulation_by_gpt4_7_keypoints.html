@@ -11,10 +11,66 @@
 <body>
     <header>
         <h1>Heatmap emulation by gpt4 7 keypoints</h1>
+        Prompt:
+        <pre>
+                    Role: Emulate a person who can remember only 7 key points at a time.
+                    
+                    Task:
+                    You will receive a narrative, provided in separate paragraphs over multiple turns. At each turn, the user will give a
+                    new paragraph of the narrative. Your job is to maintain a running summary consisting of up to 7 key points derived from
+                    all paragraphs received so far, including the new one. Each key point must:
+                    • Be a short linguistic clause.
+                    • Contain exactly one verb.
+                    • Summarize information from the narrative without interpreting it.
+                    • Be added only if the paragraph introduces new information.
+                    • Not repeat previously stated information, even if the narrative does.
+                    • May be modified for clarity or completeness as the narrative evolves.
+                    
+                    The output must be returned in JSON format:
+                    ```json
+                    { "keypoints":[
+                    "First key point",
+                    "Second key point",
+                    // and so on...
+                    
+                    ]}```
+                    You may include fewer than 7 key points, but never more than 7.
+                    
+        </pre>
+
+        <p>Each line in the plot corresponds to a new paragraph. The vertical bar at the end of each line shows which segments
+            the LLM has summarized. The colors represent the compression ratio—that is, how many segments are included in the
+            corresponding <code>fan_out</code>.</p>
+        
+        <p>The results were noisy, unfortunately. Due to some randomness in GPT-4, it doesn’t always split the keypoints into
+            the same clauses, and it doesn’t consistently map the same clauses to the same segments. So I have decided not to
+            split into clauses. If the same keypoint is repeated and mapped to different segments, I'll merge all mappings into
+            one. Of course I will limit the mappings to the segments that were fed to the LLM at that time.</p>
+        
+        <p>The final mappings are not very similar to those of a typical human subject. :(</p>
+        
+        <p>The last paragraph of a narrative has a strong influence on the mappings—possibly due to its reflective nature.</p>
+        
+        <p>In Stein’s story, you can see that as the narrative progresses, the same subject performs an extractive summary at
+            the beginning and an abstractive summary at the end.</p>
+        
+        <p>Can we consider a stochastic process for keypoint dynamics under memory constraints? For example, when memory is
+            limited and new information arrives, a few strategies might occur:</p>
+        
+        <ul style="list-style-type: none; padding-left: 1em;">
+            <li> A. Ignore it (perhaps it’s deemed unimportant)</li>
+            <li> B. Merge it with an already existing keypoint</li>
+            <li> C. Merge two older keypoints and add the new one</li>
+            <li> D. Remove or demote an older keypoint to make room for the new one</li>
+            <li> E. Recall one of the previous keypoints and merge it with the new one.</li>
+        </ul>
+
+
     <h3>See code at <a
             href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/tools/plot_robot_emulation.py">
             tools/plot_robot_emulation.py</a>
     </h3>
+    
     </header>
 
     <section class="toc">
@@ -38,73 +94,73 @@
         <section class="image-section" id="schissel-v1-pool">
             <h2>Schissel v1 Pool</h2>
             <img src="schissel_v1-pool/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Schissel v1 Pool">
-<!-- schissel_v1-pool --> <br><a href="schissel_v1-pool/segments.html"> segments </a><a href="schissel_v1-pool/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- schissel_v1-pool --> <br><a href="schissel_v1-pool/segments.html"> segments </a> <a href="schissel_v1-pool/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="schissel_v1-pool/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="schissel-v2-lake">
             <h2>Schissel v2 Lake</h2>
             <img src="schissel_v2-lake/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Schissel v2 Lake">
-<!-- schissel_v2-lake --> <br><a href="schissel_v2-lake/segments.html"> segments </a><a href="schissel_v2-lake/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- schissel_v2-lake --> <br><a href="schissel_v2-lake/segments.html"> segments </a> <a href="schissel_v2-lake/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="schissel_v2-lake/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="boy-scout">
             <h2>Boy Scout</h2>
             <img src="boyscout/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Boy Scout">
-<!-- boyscout --> <br><a href="boyscout/segments.html"> segments </a><a href="boyscout/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- boyscout --> <br><a href="boyscout/segments.html"> segments </a> <a href="boyscout/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="boyscout/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="triplett-v1-rookie">
             <h2>Triplett v1 Rookie</h2>
             <img src="triplett_v1-rookie/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Triplett v1 Rookie">
-<!-- triplett_v1-rookie --> <br><a href="triplett_v1-rookie/segments.html"> segments </a><a href="triplett_v1-rookie/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- triplett_v1-rookie --> <br><a href="triplett_v1-rookie/segments.html"> segments </a> <a href="triplett_v1-rookie/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="triplett_v1-rookie/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="triplett-v2-cat-lady">
             <h2>Triplett v2 Cat Lady</h2>
             <img src="triplett_v2-catlady/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Triplett v2 Cat Lady">
-<!-- triplett_v2-catlady --> <br><a href="triplett_v2-catlady/segments.html"> segments </a><a href="triplett_v2-catlady/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- triplett_v2-catlady --> <br><a href="triplett_v2-catlady/segments.html"> segments </a> <a href="triplett_v2-catlady/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="triplett_v2-catlady/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="hester-v1-park">
             <h2>Hester v1 Park</h2>
             <img src="hester_v1-park/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Hester v1 Park">
-<!-- hester_v1-park --> <br><a href="hester_v1-park/segments.html"> segments </a><a href="hester_v1-park/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- hester_v1-park --> <br><a href="hester_v1-park/segments.html"> segments </a> <a href="hester_v1-park/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="hester_v1-park/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="hester-v2-church">
             <h2>Hester v2 Church</h2>
             <img src="hester_v2-church/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Hester v2 Church">
-<!-- hester_v2-church --> <br><a href="hester_v2-church/segments.html"> segments </a><a href="hester_v2-church/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- hester_v2-church --> <br><a href="hester_v2-church/segments.html"> segments </a> <a href="hester_v2-church/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="hester_v2-church/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="panic">
             <h2>Panic</h2>
             <img src="panic/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Panic">
-<!-- panic --> <br><a href="panic/segments.html"> segments </a><a href="panic/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- panic --> <br><a href="panic/segments.html"> segments </a> <a href="panic/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="panic/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="do-something">
             <h2>Do Something</h2>
             <img src="doSomething/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Do Something">
-<!-- doSomething --> <br><a href="doSomething/segments.html"> segments </a><a href="doSomething/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- doSomething --> <br><a href="doSomething/segments.html"> segments </a> <a href="doSomething/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="doSomething/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="bear">
             <h2>Bear</h2>
             <img src="bear/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Bear">
-<!-- bear --> <br><a href="bear/segments.html"> segments </a><a href="bear/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- bear --> <br><a href="bear/segments.html"> segments </a> <a href="bear/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="bear/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="stein">
             <h2>Stein</h2>
             <img src="stein/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Stein">
-<!-- stein --> <br><a href="stein/segments.html"> segments </a><a href="stein/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- stein --> <br><a href="stein/segments.html"> segments </a> <a href="stein/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="stein/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
         
         <section class="image-section" id="costa">
             <h2>Costa</h2>
             <img src="costa/heatmap_emulation_by_gpt4_7_keypoints.png" alt="Costa">
-<!-- costa --> <br><a href="costa/segments.html"> segments </a><a href="costa/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a><hr>
+<!-- costa --> <br><a href="costa/segments.html"> segments </a> <a href="costa/gpt4_clauses_to_segments_set_7_keypoints.html"> mappings </a> <a href="costa/gpt4_summarize_paragraphs_7_keypoints.html"> paragraphs </a> <hr>
         </section>
 
 </body>

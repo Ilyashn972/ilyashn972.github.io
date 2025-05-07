@@ -1,77 +1,72 @@
 recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
-gpt4-1,1,[1],1,3,A church league softball game was scheduled
-gpt4-1,2,[1],1,3,about a month ago
-gpt4-1,3,[2],1,3,The game was to be held
-gpt4-1,4,[2],1,3,at the diamond
-gpt4-1,5,[2],1,3,at Homestead High School
-gpt4-2,1,[1],1,20,A church league softball game was scheduled about a month ago
-gpt4-2,2,[2],1,20,The game was to be held at the diamond at Homestead High School
-gpt4-2,3,"[4, 5]",2,20,"While driving on Twenty-four to turn at Ranch Eggs, the speaker had to slow down"
-gpt4-2,4,"[6, 7, 8]",3,20,The speaker was using a turn signal while slowing down
-gpt4-2,5,"[9, 10, 11, 12, 13]",5,20,"A man in his middle fifties started creeping onto Twenty-four, blocking the lane"
-gpt4-2,6,[14],1,20,The man was attempting to merge into the same lane as the speaker
-gpt4-2,7,"[18, 19, 20]",3,20,The speaker managed to merge into the lane ahead of the man
-gpt4-3,1,[1],1,24,A church league softball game was scheduled about a month ago
-gpt4-3,2,[2],1,24,The game was to be held at the diamond at Homestead High School
-gpt4-3,3,"[4, 5]",2,24,"While driving on Twenty-four to turn at Ranch Eggs, the speaker had to slow down"
-gpt4-3,4,"[6, 7]",2,24,The speaker was using a turn signal while slowing down
-gpt4-3,5,"[9, 10, 11, 12]",4,24,"A man in his middle fifties started creeping onto Twenty-four, blocking the lane"
-gpt4-3,6,"[13, 14]",2,24,The man was attempting to merge into the same lane as the speaker
-gpt4-3,7,"[18, 20]",2,24,The speaker managed to merge into the lane ahead of the man
-gpt4-4,1,[1],1,32,A church league softball game was scheduled about a month ago
-gpt4-4,2,[2],1,32,The game was to be held at the diamond at Homestead High School
-gpt4-4,3,"[25, 26]",2,32,The speaker continued driving towards the diamond after traffic cleared
-gpt4-4,4,[27],1,32,The diamond is about one to two miles north of Twenty-four on Aboite Center
-gpt4-4,5,"[9, 11, 28]",3,32,The middle-aged man started following the speaker's car
-gpt4-4,6,"[29, 30, 31, 32]",4,32,The speaker noticed the man tailgating while going up a hill near Ranch Eggs
-gpt4-5,1,[1],1,40,A church league softball game was scheduled about a month ago
-gpt4-5,2,[2],1,40,The game was to be held at the diamond at Homestead High School
-gpt4-5,3,[27],1,40,The diamond is about one to two miles north of Twenty-four on Aboite Center
-gpt4-5,4,[28],1,40,The middle-aged man started following the speaker's car
-gpt4-5,5,"[29, 30, 31]",3,40,The speaker noticed the man tailgating while going up a hill near Ranch Eggs
-gpt4-5,6,"[33, 34]",2,40,"Lisa, who was with the speaker, pointed out the man's close proximity"
-gpt4-5,7,"[38, 39]",2,40,"The man was driving erratically, weaving back and forth between lanes"
-gpt4-6,1,[1],1,43,A church league softball game was scheduled about a month ago
-gpt4-6,2,"[2, 26]",2,43,The game was to be held at the diamond at Homestead High School
-gpt4-6,3,[27],1,43,The diamond is about one to two miles north of Twenty-four on Aboite Center
-gpt4-6,4,[28],1,43,The middle-aged man started following the speaker's car
-gpt4-6,5,"[38, 39]",2,43,"The man was driving erratically, weaving back and forth between lanes"
-gpt4-6,6,"[32, 33, 34, 35]",4,43,"Lisa, who was with the speaker, pointed out the man's close proximity"
-gpt4-6,7,"[41, 42]",2,43,The speaker was contemplating the dangers of drunk driving during the incident
-gpt4-7,1,[1],1,53,A church league softball game was scheduled about a month ago
-gpt4-7,2,[2],1,53,The game was to be held at the diamond at Homestead High School
-gpt4-7,3,[27],1,53,The diamond is about one to two miles north of Twenty-four on Aboite Center
-gpt4-7,4,"[28, 32]",2,53,The middle-aged man started following the speaker's car
-gpt4-7,5,"[38, 39]",2,53,"The man was driving erratically, weaving back and forth between lanes"
-gpt4-7,6,"[42, 45, 46, 50, 51]",5,53,The speaker suspected the man might be drunk or in need of medical assistance
-gpt4-7,7,"[47, 48, 49]",3,53,The speaker planned to confront the man at the next stop sign to assess the situation
-gpt4-8,1,[1],1,59,A church league softball game was scheduled about a month ago
-gpt4-8,2,[2],1,59,The game was to be held at the diamond at Homestead High School
-gpt4-8,3,[27],1,59,The diamond is about one to two miles north of Twenty-four on Aboite Center
-gpt4-8,4,"[28, 32]",2,59,The middle-aged man started following the speaker's car
-gpt4-8,5,"[38, 39]",2,59,"The man was driving erratically, weaving back and forth between lanes"
-gpt4-8,6,"[44, 45, 46, 49, 50, 51, 53, 54, 55, 56]",10,59,"The speaker was conflicted about intervening, considering the man might need medical help"
-gpt4-8,7,"[58, 59]",2,59,"Upon reaching a stop sign, the speaker saw a sheriff's car stopped across the road"
-gpt4-9,1,[1],1,68,A church league softball game was scheduled about a month ago
-gpt4-9,2,[2],1,68,The game was to be held at the diamond at Homestead High School
-gpt4-9,3,[27],1,68,The diamond is about one to two miles north of Twenty-four on Aboite Center
-gpt4-9,4,"[38, 39]",2,68,"The man was driving erratically, weaving back and forth between lanes"
-gpt4-9,5,"[44, 45, 46, 50, 51, 56]",6,68,"The speaker was conflicted about intervening, considering the man might need medical help"
-gpt4-9,6,"[58, 59]",2,68,"Upon reaching a stop sign, the speaker saw a sheriff's car stopped across the road"
-gpt4-9,7,"[60, 61, 62, 63, 64, 65, 66]",7,68,The speaker informed a deputy about the man's erratic driving
-gpt4-9,8,[68],1,68,prompting the deputy to take action
-gpt4-10,1,[1],1,73,A church league softball game was scheduled about a month ago
-gpt4-10,2,[2],1,73,The game was to be held at the diamond at Homestead High School
-gpt4-10,3,[27],1,73,The diamond is about one to two miles north of Twenty-four on Aboite Center
-gpt4-10,4,"[38, 39]",2,73,"The man was driving erratically, weaving back and forth between lanes"
-gpt4-10,5,[59],1,73,"Upon reaching a stop sign, the speaker saw a sheriff's car stopped across the road"
-gpt4-10,6,"[60, 61, 62, 63, 64, 65, 66, 67, 68]",9,73,"The speaker informed a deputy about the man's erratic driving, prompting the deputy to take action"
-gpt4-10,7,"[70, 71]",2,73,The man stopped his car far from the intersection
-gpt4-10,8,"[72, 73]",2,73,and began reversing upon seeing the speaker approach the police
-gpt4-11,1,[1],1,81,A church league softball game was scheduled about a month ago
-gpt4-11,2,"[2, 26, 27]",3,81,The game was to be held at the diamond at Homestead High School
-gpt4-11,3,"[38, 39]",2,81,"The man was driving erratically, weaving back and forth between lanes"
-gpt4-11,4,"[58, 59]",2,81,"Upon reaching a stop sign, the speaker saw a sheriff's car stopped across the road"
-gpt4-11,5,"[60, 62, 63, 64, 65, 66, 67]",7,81,"The speaker informed a deputy about the man's erratic driving, prompting the deputy to take action"
-gpt4-11,6,"[70, 72, 73, 74, 75]",5,81,The man began reversing down the road when the police approached him
-gpt4-11,7,"[77, 78, 79]",3,81,The man resumed driving slowly and carefully as the police made a U-turn to follow him
+gpt4-1,1,[1],1,3,A church league softball game was scheduled about a month ago.
+gpt4-1,2,[2],1,3,The game was to be held at the diamond at Homestead High School.
+gpt4-2,1,[1],1,20,A church league softball game was scheduled about a month ago.
+gpt4-2,2,[2],1,20,The game was to be held at the diamond at Homestead High School.
+gpt4-2,3,"[4, 5]",2,20,"While driving on Twenty-four to turn at Ranch Eggs, the speaker had to slow down."
+gpt4-2,4,"[6, 7, 8]",3,20,The speaker was using a turn signal while slowing down.
+gpt4-2,5,"[9, 10, 11, 12, 13]",5,20,"A man in his middle fifties started creeping onto Twenty-four, blocking the lane."
+gpt4-2,6,"[13, 14]",2,20,The man was attempting to merge into the same lane as the speaker.
+gpt4-2,7,"[18, 19, 20]",3,20,The speaker managed to merge into the lane ahead of the man.
+gpt4-3,1,[1],1,24,A church league softball game was scheduled about a month ago.
+gpt4-3,2,[2],1,24,The game was to be held at the diamond at Homestead High School.
+gpt4-3,3,"[4, 5]",2,24,"While driving on Twenty-four to turn at Ranch Eggs, the speaker had to slow down."
+gpt4-3,4,"[6, 7, 8]",3,24,The speaker was using a turn signal while slowing down.
+gpt4-3,5,"[9, 10, 11, 12, 13]",5,24,"A man in his middle fifties started creeping onto Twenty-four, blocking the lane."
+gpt4-3,6,"[13, 14]",2,24,The man was attempting to merge into the same lane as the speaker.
+gpt4-3,7,"[18, 19, 20]",3,24,The speaker managed to merge into the lane ahead of the man.
+gpt4-4,1,[1],1,32,A church league softball game was scheduled about a month ago.
+gpt4-4,2,"[2, 26, 27]",3,32,The game was to be held at the diamond at Homestead High School.
+gpt4-4,3,"[25, 26]",2,32,The speaker continued driving towards the diamond after traffic cleared.
+gpt4-4,4,[27],1,32,The diamond is about one to two miles north of Twenty-four on Aboite Center.
+gpt4-4,5,"[28, 32]",2,32,The middle-aged man started following the speaker's car.
+gpt4-4,6,"[29, 30, 31, 32]",4,32,The speaker noticed the man tailgating while going up a hill near Ranch Eggs.
+gpt4-5,1,[1],1,40,A church league softball game was scheduled about a month ago.
+gpt4-5,2,"[2, 26, 27]",3,40,The game was to be held at the diamond at Homestead High School.
+gpt4-5,3,[27],1,40,The diamond is about one to two miles north of Twenty-four on Aboite Center.
+gpt4-5,4,"[28, 32, 35]",3,40,The middle-aged man started following the speaker's car.
+gpt4-5,5,"[29, 30, 31, 32]",4,40,The speaker noticed the man tailgating while going up a hill near Ranch Eggs.
+gpt4-5,6,"[32, 33, 34]",3,40,"Lisa, who was with the speaker, pointed out the man's close proximity."
+gpt4-5,7,"[38, 39]",2,40,"The man was driving erratically, weaving back and forth between lanes."
+gpt4-6,1,[1],1,43,A church league softball game was scheduled about a month ago.
+gpt4-6,2,"[2, 26, 27]",3,43,The game was to be held at the diamond at Homestead High School.
+gpt4-6,3,[27],1,43,The diamond is about one to two miles north of Twenty-four on Aboite Center.
+gpt4-6,4,"[28, 32, 35]",3,43,The middle-aged man started following the speaker's car.
+gpt4-6,5,"[38, 39]",2,43,"The man was driving erratically, weaving back and forth between lanes."
+gpt4-6,6,"[32, 33, 34]",3,43,"Lisa, who was with the speaker, pointed out the man's close proximity."
+gpt4-6,7,[42],1,43,The speaker was contemplating the dangers of drunk driving during the incident.
+gpt4-7,1,[1],1,53,A church league softball game was scheduled about a month ago.
+gpt4-7,2,"[2, 26, 27]",3,53,The game was to be held at the diamond at Homestead High School.
+gpt4-7,3,[27],1,53,The diamond is about one to two miles north of Twenty-four on Aboite Center.
+gpt4-7,4,"[28, 32, 35]",3,53,The middle-aged man started following the speaker's car.
+gpt4-7,5,"[38, 39]",2,53,"The man was driving erratically, weaving back and forth between lanes."
+gpt4-7,6,"[42, 45, 46]",3,53,The speaker suspected the man might be drunk or in need of medical assistance.
+gpt4-7,7,"[47, 48, 49, 50, 51]",5,53,The speaker planned to confront the man at the next stop sign to assess the situation.
+gpt4-8,1,[1],1,59,A church league softball game was scheduled about a month ago.
+gpt4-8,2,"[2, 26, 27]",3,59,The game was to be held at the diamond at Homestead High School.
+gpt4-8,3,[27],1,59,The diamond is about one to two miles north of Twenty-four on Aboite Center.
+gpt4-8,4,"[28, 32, 35]",3,59,The middle-aged man started following the speaker's car.
+gpt4-8,5,"[38, 39]",2,59,"The man was driving erratically, weaving back and forth between lanes."
+gpt4-8,6,"[44, 45, 46, 49, 50, 51, 53, 54, 55, 56]",10,59,"The speaker was conflicted about intervening, considering the man might need medical help."
+gpt4-8,7,"[58, 59]",2,59,"Upon reaching a stop sign, the speaker saw a sheriff's car stopped across the road."
+gpt4-9,1,[1],1,68,A church league softball game was scheduled about a month ago.
+gpt4-9,2,"[2, 26, 27]",3,68,The game was to be held at the diamond at Homestead High School.
+gpt4-9,3,[27],1,68,The diamond is about one to two miles north of Twenty-four on Aboite Center.
+gpt4-9,4,"[38, 39]",2,68,"The man was driving erratically, weaving back and forth between lanes."
+gpt4-9,5,"[44, 45, 46, 49, 50, 51, 53, 54, 55, 56]",10,68,"The speaker was conflicted about intervening, considering the man might need medical help."
+gpt4-9,6,"[58, 59]",2,68,"Upon reaching a stop sign, the speaker saw a sheriff's car stopped across the road."
+gpt4-9,7,"[60, 61, 62, 63, 64, 65, 66, 67, 68]",9,68,"The speaker informed a deputy about the man's erratic driving, prompting the deputy to take action."
+gpt4-10,1,[1],1,73,A church league softball game was scheduled about a month ago.
+gpt4-10,2,"[2, 26, 27]",3,73,The game was to be held at the diamond at Homestead High School.
+gpt4-10,3,[27],1,73,The diamond is about one to two miles north of Twenty-four on Aboite Center.
+gpt4-10,4,"[38, 39]",2,73,"The man was driving erratically, weaving back and forth between lanes."
+gpt4-10,5,"[58, 59]",2,73,"Upon reaching a stop sign, the speaker saw a sheriff's car stopped across the road."
+gpt4-10,6,"[60, 61, 62, 63, 64, 65, 66, 67, 68]",9,73,"The speaker informed a deputy about the man's erratic driving, prompting the deputy to take action."
+gpt4-10,7,"[69, 70, 71, 72, 73]",5,73,The man stopped his car far from the intersection and began reversing upon seeing the speaker approach the police.
+gpt4-11,1,[1],1,81,A church league softball game was scheduled about a month ago.
+gpt4-11,2,"[2, 26, 27]",3,81,The game was to be held at the diamond at Homestead High School.
+gpt4-11,3,"[38, 39]",2,81,"The man was driving erratically, weaving back and forth between lanes."
+gpt4-11,4,"[58, 59]",2,81,"Upon reaching a stop sign, the speaker saw a sheriff's car stopped across the road."
+gpt4-11,5,"[60, 61, 62, 63, 64, 65, 66, 67, 68]",9,81,"The speaker informed a deputy about the man's erratic driving, prompting the deputy to take action."
+gpt4-11,6,"[70, 72, 73, 74, 75]",5,81,The man began reversing down the road when the police approached him.
+gpt4-11,7,"[77, 78, 79]",3,81,The man resumed driving slowly and carefully as the police made a U-turn to follow him.

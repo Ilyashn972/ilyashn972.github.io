@@ -1,71 +1,53 @@
 recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
-gpt4-1,1,[1],1,4,Narrator was twenty-one years old
-gpt4-1,2,[2],1,4,Narrator lived in a small apartment near the city center
-gpt4-1,3,"[3, 4]",2,4,Narrator had just started their first job as a graphic designer
-gpt4-2,1,[1],1,9,Narrator was twenty-one years old
-gpt4-2,2,[2],1,9,Narrator lived in a small apartment near the city center
-gpt4-2,3,"[3, 4]",2,9,Narrator had just started their first job as a graphic designer
-gpt4-2,4,[5],1,9,Narrator's father was recovering from surgery
-gpt4-2,5,[5],1,9,and hadn't been out in eight months
-gpt4-2,6,[6],1,9,Narrator's father had to use a wheelchair
-gpt4-2,7,[7],1,9,A kind neighbor in her sixties helped the father during the day
-gpt4-2,8,[8],1,9,Narrator's younger sister was away at college
-gpt4-3,1,[1],1,15,Narrator was twenty-one years old
-gpt4-3,2,[2],1,15,Narrator lived in a small apartment near the city center
-gpt4-3,3,"[3, 4]",2,15,Narrator had just started their first job as a graphic designer
-gpt4-3,4,[5],1,15,Narrator's father was recovering from surgery
-gpt4-3,5,[5],1,15,and hadn't been out in eight months
-gpt4-3,6,[7],1,15,A kind neighbor in her sixties helped the father during the day
-gpt4-3,7,[8],1,15,Narrator's younger sister was away at college
-gpt4-3,8,"[10, 11]",2,15,Narrator felt compelled to pray for their father's recovery
-gpt4-3,9,"[14, 15]",2,15,in a nearby park
-gpt4-4,1,[1],1,23,Narrator was twenty-one years old
-gpt4-4,2,[2],1,23,Narrator lived in a small apartment near the city center
-gpt4-4,3,"[3, 4]",2,23,Narrator had just started their first job as a graphic designer
-gpt4-4,4,[5],1,23,Narrator's father was recovering from surgery
-gpt4-4,5,[5],1,23,and hadn't been out in eight months
-gpt4-4,6,"[7, 9]",2,23,A kind neighbor in her sixties helped the father during the day
-gpt4-4,7,[8],1,23,Narrator's younger sister was away at college
-gpt4-4,8,"[10, 11]",2,23,Narrator felt compelled to pray for their father's recovery
-gpt4-4,9,"[14, 15, 19, 20, 21]",5,23,in a nearby park
-gpt4-5,1,[1],1,32,Narrator was twenty-one years old
-gpt4-5,2,[2],1,32,Narrator lived in a small apartment near the city center
-gpt4-5,3,"[3, 4]",2,32,Narrator had just started their first job as a graphic designer
-gpt4-5,4,[5],1,32,Narrator's father was recovering from surgery
-gpt4-5,5,[5],1,32,and hadn't been out in eight months
-gpt4-5,6,[7],1,32,A kind neighbor in her sixties helped the father during the day
-gpt4-5,7,[8],1,32,Narrator's younger sister was away at college
-gpt4-5,8,"[11, 14, 15, 21, 24]",5,32,Narrator prayed under a big oak tree for their father's recovery
-gpt4-5,9,"[28, 29]",2,32,believing in the power of prayer
-gpt4-6,1,[1],1,40,Narrator was twenty-one years old
-gpt4-6,2,[2],1,40,Narrator lived in a small apartment near the city center
-gpt4-6,3,"[3, 4]",2,40,Narrator had just started their first job as a graphic designer
-gpt4-6,4,[5],1,40,Narrator's father was recovering from surgery
-gpt4-6,5,[5],1,40,and hadn't been out in eight months
-gpt4-6,6,[7],1,40,A kind neighbor in her sixties helped the father during the day
-gpt4-6,7,[8],1,40,Narrator's younger sister was away at college
-gpt4-6,8,"[11, 37]",2,40,Narrator prayed for their father's recovery
-gpt4-6,9,[24],1,40,and independence under a big oak tree
-gpt4-7,1,[1],1,48,Narrator was twenty-one years old
-gpt4-7,2,[2],1,48,Narrator lived in a small apartment near the city center
-gpt4-7,3,"[3, 4]",2,48,Narrator had just started their first job as a graphic designer
-gpt4-7,4,[5],1,48,Narrator's father was recovering from surgery and hadn't been out in eight months
-gpt4-7,5,"[11, 14, 21, 24, 28, 29, 30, 32, 34, 35, 37, 38]",12,48,Narrator prayed for their father's recovery and independence under a big oak tree
-gpt4-7,6,"[41, 42]",2,48,Narrator received a text from their father about taking a few steps with his walker
-gpt4-7,7,"[46, 47, 48]",3,48,Narrator saw their father standing and taking steps unassisted for the first time in months
-gpt4-8,1,[2],1,54,Narrator lived in a small apartment
-gpt4-8,2,[2],1,54,near the city center
-gpt4-8,3,[3],1,54,Narrator had just started their first job
-gpt4-8,4,[4],1,54,as a graphic designer
-gpt4-8,5,[5],1,54,Narrator's father was recovering from surgery
-gpt4-8,6,[5],1,54,and hadn't been out in eight months
-gpt4-8,7,"[11, 35, 37]",3,54,Narrator prayed for their father's recovery
-gpt4-8,8,[38],1,54,and independence
-gpt4-8,9,[24],1,54,under a big oak tree
-gpt4-8,10,[41],1,54,Narrator received a text from their father
-gpt4-8,11,[42],1,54,about taking a few steps with his walker
-gpt4-8,12,[49],1,54,That moment marked the turning point in the father's recovery
-gpt4-8,13,[51],1,54,regaining most mobility within a year
-gpt4-8,14,[52],1,54,Several years later
-gpt4-8,15,[53],1,54,the father can walk unassisted
-gpt4-8,16,[54],1,54,and enjoys life in his seventies
+gpt4-1,1,[1],1,4,Narrator was twenty-one years old.
+gpt4-1,2,[2],1,4,Narrator lived in a small apartment near the city center.
+gpt4-1,3,"[3, 4]",2,4,Narrator had just started their first job as a graphic designer.
+gpt4-2,1,[1],1,9,Narrator was twenty-one years old.
+gpt4-2,2,[2],1,9,Narrator lived in a small apartment near the city center.
+gpt4-2,3,"[3, 4]",2,9,Narrator had just started their first job as a graphic designer.
+gpt4-2,4,"[5, 6]",2,9,Narrator's father was recovering from surgery and hadn't been out in eight months.
+gpt4-2,5,[6],1,9,Narrator's father had to use a wheelchair.
+gpt4-2,6,"[7, 9]",2,9,A kind neighbor in her sixties helped the father during the day.
+gpt4-2,7,[8],1,9,Narrator's younger sister was away at college.
+gpt4-3,1,[1],1,15,Narrator was twenty-one years old.
+gpt4-3,2,[2],1,15,Narrator lived in a small apartment near the city center.
+gpt4-3,3,"[3, 4]",2,15,Narrator had just started their first job as a graphic designer.
+gpt4-3,4,"[5, 6]",2,15,Narrator's father was recovering from surgery and hadn't been out in eight months.
+gpt4-3,5,"[7, 9]",2,15,A kind neighbor in her sixties helped the father during the day.
+gpt4-3,6,[8],1,15,Narrator's younger sister was away at college.
+gpt4-3,7,"[10, 11, 14, 15]",4,15,Narrator felt compelled to pray for their father's recovery in a nearby park.
+gpt4-4,1,[1],1,23,Narrator was twenty-one years old.
+gpt4-4,2,[2],1,23,Narrator lived in a small apartment near the city center.
+gpt4-4,3,"[3, 4]",2,23,Narrator had just started their first job as a graphic designer.
+gpt4-4,4,"[5, 6]",2,23,Narrator's father was recovering from surgery and hadn't been out in eight months.
+gpt4-4,5,"[7, 9]",2,23,A kind neighbor in her sixties helped the father during the day.
+gpt4-4,6,[8],1,23,Narrator's younger sister was away at college.
+gpt4-4,7,"[10, 11, 14, 15, 19, 20, 21]",7,23,Narrator felt compelled to pray for their father's recovery in a nearby park.
+gpt4-5,1,[1],1,32,Narrator was twenty-one years old.
+gpt4-5,2,[2],1,32,Narrator lived in a small apartment near the city center.
+gpt4-5,3,"[3, 4]",2,32,Narrator had just started their first job as a graphic designer.
+gpt4-5,4,"[5, 6]",2,32,Narrator's father was recovering from surgery and hadn't been out in eight months.
+gpt4-5,5,"[7, 9]",2,32,A kind neighbor in her sixties helped the father during the day.
+gpt4-5,6,[8],1,32,Narrator's younger sister was away at college.
+gpt4-5,7,"[11, 24, 28]",3,32,"Narrator prayed under a big oak tree for their father's recovery, believing in the power of prayer."
+gpt4-6,1,[1],1,40,Narrator was twenty-one years old.
+gpt4-6,2,[2],1,40,Narrator lived in a small apartment near the city center.
+gpt4-6,3,"[3, 4]",2,40,Narrator had just started their first job as a graphic designer.
+gpt4-6,4,"[5, 6]",2,40,Narrator's father was recovering from surgery and hadn't been out in eight months.
+gpt4-6,5,"[7, 9]",2,40,A kind neighbor in her sixties helped the father during the day.
+gpt4-6,6,[8],1,40,Narrator's younger sister was away at college.
+gpt4-6,7,"[11, 14, 15, 21, 24, 28, 29, 30, 32, 34, 35, 37, 38]",13,40,Narrator prayed for their father's recovery and independence under a big oak tree.
+gpt4-7,1,[1],1,48,Narrator was twenty-one years old.
+gpt4-7,2,[2],1,48,Narrator lived in a small apartment near the city center.
+gpt4-7,3,"[3, 4]",2,48,Narrator had just started their first job as a graphic designer.
+gpt4-7,4,"[5, 6]",2,48,Narrator's father was recovering from surgery and hadn't been out in eight months.
+gpt4-7,5,"[11, 14, 15, 21, 24, 28, 29, 30, 32, 34, 35, 37, 38]",13,48,Narrator prayed for their father's recovery and independence under a big oak tree.
+gpt4-7,6,"[41, 42]",2,48,Narrator received a text from their father about taking a few steps with his walker.
+gpt4-7,7,"[46, 47, 48]",3,48,Narrator saw their father standing and taking steps unassisted for the first time in months.
+gpt4-8,1,[2],1,54,Narrator lived in a small apartment near the city center.
+gpt4-8,2,"[3, 4]",2,54,Narrator had just started their first job as a graphic designer.
+gpt4-8,3,"[5, 6]",2,54,Narrator's father was recovering from surgery and hadn't been out in eight months.
+gpt4-8,4,"[11, 14, 15, 21, 24, 28, 29, 30, 32, 34, 35, 37, 38]",13,54,Narrator prayed for their father's recovery and independence under a big oak tree.
+gpt4-8,5,"[41, 42]",2,54,Narrator received a text from their father about taking a few steps with his walker.
+gpt4-8,6,"[49, 50, 51]",3,54,"That moment marked the turning point in the father's recovery, regaining most mobility within a year."
+gpt4-8,7,"[52, 53, 54]",3,54,"Several years later, the father can walk unassisted and enjoys life in his seventies."
