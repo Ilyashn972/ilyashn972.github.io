@@ -1,19 +1,19 @@
-segment_id,segment_text,p-rec
-1,My best friend pushed me into the lake.,90.91%
-2,This happened during our annual summer camping trip,69.70%
-3,and we were enjoying a peaceful afternoon.,25.25%
-4,"The reason it all began,",8.08%
-5,she spotted a frog near the water's edge or,72.73%
-6,- this was at our favorite spot in the woods -,28.28%
-7,and she dared me to catch it.,61.62%
-8,I had just sat down to eat my sandwich,56.57%
-9,and I told her I wasn't interested.,56.57%
-10,"'Course friends, y'know, they don't always take no for an answer.",30.30%
-11,So that's when she snuck up behind me,32.32%
-12,and gave me a little nudge.,75.76%
-13,"When I emerged from the water, there was a frog on the shore,",49.49%
-14,she just scooped it up,47.47%
-15,and handed it to me.,45.45%
-16,And . . .; I couldn't help but laugh – uncontrollably.,57.58%
-17,"And naturally, the first thing to do was to get revenge,",31.31%
-18,"and I said, ""Just you wait,"" I said, ""you'll get yours soon enough.""",66.67%
+segment_id,segment_text,p-rec,p-caught
+1,My best friend pushed me into the lake.,90.91%,87.76%
+2,This happened during our annual summer camping trip,69.70%,81.63%
+3,and we were enjoying a peaceful afternoon.,25.25%,39.80%
+4,"The reason it all began,",8.08%,12.24%
+5,she spotted a frog near the water's edge or,72.73%,68.37%
+6,- this was at our favorite spot in the woods -,28.28%,39.80%
+7,and she dared me to catch it.,61.62%,81.63%
+8,I had just sat down to eat my sandwich,56.57%,63.27%
+9,and I told her I wasn't interested.,56.57%,55.10%
+10,"'Course friends, y'know, they don't always take no for an answer.",30.30%,39.80%
+11,So that's when she snuck up behind me,32.32%,93.88%
+12,and gave me a little nudge.,75.76%,94.90%
+13,"When I emerged from the water, there was a frog on the shore,",49.49%,82.65%
+14,she just scooped it up,47.47%,73.47%
+15,and handed it to me.,45.45%,52.04%
+16,And . . .; I couldn't help but laugh – uncontrollably.,57.58%,62.24%
+17,"And naturally, the first thing to do was to get revenge,",31.31%,67.35%
+18,"and I said, ""Just you wait,"" I said, ""you'll get yours soon enough.""",66.67%,77.55%

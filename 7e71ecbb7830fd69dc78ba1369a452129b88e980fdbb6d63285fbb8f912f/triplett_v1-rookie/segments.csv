@@ -1,33 +1,33 @@
-segment_id,segment_text,p-rec
-1,"Back in the days when I was a rookie in the police force, the Chief was a veteran.",87.76%
-2,He had caught a notorious criminal –,20.41%
-3,or had been awarded for bravery.,19.39%
-4,But he had – a young daughter.,76.53%
-5,And in those days I was a fitness enthusiast.,35.71%
-6,And it seemed she was trying to impress me.,52.04%
-7,I never observed it.,7.14%
-8,Truth is I wasn't very fond of her because she was –,19.39%
-9,She was a charming girl until she opened her mouth.,32.65%
-10,She was a chatterbox.,55.10%
-11,"Goodness, she could talk.",16.33%
-12,Then she left a message one day saying she was going to run away because he was always scolding her about me.,68.37%
-13,He arrived at my apartment.,43.88%
-14,Big intimidating look on his face.,14.29%
-15,I managed to calm him down.,8.16%
-16,and proposed “Well we'll search for her,34.69%
-17,and if we can't locate her well you can – do whatever you think is right.”,18.37%
-18,I was strategizing.,16.33%
-19,So he accepted my offer.,8.16%
-20,And we went to where they found her scarf – near a park.,58.16%
-21,and we traced down a little more,8.16%
-22,and we couldn't locate her.,21.43%
-23,And returned,5.10%
-24,– it was a police station –,15.31%
-25,she was sitting on a chair with a book in her hands.,82.65%
-26,She hadn't run away.,44.90%
-27,But – nevertheless – that resolved the issue for that day.,5.10%
-28,"But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”",77.55%
-29,And I did.,65.31%
-30,I transferred.,48.98%
-31,and left.,26.53%
-32,That was the end of my rookie year.,44.90%
+segment_id,segment_text,p-rec,p-caught
+1,"Back in the days when I was a rookie in the police force, the Chief was a veteran.",87.76%,95.96%
+2,He had caught a notorious criminal –,20.41%,23.23%
+3,or had been awarded for bravery.,19.39%,27.27%
+4,But he had – a young daughter.,76.53%,88.89%
+5,And in those days I was a fitness enthusiast.,35.71%,57.58%
+6,And it seemed she was trying to impress me.,52.04%,64.65%
+7,I never observed it.,7.14%,34.34%
+8,Truth is I wasn't very fond of her because she was –,19.39%,60.61%
+9,She was a charming girl until she opened her mouth.,32.65%,80.81%
+10,She was a chatterbox.,55.10%,80.81%
+11,"Goodness, she could talk.",16.33%,77.78%
+12,Then she left a message one day saying she was going to run away because he was always scolding her about me.,68.37%,94.95%
+13,He arrived at my apartment.,43.88%,70.71%
+14,Big intimidating look on his face.,14.29%,57.58%
+15,I managed to calm him down.,8.16%,44.44%
+16,and proposed “Well we'll search for her,34.69%,80.81%
+17,and if we can't locate her well you can – do whatever you think is right.”,18.37%,71.72%
+18,I was strategizing.,16.33%,37.37%
+19,So he accepted my offer.,8.16%,58.59%
+20,And we went to where they found her scarf – near a park.,58.16%,88.89%
+21,and we traced down a little more,8.16%,61.62%
+22,and we couldn't locate her.,21.43%,63.64%
+23,And returned,5.10%,50.51%
+24,– it was a police station –,15.31%,82.83%
+25,she was sitting on a chair with a book in her hands.,82.65%,93.94%
+26,She hadn't run away.,44.90%,87.88%
+27,But – nevertheless – that resolved the issue for that day.,5.10%,17.17%
+28,"But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”",77.55%,86.87%
+29,And I did.,65.31%,78.79%
+30,I transferred.,48.98%,78.79%
+31,and left.,26.53%,67.68%
+32,That was the end of my rookie year.,44.90%,61.62%
