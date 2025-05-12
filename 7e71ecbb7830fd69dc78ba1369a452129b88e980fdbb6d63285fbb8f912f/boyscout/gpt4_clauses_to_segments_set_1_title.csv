@@ -1,0 +1,6 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[2, 3, 5]",3,5,Boy scouts raced in a 50-yard dash
+gpt4-2,1,"[1, 2, 3, 4, 5, 7]",6,10,Boy Scout gets cramps during race
+gpt4-3,1,"[1, 2, 3, 4, 5, 7]",6,13,Boy Scout gets cramps during race
+gpt4-4,1,"[3, 8, 9, 11, 12, 14, 15, 16]",8,16,Boy Scout drowns during race; ignored
+gpt4-5,1,"[7, 8, 13, 17, 18, 19]",6,19,Boy Scout saved from drowning during race

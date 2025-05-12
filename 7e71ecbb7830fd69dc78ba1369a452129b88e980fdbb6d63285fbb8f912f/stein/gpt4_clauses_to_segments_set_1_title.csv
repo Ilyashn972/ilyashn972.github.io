@@ -1,0 +1,14 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,[7],1,10,Father fails to return home after moving
+gpt4-2,1,"[11, 12, 13]",3,22,Family's house gets stoned after moving in
+gpt4-3,1,"[11, 12, 13]",3,32,Family's house stoned after moving in
+gpt4-4,1,"[11, 12, 13]",3,49,Family's house stoned in hostile neighborhood
+gpt4-5,1,"[11, 12, 13]",3,60,Family's new home attacked with stones
+gpt4-6,1,"[11, 13, 41, 42, 43, 47, 61]",7,65,Family's house attacked in racist incident
+gpt4-7,1,"[11, 12, 13]",3,75,Family's house stoned in hostile neighborhood
+gpt4-8,1,"[11, 12, 13, 14]",4,86,Family's house attacked after moving in
+gpt4-9,1,"[11, 12, 13]",3,95,Family's house stoned in hostile neighborhood
+gpt4-10,1,"[11, 13, 14, 40, 41, 42, 43, 44, 47, 50, 51, 52, 53, 54, 60, 61, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]",49,100,Family experiences racial hostility and inadequate police response after moving into a new neighborhood.
+gpt4-11,1,"[11, 13, 14, 36, 40, 41, 42, 43, 44, 47, 50, 51, 52, 53, 54, 61, 68, 69, 70, 71, 72, 73, 74, 75, 77, 80, 81, 102, 103, 104, 105, 106, 107]",33,115,Family faces racially motivated attack and police indifference after moving into new neighborhood.
+gpt4-12,1,"[11, 13, 41, 42, 43, 47, 48, 49, 53, 70, 71, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122]",30,122,Family faces racially motivated attack after moving.
+gpt4-13,1,"[11, 13, 41, 42, 43, 47, 48, 49, 61, 69, 70, 71, 77, 80, 81, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 118, 119, 120, 121, 122, 123, 124, 125, 128]",36,130,Family faces racial hostility after moving in

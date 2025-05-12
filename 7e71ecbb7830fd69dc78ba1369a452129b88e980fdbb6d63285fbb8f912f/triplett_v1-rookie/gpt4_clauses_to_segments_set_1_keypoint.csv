@@ -1,0 +1,9 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[1, 4]",2,4,The Chief was a seasoned officer with a young daughter.
+gpt4-2,1,"[1, 4, 6, 10, 11]",5,11,"The narrator reflects on their early days in the police force, recalling the Chief's daughter who was talkative and seemed to be trying to impress the narrator."
+gpt4-3,1,"[4, 6, 10, 11, 12]",5,12,"The narrator reflects on a time when the police Chief's talkative daughter, who was trying to impress him, considered running away due to her father's scolding."
+gpt4-4,1,"[4, 6, 12, 13, 15, 16, 17, 19]",8,19,"The narrator recalls a time when the police chief's daughter, who was trying to impress him, threatened to run away, leading to a tense situation that they agreed to address together."
+gpt4-5,1,"[1, 4, 12, 13, 16, 19, 20, 21, 22]",9,22,The narrator recalls a time when he and the Chief searched for the Chief's runaway daughter.
+gpt4-6,1,"[1, 4, 12, 16, 17, 19, 20, 21, 23, 24, 25, 26, 27]",13,27,"The narrator recounts an incident from their early police days involving the Chief's daughter, who threatened to run away, leading to a search that ended with her safe at the police station."
+gpt4-7,1,"[1, 4, 12, 13, 16, 17, 20, 21, 22, 23, 25, 26, 27, 28]",14,28,"The narrator recounts an incident from their rookie days involving the Chief's daughter, who threatened to run away, leading to a search that ended with her safe return, and a warning about the Chief's unforgiving nature."
+gpt4-8,1,"[1, 4, 6, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 30, 31, 32]",22,32,"The narrator recounts an incident from their rookie year involving the Chief's daughter, leading to their decision to transfer from the police force."

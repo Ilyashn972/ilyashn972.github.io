@@ -1,0 +1,6 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[1, 2, 4, 5]",4,5,The speaker was participating in a 50-yard dash with the boy scouts at the pier.
+gpt4-2,1,"[2, 4, 5, 7, 8, 9]",6,10,"The speaker experienced cramps during a 50-yard dash at the pier and called for help, but was not taken seriously by the others."
+gpt4-3,1,"[2, 4, 5, 7, 9, 10, 11, 12]",8,13,The narrator experienced cramps during a 50-yard dash at the pier and was left behind as others thought he was faking it.
+gpt4-4,1,"[2, 4, 5, 7, 8, 9, 16]",7,16,The narrator experienced cramps during a 50-yard dash at the pier and was ignored when calling for help.
+gpt4-5,1,"[3, 4, 7, 8, 9, 11, 12, 13, 16, 17, 18, 19]",12,19,"The narrator experienced cramps during a race at the pier and was initially ignored when calling for help, but was eventually rescued by a newcomer."

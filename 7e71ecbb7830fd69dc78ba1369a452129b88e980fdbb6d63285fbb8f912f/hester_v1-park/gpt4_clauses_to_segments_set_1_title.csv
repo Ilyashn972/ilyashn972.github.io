@@ -1,0 +1,9 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[3, 4]",2,4,Began first job as a graphic designer
+gpt4-2,1,"[3, 4, 5]",3,9,Caring for recovering father and working
+gpt4-3,1,"[5, 11]",2,15,Employee prays for father's recovery
+gpt4-4,1,"[5, 11]",2,23,Employee prays for father's recovery
+gpt4-5,1,"[5, 11, 14, 21, 28, 30]",6,32,Man prays for father's recovery in park
+gpt4-6,1,"[5, 11, 14, 21, 28, 30, 35, 37]",8,40,Man prays for father's recovery in park
+gpt4-7,1,"[5, 11, 37, 42, 46, 47]",6,48,Man's prayer coincides with father's recovery
+gpt4-8,1,"[5, 11, 37, 42, 46, 47, 49]",7,54,Man's prayer coincides with father's recovery

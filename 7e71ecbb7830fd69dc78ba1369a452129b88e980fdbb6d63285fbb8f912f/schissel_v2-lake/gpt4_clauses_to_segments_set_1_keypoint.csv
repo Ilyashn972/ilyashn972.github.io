@@ -1,0 +1,6 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[1, 2]",2,3,My best friend pushed me into the lake during our summer camping trip.
+gpt4-2,1,"[1, 2, 7, 9]",4,10,My best friend playfully pushed me into the lake after I refused to catch a frog during our camping trip.
+gpt4-3,1,"[1, 2]",2,12,My best friend playfully pushed me into the lake during our camping trip.
+gpt4-4,1,"[1, 2, 7, 9, 11, 12]",6,16,My best friend playfully pushed me into the lake during a camping trip after I refused to catch a frog.
+gpt4-5,1,"[1, 2, 7, 9, 11, 12]",6,18,My best friend playfully pushed me into the lake during a camping trip after I refused to catch a frog.

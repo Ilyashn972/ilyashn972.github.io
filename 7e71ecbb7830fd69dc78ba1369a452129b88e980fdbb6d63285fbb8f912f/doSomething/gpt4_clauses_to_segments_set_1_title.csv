@@ -1,0 +1,12 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[1, 2]",2,3,Attending a scheduled church league softball game
+gpt4-2,1,"[18, 19, 20]",3,20,Driver cuts off narrator's car
+gpt4-3,1,"[13, 22, 23, 24]",4,24,Driver blocks lane during softball game commute
+gpt4-4,1,"[13, 14, 22, 23, 24, 28]",6,32,Driver blocks lane and follows narrator
+gpt4-5,1,"[32, 34, 35]",3,40,Driver experiences aggressive tailgating
+gpt4-6,1,"[32, 34, 35, 38, 39]",5,43,Driver tailgates and behaves erratically
+gpt4-7,1,"[44, 47, 48, 49]",4,53,Driver considers confronting erratic motorist
+gpt4-8,1,"[44, 47, 48, 49, 56, 57]",6,59,Driver considers confronting erratic motorist
+gpt4-9,1,"[28, 32, 35, 36, 38, 39, 45, 46, 47, 48, 49, 50, 51, 64, 65, 66]",16,68,Driver suspects following motorist is impaired
+gpt4-10,1,"[28, 32, 35, 36, 38, 39, 45, 46, 47, 48, 49, 50, 51, 64, 65, 66]",16,73,Driver suspects following motorist is impaired
+gpt4-11,1,"[38, 39, 42, 45, 46, 48, 64, 65, 66]",9,81,Driver suspects another of drunk driving

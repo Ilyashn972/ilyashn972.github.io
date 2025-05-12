@@ -1,0 +1,7 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[1, 2]",2,3,Best friend pushed me into pool at wedding
+gpt4-2,1,"[4, 5, 7]",3,7,Friend pushes me to avoid bee sting
+gpt4-3,1,"[1, 4, 5, 7]",4,9,Friend pushes me into pool to avoid bee sting.
+gpt4-4,1,"[1, 4, 5, 7, 11, 12]",6,12,Friend pushes me into pool to avoid bee sting
+gpt4-5,1,"[1, 4, 5, 7, 11, 12]",6,15,Friend pushes me into pool to avoid bee
+gpt4-6,1,"[1, 4, 5, 7, 11, 12]",6,18,Friend pushes me into pool to avoid bee

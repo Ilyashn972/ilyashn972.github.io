@@ -1,0 +1,16 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[7, 9, 10]",3,11,College reunites four high school athletes
+gpt4-2,1,"[3, 6, 9, 10, 11]",5,18,College solidified our friendship
+gpt4-3,1,"[3, 7, 9, 10, 11]",5,23,College reunites high school athlete friends
+gpt4-4,1,"[15, 18, 22, 25, 27, 29]",6,34,College friends bonded through hunting trips
+gpt4-5,1,"[15, 18, 22, 25, 27, 29]",6,39,College friends bond over hunting trips
+gpt4-6,1,"[15, 18, 22, 25, 27, 29]",6,45,College friends bonded through hunting trips
+gpt4-7,1,"[15, 18, 22, 25, 27, 29]",6,52,College friends bond over hunting trips.
+gpt4-8,1,"[15, 18, 22, 25, 27, 29]",6,64,College friends bond over hunting trips
+gpt4-9,1,[29],1,74,College friends plan bear hunting trip
+gpt4-10,1,[29],1,79,College friends plan bear hunting trip
+gpt4-11,1,"[29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 80, 81, 82, 83, 84, 85]",17,85,Reluctant friend joins bear hunting trip
+gpt4-12,1,"[29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95]",27,95,Reluctant friend joins bear hunting trip
+gpt4-13,1,"[29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95]",27,105,Reluctant friend joins bear hunting trip
+gpt4-14,1,"[29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118]",50,118,Reluctant friend drawn into bear hunting
+gpt4-15,1,"[29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122]",94,122,Reluctant friend ends up bear hunting

@@ -1,0 +1,7 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[1, 2]",2,3,My best friend pushed me into the pool at my cousin's wedding reception.
+gpt4-2,1,"[1, 2, 5, 7]",4,7,My best friend pushed me into a pool at a wedding reception to save me from a bee.
+gpt4-3,1,"[1, 2, 5, 7]",4,9,My best friend accidentally pushed me into a pool at a wedding reception trying to save me from a bee.
+gpt4-4,1,"[1, 2, 4, 5, 7, 12]",6,12,My best friend accidentally pushed me into a pool at a wedding reception to save me from a bee.
+gpt4-5,1,"[1, 2, 4, 5, 7, 12]",6,15,My best friend accidentally pushed me into a pool at a wedding reception to save me from a bee.
+gpt4-6,1,"[1, 2, 4, 5, 7, 11, 12, 16, 18]",9,18,"My best friend accidentally pushed me into the pool at my cousin's wedding reception trying to save me from a bee, ruining my dress and almost hitting the cake."

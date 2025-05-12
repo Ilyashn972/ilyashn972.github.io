@@ -1,0 +1,7 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[1, 2, 3]",3,3,Mrs. Baker adopted many cats.
+gpt4-2,1,"[10, 11]",2,11,Mrs. Baker's grandson had poor manners.
+gpt4-3,1,[6],1,18,Child attempts to befriend narrator
+gpt4-4,1,[6],1,22,Child attempts to befriend narrator
+gpt4-5,1,"[12, 25, 26]",3,27,"Boy feigns running away, found reading."
+gpt4-6,1,"[12, 26]",2,32,Local boy fakes running away

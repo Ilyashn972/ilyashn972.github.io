@@ -1,0 +1,9 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[1, 2, 3, 4]",4,4,The narrator recounts living in a small apartment and starting a job as a graphic designer at the age of twenty-one.
+gpt4-2,1,"[2, 3, 5, 7]",4,9,The narrator recounts living alone and starting a new job while their recovering father was cared for by a neighbor during the day.
+gpt4-3,1,"[10, 11, 14, 15]",4,15,The narrator recounts a personal story of feeling compelled to pray for their father's recovery at a park during a work break.
+gpt4-4,1,"[10, 11, 14, 15, 21, 22, 23]",7,23,The narrator recounts a personal experience of feeling compelled to pray for their father's recovery in a park during a work break.
+gpt4-5,1,"[10, 11, 14, 15, 21, 22, 23, 24, 28, 29, 30, 32]",12,32,The narrator recounts a personal experience of feeling compelled to pray for their father's recovery in a park during a work break.
+gpt4-6,1,"[10, 11, 14, 15, 21, 28, 29, 30, 32, 34, 35, 37]",12,40,The narrator visited a park to pray for their father's recovery during a lunch break from work.
+gpt4-7,1,"[5, 10, 11, 28, 29, 30, 32, 35, 37, 38, 41, 42, 44, 46, 47]",15,48,The narrator recounts a personal experience of praying for their father's recovery and receiving a positive sign shortly after.
+gpt4-8,1,"[5, 11, 37, 38, 41, 42, 43, 44, 46, 47, 49, 50, 51, 53]",14,54,"The narrator recounts a personal experience of praying for their father's recovery, which coincided with a significant improvement in his condition."

@@ -1,0 +1,11 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,[3],1,4,Started first job at local bookstore
+gpt4-2,1,[3],1,8,Started first job at local bookstore
+gpt4-3,1,"[3, 4, 9, 13]",4,14,Man hears mysterious voice at work
+gpt4-4,1,"[9, 10, 13, 15]",4,20,Man hears voice urging church visit for grandpa's health
+gpt4-5,1,"[9, 10, 13, 15, 23, 24, 27]",7,28,Man hears voice urging church visit for grandpa's health
+gpt4-6,1,"[3, 5, 9, 10, 13, 15, 19, 23, 24, 25, 27, 31, 32, 34]",14,35,Young bookstore employee experiences a mystical call to pray for ailing grandpa.
+gpt4-7,1,"[25, 27, 36, 38, 39]",5,42,Man's prayer seemingly heals bedridden grandpa
+gpt4-8,1,"[10, 19, 20, 27, 28, 36, 37, 38, 39, 44]",10,45,Man's prayer coincides with grandpa's recovery
+gpt4-9,1,"[10, 15, 24, 25, 27, 28, 36, 38, 39, 43, 44, 45]",12,50,Prayer in church precedes grandpa's recovery
+gpt4-10,1,"[10, 24, 25, 27, 28, 36, 37, 38, 39, 43, 44, 45]",12,54,Prayer in church precedes grandpa's recovery.

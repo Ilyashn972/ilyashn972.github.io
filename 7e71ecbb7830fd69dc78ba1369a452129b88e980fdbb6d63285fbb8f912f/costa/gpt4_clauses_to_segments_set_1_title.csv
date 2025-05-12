@@ -1,0 +1,16 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[1, 4, 5]",3,6,Daughter died from appendicitis surgery complications
+gpt4-2,1,"[1, 4, 5, 22]",4,22,Daughter died from post-surgery complications
+gpt4-3,1,"[1, 4, 5, 22]",4,39,Mother recounts daughter's fatal post-surgery complications
+gpt4-4,1,"[1, 4, 5, 22, 45, 46]",6,52,Mother recounts daughter's tragic death post-surgery
+gpt4-5,1,"[1, 4, 5, 22, 45, 46]",6,62,Mother recounts daughter's tragic death post-surgery
+gpt4-6,1,"[1, 4, 5, 22, 45, 46, 71, 74, 75]",9,76,Mother recounts daughter's tragic death post-surgery
+gpt4-7,1,"[1, 4, 5, 22, 45, 46, 71, 74, 75, 83, 84, 90]",12,91,Mother recounts daughter's tragic death post-surgery
+gpt4-8,1,"[1, 4, 5, 22, 45, 46, 50, 71, 74, 75, 92, 93]",12,104,Mother recounts daughter's tragic death post-surgery.
+gpt4-9,1,"[1, 4, 5, 22, 45, 46, 50, 71, 74, 75, 92, 93]",12,119,Mother recounts daughter's tragic death post-surgery.
+gpt4-10,1,"[1, 4, 5, 22, 45, 46, 50, 71, 74, 75, 92, 93, 128]",13,139,Mother recounts daughter's tragic death post-surgery.
+gpt4-11,1,"[1, 4, 5, 22, 45, 46, 71, 74, 75, 83, 84, 90, 92, 93, 94, 95, 96, 128, 140, 141, 142, 143, 144, 145]",24,152,Mother recounts daughter's tragic death post-surgery
+gpt4-12,1,"[1, 4, 5, 22, 45, 46, 71, 74, 75, 83, 84, 90, 92, 93, 94, 95, 96, 128, 140, 141, 142, 143, 144, 145, 162]",25,164,Mother recounts daughter's tragic death post-surgery
+gpt4-13,1,"[1, 4, 5, 22, 45, 46, 50, 71, 74, 75, 92, 93, 128, 140, 141, 142, 143, 144, 145, 162]",20,172,Mother recounts daughter's tragic death post-surgery.
+gpt4-14,1,"[1, 4, 5, 22, 45, 46, 71, 74, 75, 83, 84, 90, 92, 93, 94, 95, 96, 128, 140, 141, 142, 143, 144, 145, 162]",25,188,Mother recounts daughter's tragic death post-surgery
+gpt4-15,1,"[1, 4, 5, 22, 45, 46, 50, 71, 74, 75, 92, 93, 128, 140, 141, 142, 143, 144, 145, 162]",20,194,Mother recounts daughter's tragic death post-surgery.

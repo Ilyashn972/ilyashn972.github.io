@@ -1,0 +1,6 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,[1],1,3,Best friend pushed me into lake
+gpt4-2,1,"[1, 7]",2,10,Friend pushed me into lake on dare
+gpt4-3,1,"[1, 11, 12]",3,12,Friend playfully pushes narrator into lake
+gpt4-4,1,"[1, 11, 12]",3,16,Friend playfully pushes narrator into lake
+gpt4-5,1,"[1, 11, 12]",3,18,Friend playfully pushes narrator into lake

@@ -1,0 +1,7 @@
+recall_id,clause_id,segment_ids,fan_out,last_segment_id,clause_text
+gpt4-1,1,"[1, 2, 3]",3,3,Mrs. Baker was known for adopting many cats in the narrator's neighborhood.
+gpt4-2,1,"[8, 9, 10, 11]",4,11,Mrs. Baker's grandson had poor manners which affected the narrator's perception of him.
+gpt4-3,1,"[4, 6, 10, 12, 16]",5,18,"Mrs. Baker's poorly mannered grandson attempted to befriend me and threatened to run away, leading to a situation where I had to help search for him."
+gpt4-4,1,"[4, 6, 9, 10, 11, 12, 16, 17, 20, 21, 22]",11,22,"Mrs. Baker's poorly mannered grandson attempted to befriend the narrator and threatened to run away, leading to a search."
+gpt4-5,1,"[12, 13, 24, 25, 26]",5,27,Mrs. Baker's grandson pretended to run away but was found in a treehouse.
+gpt4-6,1,"[4, 12, 16, 17, 19, 20, 21, 22, 25, 26, 28]",11,32,"The narrator recounts an incident from childhood involving Mrs. Baker's grandson pretending to run away, leading to a search and advice from Officer Dawson to stay out of sight due to Mrs. Baker's persistent nature."
