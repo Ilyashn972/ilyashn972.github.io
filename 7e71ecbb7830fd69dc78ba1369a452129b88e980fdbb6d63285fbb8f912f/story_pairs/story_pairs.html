@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>p-caught and p-rec Images</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 2em;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .card {
+            background-color: white;
+            padding: 1em;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            margin: 0.5em 0 0.2em;
+            font-size: 1.2em;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 0.95em;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Participant Caught and Recall Images</h1>
+    see code at: tools/plot_pair.py
+    <div class="grid">
+        <div class="card">
+            <h2>Schissel</h2>
+            <img src="schissel_p-rec.png" alt="Schissel p-rec">
+            <p>p-rec</p>
+            <img src="schissel_p-caught.png" alt="Schissel p-caught">
+            <p>p-caught</p>
+        </div>
+        <div class="card">
+            <h2>Triplett</h2>
+            <img src="triplett_p-rec.png" alt="Triplett p-rec">
+            <p>p-rec</p>
+            <img src="triplett_p-caught.png" alt="Triplett p-caught">
+            <p>p-caught</p>
+        </div>
+        <div class="card">
+            <h2>Hester</h2>
+            <img src="hester_p-rec.png" alt="Hester p-rec">
+            <p>p-rec</p>
+            <img src="hester_p-caught.png" alt="Hester p-caught">
+            <p>p-caught</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
