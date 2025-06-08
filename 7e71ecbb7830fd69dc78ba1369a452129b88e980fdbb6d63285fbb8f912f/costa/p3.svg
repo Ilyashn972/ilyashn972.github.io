@@ -1,0 +1,242 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#333" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eaf3fa"/>
+      <stop offset="100%" stop-color="#aed6f1"/>
+    </linearGradient>
+    <radialGradient id="tableGrad" cx="50%" cy="40%" r="70%" fx="47%" fy="47%">
+      <stop offset="0%" stop-color="#f5eee1" />
+      <stop offset="100%" stop-color="#cea761" />
+    </radialGradient>
+    <linearGradient id="coffeeGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#b88d49"/>
+      <stop offset="100%" stop-color="#422706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background room -->
+  <rect x="0" y="0" width="600" height="400" fill="url(#bgGrad)" />
+
+  <!-- Foreground composition: Emphasize the table with clothes, coffee pot/cup, main characters -->
+  <!-- TABLE -->
+  <ellipse cx="320" cy="280" rx="210" ry="60" fill="url(#tableGrad)" filter="url(#shadow)" />
+  <rect x="110" y="260" width="420" height="80" rx="40" fill="none" stroke="#be9b64" stroke-width="3"/>
+
+  <!-- Folded Clothes (on table, left) -->
+  <g>
+    <rect x="160" y="230" width="70" height="26" rx="6" fill="#d4dbf1" stroke="#8876ad" stroke-width="2"/>
+    <rect x="162" y="245" width="60" height="18" rx="6" fill="#fff7ca" stroke="#cfae54" stroke-width="1.5"/>
+    <rect x="158" y="260" width="65" height="12" rx="5" fill="#e1b6ba" stroke="#a15e64" stroke-width="1.5"/>
+    <text x="170" y="255" font-family="Verdana" font-size="14" fill="#584a3b">Clothes</text>
+  </g>
+
+  <!-- Pot of Coffee (right side of table) -->
+  <g>
+    <ellipse cx="440" cy="262" rx="25" ry="12" fill="#333"/>
+    <rect x="420" y="237" width="40" height="33" rx="13" fill="#dbd6b3" stroke="#8e8371" stroke-width="2"/>
+    <ellipse cx="440" cy="237" rx="20" ry="10" fill="#fffbe9" stroke="#a49a83" stroke-width="1"/>
+    <ellipse cx="440" cy="245" rx="15" ry="6" fill="url(#coffeeGrad)" />
+    <!-- Handle -->
+    <path d="M460,245 Q467,248 460,258" fill="none" stroke="#8e8371" stroke-width="5"/>
+    <!-- Steam -->
+    <path d="M438,230 Q438,220 450,230" fill="none" stroke="#ccc" stroke-width="3" opacity="0.5"/>
+    <text x="423" y="234" font-family="Verdana" font-size="13" fill="#71562d">Coffee Pot</text>
+  </g>
+
+  <!-- Cup of Coffee (lower left of pot) -->
+  <g>
+    <ellipse cx="410" cy="273" rx="14" ry="7" fill="#ddd"/>
+    <ellipse cx="410" cy="271" rx="11" ry="4" fill="#ae8143"/>
+    <rect x="401" y="271" width="18" height="10" rx="8" fill="#f5f1ee"/>
+    <!-- Handle -->
+    <ellipse cx="420" cy="276" rx="3" ry="5" fill="none" stroke="#c1b8b1" stroke-width="2"/>
+    <text x="400" y="290" font-family="Verdana" font-size="10" fill="#71562d">First cup for Marie</text>
+  </g>
+
+  <!-- Mrs. Costa (center foreground, standing, apron, older woman) -->
+  <g>
+    <!-- Dress -->
+    <ellipse cx="260" cy="220" rx="23" ry="35" fill="#d6e5ff" stroke="#9db5cf" stroke-width="2"/>
+    <!-- Head -->
+    <ellipse cx="260" cy="178" rx="16" ry="18" fill="#fde2bc" stroke="#b18150" stroke-width="1.5"/>
+    <!-- Hair -->
+    <ellipse cx="260" cy="167" rx="17" ry="10" fill="#f2e0c2"/>
+    <!-- Face features -->
+    <ellipse cx="255" cy="183" rx="2" ry="3" fill="#8e7150"/>
+    <ellipse cx="265" cy="183" rx="2" ry="2.2" fill="#8e7150"/>
+    <path d="M256,191 Q260,195 264,191" stroke="#af6b39" stroke-width="1.5" fill="none"/>
+    <!-- Arms -->
+    <rect x="237" y="200" width="15" height="7" rx="4" fill="#fde2bc" transform="rotate(-15 237 200)"/>
+    <rect x="270" y="205" width="15" height="7" rx="4" fill="#fde2bc" transform="rotate(17 270 205)"/>
+    <!-- Apron -->
+    <rect x="247" y="214" width="26" height="22" rx="7" fill="#fff" stroke="#e8e1d8" stroke-width="1"/>
+    <!-- Label -->
+    <text x="243" y="210" font-family="Verdana" font-size="12" fill="#35322b">Mrs. Costa</text>
+  </g>
+
+  <!-- Rita (standing at stove, middle-right)-->
+  <g>
+    <!-- Body -->
+    <ellipse cx="500" cy="205" rx="18" ry="30" fill="#ebe1f9" stroke="#9e80b7" stroke-width="1.5"/>
+    <!-- Head -->
+    <ellipse cx="500" cy="175" rx="13" ry="14" fill="#fbeacc" stroke="#c4a67b" stroke-width="1"/>
+    <!-- Hair (short brown) -->
+    <ellipse cx="500" cy="168" rx="10" ry="7" fill="#b17d52"/>
+    <!-- Face -->
+    <ellipse cx="497" cy="179" rx="1.7" ry="2" fill="#7e684a"/>
+    <ellipse cx="503" cy="179" rx="1.7" ry="2" fill="#7e684a"/>
+    <!-- Mouth -->
+    <path d="M498,186 Q500,189 502,186" stroke="#af6b39" stroke-width="1" fill="none"/>
+    <!-- Arms -->
+    <rect x="517" y="200" width="15" height="6" rx="3" fill="#fbeacc" transform="rotate(18 517 200)"/>
+    <rect x="485" y="210" width="9" height="6" rx="3" fill="#fbeacc" transform="rotate(-25 485 210)"/>
+    <!-- Label -->
+    <text x="488" y="230" font-family="Verdana" font-size="11" fill="#6e5e7e">Rita</text>
+  </g>
+
+  <!-- Stove (Rita is cooking at, far right, simple) -->
+  <g>
+    <rect x="525" y="209" width="38" height="29" rx="5" fill="#d6d2c6" stroke="#7b7670" stroke-width="1.2"/>
+    <ellipse cx="544" cy="216" rx="12" ry="4.5" fill="#bab6a0"/>
+    <rect x="538" y="211" width="12" height="7" rx="3" fill="#bbb196"/>
+    <ellipse cx="544" cy="229" rx="12" ry="4.2" fill="#bab6a0"/>
+    <!-- Pot -->
+    <rect x="545" y="200" width="11" height="12" rx="3" fill="#aeaea8"/>
+    <ellipse cx="550" cy="200" rx="6" ry="3" fill="#eaecec"/>
+    <!-- Label -->
+    <text x="533" y="248" font-family="Verdana" font-size="10" fill="#7b7670">Stove</text>
+  </g>
+
+  <!-- Daddy (in yard in background, working) -->
+  <g>
+    <!-- Fence to separate "yard" at back -->
+    <rect x="0" y="320" width="600" height="25" fill="#e8d9b3"/>
+    <rect x="40" y="325" width="12" height="55" fill="#cfb87d" />
+    <rect x="102" y="325" width="12" height="55" fill="#cfb87d" />
+    <rect x="164" y="325" width="12" height="55" fill="#cfb87d" />
+    <rect x="226" y="325" width="12" height="55" fill="#cfb87d" />
+    <rect x="288" y="325" width="12" height="55" fill="#cfb87d" />
+    <rect x="350" y="325" width="12" height="55" fill="#cfb87d" />
+    <rect x="412" y="325" width="12" height="55" fill="#cfb87d" />
+    <rect x="474" y="325" width="12" height="55" fill="#cfb87d" />
+    <rect x="536" y="325" width="12" height="55" fill="#cfb87d" />
+    <!-- "yard" -->
+    <rect x="0" y="345" width="600" height="55" fill="#b6cd9d"/>
+    <!-- Daddy -->
+    <g>
+      <!-- Body -->
+      <ellipse cx="530" cy="355" rx="13" ry="22" fill="#c2c0b5" stroke="#7c7a70" stroke-width="1"/>
+      <!-- Head -->
+      <ellipse cx="530" cy="337" rx="9" ry="9.5" fill="#ffe2ae" stroke="#a9804e" stroke-width="1"/>
+      <!-- Cap -->
+      <ellipse cx="530" cy="330" rx="7" ry="5" fill="#3778b2"/>
+      <!-- Arms (shovel) -->
+      <rect x="517" y="344" width="17" height="5" rx="2.2" fill="#ffe2ae" transform="rotate(-15 517 344)"/>
+      <rect x="538" y="358" width="15" height="5" rx="2.5" fill="#ffe2ae" transform="rotate(30 538 358)"/>
+      <!-- Tool: shovel -->
+      <rect x="549" y="365" width="5" height="28" rx="2.5" fill="#c0a96b"/>
+      <ellipse cx="551.5" cy="392" rx="7" ry="3" fill="#e0cec3"/>
+      <text x="510" y="329" font-family="Verdana" font-size="10" fill="#333">Daddy</text>
+    </g>
+    <text x="470" y="370" font-family="Verdana" font-size="11" fill="#3a6532">yard</text>
+  </g>
+
+  <!-- Store (far left background, shop lady) -->
+  <g>
+    <!-- Store building -->
+    <rect x="40" y="62" width="65" height="58" rx="8" fill="#f9eab3" stroke="#b5a64a" stroke-width="1.5"/>
+    <rect x="55" y="92" width="27" height="28" rx="5" fill="#fff" stroke="#bbb" stroke-width="1"/>
+    <rect x="85" y="75" width="14" height="18" rx="4" fill="#d6d2c6"/>
+    <!-- "Store" sign -->
+    <rect x="57" y="60" width="32" height="17" rx="5" fill="#c3982d"/>
+    <text x="60" y="72" font-family="Verdana" font-size="11" fill="#fff">STORE</text>
+    <!-- Store lady (by door, on phone) -->
+    <g>
+      <!-- Skirt -->
+      <ellipse cx="68" cy="119" rx="8" ry="12" fill="#e7c5f7"/>
+      <!-- Torso -->
+      <ellipse cx="68" cy="108" rx="7" ry="9" fill="#fee6b1"/>
+      <!-- Head -->
+      <ellipse cx="68" cy="100" rx="6" ry="6" fill="#ffdab8"/>
+      <!-- Hair -->
+      <ellipse cx="68" cy="96" rx="7" ry="3" fill="#b7a58d"/>
+      <!-- Arm/Phone -->
+      <rect x="74" y="105" width="10" height="4" rx="2" fill="#fee6b1" transform="rotate(25 74 105)"/>
+      <ellipse cx="83" cy="108" rx="3" ry="1.5" fill="#444"/>
+      <!-- Label -->
+      <text x="40" y="141" font-family="Verdana" font-size="10" fill="#71562d">Store lady</text>
+      <!-- Speech bubble -->
+      <g>
+        <ellipse cx="93" cy="97" rx="21" ry="17" fill="#fff" stroke="#ccc" stroke-width="1"/>
+        <polygon points="84,111 97,108 88,104" fill="#fff" />
+        <text x="83" y="100" font-family="Verdana" font-size="10" fill="#613e34">"Mrs. Costa!<tspan x="83" y="112">Go pick Marie up."</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- "No phone" (inferred: simple sign in Mrs. Costa's home) -->
+  <g>
+    <rect x="115" y="138" width="55" height="23" rx="6" fill="#eee" stroke="#bbb" stroke-width="1"/>
+    <text x="122" y="154" font-family="Verdana" font-size="11" fill="#815c2c">No phone</text>
+  </g>
+
+  <!-- Subdued hospital motif at very back (hint at Marie's discharge) -->
+  <g>
+    <rect x="485" y="60" width="57" height="36" rx="8" fill="#e9f8ff" stroke="#90c0e0" stroke-width="1.3"/>
+    <rect x="505" y="65" width="18" height="16" rx="4" fill="#ffffff" stroke="#90c0e0" stroke-width="1"/>
+    <rect x="534" y="70" width="7" height="9" rx="2.5" fill="#b2cdee"/>
+    <!-- Cross -->
+    <rect x="514" y="75" width="5" height="13" fill="#54a1cd"/>
+    <rect x="510" y="80" width="13" height="5" fill="#54a1cd"/>
+    <text x="493" y="112" font-family="Verdana" font-size="10" fill="#2366b2">HOSPITAL</text>
+  </g>
+
+  <!-- Marie walking home (left-mid background, walking, simple) -->
+  <g>
+    <!-- Body -->
+    <ellipse cx="180" cy="164" rx="10" ry="19" fill="#fbeee7" stroke="#c1ae90" stroke-width="1"/>
+    <!-- Head -->
+    <ellipse cx="180" cy="146" rx="7" ry="7.5" fill="#ffe2c8" stroke="#b69c7f" stroke-width="1"/>
+    <!-- Hair -->
+    <ellipse cx="180" cy="141" rx="8" ry="4" fill="#bc9290"/>
+    <!-- Arms -->
+    <rect x="171" y="157" width="15" height="4" rx="2" fill="#ffe2c8" transform="rotate(-11 171 157)"/>
+    <rect x="185" y="157" width="12" height="4" rx="2" fill="#ffe2c8" transform="rotate(19 185 157)"/>
+    <!-- Steps (little dashes for motion) -->
+    <rect x="174" y="179" width="10" height="2.2" rx="1" fill="#998c78"/>
+    <rect x="183" y="183" width="12" height="2.2" rx="1" fill="#998c78"/>
+    <!-- Label -->
+    <text x="168" y="140" font-family="Verdana" font-size="11" fill="#a04555">Marie</text>
+    <text x="192" y="158" font-family="Verdana" font-size="10" fill="#71562d">coming home</text>
+    <!-- Leading line to table (grouping Marie to home) -->
+    <path d="M188,170 Q220,210 320,240" fill="none" stroke="#b79b72" stroke-width="2" stroke-dasharray="4,4" opacity="0.38"/>
+  </g>
+
+  <!-- Visual composition grouping highlight -->
+  <rect x="140" y="210" width="320" height="110" rx="36" fill="none" stroke="#fcde8a" stroke-width="4" opacity="0.4"/>
+
+  <!-- Time panel: quarter to five at night (small clock on wall, upper center) -->
+  <g>
+    <ellipse cx="300" cy="55" rx="21" ry="21" fill="#f9f7fa" stroke="#b5b3c2" stroke-width="2"/>
+    <line x1="300" y1="55" x2="300" y2="39" stroke="#644" stroke-width="3"/>
+    <line x1="300" y1="55" x2="288" y2="63" stroke="#866" stroke-width="2"/>
+    <text x="287" y="85" font-family="Verdana" font-size="11" fill="#665428">4:45 pm</text>
+  </g>
+
+  <!-- Panel for memory/cup ritual (upper right, faded ghosted cup with heart, signify remembrance) -->
+  <g opacity="0.7">
+    <ellipse cx="500" cy="60" rx="16" ry="8" fill="#e5d5bb"/>
+    <ellipse cx="500" cy="57" rx="12" ry="4" fill="#debe8c"/>
+    <!-- Heart in cup -->
+    <path d="M500 60 Q498 57 500 55 Q502 57 500 60 Z" fill="#ae7466"/>
+    <text x="514" y="64" font-family="Verdana" font-size="10" fill="#ae7466">Remembering</text>
+  </g>
+
+  <!-- Narrative focus lines / vignette -->
+  <ellipse cx="320" cy="270" rx="250" ry="100" fill="none" stroke="#8c6451" stroke-width="8" opacity="0.18"/>
+</svg>

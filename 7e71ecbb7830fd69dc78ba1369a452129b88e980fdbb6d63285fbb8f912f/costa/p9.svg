@@ -1,0 +1,180 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: hospital hallway and office doors -->
+  <rect x="0" y="0" width="600" height="400" fill="#e8eef6"/>
+  <!-- Hallway floor and base -->
+  <rect x="0" y="320" width="600" height="80" fill="#b2c2d6"/>
+  <!-- Office doorway, left -->
+  <rect x="30" y="140" width="110" height="170" fill="#ded6d1" stroke="#a7968a" stroke-width="2"/>
+  <rect x="50" y="210" width="70" height="100" fill="#c2b7ac" stroke="#958b7c" stroke-width="2"/>
+  <text x="85" y="230" font-family="Arial" font-size="13" fill="#58504a" text-anchor="middle" font-weight="bold">OFFICE</text>
+
+  <!-- Far hallway wall and doors in middle distance -->
+  <rect x="180" y="100" width="240" height="200" fill="#f7f6ee" stroke="#cdcaba" stroke-width="1"/>
+  <rect x="195" y="170" width="55" height="130" fill="#e4dcd4" stroke="#b8b0a6" stroke-width="1"/>
+  <rect x="260" y="170" width="50" height="130" fill="#e4dcd4" stroke="#b8b0a6" stroke-width="1"/>
+  <rect x="315" y="170" width="55" height="130" fill="#e4dcd4" stroke="#b8b0a6" stroke-width="1"/>
+  <rect x="380" y="170" width="30" height="130" fill="#e4dcd4" stroke="#b8b0a6" stroke-width="1"/>
+  
+  <!-- Main light overhead -->
+  <ellipse cx="320" cy="120" rx="200" ry="30" fill="#ffffff" fill-opacity="0.28"/>
+  
+  <!-- Rita (foreground, with speech bubble), right side, blue blouse -->
+  <g>
+    <ellipse cx="520" cy="310" rx="30" ry="43" fill="#ecdbc9" />
+    <ellipse cx="520" cy="260" rx="22" ry="28" fill="#e4bb9e" />
+    <ellipse cx="520" cy="242" rx="15" ry="14" fill="#f7dbbc"/>
+    <!-- Rita's hair -->
+    <ellipse cx="520" cy="238" rx="18" ry="15" fill="#c59c6e"/>
+    <!-- Expression (surprised) -->
+    <ellipse cx="514" cy="240" rx="2" ry="3" fill="#4a2c16"/>
+    <ellipse cx="526" cy="240" rx="2" ry="3" fill="#4a2c16"/>
+    <path d="M516,250 Q520,253 524,250" stroke="#8c5b36" stroke-width="2" fill="none"/>
+    <!-- Rita's blouse -->
+    <rect x="500" y="270" width="40" height="50" rx="13" fill="#6faee9"/>
+    <!-- Rita's arm (left) -->
+    <rect x="490" y="295" width="15" height="36" rx="8" fill="#fecda9" transform="rotate(-10 497 295)"/>
+    <!-- Rita's arm (right, holding purse) -->
+    <rect x="532" y="297" width="12" height="33" rx="7" fill="#fecda9" transform="rotate(15 538 297)"/>
+    <!-- Purse -->
+    <ellipse cx="541" cy="329" rx="12" ry="9" fill="#692f00" />
+    <!-- Rita's skirt -->
+    <rect x="505" y="318" width="30" height="28" rx="15" fill="#a8a5e0"/>
+    <!-- Shoes -->
+    <ellipse cx="510" cy="360" rx="9" ry="4" fill="#45414c"/>
+    <ellipse cx="530" cy="360" rx="9" ry="4" fill="#45414c"/>
+    <!-- Text label -->
+    <rect x="525" y="205" rx="6" ry="6" width="65" height="27" fill="#fffbea" stroke="#e6bcaf" stroke-width="1"/>
+    <text x="558" y="221" font-family="Arial" font-size="11" fill="#371e12" text-anchor="middle" font-weight="bold">Rita</text>
+    <!-- Speech bubble -->
+    <path d="M463,222 Q470,202 508,210 Q536,217 528,238 Q525,247 505,246 Q491,246 486,241 L470,243 Q470,236 463,222Z"
+          fill="#fff" stroke="#b0b0b0" />
+    <text x="485" y="226" font-family="Arial" font-size="11" fill="#45414c">“Gee, that’s strange”</text>
+  </g>
+  
+  <!-- Mother (center, distressed, in the hallway, pale pink hospital gown, foreground) -->
+  <g>
+    <ellipse cx="340" cy="280" rx="38" ry="54" fill="#f5d8ca"/>
+    <ellipse cx="340" cy="215" rx="22" ry="29" fill="#f0c99e"/>
+    <ellipse cx="340" cy="195" rx="19" ry="18" fill="#ecd6ba"/>
+    <!-- Mother's short gray hair -->
+    <ellipse cx="340" cy="188" rx="22" ry="13" fill="#bbb6b1"/>
+    <!-- Expression: distressed, "all pulled apart" -->
+    <ellipse cx="333" cy="198" rx="2" ry="4" fill="#7a5c4d"/>
+    <ellipse cx="347" cy="198" rx="2" ry="4" fill="#7a5c4d"/>
+    <path d="M335,207 Q340,213 345,207" stroke="#b7846f" stroke-width="2" fill="none"/>
+    <!-- Arms in a defensive pose -->
+    <rect x="311" y="247" width="17" height="47" rx="10" fill="#f5d8ca" transform="rotate(-20 320 247)"/>
+    <rect x="351" y="247" width="17" height="47" rx="10" fill="#f5d8ca" transform="rotate(18 360 247)"/>
+    <!-- Right hand (kicking away doctor) -->
+    <ellipse cx="365" cy="285" rx="10" ry="7" fill="#edd1bf"/>
+    <!-- Legs (hospital gown opened below knee) -->
+    <rect x="330" y="334" width="11" height="34" rx="4" fill="#f5d8ca"/>
+    <rect x="344" y="340" width="11" height="34" rx="4" fill="#f5d8ca"/>
+    <!-- Shoes -->
+    <ellipse cx="335" cy="372" rx="7" ry="4" fill="#c8bab2"/>
+    <ellipse cx="349" cy="377" rx="7" ry="4" fill="#c8bab2"/>
+    <!-- Text label -->
+    <rect x="312" y="178" rx="6" ry="6" width="64" height="22" fill="#fff1e4" stroke="#e2ab8c" stroke-width="1"/>
+    <text x="344" y="194" font-family="Arial" font-size="11" fill="#795643" text-anchor="middle" font-weight="bold">Mother</text>
+  </g>
+  
+  <!-- Son-in-law (to Rita, near car, in background doorway) -->
+  <g>
+    <ellipse cx="570" cy="288" rx="17" ry="29" fill="#bed2e5"/>
+    <ellipse cx="570" cy="265" rx="11" ry="13" fill="#d3b79f"/>
+    <ellipse cx="570" cy="255" rx="10" ry="8" fill="#bfa174"/>
+    <!-- Brown short hair -->
+    <ellipse cx="570" cy="253" rx="9" ry="5" fill="#6e4c22"/>
+    <!-- Eyes and smile -->
+    <ellipse cx="567" cy="258" rx="1.3" ry="2" fill="#30241b"/>
+    <ellipse cx="572" cy="258" rx="1.3" ry="2" fill="#30241b"/>
+    <path d="M567,265 Q570,268 573,265" stroke="#87613b" stroke-width="1" fill="none"/>
+    <!-- Shirt & pants -->
+    <rect x="563" y="270" width="13" height="25" rx="5" fill="#9ac0e6"/>
+    <rect x="565" y="295" width="5" height="16" rx="2" fill="#707f93"/>
+    <rect x="570" y="295" width="5" height="16" rx="2" fill="#707f93"/>
+    <!-- Shoes -->
+    <ellipse cx="567" cy="310" rx="4" ry="2" fill="#40434e"/>
+    <ellipse cx="573" cy="310" rx="4" ry="2" fill="#40434e"/>
+    <!-- Text label -->
+    <rect x="580" y="245" rx="4" ry="4" width="33" height="15" fill="#f9fafb" stroke="#adc6d4" stroke-width="1"/>
+    <text x="597" y="257" font-family="Arial" font-size="8" fill="#215a85" text-anchor="middle">son-in-law</text>
+  </g>
+  
+  <!-- Car visible through window (inferred, left background outside office window) -->
+  <g>
+    <rect x="40" y="110" width="60" height="25" rx="8" fill="#597caf" stroke="#395378" stroke-width="2" opacity="0.88"/>
+    <ellipse cx="60" cy="135" rx="12" ry="7" fill="#c2c2c2"/>
+    <ellipse cx="88" cy="135" rx="12" ry="7" fill="#c2c2c2"/>
+    <rect x="55" y="118" width="30" height="13" rx="4" fill="#b2c3e6" opacity="0.66"/>
+    <text x="70" y="125" font-family="Arial" font-size="7" fill="#191e24" text-anchor="middle">car</text>
+  </g>
+  
+  <!-- Doctor (foreground left, white coat, holding syringe) -->
+  <g>
+    <ellipse cx="120" cy="285" rx="18" ry="39" fill="#f6f8fa"/>
+    <ellipse cx="120" cy="245" rx="12" ry="16" fill="#ecd0b2"/>
+    <ellipse cx="120" cy="235" rx="11" ry="10" fill="#e1bb89"/>
+    <!-- Short brown hair -->
+    <ellipse cx="120" cy="229" rx="11" ry="6" fill="#927449"/>
+    <!-- Eyes and mouth (startled) -->
+    <ellipse cx="116" cy="236" rx="1" ry="2" fill="#2f2320"/>
+    <ellipse cx="124" cy="236" rx="1" ry="2" fill="#2f2320"/>
+    <path d="M116,242 Q120,244 124,242" stroke="#80664c" stroke-width="1" fill="none"/>
+    <!-- Left arm up holding syringe -->
+    <rect x="107" y="253" width="9" height="37" rx="5" fill="#f6f8fa" transform="rotate(-23 111 265)"/>
+    <!-- Syringe -->
+    <rect x="100" y="225" width="4" height="16" rx="2" fill="#b6e6f2" stroke="#2c2d2f" stroke-width="0.7"/>
+    <rect x="101" y="223" width="2" height="5" rx="1" fill="#a1a1a1"/>
+    <!-- Right arm backing away -->
+    <rect x="127" y="259" width="9" height="33" rx="5" fill="#f6f8fa" transform="rotate(20 131 270)"/>
+    <!-- Shoes -->
+    <ellipse cx="112" cy="323" rx="5" ry="2" fill="#8094ac"/>
+    <ellipse cx="128" cy="323" rx="5" ry="2" fill="#8094ac"/>
+    <!-- Text label -->
+    <rect x="87" y="215" rx="4" ry="4" width="35" height="15" fill="#fff" stroke="#bbc7d6" stroke-width="1"/>
+    <text x="105" y="226" font-family="Arial" font-size="8" fill="#426697" text-anchor="middle">doctor</text>
+  </g>
+
+  <!-- Nurse (middle, approaching, purple scrubs, friendly) -->
+  <g>
+    <ellipse cx="230" cy="282" rx="23" ry="40" fill="#ded0fa"/>
+    <ellipse cx="230" cy="242" rx="13" ry="17" fill="#e8c5ae"/>
+    <ellipse cx="230" cy="229" rx="11" ry="10" fill="#e6b88f"/>
+    <!-- Blonde hair bun -->
+    <ellipse cx="230" cy="222" rx="13" ry="7" fill="#e9d89b"/>
+    <!-- Eyes and smile -->
+    <ellipse cx="226" cy="232" rx="1.2" ry="2" fill="#2c211a"/>
+    <ellipse cx="234" cy="232" rx="1.2" ry="2" fill="#2c211a"/>
+    <path d="M226,238 Q230,243 234,238" stroke="#ba9278" stroke-width="2" fill="none"/>
+    <!-- Arm forward in greeting -->
+    <rect x="214" y="254" width="11" height="39" rx="6" fill="#ded0fa" transform="rotate(-17 220 265)"/>
+    <!-- Arm downward -->
+    <rect x="237" y="261" width="8" height="35" rx="5" fill="#ded0fa" transform="rotate(13 241 270)"/>
+    <!-- Shoes -->
+    <ellipse cx="223" cy="320" rx="7" ry="3" fill="#a38abe"/>
+    <ellipse cx="236" cy="320" rx="7" ry="3" fill="#a38abe"/>
+    <!-- Text label -->
+    <rect x="232" y="219" rx="4" ry="4" width="30" height="13" fill="#fff" stroke="#b4a7e1" stroke-width="1"/>
+    <text x="246" y="229" font-family="Arial" font-size="8" fill="#5d2d94" text-anchor="middle">nurse</text>
+  </g>
+  
+  <!-- Additional two nurses in background, less detailed -->
+  <g>
+    <!-- Nurse 1 (background, left) -->
+    <ellipse cx="200" cy="195" rx="9" ry="19" fill="#f4f0fa" opacity="0.85"/>
+    <ellipse cx="200" cy="183" rx="5" ry="7" fill="#ecd6bc" opacity="0.85"/>
+    <ellipse cx="200" cy="177" rx="4" ry="4" fill="#f3e1cc" opacity="0.85"/>
+    <rect x="196" y="203" width="7" height="11" rx="2" fill="#f4f0fa" opacity="0.85"/>
+    <!-- Nurse 2 (background, right) -->
+    <ellipse cx="410" cy="200" rx="9" ry="19" fill="#f4f0fa" opacity="0.85"/>
+    <ellipse cx="410" cy="188" rx="5" ry="7" fill="#ecd6bc" opacity="0.85"/>
+    <ellipse cx="410" cy="182" rx="4" ry="4" fill="#f3e1cc" opacity="0.85"/>
+    <rect x="406" y="208" width="7" height="11" rx="2" fill="#f4f0fa" opacity="0.85"/>
+  </g>
+
+  <!-- Leading lines on floor towards Mother (narrative focus) -->
+  <path d="M250,400 Q340,320 340,334 Q340,320 430,400" stroke="#bcbdbd" stroke-width="3" fill="none" opacity="0.54"/>
+  <!-- Subtle vignette / composition emphasis -->
+  <ellipse cx="340" cy="270" rx="155" ry="70" fill="#fff7eb" opacity="0.5"/>
+</svg>

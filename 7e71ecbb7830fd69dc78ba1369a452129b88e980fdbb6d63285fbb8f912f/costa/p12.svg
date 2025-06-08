@@ -1,0 +1,121 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background: Suburban evening with muted colors -->
+  <rect width="600" height="400" fill="#e8edf2"/>
+  <rect y="280" width="600" height="120" fill="#b5c8b8"/>
+  
+  <!-- Foreground: House facade -->
+  <rect x="110" y="110" width="280" height="170" fill="#ece3d8" stroke="#b8a493" stroke-width="3"/>
+  <rect x="117" y="145" width="80" height="60" fill="#c6c2b4"/>
+  <rect x="300" y="150" width="65" height="70" fill="#e0dad4"/>
+  <rect x="195" y="210" width="60" height="70" fill="#a88261" stroke="#7c6656" stroke-width="2"/>
+  <rect x="270" y="205" width="29" height="32" fill="#ece3d8" stroke="#b8a493" stroke-width="2"/>
+  
+  <!-- Front door step -->
+  <rect x="180" y="280" width="85" height="17" fill="#ad9e8a"/>
+  
+  <!-- Group: Main character being escorted, foreground, right side -->
+  <!-- Screaming woman (the narrator, wild hair, distressed face) -->
+  <g>
+    <ellipse cx="495" cy="255" rx="29" ry="55" fill="#f8d3bc"/>
+    <!-- Torn hair -->
+    <ellipse cx="495" cy="208" rx="37" ry="24" fill="#856b5a" opacity="0.7"/>
+    <path d="M480 190 Q495 175 510 190 Q512 208 495 198 Q478 208 480 190" fill="#6b594c"/>
+    <!-- Face: messy, shocked -->
+    <ellipse cx="495" cy="220" rx="19" ry="24" fill="#ffe6db"/>
+    <ellipse cx="490" cy="218" rx="3" ry="5" fill="#9d6e60"/>
+    <ellipse cx="502" cy="218" rx="3" ry="5" fill="#9d6e60"/>
+    <ellipse cx="495" cy="232" rx="6" ry="3" fill="#b87160"/>
+    <path d="M488 228 Q495 238 502 228" stroke="#bf5959" stroke-width="2" fill="none"/>
+    <!-- Open screaming mouth -->
+    <ellipse cx="495" cy="238" rx="8" ry="9" fill="#690707"/>
+    <!-- Clothing (light blue dress) -->
+    <ellipse cx="495" cy="275" rx="22" ry="27" fill="#a5b9e9"/>
+    <!-- Arms waving -->
+    <rect x="518" y="234" width="14" height="8" rx="4" fill="#ffe6db" transform="rotate(17 518 238)"/>
+    <rect x="462" y="234" width="14" height="8" rx="4" fill="#ffe6db" transform="rotate(-18 471 238)"/>
+    <!-- Text bubble: Screaming -->
+    <g>
+      <ellipse cx="532" cy="190" rx="32" ry="22" fill="#fff" stroke="#b0b0b0" stroke-width="1"/>
+      <text x="523" y="196" font-size="14" font-family="Arial" fill="#a83b3b">Aaaa!</text>
+      <polygon points="515,210 527,204 523,217" fill="#fff"/>
+    </g>
+  </g>
+  
+  <!-- Two people bringing her home (side, left, leading her) -->
+  <g>
+    <!-- Left helper: green shirt -->
+    <ellipse cx="470" cy="260" rx="9" ry="30" fill="#f0e0ce"/>
+    <ellipse cx="470" cy="224" rx="13" ry="15" fill="#e8b899"/>
+    <ellipse cx="470" cy="220" rx="10" ry="11" fill="#dbb48a"/>
+    <rect x="461" y="250" width="18" height="23" rx="5" fill="#67ac7b"/>
+    <!-- Right helper: purple shirt -->
+    <ellipse cx="520" cy="260" rx="9" ry="30" fill="#ecdabb"/>
+    <ellipse cx="520" cy="224" rx="13" ry="15" fill="#d7bbac"/>
+    <ellipse cx="520" cy="220" rx="10" ry="11" fill="#e0c1a4"/>
+    <rect x="511" y="250" width="18" height="23" rx="5" fill="#977fc1"/>
+  </g>
+  
+  <!-- Neighbors coming out of doors, background, left houses -->
+  <!-- House one (far left) -->
+  <rect x="15" y="140" width="70" height="80" fill="#c4c1c1" stroke="#9fa2a1" stroke-width="2"/>
+  <rect x="41" y="190" width="16" height="30" fill="#af9069"/>
+  <!-- Neighbor, peeking out -->
+  <g>
+    <ellipse cx="49" cy="185" rx="8" ry="10" fill="#e6be99"/>
+    <ellipse cx="49" cy="177" rx="13" ry="6" fill="#715d50"/>
+    <rect x="43" y="195" width="12" height="20" rx="2" fill="#b2bbd4"/>
+    <ellipse cx="49" cy="205" rx="5" ry="3" fill="#d7c7bc"/>
+    <text x="31" y="175" font-size="9" fill="#413c39" font-family="Arial" transform="rotate(-10 40 175)">What's going on?</text>
+  </g>
+  <!-- House two, more distant -->
+  <rect x="78" y="165" width="36" height="60" fill="#c3c3b0"/>
+  <rect x="93" y="202" width="12" height="20" fill="#ab9877"/>
+  <!-- Neighbor, glancing out -->
+  <ellipse cx="99" cy="202" rx="5" ry="6" fill="#ccb498"/>
+  <ellipse cx="99" cy="197" rx="9" ry="3" fill="#b1967f"/>
+  
+  <!-- Husband sitting on the step, front door -->
+  <g>
+    <ellipse cx="225" cy="285" rx="18" ry="14" fill="#dbc7b3"/>
+    <!-- Legs spread, shocked pose -->
+    <ellipse cx="215" cy="297" rx="9" ry="6" fill="#71615a"/>
+    <ellipse cx="235" cy="297" rx="9" ry="6" fill="#71615a"/>
+    <!-- Body -->
+    <rect x="212" y="273" width="25" height="20" rx="7" fill="#7eb3bc"/>
+    <!-- Head -->
+    <ellipse cx="225" cy="267" rx="10" ry="12" fill="#f4cc9f"/>
+    <!-- Face: shocked, hand to chest -->
+    <ellipse cx="221" cy="265" rx="2" ry="3" fill="#904b40"/>
+    <ellipse cx="229" cy="265" rx="2" ry="3" fill="#904b40"/>
+    <path d="M221 272 Q225 276 229 272" stroke="#903a2a" stroke-width="1.5" fill="none"/>
+    <!-- Hand clutching chest -->
+    <ellipse cx="230" cy="278" rx="4" ry="5" fill="#f4cc9f"/>
+    <!-- Speech bubble -->
+    <g>
+      <ellipse cx="265" cy="250" rx="37" ry="22" fill="#fff" stroke="#b0b0b0" stroke-width="1"/>
+      <text x="247" y="257" font-size="13" font-family="Arial" fill="#3a405a">What's the matter?</text>
+      <polygon points="241,265 249,260 247,271" fill="#fff"/>
+    </g>
+    <!-- Heart attack shock: red spiky icon near chest -->
+    <polygon points="233,275 236,269 239,275 245,273 241,279 246,285 239,283 236,289 233,283 229,287 232,281 227,277" fill="#ca2828"/>
+    <text x="246" y="295" font-size="9" font-family="Arial" fill="#a82828" font-weight="bold" transform="rotate(-24 246 295)">Heart attack!</text>
+  </g>
+  
+  <!-- Distressed narrator text label -->
+  <g>
+    <rect x="410" y="305" width="155" height="36" rx="9" fill="rgba(255,255,255,0.8)" stroke="#b57c7c" stroke-width="1"/>
+    <text x="418" y="324" font-size="14" font-family="Arial" fill="#a83b3b" font-weight="bold">
+      "Mike, we lost Marie. Marie died."
+    </text>
+  </g>
+  
+  <!-- Visual composition: emphasize center (husband) and right (narrator) with soft vignette -->
+  <radialGradient id="vignette" cx="55%" cy="72%" r="85%" fx="60%" fy="75%">
+    <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+    <stop offset="85%" stop-color="#000" stop-opacity="0.13"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.18"/>
+  </radialGradient>
+  <rect x="0" y="0" width="600" height="400" fill="url(#vignette)" pointer-events="none"/>
+
+</svg>

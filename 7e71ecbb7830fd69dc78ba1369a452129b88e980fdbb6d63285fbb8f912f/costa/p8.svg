@@ -1,0 +1,114 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background division: home (left), hospital (center right), office/store (top right) -->
+  <rect x="0" y="0" width="600" height="400" fill="#f6f2ed"/>
+
+  <!-- Left: Home scene -->
+  <rect x="0" y="0" width="220" height="400" fill="#d6e9fa"/>
+  <!-- Husband figure, sitting on the step -->
+  <rect x="40" y="280" width="60" height="20" rx="4" ry="4" fill="#aaa" /> <!-- Step -->
+  <ellipse cx="70" cy="265" rx="23" ry="27" fill="#ffe0c8" /> <!-- Body -->
+  <ellipse cx="70" cy="245" rx="13" ry="13" fill="#c6906b" /> <!-- Head -->
+  <ellipse cx="70" cy="295" rx="19" ry="8" fill="#afcfef" /> <!-- Shadow under step -->
+  <rect x="56" y="254" width="28" height="30" fill="#8fb2e2" /> <!-- Shirt -->
+  <rect x="56" y="284" width="8" height="18" fill="#cfd8e3" /> <!-- Left Pant Leg -->
+  <rect x="76" y="284" width="8" height="18" fill="#cfd8e3" /> <!-- Right Pant Leg -->
+  <ellipse cx="60" cy="302" rx="5" ry="3" fill="#764d2a" /> <!-- Left Shoe -->
+  <ellipse cx="80" cy="302" rx="5" ry="3" fill="#764d2a" /> <!-- Right Shoe -->
+  <!-- Shaving supplies: -->
+  <rect x="25" y="220" width="30" height="18" rx="4" fill="#fff" stroke="#aaa" stroke-width="1"/>
+  <rect x="28" y="225" width="8" height="6" rx="2" fill="#eee" stroke="#888" stroke-width="0.5"/>
+  <rect x="37" y="223" width="6" height="12" rx="2" fill="#aac" stroke="#556" stroke-width="0.5"/>
+  <text x="30" y="233" font-size="10" fill="#556" font-family="Arial">Shave</text>
+  <text x="32" y="318" font-size="12" fill="#445" font-family="Arial">Home</text>
+  <rect x="10" y="180" width="50" height="60" fill="#fff" stroke="#c9d7ef" stroke-width="2" />
+  <text x="15" y="200" font-size="11" fill="#665" font-family="Arial">Clothes<br/>Ready</text>
+  <!-- Door to right implying transition -->
+
+  <!-- Center: Daughter (Marie) in hospital bed -->
+  <g>
+    <rect x="220" y="150" width="140" height="100" rx="16" fill="#e5f3ee" stroke="#bbcfd1" stroke-width="2"/>
+    <!-- Hospital pillow and blanket -->
+    <rect x="235" y="170" width="50" height="50" rx="16" fill="#fff" stroke="#cadfe6" stroke-width="1"/>
+    <ellipse cx="260" cy="165" rx="15" ry="11" fill="#fdfafa" />
+    <rect x="235" y="200" width="50" height="32" rx="14" fill="#bbe4e9"/>
+    <!-- Marie (daughter) lying on bed -->
+    <ellipse cx="260" cy="185" rx="18" ry="17" fill="#f9d4d4" />
+    <!-- Closed eyes for lifelessness -->
+    <path d="M253 185 Q256 187 263 185" stroke="#945" stroke-width="1" fill="none"/>
+    <!-- Hair -->
+    <ellipse cx="260" cy="177" rx="13" ry="6" fill="#a88453"/>
+    <rect x="252" y="196" width="17" height="20" rx="8" fill="#f9d4d4"/> <!-- Torso -->
+    <rect x="255" y="215" width="4" height="18" rx="2" fill="#fac" opacity="0.7"/> <!-- One Arm -->
+    <!-- Label for Marie -->
+    <rect x="235" y="146" width="45" height="22" rx="8" fill="#c4e5d3" />
+    <text x="240" y="160" font-size="13" fill="#196969" font-family="Arial" font-weight="bold">Marie</text>
+    <!-- Mother's back turned (foreground silhouette) -->
+    <path d="M215 170 Q211 206 223 235 Q235 190 215 170" fill="#a6a09a" stroke="#b6b6b6" stroke-width="1"/>
+    <ellipse cx="217" cy="163" rx="7" ry="8" fill="#d8c1aa"/>
+    <text x="210" y="250" font-size="11" fill="#5b5555">Mother</text>
+    <!-- Hospital label -->
+    <rect x="270" y="140" width="76" height="24" rx="8" fill="#e6faf6" />
+    <text x="278" y="157" font-size="13" fill="#228b83" font-family="Arial" font-weight="bold">Hospital</text>
+  </g>
+  <!-- Left-pointing arrow from hospital to home (father waiting)-->
+  <path d="M255 200 L130 280" stroke="#3399cc" stroke-width="2" marker-end="url(#arrhead1)" />
+  <defs>
+    <marker id="arrhead1" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0,0 8,4 0,8" fill="#3399cc"/>
+    </marker>
+  </defs>
+  <text x="140" y="250" font-size="10" fill="#3399cc" font-family="Arial">Waiting for Marie</text>
+
+  <!-- Top right: Office/Store calls -->
+  <rect x="395" y="30" width="195" height="70" rx="18" fill="#fff6cc" stroke="#ccb780" stroke-width="2"/>
+  <rect x="420" y="60" width="40" height="28" rx="8" fill="#fef" stroke="#bbc" stroke-width="1"/>
+  <ellipse cx="440" cy="90" rx="8" ry="5" fill="#e2effa"/>
+  <text x="425" y="75" font-size="11" fill="#6c577b" font-family="Arial" font-weight="bold">Office</text>
+  <!-- Store element -->
+  <rect x="475" y="60" width="40" height="28" rx="8" fill="#eef2fa" stroke="#bbd" stroke-width="1"/>
+  <ellipse cx="495" cy="90" rx="8" ry="5" fill="#d9e7f7"/>
+  <text x="482" y="75" font-size="11" fill="#496888" font-family="Arial" font-weight="bold">Store</text>
+  <!-- Phone lines -->
+  <path d="M440 90 L300 165" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrowPhone)" />
+  <path d="M495 90 L300 165" stroke="#aaa" stroke-width="1.5" marker-end="url(#arrowPhone)" />
+  <defs>
+    <marker id="arrowPhone" markerWidth="5" markerHeight="5" refX="2" refY="2.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0,0 5,2.5 0,5" fill="#aaa"/>
+    </marker>
+  </defs>
+  <!-- Phone speech bubbles -->
+  <ellipse cx="478" cy="50" rx="13" ry="12" fill="#fffbe6" stroke="#dccd99" stroke-width="1"/>
+  <text x="468" y="54" font-size="9" fill="#554" font-family="Arial">Call</text>
+  <ellipse cx="415" cy="40" rx="7" ry="6" fill="#fffbe6" stroke="#dccd99" stroke-width="1"/>
+  <text x="408" y="44" font-size="8" fill="#554" font-family="Arial">Call</text>
+  <!-- Bubbles with text -->
+  <rect x="505" y="17" width="78" height="32" rx="10" fill="#fff" stroke="#ecd" stroke-width="1"/>
+  <text x="512" y="36" font-size="10" fill="#886" font-family="Arial">"When is the mother<br/>coming to pick up Marie?"</text>
+
+  <!-- Rita's speech bubble -->
+  <rect x="230" y="62" width="120" height="32" rx="14" fill="#f7f4fa" stroke="#aacec6" stroke-width="1"/>
+  <text x="240" y="81" font-size="12" fill="#7a4b6a" font-family="Arial">Rita: "That's strange,<tspan x="240" dy="14">the mother went to the hospital."</tspan></text>
+
+  <!-- Foreground emphasis: semi-transparent overlay around Marie in hospital bed -->
+  <ellipse cx="260" cy="200" rx="65" ry="48" fill="#fff" opacity="0.34"/>
+  <rect x="220" y="150" width="140" height="100" rx="16" stroke="#db4424" stroke-width="3" fill="none"/>
+  <text x="268" y="270" font-size="13" fill="#b4432b" font-family="Arial">She was discharged</text>
+
+  <!-- Leading lines: office/store calls and arrows guiding toward hospital bed -->
+  <path d="M485 90 Q470 120 330 180" stroke="#dda" stroke-width="1.2" fill="none"/>
+  <path d="M440 90 Q430 130 320 170" stroke="#dda" stroke-width="1.2" fill="none"/>
+
+  <!-- Group composition: subtle vignette around main hospital scene -->
+  <ellipse cx="290" cy="200" rx="110" ry="70" fill="#dbeef3" opacity="0.15"/>
+
+  <!-- Hospital staff searching -->
+  <g>
+    <rect x="360" y="265" width="55" height="35" rx="13" fill="#f2ffef" stroke="#b6d0ab" stroke-width="1"/>
+    <ellipse cx="388" cy="278" rx="10" ry="15" fill="#c2dfb5"/>
+    <!-- Hospital worker -->
+    <ellipse cx="388" cy="270" rx="8" ry="10" fill="#fff3de"/>
+    <ellipse cx="388" cy="265" rx="4.5" ry="5" fill="#d4b795"/>
+    <text x="365" y="293" font-size="10" fill="#5a9d52" font-family="Arial">Hospital Staff</text>
+    <text x="362" y="315" font-size="10" fill="#8a6b44" font-family="Arial">"Looking for you"</text>
+  </g>
+</svg>

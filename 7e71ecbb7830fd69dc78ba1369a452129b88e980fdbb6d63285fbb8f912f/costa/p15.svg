@@ -1,0 +1,168 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <radialGradient id="bgGradient" cx="50%" cy="60%" r="90%">
+      <stop offset="0%" stop-color="#f6f6f9"/>
+      <stop offset="100%" stop-color="#b5c4d7"/>
+    </radialGradient>
+    <linearGradient id="stepGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e0ded2"/>
+      <stop offset="100%" stop-color="#b1a47f"/>
+    </linearGradient>
+    <linearGradient id="storeGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e0eff5"/>
+      <stop offset="100%" stop-color="#b3c9d3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="3" flood-color="#999999" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  
+  <!-- Background houses and neighborhood -->
+  <rect x="0" y="0" width="600" height="400" fill="url(#bgGradient)"/>
+
+  <!-- HOUSE w/ Front Steps in the left/mid foreground -->
+  <g id="house-group">
+    <!-- House body -->
+    <rect x="85" y="84" width="135" height="110" rx="4" fill="#eae3c7" stroke="#a29e8f" stroke-width="2"/>
+    <!-- Door -->
+    <rect x="165" y="140" width="35" height="50" rx="3" fill="#c2ab84" stroke="#8b7b55" stroke-width="2"/>
+    <!-- Window -->
+    <rect x="107" y="110" width="36" height="25" rx="3" fill="#e7f2f6" stroke="#8ba9b7" stroke-width="2"/>
+    <!-- Roof -->
+    <polygon points="75,85 155,37 250,85" fill="#c1a87c" stroke="#927042" stroke-width="2"/>
+    <!-- Steps (focus of image) -->
+    <!-- Three steps visually clear, leading up to the door, highlighted for narrative focus -->
+    <g id="steps" filter="url(#shadow)">
+      <rect x="167" y="188" width="30" height="10" rx="2" fill="url(#stepGradient)" stroke="#9b9172" stroke-width="1.2"/>
+      <rect x="169" y="198" width="26" height="9" rx="2" fill="url(#stepGradient)" stroke="#a69b80" stroke-width="1"/>
+      <rect x="172" y="207" width="20" height="8" rx="2" fill="url(#stepGradient)" stroke="#9b9172" stroke-width="1"/>
+      <!-- Label for clarity -->
+      <text x="183" y="225" font-size="13" fill="#604820" font-family="Verdana" text-anchor="middle" font-weight="bold">Step</text>
+      <line x1="185" y1="219" x2="185" y2="213" stroke="#604820" stroke-width="1.2" marker-end="url(#arrow)"/>
+    </g>
+  </g>
+  
+  <!-- MARIE standing at the "step" (foreground, main focus) -->
+  <g id="Marie" filter="url(#shadow)">
+    <!-- Legs -->
+    <rect x="180" y="172" width="7" height="30" rx="2" fill="#a98560"/>
+    <rect x="189" y="172" width="7" height="30" rx="2" fill="#a07355"/>
+    <!-- Dress -->
+    <ellipse cx="187" cy="160" rx="18" ry="24" fill="#c9d6ef" stroke="#a6b5d3" stroke-width="2"/>
+    <!-- Arms, folded or gently at sides -->
+    <rect x="170" y="155" width="7" height="20" rx="3" fill="#fbe3cf" transform="rotate(15 170 165)"/>
+    <rect x="198" y="155" width="7" height="20" rx="3" fill="#fbe3cf" transform="rotate(-13 205 165)"/>
+    <!-- Head -->
+    <ellipse cx="187" cy="143" rx="11" ry="12" fill="#f8e2cb" stroke="#b59485" stroke-width="1"/>
+    <!-- Hair (brown, modest style) -->
+    <ellipse cx="187" cy="140" rx="11" ry="7" fill="#926d45"/>
+    <ellipse cx="187" cy="151" rx="6" ry="2.5" fill="#926d45"/>
+    <!-- Eyes and gentle mouth -->
+    <ellipse cx="184.5" cy="143.5" rx="1.2" ry="1.1" fill="#42331d"/>
+    <ellipse cx="189.5" cy="143.5" rx="1.2" ry="1.1" fill="#42331d"/>
+    <path d="M184,148 Q187,151 190,148" stroke="#be9770" stroke-width="1" fill="none"/>
+    <!-- Speech bubble, indirect (Marie is quiet so no speech) -->
+    <g>
+      <rect x="148" y="100" rx="11" ry="11" width="80" height="32" fill="rgba(255,255,255,0.92)" stroke="#92a1b8" stroke-width="1.5"/>
+      <text x="188" y="120" font-size="14" fill="#6e7a93" font-family="Verdana" text-anchor="middle">Marie</text>
+      <text x="188" y="133" font-size="11" fill="#7e8688" font-family="Verdana" text-anchor="middle">quiet &amp; pleasant</text>
+    </g>
+  </g>
+
+  <!-- Annie's Store (across the street, labeled) -->
+  <g id="store" filter="url(#shadow)">
+    <!-- Store body -->
+    <rect x="345" y="100" width="120" height="75" rx="6" fill="url(#storeGradient)" stroke="#7a94a5" stroke-width="2"/>
+    <!-- Store awning -->
+    <rect x="345" y="96" width="120" height="16" fill="#f6d5a1" stroke="#d3a863" stroke-width="1.5"/>
+    <!-- Store window -->
+    <rect x="355" y="120" width="45" height="36" rx="3" fill="#eaefff" stroke="#b1bbc2" stroke-width="1.2"/>
+    <!-- Store door -->
+    <rect x="420" y="134" width="28" height="37" rx="3" fill="#ececec" stroke="#b1bbc2" stroke-width="1"/>
+    <!-- Sign -->
+    <rect x="360" y="85" width="70" height="21" rx="7" fill="#fbe3b6" stroke="#d3a863" stroke-width="1"/>
+    <text x="395" y="98" font-size="14" fill="#a06225" font-family="Verdana" text-anchor="middle" font-weight="bold">Annie's Store</text>
+    <!-- Annie in doorway w/speech balloon -->
+    <g>
+      <!-- Annie's body (small, behind window/door) -->
+      <ellipse cx="434" cy="152" rx="7" ry="17" fill="#b1cee4" stroke="#5b6e7e" stroke-width="1"/>
+      <!-- Annie's head -->
+      <ellipse cx="434" cy="139" rx="6.5" ry="7" fill="#fddbb6" stroke="#bb9276" stroke-width="1"/>
+      <!-- Short brown hair -->
+      <ellipse cx="434" cy="137" rx="6.5" ry="4" fill="#a46936"/>
+      <!-- Text Speech Bubble -->
+      <g>
+        <rect x="445" y="105" rx="6" ry="6" width="108" height="44" fill="#ffffff" stroke="#cccccc" stroke-width="1.2"/>
+        <polygon points="445,125 438,129 445,131" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+        <text x="498" y="122" font-size="13" fill="#6d4c1e" font-family="Verdana" text-anchor="middle">
+          Mrs. Costa,
+        </text>
+        <text x="498" y="136" font-size="12" fill="#6d4c1e" font-family="Verdana" text-anchor="middle">
+          I just picture Marie
+        </text>
+        <text x="498" y="150" font-size="12" fill="#6d4c1e" font-family="Verdana" text-anchor="middle">
+          standing on that step.
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Mrs. Costa entering Annie's store (right, midground) -->
+  <g id="MrsCosta" filter="url(#shadow)">
+    <!-- Body -->
+    <ellipse cx="490" cy="172" rx="15" ry="27" fill="#d1a9c1" stroke="#835480" stroke-width="2"/>
+    <!-- Head -->
+    <ellipse cx="490" cy="146" rx="10" ry="12" fill="#fbe1c9" stroke="#b49486" stroke-width="1"/>
+    <!-- Grey bun -->
+    <ellipse cx="490" cy="137" rx="8" ry="5" fill="#bababa"/>
+    <!-- Arms -->
+    <rect x="477" y="157" width="8" height="25" rx="4" fill="#fbe1c9" transform="rotate(-17 485 170)"/>
+    <rect x="495" y="157" width="8" height="25" rx="4" fill="#fbe1c9" transform="rotate(12 495 170)"/>
+    <!-- Handbag -->
+    <ellipse cx="481" cy="190" rx="7" ry="4" fill="#dac29e" stroke="#945b0b" stroke-width="1.2"/>
+    <!-- Subtle label -->
+    <text x="488" y="208" font-size="11" fill="#a673a2" font-family="Verdana" text-anchor="middle">
+      Mrs. Costa
+    </text>
+  </g>
+
+  <!-- Other sisters and mother, grouped inside house window, visually distinct -->
+  <g id="familyInWindow">
+    <!-- Foreground grouping: color "halo" for grouping -->
+    <ellipse cx="125" cy="115" rx="34" ry="18" fill="#fffbe9" opacity="0.41"/>
+    <!-- Mother, centered -->
+    <ellipse cx="125" cy="122" rx="6" ry="8" fill="#fbe1c9" stroke="#b79a85" stroke-width="1"/>
+    <ellipse cx="125" cy="133" rx="10" ry="7" fill="#e89779"/>
+    <!-- Sister left -->
+    <ellipse cx="113" cy="124" rx="4" ry="7" fill="#ededcf" stroke="#cbb68c" stroke-width="1"/>
+    <ellipse cx="113" cy="132" rx="7" ry="5" fill="#cdd18d"/>
+    <!-- Sister right -->
+    <ellipse cx="137" cy="124" rx="4" ry="7" fill="#ffe7ee" stroke="#b299a7" stroke-width="1"/>
+    <ellipse cx="137" cy="132" rx="7" ry="5" fill="#eeb1c1"/>
+    <!-- Friendly label beneath window -->
+    <text x="125" y="153" font-size="11" fill="#635e4a" font-family="Verdana" text-anchor="middle">
+      Sisters &amp; Mother
+    </text>
+  </g>
+
+  <!-- Ground between house and store: sidewalk and faint street -->
+  <g>
+    <rect x="0" y="225" width="600" height="34" fill="#ede3d6"/>
+    <rect x="0" y="258" width="600" height="25" fill="#bdbabf" opacity="0.16"/>
+    <rect x="0" y="252" width="600" height="6" fill="#a6b4c2" opacity="0.19"/>
+    <!-- Dotted line for street divide -->
+    <line x1="160" y1="264" x2="420" y2="264" stroke="#b5b5bb" stroke-dasharray="14,7" stroke-width="2"/>
+  </g>
+
+  <!-- Subtle leading lines from Annie's store speech and from the step to Marie, emphasis -->
+  <polyline points="220,230 185,166" stroke="#af84db" stroke-width="2" opacity="0.21" marker-end="url(#arrow)"/>
+  <polyline points="472,139 185,152" stroke="#827fb2" stroke-width="2" opacity="0.16" marker-end="url(#arrow)"/>
+  
+  <defs>
+    <marker id="arrow" markerWidth="13" markerHeight="13" refX="2" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L2,11 L10,6 L2,2" fill="#927042" />
+    </marker>
+  </defs>
+
+</svg>

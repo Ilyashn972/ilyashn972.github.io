@@ -1,0 +1,150 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f4f6fa"/>
+
+  <!-- Closet (back left) -->
+  <rect x="35" y="60" width="90" height="120" rx="10" fill="#d0ced1" stroke="#9e9fa3" stroke-width="2"/>
+  <rect x="80" y="90" width="20" height="35" fill="#bfc5c7"/>
+  <text x="45" y="80" font-size="11" fill="#555" font-family="Verdana">Blanket Closet</text>
+  <!-- Stack of blankets -->
+  <rect x="60" y="132" width="40" height="10" fill="#ffe08a" rx="3"/>
+  <rect x="62" y="142" width="36" height="8" fill="#cecfff" rx="3"/>
+  <rect x="64" y="150" width="32" height="6" fill="#c8f4e6" rx="3"/>
+
+  <!-- Nurse's aide (foreground left, by closet) -->
+  <g>
+    <!-- Head -->
+    <ellipse cx="100" cy="200" rx="14" ry="17" fill="#FCD5B8" stroke="#c29c80" stroke-width="1"/>
+    <!-- Hair (brown bun) -->
+    <ellipse cx="100" cy="190" rx="10" ry="7" fill="#a88464"/>
+    <!-- Body/scrubs -->
+    <rect x="88" y="215" width="24" height="40" rx="12" fill="#aee6e3"/>
+    <!-- Arms -->
+    <rect x="74" y="215" width="13" height="7" rx="3" fill="#FCD5B8" transform="rotate(-15 74 215)"/>
+    <rect x="113" y="215" width="13" height="7" rx="3" fill="#FCD5B8" transform="rotate(15 113 215)"/>
+    <!-- Hands holding blue blanket -->
+    <ellipse cx="81" cy="217" rx="5" ry="4" fill="#FCD5B8"/>
+    <ellipse cx="122" cy="222" rx="5" ry="4" fill="#FCD5B8"/>
+    <!-- Blue blanket -->
+    <rect x="97" y="225" width="27" height="14" rx="6" fill="#9cb6f8"/>
+    <!-- Legs -->
+    <rect x="94" y="255" width="7" height="20" rx="3.5" fill="#6fa0a0"/>
+    <rect x="109" y="255" width="7" height="20" rx="3.5" fill="#6fa0a0"/>
+    <!-- Label "Nurse's Aide" -->
+    <text x="73" y="290" font-size="10" fill="#4ca0a6" font-family="Verdana">Nurse's Aide</text>
+    <!-- Speech bubble -->
+    <rect x="67" y="180" width="79" height="19" rx="9" fill="#fff" stroke="#aad7e6" stroke-width="1"/>
+    <text x="73" y="194" font-size="10" fill="#41778a" font-family="Verdana">She's going into a cold sweat now</text>
+  </g>
+  
+  <!-- Nurse at center with phone -->
+  <g>
+    <!-- Body (white uniform) -->
+    <rect x="210" y="165" width="43" height="54" rx="15" fill="#fff"/>
+    <!-- Arms -->
+    <rect x="204" y="190" width="12" height="8" rx="3" fill="#ffe5be" transform="rotate(-18 204 190)"/>
+    <rect x="243" y="190" width="12" height="8" rx="3" fill="#ffe5be" transform="rotate(12 243 190)"/>
+    <!-- Head -->
+    <ellipse cx="231" cy="157" rx="14" ry="16" fill="#ffe5be" stroke="#d9b18d" stroke-width="1"/>
+    <!-- Hair (short gray) -->
+    <ellipse cx="231" cy="148" rx="13" ry="7" fill="#bdc2c6"/>
+    <!-- Hat -->
+    <rect x="218" y="139" width="25" height="9" rx="4" fill="#fff" stroke="#bdc2c6" stroke-width="1"/>
+    <!-- Phone in hand -->
+    <rect x="249" y="177" width="14" height="4" rx="2" fill="#313951"/>
+    <!-- Legs -->
+    <rect x="218" y="218" width="7" height="26" rx="3.5" fill="#e4e5e8"/>
+    <rect x="235" y="218" width="7" height="26" rx="3.5" fill="#e4e5e8"/>
+    <!-- Label "Nurse" -->
+    <text x="215" y="255" font-size="11" fill="#3d4c55" font-family="Verdana">Nurse</text>
+
+    <!-- Speech bubble -->
+    <rect x="252" y="135" width="105" height="26" rx="11" fill="#fff" stroke="#a6c8c8" stroke-width="1"/>
+    <text x="258" y="148" font-size="12" fill="#2a8386" font-family="Verdana">Mrs. Costa, has your<br/>daughter ever fainted?</text>
+  </g>
+
+  <!-- Mother (foreground, left of bed, in distress) -->
+  <g>
+    <!-- Body -->
+    <ellipse cx="326" cy="235" rx="17" ry="38" fill="#c77c64"/>
+    <!-- House dress -->
+    <rect x="310" y="230" width="32" height="61" rx="16" fill="#f7d3aa"/>
+    <!-- Arms raised -->
+    <rect x="289" y="226" width="12" height="7" rx="3" fill="#ffcead" transform="rotate(-30 289 226)"/>
+    <rect x="349" y="226" width="12" height="7" rx="3" fill="#ffcead" transform="rotate(32 349 226)"/>
+    <!-- Hands -->
+    <ellipse cx="283" cy="220" rx="7" ry="6" fill="#ffcead"/>
+    <ellipse cx="360" cy="221" rx="7" ry="6" fill="#ffcead"/>
+    <!-- Head (agonized) -->
+    <ellipse cx="326" cy="208" rx="16" ry="17" fill="#ffcead" stroke="#b78463" stroke-width="1"/>
+    <!-- Eyebrows (raised) -->
+    <path d="M319 203 Q326 200 333 204" stroke="#7b500b" stroke-width="2" fill="none"/>
+    <!-- Eyes (wide) -->
+    <ellipse cx="322" cy="210" rx="2" ry="4" fill="#3d2721"/>
+    <ellipse cx="330" cy="210" rx="2" ry="4" fill="#3d2721"/>
+    <!-- Mouth (open scream) -->
+    <ellipse cx="326" cy="216" rx="5.5" ry="4" fill="#a82a27"/>
+    <!-- Legs -->
+    <rect x="316" y="288" width="8" height="25" rx="3.5" fill="#f2b983"/>
+    <rect x="334" y="288" width="8" height="25" rx="3.5" fill="#f2b983"/>
+    <!-- Label "Mrs. Costa" -->
+    <text x="307" y="320" font-size="11" fill="#a85c42" font-family="Verdana">Mrs. Costa</text>
+    <!-- Speech bubble (large, distressed) -->
+    <rect x="358" y="182" width="180" height="48" rx="20" fill="#fff" stroke="#e67981" stroke-width="2"/>
+    <text x="368" y="202" font-size="14" fill="#b02b29" font-family="Verdana" font-weight="bold">What did you do, kill my daughter?<tspan x="368" dy="16">You killed her! You killed her!</tspan></text>
+  </g>
+
+  <!-- Hospital bed with daughter -->
+  <g>
+    <!-- Bedframe -->
+    <rect x="400" y="120" width="170" height="110" rx="16" fill="#c2ccdb" stroke="#8795a8" stroke-width="2"/>
+    <!-- Bed mattress -->
+    <rect x="410" y="140" width="150" height="60" rx="10" fill="#fff"/>
+    <!-- Pillow -->
+    <rect x="420" y="130" width="56" height="18" rx="9" fill="#e3e7ed"/>
+    <!-- Daughter's body (lying) -->
+    <ellipse cx="450" cy="165" rx="27" ry="18" fill="#ffe0c6"/>
+    <!-- Bedroom slippers (pink) -->
+    <ellipse cx="420" cy="198" rx="12" ry="7" fill="#ffcae3" stroke="#c17cb8" stroke-width="1"/>
+    <ellipse cx="432" cy="200" rx="12" ry="7" fill="#ffcae3" stroke="#c17cb8" stroke-width="1"/>
+    <!-- Legs -->
+    <rect x="430" y="178" width="13" height="25" rx="6" fill="#f8dfc4"/>
+    <rect x="419" y="176" width="13" height="28" rx="6" fill="#f8dfc4"/>
+    <!-- Housecoat (teal) -->
+    <rect x="440" y="151" width="36" height="34" rx="10" fill="#8fded9"/>
+    <ellipse cx="456" cy="185" rx="19" ry="7" fill="#8fded9"/>
+    <!-- Head -->
+    <ellipse cx="463" cy="143" rx="13" ry="14" fill="#ffe0c6" stroke="#cdac96" stroke-width="1"/>
+    <!-- Closed eyes (faint) -->
+    <path d="M459 145 Q463 149 467 145" stroke="#ac847b" stroke-width="2" fill="none"/>
+    <!-- Mouth (small, faint line) -->
+    <rect x="461" y="150" width="5" height="2" rx="1" fill="#b89180"/>
+
+    <!-- Beads of sweat (large) -->
+    <ellipse cx="470" cy="149" rx="6" ry="10" fill="#52bce8" opacity="0.75"/>
+    <ellipse cx="457" cy="162" rx="6" ry="10" fill="#aae5f8" opacity="0.66"/>
+    <ellipse cx="464" cy="176" rx="6" ry="10" fill="#52bce8" opacity="0.55"/>
+    <ellipse cx="475" cy="156" rx="5" ry="8" fill="#aae5f8" opacity="0.7"/>
+    <!-- More beads (pouring) -->
+    <ellipse cx="478" cy="172" rx="5.5" ry="8.5" fill="#52bce8" opacity="0.5"/>
+
+    <!-- Label -->
+    <text x="460" y="203" font-size="12" fill="#226969" font-family="Verdana">Daughter</text>
+    <!-- Arrow label for huge sweat -->
+    <path d="M500 144 Q515 130 485 158" stroke="#35a1d9" stroke-width="2" fill="none"/>
+    <text x="505" y="134" font-size="11" fill="#2981a5" font-family="Verdana">Big sweat</text>
+  </g>
+
+  <!-- Emphasis: Leading lines towards daughter -->
+  <path d="M186 275 Q340 200 450 147" stroke="#bee1e6" stroke-width="8" fill="none" opacity="0.45"/>
+  <path d="M370 309 Q400 270 464 164" stroke="#bee1e6" stroke-width="7" fill="none" opacity="0.30"/>
+  
+  <!-- Doorway to hospital room (background) -->
+  <rect x="380" y="110" width="60" height="120" rx="10" fill="none" stroke="#bcbec6" stroke-width="4"/>
+  <text x="390" y="120" font-size="10" fill="#667" font-family="Verdana">Hospital Room</text>
+  
+  <!-- Visual group emphasis: faint white ellipse under bed for focus -->
+  <ellipse cx="490" cy="190" rx="70" ry="36" fill="#fff" opacity="0.33"/>
+  
+</svg>

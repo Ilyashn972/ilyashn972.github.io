@@ -1,0 +1,117 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: hospital hallway -->
+  <rect width="600" height="400" fill="#e7eaf0"/>
+  <!-- Hospital corridor details -->
+  <rect x="30" y="50" width="540" height="300" rx="22" fill="#c6cbd9" opacity="0.4"/>
+  <rect x="60" y="90" width="480" height="230" rx="18" fill="#f2f3f6"/>
+  <!-- Door with sign "Hospital" -->
+  <rect x="500" y="110" width="60" height="100" rx="8" fill="#bcd2db"/>
+  <rect x="510" y="115" width="40" height="15" rx="3" fill="#6b8290"/>
+  <text x="530" y="127" font-family="Verdana" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">Hospital</text>
+  <!-- Marie (central collapsed figure) -->
+  <g>
+    <ellipse cx="290" cy="220" rx="40" ry="16" fill="#bdb8a9" opacity="0.42"/>
+    <ellipse cx="270" cy="200" rx="22" ry="36" fill="#f9e7d2" stroke="#bfb189" stroke-width="2"/>
+    <!-- Marie's skirt and shirt -->
+    <ellipse cx="270" cy="227" rx="25" ry="15" fill="#cec2fb" stroke="#aaa3de" stroke-width="2"/>
+    <rect x="255" y="200" width="30" height="22" rx="8" fill="#c3e4f5"/>
+    <!-- Head -->
+    <ellipse cx="270" cy="180" rx="13" ry="13" fill="#ffe2c2" stroke="#c2a789" stroke-width="1"/>
+    <!-- Eyes closed -->
+    <ellipse cx="266" cy="185" rx="2" ry="1" fill="#705c4c"/>
+    <ellipse cx="274" cy="185" rx="2" ry="1" fill="#705c4c"/>
+    <!-- Faint sad smile -->
+    <path d="M267 190 Q270 193 273 190" stroke="#966155" stroke-width="1" fill="none"/>
+    <!-- Marie's speech bubble -->
+    <rect x="285" y="157" rx="9" ry="9" width="105" height="37" fill="#fff" stroke="#c5bfb8" stroke-width="1.5"/>
+    <polygon points="285,190 285,176 274,186" fill="#fff"/>
+    <text x="292" y="172" font-family="Verdana" font-size="11" fill="#333">
+      Oh, I've got a pain 
+      <tspan x="292" dy="13">in my leg and I</tspan>
+      <tspan x="292" dy="13">can't see.</tspan>
+    </text>
+  </g>
+  <!-- The girl walking with Marie (left, reaching hand out) -->
+  <g>
+    <ellipse cx="220" cy="190" rx="15" ry="28" fill="#faf6ee" stroke="#bbb1a6" stroke-width="1.7"/>
+    <!-- Skirt and clothing -->
+    <rect x="206" y="194" width="28" height="22" rx="7" fill="#aad6c8"/>
+    <!-- Head -->
+    <ellipse cx="230" cy="175" rx="11" ry="12" fill="#ffe2c2" stroke="#c2a789" stroke-width="1"/>
+    <!-- Face (concerned) -->
+    <ellipse cx="227" cy="179" rx="2" ry="1.3" fill="#5d483a"/>
+    <ellipse cx="233" cy="179" rx="2" ry="1.3" fill="#5d483a"/>
+    <path d="M228 185 Q230 187 232 185" stroke="#b97f66" stroke-width="1" fill="none"/>
+    <!-- Arm reaching toward Marie -->
+    <rect x="235" y="190" width="16" height="7" rx="3.5" fill="#ffe2c2" transform="rotate(15 235 190)"/>
+  </g>
+  <!-- Doctor on the right, perplexed expression, clipboard -->
+  <g>
+    <ellipse cx="355" cy="185" rx="19" ry="31" fill="#d0e5f4" stroke="#527da8" stroke-width="1.5"/>
+    <rect x="341" y="192" width="26" height="22" rx="7" fill="#f8edcf"/>
+    <!-- Head and doctor's coat -->
+    <ellipse cx="355" cy="167" rx="10" ry="11" fill="#ffe2c2" stroke="#c2a789" stroke-width="1"/>
+    <!-- Eyes and mouth -->
+    <ellipse cx="352" cy="171" rx="2" ry="1.1" fill="#5d483a"/>
+    <ellipse cx="357" cy="171" rx="2" ry="1.1" fill="#5d483a"/>
+    <path d="M353 175 Q355 178 358 175" stroke="#ba996b" stroke-width="1" fill="none"/>
+    <!-- Stethoscope -->
+    <ellipse cx="364" cy="180" rx="4" ry="1.4" fill="#333"/>
+    <path d="M357 171 Q357 183 364 180" stroke="#666" stroke-width="1"/>
+    <!-- Clipboard -->
+    <rect x="371" y="193" width="13" height="17" rx="2" fill="#ffe9c6" stroke="#bead8f" stroke-width="0.8"/>
+    <rect x="377" y="193" width="5" height="2" rx="1" fill="#b7b1a2"/>
+  </g>
+  <!-- "Blood clot" speech bubble from doctor -->
+  <rect x="386" y="152" rx="8" ry="8" width="110" height="28" fill="#fff" stroke="#cbc5bb" stroke-width="1"/>
+  <polygon points="386,180 386,173 355,170" fill="#fff"/>
+  <text x="395" y="168" font-family="Verdana" font-size="12" fill="#3a3a3a">They said it was a blood clot.</text>
+  <!-- The mother (foreground right, angry, hand up) -->
+  <g>
+    <ellipse cx="480" cy="255" rx="27" ry="61" fill="#f6dbc7" stroke="#cfbb95" stroke-width="2"/>
+    <ellipse cx="479" cy="175" rx="18" ry="19" fill="#fde1c2" stroke="#be987c" stroke-width="1"/>
+    <!-- Eyebrows, furious eyes -->
+    <path d="M475 179 Q480 174 485 179" stroke="#533822" stroke-width="2" fill="none"/>
+    <ellipse cx="475" cy="182" rx="2.5" ry="1.3" fill="#4e3120"/>
+    <ellipse cx="486" cy="182" rx="2.5" ry="1.3" fill="#4e3120"/>
+    <!-- Angry mouth -->
+    <path d="M478 190 Q482 185 487 190" stroke="#d14a36" stroke-width="2" fill="none"/>
+    <!-- Arm raised -->
+    <rect x="490" y="173" width="38" height="10" rx="4.2" fill="#fde1c2" transform="rotate(-28 490 173)"/>
+    <!-- Left hand, palm up -->
+    <ellipse cx="527" cy="166" rx="7.2" ry="5.3" fill="#fde1c2"/>
+    <!-- Mom's speech bubble -->
+    <rect x="370" y="60" rx="10" ry="10" width="180" height="48" fill="#ffe3cf" stroke="#c87b69" stroke-width="2"/>
+    <polygon points="495,108 480,138 505,111" fill="#ffe3cf"/>
+    <text x="380" y="76" font-family="Verdana" font-size="13" fill="#8e320d">
+      Don't you dare touch my daughter.<tspan x="380" dy="14">I'll burn this hospital down!</tspan>
+      <tspan x="380" dy="14">Find out what she died from.</tspan>
+      <tspan x="380" dy="14">If you touch her, I'll kill you.</tspan>
+    </text>
+  </g>
+  <!-- Subtle arrows/groupings for narrative focus -->
+  <defs>
+    <marker id="arrowhead" markerWidth="7" markerHeight="6" refX="2" refY="3" orient="auto">
+      <polygon points="0 0, 7 3, 0 6" fill="#fd7044"/>
+    </marker>
+  </defs>
+  <!-- Leading lines from Marie to mother and doctor -->
+  <line x1="270" y1="190" x2="355" y2="170" stroke="#fd7044" stroke-width="2" marker-end="url(#arrowhead)" opacity="0.38"/>
+  <line x1="270" y1="190" x2="480" y2="195" stroke="#e62525" stroke-width="2.5" marker-end="url(#arrowhead)" opacity="0.6"/>
+  <!-- Label for Marie -->
+  <rect x="240" y="240" width="62" height="22" rx="7" fill="#fff6b7" stroke="#cbbd7e" stroke-width="1"/>
+  <text x="271" y="255" font-family="Verdana" font-size="13" fill="#8e6d24" font-weight="bold" text-anchor="middle">Marie</text>
+  <!-- Label for Marie's mother -->
+  <rect x="490" y="275" width="80" height="20" rx="7" fill="#fededc" stroke="#d48071" stroke-width="1"/>
+  <text x="530" y="290" font-family="Verdana" font-size="13" fill="#be6357" font-weight="bold" text-anchor="middle">Mother</text>
+  <!-- Label for the girl walking with Marie -->
+  <rect x="180" y="160" width="50" height="20" rx="7" fill="#ccf4e6" stroke="#91bcaa" stroke-width="1"/>
+  <text x="205" y="175" font-family="Verdana" font-size="12" fill="#429676" font-weight="bold" text-anchor="middle">
+    Friend
+  </text>
+  <!-- Label for Doctor -->
+  <rect x="355" y="210" width="58" height="17" rx="6" fill="#d5eeff" stroke="#81a0af" stroke-width="1"/>
+  <text x="384" y="222" font-family="Verdana" font-size="12" fill="#446483" font-weight="bold" text-anchor="middle">
+    Doctor
+  </text>
+</svg>

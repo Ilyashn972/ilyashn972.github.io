@@ -1,0 +1,123 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#ede8f4"/>
+
+  <!-- Hospital Bed - foreground left -->
+  <rect x="70" y="180" width="180" height="60" rx="12" fill="#e0eaf6" stroke="#b7c8db" stroke-width="2"/>
+  <!-- Pillow -->
+  <rect x="80" y="188" width="54" height="30" rx="8" fill="#f9fcfe" stroke="#d6e0e7" stroke-width="1"/>
+
+  <!-- The Daughter (lying in bed) -->
+  <!-- Face -->
+  <ellipse cx="107" cy="203" rx="17" ry="18" fill="#fbe5d6" stroke="#ebcab9" stroke-width="1.2"/>
+  <!-- Hair -->
+  <ellipse cx="107" cy="200" rx="21" ry="16" fill="#b57655"/>
+  <!-- Closed Eyes -->
+  <path d="M99 204 Q107 206 115 204" stroke="#9b6b50" stroke-width="1.2" fill="none"/>
+  <!-- Mouth (faint) -->
+  <path d="M104 211 Q107 213 110 211" stroke="#d39e9e" stroke-width="1" fill="none"/>
+  <!-- Blanket over torso -->
+  <rect x="90" y="217" width="60" height="18" rx="8" fill="#dbeafe" opacity="0.8"/>
+
+  <!-- Picture Frame: Daughter's Picture (bottom left) -->
+  <rect x="50" y="300" width="52" height="66" rx="7" fill="#fff" stroke="#cbbbaa" stroke-width="2"/>
+  <ellipse cx="76" cy="332" rx="16" ry="19" fill="#fbe5d6"/>
+  <ellipse cx="76" cy="326" rx="17" ry="11" fill="#b57655"/>
+  <!-- Smile and eyes on photo -->
+  <ellipse cx="70" cy="328" rx="1.2" ry="2" fill="#7e4f36"/>
+  <ellipse cx="81.5" cy="328" rx="1.2" ry="2" fill="#7e4f36"/>
+  <path d="M72 337 Q76 341 80 337" stroke="#b47370" stroke-width="1" fill="none"/>
+  <text x="76" y="361" font-size="12" fill="#4e391d" text-anchor="middle">Her picture</text>
+
+  <!-- Mother - Foreground, Near Bed (Mrs. Costa, hair pulled, hysterical) -->
+  <!-- Body -->
+  <rect x="180" y="220" width="50" height="90" rx="20" fill="#ccc4ea"/>
+  <!-- Arm outstretched -->
+  <rect x="210" y="250" width="44" height="14" rx="7" fill="#ccc4ea" transform="rotate(-8 210 250)"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="215" rx="20" ry="22" fill="#ecd6b6" stroke="#cebc9b" stroke-width="1.2"/>
+  <!-- Hysterical, hair pulled out effect -->
+  <ellipse cx="200" cy="203" rx="24" ry="15" fill="#ede4d0"/>
+  <path d="M190 189 Q200 192 210 189" stroke="#b59570" stroke-width="3" fill="none"/>
+  <path d="M188 200 Q200 207 212 200" stroke="#b59570" stroke-width="3" fill="none"/>
+  <!-- Screaming mouth -->
+  <ellipse cx="200" cy="225" rx="7" ry="6" fill="#9b2835"/>
+  <!-- Eye (wide open) -->
+  <ellipse cx="192.5" cy="213" rx="2.3" ry="3.5" fill="#4b3b29"/>
+  <ellipse cx="208" cy="213" rx="2.3" ry="3.5" fill="#4b3b29"/>
+  <!-- Tears -->
+  <ellipse cx="194" cy="217" rx="1" ry="2.2" fill="#bde9fb"/>
+  <ellipse cx="206" cy="217" rx="1" ry="2.2" fill="#bde9fb"/>
+
+  <!-- Speech Bubble (Mother) -->
+  <path d="M243 220 Q285 195 323 220 Q286 235 243 220" fill="#fff6c1" stroke="#e1cf93" stroke-width="1"/>
+  <text x="280" y="217" font-size="13" fill="#65321f" font-family="Arial" text-anchor="middle">
+    "You killed my daughter!"
+  </text>
+
+  <!-- Dr. Montique (lady doctor) - center, facing mother -->
+  <!-- Body -->
+  <rect x="330" y="195" width="52" height="90" rx="18" fill="#aadbdb"/>
+  <!-- Arm toward mother -->
+  <rect x="328" y="222" width="38" height="12" rx="7" fill="#aadbdb" transform="rotate(-13 328 222)"/>
+  <!-- Face -->
+  <ellipse cx="352" cy="190" rx="16" ry="19" fill="#eed7c8" stroke="#c2b6ac" stroke-width="1.1"/>
+  <!-- Brown hair -->
+  <ellipse cx="352" cy="182" rx="19" ry="11" fill="#836155"/>
+  <!-- Calm expression -->
+  <ellipse cx="347" cy="191" rx="1.4" ry="2.7" fill="#5d4230"/>
+  <ellipse cx="356" cy="192" rx="1.4" ry="2.7" fill="#5d4230"/>
+  <path d="M348 198 Q352 202 355 198" stroke="#a88789" stroke-width="1" fill="none"/>
+  <!-- Name Tag -->
+  <rect x="355" y="265" width="34" height="12" rx="3" fill="#fff"/>
+  <text x="372" y="274" font-size="8" fill="#42a0b3" text-anchor="middle">Dr. Montique</text>
+  <!-- Speech Bubble (Dr. Montique) -->
+  <path d="M363 175 Q396 147 413 177 Q396 195 363 175" fill="#fff" stroke="#c7c6b2" stroke-width="1"/>
+  <text x="389" y="172" font-size="11" fill="#555" font-family="Arial" text-anchor="middle">
+    "We don't know what happened, Mrs. Costa."
+  </text>
+
+  <!-- Nurse, behind (comforting) -->
+  <!-- Body -->
+  <rect x="270" y="160" width="40" height="87" rx="13" fill="#cdeee4"/>
+  <!-- Head -->
+  <ellipse cx="290" cy="148" rx="13" ry="14" fill="#f3e9db"/>
+  <!-- Blonde hair cap -->
+  <ellipse cx="290" cy="140" rx="15" ry="7" fill="#ecd8a6"/>
+  <!-- Mouth, encouraging small smile -->
+  <path d="M286 155 Q290 158 294 155" stroke="#ab9276" stroke-width="1" fill="none"/>
+  <!-- Eyes -->
+  <ellipse cx="287" cy="150" rx="1.2" ry="2" fill="#5a4b27"/>
+  <ellipse cx="292.5" cy="150" rx="1.2" ry="2" fill="#5a4b27"/>
+  <!-- Speech Bubble (Nurse) -->
+  <path d="M313 162 Q340 135 343 164 Q338 175 313 162" fill="#e3fff4" stroke="#aee6cc" stroke-width="1"/>
+  <text x="332" y="155" font-size="12" fill="#40655a" font-family="Arial" text-anchor="middle">
+    "Talk to her."
+  </text>
+
+  <!-- Dr. Schwartz (mentioned as operating doctor, in background right) -->
+  <!-- Body -->
+  <rect x="450" y="122" width="38" height="84" rx="12" fill="#cad1e9"/>
+  <!-- Head -->
+  <ellipse cx="469" cy="114" rx="12" ry="13" fill="#efe0bd"/>
+  <!-- Hair (gray) -->
+  <ellipse cx="469" cy="108" rx="14" ry="6" fill="#b5babd"/>
+  <!-- Small name label -->
+  <rect x="463" y="175" width="32" height="10" rx="3" fill="#fff"/>
+  <text x="479" y="183" font-size="7" fill="#216082" text-anchor="middle">Dr. Schwartz</text>
+  <!-- Stethoscope -->
+  <ellipse cx="486" cy="164" rx="10" ry="3.2" fill="none" stroke="#767575" stroke-width="2"/>
+  <rect x="472" y="145" width="6" height="13" rx="2.8" fill="#767575"/>
+
+  <!-- Subtle composition elements -->
+  <!-- Diagonal white lines subtly leading from bottom left (daughter/photo) toward mother and doctors -->
+  <line x1="76" y1="332" x2="200" y2="215" stroke="#fff" stroke-width="1.3" opacity="0.18"/>
+  <line x1="130" y1="245" x2="352" y2="190" stroke="#fff" stroke-width="1.3" opacity="0.18"/>
+
+  <!-- Framing: Soft vignette to group scene center -->
+  <ellipse cx="270" cy="210" rx="280" ry="170" fill="none" stroke="#dacff7" stroke-width="44" opacity="0.18"/>
+
+  <!-- Label for setting -->
+  <rect x="375" y="30" width="120" height="30" rx="12" fill="#faf6dc" stroke="#e9debb" stroke-width="1.5"/>
+  <text x="435" y="50" font-size="18" fill="#726e57" font-family="Arial" text-anchor="middle">Hospital Room</text>
+</svg>

@@ -1,0 +1,99 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: Hospital room with pale walls and a window -->
+  <rect x="0" y="0" width="600" height="400" fill="#e9f2f6"/>
+  <rect x="410" y="60" width="110" height="70" fill="#bcdaf0" stroke="#87aac0" stroke-width="3" rx="8"/>
+  <rect x="430" y="75" width="70" height="45" fill="#f4fafd" stroke="#b1d3eb" stroke-width="2"/>
+  <!-- Label: "Hospital" on the window pane -->
+  <text x="435" y="100" font-family="Arial" font-size="14" fill="#4582a6" font-weight="bold">Hospital</text>
+
+  <!-- Hospital Bed -->
+  <rect x="115" y="170" width="220" height="40" rx="12" fill="#d6e4ec" stroke="#b0bfc8" stroke-width="2"/>
+  <!-- Bed headboard and footboard -->
+  <rect x="110" y="160" width="12" height="60" rx="4" fill="#b0bfc8"/>
+  <rect x="325" y="160" width="12" height="60" rx="4" fill="#b0bfc8"/>
+
+  <!-- Patient (Mother) in bed, unconscious, under ether -->
+  <ellipse cx="200" cy="180" rx="28" ry="16" fill="#f9d6ca" stroke="#d3ab98" stroke-width="1"/>
+  <!-- Ether mask -->
+  <ellipse cx="218" cy="182" rx="12" ry="7" fill="#a0bddb" opacity="0.9"/>
+  <rect x="225" y="185" width="6" height="12" fill="#b0cee7"/>
+  <!-- Ether mist -->
+  <ellipse cx="235" cy="195" rx="10" ry="5" fill="#e3eef7" opacity="0.4"/>
+  <ellipse cx="240" cy="200" rx="7" ry="3" fill="#e3eef7" opacity="0.25"/>
+  <!-- Blanket and pillow -->
+  <rect x="156" y="185" width="110" height="22" rx="8" fill="#f1f8fb" stroke="#c9dde3" stroke-width="1"/>
+  <rect x="170" y="196" width="80" height="15" rx="7" fill="#a7c7e7" opacity="0.9"/>
+  <!-- Patient's Arm visible on the blanket -->
+  <ellipse cx="188" cy="208" rx="11" ry="6" fill="#f9d6ca"/>
+
+  <!-- Victoria (oldest daughter) standing at bedside -->
+  <g>
+    <!-- Body -->
+    <rect x="365" y="168" width="28" height="60" rx="14" fill="#FFE3B8" stroke="#e9c095" stroke-width="1"/>
+    <ellipse cx="379" cy="155" rx="14" ry="15" fill="#f9d6ca" stroke="#d3ab98" stroke-width="1"/>
+    <!-- Hair -->
+    <ellipse cx="379" cy="148" rx="15" ry="8" fill="#c98454"/>
+    <!-- Dress -->
+    <rect x="362" y="215" width="34" height="45" rx="10" fill="#d9b2e2" stroke="#9e7ca5" stroke-width="1"/>
+    <!-- Arm pointing at chair -->
+    <rect x="382" y="185" width="45" height="12" rx="7" fill="#f9d6ca" transform="rotate(-12 382 185)"/>
+    <!-- Text label: "Victoria" -->
+    <text x="357" y="248" font-family="Arial" font-size="12" fill="#772b16" font-weight="bold">Victoria</text>
+    <!-- Speech bubble -->
+    <ellipse cx="426" cy="175" rx="40" ry="18" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    <text x="408" y="179" font-family="Arial" font-size="11" fill="#355d85">What’s this chair<br/>doing here?</text>
+    <!-- Line from mouth to bubble -->
+    <line x1="393" y1="163" x2="400" y2="171" stroke="#bbb" stroke-width="1"/>
+  </g>
+
+  <!-- Nurse present -->
+  <g>
+    <!-- Nurse's body -->
+    <rect x="470" y="161" width="29" height="62" rx="14" fill="#c2e5e7" stroke="#76b3b0" stroke-width="1"/>
+    <ellipse cx="484.5" cy="147" rx="13" ry="15" fill="#ffefdc" stroke="#d1c1b2" stroke-width="1"/>
+    <!-- Cap -->
+    <rect x="474" y="135" width="21" height="10" rx="4" fill="#fff" stroke="#a9d3e3" stroke-width="1"/>
+    <rect x="480" y="139" width="9" height="2" fill="#699bb0" rx="1"/>
+    <!-- Scrubs dress -->
+    <rect x="466" y="215" width="37" height="45" rx="12" fill="#aed8e4" stroke="#76b3b0" stroke-width="1"/>
+    <!-- Arms (one extended toward Victoria) -->
+    <rect x="489" y="185" width="39" height="9" rx="5" fill="#ffefdc" transform="rotate(8 489 185)"/>
+    <!-- Text label: "Nurse" -->
+    <text x="466" y="258" font-family="Arial" font-size="12" fill="#219c97" font-weight="bold">Nurse</text>
+    <!-- Speech bubble from nurse -->
+    <ellipse cx="510" cy="140" rx="47" ry="19" fill="#fff" stroke="#bbb" stroke-width="1"/>
+    <text x="475" y="145" font-family="Arial" font-size="11" fill="#1c6268">That’s the doctor’s orders.</text>
+    <!-- Line from mouth to bubble -->
+    <line x1="490" y1="149" x2="495" y2="140" stroke="#bbb" stroke-width="1"/>
+  </g>
+
+  <!-- Chair near the bed, highlighted -->
+  <g>
+    <rect x="290" y="220" width="50" height="45" rx="7" fill="#f4dcbb" stroke="#a88854" stroke-width="2"/>
+    <rect x="300" y="250" width="32" height="8" rx="2" fill="#ccb789"/>
+    <!-- Text label on seat -->
+    <text x="298" y="267" font-family="Arial" font-size="12" fill="#855d1a" font-weight="bold">CHAIR</text>
+    <!-- Subtle highlight/frame -->
+    <rect x="286" y="216" width="58" height="53" rx="11" fill="none" stroke="#ff9000" stroke-width="2" opacity="0.3"/>
+  </g>
+
+  <!-- Motion: "Passed out" effect: fainting lines and dimming -->
+  <g>
+    <ellipse cx="220" cy="192" rx="10" ry="4" fill="#a6a8ab" opacity="0.39"/>
+    <path d="M215 186 Q220 184 225 186" stroke="#d22741" stroke-width="2" fill="none"/>
+    <text x="175" y="165" font-family="Arial" font-size="12" fill="#b81219" font-weight="bold" opacity="0.8">Passed out</text>
+    <path d="M240 175 C246 183, 250 185, 259 187" stroke="#850000" stroke-width="2.5" opacity="0.5" fill="none"/>
+  </g>
+
+  <!-- Foreground grouping/shadow -->
+  <ellipse cx="215" cy="245" rx="95" ry="22" fill="#b3bec2" opacity="0.18"/>
+  <ellipse cx="390" cy="250" rx="46" ry="16" fill="#b3bec2" opacity="0.12"/>
+  <ellipse cx="485" cy="256" rx="46" ry="14" fill="#b3bec2" opacity="0.10"/>
+
+  <!-- Focus lines toward patient -->
+  <line x1="330" y1="120" x2="210" y2="178" stroke="#89bccb" stroke-width="1.5" opacity="0.27"/>
+  <line x1="500" y1="110" x2="210" y2="180" stroke="#89bccb" stroke-width="1.2" opacity="0.21"/>
+
+  <!-- Spatial hierarchy: Slight vignette for focus -->
+  <ellipse cx="210" cy="185" rx="110" ry="52" fill="#fff" opacity="0.22"/>
+</svg>

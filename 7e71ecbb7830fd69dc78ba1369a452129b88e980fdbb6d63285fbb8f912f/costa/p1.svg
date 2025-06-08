@@ -1,0 +1,115 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Background: Subtle gradient for mood -->
+<defs>
+  <linearGradient id="bg-grad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#b7c9e6"/>
+    <stop offset="100%" stop-color="#6d7ba1"/>
+  </linearGradient>
+  <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.8">
+    <stop offset="88%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="#46506b" stop-opacity="0.37"/>
+  </radialGradient>
+  <filter id="softshadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#25355a" flood-opacity="0.15"/>
+  </filter>
+</defs>
+<rect width="600" height="400" fill="url(#bg-grad)"/>
+<rect width="600" height="400" fill="url(#vignette)"/>
+
+<!-- Hospital building (background) -->
+<g>
+  <rect x="370" y="110" width="180" height="200" rx="13" fill="#f5f5f8" stroke="#b3b8c7" stroke-width="3" filter="url(#softshadow)"/>
+  <!-- Hospital Windows -->
+  <g>
+    <rect x="390" y="140" width="35" height="20" rx="3" fill="#a2bdd8" stroke="#96a2b3"/>
+    <rect x="390" y="170" width="35" height="20" rx="3" fill="#a2bdd8" stroke="#96a2b3"/>
+    <rect x="440" y="140" width="35" height="20" rx="3" fill="#a2bdd8" stroke="#96a2b3"/>
+    <rect x="440" y="170" width="35" height="20" rx="3" fill="#a2bdd8" stroke="#96a2b3"/>
+    <rect x="490" y="140" width="35" height="20" rx="3" fill="#a2bdd8" stroke="#96a2b3"/>
+    <rect x="490" y="170" width="35" height="20" rx="3" fill="#a2bdd8" stroke="#96a2b3"/>
+  </g>
+  <!-- Hospital Sign -->
+  <rect x="410" y="115" width="100" height="28" rx="7" fill="#c0d5e2" stroke="#5a7eb1" stroke-width="2"/>
+  <text x="460" y="134" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#365080" font-weight="bold">Methodist Hospital</text>
+</g>
+
+<!-- Foreground: Solemn figure (the narrator, an older parent) -->
+<g>
+  <!-- Shadow -->
+  <ellipse cx="160" cy="320" rx="55" ry="15" fill="#47516a" opacity="0.16"/>
+  <!-- The main figure (older parent) -->
+  <g filter="url(#softshadow)">
+    <!-- Body -->
+    <rect x="130" y="210" width="65" height="95" rx="33" fill="#8b99b7"/>
+    <!-- Head -->
+    <ellipse cx="162" cy="210" rx="28" ry="30" fill="#e1bdae" stroke="#9e7e6c" stroke-width="2"/>
+    <!-- Nose -->
+    <ellipse cx="171" cy="218" rx="6" ry="7" fill="#cfab8f"/>
+    <!-- Eyes -->
+    <ellipse cx="154" cy="218" rx="5" ry="6" fill="#fff"/>
+    <ellipse cx="154" cy="219" rx="2.2" ry="2.9" fill="#2d353a"/>
+    <ellipse cx="184" cy="218" rx="5" ry="6" fill="#fff"/>
+    <ellipse cx="184" cy="219" rx="2.2" ry="2.9" fill="#2d353a"/>
+    <!-- Sad eyebrows -->
+    <path d="M147 210 Q154 205 159 210" stroke="#7a685f" stroke-width="2" fill="none"/>
+    <path d="M177 210 Q184 205 189 210" stroke="#7a685f" stroke-width="2" fill="none"/>
+    <!-- Frown/sad mouth -->
+    <path d="M156 233 Q162 241 168 233" stroke="#b46d4f" stroke-width="3" fill="none"/>
+    <!-- Simple hair -->
+    <ellipse cx="162" cy="200" rx="28" ry="10" fill="#ded6c0"/>
+    <ellipse cx="142" cy="208" rx="7" ry="4" fill="#ded6c0"/>
+    <ellipse cx="181" cy="209" rx="6" ry="3.5" fill="#ded6c0"/>
+    <!-- Arms crossed clutching a photo -->
+    <path d="M138 275 Q162 260 186 275" stroke="#e1bdae" stroke-width="14" fill="none"/>
+    <ellipse cx="162" cy="278" rx="17" ry="13" fill="#e1bdae"/>
+    <!-- Photo held in arms -->
+    <g>
+      <rect x="147" y="266" width="31" height="25" rx="5" fill="#fffbe7" stroke="#bdbaa5" stroke-width="2"/>
+      <rect x="152" y="271" width="21" height="15" rx="3" fill="#c0d0e0"/>
+      <!-- Small cartoon of girl inside photo -->
+      <ellipse cx="162" cy="278" rx="6" ry="7" fill="#f4d2b8" stroke="#c8a28d"/>
+      <ellipse cx="162" cy="285" rx="9.7" ry="4.3" fill="#8ac3d2"/>
+      <ellipse cx="162" cy="276" rx="5.2" ry="2.5" fill="#dda6a2"/>
+      <!-- Smiling mouth in photo (memory) -->
+      <path d="M158 282 Q162 285 166 282" stroke="#b4684d" stroke-width="1.2" fill="none"/>
+      <!-- Young girl's eyes in photo -->
+      <ellipse cx="159" cy="277" rx="1" ry="1.6" fill="#373c41"/>
+      <ellipse cx="165" cy="277" rx="1" ry="1.6" fill="#373c41"/>
+    </g>
+  </g>
+  <!-- Label: "My daughter" on the photo -->
+  <text x="162" y="292" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#58677c" font-style="italic">My daughter</text>
+</g>
+
+<!-- Visual compositional line: Late Saturday (clock, sun setting, implied) -->
+<!-- Wall clock (upper left, for 'late Saturday afternoon') -->
+<g>
+  <ellipse cx="60" cy="70" rx="32" ry="32" fill="#eee" stroke="#b5b5b5" stroke-width="2"/>
+  <!-- Clock face -->
+  <text x="60" y="68" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#7b7b7c" font-weight="bold">5:30</text>
+  <text x="60" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#465060">Saturday</text>
+</g>
+<!-- Date text -->
+<g>
+  <rect x="430" y="340" width="120" height="40" rx="10" fill="#fff" stroke="#b3b8c7" stroke-width="2"/>
+  <text x="490" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#45557a" font-weight="bold">30th</text>
+  <text x="490" y="375" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8ba0bc">Twenty-eight years</text>
+</g>
+
+<!-- Subtle vignette to emphasize the main figure -->
+<ellipse cx="162" cy="260" rx="86" ry="110" fill="#dbe4f7" opacity="0.27"/>
+
+<!-- Spatial hierarchy: leading lines -->
+<path d="M200 320 Q300 220 460 160" stroke="#99aac9" stroke-width="1.5" fill="none" marker-end="url(#arrow1)"/>
+
+<defs>
+  <marker id="arrow1" markerWidth="8" markerHeight="8" refX="4" refY="4"
+          orient="auto" markerUnits="strokeWidth">
+    <polygon points="0,0 8,4 0,8 2,4" fill="#7d8aad"/>
+  </marker>
+</defs>
+
+<!-- Caption for scene (bottom) -->
+<text x="300" y="395" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#364765">"She died at Methodist Hospital. It was late Saturday afternoon."</text>
+</svg>
