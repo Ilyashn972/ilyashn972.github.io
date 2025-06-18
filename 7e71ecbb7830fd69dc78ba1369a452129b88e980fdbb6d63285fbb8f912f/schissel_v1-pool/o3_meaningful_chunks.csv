@@ -1,0 +1,7 @@
+segment_ids,text,keypoint
+"(1, 3)","My best friend pushed me into the pool. This happened during my cousin's wedding reception, where everyone was dressed to impress.",Pushed into pool at elegant wedding reception
+"(4, 7)","And the reason it happened, she spotted a bee hovering near my face, - this was at a fancy hotel garden - and she tried to save me from being stung.",Friend acted to save me from hovering bee
+"(8, 10)","And my aunt had just handed me a glass of champagne, and I warned her to be careful. 'Course friends, y'know, they don't always think things through.","Holding champagne, I note friends’ impulsiveness"
+"(11, 12)","So that's when she gave me a little shove, and I tumbled into the water.",She shoves; I tumble straight into water
+"(13, 15)","When I resurfaced, gasping for air, she just started laughing, and she apologized profusely.",I resurface; she laughs and apologizes
+"(16, 18)","And... my beautiful dress was ruined, and naturally, the first thing to do was to get out and dry off, and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake.""",Ruined dress and cousin’s cake-dodging remark

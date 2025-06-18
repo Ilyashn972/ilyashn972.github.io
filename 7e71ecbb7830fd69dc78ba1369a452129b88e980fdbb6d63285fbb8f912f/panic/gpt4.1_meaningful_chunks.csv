@@ -1,0 +1,23 @@
+segment_ids,text,keypoint
+"(1, 5)","Well, I was at work one day I was doing my usual job working on the warehouse floor stocking boxes organizing merchandise",Describing a typical day working in the warehouse
+"(6, 7)",I had been working for a few hours it was getting late,Working for hours as it gets late
+"(8, 11)",I had been feeling a bit strange a bit lightheaded but chalked it up to hunger not having eaten yet that day,Feeling lightheaded and blaming it on hunger
+"(12, 13)","But then, as I was walking around the warehouse returning items to their proper places",Walking around returning items in the warehouse
+"(14, 15)",I started to feel a strange tightness and pressure in my chest,Sudden tightness and pressure in chest
+"(16, 17)",I stopped what I was doing leaned against a nearby wall for a bit,Stopping work and leaning against the wall
+"(18, 19)",the pressure only got stronger I could feel my heart pounding in my chest,Pressure intensifies and heart pounds
+"(20, 22)","Next thing I know, I started seeing spots I could feel sweat dripping down my forehead my arms",Seeing spots and sweating heavily
+"(23, 24)",I tried to take some deep breaths I just couldn't catch my breath,Trying and failing to catch breath
+"(25, 26)",I was really scared didn't know what to do.,Feeling scared and unsure what to do
+"(27, 30)",Suddenly I heard a voice coming from across the warehouse. It was the manager who had seen me called out to me,Manager notices and calls out from across warehouse
+"(31, 32)",it seems someone had noticed me was checking to see if I was alright,Someone checks if I am alright
+"(33, 34)",I tried to yell back that something was wrong I couldn't find my voice.,Trying but unable to call for help
+"(35, 37)",The manager started walking towards me I could feel my world going dark I started to drop to the ground,Manager approaches as I start to collapse
+"(38, 39)",luckily the manager got to me in time caught me just before my legs gave out,Manager catches me before I fall
+"(40, 41)",He took me to the staff room sat me down in a chair,Manager brings me to staff room and seats me
+"(42, 43)",He asked me questions about what was wrong what happened,Manager asks what happened
+"(44, 45)",He got me a glass of cold water told me to rest for a bit,Given water and told to rest
+"(46, 48)",After a few minutes the pressure in my chest slowly eased up I started to feel better,Pressure eases and I start to recover
+"(49, 51)",It turned out I had been having a panic attack I escaped from the situation the help of the quick action of the manager,Realizing it was a panic attack and manager helped
+"(52, 53)",It was never a fun experience it really could have been much worse,Reflecting on the frightening experience
+"(54, 56)",it taught me to check in with myself make sure to properly rest eat to avoid further episodes,Lesson learned: self-care and prevention
