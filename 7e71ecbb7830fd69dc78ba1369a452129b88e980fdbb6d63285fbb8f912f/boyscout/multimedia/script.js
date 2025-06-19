@@ -3,48 +3,39 @@ const imageElement = document.getElementById("illustration");
 const audioElement = document.getElementById("story-audio");
 
 let config;
-let paragraphIndex = 0;
-let lineIndex = 0;
+let currentParagraph = 0;
 
 async function loadConfig() {
     const response = await fetch("config.json");
     config = await response.json();
+
+    audioElement.src = config.audio;
     storyText.textContent = "Click anywhere to start the story...";
-    document.body.addEventListener("click", startStory, { once: true });
+    document.body.addEventListener("click", startPlayback, { once: true });
 }
 
-function startStory() {
-    playParagraph(paragraphIndex);
-}
-
-function playParagraph(index) {
-    if (index >= config.paragraphs.length) {
-        storyText.textContent = "The End.";
-        imageElement.src = "../../local_image.jpg";
-        return;
-    }
-
-    const para = config.paragraphs[index];
-    lineIndex = 0;
-    imageElement.src = para.image;
-    audioElement.src = para.audio;
+function startPlayback() {
     audioElement.play();
-    
-    showNextLine(para);
+    requestAnimationFrame(checkTime);
 }
 
-function showNextLine(paragraph) {
+function checkTime() {
+    if (currentParagraph >= config.paragraphs.length) return;
 
-    if (lineIndex >= paragraph.lines.length) {
-        paragraphIndex++;
-        setTimeout(() => playParagraph(paragraphIndex), 750); // Small pause between paragraphs
-        return;
+    const now = audioElement.currentTime;
+    const para = config.paragraphs[currentParagraph];
+
+    if (now >= para.timestamp) {
+        displayParagraph(para);
+        currentParagraph++;
     }
 
-    storyText.textContent = paragraph.lines[lineIndex];
-    lineIndex++;
-    setTimeout(() => showNextLine(paragraph), paragraph.lineDuration);
+    requestAnimationFrame(checkTime);
+}
+
+function displayParagraph(paragraph) {
+    storyText.innerHTML = paragraph.lines.join("<br/>");
+    imageElement.src = paragraph.image;
 }
 
 loadConfig();
-
