@@ -1,0 +1,55 @@
+{
+    "paragraphs": [
+        {
+            "lines": [
+                "Yeah, I was in the boy scouts at the time. ",
+                "And we was doing the 50-yard dash, racing, ",
+                "but we was at the pier, marked off and so we",
+                "was doing the 50-yard dash."
+            ],
+            "audio": "audio/01.mp3",
+            "image": "images/01.jpg",
+            "lineDuration": 2500
+        },
+        {
+            "lines": [
+                "There was about 8 or 9 of us, you know, going down, coming back.",
+                "And going down the third time, I caught cramps and I started yelling \"Help!\"", 
+                "but the fellows didn't believe me, you know.",
+                "They thought I was just trying to catch up,",
+                "because I was going on or slowing down."
+            ],
+            "audio": "audio/02.mp3",
+            "image": "images/02.jpg",
+            "lineDuration": 3160
+        },
+        {
+            "lines": [
+                "So all of them kept going. They leave me. And so I started going down."
+            ],
+            "audio": "audio/03.mp3",
+            "image": "images/03.jpg",
+            "lineDuration": 4248
+        },
+        {
+            "lines": [
+                "Scoutmaster was up there. He was watching me.",
+                "But he didn't pay me no attention either."
+            ],
+            "audio": "audio/04.mp3",
+            "image": "images/03.jpg",
+            "lineDuration": 2400
+        },
+        {
+            "lines": [
+                "But he didn't pay me no attention either.",
+                "who had just walked up that minute...",
+                "He just jumped over and grabbed me."
+            ],
+            "audio": "audio/05.mp3",
+            "image": "images/04.jpg",
+            "lineDuration": 2400
+         }
+    ]
+    
+}
