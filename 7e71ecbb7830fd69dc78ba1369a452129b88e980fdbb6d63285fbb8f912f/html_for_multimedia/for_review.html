@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Story Table</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      vertical-align: top;
+    }
+    img {
+      max-width: 150px;
+      height: auto;
+    }
+    td pre {
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Story Table</h1>
+  <table id="story-table">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Lines</th>
+        <th>Prompt</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function loadConfig() {
+      try {
+        const response = await fetch('config.json');
+        const config = await response.json();
+
+        const tableBody = document.querySelector('#story-table tbody');
+
+        for (const paragraph of config.paragraphs) {
+          const row = document.createElement('tr');
+
+          // Image column
+          const imgCell = document.createElement('td');
+          const img = document.createElement('img');
+          img.src = paragraph.image;
+          img.alt = "Story image";
+          imgCell.appendChild(img);
+
+          // Lines column
+          const linesCell = document.createElement('td');
+          linesCell.textContent = paragraph.lines.join(' ');
+
+          // Prompt column (load from .txt)
+          const promptCell = document.createElement('td');
+          const promptText = await fetch(paragraph.prompt).then(res => res.text());
+          const pre = document.createElement('pre');
+          pre.textContent = promptText;
+          promptCell.appendChild(pre);
+
+          row.appendChild(imgCell);
+          row.appendChild(linesCell);
+          row.appendChild(promptCell);
+          tableBody.appendChild(row);
+        }
+      } catch (error) {
+        console.error('Failed to load config.json:', error);
+      }
+    }
+
+    loadConfig();
+  </script>
+</body>
+</html>

@@ -11,6 +11,7 @@
                 "you know, going down, coming back."
             ],
             "image": "images/01.jpg",
+            "prompt": "images/01.prompt.txt",
             "timestamp": 0
         },
         {
@@ -22,6 +23,7 @@
                 "So all of them kept going. They leave me. And so I started going down."
             ],
             "image": "images/02.jpg",
+            "prompt": "images/02.prompt.txt",
             "timestamp": 15.5
         },
         {
@@ -30,6 +32,7 @@
                 "But he didn't pay me no attention either."
             ],
             "image": "images/03.jpg",
+            "prompt": "images/03.prompt.txt",
             "timestamp": 33
         },
         {
@@ -39,6 +42,7 @@
                 "He just jumped over and grabbed me."
             ],
             "image": "images/04.jpg",
+            "prompt": "images/04.prompt.txt",
             "timestamp": 39
          }
     ]
