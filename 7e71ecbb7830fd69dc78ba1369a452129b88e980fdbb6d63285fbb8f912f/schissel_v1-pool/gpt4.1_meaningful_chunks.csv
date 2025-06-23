@@ -1,8 +1,9 @@
 segment_ids,text,keypoint
-"(1, 1)",My best friend pushed me into the pool.,Best friend pushes me into the pool
-"(2, 3)","This happened during my cousin's wedding reception, where everyone was dressed to impress.",Event takes place at cousin’s fancy wedding
-"(4, 7)","And the reason it happened, she spotted a bee hovering near my face, - this was at a fancy hotel garden - and she tried to save me from being stung.",Friend acts to save me from a bee
-"(8, 9)","And my aunt had just handed me a glass of champagne, and I warned her to be careful.","Aunt hands me champagne, I warn her"
-"(10, 12)","'Course friends, y'know, they don't always think things through. So that's when she gave me a little shove, and I tumbled into the water.",Friend impulsively shoves me into the water
-"(13, 15)","When I resurfaced, gasping for air, she just started laughing, and she apologized profusely.","I resurface, friend laughs and apologizes"
-"(16, 18)","And... my beautiful dress was ruined, and naturally, the first thing to do was to get out and dry off, and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake.""","Dress ruined, cousin jokes about near-miss with cake"
+"(1, 1)",My best friend pushed me into the pool.,My best friend pushed me into the pool
+"(2, 3)","This happened during my cousin's wedding reception, where everyone was dressed to impress.",This happened at my cousin's fancy wedding reception
+"(4, 7)","And the reason it happened, she spotted a bee hovering near my face, - this was at a fancy hotel garden - and she tried to save me from being stung.",She pushed me to save me from a bee near my face
+"(8, 9)","And my aunt had just handed me a glass of champagne, and I warned her to be careful.",My aunt handed me champagne and I warned her
+"(10, 12)","'Course friends, y'know, they don't always think things through. So that's when she gave me a little shove, and I tumbled into the water.",My friend acted impulsively and I fell in
+"(13, 15)","When I resurfaced, gasping for air, she just started laughing, and she apologized profusely.","I resurfaced, she laughed and apologized"
+"(16, 17)","And... my beautiful dress was ruined, and naturally, the first thing to do was to get out and dry off,",My dress was ruined and I had to dry off
+"(18, 18)","and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake.""",My cousin joked I almost landed on the cake

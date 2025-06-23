@@ -1,0 +1,47 @@
+{
+    "audio": "audio/story.mp3",
+    "paragraphs": [
+        { 
+            "lines": [
+                "My best friend pushed me into the pool.",
+                "This happened during my cousin's wedding reception,",
+                "where everyone was dressed to impress. And the reason it happened,",
+                "she spotted a bee hovering near my face,",
+                "- this was at a fancy hotel garden ",
+                " and she tried to save me from being stung.",
+                "And my aunt had just handed me a glass of champagne,",
+                "and I warned her to be careful."
+            ],
+            "image": "images/01.jpg",
+            "prompt": "images/01.prompt.txt",
+            "timestamp": 0
+        },
+        {
+            "lines": [             
+                "'Course friends, y'know, ",
+                "they don't always think things through.",
+                "So that's when she gave me a little shove,",
+                "and I tumbled into the water."
+            ],
+            "image": "images/02.jpg",
+            "prompt": "images/02.prompt.txt",
+            "timestamp": 17.76
+        },
+        {
+            "lines": [
+                "When I resurfaced, gasping for air, she just started laughing,",
+                "and she apologized profusely. And...",
+                "my beautiful dress was ruined, and naturally,",
+                "the first thing to do was to get out and dry off,",
+                "and my cousin just says,",
+                "\"Just about a few inches more,\"",
+                "she says, \"and you'd have landed on the cake."
+            ],
+            "image": "images/03.jpg",
+            "prompt": "images/03.prompt.txt",
+            "timestamp": 26.12
+        }
+
+    ]
+    
+}
