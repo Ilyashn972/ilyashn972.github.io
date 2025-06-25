@@ -1,0 +1,177 @@
+{
+    "audio": "audio/story.mp3",
+    "paragraphs": [
+        {
+            "lines": [
+                "Back in the days when I was a rookie in the police force, the Chief was a veteran."
+            ],
+            "image": "images/006.jpg",
+            "prompt": "images/006.prompt.txt",
+            "timestamp": 0.0
+        },
+        {
+            "lines": [
+                "He had caught a notorious criminal –",
+                "or had been awarded for bravery."
+            ],
+            "image": "images/007.jpg",
+            "prompt": "images/007.prompt.txt",
+            "timestamp": 4.0
+        },
+        {
+            "lines": [
+                "But he had – a young daughter."
+            ],
+            "image": "images/014.jpg",
+            "prompt": "images/014.prompt.txt",
+            "timestamp": 8.69
+        },
+        {
+            "lines": [
+                "And in those days I was a fitness enthusiast."
+            ],
+            "image": "images/016.jpg",
+            "prompt": "images/016.prompt.txt",
+            "timestamp": 9.85
+        },
+        {
+            "lines": [
+                "And it seemed she was trying to impress me.",
+                "I never observed it."
+            ],
+            "image": "images/027.jpg",
+            "prompt": "images/027.prompt.txt",
+            "timestamp": 13.27
+        },
+        {
+            "lines": [
+                "Truth is I wasn't very fond of her because she was –",
+                "She was a charming girl until she opened her mouth."
+            ],
+            "image": "images/033.jpg",
+            "prompt": "images/033.prompt.txt",
+            "timestamp": 17.53
+        },
+        {
+            "lines": [
+                "She was a chatterbox.",
+                "Goodness, she could talk."
+            ],
+            "image": "images/040.jpg",
+            "prompt": "images/040.prompt.txt",
+            "timestamp": 24.5
+        },
+        {
+            "lines": [
+                "Then she left a message one day saying she was going to run away because he was always scolding her about me."
+            ],
+            "image": "images/048.jpg",
+            "prompt": "images/048.prompt.txt",
+            "timestamp": 27.85
+        },
+        {
+            "lines": [
+                "He arrived at my apartment.",
+                "Big intimidating look on his face."
+            ],
+            "image": "images/054.jpg",
+            "prompt": "images/054.prompt.txt",
+            "timestamp": 33.69
+        },
+        {
+            "lines": [
+                "I managed to calm him down."
+            ],
+            "image": "images/059.jpg",
+            "prompt": "images/059.prompt.txt",
+            "timestamp": 37.96
+        },
+        {
+            "lines": [
+                "and proposed “Well we'll search for her",
+                "and if we can't locate her well you can – do whatever you think is right.”"
+            ],
+            "image": "images/064.jpg",
+            "prompt": "images/064.prompt.txt",
+            "timestamp": 40.7
+        },
+        {
+            "lines": [
+                "I was strategizing.",
+                "So he accepted my offer."
+            ],
+            "image": "images/062.jpg",
+            "prompt": "images/062.prompt.txt",
+            "timestamp": 46.96
+        },
+        {
+            "lines": [
+                "And we went to where they found her scarf – near a park."
+            ],
+            "image": "images/070.jpg",
+            "prompt": "images/070.prompt.txt",
+            "timestamp": 50.2
+        },
+        {
+            "lines": [
+                "and we traced down a little more",
+                "and we couldn't locate her."
+            ],
+            "image": "images/072.jpg",
+            "prompt": "images/072.prompt.txt",
+            "timestamp": 54.35
+        },
+        {
+            "lines": [
+                "And returned",
+                "– it was a police station –"
+            ],
+            "image": "images/084.jpg",
+            "prompt": "images/084.prompt.txt",
+            "timestamp": 57.64
+        },
+        {
+            "lines": [
+                "she was sitting on a chair with a book in her hands.",
+                "She hadn't run away."
+            ],
+            "image": "images/089.jpg",
+            "prompt": "images/089.prompt.txt",
+            "timestamp": 60.23
+        },
+        {
+            "lines": [
+                "But – nevertheless – that resolved the issue for that day."
+            ],
+            "image": "images/093.jpg",
+            "prompt": "images/093.prompt.txt",
+            "timestamp": 65.51
+        },
+        {
+            "lines": [
+                "But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”"
+            ],
+            "image": "images/093.jpg",
+            "prompt": "images/093.prompt.txt",
+            "timestamp": 72.05
+        },
+        {
+            "lines": [
+                "And I did.",
+                "I transferred.",
+                "and left."
+            ],
+            "image": "images/107.jpg",
+            "prompt": "images/107.prompt.txt",
+            "timestamp": 75.77
+        },
+        {
+            "lines": [
+                "That was the end of my rookie year."
+            ],
+            "image": "images/112.jpg",
+            "prompt": "images/112.prompt.txt",
+            "timestamp": 79.88
+        }
+    ]
+}
