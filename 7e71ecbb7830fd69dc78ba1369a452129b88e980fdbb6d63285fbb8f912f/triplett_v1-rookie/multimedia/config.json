@@ -16,7 +16,7 @@
             ],
             "image": "images/007.jpg",
             "prompt": "images/007.prompt.txt",
-            "timestamp": 4.0
+            "timestamp": 3.83
         },
         {
             "lines": [
@@ -24,7 +24,7 @@
             ],
             "image": "images/014.jpg",
             "prompt": "images/014.prompt.txt",
-            "timestamp": 8.69
+            "timestamp": 7.82
         },
         {
             "lines": [
@@ -32,7 +32,7 @@
             ],
             "image": "images/016.jpg",
             "prompt": "images/016.prompt.txt",
-            "timestamp": 9.85
+            "timestamp": 9.62
         },
         {
             "lines": [
@@ -41,7 +41,7 @@
             ],
             "image": "images/027.jpg",
             "prompt": "images/027.prompt.txt",
-            "timestamp": 13.27
+            "timestamp": 12.33
         },
         {
             "lines": [
@@ -50,7 +50,7 @@
             ],
             "image": "images/033.jpg",
             "prompt": "images/033.prompt.txt",
-            "timestamp": 17.53
+            "timestamp": 16.93
         },
         {
             "lines": [
@@ -59,7 +59,7 @@
             ],
             "image": "images/040.jpg",
             "prompt": "images/040.prompt.txt",
-            "timestamp": 24.5
+            "timestamp": 23.98
         },
         {
             "lines": [
@@ -67,7 +67,7 @@
             ],
             "image": "images/048.jpg",
             "prompt": "images/048.prompt.txt",
-            "timestamp": 27.85
+            "timestamp": 27.5
         },
         {
             "lines": [
@@ -76,7 +76,7 @@
             ],
             "image": "images/054.jpg",
             "prompt": "images/054.prompt.txt",
-            "timestamp": 33.69
+            "timestamp": 33.31
         },
         {
             "lines": [
@@ -84,7 +84,7 @@
             ],
             "image": "images/059.jpg",
             "prompt": "images/059.prompt.txt",
-            "timestamp": 37.96
+            "timestamp": 37.64
         },
         {
             "lines": [
@@ -93,7 +93,7 @@
             ],
             "image": "images/064.jpg",
             "prompt": "images/064.prompt.txt",
-            "timestamp": 40.7
+            "timestamp": 39.45
         },
         {
             "lines": [
@@ -102,7 +102,7 @@
             ],
             "image": "images/062.jpg",
             "prompt": "images/062.prompt.txt",
-            "timestamp": 46.96
+            "timestamp": 46.28
         },
         {
             "lines": [
@@ -110,7 +110,7 @@
             ],
             "image": "images/070.jpg",
             "prompt": "images/070.prompt.txt",
-            "timestamp": 50.2
+            "timestamp": 49.84
         },
         {
             "lines": [
@@ -119,7 +119,7 @@
             ],
             "image": "images/072.jpg",
             "prompt": "images/072.prompt.txt",
-            "timestamp": 54.35
+            "timestamp": 53.32
         },
         {
             "lines": [
@@ -128,7 +128,7 @@
             ],
             "image": "images/084.jpg",
             "prompt": "images/084.prompt.txt",
-            "timestamp": 57.64
+            "timestamp": 57.25
         },
         {
             "lines": [
@@ -137,7 +137,7 @@
             ],
             "image": "images/089.jpg",
             "prompt": "images/089.prompt.txt",
-            "timestamp": 60.23
+            "timestamp": 59.95
         },
         {
             "lines": [
@@ -145,7 +145,7 @@
             ],
             "image": "images/093.jpg",
             "prompt": "images/093.prompt.txt",
-            "timestamp": 65.51
+            "timestamp": 63.95
         },
         {
             "lines": [
@@ -153,7 +153,7 @@
             ],
             "image": "images/093.jpg",
             "prompt": "images/093.prompt.txt",
-            "timestamp": 72.05
+            "timestamp": 67.94
         },
         {
             "lines": [
@@ -163,7 +163,7 @@
             ],
             "image": "images/107.jpg",
             "prompt": "images/107.prompt.txt",
-            "timestamp": 75.77
+            "timestamp": 75.34
         },
         {
             "lines": [
@@ -171,7 +171,7 @@
             ],
             "image": "images/112.jpg",
             "prompt": "images/112.prompt.txt",
-            "timestamp": 79.88
+            "timestamp": 79.18
         }
     ]
 }
