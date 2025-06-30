@@ -1,7 +1,8 @@
 segment_ids,text,keypoint
-"(1, 3)",My best friend pushed me into the lake. This happened during our annual summer camping trip and we were enjoying a peaceful afternoon.,Friend pushes narrator into lake during camping trip
-"(4, 7)","The reason it all began, she spotted a frog near the water's edge or - this was at our favorite spot in the woods - and she dared me to catch it.",Friend dares narrator to catch a frog at their favorite spot
-"(8, 10)","I had just sat down to eat my sandwich and I told her I wasn't interested. 'Course friends, y'know, they don't always take no for an answer.","Narrator declines, but friend insists on the dare"
-"(11, 12)",So that's when she snuck up behind me and gave me a little nudge.,Friend sneaks up and pushes narrator into lake
-"(13, 16)","When I emerged from the water, there was a frog on the shore, she just scooped it up and handed it to me. And . . .; I couldn't help but laugh – uncontrollably.","Friend catches the frog, narrator laughs uncontrollably"
-"(17, 18)","And naturally, the first thing to do was to get revenge, and I said, ""Just you wait,"" I said, ""you'll get yours soon enough.""",Narrator vows playful revenge on friend
+"(1, 1)",My best friend pushed me into the lake.,My best friend pushed me into the lake
+"(2, 3)",This happened during our annual summer camping trip and we were enjoying a peaceful afternoon.,We were on our annual summer camping trip
+"(4, 7)","The reason it all began, she spotted a frog near the water's edge or - this was at our favorite spot in the woods - and she dared me to catch it.",She spotted a frog and dared me to catch it
+"(8, 10)","I had just sat down to eat my sandwich and I told her I wasn't interested. 'Course friends, y'know, they don't always take no for an answer.",I tried to eat my sandwich and refused her dare
+"(11, 12)",So that's when she snuck up behind me and gave me a little nudge.,She snuck up and nudged me into the lake
+"(13, 16)","When I emerged from the water, there was a frog on the shore, she just scooped it up and handed it to me. And . . .; I couldn't help but laugh – uncontrollably.",She caught the frog and I laughed uncontrollably
+"(17, 18)","And naturally, the first thing to do was to get revenge, and I said, ""Just you wait,"" I said, ""you'll get yours soon enough.""",I vowed to get my revenge on her

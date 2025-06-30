@@ -1,15 +1,12 @@
 segment_ids,text,keypoint
-"(1, 1)","Back in the days when I was a rookie in the police force, the Chief was a veteran.",Recalling rookie days and the veteran Chief
-"(2, 3)",He had caught a notorious criminal – or had been awarded for bravery.,Chief’s reputation for bravery and crime-fighting
-"(4, 4)",But he had – a young daughter.,Chief had a young daughter
-"(5, 7)",And in those days I was a fitness enthusiast. And it seemed she was trying to impress me. I never observed it.,I was a fitness enthusiast; she tried to impress me
-"(8, 11)","Truth is I wasn't very fond of her because she was – She was a charming girl until she opened her mouth. She was a chatterbox. Goodness, she could talk.",I disliked her for being overly talkative
-"(12, 12)",Then she left a message one day saying she was going to run away because he was always scolding her about me.,She threatened to run away over her father’s scolding
-"(13, 15)",He arrived at my apartment. Big intimidating look on his face. I managed to calm him down.,Chief arrived upset; I calmed him down
-"(16, 19)",and proposed “Well we'll search for her and if we can't locate her well you can – do whatever you think is right.” I was strategizing. So he accepted my offer.,I proposed searching for her; Chief agreed
+"(1, 4)","Back in the days when I was a rookie in the police force, the Chief was a veteran. He had caught a notorious criminal – or had been awarded for bravery. But he had – a young daughter.",I recall the Chief’s reputation and his young daughter
+"(5, 7)",And in those days I was a fitness enthusiast. And it seemed she was trying to impress me. I never observed it.,I was into fitness and oblivious to her interest
+"(8, 11)","Truth is I wasn't very fond of her because she was – She was a charming girl until she opened her mouth. She was a chatterbox. Goodness, she could talk.",I wasn’t fond of her because she talked nonstop
+"(12, 12)",Then she left a message one day saying she was going to run away because he was always scolding her about me.,She left a message saying she would run away
+"(13, 15)",He arrived at my apartment. Big intimidating look on his face. I managed to calm him down.,The Chief came to me and I calmed him down
+"(16, 19)",and proposed “Well we'll search for her and if we can't locate her well you can – do whatever you think is right.” I was strategizing. So he accepted my offer.,I suggested searching for her and he agreed
 "(20, 22)",And we went to where they found her scarf – near a park. and we traced down a little more and we couldn't locate her.,We searched near the park but couldn’t find her
-"(23, 26)",And returned – it was a police station – she was sitting on a chair with a book in her hands. She hadn't run away.,Returned to police station; she was safe and hadn’t run away
-"(27, 27)",But – nevertheless – that resolved the issue for that day.,The issue was resolved for that day
-"(28, 28)","But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”",Deputy warned me to transfer and leave
-"(29, 31)",And I did. I transferred. and left.,I followed the advice and left
-"(32, 32)",That was the end of my rookie year.,That marked the end of my rookie year
+"(23, 26)",And returned – it was a police station – she was sitting on a chair with a book in her hands. She hadn't run away.,We returned to the station and found her safe
+"(27, 27)",But – nevertheless – that resolved the issue for that day.,That resolved the issue for the day
+"(28, 28)","But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”",Frank warned me the Chief would never forget
+"(29, 32)",And I did. I transferred. and left. That was the end of my rookie year.,"I transferred and left, ending my rookie year"

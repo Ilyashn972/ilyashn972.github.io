@@ -1,7 +1,8 @@
 segment_ids,text,keypoint
-"(1, 3)",My best friend pushed me into the lake. This happened during our annual summer camping trip and we were enjoying a peaceful afternoon.,Camping afternoon disrupted when friend pushes me in lake
-"(4, 7)","The reason it all began, she spotted a frog near the water's edge or - this was at our favorite spot in the woods - and she dared me to catch it.",She spots frog and challenges me to catch it
-"(8, 10)","I had just sat down to eat my sandwich and I told her I wasn't interested. 'Course friends, y'know, they don't always take no for an answer.",I refuse dared frog hunt while eating sandwich
-"(11, 12)",So that's when she snuck up behind me and gave me a little nudge.,Friend secretly shoves me into water
-"(13, 16)","When I emerged from the water, there was a frog on the shore, she just scooped it up and handed it to me. And . . .; I couldn't help but laugh – uncontrollably.","I surface; she hands me frog, we laugh"
-"(17, 18)","And naturally, the first thing to do was to get revenge, and I said, ""Just you wait,"" I said, ""you'll get yours soon enough.""",I promise humorous revenge for her prank
+"(1, 3)",My best friend pushed me into the lake. This happened during our annual summer camping trip and we were enjoying a peaceful afternoon.,My friend shoved me into the lake that afternoon
+"(4, 7)","The reason it all began, she spotted a frog near the water's edge or - this was at our favorite spot in the woods - and she dared me to catch it.",She saw a frog and challenged me to catch it
+"(8, 10)","I had just sat down to eat my sandwich and I told her I wasn't interested. 'Course friends, y'know, they don't always take no for an answer.","I refused while eating, but friends ignore polite refusals"
+"(11, 12)",So that's when she snuck up behind me and gave me a little nudge.,She sneaked up and shoved me straight into water
+"(13, 15)","When I emerged from the water, there was a frog on the shore, she just scooped it up and handed it to me.",I surfaced; she proudly handed me the captured frog
+"(16, 16)",And . . .; I couldn't help but laugh – uncontrollably.,"I erupted into unstoppable, joyous laughter at everything"
+"(17, 18)","And naturally, the first thing to do was to get revenge, and I said, ""Just you wait,"" I said, ""you'll get yours soon enough.""",I promised immediate revenge for her mischievous stunt

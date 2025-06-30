@@ -1,26 +1,25 @@
 segment_ids,text,keypoint
-"(1, 3)",About a month ago see we were going to a church league softball game... They'd had the games all scheduled for the diamond at Homestead High School. You know where that's at?,Setting up the trip to the softball game
-"(4, 7)","Well we're going up Twenty­-four, and getting ready to turn there, at Ranch Eggs, and I was slowing down, got my turn signal on,",Approaching the turn at Ranch Eggs
-"(8, 11)","and as I was slowing down, there's this guy sitting over here to the right, coming on to Twenty­-four. Looked like he's about in his middle fifties.",Noticing a man pulling onto the road
-"(12, 14)","And he starts creeping out onto Twenty-four and he's blocking off the lane, and he's heading for the same spot that I'm going.","Man blocks the lane, heading same direction"
-"(15, 16)",You know how you sit there and wait for the traffic to get by? Right there in the median?,Describing waiting in the median
-"(17, 20)","This guy starts, pulls out in the lane, I thought ""you jerk""... but I hurried up and got in there ahead of him.","Man pulls out, narrator gets ahead"
-"(21, 24)",And he sits there and waits on. Mean he's got Twenty­-four blocked. He's sitting there right in the middle of the highway. Got it blocked.,"Man blocks highway, narrator continues"
-"(25, 27)","So we went on across as soon as traffic cleared, and we're headed up there towards that diamond, and it's about ... maybe mile, two miles... north of Twenty­-four on Aboite Center,",Heading toward the diamond after the incident
-"(28, 30)","and this guy's following us see, as we're going up there this little hill right there. At Ranch Eggs.",Man follows as they go up the hill
-"(31, 32)","We're going up this hill, and this guy's right on my tail.",Man tailgates closely up the hill
-"(33, 35)","And Lisa was with me, and she said “That guy is right on your tail!” I looked in the mirror and sure enough he's right up there practically bumper to bumper,",Lisa notices the man tailgating
-"(36, 37)","and I'm trying to keep an eye on him, make sure he doesn't slam into me or anything.",Narrator watches to avoid a collision
-"(38, 40)","He starts weaving back and forth, couldn't keep it in one lane. Really ...bad news.","Man weaves dangerously, appears intoxicated"
-"(41, 44)",And all the time this is going on... I'm thinking how drunk driving is the number one killer of kids and all this business. How it's everybody's responsibility. So I was trying to make up my mind what to do.,Narrator reflects on drunk driving responsibility
-"(45, 49)","I was pretty sure he was drunk... at least he appeared that way... so I figured that when we get up to this stop sign I'm going to go back and find out what his problem is, 'cause I'm thinking he's drunk, and I know I oughta do something about it,",Deciding to confront the man at the stop sign
-"(50, 53)","but at the same time if he's sick, like maybe he's having a heart attack or something, you know. You gotta do something.",Considering if the man might be sick
-"(54, 56)","I'd really feel bad if I read the papers the next day that the guy, some guy died with a heart attack and there I was thinking he was drunk. And I didn't really want to get involved to be honest with you.",Worrying about misjudging the situation
-"(57, 59)","But I had made up my mind that I was going to, so we pulled up to the stop at this sign, and right across the road stopped a sheriff's car.","Arriving at the stop sign, sheriff appears"
-"(60, 63)","So I motion for him to come over, and they whip across the road, and I got out the car, walked over there,",Narrator signals sheriff and approaches
-"(64, 67)","and said to this deputy “This guy behind me is either sick or he's drunk, but he's got a problem. He can't keep his car on one side of the road.” And I said “He's got a definite problem...”",Explaining the situation to the deputy
-"(68, 70)","So they started down there. And as soon as he sees me get out of the car and walk over there to the police car, the guy stops way far away from the intersection.","Police approach, man stops far from intersection"
-"(71, 73)","He stops, and he throws his car into reverse, and starts backing up.",Man reverses and backs up the road
-"(74, 75)","When the cops went down there to check him out, he starts backing up going backwards down that road.",Cops pursue as man continues backing up
-"(76, 79)","Pretty soon they catch up with him, and he starts forward again, and they make a U­-turn in the road and start following him, and he's just driving real slow and careful.","Police catch up, man drives slowly, police follow"
-"(80, 81)",Ha ha it's pretty comical... I don't know if they ever stopped him or not.,Narrator finds the situation comical and unresolved
+"(1, 3)",About a month ago see we were going to a church league softball game... They'd had the games all scheduled for the diamond at Homestead High School. You know where that's at?,We were heading to a church league softball game at Homestead High
+"(4, 8)","Well we're going up Twenty­-four, and getting ready to turn there, at Ranch Eggs, and I was slowing down, got my turn signal on, and as I was slowing down,",I slowed down to turn at Ranch Eggs with my signal on
+"(9, 11)","there's this guy sitting over here to the right, coming on to Twenty­-four. Looked like he's about in his middle fifties.",I noticed a middle-aged man waiting to enter the road
+"(12, 14)","And he starts creeping out onto Twenty-four and he's blocking off the lane, and he's heading for the same spot that I'm going.","He crept out, blocking my lane and heading where I was going"
+"(15, 16)",You know how you sit there and wait for the traffic to get by? Right there in the median?,I waited in the median for traffic to pass
+"(17, 20)","This guy starts, pulls out in the lane, I thought ""you jerk""... but I hurried up and got in there ahead of him.","He pulled out, annoyed me, but I hurried ahead of him"
+"(21, 24)",And he sits there and waits on. Mean he's got Twenty­-four blocked. He's sitting there right in the middle of the highway. Got it blocked.,"He blocked the highway, just sitting there in the middle"
+"(25, 27)","So we went on across as soon as traffic cleared, and we're headed up there towards that diamond, and it's about ... maybe mile, two miles... north of Twenty­-four on Aboite Center,",We crossed when traffic cleared and headed toward the diamond
+"(28, 30)","and this guy's following us see, as we're going up there this little hill right there. At Ranch Eggs.",The man started following us up the hill at Ranch Eggs
+"(31, 34)","We're going up this hill, and this guy's right on my tail. And Lisa was with me, and she said “That guy is right on your tail!”","He was right on my tail, and Lisa pointed it out"
+"(35, 37)","I looked in the mirror and sure enough he's right up there practically bumper to bumper, and I'm trying to keep an eye on him, make sure he doesn't slam into me or anything.","I checked the mirror, kept an eye on him, worried he’d hit me"
+"(38, 40)","He starts weaving back and forth, couldn't keep it in one lane. Really ...bad news.","He started weaving, unable to stay in one lane"
+"(41, 44)",And all the time this is going on... I'm thinking how drunk driving is the number one killer of kids and all this business. How it's everybody's responsibility. So I was trying to make up my mind what to do.,I thought about drunk driving and wondered what to do
+"(45, 49)","I was pretty sure he was drunk... at least he appeared that way... so I figured that when we get up to this stop sign I'm going to go back and find out what his problem is, 'cause I'm thinking he's drunk, and I know I oughta do something about it,",I suspected he was drunk and planned to confront him at the stop sign
+"(50, 53)","but at the same time if he's sick, like maybe he's having a heart attack or something, you know. You gotta do something.","I considered he might be sick, maybe having a heart attack"
+"(54, 56)","I'd really feel bad if I read the papers the next day that the guy, some guy died with a heart attack and there I was thinking he was drunk. And I didn't really want to get involved to be honest with you.","I’d feel bad if he died and I’d misjudged him, but I hesitated to get involved"
+"(57, 59)","But I had made up my mind that I was going to, so we pulled up to the stop at this sign, and right across the road stopped a sheriff's car.","I decided to act and stopped at the sign, where a sheriff’s car was parked"
+"(60, 63)","So I motion for him to come over, and they whip across the road, and I got out the car, walked over there,","I motioned to the deputies, got out, and walked over"
+"(64, 67)","and said to this deputy “This guy behind me is either sick or he's drunk, but he's got a problem. He can't keep his car on one side of the road.” And I said “He's got a definite problem...”",I told the deputy the man behind me was either sick or drunk
+"(68, 70)","So they started down there. And as soon as he sees me get out of the car and walk over there to the police car, the guy stops way far away from the intersection.","The police started toward him, and he stopped far from the intersection"
+"(71, 73)","He stops, and he throws his car into reverse, and starts backing up.","He stopped, threw his car in reverse, and backed up"
+"(74, 75)","When the cops went down there to check him out, he starts backing up going backwards down that road.",The cops chased him as he backed down the road
+"(76, 79)","Pretty soon they catch up with him, and he starts forward again, and they make a U­-turn in the road and start following him, and he's just driving real slow and careful.","They caught up, he drove forward, and the police followed as he drove slowly"
+"(80, 81)",Ha ha it's pretty comical... I don't know if they ever stopped him or not.,"It was almost comical, and I never found out if they stopped him"

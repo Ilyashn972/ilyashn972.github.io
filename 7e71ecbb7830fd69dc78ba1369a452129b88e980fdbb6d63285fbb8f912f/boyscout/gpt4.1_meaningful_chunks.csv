@@ -1,9 +1,10 @@
 segment_ids,text,keypoint
-"(1, 1)","Yeah, I was in the boy scouts at the time.",Recalls being in the boy scouts
-"(2, 5)","And we was doing the 50-yard dash, racing, but we was at the pier, marked off, and so we was doing the 50-yard dash.",Describes doing the 50-yard dash at the pier
-"(6, 6)","There was about 8 or 9 of us, you know, going down, coming back.",Several boys race back and forth
-"(7, 8)","And, going down the third time, I caught cramps and I started yelling ""Help!"",",Gets cramps and calls for help
-"(9, 12)","but the fellows didn't believe me, you know. They thought I was just trying to catch up, because I was going on or slowing down. So all of them kept going. They leave me.",Friends think he’s faking and leave him behind
-"(13, 13)",And so I started going down.,Begins to go under the water
-"(14, 16)",Scoutmaster was up there. He was watching me. But he didn't pay me no attention either.,Scoutmaster notices but ignores the situation
-"(17, 19)","And for no reason at all there was another guy, who had just walked up that minute... He just jumped over and grabbed me.",A stranger arrives and rescues him
+"(1, 1)","Yeah, I was in the boy scouts at the time.",I was in the boy scouts at the time
+"(2, 5)","And we was doing the 50-yard dash, racing, but we was at the pier, marked off, and so we was doing the 50-yard dash.",We were racing the 50-yard dash at the pier
+"(6, 6)","There was about 8 or 9 of us, you know, going down, coming back.",There were about 8 or 9 of us running back and forth
+"(7, 8)","And, going down the third time, I caught cramps and I started yelling ""Help!"",",I caught cramps and started yelling for help
+"(9, 12)","but the fellows didn't believe me, you know. They thought I was just trying to catch up, because I was going on or slowing down. So all of them kept going. They leave me.",The others thought I was faking and left me behind
+"(13, 13)",And so I started going down.,I started going under the water
+"(14, 16)",Scoutmaster was up there. He was watching me. But he didn't pay me no attention either.,The scoutmaster saw me but ignored my distress
+"(17, 17)","And for no reason at all there was another guy, who had just walked up that minute...",A stranger happened to walk up at that moment
+"(18, 19)",He just jumped over and grabbed me.,"He jumped in and grabbed me, saving me"

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Story Table</title>
@@ -8,25 +9,31 @@
       font-family: sans-serif;
       padding: 20px;
     }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
     }
-    th, td {
+
+    th,
+    td {
       border: 1px solid #ccc;
       padding: 10px;
       vertical-align: top;
     }
+
     img {
       max-width: 150px;
       height: auto;
     }
+
     td pre {
       white-space: pre-wrap;
     }
   </style>
 </head>
+
 <body>
   <h1>Story Table</h1>
   <table id="story-table">
@@ -35,6 +42,7 @@
         <th>Image</th>
         <th>Lines</th>
         <th>Prompt</th>
+        <th>Timestamp (s)</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -62,16 +70,21 @@
           const linesCell = document.createElement('td');
           linesCell.textContent = paragraph.lines.join(' ');
 
-          // Prompt column (load from .txt)
+          // Prompt column
           const promptCell = document.createElement('td');
           const promptText = await fetch(paragraph.prompt).then(res => res.text());
           const pre = document.createElement('pre');
           pre.textContent = promptText;
           promptCell.appendChild(pre);
 
+          // Timestamp column
+          const timestampCell = document.createElement('td');
+          timestampCell.textContent = paragraph.timestamp + " s";
+
           row.appendChild(imgCell);
           row.appendChild(linesCell);
           row.appendChild(promptCell);
+          row.appendChild(timestampCell);
           tableBody.appendChild(row);
         }
       } catch (error) {
@@ -82,4 +95,5 @@
     loadConfig();
   </script>
 </body>
+
 </html>

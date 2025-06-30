@@ -1,18 +1,18 @@
 segment_ids,text,keypoint
-"(1, 4)",Let me share a story from when I was twenty-one years old. I was living in a small apartment near the city center. I had just started my first job. And uh I was working as a graphic designer.,"Narrator, 21, begins life as graphic designer"
-"(5, 7)","My father, who was recovering from a surgery, hadn't been out in – in uh – well I'd say about eight months. He had to use a wheelchair to get around. The only person there with him during the day was a kind neighbor, a lady in her sixties.","Father recovering in wheelchair, watched by kind neighbor"
-"(8, 9)",My younger sister was away at college – so it was just my dad and the neighbor lady at home during the day.,"Sister away, leaving father and neighbor alone daily"
-"(10, 11)","One day, I got this strong feeling while I was at work. It told me: ""If you go to the nearby park during your lunch break and pray for your father's recovery, he'll start to improve.""",Strong inner prompting to pray during lunch break
-"(12, 15)","I looked around my office. I didn't see anyone nearby. So, I went to the park during my break and found a quiet spot there.",Sneaks to nearby park to find quiet spot
-"(16, 19)",That feeling came back again. I looked around once more. I still didn't see anyone nearby but I decided to take a chance.,Repeated feeling urges narrator to follow intuition
-"(20, 22)","I wasn't too far from my office, maybe a ten-minute walk. I found a bench to sit on and closed my eyes – uh – uh – that feeling came back once more.",Sits on bench; sense of urgency grows again
-"(23, 26)",I just took a deep breath. I was sitting under a big oak tree now. I looked up at the branches above me. Nobody was around.,"Calms under oak tree, ensuring he is alone"
-"(27, 29)","And uh I said to myself, well now, I had been taught that prayers can make a difference. And that it doesn't hurt to try.",Recalls teaching that sincere prayer can help
-"(30, 32)","I knew I wasn't perfect, but I wanted to help my dad. I'd admit that to anyone. But I was willing to give it a try.",Accepts imperfections yet resolves to pray
-"(33, 35)",I looked around one more time and then I closed my eyes and said a quiet prayer.,"After final glance, whispers quiet private prayer"
-"(36, 38)","I whispered, ""God, I don't know if you're listening. But I ask you to please help my father recover. So he can regain his independence and enjoy life again.""",Petitions God for father's healing and freedom
-"(39, 40)",I opened my eyes and went back to work.,Prayer ends; narrator returns to workplace
-"(41, 44)","Suddenly, I received a text message from my father. It said, ""I just took a few steps with my walker."" I – I couldn't believe it. It felt like a sign that my prayer had been heard.",Father texts that he just walked; narrator stunned
-"(45, 48)","I rushed home after work and saw my father standing in the living room with the help of his walker. He hadn't been able to do that in months without assistance. And there he was, taking small steps.","Rushing home, sees father standing and stepping"
-"(49, 51)",That was the turning point in his recovery. He continued to improve and regained most of his mobility within a year.,"Father's recovery accelerates, regaining mobility within year"
-"(52, 54)","It's been, what, six or seven years since then? My father is now able to walk without any assistance. He's living life to the fullest, even in his seventies.","Six years later father walks unaided, enjoying life"
+"(1, 4)",Let me share a story from when I was twenty-one years old. I was living in a small apartment near the city center. I had just started my first job. And uh I was working as a graphic designer.,At twenty-one I lived downtown starting my graphic design job
+"(5, 6)","My father, who was recovering from a surgery, hadn't been out in – in uh – well I'd say about eight months. He had to use a wheelchair to get around.",My father was immobilized in a wheelchair after surgery
+"(7, 9)","The only person there with him during the day was a kind neighbor, a lady in her sixties. My younger sister was away at college – so it was just my dad and the neighbor lady at home during the day.",A neighbor alone cared for Dad during our absences
+"(10, 11)","One day, I got this strong feeling while I was at work. It told me: ""If you go to the nearby park during your lunch break and pray for your father's recovery, he'll start to improve.""",A sudden prompting urged me to pray in the park
+"(12, 15)","I looked around my office. I didn't see anyone nearby. So, I went to the park during my break and found a quiet spot there.",I slipped out and found a quiet park spot
+"(16, 19)",That feeling came back again. I looked around once more. I still didn't see anyone nearby but I decided to take a chance.,The urging returned; I decided to act despite embarrassment
+"(20, 23)","I wasn't too far from my office, maybe a ten-minute walk. I found a bench to sit on and closed my eyes – uh – uh – that feeling came back once more. I just took a deep breath.","Sitting on a bench, the feeling resurfaced as I breathed"
+"(24, 26)",I was sitting under a big oak tree now. I looked up at the branches above me. Nobody was around.,"Under a lone oak, I confirmed nobody was watching"
+"(27, 29)","And uh I said to myself, well now, I had been taught that prayers can make a difference. And that it doesn't hurt to try.","Remembering lessons, I reasoned that praying could help Dad"
+"(30, 32)","I knew I wasn't perfect, but I wanted to help my dad. I'd admit that to anyone. But I was willing to give it a try.","Imperfect but determined, I committed to pray for Dad"
+"(33, 35)",I looked around one more time and then I closed my eyes and said a quiet prayer.,"I glanced around, closed my eyes, and prayed softly"
+"(36, 38)","I whispered, ""God, I don't know if you're listening. But I ask you to please help my father recover. So he can regain his independence and enjoy life again.""",I asked God to restore Dad's independence and joy
+"(39, 40)",I opened my eyes and went back to work.,I ended the prayer and returned to my desk
+"(41, 44)","Suddenly, I received a text message from my father. It said, ""I just took a few steps with my walker."" I – I couldn't believe it. It felt like a sign that my prayer had been heard.",Dad texted that he walked; I felt awestruck and hopeful
+"(45, 48)","I rushed home after work and saw my father standing in the living room with the help of his walker. He hadn't been able to do that in months without assistance. And there he was, taking small steps.",I hurried home and witnessed Dad taking tentative walker steps
+"(49, 51)",That was the turning point in his recovery. He continued to improve and regained most of his mobility within a year.,That moment marked his steady recovery over the year
+"(52, 54)","It's been, what, six or seven years since then? My father is now able to walk without any assistance. He's living life to the fullest, even in his seventies.","Years later Dad walks unassisted, enjoying life fully"

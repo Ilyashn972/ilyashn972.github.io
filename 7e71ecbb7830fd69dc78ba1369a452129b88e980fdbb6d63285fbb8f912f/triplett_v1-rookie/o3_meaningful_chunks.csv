@@ -1,11 +1,11 @@
 segment_ids,text,keypoint
-"(1, 4)","Back in the days when I was a rookie in the police force, the Chief was a veteran. He had caught a notorious criminal – or had been awarded for bravery. But he had – a young daughter.","Veteran Chief introduced, along with his young daughter"
-"(5, 7)",And in those days I was a fitness enthusiast. And it seemed she was trying to impress me. I never observed it.,Fitness-minded rookie unwittingly attracts daughter's attention
-"(8, 11)","Truth is I wasn't very fond of her because she was – She was a charming girl until she opened her mouth. She was a chatterbox. Goodness, she could talk.",Narrator annoyed by girl's constant chatter
-"(12, 14)",Then she left a message one day saying she was going to run away because he was always scolding her about me. He arrived at my apartment. Big intimidating look on his face.,Daughter's runaway message brings furious Chief to narrator
-"(15, 18)",I managed to calm him down. and proposed “Well we'll search for her and if we can't locate her well you can – do whatever you think is right.” I was strategizing.,Narrator calms Chief and proposes organized search
-"(19, 22)",So he accepted my offer. And we went to where they found her scarf – near a park. and we traced down a little more and we couldn't locate her.,They search the park but cannot find her
-"(23, 25)",And returned – it was a police station – she was sitting on a chair with a book in her hands.,"Returning to station, they find her reading calmly"
-"(26, 27)",She hadn't run away. But – nevertheless – that resolved the issue for that day.,She never ran away; situation temporarily resolved
-"(28, 31)","But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.” And I did. I transferred. and left.",Deputy warns; narrator transfers to avoid Chief's wrath
-"(32, 32)",That was the end of my rookie year.,End of narrator's rookie police year
+"(1, 4)","Back in the days when I was a rookie in the police force, the Chief was a veteran. He had caught a notorious criminal – or had been awarded for bravery. But he had – a young daughter.",I recall the veteran Chief and his young daughter
+"(5, 7)",And in those days I was a fitness enthusiast. And it seemed she was trying to impress me. I never observed it.,"As fitness buff, I sensed her trying to impress me"
+"(8, 11)","Truth is I wasn't very fond of her because she was – She was a charming girl until she opened her mouth. She was a chatterbox. Goodness, she could talk.",I disliked her nonstop chatter despite her charm
+"(12, 14)",Then she left a message one day saying she was going to run away because he was always scolding her about me. He arrived at my apartment. Big intimidating look on his face.,She threatened to run away; her father confronted me
+"(15, 17)",I managed to calm him down. and proposed “Well we'll search for her and if we can't locate her well you can – do whatever you think is right.”,I calmed him and suggested we search together
+"(18, 19)",I was strategizing. So he accepted my offer.,I strategized and he agreed to my plan
+"(20, 22)",And we went to where they found her scarf – near a park. and we traced down a little more and we couldn't locate her.,We followed her scarf's trail but found nothing
+"(23, 26)",And returned – it was a police station – she was sitting on a chair with a book in her hands. She hadn't run away.,"Back at the station, she waited calmly with a book"
+"(27, 28)","But – nevertheless – that resolved the issue for that day. But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”","Issue seemed resolved, but deputy warned me to leave"
+"(29, 32)",And I did. I transferred. and left. That was the end of my rookie year.,"I transferred out, ending my tumultuous rookie year"

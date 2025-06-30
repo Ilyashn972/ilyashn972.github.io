@@ -1,41 +1,41 @@
 segment_ids,text,keypoint
-"(1, 3)",This is a story about three of my friends that I met in 1949 when I started college.,Met three friends at college in 1949
-"(4, 6)","Actually I met them before that, we became friends after we all... went to school at the same place.",Earlier acquaintance deepens when attending same school
-"(7, 8)","Previous to that during high school we'd all been high school athletes at different schools, and so we were acquainted.",We knew each other as rival athletes
-"(9, 11)","But then after graduation when we all enrolled in school, we found that the four of us were all now attending the same school, and we became quite good friends.","Post-graduation, all attend same college and bond"
-"(12, 13)","I was the kid from the farm, the other three guys all lived in the city.",Farm boy narrator versus city friends contrast
-"(14, 17)","So being big macho men that we all were, they used to like to come out to the farm and hunt, and they'd come out, and help me do chores and things like that.","City friends visit farm, help chores and hunt"
-"(18, 18)",Then we'd go rabbit hunting and squirrel hunting and things of that nature.,They go rabbit and squirrel hunting together
-"(19, 21)","I never really enjoyed hunting. Uh ... being born and raised on the farm I was used to the outdoors, wasn't all that exciting to me.",Narrator finds hunting unexciting despite farm upbringing
-"(22, 23)","But these guys got a big kick out of it, so I'd go along just to be one of the group.",He joins anyway to stay part of group
-"(24, 27)","Things went on, we did this for several years, they were always coming out to the farm, and hunting.",Years pass with regular farm hunts continuing
-"(28, 30)","After we'd been acquainted for several years, one of them got the idea they'd like to go bear hunting up in Canada. Now that didn't really appeal to me,",Friends propose Canadian bear hunt; narrator reluctant
-"(31, 34)","but I'd always been one of the group, and I couldn't find any real reason not to go, so I left them talk me into it, wasn't too hepped up on this at all.",Pressure convinces him to agree despite misgivings
-"(35, 37)","I don't care anything really much about hunting period, let alone bear hunting. Be about my luck the bear would wind up hunting me.",He hates hunting and fears becoming the prey
-"(38, 39)","But as I said, I left them talk me into it.","Nevertheless, he lets them persuade him again"
-"(40, 43)","So we took an airplane out of Fort Wayne, and we flew way up into Canada some place, and we landed on a lake, and then we rented canoes,",They fly and canoe deep into Canadian wilderness
-"(44, 45)","and paddled for another ... day and a half it seemed to me, 'till we got way up in the north woods.",Long paddle brings them farther into north woods
-"(46, 48)","Then after we ... went as far as we could in the canoes, then we had to backpack for another ... five hundred miles I thought, 'till we got to this cabin that they had rented way up there in the north woods.",Backpack trek reaches remote rented cabin
-"(49, 52)","And after I got there, I was even more apprehensive than I had been even before we started, 'cause I didn't really need any part of that. That was pretty spooky looking territory, let me tell you.",Spooky setting heightens narrator's apprehension about trip
-"(53, 55)","So we got up there, and got set up in the cabin, and ... got our groceries stored and everything.","Group settles cabin, stores groceries, organizes camp"
-"(56, 57)",And after we got to discussing it those guys weren't any more hot about going out in those woods and looking for a bear than I was.,Realize none are eager to hunt bears
-"(58, 61)","We sat around there for three or four days, played cards, and ate, and slept,",They spend days inside playing cards and eating
-"(62, 64)",and we just couldn't ... no one was in the mood to go out and hunt bear 'cause that's just a plain old spooky looking place.,Still nobody wants to enter those spooky woods
-"(65, 66)","We never ventured outside at night, we stayed right there in the old cabin.","They avoid nighttime outdoors, staying in cabin"
-"(67, 70)","Well after we'd been there for three or four days, we got to talking it over, and somebody said “Hey, if we don't go out and hunt some bear ...",Conversation turns to needing a trophy bear
-"(71, 74)","we've got to find a bear to take back home with us, or we're really going to get a bad time from the rest of the people, 'cause too many people know we'd gone bear hunting, and if we come home skunked with no bear they're really going to give us a bad time.”",Fear of ridicule if returning home empty-handed
-"(75, 78)","Soo ... no one wanted to go out, so we all decided that we'd cut the cards. Whoever got the high card ... would go out and get a bear, and the rest of them would skin him butcher him and pack him back down,",Decide card draw will choose reluctant hunter
-"(79, 81)","so we could take him home with us. So you know who YOU KNOW WHO got the high card, the guy that didn't even want to be there in the first place.","Narrator loses draw, tasked with finding bear"
-"(82, 84)","But I had agreed to play the game ... So ... I took the old gun, and I go out bear hunting.",He arms himself and heads into forest
-"(85, 88)","I didn't like this at all. I'm walking out there in the woods for hours it seems like, and I just wasn't seeing any bears or anything, and finally I heard a noise,",Hours pass; he hears something while searching
-"(89, 91)","and I turned around, and there was the biggest old bear I'd ever seen in my life, I'd never even seen a PICTURE of one THAT big.",Turns to see enormous bear behind him
-"(92, 94)","I whipped up the gun, and pulled the trigger, and nothing happened.",Gun misfires because he forgot to load
-"(95, 98)","I'd forgot to LOAD that turkey. Well he had ... he just had no desires to have me in his territory, and he made for me.","Unloaded gun, charging bear; panic sets in"
-"(99, 102)","Well there was nothing for me to do but run, and I turned around, I ran as hard as I could go, and I thought I used to be pretty fast,",He sprints toward cabin with bear pursuing
-"(103, 105)","but that old bear, man he was gaining, he was just right on my heels ...","Bear gains quickly, almost on his heels"
-"(106, 109)","And when I got within sight of that cabin I started yelling “OPEN THE DOOR, OPEN THE DOOR!” Man I was whipping down there just as hard as I could go, and that old bear right on my tail,",He yells for cabin door to open
-"(110, 113)","and they opened the door, and I got right to the cabin door, I made a quick turn to the left, and that old bear went right on in.","Friends open door; he dodges, bear charges inside"
-"(114, 117)","I just reached back, and pulled the door shut, and said “THERE HE IS FELLOWS, YOU SKIN HIM,",Slams door and assigns friends skinning duty
-"(118, 118)",I'LL GO GET ANOTHER ONE!”,Jokes he'll fetch another bear immediately
-"(119, 120)","Now all this happened thirty years ago, and all my buddies agreed ... that I lived up to my commitment.",Thirty years later he recalls fulfilling promise
-"(121, 122)","But can you BELIEVE, they haven't asked me to go hunting one time since that day.",Friends never again invite him hunting
+"(1, 3)",This is a story about three of my friends that I met in 1949 when I started college.,I met three friends when starting college in 1949
+"(4, 6)","Actually I met them before that, we became friends after we all... went to school at the same place.",We became friends after earlier schooling together
+"(7, 8)","Previous to that during high school we'd all been high school athletes at different schools, and so we were acquainted.",We were high school athletes at different schools
+"(9, 11)","But then after graduation when we all enrolled in school, we found that the four of us were all now attending the same school, and we became quite good friends.","After enrolling together, we quickly became good friends"
+"(12, 13)","I was the kid from the farm, the other three guys all lived in the city.",I was the farm kid; they were city boys
+"(14, 17)","So being big macho men that we all were, they used to like to come out to the farm and hunt, and they'd come out, and help me do chores and things like that.",They visited my farm to hunt and help chores
+"(18, 19)",Then we'd go rabbit hunting and squirrel hunting and things of that nature. I never really enjoyed hunting.,We hunted rabbits though I disliked hunting
+"(20, 23)","Uh ... being born and raised on the farm I was used to the outdoors, wasn't all that exciting to me. But these guys got a big kick out of it, so I'd go along just to be one of the group.","Outdoors bored me, but I tagged along anyway"
+"(24, 27)","Things went on, we did this for several years, they were always coming out to the farm, and hunting.",For years they kept visiting the farm to hunt
+"(28, 29)","After we'd been acquainted for several years, one of them got the idea they'd like to go bear hunting up in Canada.","After years together, one suggested bear hunting in Canada"
+"(30, 32)","Now that didn't really appeal to me, but I'd always been one of the group, and I couldn't find any real reason not to go,",I agreed despite little enthusiasm for bear hunting
+"(33, 34)","so I left them talk me into it, wasn't too hepped up on this at all.",They talked me into it; I stayed reluctant
+"(35, 37)","I don't care anything really much about hunting period, let alone bear hunting. Be about my luck the bear would wind up hunting me.","I hated hunting, especially the idea of bears"
+"(38, 39)","But as I said, I left them talk me into it.","Still, I let them persuade me again"
+"(40, 43)","So we took an airplane out of Fort Wayne, and we flew way up into Canada some place, and we landed on a lake, and then we rented canoes,","We flew north, landed on lake, rented canoes"
+"(44, 45)","and paddled for another ... day and a half it seemed to me, 'till we got way up in the north woods.",We paddled for days deeper into northern woods
+"(46, 48)","Then after we ... went as far as we could in the canoes, then we had to backpack for another ... five hundred miles I thought, 'till we got to this cabin that they had rented way up there in the north woods.","After canoeing, we backpacked to a remote cabin"
+"(49, 52)","And after I got there, I was even more apprehensive than I had been even before we started, 'cause I didn't really need any part of that. That was pretty spooky looking territory, let me tell you.","Reaching the cabin, my apprehension grew in wilderness"
+"(53, 55)","So we got up there, and got set up in the cabin, and ... got our groceries stored and everything.",We settled in and stored our supplies
+"(56, 57)",And after we got to discussing it those guys weren't any more hot about going out in those woods and looking for a bear than I was.,"Discussing it, none of us wanted to hunt"
+"(58, 61)","We sat around there for three or four days, played cards, and ate, and slept,","We spent days eating, playing cards, and sleeping"
+"(62, 64)",and we just couldn't ... no one was in the mood to go out and hunt bear 'cause that's just a plain old spooky looking place.,Still no one felt like venturing out for bears
+"(65, 66)","We never ventured outside at night, we stayed right there in the old cabin.",We never left the cabin after dark
+"(67, 70)","Well after we'd been there for three or four days, we got to talking it over, and somebody said “Hey, if we don't go out and hunt some bear ...",We realized our reputations required bringing home a bear
+"(71, 74)","we've got to find a bear to take back home with us, or we're really going to get a bad time from the rest of the people, 'cause too many people know we'd gone bear hunting, and if we come home skunked with no bear they're really going to give us a bad time.”",We'd be ridiculed if we returned without bear
+"(75, 76)","Soo ... no one wanted to go out, so we all decided that we'd cut the cards.","No volunteers, so we decided to cut cards"
+"(77, 79)","Whoever got the high card ... would go out and get a bear, and the rest of them would skin him butcher him and pack him back down, so we could take him home with us.",High card must hunt; others would process bear
+"(80, 81)","So you know who YOU KNOW WHO got the high card, the guy that didn't even want to be there in the first place.","Of course, I drew the high card"
+"(82, 84)","But I had agreed to play the game ... So ... I took the old gun, and I go out bear hunting.",Reluctantly I grabbed a gun and headed out
+"(85, 88)","I didn't like this at all. I'm walking out there in the woods for hours it seems like, and I just wasn't seeing any bears or anything, and finally I heard a noise,","Hours passed; I saw nothing, then heard noise"
+"(89, 92)","and I turned around, and there was the biggest old bear I'd ever seen in my life, I'd never even seen a PICTURE of one THAT big. I whipped up the gun,",I faced an enormous bear with unloaded gun
+"(93, 95)","and pulled the trigger, and nothing happened. I'd forgot to LOAD that turkey.",Trigger clicked empty; I had forgotten ammunition
+"(96, 98)","Well he had ... he just had no desires to have me in his territory, and he made for me.",The angry bear charged straight toward me
+"(99, 102)","Well there was nothing for me to do but run, and I turned around, I ran as hard as I could go, and I thought I used to be pretty fast,",I sprinted for the cabin with bear close
+"(103, 106)","but that old bear, man he was gaining, he was just right on my heels ... And when I got within sight of that cabin",Bear gained as I neared the cabin door
+"(107, 110)","I started yelling “OPEN THE DOOR, OPEN THE DOOR!” Man I was whipping down there just as hard as I could go, and that old bear right on my tail, and they opened the door,",I yelled to open door while bear chased me
+"(111, 113)","and I got right to the cabin door, I made a quick turn to the left, and that old bear went right on in.",I dodged aside; bear barreled inside cabin
+"(114, 117)","I just reached back, and pulled the door shut, and said “THERE HE IS FELLOWS, YOU SKIN HIM,",I slammed door and told them to skin him
+"(118, 120)","I'LL GO GET ANOTHER ONE!” Now all this happened thirty years ago, and all my buddies agreed ... that I lived up to my commitment.","I joked I'd fetch another, commitment fulfilled"
+"(121, 122)","But can you BELIEVE, they haven't asked me to go hunting one time since that day.","Since then, they've never invited me hunting again"
