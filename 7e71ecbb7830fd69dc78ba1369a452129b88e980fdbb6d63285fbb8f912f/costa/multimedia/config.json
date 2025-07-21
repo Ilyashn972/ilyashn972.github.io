@@ -11,7 +11,7 @@
             ],
             "lines": [
                 "My daughter died.",
-                "It’ll be twenty-eight years this month.",
+                "It\u2019ll be twenty-eight years this month.",
                 "The thirtieth of this month, yeah."
             ],
             "image": "images/costa_005.jpg",
@@ -42,17 +42,7 @@
                 9,
                 10,
                 11,
-                12,
-                13,
-                14,
-                15,
-                16,
-                17,
-                18,
-                19,
-                20,
-                21,
-                22
+                12
             ],
             "lines": [
                 "Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was.",
@@ -60,114 +50,233 @@
                 "Back then, they used a lot of ether.",
                 "There was a chair there.",
                 "They were just starting to get people out of bed, you know.",
-                "So, Victoria saw the chair,",
-                "and she said to the nurse, “What’s this chair doing here?”",
-                "The nurse said, “Well, we’ve got to get her out of bed.”",
-                "She said, “What are you talking about? She’s still under ether.”",
-                "“She’s too sick.”",
-                "But the nurse said, “Well, that’s the doctor’s orders.”",
-                "So, they went to get her out of bed,",
-                "and she passed out,",
-                "and they had to put her back in bed.",
-                "See, here, she never – I don’t know if they knew or what,",
-                "but I blame them for the blood clot she got, taking her out of bed."
+                "So, Victoria saw the chair,"
             ],
             "image": "images/costa_021.jpg",
             "prompt": "images/costa_021.prompt.txt",
-            "timestamp": 14.39
+            "timestamp": 14.39,
+            "duplicated": true
         },
         {
             "scene_id": 4,
             "segment_ids": [
-                23,
-                24,
-                25,
-                26,
-                27,
-                28,
-                29
+                13,
+                14,
+                15,
+                16
             ],
             "lines": [
-                "So, when she was walking around to come home after ten days,",
-                "I was waiting for the call from the hospital.",
-                "I didn’t have a phone then.",
-                "The lady from the store who had a phone called me, “Mrs. Costa,” at aquarter to five at night.",
-                "“Mrs. Costa, they just called you from the hospital.",
-                "Go Pick Marie up.",
-                "She’s discharged.”"
+                "and she said to the nurse, \u201cWhat\u2019s this chair doing here?\u201d",
+                "The nurse said, \u201cWell, we\u2019ve got to get her out of bed.\u201d",
+                "She said, \u201cWhat are you talking about? She\u2019s still under ether.\u201d",
+                "\u201cShe\u2019s too sick.\u201d"
             ],
-            "image": "images/costa_027.jpg",
-            "prompt": "images/costa_027.prompt.txt",
-            "timestamp": 53.71
+            "image": "images/costa_021.jpg",
+            "prompt": "images/costa_021.prompt.txt",
+            "timestamp": 27.87,
+            "duplicated": true
         },
         {
             "scene_id": 5,
             "segment_ids": [
-                30,
-                31,
-                32,
-                33,
-                34,
-                35,
-                36,
-                37,
-                38,
-                39,
-                40,
-                41,
-                42
+                17,
+                18
             ],
             "lines": [
-                "I had all the clothes laid out on the table.",
-                "And Rita was – I was cooking,",
-                "I said, “Rita, finish the cooking.”",
-                "Daddy will be home soon.”",
-                "He was working down in the yard.",
-                "I said, “And put a big pot of coffee on,” because she had been wishing for coffee.",
-                "And you know, every morning, that first cup of coffee, I offered it to her.",
-                "When I get up in the morning, the first cup is hers.",
-                "Since she’s gone, I never forget that.",
-                "So I said, “Put a pot of coffee on,",
-                "and send for some cake from the bakery.”",
-                "I’m going to get Marie; they called me.”",
-                "“All right, mother, go ahead,” she said, “I’ll finish up.”"
+                "But the nurse said, \u201cWell, that\u2019s the doctor\u2019s orders.\u201d",
+                "So, they went to get her out of bed,"
             ],
-            "image": "images/costa_031.jpg",
-            "prompt": "images/costa_031.prompt.txt",
-            "timestamp": 74.58
+            "image": "images/costa_021.jpg",
+            "prompt": "images/costa_021.prompt.txt",
+            "timestamp": 39.82,
+            "duplicated": true
         },
         {
             "scene_id": 6,
             "segment_ids": [
-                43,
-                44,
-                45,
-                46,
-                47,
-                48,
-                49,
-                50,
-                51,
-                52
+                19,
+                20
             ],
             "lines": [
-                "And I went myself. You know, I had the coat on my arm.",
-                "She was operated on in March –",
-                "No, April! So that was the thirtieth.",
-                "She was operated – ten days before, so that would be the twentieth.",
-                "The twentieth of April, right? It was kind of chilly.",
-                "Oh, and I had everything in a bag,",
-                "and I had the coat on my arm and her dress hanging on my arm.",
-                "She saw me from the windows, from Wolf Street.",
-                "She said, “My mother’s just coming.”",
-                "She was with the girls, saying goodbye to everyone – you know how it is."
+                "and she passed out,",
+                "and they had to put her back in bed."
             ],
-            "image": "images/costa_036.jpg",
-            "prompt": "images/costa_036.prompt.txt",
-            "timestamp": 109.51
+            "image": "images/costa_021.jpg",
+            "prompt": "images/costa_021.prompt.txt",
+            "timestamp": 45.6,
+            "duplicated": true
         },
         {
             "scene_id": 7,
+            "segment_ids": [
+                23
+            ],
+            "lines": [
+                "So, when she was walking around to come home after ten days,"
+            ],
+            "image": "images/costa_027.jpg",
+            "prompt": "images/costa_027.prompt.txt",
+            "timestamp": 56.39,
+            "duplicated": true
+        },
+        {
+            "scene_id": 8,
+            "segment_ids": [
+                24,
+                25
+            ],
+            "lines": [
+                "I was waiting for the call from the hospital.",
+                "I didn\u2019t have a phone then."
+            ],
+            "image": "images/costa_027.jpg",
+            "prompt": "images/costa_027.prompt.txt",
+            "timestamp": 60.17,
+            "duplicated": true
+        },
+        {
+            "scene_id": 9,
+            "segment_ids": [
+                30
+            ],
+            "lines": [
+                "I had all the clothes laid out on the table."
+            ],
+            "image": "images/costa_031.jpg",
+            "prompt": "images/costa_031.prompt.txt",
+            "timestamp": 74.74,
+            "duplicated": true
+        },
+        {
+            "scene_id": 10,
+            "segment_ids": [
+                31,
+                32
+            ],
+            "lines": [
+                "And Rita was \u2013 I was cooking,",
+                "I said, \u201cRita, finish the cooking.\u201d"
+            ],
+            "image": "images/costa_031.jpg",
+            "prompt": "images/costa_031.prompt.txt",
+            "timestamp": 78.38,
+            "duplicated": true
+        },
+        {
+            "scene_id": 11,
+            "segment_ids": [
+                33,
+                34
+            ],
+            "lines": [
+                "Daddy will be home soon.\u201d",
+                "He was working down in the yard."
+            ],
+            "image": "images/costa_033.jpg",
+            "prompt": "images/costa_033.prompt.txt",
+            "timestamp": 82.92,
+            "duplicated": true
+        },
+        {
+            "scene_id": 12,
+            "segment_ids": [
+                35,
+                36,
+                37
+            ],
+            "lines": [
+                "I said, \u201cAnd put a big pot of coffee on,\u201d because she had been wishing for coffee.",
+                "And you know, every morning, that first cup of coffee, I offered it to her.",
+                "When I get up in the morning, the first cup is hers."
+            ],
+            "image": "images/costa_035.jpg",
+            "prompt": "images/costa_035.prompt.txt",
+            "timestamp": 87.02,
+            "duplicated": true
+        },
+        {
+            "scene_id": 13,
+            "segment_ids": [
+                38,
+                39,
+                40,
+                41
+            ],
+            "lines": [
+                "Since she\u2019s gone, I never forget that.",
+                "So I said, \u201cPut a pot of coffee on,",
+                "and send for some cake from the bakery.\u201d",
+                "I\u2019m going to get Marie; they called me.\u201d"
+            ],
+            "image": "images/costa_031.jpg",
+            "prompt": "images/costa_031.prompt.txt",
+            "timestamp": 98.27,
+            "duplicated": true
+        },
+        {
+            "scene_id": 14,
+            "segment_ids": [
+                43
+            ],
+            "lines": [
+                "And I went myself. You know, I had the coat on my arm."
+            ],
+            "image": "images/costa_036.jpg",
+            "prompt": "images/costa_036.prompt.txt",
+            "timestamp": 111.06,
+            "duplicated": true
+        },
+        {
+            "scene_id": 15,
+            "segment_ids": [
+                44,
+                45,
+                46,
+                47
+            ],
+            "lines": [
+                "She was operated on in March \u2013",
+                "No, April! So that was the thirtieth.",
+                "She was operated \u2013 ten days before, so that would be the twentieth.",
+                "The twentieth of April, right? It was kind of chilly."
+            ],
+            "image": "images/costa_044.jpg",
+            "prompt": "images/costa_044.prompt.txt",
+            "timestamp": 115.09,
+            "duplicated": true
+        },
+        {
+            "scene_id": 16,
+            "segment_ids": [
+                48,
+                49
+            ],
+            "lines": [
+                "Oh, and I had everything in a bag,",
+                "and I had the coat on my arm and her dress hanging on my arm."
+            ],
+            "image": "images/costa_036.jpg",
+            "prompt": "images/costa_036.prompt.txt",
+            "timestamp": 126.1,
+            "duplicated": true
+        },
+        {
+            "scene_id": 17,
+            "segment_ids": [
+                50,
+                51
+            ],
+            "lines": [
+                "She saw me from the windows, from Wolf Street.",
+                "She said, \u201cMy mother\u2019s just coming.\u201d"
+            ],
+            "image": "images/costa_036.jpg",
+            "prompt": "images/costa_036.prompt.txt",
+            "timestamp": 132.2,
+            "duplicated": true
+        },
+        {
+            "scene_id": 18,
             "segment_ids": [
                 53,
                 54,
@@ -177,43 +286,38 @@
             "lines": [
                 "They told me on the phone, it would be ten dollars more for her board.",
                 "And to make sure I brought her girdle to put on.",
-                "I said, “All right, I’ll be right over.”",
+                "I said, \u201cAll right, I\u2019ll be right over.\u201d",
                 "And I went."
             ],
             "image": "images/costa_045.jpg",
             "prompt": "images/costa_045.prompt.txt",
-            "timestamp": 139.13
+            "timestamp": 140.97
         },
         {
-            "scene_id": 8,
+            "scene_id": 19,
             "segment_ids": [
                 57,
                 58,
                 59,
                 60,
                 61,
-                62,
-                63,
-                64,
-                65
+                62
             ],
             "lines": [
-                "But when I got there, the nurse said to me, “Sit down, Mrs. Costa, sit here for a while.”",
+                "But when I got there, the nurse said to me, \u201cSit down, Mrs. Costa, sit here for a while.\u201d",
                 "So I sat down, and I was praying for another lady in the hospital that had an operation for her gall bladder.",
                 "She lived near my sister, and she had ten children.",
                 "They had said she was in very bad shape.",
-                "I prayed, “Oh dear God, don’t take that mother away from her children.”",
-                "I was praying for her, you know.",
-                "Then a little nurse’s aide went to the closet and got some blankets.",
-                "I started getting the chills,",
-                "and I was thinking about it,"
+                "I prayed, \u201cOh dear God, don\u2019t take that mother away from her children.\u201d",
+                "I was praying for her, you know."
             ],
             "image": "images/costa_052.jpg",
             "prompt": "images/costa_052.prompt.txt",
-            "timestamp": 150.68
+            "timestamp": 150.75,
+            "duplicated": true
         },
         {
-            "scene_id": 9,
+            "scene_id": 20,
             "segment_ids": [
                 66,
                 67,
@@ -221,17 +325,17 @@
                 69
             ],
             "lines": [
-                "when the aide said to the nurse, “Oh, she’s going into a cold sweat now.”",
-                "The nurse hung up the phone and came to me. She said, “Mrs. Costa, has your daughter ever had a fainting spell?”",
-                "“Oh my God!” I said, “Don’t tell me you’re running for my daughter!”",
-                "“Yes,” she said, “come on in.”"
+                "when the aide said to the nurse, \u201cOh, she\u2019s going into a cold sweat now.\u201d",
+                "The nurse hung up the phone and came to me. She said, \u201cMrs. Costa, has your daughter ever had a fainting spell?\u201d",
+                "\u201cOh my God!\u201d I said, \u201cDon\u2019t tell me you\u2019re running for my daughter!\u201d",
+                "\u201cYes,\u201d she said, \u201ccome on in.\u201d"
             ],
             "image": "images/costa_067.jpg",
             "prompt": "images/costa_067.prompt.txt",
             "timestamp": 181.63
         },
         {
-            "scene_id": 10,
+            "scene_id": 21,
             "segment_ids": [
                 70,
                 71,
@@ -241,49 +345,55 @@
             "lines": [
                 "So, I went into the room.",
                 "And my daughter was on the bed with her bedroom slippers and her housecoat on.",
-                "And the beads of sweat – honest to God, not to exaggerate, they were that big.",
-                "It came – just poured from her –"
+                "And the beads of sweat \u2013 honest to God, not to exaggerate, they were that big.",
+                "It came \u2013 just poured from her \u2013"
             ],
             "image": "images/costa_076.jpg",
             "prompt": "images/costa_076.prompt.txt",
             "timestamp": 198.89
         },
         {
-            "scene_id": 11,
+            "scene_id": 22,
             "segment_ids": [
                 74,
                 75,
-                76,
+                76
+            ],
+            "lines": [
+                "I said, \u201cWhat did you do, kill my daughter?",
+                "You killed her! You killed her!\u201d",
+                "That\u2019s what I kept yelling."
+            ],
+            "image": "images/costa_074.jpg",
+            "prompt": "images/costa_074.prompt.txt",
+            "timestamp": 214.56,
+            "duplicated": true
+        },
+        {
+            "scene_id": 23,
+            "segment_ids": [
                 77,
                 78,
                 79,
                 80,
                 81,
-                82,
-                83,
-                84,
-                85
+                82
             ],
             "lines": [
-                "I said, “What did you do, kill my daughter?",
-                "You killed her! You killed her!”",
-                "That’s what I kept yelling.",
                 "And the doctor rushed in,",
                 "see, they were trying to get the doctor, you know.",
                 "She was a lady doctor.",
                 "Dr. Schwartz actually did the operation, but she was his assistant, Dr. Montique.",
                 "She was a lady doctor.",
-                "So, she came in and she said –",
-                "I said, “You killed my daughter – what did you do to her?”",
-                "She said, “We don’t know what happened, Mrs. Costa.”",
-                "She took me away from the bed."
+                "So, she came in and she said \u2013"
             ],
-            "image": "images/costa_074.jpg",
-            "prompt": "images/costa_074.prompt.txt",
-            "timestamp": 214.56
+            "image": "images/costa_077.jpg",
+            "prompt": "images/costa_077.prompt.txt",
+            "timestamp": 221.67,
+            "duplicated": true
         },
         {
-            "scene_id": 12,
+            "scene_id": 24,
             "segment_ids": [
                 86,
                 87,
@@ -293,8 +403,8 @@
                 91
             ],
             "lines": [
-                "The nurse said to me, “Talk to her.”",
-                "I said, “Talk to her? My daughter’s dying, what am I supposed to tell her?”",
+                "The nurse said to me, \u201cTalk to her.\u201d",
+                "I said, \u201cTalk to her? My daughter\u2019s dying, what am I supposed to tell her?\u201d",
                 "And I was screaming.",
                 "My hair was all pulled out.",
                 "I went hysterical, you know what I mean? She was only eighteen years old.",
@@ -302,10 +412,10 @@
             ],
             "image": "images/costa_084.jpg",
             "prompt": "images/costa_084.prompt.txt",
-            "timestamp": 240.74
+            "timestamp": 241.34
         },
         {
-            "scene_id": 13,
+            "scene_id": 25,
             "segment_ids": [
                 92,
                 93,
@@ -318,10 +428,10 @@
             ],
             "image": "images/costa_115.jpg",
             "prompt": "images/costa_115.prompt.txt",
-            "timestamp": 259.42
+            "timestamp": 259.53
         },
         {
-            "scene_id": 14,
+            "scene_id": 26,
             "segment_ids": [
                 95,
                 96
@@ -335,7 +445,7 @@
             "timestamp": 268.04
         },
         {
-            "scene_id": 15,
+            "scene_id": 27,
             "segment_ids": [
                 97,
                 98,
@@ -345,239 +455,223 @@
                 102
             ],
             "lines": [
-                "“When is the mother coming?”",
+                "\u201cWhen is the mother coming?\u201d",
                 "The hospital kept calling.",
-                "The people in the office didn’t know what had happened yet.",
+                "The people in the office didn\u2019t know what had happened yet.",
                 "They kept calling the store, trying to reach us.",
-                "They asked, “When is the mother coming to pick up Marie?",
-                "She’s discharged.”"
+                "They asked, \u201cWhen is the mother coming to pick up Marie?",
+                "She\u2019s discharged.\u201d"
             ],
             "image": "images/costa_097.jpg",
             "prompt": "images/costa_097.prompt.txt",
             "timestamp": 275.48
         },
         {
-            "scene_id": 16,
+            "scene_id": 28,
             "segment_ids": [
                 103,
                 104,
-                105,
-                106,
-                107,
-                108,
-                109
+                105
             ],
             "lines": [
-                "And Rita said “That’s strange, the mother went to the hospital. She should be there.”",
+                "And Rita said \u201cThat\u2019s strange, the mother went to the hospital. She should be there.\u201d",
                 "So they came back to the hospital to look for us.",
-                "Rita said, “Gee, that’s strange,”",
-                "she said, “Mother must’ve gotten really worked up about Marie.”",
-                "You know, I’ve always had a bad heart.",
-                "“Mother must’ve gotten so upset about Marie, she probably made herself sick,” Rita thought.",
-                "So she came over with my son-in-law, in the car."
+                "Rita said, \u201cGee, that\u2019s strange,\u201d"
             ],
             "image": "images/costa_001.jpg",
             "prompt": "images/costa_001.prompt.txt",
-            "timestamp": 288.86
+            "timestamp": 288.86,
+            "duplicated": true
         },
         {
-            "scene_id": 17,
+            "scene_id": 29,
+            "segment_ids": [
+                106,
+                107,
+                108
+            ],
+            "lines": [
+                "she said, \u201cMother must\u2019ve gotten really worked up about Marie.\u201d",
+                "You know, I\u2019ve always had a bad heart.",
+                "\u201cMother must\u2019ve gotten so upset about Marie, she probably made herself sick,\u201d Rita thought."
+            ],
+            "image": "images/costa_001.jpg",
+            "prompt": "images/costa_001.prompt.txt",
+            "timestamp": 299.15,
+            "duplicated": true
+        },
+        {
+            "scene_id": 30,
             "segment_ids": [
                 110,
-                111,
-                112,
-                113,
-                114,
-                115
+                111
             ],
             "lines": [
                 "And I was in the main hallway, at the office.",
-                "I was all pulled apart.",
-                "One doctor wanted to give me a shot.",
-                "I said, “Get out of here,",
-                "I’ll kick you,” I said.",
-                "“You killed my daughter, now you want to kill me?”"
+                "I was all pulled apart."
             ],
             "image": "images/costa_106.jpg",
             "prompt": "images/costa_106.prompt.txt",
-            "timestamp": 313.8
+            "timestamp": 314.56,
+            "duplicated": true
         },
         {
-            "scene_id": 18,
+            "scene_id": 31,
             "segment_ids": [
                 116,
                 117,
                 118,
-                119,
-                120,
-                121
+                119
             ],
             "lines": [
                 "Another nurse came over.",
                 "See, they all knew me.",
                 "I had three operations in no time, not even a year.",
-                "And I knew all the nurses.",
-                "“Mrs. Costa, please, take –”",
-                "“Get out!” I said, “Don’t you dare come near me.”"
+                "And I knew all the nurses."
             ],
             "image": "images/costa_111.jpg",
             "prompt": "images/costa_111.prompt.txt",
-            "timestamp": 326.26
+            "timestamp": 326.19,
+            "duplicated": true
         },
         {
-            "scene_id": 19,
+            "scene_id": 32,
             "segment_ids": [
                 122,
-                123,
-                124,
-                125
+                123
             ],
             "lines": [
                 "I was so hysterical.",
-                "I was banging my head against the wall and everything.",
-                "They had to grab me.",
-                "Then they brought me to the office, see."
+                "I was banging my head against the wall and everything."
             ],
             "image": "images/costa_119.jpg",
             "prompt": "images/costa_119.prompt.txt",
-            "timestamp": 340.01
+            "timestamp": 340.07,
+            "duplicated": true
         },
         {
-            "scene_id": 20,
+            "scene_id": 33,
             "segment_ids": [
                 126,
                 127,
                 128
             ],
             "lines": [
-                "When Rita came in and saw me like that, she asked, “Mother, what happened?”",
-                "I said, “We lost Marie.",
-                "Marie died.”"
+                "When Rita came in and saw me like that, she asked, \u201cMother, what happened?\u201d",
+                "I said, \u201cWe lost Marie.",
+                "Marie died.\u201d"
             ],
-            "image":"images/costa_004.jpg",
-            "prompt":"images/costa_004.prompt.txt",
+            "image": "images/costa_004.jpg",
+            "prompt": "images/costa_004.prompt.txt",
             "timestamp": 347.16
         },
         {
-            "scene_id": 21,
+            "scene_id": 34,
             "segment_ids": [
                 129,
                 130,
                 131,
-                132,
-                133,
-                134,
-                135,
-                136,
-                137,
-                138,
-                139
+                132
             ],
             "lines": [
-                "Well, that’s this one. This is a picture of Rita.",
+                "Well, that\u2019s this one. This is a picture of Rita.",
                 "She went down like lightning.",
-                "Dropped to the floor, and that’s a marble floor.",
-                "She went down like lightning.",
-                "And the back of her leg, it felt just like a pole.",
-                "Hard like a pole, the back of her leg.",
-                "And that girl is suffering.",
-                "Thirty – no, twenty-eight years since her sister died?",
-                "When she gets that pain, it’s like she has phlebitis from it.",
-                "She suffers – seven, eight, nine weeks at a time.",
-                "She can’t walk, she goes through such pain since then."
+                "Dropped to the floor, and that\u2019s a marble floor.",
+                "She went down like lightning."
             ],
             "image": "images/costa_006.jpg",
             "prompt": "images/costa_006.prompt.txt",
-            "timestamp": 357.4
+            "timestamp": 357.4,
+            "duplicated": true
         },
         {
-            "scene_id": 22,
+            "scene_id": 35,
             "segment_ids": [
-                140,
-                141,
-                142,
-                143,
-                144
+                133,
+                134,
+                135
             ],
             "lines": [
-                "And how did they figure how Marie died?",
-                "The girl who was walking with Marie,",
-                "told the doctor that Marie was saying goodbye to Arlene.",
-                "And all Marie said to that girl was, “Oh, I’ve got a pain in my leg and I can’t see.”",
-                "And then Marie collapsed."
+                "And the back of her leg, it felt just like a pole.",
+                "Hard like a pole, the back of her leg.",
+                "And that girl is suffering."
+            ],
+            "image": "images/costa_006.jpg",
+            "prompt": "images/costa_006.prompt.txt",
+            "timestamp": 363.08,
+            "duplicated": true
+        },
+        {
+            "scene_id": 36,
+            "segment_ids": [
+                140
+            ],
+            "lines": [
+                "And how did they figure how Marie died?"
             ],
             "image": "images/costa_125.jpg",
             "prompt": "images/costa_125.prompt.txt",
-            "timestamp": 383.02
+            "timestamp": 384.0,
+            "duplicated": true
         },
         {
-            "scene_id": 23,
+            "scene_id": 37,
             "segment_ids": [
-                145,
-                146,
-                147,
-                148,
-                149,
-                150,
-                151,
-                152
+                145
             ],
             "lines": [
-                "Later, they said it was a blood clot.",
-                "I said, “Don’t you dare touch my daughter.",
-                "I’ll burn this hospital down!",
-                "I don’t care who’s in it.”",
-                "I said, “Don’t you dare touch my daughter.",
-                "You want to find out what she died from.”",
-                "But if you touch my daughter, I’ll kill you.”",
-                "I wouldn’t let them touch her."
+                "Later, they said it was a blood clot."
             ],
             "image": "images/costa_126.jpg",
             "prompt": "images/costa_126.prompt.txt",
-            "timestamp": 398.19
+            "timestamp": 398.35,
+            "duplicated": true
         },
         {
-            "scene_id": 24,
+            "scene_id": 38,
             "segment_ids": [
                 153,
-                154,
-                155,
-                156
+                154
             ],
             "lines": [
-                "So when I got home – they took me home.",
-                "I was screaming in the car.",
-                "I couldn’t get out, you know, I couldn’t –",
-                "I was screaming!"
+                "So when I got home \u2013 they took me home.",
+                "I was screaming in the car."
             ],
             "image": "images/costa_131.jpg",
             "prompt": "images/costa_131.prompt.txt",
-            "timestamp": 417.2
+            "timestamp": 417.14,
+            "duplicated": true
         },
         {
-            "scene_id": 25,
+            "scene_id": 39,
             "segment_ids": [
-                157,
-                158,
-                159,
-                160,
-                161,
-                162
+                157
             ],
             "lines": [
-                "Everybody came out, coming out of their doors because they could hear the screams.",
-                "My husband was sitting on the step.",
-                "He asked, “What’s the matter? What happened to you?”",
-                "Well, my hair was all pulled, and my face – I was a mess.",
-                "I didn’t know what I had done to myself.",
-                "I said, “Mike, we lost Marie. Marie died.” It was just a shock."
+                "Everybody came out, coming out of their doors because they could hear the screams."
             ],
             "image": "images/costa_133.jpg",
             "prompt": "images/costa_133.prompt.txt",
-            "timestamp": 425.32
+            "timestamp": 425.32,
+            "duplicated": true
         },
         {
-            "scene_id": 26,
+            "scene_id": 40,
+            "segment_ids": [
+                158,
+                159
+            ],
+            "lines": [
+                "My husband was sitting on the step.",
+                "He asked, \u201cWhat\u2019s the matter? What happened to you?\u201d"
+            ],
+            "image": "images/costa_158.jpg",
+            "prompt": "images/costa_158.prompt.txt",
+            "timestamp": 430.63,
+            "duplicated": true
+        },
+        {
+            "scene_id": 41,
             "segment_ids": [
                 163,
                 164
@@ -588,10 +682,10 @@
             ],
             "image": "images/costa_135.jpg",
             "prompt": "images/costa_135.prompt.txt",
-            "timestamp": 443.74
+            "timestamp": 445.52
         },
         {
-            "scene_id": 27,
+            "scene_id": 42,
             "segment_ids": [
                 165,
                 166,
@@ -607,29 +701,28 @@
             "timestamp": 448.85
         },
         {
-            "scene_id": 28,
+            "scene_id": 43,
             "segment_ids": [
                 168,
                 169,
                 170,
                 171,
-                172,
-                173
+                172
             ],
             "lines": [
-                "It was all – my two sisters were here, waiting until about half-past four.",
+                "It was all \u2013 my two sisters were here, waiting until about half-past four.",
                 "They waited because they knew she was coming home that day, waiting for the call.",
-                "My younger sister had brought an orange for Marie, and I had never seen an orange like it It was a big orange, like that.",
-                "She said, “Mary, look, when they call you, when you pick Marie up, let us know, and we’ll come over.”",
-                "I said, “All right.”",
-                "So, I got home and called everybody, told them what happened."
+                "My younger sister had brought an orange for Marie, and I had never seen an orange like it. It was a big orange, like that.",
+                "She said, \u201cMary, look, when they call you, when you pick Marie up, let us know, and we\u2019ll come over.\u201d",
+                "I said, \u201cAll right.\u201d"
             ],
-            "image":"images/costa_012.jpg",
-            "prompt":"images/costa_012.prompt.txt",
-            "timestamp": 456.42
+            "image": "images/costa_012.jpg",
+            "prompt": "images/costa_012.prompt.txt",
+            "timestamp": 456.42,
+            "duplicated": true
         },
         {
-            "scene_id": 29,
+            "scene_id": 44,
             "segment_ids": [
                 174,
                 175,
@@ -640,75 +733,115 @@
             "lines": [
                 "I called my brother-in-law.",
                 "He was an undertaker.",
-                "My sister’s husband – he’s passed away now too. God rest his soul.",
+                "My sister\u2019s husband \u2013 he\u2019s passed away now too. God rest his soul.",
                 "Maybe you know him...",
                 "So they were waiting for my call, you know,"
             ],
-            "image":"images/costa_020.jpg",
-            "prompt":"images/costa_020.prompt.txt",
+            "image": "images/costa_020.jpg",
+            "prompt": "images/costa_020.prompt.txt",
             "timestamp": 482.94
         },
         {
-            "scene_id": 30,
+            "scene_id": 45,
             "segment_ids": [
                 179,
-                180,
-                181,
-                182,
-                183,
-                184,
-                185,
-                186,
-                187,
-                188
+                180
             ],
             "lines": [
                 "but instead, I sent my son James, he was little then.",
-                "I said, “Go tell Aunt Millie and Aunt Jenny.”",
-                "They had cleaned the pavement,",
-                "and done the cement work, and they were cleaning the pavement.",
-                "They said, “Here comes little Jamie,” and now they said,",
-                "“Maybe he’s come to tell us Marie’s home.”",
-                "But when he got there, the poor kid’s eyes were all red.",
-                "They said, “James, what’s the matter, honey? Why are you crying?”",
-                "“Aunt Jenny, Aunt Millie, Marie died,” he said."
+                "I said, \u201cGo tell Aunt Millie and Aunt Jenny.\u201d"
             ],
-            "image":"images/costa_1021.jpg",
-            "prompt":"images/costa_1021.prompt.txt",
-            "timestamp": 495.85
+            "image": "images/costa_1021.jpg",
+            "prompt": "images/costa_1021.prompt.txt",
+            "timestamp": 495.85,
+            "duplicated": true
         },
         {
-            "scene_id": 31,
+            "scene_id": 46,
+            "segment_ids": [
+                181,
+                182
+            ],
+            "lines": [
+                "They had cleaned the pavement,",
+                "and done the cement work, and they were cleaning the pavement."
+            ],
+            "image": "images/costa_181.jpg",
+            "prompt": "images/costa_181.prompt.txt",
+            "timestamp": 502.82,
+            "duplicated": true
+        },
+        {
+            "scene_id": 47,
+            "segment_ids": [
+                183,
+                184
+            ],
+            "lines": [
+                "They said, \u201cHere comes little Jamie,\u201d and now they said,",
+                "\u201cMaybe he\u2019s come to tell us Marie\u2019s home.\u201d"
+            ],
+            "image": "images/costa_1021.jpg",
+            "prompt": "images/costa_1021.prompt.txt",
+            "timestamp": 507.46,
+            "duplicated": true
+        },
+        {
+            "scene_id": 48,
+            "segment_ids": [
+                185
+            ],
+            "lines": [
+                "But when he got there, the poor kid\u2019s eyes were all red."
+            ],
+            "image": "images/costa_185.jpg",
+            "prompt": "images/costa_185.prompt.txt",
+            "timestamp": 513.04,
+            "duplicated": true
+        },
+        {
+            "scene_id": 49,
             "segment_ids": [
                 189,
                 190
             ],
             "lines": [
                 "Well, my sisters and my mother, you know, they were all alive.",
-                "It was a shock to everybody. That was a shock that –"
+                "It was a shock to everybody. That was a shock that \u2013"
             ],
-            "image":"images/costa_023.jpg",
-            "prompt":"images/costa_023.prompt.txt",
-            "timestamp": 522.51
+            "image": "images/costa_023.jpg",
+            "prompt": "images/costa_023.prompt.txt",
+            "timestamp": 523.68
         },
         {
-            "scene_id": 32,
+            "scene_id": 50,
             "segment_ids": [
-                191,
+                191
+            ],
+            "lines": [
+                "The neighborhood \u2013 Annie at the store always says, \u201cMrs. Costa,\u201d every time I go in there, she reminds me, \u201cI just picture Marie standing at that step, looking over here.\u201d She used to stand at that step."
+            ],
+            "image": "images/costa_024.jpg",
+            "prompt": "images/costa_024.prompt.txt",
+            "timestamp": 531.84,
+            "duplicated": true
+        },
+        {
+            "scene_id": 51,
+            "segment_ids": [
                 192,
                 193,
                 194
             ],
             "lines": [
-                "The neighborhood – Annie at the store always says, “Mrs. Costa,” every time I go in there, she reminds me, “I just picture Marie standing at that step, looking over here.” She used to stand at that step.",
-                "She was a real quiet girl,",
-                "pleasant, didn’t talk much,",
-                "but she was so good, I can’t even tell you.",
-                "That’s all. So that’s what happened."
+                "She was a real quiet girl, pleasant, didn\u2019t talk much,",
+                "but she was so good, I can\u2019t even tell you.",
+                "That\u2019s all. So that\u2019s what happened."
             ],
             "image": "images/costa_024.jpg",
             "prompt": "images/costa_024.prompt.txt",
-            "timestamp": 531.7
+            "timestamp": 542.6,
+            "duplicated": true
         }
     ]
 }
