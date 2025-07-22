@@ -113,37 +113,38 @@
         {
             "scene_id": 7,
             "segment_ids": [
-                23
+                23,
+                24,
+                25
             ],
             "lines": [
-                "So, when she was walking around to come home after ten days,"
+                "So, when she was walking around to come home after ten days,",
+                "I was waiting for the call from the hospital.",
+                "I didn\u2019t have a phone then."
             ],
-            "image": "images/costa_027.jpg",
-            "prompt": "images/costa_027.prompt.txt",
+            "image": "images/costa_024_edited.jpg",
+            "prompt": "images/costa_024_edited.prompt.txt",
             "timestamp": 56.39,
             "duplicated": true
         },
         {
             "scene_id": 8,
             "segment_ids": [
-                24,
-                25,
                 26,
                 27,
                 28,
                 29
             ],
             "lines": [
-                "I was waiting for the call from the hospital.",
-                "I didn\u2019t have a phone then.",
+                
                 "The lady from the store who had a phone called me, \u201cMrs. Costa,\u201d at aquarter to five at night.",
                 "\u201cMrs. Costa, they just called you from the hospital.",
                 "Go Pick Marie up.",
                 "She\u2019s discharged.\u201d"
             ],
-            "image": "images/costa_024_edited.jpg",
-            "prompt": "images/costa_024_edited.prompt.txt",
-            "timestamp": 60.17,
+            "image": "images/costa_027.jpg",
+            "prompt": "images/costa_027.prompt.txt",
+            "timestamp": 64.24,
             "duplicated": true
         },
         {
