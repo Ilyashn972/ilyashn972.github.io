@@ -136,7 +136,6 @@
                 29
             ],
             "lines": [
-                
                 "The lady from the store who had a phone called me, \u201cMrs. Costa,\u201d at aquarter to five at night.",
                 "\u201cMrs. Costa, they just called you from the hospital.",
                 "Go Pick Marie up.",
@@ -353,8 +352,8 @@
                 "\u201cOh my God!\u201d I said, \u201cDon\u2019t tell me you\u2019re running for my daughter!\u201d",
                 "\u201cYes,\u201d she said, \u201ccome on in.\u201d"
             ],
-            "image": "images/costa_067.jpg",
-            "prompt": "images/costa_067.prompt.txt",
+            "image": "images/costa_066_edited.jpg",
+            "prompt": "images/costa_066_edited.prompt.txt",
             "timestamp": 181.63
         },
         {
