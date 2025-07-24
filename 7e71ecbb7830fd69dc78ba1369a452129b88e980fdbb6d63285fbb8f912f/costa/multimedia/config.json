@@ -425,22 +425,32 @@
             "segment_ids": [
                 86,
                 87,
-                88,
+                88
+            ],
+            "lines": [
+                "The nurse said to me, \u201cTalk to her.\u201d",
+                "I said, \u201cTalk to her? My daughter\u2019s dying, what am I supposed to tell her?\u201d",
+                "And I was screaming."
+            ],
+            "image": "images/costa_084.jpg",
+            "prompt": "images/costa_084.prompt.txt",
+            "timestamp": 241.34
+        },
+        {
+            "scene_id": 24.1,
+            "segment_ids": [
                 89,
                 90,
                 91
             ],
             "lines": [
-                "The nurse said to me, \u201cTalk to her.\u201d",
-                "I said, \u201cTalk to her? My daughter\u2019s dying, what am I supposed to tell her?\u201d",
-                "And I was screaming.",
                 "My hair was all pulled out.",
                 "I went hysterical, you know what I mean? She was only eighteen years old.",
                 "Beautiful girl, you can see from her picture."
             ],
-            "image": "images/costa_084.jpg",
+            "image": "images/pulled_out.jpg",
             "prompt": "images/costa_084.prompt.txt",
-            "timestamp": 241.34
+            "timestamp": 251.8
         },
         {
             "scene_id": 25,
@@ -571,8 +581,8 @@
                 "\u201cMrs. Costa, please, take \u2013\u201d",
                 "\u201cGet out!\u201d I said, \u201cDon\u2019t you dare come near me.\u201d"
             ],
-            "image": "images/costa_116_edited.jpg",
-            "prompt": "images/costa_116_edited.prompt.txt",
+            "image": "images/costa_111.jpg",
+            "prompt": "images/costa_111.prompt.txt",
             "timestamp": 326.19,
             "duplicated": true
         },
@@ -590,8 +600,8 @@
                 "They had to grab me.",
                 "Then they brought me to the office, see."
             ],
-            "image": "images/costa_122_edited.jpg",
-            "prompt": "images/costa_122_edited.prompt.txt",
+            "image": "images/costa_119.jpg",
+            "prompt": "images/costa_119.prompt.txt",
             "timestamp": 340.07,
             "duplicated": true
         },
@@ -625,8 +635,8 @@
                 "Dropped to the floor, and that\u2019s a marble floor.",
                 "She went down like lightning."
             ],
-            "image": "images/costa_006.jpg",
-            "prompt": "images/costa_006.prompt.txt",
+            "image": "images/costa_129_edited.jpg",
+            "prompt": "images/costa_129_edited.prompt.txt",
             "timestamp": 357.4,
             "duplicated": true
         },
