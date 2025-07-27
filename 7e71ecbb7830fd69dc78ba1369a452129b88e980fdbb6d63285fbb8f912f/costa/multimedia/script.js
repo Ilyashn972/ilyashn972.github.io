@@ -4,23 +4,42 @@ const audioElement = document.getElementById("story-audio");
 
 let config;
 let currentParagraph = 0;
+let animationFrameId;
 
 async function loadConfig() {
     const response = await fetch("config.json");
     config = await response.json();
 
     audioElement.src = config.audio;
-    storyText.textContent = "Click anywhere to start the story...";
-    document.body.addEventListener("click", startPlayback, { once: true });
+    storyText.textContent = "Press space to start the story...";
+
+    document.body.addEventListener("keydown", (event) => {
+        if (event.code === "Space") {
+            event.preventDefault(); // Prevent scrolling
+            if (audioElement.paused) {
+                startPlayback();
+            } else {
+                pausePlayback();
+            }
+        }
+    });
 }
 
 function startPlayback() {
     audioElement.play();
-    requestAnimationFrame(checkTime);
+    animationFrameId = requestAnimationFrame(checkTime);
+}
+
+function pausePlayback() {
+    audioElement.pause();
+    cancelAnimationFrame(animationFrameId);
 }
 
 function checkTime() {
-    if (currentParagraph >= config.paragraphs.length) return;
+    if (currentParagraph >= config.paragraphs.length) {
+        cancelAnimationFrame(animationFrameId);
+        return;
+    }
 
     const now = audioElement.currentTime;
     const para = config.paragraphs[currentParagraph];
@@ -30,7 +49,7 @@ function checkTime() {
         currentParagraph++;
     }
 
-    requestAnimationFrame(checkTime);
+    animationFrameId = requestAnimationFrame(checkTime);
 }
 
 function displayParagraph(paragraph) {
