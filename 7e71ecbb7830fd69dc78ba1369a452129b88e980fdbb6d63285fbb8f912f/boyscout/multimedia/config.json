@@ -1,7 +1,7 @@
 {
     "audio": "audio/story.mp3",
     "paragraphs": [
-        { 
+        {
             "lines": [
                 "Yeah, I was in the boy scouts at the time. ",
                 "And we was doing the 50-yard dash, racing, ",
@@ -12,11 +12,11 @@
             ],
             "image": "images/01.jpg",
             "prompt": "images/01.prompt.txt",
-            "timestamp": 0
+            "timestamp": 0.0
         },
         {
-            "lines": [                
-                "And going down the third time, I caught cramps and I started yelling \"Help!\"", 
+            "lines": [
+                "And going down the third time, I caught cramps and I started yelling \"Help!\"",
                 "but the fellows didn't believe me, you know.",
                 "They thought I was just trying to catch up,",
                 "because I was going on or slowing down.",
@@ -24,7 +24,7 @@
             ],
             "image": "images/02.jpg",
             "prompt": "images/02.prompt.txt",
-            "timestamp": 15.5
+            "timestamp": 16.3
         },
         {
             "lines": [
@@ -33,7 +33,7 @@
             ],
             "image": "images/03.jpg",
             "prompt": "images/03.prompt.txt",
-            "timestamp": 33
+            "timestamp": 33.67
         },
         {
             "lines": [
@@ -43,8 +43,7 @@
             ],
             "image": "images/04.jpg",
             "prompt": "images/04.prompt.txt",
-            "timestamp": 39
-         }
+            "timestamp": 39.09
+        }
     ]
-    
 }
