@@ -37,7 +37,19 @@
         {
             "scene_id": 3,
             "segment_ids": [
-                7,
+                7
+            ],
+            "lines": [
+                "Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was."
+            ],
+            "image": "images/costa_3_007_edited.jpg",
+            "prompt": "images/costa_3_007_edited.prompt.txt",
+            "timestamp": 14.39,
+            "duplicated": true
+        },
+        {
+            "scene_id": 4,
+            "segment_ids": [
                 8,
                 9,
                 10,
@@ -45,7 +57,6 @@
                 12
             ],
             "lines": [
-                "Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was.",
                 "She was still under ether.",
                 "Back then, they used a lot of ether.",
                 "There was a chair there.",
@@ -58,7 +69,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 4,
+            "scene_id": 5,
             "segment_ids": [
                 13,
                 14,
@@ -77,7 +88,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 5,
+            "scene_id": 6,
             "segment_ids": [
                 17,
                 18
@@ -92,7 +103,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 6,
+            "scene_id": 7,
             "segment_ids": [
                 19,
                 20,
@@ -111,7 +122,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 7,
+            "scene_id": 8,
             "segment_ids": [
                 23,
                 24,
@@ -128,7 +139,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 8,
+            "scene_id": 9,
             "segment_ids": [
                 26,
                 27,
@@ -147,7 +158,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 9,
+            "scene_id": 10,
             "segment_ids": [
                 30
             ],
@@ -160,7 +171,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 10,
+            "scene_id": 11,
             "segment_ids": [
                 31,
                 32
@@ -175,7 +186,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 11,
+            "scene_id": 12,
             "segment_ids": [
                 33,
                 34
@@ -190,7 +201,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 12,
+            "scene_id": 13,
             "segment_ids": [
                 35,
                 36,
@@ -207,7 +218,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 13,
+            "scene_id": 14,
             "segment_ids": [
                 38,
                 39,
@@ -228,7 +239,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 14,
+            "scene_id": 15,
             "segment_ids": [
                 43
             ],
@@ -241,7 +252,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 15,
+            "scene_id": 16,
             "segment_ids": [
                 44,
                 45,
@@ -260,7 +271,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 16,
+            "scene_id": 17,
             "segment_ids": [
                 48,
                 49
@@ -275,7 +286,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 17,
+            "scene_id": 18,
             "segment_ids": [
                 50,
                 51,
@@ -292,7 +303,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 18,
+            "scene_id": 19,
             "segment_ids": [
                 53,
                 54,
@@ -310,36 +321,58 @@
             "timestamp": 140.97
         },
         {
-            "scene_id": 19,
+            "scene_id": 20,
             "segment_ids": [
-                57,
+                57
+            ],
+            "lines": [
+                "But when I got there, the nurse said to me, \u201cSit down, Mrs. Costa, sit here for a while.\u201d"
+            ],
+            "image": "images/costa_20_057_edited.jpg",
+            "prompt": "images/costa_20_057_edited.prompt.txt",
+            "timestamp": 150.75,
+            "duplicated": true
+        },
+        {
+            "scene_id": 21,
+            "segment_ids": [
                 58,
                 59,
                 60,
                 61,
-                62,
+                62
+            ],
+            "lines": [
+                "So I sat down, and I was praying for another lady in the hospital that had an operation for her gall bladder.",
+                "She lived near my sister, and she had ten children.",
+                "They had said she was in very bad shape.",
+                "I prayed, \u201cOh dear God, don\u2019t take that mother away from her children.\u201d",
+                "I was praying for her, you know."
+            ],
+            "image": "images/costa_21_058_edited.jpg",
+            "prompt": "images/costa_21_058_edited.prompt.txt",
+            "timestamp": 150.75,
+            "duplicated": true
+        },
+        {
+            "scene_id": 22,
+            "segment_ids": [
                 63,
                 64,
                 65
             ],
             "lines": [
-                "But when I got there, the nurse said to me, \u201cSit down, Mrs. Costa, sit here for a while.\u201d",
-                "So I sat down, and I was praying for another lady in the hospital that had an operation for her gall bladder.",
-                "She lived near my sister, and she had ten children.",
-                "They had said she was in very bad shape.",
-                "I prayed, \u201cOh dear God, don\u2019t take that mother away from her children.\u201d",
-                "I was praying for her, you know.",
                 "Then a little nurse\u2019s aide went to the closet and got some blankets.",
                 "I started getting the chills,",
                 "and I was thinking about it,"
             ],
-            "image": "images/costa_052.jpg",
-            "prompt": "images/costa_052.prompt.txt",
+            "image": "images/costa_22_063_edited.jpg",
+            "prompt": "images/costa_22_063_edited.prompt.txt",
             "timestamp": 150.75,
             "duplicated": true
         },
         {
-            "scene_id": 20,
+            "scene_id": 23,
             "segment_ids": [
                 66,
                 67,
@@ -357,7 +390,7 @@
             "timestamp": 181.63
         },
         {
-            "scene_id": 21,
+            "scene_id": 24,
             "segment_ids": [
                 70,
                 71,
@@ -375,7 +408,7 @@
             "timestamp": 198.89
         },
         {
-            "scene_id": 22,
+            "scene_id": 25,
             "segment_ids": [
                 74,
                 75,
@@ -392,24 +425,35 @@
             "duplicated": true
         },
         {
-            "scene_id": 23,
+            "scene_id": 26,
             "segment_ids": [
                 77,
                 78,
                 79,
                 80,
-                81,
-                82,
-                83,
-                84,
-                85
+                81
             ],
             "lines": [
                 "And the doctor rushed in,",
                 "see, they were trying to get the doctor, you know.",
                 "She was a lady doctor.",
                 "Dr. Schwartz actually did the operation, but she was his assistant, Dr. Montique.",
-                "She was a lady doctor.",
+                "She was a lady doctor."
+            ],
+            "image": "images/costa_26_077_edited.jpg",
+            "prompt": "images/costa_26_077_edited.prompt.txt",
+            "timestamp": 221.67,
+            "duplicated": true
+        },
+        {
+            "scene_id": 27,
+            "segment_ids": [
+                82,
+                83,
+                84,
+                85
+            ],
+            "lines": [
                 "So, she came in and she said \u2013",
                 "I said, \u201cYou killed my daughter \u2013 what did you do to her?\u201d",
                 "She said, \u201cWe don\u2019t know what happened, Mrs. Costa.\u201d",
@@ -421,7 +465,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 24,
+            "scene_id": 28,
             "segment_ids": [
                 86,
                 87,
@@ -437,7 +481,7 @@
             "timestamp": 241.34
         },
         {
-            "scene_id": 24.1,
+            "scene_id": 29,
             "segment_ids": [
                 89,
                 90,
@@ -453,7 +497,7 @@
             "timestamp": 251.8
         },
         {
-            "scene_id": 25,
+            "scene_id": 30,
             "segment_ids": [
                 92,
                 93,
@@ -469,7 +513,7 @@
             "timestamp": 259.53
         },
         {
-            "scene_id": 26,
+            "scene_id": 31,
             "segment_ids": [
                 95,
                 96
@@ -483,18 +527,29 @@
             "timestamp": 268.04
         },
         {
-            "scene_id": 27,
+            "scene_id": 32,
             "segment_ids": [
                 97,
-                98,
+                98
+            ],
+            "lines": [
+                "\u201cWhen is the mother coming?\u201d",
+                "The hospital kept calling."
+            ],
+            "image": "images/costa_097.jpg",
+            "prompt": "images/costa_097.prompt.txt",
+            "timestamp": 275.48,
+            "duplicated": true
+        },
+        {
+            "scene_id": 33,
+            "segment_ids": [
                 99,
                 100,
                 101,
                 102
             ],
             "lines": [
-                "\u201cWhen is the mother coming?\u201d",
-                "The hospital kept calling.",
                 "The people in the office didn\u2019t know what had happened yet.",
                 "They kept calling the store, trying to reach us.",
                 "They asked, \u201cWhen is the mother coming to pick up Marie?",
@@ -502,10 +557,11 @@
             ],
             "image": "images/costa_097.jpg",
             "prompt": "images/costa_097.prompt.txt",
-            "timestamp": 275.48
+            "timestamp": 275.48,
+            "duplicated": true
         },
         {
-            "scene_id": 28,
+            "scene_id": 34,
             "segment_ids": [
                 103,
                 104,
@@ -522,7 +578,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 29,
+            "scene_id": 35,
             "segment_ids": [
                 106,
                 107,
@@ -541,9 +597,21 @@
             "duplicated": true
         },
         {
-            "scene_id": 30,
+            "scene_id": 36,
             "segment_ids": [
-                110,
+                110
+            ],
+            "lines": [
+                "And I was in the main hallway, at the office."
+            ],
+            "image": "images/costa_36_110_edited.jpg",
+            "prompt": "images/costa_36_110_edited.prompt.txt",
+            "timestamp": 314.56,
+            "duplicated": true
+        },
+        {
+            "scene_id": 37,
+            "segment_ids": [
                 111,
                 112,
                 113,
@@ -551,7 +619,6 @@
                 115
             ],
             "lines": [
-                "And I was in the main hallway, at the office.",
                 "I was all pulled apart.",
                 "One doctor wanted to give me a shot.",
                 "I said, \u201cGet out of here,",
@@ -564,21 +631,32 @@
             "duplicated": true
         },
         {
-            "scene_id": 31,
+            "scene_id": 38,
             "segment_ids": [
                 116,
                 117,
                 118,
                 119,
-                120,
-                121
+                120
             ],
             "lines": [
                 "Another nurse came over.",
                 "See, they all knew me.",
                 "I had three operations in no time, not even a year.",
                 "And I knew all the nurses.",
-                "\u201cMrs. Costa, please, take \u2013\u201d",
+                "\u201cMrs. Costa, please, take \u2013\u201d"
+            ],
+            "image": "images/costa_38_116_edited.jpg",
+            "prompt": "images/costa_38_116_edited.prompt.txt",
+            "timestamp": 326.19,
+            "duplicated": true
+        },
+        {
+            "scene_id": 39,
+            "segment_ids": [
+                121
+            ],
+            "lines": [
                 "\u201cGet out!\u201d I said, \u201cDon\u2019t you dare come near me.\u201d"
             ],
             "image": "images/costa_116_edited.jpg",
@@ -587,7 +665,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 32,
+            "scene_id": 40,
             "segment_ids": [
                 122,
                 123,
@@ -606,7 +684,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 33,
+            "scene_id": 41,
             "segment_ids": [
                 126,
                 127,
@@ -622,7 +700,7 @@
             "timestamp": 347.16
         },
         {
-            "scene_id": 34,
+            "scene_id": 42,
             "segment_ids": [
                 129,
                 130,
@@ -641,20 +719,31 @@
             "duplicated": true
         },
         {
-            "scene_id": 35,
+            "scene_id": 43,
             "segment_ids": [
                 133,
                 134,
-                135,
+                135
+            ],
+            "lines": [
+                "And the back of her leg, it felt just like a pole.",
+                "Hard like a pole, the back of her leg.",
+                "And that girl is suffering."
+            ],
+            "image": "images/costa_133_edited.jpg",
+            "prompt": "images/costa_133_edited.prompt.txt",
+            "timestamp": 363.08,
+            "duplicated": true
+        },
+        {
+            "scene_id": 44,
+            "segment_ids": [
                 136,
                 137,
                 138,
                 139
             ],
             "lines": [
-                "And the back of her leg, it felt just like a pole.",
-                "Hard like a pole, the back of her leg.",
-                "And that girl is suffering.",
                 "Thirty \u2013 no, twenty-eight years since her sister died?",
                 "When she gets that pain, it\u2019s like she has phlebitis from it.",
                 "She suffers \u2013 seven, eight, nine weeks at a time.",
@@ -666,7 +755,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 36,
+            "scene_id": 45,
             "segment_ids": [
                 140,
                 141,
@@ -687,22 +776,33 @@
             "duplicated": true
         },
         {
-            "scene_id": 37,
+            "scene_id": 46,
             "segment_ids": [
                 145,
                 146,
                 147,
-                148,
+                148
+            ],
+            "lines": [
+                "Later, they said it was a blood clot.",
+                "I said, \u201cDon\u2019t you dare touch my daughter.",
+                "I\u2019ll burn this hospital down!",
+                "I don\u2019t care who\u2019s in it.\u201d"
+            ],
+            "image": "images/costa_46_145_edited.jpg",
+            "prompt": "images/costa_46_145_edited.prompt.txt",
+            "timestamp": 398.35,
+            "duplicated": true
+        },
+        {
+            "scene_id": 47,
+            "segment_ids": [
                 149,
                 150,
                 151,
                 152
             ],
             "lines": [
-                "Later, they said it was a blood clot.",
-                "I said, \u201cDon\u2019t you dare touch my daughter.",
-                "I\u2019ll burn this hospital down!",
-                "I don\u2019t care who\u2019s in it.\u201d",
                 "I said, \u201cDon\u2019t you dare touch my daughter.",
                 "You want to find out what she died from.\u201d",
                 "But if you touch my daughter, I\u2019ll kill you.\u201d",
@@ -714,7 +814,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 38,
+            "scene_id": 48,
             "segment_ids": [
                 153,
                 154,
@@ -733,7 +833,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 39,
+            "scene_id": 49,
             "segment_ids": [
                 157
             ],
@@ -746,7 +846,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 40,
+            "scene_id": 50,
             "segment_ids": [
                 158,
                 159,
@@ -767,7 +867,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 41,
+            "scene_id": 51,
             "segment_ids": [
                 163,
                 164
@@ -781,7 +881,7 @@
             "timestamp": 445.52
         },
         {
-            "scene_id": 42,
+            "scene_id": 52,
             "segment_ids": [
                 165,
                 166,
@@ -797,18 +897,29 @@
             "timestamp": 448.85
         },
         {
-            "scene_id": 43,
+            "scene_id": 53,
             "segment_ids": [
                 168,
-                169,
+                169
+            ],
+            "lines": [
+                "It was all \u2013 my two sisters were here, waiting until about half-past four.",
+                "They waited because they knew she was coming home that day, waiting for the call."
+            ],
+            "image": "images/costa_53_168_edited.jpg",
+            "prompt": "images/costa_53_168_edited.prompt.txt",
+            "timestamp": 456.42,
+            "duplicated": true
+        },
+        {
+            "scene_id": 54,
+            "segment_ids": [
                 170,
                 171,
                 172,
                 173
             ],
             "lines": [
-                "It was all \u2013 my two sisters were here, waiting until about half-past four.",
-                "They waited because they knew she was coming home that day, waiting for the call.",
                 "My younger sister had brought an orange for Marie, and I had never seen an orange like it. It was a big orange, like that.",
                 "She said, \u201cMary, look, when they call you, when you pick Marie up, let us know, and we\u2019ll come over.\u201d",
                 "I said, \u201cAll right.\u201d",
@@ -820,7 +931,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 44,
+            "scene_id": 55,
             "segment_ids": [
                 174,
                 175,
@@ -840,7 +951,7 @@
             "timestamp": 482.94
         },
         {
-            "scene_id": 45,
+            "scene_id": 56,
             "segment_ids": [
                 179,
                 180
@@ -855,7 +966,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 46,
+            "scene_id": 57,
             "segment_ids": [
                 181,
                 182
@@ -870,7 +981,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 47,
+            "scene_id": 58,
             "segment_ids": [
                 183,
                 184
@@ -885,7 +996,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 48,
+            "scene_id": 59,
             "segment_ids": [
                 185,
                 186,
@@ -904,7 +1015,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 49,
+            "scene_id": 60,
             "segment_ids": [
                 189,
                 190
@@ -918,7 +1029,7 @@
             "timestamp": 523.68
         },
         {
-            "scene_id": 50,
+            "scene_id": 61,
             "segment_ids": [
                 191
             ],
@@ -931,7 +1042,7 @@
             "duplicated": true
         },
         {
-            "scene_id": 51,
+            "scene_id": 62,
             "segment_ids": [
                 192,
                 193,
