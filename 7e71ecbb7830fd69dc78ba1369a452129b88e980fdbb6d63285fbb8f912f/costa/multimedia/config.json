@@ -42,7 +42,7 @@
             "lines": [
                 "Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was."
             ],
-            "image": "images/costa_3_007_edited.jpg",
+            "image": "images/costa_3_007_edited_cropped.jpg",
             "prompt": "images/costa_3_007_edited.prompt.txt",
             "timestamp": 14.39,
             "duplicated": true
@@ -328,7 +328,7 @@
             "lines": [
                 "But when I got there, the nurse said to me, \u201cSit down, Mrs. Costa, sit here for a while.\u201d"
             ],
-            "image": "images/costa_20_057_edited.jpg",
+            "image": "images/costa_20_057_edited_cropped.jpg",
             "prompt": "images/costa_20_057_edited.prompt.txt",
             "timestamp": 150.75,
             "duplicated": true
@@ -440,7 +440,7 @@
                 "Dr. Schwartz actually did the operation, but she was his assistant, Dr. Montique.",
                 "She was a lady doctor."
             ],
-            "image": "images/costa_26_077_edited.jpg",
+            "image": "images/costa_26_077_edited_cropped.jpg",
             "prompt": "images/costa_26_077_edited.prompt.txt",
             "timestamp": 221.67,
             "duplicated": true
@@ -646,7 +646,7 @@
                 "And I knew all the nurses.",
                 "\u201cMrs. Costa, please, take \u2013\u201d"
             ],
-            "image": "images/costa_38_116_edited.jpg",
+            "image": "images/costa_38_116_edited_cropped.jpg",
             "prompt": "images/costa_38_116_edited.prompt.txt",
             "timestamp": 326.19,
             "duplicated": true
