@@ -112,31 +112,41 @@
             container.appendChild(table);
         }
 
+        // Track sort state for each column
+        let sortStates = {};
+
         function sortTable(data, columnIndex) {
-                const isAscending = !data[1][columnIndex].toString().includes('>');  // Determine sort direction
-                const sortedData = data.slice(1).sort((a, b) => {
-                    const valueA = a[columnIndex];
-                    const valueB = b[columnIndex];
-
-                    // Check if values are numeric by converting to numbers and checking for NaN
-                    const isNumericA = !isNaN(parseFloat(valueA)) && isFinite(valueA);
-                    const isNumericB = !isNaN(parseFloat(valueB)) && isFinite(valueB);
-
-                    if (isNumericA && isNumericB) {
-                        // Numeric comparison
-                        return isAscending ? valueA - valueB : valueB - valueA;
-                    } else {
-                        // String comparison
-                        return isAscending
-                            ? valueA.toString().localeCompare(valueB.toString())
-                            : valueB.toString().localeCompare(valueA.toString());
-                    }
-                });
-
-                // Clear and update the table content
-                document.getElementById('data-table-container').innerHTML = '';
-                displayTable([data[0]].concat(sortedData));
+            // Toggle sort direction for this column
+            if (sortStates[columnIndex] === undefined) {
+                sortStates[columnIndex] = true; // Start with ascending
+            } else {
+                sortStates[columnIndex] = !sortStates[columnIndex]; // Toggle
             }
+            
+            const isAscending = sortStates[columnIndex];
+            const sortedData = data.slice(1).sort((a, b) => {
+                const valueA = a[columnIndex];
+                const valueB = b[columnIndex];
+
+                // Check if values are numeric by converting to numbers and checking for NaN
+                const isNumericA = !isNaN(parseFloat(valueA)) && isFinite(valueA);
+                const isNumericB = !isNaN(parseFloat(valueB)) && isFinite(valueB);
+
+                if (isNumericA && isNumericB) {
+                    // Numeric comparison
+                    return isAscending ? valueA - valueB : valueB - valueA;
+                } else {
+                    // String comparison
+                    return isAscending
+                        ? valueA.toString().localeCompare(valueB.toString())
+                        : valueB.toString().localeCompare(valueA.toString());
+                }
+            });
+
+            // Clear and update the table content
+            document.getElementById('data-table-container').innerHTML = '';
+            displayTable([data[0]].concat(sortedData));
+        }
     </script>
 </body>
 
