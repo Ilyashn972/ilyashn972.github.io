@@ -46,16 +46,21 @@
 </head>
 <body>
     <h1>Analysis of Recall Experiments</h1>
+    
+    <p><em>Note: All plots were generated using the script <code>compare_again/prepare_plots.py</code><br>
+    and <code>compare_again/put_recalls_side_by_side.py</code></em></p>
 
     <div class="experiment-descriptions">
         <div class="experiment-description">
             <h2>Experiment 1: Text-Based Story Recall</h2>
             <p><strong>Methodology:</strong> Subjects read a text-only story and wrote their recall immediately after reading. After one month, they wrote their recall again from memory.</p>
+            <p><strong>Sample Size:</strong> 32 users returned for the delayed recall after one month.</p>
             <p><strong>Key Question:</strong> How does recall change over a long delay (1 month) when subjects only have textual input?</p>
         </div>
         <div class="experiment-description">
             <h2>Experiment 2: Multimedia Story Recall</h2>
             <p><strong>Methodology:</strong> Subjects listened to an illustrated story (audio + visual) and wrote their recall immediately after listening. After one week, they wrote their recall again from memory.</p>
+            <p><strong>Sample Size:</strong> 39 users returned for the delayed recall after one week.</p>
             <p><strong>Key Question:</strong> How does recall change over a shorter delay (1 week) when subjects have both auditory and visual input?</p>
         </div>
     </div>
@@ -66,11 +71,13 @@
         <div class="plot-comparison">
             <div class="plot-container">
                 <h3>Experiment 1 (Text-Only, 1-month delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_ilya-no-summary-again.html">View detailed recall analysis</a></p>
                 <img src="costa_ilya-no-summary/length_scatter.png" alt="Length Scatter Plot for Experiment 1">
                 <p><strong>What this shows:</strong> Each point represents one subject's recall. The x-axis shows immediate recall length in characters, y-axis shows delayed recall length in characters. Points near the diagonal indicate consistent recall length across the 1-month delay. Points below the diagonal show memory decay (shorter delayed recalls).</p>
             </div>
             <div class="plot-container">
                 <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_multimedia-again.html">View detailed recall analysis</a></p>
                 <img src="costa_multimedia/length_scatter.png" alt="Length Scatter Plot for Experiment 2">
                 <p><strong>What this shows:</strong> Similar to Experiment 1, but with a shorter delay (1 week) and multimedia input. This allows us to compare how different input modalities and delay periods affect recall length consistency at the character level.</p>
             </div>
@@ -83,11 +90,13 @@
         <div class="plot-comparison">
             <div class="plot-container">
                 <h3>Experiment 1 (Text-Only, 1-month delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_ilya-no-summary-again.html">View detailed recall analysis</a></p>
                 <img src="costa_ilya-no-summary/c_scatter.png" alt="C-Scatter Plot for Experiment 1">
                 <p><strong>What this shows:</strong> Each point represents one subject's recall. The x-axis shows immediate recall length (clauses), y-axis shows delayed recall length. Points near the diagonal indicate consistent recall length across the 1-month delay. Points below the diagonal show memory decay (shorter delayed recalls).</p>
             </div>
             <div class="plot-container">
                 <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_multimedia-again.html">View detailed recall analysis</a></p>
                 <img src="costa_multimedia/c_scatter.png" alt="C-Scatter Plot for Experiment 2">
                 <p><strong>What this shows:</strong> Similar to Experiment 1, but with a shorter delay (1 week) and multimedia input. This allows us to compare how different input modalities and delay periods affect recall length consistency.</p>
             </div>
@@ -100,11 +109,13 @@
         <div class="plot-comparison">
             <div class="plot-container">
                 <h3>Experiment 1 (Text-Only, 1-month delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_ilya-no-summary-again.html">View detailed recall analysis</a></p>
                 <img src="costa_ilya-no-summary/n_scatter.png" alt="N-Scatter Plot for Experiment 1">
                 <p><strong>What this shows:</strong> Each point represents one subject's recall. The x-axis shows the number of unique story segments referenced in immediate recall, y-axis shows delayed recall. Points near the diagonal indicate consistent segment coverage across time delays. Points below the diagonal show reduced segment coverage over time.</p>
             </div>
             <div class="plot-container">
                 <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_multimedia-again.html">View detailed recall analysis</a></p>
                 <img src="costa_multimedia/n_scatter.png" alt="N-Scatter Plot for Experiment 2">
                 <p><strong>What this shows:</strong> Similar analysis to Experiment 1, but with multimedia input and shorter delay. This reveals whether visual/auditory input helps maintain segment coverage over time.</p>
             </div>
@@ -117,11 +128,13 @@
         <div class="plot-comparison">
             <div class="plot-container">
                 <h3>Experiment 1 (Text-Only, 1-month delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_ilya-no-summary-again.html">View detailed recall analysis</a></p>
                 <img src="costa_ilya-no-summary/fan_out_scatter.png" alt="Fan-Out Scatter Plot for Experiment 1">
                 <p><strong>What this shows:</strong> Each point represents one subject's mean fan-out. Points above the diagonal indicate that delayed recalls become more abstractive (summarizing multiple segments per clause). Points below the diagonal show the opposite pattern.</p>
             </div>
             <div class="plot-container">
                 <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_multimedia-again.html">View detailed recall analysis</a></p>
                 <img src="costa_multimedia/fan_out_scatter.png" alt="Fan-Out Scatter Plot for Experiment 2">
                 <p><strong>What this shows:</strong> Similar analysis to Experiment 1, but with multimedia input and shorter delay. This reveals whether different input modalities affect the tendency toward abstractive recall over time.</p>
             </div>
@@ -134,11 +147,13 @@
         <div class="plot-comparison">
             <div class="plot-container">
                 <h3>Experiment 1 (Text-Only, 1-month delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_ilya-no-summary-again.html">View detailed recall analysis</a></p>
                 <img src="costa_ilya-no-summary/flow_in_scatter.png" alt="Flow-In Scatter Plot for Experiment 1">
                 <p><strong>What this shows:</strong> Each point represents one story segment's flow-in value. Flow-in measures how well-remembered a segment is (sum of 1/fan_out for all clauses mapping to that segment). Points near the diagonal indicate consistent segment-specific memory across time delays.</p>
             </div>
             <div class="plot-container">
                 <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_multimedia-again.html">View detailed recall analysis</a></p>
                 <img src="costa_multimedia/flow_in_scatter.png" alt="Flow-In Scatter Plot for Experiment 2">
                 <p><strong>What this shows:</strong> Similar analysis to Experiment 1, but with multimedia input and shorter delay. This reveals whether different input modalities affect which specific segments are better remembered over time.</p>
             </div>
@@ -151,11 +166,13 @@
         <div class="plot-comparison">
             <div class="plot-container">
                 <h3>Experiment 1 (Text-Only, 1-month delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_ilya-no-summary-again.html">View detailed recall analysis</a></p>
                 <img src="costa_ilya-no-summary/flow_in.png" alt="Flow-In Plot for Experiment 1">
                 <p><strong>What this shows:</strong> The x-axis represents story segments in order, y-axis shows flow-in values. Each line represents immediate vs. delayed recall. Peaks indicate well-remembered segments, valleys show poorly recalled segments. The pattern reveals the story's memory landscape.</p>
             </div>
             <div class="plot-container">
                 <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_multimedia-again.html">View detailed recall analysis</a></p>
                 <img src="costa_multimedia/flow_in.png" alt="Flow-In Plot for Experiment 2">
                 <p><strong>What this shows:</strong> Similar analysis to Experiment 1, but with multimedia input and shorter delay. This reveals whether different input modalities create different memory profiles and how they change over time.</p>
             </div>
