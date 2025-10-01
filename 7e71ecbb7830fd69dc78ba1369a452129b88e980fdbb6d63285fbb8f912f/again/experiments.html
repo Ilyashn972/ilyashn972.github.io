@@ -42,6 +42,30 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+        .navigation {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4a90e2;
+        }
+        .navigation h2 {
+            margin-top: 0;
+        }
+        .navigation ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .navigation li {
+            margin: 8px 0;
+        }
+        .navigation a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        .navigation a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -50,7 +74,22 @@
     <p><em>Note: All plots were generated using the script <code>compare_again/prepare_plots.py</code><br>
     and <code>compare_again/put_recalls_side_by_side.py</code></em></p>
 
-    <div class="experiment-descriptions">
+    <div class="navigation">
+        <h2>Quick Navigation</h2>
+        <ul>
+            <li><a href="#experiments">Experiment Descriptions</a></li>
+            <li><a href="#length-chars">1. Recall Length Analysis (Character Count)</a></li>
+            <li><a href="#length-clauses">2. Recall Length Analysis (C-Scatter Plot)</a></li>
+            <li><a href="#fan-out-dist">3. Fan-Out Distribution</a></li>
+            <li><a href="#segment-coverage">4. Segment Coverage Analysis (N-Scatter Plot)</a></li>
+            <li><a href="#abstractiveness">5. Abstractiveness Analysis (Fan-Out Scatter Plot)</a></li>
+            <li><a href="#segment-memory">6. Segment-Specific Memory Analysis (Flow-In Scatter Plot)</a></li>
+            <li><a href="#memory-profile">7. Memory Profile Analysis (Flow-In Plot)</a></li>
+            <li><a href="#key-findings">Key Findings and Comparison</a></li>
+        </ul>
+    </div>
+
+    <div class="experiment-descriptions" id="experiments">
         <div class="experiment-description">
             <h2>Experiment 1: Text-Based Story Recall</h2>
             <p><strong>Methodology:</strong> Subjects read a text-only story and wrote their recall immediately after reading. After one month, they wrote their recall again from memory.</p>
@@ -65,7 +104,7 @@
         </div>
     </div>
 
-    <div class="plot-section">
+    <div class="plot-section" id="length-chars">
         <h2>1. Recall Length Analysis (Character Count)</h2>
         <p>These plots examine how the total length of recalls in characters changes between immediate and delayed conditions. This provides insight into the overall verbosity and detail level of recall at the character level.</p>
         <div class="plot-comparison">
@@ -84,7 +123,7 @@
         </div>
     </div>
 
-    <div class="plot-section">
+    <div class="plot-section" id="length-clauses">
         <h2>2. Recall Length Analysis (C-Scatter Plot)</h2>
         <p>These plots examine how the total number of clauses in recalls changes between immediate and delayed conditions. This provides insight into the overall verbosity and detail level of recall.</p>
         <div class="plot-comparison">
@@ -102,9 +141,22 @@
             </div>
         </div>
     </div>
-
-    <div class="plot-section">
-        <h2>3. Segment Coverage Analysis (N-Scatter Plot)</h2>
+    <div class="plot-section" id="fan-out-dist">
+        <h2>3. Fan-Out Distribution</h2>
+        <p>These plots examine the distribution of fan-out values for recalls.</p>
+        <div class="plot-comparison">
+            <div class="plot-container">
+                <h3>Experiment 1 (Text-Only, 1-month delay)</h3>
+                <img src="costa_ilya-no-summary/fan_out_distribution.png" alt="Fan-Out Distribution for Experiment 1">
+            </div>
+            <div class="plot-container">
+                <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
+                <img src="costa_multimedia/fan_out_distribution.png" alt="Fan-Out Distribution for Experiment 2">
+            </div>
+        </div>
+    </div>
+    <div class="plot-section" id="segment-coverage">
+        <h2>4. Segment Coverage Analysis (N-Scatter Plot)</h2>
         <p>These plots examine how many unique story segments are referenced in recalls, providing insight into the breadth of memory coverage.</p>
         <div class="plot-comparison">
             <div class="plot-container">
@@ -122,8 +174,8 @@
         </div>
     </div>
 
-    <div class="plot-section">
-        <h2>4. Abstractiveness Analysis (Fan-Out Scatter Plot)</h2>
+    <div class="plot-section" id="abstractiveness">
+        <h2>5. Abstractiveness Analysis (Fan-Out Scatter Plot)</h2>
         <p>These plots examine how abstractive (summarizing) the recalls become over time. Fan-out measures how many story segments each recall clause maps to - higher values indicate more abstractive recall.</p>
         <div class="plot-comparison">
             <div class="plot-container">
@@ -141,8 +193,8 @@
         </div>
     </div>
 
-    <div class="plot-section">
-        <h2>5. Segment-Specific Memory Analysis (Flow-In Scatter Plot)</h2>
+    <div class="plot-section" id="segment-memory">
+        <h2>6. Segment-Specific Memory Analysis (Flow-In Scatter Plot)</h2>
         <p>These plots examine how well individual story segments are remembered by looking at flow-in values for each segment across immediate and delayed recalls.</p>
         <div class="plot-comparison">
             <div class="plot-container">
@@ -160,8 +212,8 @@
         </div>
     </div>
 
-    <div class="plot-section">
-        <h2>6. Memory Profile Analysis (Flow-In Plot)</h2>
+    <div class="plot-section" id="memory-profile">
+        <h2>7. Memory Profile Analysis (Flow-In Plot)</h2>
         <p>These plots show the memory profile across all story segments, revealing which parts of the story are most and least memorable.</p>
         <div class="plot-comparison">
             <div class="plot-container">
@@ -179,7 +231,7 @@
         </div>
     </div>
 
-    <div class="plot-section">
+    <div class="plot-section" id="key-findings">
         <h2>Key Findings and Comparison</h2>
         <div style="background-color: #f0f8ff; padding: 20px; border-radius: 5px; border-left: 4px solid #4a90e2;">
             <h3>Experiment Comparison Summary</h3>
