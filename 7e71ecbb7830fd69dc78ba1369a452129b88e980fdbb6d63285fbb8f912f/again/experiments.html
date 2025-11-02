@@ -71,9 +71,10 @@
 <body>
     <h1>Analysis of Recall Experiments</h1>
     
-    <p><em>Note: All plots were generated using the script 
-        <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/prepare_plots.py">compare_again/prepare_plots.py</a>
-        and <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/put_recalls_side_by_side.py">compare_again/put_recalls_side_by_side.py</a><br>
+    <p><em>Note: Plots were generated using multiple scripts including 
+        <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/prepare_plots.py">compare_again/prepare_plots.py</a>,
+        <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/put_recalls_side_by_side.py">compare_again/put_recalls_side_by_side.py</a>, and
+        <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/forgetfull_model.py">compare_again/forgetfull_model.py</a><br>
         
     <div class="navigation">
         <h2>Quick Navigation</h2>
@@ -83,6 +84,7 @@
             <li><a href="#length-chars">Recall Length Analysis (Character Count)</a></li>
             <li><a href="#length-clauses">Recall Length Analysis (C-Scatter Plot)</a></li>
             <li><a href="#fan-out-dist">Fan-Out Distribution</a></li>
+            <li><a href="#fan-out-transition">Fan-Out Transition Analysis (Forgetful Model)</a></li>
             <li><a href="#segment-coverage">Segment Coverage Analysis (N-Scatter Plot)</a></li>
             <li><a href="#abstractiveness">Abstractiveness Analysis (Fan-Out Scatter Plot)</a></li>
             <li><a href="#segment-memory">Segment-Specific Memory Analysis (Flow-In Scatter Plot)</a></li>
@@ -176,6 +178,25 @@
             <div class="plot-container">
                 <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
                 <img src="costa_multimedia/fan_out_distribution.png" alt="Fan-Out Distribution for Experiment 2">
+            </div>
+        </div>
+    </div>
+    <div class="plot-section" id="fan-out-transition">
+        <h2>Fan-Out Transition Analysis (Forgetful Model)</h2>
+        <p>These plots analyze how the distribution of fan-out values changes from immediate to delayed recall. The scatter plot shows arrows from original to delayed recall positions, revealing systematic patterns in how memory specificity changes over time.</p>
+        <p>See code at: <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/forgetfull_model.py">compare_again/forgetfull_model.py</a></p>
+        <div class="plot-comparison">
+            <div class="plot-container">
+                <h3>Experiment 1 (Text-Only, 1-month delay)</h3>
+                <img src="costa_ilya-no-summary_fan_out_scatter.png" alt="Fan-Out Transition for Experiment 1">
+                <p><strong>What this shows:</strong> Each arrow represents one subject's recall transition. X-axis shows number of clauses with fan-out = 1 (specific, detailed clauses). Y-axis shows number of clauses with 5 &lt; fan-out ≤ 20 (moderately abstractive clauses). Arrow direction reveals whether subjects become more or less abstractive over time.</p>
+                <p><strong>Slopes Distribution:</strong> <a href="../../costa_ilya-no-summary_slopes_distribution.html">View interactive histogram of arrow slopes</a> - Shows the distribution of dy/dx values, revealing whether there's a consistent pattern in how abstractiveness changes.</p>
+            </div>
+            <div class="plot-container">
+                <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
+                <img src="costa_multimedia_fan_out_scatter.png" alt="Fan-Out Transition for Experiment 2">
+                <p><strong>What this shows:</strong> Similar analysis to Experiment 1, but with multimedia input and shorter delay. This reveals whether different input modalities lead to different patterns in how memory specificity changes over time.</p>
+                <p><strong>Slopes Distribution:</strong> <a href="../../costa_multimedia_slopes_distribution.html">View interactive histogram of arrow slopes</a> - Comparing slope distributions between experiments helps identify whether delay period or input modality affects the forgetting trajectory.</p>
             </div>
         </div>
     </div>
