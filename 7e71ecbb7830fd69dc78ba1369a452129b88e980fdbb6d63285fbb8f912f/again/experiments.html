@@ -79,13 +79,14 @@
         <h2>Quick Navigation</h2>
         <ul>
             <li><a href="#experiments">Experiment Descriptions</a></li>
-            <li><a href="#length-chars">1. Recall Length Analysis (Character Count)</a></li>
-            <li><a href="#length-clauses">2. Recall Length Analysis (C-Scatter Plot)</a></li>
-            <li><a href="#fan-out-dist">3. Fan-Out Distribution</a></li>
-            <li><a href="#segment-coverage">4. Segment Coverage Analysis (N-Scatter Plot)</a></li>
-            <li><a href="#abstractiveness">5. Abstractiveness Analysis (Fan-Out Scatter Plot)</a></li>
-            <li><a href="#segment-memory">6. Segment-Specific Memory Analysis (Flow-In Scatter Plot)</a></li>
-            <li><a href="#memory-profile">7. Memory Profile Analysis (Flow-In Plot)</a></li>
+            <li><a href="#p-caught-flow-in">P-Caught vs Flow-In</a></li>
+            <li><a href="#length-chars">Recall Length Analysis (Character Count)</a></li>
+            <li><a href="#length-clauses">Recall Length Analysis (C-Scatter Plot)</a></li>
+            <li><a href="#fan-out-dist">Fan-Out Distribution</a></li>
+            <li><a href="#segment-coverage">Segment Coverage Analysis (N-Scatter Plot)</a></li>
+            <li><a href="#abstractiveness">Abstractiveness Analysis (Fan-Out Scatter Plot)</a></li>
+            <li><a href="#segment-memory">Segment-Specific Memory Analysis (Flow-In Scatter Plot)</a></li>
+            <li><a href="#memory-profile">Memory Profile Analysis (Flow-In Plot)</a></li>
             <li><a href="#key-findings">Key Findings and Comparison</a></li>
         </ul>
     </div>
@@ -106,8 +107,8 @@
         </div>
     </div>
 
-    <div class="plot-section" id="length-chars">
-        <h2>1. P-Caught vs Flow-In</h2>
+    <div class="plot-section" id="p-caught-flow-in">
+        <h2>P-Caught vs Flow-In</h2>
         <p>These plots examine how the p-caught and flow-in (sum of 1/fan_out for all clauses that mention the segment) change over time for each segment in the story.</p>
         See code at:
          <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/p-caught_vs_1_divided_by_sum_fan_out.py">compare_again/p-caught_vs_1_divided_by_sum_fan_out.py</a>
@@ -128,7 +129,7 @@
     </div>
 
     <div class="plot-section" id="length-chars">
-        <h2>1. Recall Length Analysis (Character Count)</h2>
+        <h2>Recall Length Analysis (Character Count)</h2>
         <p>These plots examine how the total length of recalls in characters changes between immediate and delayed conditions. This provides insight into the overall verbosity and detail level of recall at the character level.</p>
         <div class="plot-comparison">
             <div class="plot-container">
@@ -147,7 +148,7 @@
     </div>
 
     <div class="plot-section" id="length-clauses">
-        <h2>2. Recall Length Analysis (C-Scatter Plot)</h2>
+        <h2>Recall Length Analysis (C-Scatter Plot)</h2>
         <p>These plots examine how the total number of clauses in recalls changes between immediate and delayed conditions. This provides insight into the overall verbosity and detail level of recall.</p>
         <div class="plot-comparison">
             <div class="plot-container">
@@ -165,7 +166,7 @@
         </div>
     </div>
     <div class="plot-section" id="fan-out-dist">
-        <h2>3. Fan-Out Distribution</h2>
+        <h2>Fan-Out Distribution</h2>
         <p>These plots examine the distribution of fan-out values for recalls.</p>
         <div class="plot-comparison">
             <div class="plot-container">
@@ -179,7 +180,7 @@
         </div>
     </div>
     <div class="plot-section" id="segment-coverage">
-        <h2>4. Segment Coverage Analysis (N-Scatter Plot)</h2>
+        <h2>Segment Coverage Analysis (N-Scatter Plot)</h2>
         <p>These plots examine how many unique story segments are referenced in recalls, providing insight into the breadth of memory coverage.</p>
         <div class="plot-comparison">
             <div class="plot-container">
@@ -198,7 +199,7 @@
     </div>
 
     <div class="plot-section" id="abstractiveness">
-        <h2>5. Abstractiveness Analysis (Fan-Out Scatter Plot)</h2>
+        <h2>Abstractiveness Analysis (Fan-Out Scatter Plot)</h2>
         <p>These plots examine how abstractive (summarizing) the recalls become over time. Fan-out measures how many story segments each recall clause maps to - higher values indicate more abstractive recall.</p>
         <div class="plot-comparison">
             <div class="plot-container">
@@ -217,7 +218,7 @@
     </div>
 
     <div class="plot-section" id="segment-memory">
-        <h2>6. Segment-Specific Memory Analysis (Flow-In Scatter Plot)</h2>
+        <h2>Segment-Specific Memory Analysis (Flow-In Scatter Plot)</h2>
         <p>These plots examine how well individual story segments are remembered by looking at flow-in values for each segment across immediate and delayed recalls.</p>
         <div class="plot-comparison">
             <div class="plot-container">
@@ -236,7 +237,7 @@
     </div>
 
     <div class="plot-section" id="memory-profile">
-        <h2>7. Memory Profile Analysis (Flow-In Plot)</h2>
+        <h2>Memory Profile Analysis (Flow-In Plot)</h2>
         <p>These plots show the memory profile across all story segments, revealing which parts of the story are most and least memorable.</p>
         <div class="plot-comparison">
             <div class="plot-container">
