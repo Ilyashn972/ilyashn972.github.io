@@ -71,9 +71,10 @@
 <body>
     <h1>Analysis of Recall Experiments</h1>
     
-    <p><em>Note: All plots were generated using the script <code>compare_again/prepare_plots.py</code><br>
-    and <code>compare_again/put_recalls_side_by_side.py</code></em></p>
-
+    <p><em>Note: All plots were generated using the script 
+        <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/prepare_plots.py">compare_again/prepare_plots.py</a>
+        and <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/put_recalls_side_by_side.py">compare_again/put_recalls_side_by_side.py</a><br>
+        
     <div class="navigation">
         <h2>Quick Navigation</h2>
         <ul>
@@ -90,6 +91,7 @@
     </div>
 
     <div class="experiment-descriptions" id="experiments">
+        
         <div class="experiment-description">
             <h2>Experiment 1: Text-Based Story Recall</h2>
             <p><strong>Methodology:</strong> Subjects read a text-only story and wrote their recall immediately after reading. After one month, they wrote their recall again from memory.</p>
@@ -101,6 +103,27 @@
             <p><strong>Methodology:</strong> Subjects listened to an illustrated story (audio + visual) and wrote their recall immediately after listening. After one week, they wrote their recall again from memory.</p>
             <p><strong>Sample Size:</strong> 39 users returned for the delayed recall after one week.</p>
             <p><strong>Key Question:</strong> How does recall change over a shorter delay (1 week) when subjects have both auditory and visual input?</p>
+        </div>
+    </div>
+
+    <div class="plot-section" id="length-chars">
+        <h2>1. P-Caught vs Flow-In</h2>
+        <p>These plots examine how the p-caught and flow-in (sum of 1/fan_out for all clauses that mention the segment) change over time for each segment in the story.</p>
+        See code at:
+         <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/p-caught_vs_1_divided_by_sum_fan_out.py">compare_again/p-caught_vs_1_divided_by_sum_fan_out.py</a>
+        <div class="plot-comparison">
+            <div class="plot-container">
+                <h3>Experiment 1 (Text-Only, 1-month delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_ilya-no-summary-again.html">View detailed recall analysis</a></p>
+                <img src="costa_ilya-no-summary_p_caught_vs_flow_in.png" alt="P-Caught vs Flow-In for Experiment 1">
+                <br/><a href="costa_ilya-no-summary_p_caught_vs_flow_in.html">Plotly Version</a>
+            </div>
+            <div class="plot-container">
+                <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
+                <p><strong>Detailed Analysis:</strong> <a href="costa_multimedia-again.html">View detailed recall analysis</a></p>
+                <img src="costa_multimedia_p_caught_vs_flow_in.png" alt="P-Caught vs Flow-In for Experiment 2">
+                <br/><a href="costa_multimedia_p_caught_vs_flow_in.html">Plotly Version</a>
+            </div>
         </div>
     </div>
 
