@@ -4,10 +4,10 @@ import pyperclip
 def main():
     prefix = input("Please enter default file name: ")
     default_title = prefix.replace('_', ' ').capitalize()
-    title = input(f"Please enter Title: {default_title}") or default_title
-    png_file = input(f"Please enter png file name: default: {prefix}.png") or f"{prefix}.png"
-    python_file = input(f"Please enter python file name: default: {prefix}.py") or f"{prefix}.py"
-    html_file = input(f"Please enter html file name: default: {prefix}.html") or f"{prefix}.html"
+    title = input(f"Please enter Title: {default_title} ") or default_title
+    png_file = input(f"Please enter png file name: default: {prefix}.png " ) or f"{prefix}.png"
+    python_file = input(f"Please enter python file name: default: {prefix}.py " ) or f"{prefix}.py"
+    html_file = input(f"Please enter html file name: default: {prefix}.html ") or f"{prefix}.html"
     
     with open('template.html', 'r') as template:
         content = template.read()
