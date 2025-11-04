@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recall vs Summaries Analysis - costa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #636EFA;
+            padding-bottom: 10px;
+        }
+        .description {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #636EFA;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        .section h2 {
+            color: #444;
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .iframe-table {
+            height: 400px;
+        }
+        .iframe-plot {
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recall vs Summaries Analysis: costa</h1>
+        
+        <div class="description">
+            <p><strong>Analysis Overview:</strong></p>
+            <p>This analysis examines how different summaries (varying in length) perform at predicting three different recalls of varying complexity:</p>
+            <ul>
+                <li><strong style="color: #636EFA;">Small Recall</strong> (613 characters, covering 613 segments)</li>
+                <li><strong style="color: #EF553B;">Middle Recall</strong> (996 characters, covering 996 segments)</li>
+                <li><strong style="color: #00CC96;">Big Recall</strong> (1371 characters, covering 1371 segments)</li>
+            </ul>
+            <p>The plot shows log probability sums (y-axis) for each summary length (x-axis). Vertical dotted lines indicate the character length of each recall. The spline interpolation (cubic, degree 3) reveals trends in how summary length affects recall prediction quality.</p>
+        </div>
+        <div class="section">
+            <h2>Interactive Plot</h2>
+            <p>Log probability vs summary length with spline interpolation:</p>
+            <iframe class="iframe-plot" src="plot_a_recall_vs_doron_summaries.html"></iframe>
+        </div>
+        
+        <div class="section">
+            <h2>Recall Information</h2>
+            <p>Details about the three recalls used in the analysis:</p>
+            <iframe class="iframe-table" src="plot_a_recall_vs_doron_summaries_table.html"></iframe>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

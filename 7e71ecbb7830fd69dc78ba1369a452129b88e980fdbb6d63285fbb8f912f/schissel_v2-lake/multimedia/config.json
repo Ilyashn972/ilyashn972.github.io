@@ -1,7 +1,7 @@
 {
     "audio": "audio/story.mp3",
     "paragraphs": [
-        { 
+        {
             "lines": [
                 "My best friend pushed me into the lake.",
                 "This happened during our annual summer camping trip",
@@ -12,19 +12,19 @@
             ],
             "image": "images/01.jpg",
             "prompt": "images/01.prompt.txt",
-            "timestamp": 0
+            "timestamp": 0.0
         },
         {
             "lines": [
                 "I had just sat down to eat my sandwich",
-                "and I told her I wasn't interested.",                
+                "and I told her I wasn't interested.",
                 "'Course friends, y'know, they don't always",
                 "take no for an answer. So that's when she",
                 "snuck up behind me and gave me a little nudge."
             ],
             "image": "images/02.jpg",
             "prompt": "images/02.prompt.txt",
-            "timestamp": 18
+            "timestamp": 18.29
         },
         {
             "lines": [
@@ -34,18 +34,16 @@
             ],
             "image": "images/03.jpg",
             "prompt": "images/03.prompt.txt",
-            "timestamp": 30
+            "timestamp": 29.75
         },
         {
             "lines": [
-    
                 "And naturally, the first thing to do was to get revenge,",
                 "and I said, \"Just you wait,\" I said, \"you'll get yours soon enough.\""
             ],
             "image": "images/04.jpg",
             "prompt": "images/04.prompt.txt",
-            "timestamp": 40
-         }
+            "timestamp": 39.71
+        }
     ]
-    
 }

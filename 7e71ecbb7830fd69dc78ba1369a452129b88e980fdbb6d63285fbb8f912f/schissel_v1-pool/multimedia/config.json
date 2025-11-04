@@ -1,7 +1,7 @@
 {
     "audio": "audio/story.mp3",
     "paragraphs": [
-        { 
+        {
             "lines": [
                 "My best friend pushed me into the pool.",
                 "This happened during my cousin's wedding reception,",
@@ -14,10 +14,10 @@
             ],
             "image": "images/01.jpg",
             "prompt": "images/01.prompt.txt",
-            "timestamp": 0
+            "timestamp": 0.0
         },
         {
-            "lines": [             
+            "lines": [
                 "'Course friends, y'know, ",
                 "they don't always think things through.",
                 "So that's when she gave me a little shove,",
@@ -25,7 +25,7 @@
             ],
             "image": "images/02.jpg",
             "prompt": "images/02.prompt.txt",
-            "timestamp": 17.76
+            "timestamp": 23.59
         },
         {
             "lines": [
@@ -39,9 +39,7 @@
             ],
             "image": "images/03.jpg",
             "prompt": "images/03.prompt.txt",
-            "timestamp": 26.12
+            "timestamp": 31.36
         }
-
     ]
-    
 }
