@@ -80,6 +80,7 @@
         <h2>Quick Navigation</h2>
         <ul>
             <li><a href="#experiments">Experiment Descriptions</a></li>
+            <li><a href="#raster-plot">Segment Coverage Raster Plot</a></li>
             <li><a href="#p-caught-flow-in">P-Caught vs Flow-In</a></li>
             <li><a href="#length-chars">Recall Length Analysis (Character Count)</a></li>
             <li><a href="#length-clauses">Recall Length Analysis (C-Scatter Plot)</a></li>
@@ -109,7 +110,22 @@
         </div>
     </div>
 
-    <div class="plot-section" id="p-caught-flow-in">
+    <div class="plot-section" id="raster-plot">
+        <h2>Segment Coverage Raster Plot</h2>
+        <p>These plots examine how the segment coverage changes over time for each subject.</p>
+        See code at: <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/compare_again/raster_plot.py">compare_again/raster_plot.py</a>
+        <div class="plot-comparison">
+            <div class="plot-container">
+                <h3>Experiment 1 (Text-Only, 1-month delay)</h3>
+                <img src="costa_ilya-no-summary/raster_plot.png" alt="Segment Coverage Raster Plot for Experiment 1">
+            </div>
+            <div class="plot-container">
+                <h3>Experiment 2 (Multimedia, 1-week delay)</h3>
+                <img src="costa_multimedia/raster_plot.png" alt="Segment Coverage Raster Plot for Experiment 2">
+            </div>
+        </div>
+    </div>
+        <div class="plot-section" id="p-caught-flow-in">
         <h2>P-Caught vs Flow-In</h2>
         <p>These plots examine how the p-caught and flow-in (sum of 1/fan_out for all clauses that mention the segment) change over time for each segment in the story.</p>
         See code at:
