@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Random Extractive Reference Analysis - costa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #636EFA;
+            padding-bottom: 10px;
+        }
+        .description {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #636EFA;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        .section h2 {
+            color: #444;
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .iframe-table {
+            height: 1000px;
+        }
+        .iframe-plot {
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Extractive Reference Analysis: costa</h1>
+        
+        <div class="description">
+            <p><strong>Analysis Overview:</strong></p>
+            <p>This analysis evaluates how summaries from non-random_extractive systems align with three reference summaries drawn from the random_extractive pool. Each reference represents a different length profile:</p>
+            <ul>
+                <li><strong style="color: #636EFA;">Small Reference</strong> (1742 characters, params: A=0.052, B=38.130, x_t=5649.913, c=334.048)</li>
+                <li><strong style="color: #EF553B;">Middle Reference</strong> (3879 characters, params: A=0.134, B=46.905, x_t=7266.248, c=1017.453)</li>
+                <li><strong style="color: #00CC96;">Big Reference</strong> (5376 characters, params: A=0.206, B=40.566, x_t=7181.007, c=1521.909)</li>
+            </ul>
+            <p>The plot shows log probability sums (y-axis) for each summary length (x-axis). Vertical dotted lines indicate the character length of the random_extractive references. Piecewise continuous fits highlight how each summarizer type scales with length relative to the chosen references.</p>
+        </div>
+        <div class="section">
+            <h2>Interactive Plot</h2>
+            <p>Log probability vs summary length with piecewise continuous fit:</p>
+            <iframe class="iframe-plot" src="plot_random_extractive_vs_types.html"></iframe>
+        </div>
+        
+        <div class="section">
+            <h2>Reference Summary Details</h2>
+            <p>Details about the three random_extractive references used in the analysis:</p>
+            <iframe class="iframe-table" src="plot_random_extractive_vs_types_table.html"></iframe>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
