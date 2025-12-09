@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recall vs Summaries Analysis - costa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #636EFA;
+            padding-bottom: 10px;
+        }
+        .description {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #636EFA;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        .section h2 {
+            color: #444;
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .iframe-table {
+            height: 400px;
+        }
+        .iframe-plot {
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recall vs Summaries Analysis: costa</h1>
+        
+        <div class="description">
+            <p><strong>Analysis Overview:</strong></p>
+            <p>This analysis examines how different summaries (varying in length) perform at predicting three different recalls of varying complexity:</p>
+            <ul>
+                <li><strong style="color: #636EFA;">Small Recall</strong> (1175 characters, params: A=0.032, B=43.195, x_t=4660.024, c=192.530)</li>
+                <li><strong style="color: #EF553B;">Middle Recall</strong> (1880 characters, params: A=0.024, B=45.805, x_t=4467.135, c=154.510)</li>
+                <li><strong style="color: #00CC96;">Big Recall</strong> (416 characters, params: A=-0.011, B=29.253, x_t=5284.000, c=-27.824)</li>
+            </ul>
+            <p>The plot shows log probability sums (y-axis) for each summary length (x-axis). Vertical dotted lines indicate the character length of each recall. The piecewise continuous fit highlights linear growth that saturates beyond a transition point, revealing how summary length affects recall prediction quality.</p>
+        </div>
+        <div class="section">
+            <h2>Interactive Plot</h2>
+            <p>Log probability vs summary length with piecewise continuous fit:</p>
+            <iframe class="iframe-plot" src="plot_a_recall_vs_doron_summaries_no_reflection.html"></iframe>
+        </div>
+        
+        <div class="section">
+            <h2>Recall Information</h2>
+            <p>Details about the three recalls used in the analysis:</p>
+            <iframe class="iframe-table" src="plot_a_recall_vs_doron_summaries_table_no_reflection.html"></iframe>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
