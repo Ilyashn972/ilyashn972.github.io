@@ -90,7 +90,8 @@
             <li><a href="#abstractiveness">Abstractiveness Analysis (Fan-Out Scatter Plot)</a></li>
             <li><a href="#segment-memory">Segment-Specific Memory Analysis (Flow-In Scatter Plot)</a></li>
             <li><a href="#memory-profile">Memory Profile Analysis (Flow-In Plot)</a></li>
-            <li><a href="#key-findings">Key Findings and Comparison</a></li>
+            <li><a href="#compression-ratio">Compression Ratio Histogram</a></li>
+            <li><a href="#split-and-map">Split and Map Chunks Analysis</a></li>
         </ul>
     </div>
 
@@ -294,27 +295,38 @@
         </div>
     </div>
 
-    <div class="plot-section" id="key-findings">
-        <h2>Key Findings and Comparison</h2>
-        <div style="background-color: #f0f8ff; padding: 20px; border-radius: 5px; border-left: 4px solid #4a90e2;">
-            <h3>Experiment Comparison Summary</h3>
-            <p><strong>Delay Period Effects:</strong> Experiment 1 (1-month delay) vs. Experiment 2 (1-week delay) allows us to examine how memory decay patterns differ across different time scales.</p>
-            
-            <p><strong>Input Modality Effects:</strong> Comparing text-only (Experiment 1) vs. multimedia input (Experiment 2) reveals how different sensory channels affect memory encoding and retrieval patterns.</p>
-            
-            <p><strong>Expected Patterns:</strong> 
-            <ul>
-                <li><strong>Recall Length (Characters):</strong> Longer delays typically show more points below the diagonal, indicating memory decay at the character level</li>
-                <li><strong>Recall Length (Clauses):</strong> Longer delays typically show more points below the diagonal, indicating memory decay</li>
-                <li><strong>Segment Coverage (N):</strong> Multimedia input may help maintain segment coverage over time</li>
-                <li><strong>Abstractiveness (Fan-out):</strong> Delayed recalls often become more abstractive as details are lost but gist is preserved</li>
-                <li><strong>Memory Profiles (Flow-in):</strong> Different input modalities may create different memory landscapes, with multimedia potentially enhancing memory for visual/action-oriented segments</li>
-            </ul>
-            </p>
-            
-            <p><strong>Research Questions Addressed:</strong> These experiments together help answer fundamental questions about how memory encoding modality and delay period interact to shape recall patterns, abstractiveness, and the specific content that is most memorable over time.</p>
+    <div class="plot-section" id="compression-ratio">
+        <h2>Compression Ratio Histogram</h2>
+        <p>These histograms show the distribution of compression ratios for recall chunks compared to their corresponding narrative chunks. The compression ratio is calculated as <strong>recall_chunk length / narrative_chunk length</strong>. Lower ratios indicate more compression (recall chunks are shorter relative to narrative chunks), meaning the recall is more condensed or abstract. The analysis uses the split-and-map methodology (see below) to align recall chunks with narrative chunks, then compares their lengths to understand how much information is compressed during recall.</p>
+        <p>See code at: <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/comression_ratio_histogram.py">experiments/comression_ratio_histogram.py</a></p>
+        <div class="plot-comparison">
+<!-- costa_ilya-no-summary-compression-ratio --> <div class="plot-container"><h3>Experiment 1 (Text-Only, 1-month delay)</h3><img src="costa_ilya-no-summary_compression_ratio_histogram.png" alt="Compression Ratio Histogram for costa_ilya-no-summary"></div>
+<!-- costa_multimedia-compression-ratio --> <div class="plot-container"><h3>Experiment 2 (Multimedia, 1-week delay)</h3><img src="costa_multimedia_compression_ratio_histogram.png" alt="Compression Ratio Histogram for costa_multimedia"></div>
         </div>
     </div>
+
+    <div class="plot-section" id="split-and-map">
+        <h2>Split and Map Chunks Analysis</h2>
+        <p>This analysis uses an LLM to split each recall into meaningful chunks and map them to corresponding sections of the original narrative. The process involves: (1) splitting each recall into semantically meaningful chunks, (2) for each chunk, identifying whether it corresponds to content in the narrative, and (3) if it does, extracting the verbatim corresponding narrative text. This mapping enables analysis of how recalls relate to the original story, including compression ratios, coverage patterns, and abstraction levels. Each recall is processed separately, and the results are combined into CSV and HTML files containing all recall_id, recall_chunk, and narrative_chunk mappings.</p>
+        <p>See code at: <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/split_and_map_chunks.py">experiments/split_and_map_chunks.py</a></p>
+        <div class="plot-comparison">
+<div class="plot-comparison"><div class="plot-container"><h3>Experiment 1 (Text-Only, 1-month delay) (Prompt: v2, Model: gpt-5.2)</h3><p><strong>Files:</strong> 
+    <a href="costa_ilya-no-summary_all_recall_chunks_to_narrative_chunks_v2_014f1d545978.gpt-5.2.html">View HTML table with immediate recall</a> 
+      
+
+    <a href="costa_ilya-no-summary-again_all_recall_chunks_to_narrative_chunks_v2_014f1d545978.gpt-5.2.html">View HTML table after a month</a> 
+
+    | <a href="costa_ilya-no-summary-again_all_recall_chunks_to_narrative_chunks_v2_014f1d545978.gpt-5.2.csv">Download CSV</a></p></div></div>
+ 
+    <div class="plot-comparison"><div class="plot-container"><h3>Experiment 2 (Multimedia, 1-week delay) (Prompt: v2, Model: gpt-5.2)</h3><p><strong>Files:</strong>
+        <a href="costa_multimedia_all_recall_chunks_to_narrative_chunks_v2_014f1d545978.gpt-5.2.html">View HTML table with immediate recall</a> 
+        | 
+        <a href="costa_multimedia-again_all_recall_chunks_to_narrative_chunks_v2_014f1d545978.gpt-5.2.html">View HTML table after a week</a> 
+        |
+         <a href="costa_multimedia-again_all_recall_chunks_to_narrative_chunks_v2_014f1d545978.gpt-5.2.csv">Download CSV</a></p></div></div>
+        </div>
+    </div>
+
 
 </body>
 </html>
