@@ -56,9 +56,9 @@
             <p><strong>Analysis Overview:</strong></p>
             <p>This analysis examines how different summaries (varying in length) perform at predicting three different recalls of varying complexity:</p>
             <ul>
-                <li><strong style="color: #636EFA;">Small Recall</strong> (1175 characters, params: A=0.087, B=24.182, x_t=1318.704, c=139.274)</li>
-                <li><strong style="color: #EF553B;">Middle Recall</strong> (1880 characters, params: A=0.047, B=26.327, x_t=2003.623, c=120.097)</li>
-                <li><strong style="color: #00CC96;">Big Recall</strong> (416 characters, params: A=-0.005, B=24.443, x_t=2360.000, c=12.297)</li>
+                <li><strong style="color: #636EFA;">Small Recall</strong> (1175 characters, params: A=0.089, B=22.768, x_t=1339.000, c=142.212)</li>
+                <li><strong style="color: #EF553B;">Middle Recall</strong> (1880 characters, params: A=0.046, B=26.735, x_t=2163.786, c=127.103)</li>
+                <li><strong style="color: #00CC96;">Big Recall</strong> (416 characters, params: A=-0.008, B=27.386, x_t=3943.000, c=-2.600)</li>
             </ul>
             <p>The plot shows log probability sums (y-axis) for each summary length (x-axis). Vertical dotted lines indicate the character length of each recall. The piecewise continuous fit highlights how summary length affects recall prediction quality, with linear growth that saturates beyond a transition point.</p>
         </div>
@@ -73,8 +73,24 @@
             <p>Details about the three recalls used in the analysis:</p>
             <iframe class="iframe-table" src="plot_a_recall_vs_summaries_table.html"></iframe>
         </div>
-        
-        
+
+        <div class="section">
+            <h2>Threshold Sweep of Fit Parameters</h2>
+            <p>
+                We vary the minimum summary length (in characters), refit the
+                piecewise-continuous model, and examine how the slope, transition
+                point, and saturation level change with this threshold.
+            </p>
+
+            <h3>Parameters vs Threshold</h3>
+            <iframe class="iframe-plot" src="plot_a_threshold_vs_A.html"></iframe>
+            <iframe class="iframe-plot" src="plot_a_threshold_vs_xt.html"></iframe>
+            <iframe class="iframe-plot" src="plot_a_threshold_vs_c.html"></iframe>
+
+            <h3>Threshold Sweep Table</h3>
+            <iframe class="iframe-table" src="plot_a_threshold_sweep_params.html"></iframe>
+        </div>
+
     </div>
 </body>
 </html>
