@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBits Leave-One-Out Analysis Explanation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #c7254e;
+        }
+        code a {
+            color: #c7254e;
+            text-decoration: underline;
+        }
+        code a:hover {
+            color: #a01d3f;
+        }
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+            line-height: 1.4;
+        }
+        .prompt-box {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .algorithm-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .plot-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .plot-link:hover {
+            background-color: #2980b9;
+        }
+        ul {
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MBits Leave-One-Out Analysis: Explanation</h1>
+        
+        <p>
+            This document explains how the plot <a href="mbits_costa_summary_leave_one_out_5.html" class="plot-link">mbits_costa_summary_leave_one_out_5.html</a> was created, 
+            including the methodology, prompts used, and the mbits calculation process.
+        </p>
+
+        <h2>1. Script Used</h2>
+        <p>
+            The plot was generated using the script:
+        </p>
+        <pre><code><a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/mbits_summary_leave_one_out.py" target="_blank">experiments/mbits_summary_leave_one_out.py</a></code></pre>
+        
+        <p>
+            This script performs a leave-one-out analysis where:
+        </p>
+        <ul>
+            <li>One summary is excluded from the set of GPT-4o summaries</li>
+            <li>MBits are calculated for all remaining summaries against the excluded summary</li>
+            <li>Similar calculations are performed for recalls, extractive Doron summaries, and random extractive Doron summaries</li>
+            <li>Both original and rephrased versions of texts are analyzed</li>
+        </ul>
+
+        <h2>2. Plot Generation Process</h2>
+        
+        <h3>2.1 Data Selection</h3>
+        <p>
+            The script selects the median-length summary to exclude:
+        </p>
+        <ul>
+            <li>Summaries are sorted by length</li>
+            <li>The median-length summary is selected as the excluded summary</li>
+        </ul>
+
+        <h3>2.2 Matching Texts</h3>
+        <p>
+            The script selects matching texts of similar length to compare against:
+        </p>
+        <ul>
+            <li><strong>Recall:</strong> Selects a recall with character count closest to the excluded summary length</li>
+            <li><strong>Extractive Doron Summary:</strong> Selects an extractive summary with similar length</li>
+            <li><strong>Random Extractive Doron Summary:</strong> Selects a random extractive summary with similar length</li>
+        </ul>
+
+        <h3>2.3 MBits Calculation</h3>
+        <p>
+            For each text type, mbits are calculated in multiple modes. Importantly, <strong>both original and rephrased versions</strong> of summaries are calculated and plotted:
+        </p>
+        <ul>
+            <li><strong>Summary Mode:</strong> MBits of summaries against the excluded summary (original summaries plotted with circles, rephrased summaries with crosses)</li>
+            <li><strong>Recall Mode:</strong> MBits of summaries against the selected recall (original summaries plotted with circles, rephrased summaries with crosses)</li>
+            <li><strong>Doron Mode:</strong> MBits of summaries against the selected Doron summary (original summaries plotted with circles, rephrased summaries with crosses)</li>
+            <li><strong>Random Extractive Doron Mode:</strong> MBits of summaries against the selected random extractive Doron summary (original summaries plotted with circles, rephrased summaries with crosses)</li>
+        </ul>
+        <p>
+            The rephrased summaries are generated using GPT-4o with the <code>rephrase_gpt4o_summary</code> prompt (see Section 3.1) and are plotted with <strong>cross markers</strong> to visually distinguish them from the original summaries.
+        </p>
+
+        <h2>3. Prompts Used for Rephrasing</h2>
+
+        <h3>3.1 Rephrasing GPT-4o Summaries</h3>
+        <p>
+            Summaries are rephrased using the following prompt:
+        </p>
+        <div class="prompt-box">
+            <strong>Prompt:</strong> <code>rephrase_gpt4o_summary</code><br><br>
+            <pre>Your task is to generate a paraphrase of a narrative, using different wording (lexical diversity) and phrasing (syntactic diversity), but keeping the meaning essentially the same.
+Format the output in JSON as follows:
+```json
+{
+  "rephrased_text": "rephrased  narrative"]
+}
+```</pre>
+        </div>
+        <p>
+            This prompt is applied to each summary individually, generating a rephrased version that maintains semantic meaning while varying lexical and syntactic structure. These rephrased summaries are then used to calculate mbits values, which are plotted in the visualization with <strong>cross markers</strong> to distinguish them from the original summaries (which use circle markers).
+        </p>
+
+        <h3>3.2 Rephrasing the Narrative</h3>
+        <p>
+            The full narrative is rephrased using a chunked approach with the following prompts:
+        </p>
+        <div class="prompt-box">
+            <strong>System Prompt:</strong> <code>rephrase_like_doron_system</code><br><br>
+            <pre>You will be given a part of a narrative, segmented into linguistic clauses and numbered from 1 to {N_chunk}.
+Your task is to generate a paraphrase of this part of the narrative, using different wording (lexical diversity) and phrasing (syntactic diversity), but keeping the meaning essentially the same.
+You should keep the numbering of the clauses in the paraphrase.
+When the part is in the middle of the narrative, you will be given a summary of the narrative up to that point.
+{full_context_str}</pre>
+        </div>
+        
+        <div class="prompt-box">
+            <strong>User Prompt:</strong> <code>rephrase_like_doron_user</code><br><br>
+            <pre>Part to paraphrase: ```{chunk_str}```</pre>
+        </div>
+
+        <p>
+            The narrative is processed in chunks (typically 20 segments at a time). For chunks after the first, a summary of the preceding narrative is provided as context to maintain coherence.
+        </p>
+
+        <p>
+            The rephrased narrative is stored in:
+        </p>
+        <pre><code>html/costa/rephrased_narrative.csv</code></pre>
+
+        <h2>4. MBits Calculation Methodology</h2>
+
+        <h3>4.1 Overview</h3>
+        <p>
+            MBits (millibits) measure the information content of a text segment given a preceding context. The calculation uses the Meta-Llama-3.1-70B-Instruct-Turbo model to compute log probabilities.
+        </p>
+
+        <h3>4.2 Calculation Process</h3>
+        <p>
+            The mbits calculation is performed by the function <code>get_mbits()</code> in <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/tools/get_mbits.py" target="_blank"><code>tools/get_mbits.py</code></a>. Here's how it works:
+        </p>
+
+        <div class="algorithm-box">
+            <h4>Step 1: Prepare Prompts</h4>
+            <p>
+                Two prompts are constructed for each calculation:
+            </p>
+            <ol>
+                <li><strong>Baseline prompt:</strong> <code>"&lt;|begin_of_text|>" + narrative</code>
+                    <ul>
+                        <li>This measures the probability of the narrative without any preceding context</li>
+                    </ul>
+                </li>
+                <li><strong>Conditioned prompt:</strong> <code>"&lt;|begin_of_text|> The following two texts splitted by '---' tell the same story with different wording:\n" + preceding_text + "\n---\n" + narrative</code>
+                    <ul>
+                        <li>This measures the probability of the narrative given the preceding text as context</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h4>Step 2: Compute Log Probabilities</h4>
+            <p>
+                For each prompt, the model computes log probabilities for all tokens in the narrative:
+            </p>
+            <ul>
+                <li>The model is queried with <code>logprobs=1</code> and <code>echo=True</code> to get token-level log probabilities</li>
+                <li>Only the log probabilities for the narrative portion are extracted</li>
+            </ul>
+
+            <h4>Step 3: Segment-Level Probabilities</h4>
+            <p>
+                The narrative is split into segments (e.g., sentences or clauses). For each segment:
+            </p>
+            <ul>
+                <li>Token indices corresponding to the segment are identified</li>
+                <li>Log probabilities for those tokens are summed to get segment-level log probabilities</li>
+            </ul>
+
+            <h4>Step 4: Calculate MBits</h4>
+            <p>
+                The mbits for each segment is calculated as:
+            </p>
+            <pre>mbits_segment = (logprob_conditioned - logprob_baseline) * 1000</pre>
+            <p>
+                Where:
+            </p>
+            <ul>
+                <li><code>logprob_conditioned</code> = sum of log probabilities for the segment given the preceding context</li>
+                <li><code>logprob_baseline</code> = sum of log probabilities for the segment without context</li>
+                <li>The factor of 1000 converts from bits to millibits</li>
+            </ul>
+
+            <h4>Step 5: Total MBits</h4>
+            <p>
+                The total mbits for the entire narrative is the sum of mbits for all segments:
+            </p>
+            <pre>total_mbits = sum(mbits_segment for all segments)</pre>
+        </div>
+
+        <h3>4.3 Interpretation</h3>
+        <p>
+            MBits values indicate:
+        </p>
+        <ul>
+            <li><strong>Positive mbits:</strong> The preceding context makes the narrative more predictable (lower information content)</li>
+            <li><strong>Negative mbits:</strong> The preceding context makes the narrative less predictable (higher information content)</li>
+            <li><strong>Higher absolute values:</strong> Stronger effect of the context on predictability</li>
+        </ul>
+
+        <h3>4.4 Cache Files</h3>
+        <p>
+            MBits calculations are cached to avoid redundant API calls. Cache files are stored in:
+        </p>
+        <pre><code>data/processed/costa/cache/</code></pre>
+        <p>
+            Cache file naming conventions:
+        </p>
+        <ul>
+            <li><code>summary_gpt4o_{summary_name}_after_{excluded_summary_name}.csv</code> - Summary mode mbits</li>
+            <li><code>recall_{summary_name}_after_{recall_id}.csv</code> - Recall mode mbits</li>
+            <li><code>a_new_rephrased_summary_gpt4o_{summary_name}_after_{excluded_summary_name}.csv</code> - Rephrased summary mbits</li>
+            <li><code>recall_a_new_rephrased_summary_gpt4o_{summary_name}_after_{recall_id}.csv</code> - Rephrased summary vs recall mbits</li>
+        </ul>
+
+        <h2>5. Plot Components</h2>
+
+        <h3>5.1 Data Series</h3>
+        <p>
+            The plot displays multiple series of data points. Note that <strong>rephrased summaries are plotted with cross markers</strong> to distinguish them from original summaries (which use circle markers):
+        </p>
+        <table>
+            <tr>
+                <th>Series</th>
+                <th>Color</th>
+                <th>Marker</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Summary</td>
+                <td>Black</td>
+                <td>Circle</td>
+                <td>Original summaries vs excluded summary</td>
+            </tr>
+            <tr>
+                <td>Rephrased Summary</td>
+                <td>Black</td>
+                <td>Cross</td>
+                <td>Rephrased summaries vs excluded summary</td>
+            </tr>
+            <tr>
+                <td>Recall</td>
+                <td>Orange</td>
+                <td>Circle</td>
+                <td>Original summaries vs selected recall</td>
+            </tr>
+            <tr>
+                <td>Rephrased Recall</td>
+                <td>Orange</td>
+                <td>Cross</td>
+                <td>Rephrased summaries vs selected recall</td>
+            </tr>
+            <tr>
+                <td>Extractive Doron</td>
+                <td>Red</td>
+                <td>Circle</td>
+                <td>Original summaries vs selected extractive Doron summary</td>
+            </tr>
+            <tr>
+                <td>Rephrased Extractive Doron</td>
+                <td>Red</td>
+                <td>Cross</td>
+                <td>Rephrased summaries vs selected extractive Doron summary</td>
+            </tr>
+            <tr>
+                <td>Random Extractive Doron</td>
+                <td>Blue</td>
+                <td>Circle</td>
+                <td>Original summaries vs selected random extractive Doron summary</td>
+            </tr>
+            <tr>
+                <td>Rephrased Random Extractive Doron</td>
+                <td>Blue</td>
+                <td>Cross</td>
+                <td>Rephrased summaries vs selected random extractive Doron summary</td>
+            </tr>
+        </table>
+
+        <h3>5.2 Special Markers</h3>
+        <ul>
+            <li><strong>Star markers:</strong> Represent the full original narrative at its character length</li>
+            <li><strong>Diamond markers:</strong> Represent the full rephrased narrative at its character length</li>
+        </ul>
+
+        <h3>5.3 Vertical Lines</h3>
+        <p>
+            Dashed vertical lines indicate the length of texts:
+        </p>
+        <ul>
+            <li>Black dashed line: Length of excluded summary</li>
+            <li>Orange dashed line: Length of selected recall</li>
+            <li>Red dashed line: Length of selected extractive Doron summary</li>
+            <li>Blue dashed line: Length of selected random extractive Doron summary</li>
+        </ul>
+
+        <h2>6. Key Functions</h2>
+
+        <h3>6.1 Main Calculation Functions</h3>
+        <ul>
+            <li><code>calculate_summary_mode_mbits()</code>: Calculates mbits for summaries against an excluded summary</li>
+            <li><code>calculate_recall_mode_mbits()</code>: Calculates mbits for summaries against a selected recall</li>
+            <li><code>calculate_mbits_for_text_vs_summaries()</code>: Calculates mbits for summaries against a given text (Doron summaries)</li>
+        </ul>
+
+        <h3>6.2 Helper Functions</h3>
+        <ul>
+            <li><code>rephrase_summaries()</code>: Rephrases all summaries using GPT-4o</li>
+            <li><code>find_matching_text_id()</code>: Finds a text with character count closest to target length</li>
+            <li><code>plot_mbits_results()</code>: Creates the Plotly visualization</li>
+        </ul>
+
+        <h2>7. Model Used</h2>
+        <p>
+            The mbits calculations use:
+        </p>
+        <ul>
+            <li><strong>Model:</strong> Meta-Llama-3.1-70B-Instruct-Turbo</li>
+            <li><strong>API:</strong> Together AI</li>
+            <li><strong>Rephrasing:</strong> GPT-4o (via <code>generate_utils.generate4o_json()</code>)</li>
+        </ul>
+
+        <h2>8. Output Files</h2>
+        <p>
+            The script generates:
+        </p>
+        <ul>
+            <li><code>html/costa/mbits_costa_summary_leave_one_out_5.html</code> - Interactive Plotly plot</li>
+            <li><code>html/costa/mbits_costa_summary_leave_one_out_5.png</code> - Static image of the plot</li>
+        </ul>
+
+        <h2>9. References</h2>
+        <ul>
+            <li>Script: <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/mbits_summary_leave_one_out.py" target="_blank"><code>experiments/mbits_summary_leave_one_out.py</code></a></li>
+            <li>MBits calculation: <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/tools/get_mbits.py" target="_blank"><code>tools/get_mbits.py</code></a></li>
+            <li>Prompts: <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/templates/prompts.py" target="_blank"><code>templates/prompts.py</code></a></li>
+            <li>Data: <code>data/processed/costa/</code></li>
+        </ul>
+
+    </div>
+</body>
+</html>
+
