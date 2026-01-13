@@ -122,6 +122,8 @@
             <h4>1. Humans (Baseline)</h4>
             <p>
                 <strong>Label:</strong> <code>costa</code><br>
+                <strong>Average clauses per recall:</strong> 29.74<br>
+                <strong>Average text length per recall:</strong> 1,070.49 characters<br>
                 <strong>Description:</strong> Real human recalls of the narrative. This serves as the baseline 
                 for comparison. All other methods are evaluated based on how closely they match these human recall patterns.
             </p>
@@ -133,6 +135,9 @@
                 <strong>Label:</strong> <code>costa_emulate-recall-gpt-4o</code><br>
                 <strong>Model:</strong> GPT-4o<br>
                 <strong>Prompt:</strong> <code>prompts.emulate_recalls</code><br>
+                <strong>Pearson correlation with humans (r):</strong> 0.712<br>
+                <strong>Average clauses per recall:</strong> 17.30<br>
+                <strong>Average text length per recall:</strong> 699.89 characters<br>
                 <strong>Description:</strong> The model was asked to generate 10 independent human-like recalls 
                 of the narrative, as if produced by different people remembering the same story. Each recall 
                 varies in wording, level of detail, ordering, and omissions, while remaining plausible as 
@@ -160,6 +165,9 @@ Narrative:
                 <strong>Label:</strong> <code>costa_emulate-recall-gpt-5.2</code><br>
                 <strong>Model:</strong> GPT-5.2<br>
                 <strong>Prompt:</strong> <code>prompts.emulate_recalls</code><br>
+                <strong>Pearson correlation with humans (r):</strong> 0.406<br>
+                <strong>Average clauses per recall:</strong> 48.40<br>
+                <strong>Average text length per recall:</strong> 2,466.27 characters<br>
                 <strong>Description:</strong> Same prompt as above, but using the GPT-5.2 model instead of GPT-4o. 
                 This allows us to compare how different model versions perform on the same emulation task.
             </p>
@@ -171,6 +179,9 @@ Narrative:
                 <strong>Label:</strong> <code>costa_keypoints-gpt5-2</code><br>
                 <strong>Model:</strong> GPT-5.2<br>
                 <strong>Prompt:</strong> <code>prompts.summary_with_specified_number_of_key_points</code><br>
+                <strong>Pearson correlation with humans (r):</strong> 0.224<br>
+                <strong>Average clauses per recall:</strong> 55.53<br>
+                <strong>Average text length per recall:</strong> 2,499.72 characters<br>
                 <strong>Description:</strong> The model was asked to summarize the narrative into a specified 
                 number of very simple key points, each containing a subject and a predicate told from the first 
                 person perspective. This represents a more structured, summary-based approach to capturing 
@@ -192,6 +203,9 @@ Format the output in JSON as follows:
                 <strong>Label:</strong> <code>costa_keypoints-rephrased</code><br>
                 <strong>Model:</strong> GPT-4o<br>
                 <strong>Prompt:</strong> <code>prompts.rephrase_gpt4o_summary</code><br>
+                <strong>Pearson correlation with humans (r):</strong> 0.633<br>
+                <strong>Average clauses per recall:</strong> 49.18<br>
+                <strong>Average text length per recall:</strong> 2,394.19 characters<br>
                 <strong>Description:</strong> This method takes the result from the keypoints summary (method 4) 
                 and rephrases it using GPT-4o with different wording and phrasing while keeping the meaning essentially the same. 
                 This tests whether lexical and syntactic diversity affects the p-caught patterns.
