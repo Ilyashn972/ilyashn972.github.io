@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-caught Comparison: Human Recall Emulation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        .plot-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .plot-container iframe {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .method-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .method-card h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .prompt-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+        }
+        .correlation-info {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .legend-item {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>P-caught Comparison: Human Recall Emulation</h1>
+        
+        <h2>Overview</h2>
+        <p>
+            This analysis compares how well different AI-generated methods can emulate human recall patterns. 
+            The goal is to understand whether AI models, using various prompts, can produce recall patterns 
+            that match how humans remember and retell narratives.
+        </p>
+        
+        <h2>What is P-caught?</h2>
+        <p>
+            <strong>P-caught</strong> (probability of being caught) represents the probability that a given 
+            segment from the original narrative appears in a recall. It's calculated as the proportion of 
+            recalls (or generated summaries) that contain each segment. Higher p-caught values indicate that 
+            a segment is more frequently remembered or included across different recalls.
+        </p>
+        <p>
+            The plot shows p-caught values for each segment ID, allowing us to see which parts of the narrative 
+            are consistently captured across different methods and how they compare to human recall patterns.
+        </p>
+        
+        <h2>Methods Compared</h2>
+        
+        <div class="method-card">
+            <h4>1. Humans (Baseline)</h4>
+            <p>
+                <strong>Label:</strong> <code>costa</code><br>
+                <strong>Description:</strong> Real human recalls of the narrative. This serves as the baseline 
+                for comparison. All other methods are evaluated based on how closely they match these human recall patterns.
+            </p>
+        </div>
+        
+        <div class="method-card">
+            <h4>2. Emulated Recalls (GPT-4o)</h4>
+            <p>
+                <strong>Label:</strong> <code>costa_emulate-recall-gpt-4o</code><br>
+                <strong>Model:</strong> GPT-4o<br>
+                <strong>Prompt:</strong> <code>prompts.emulate_recalls</code><br>
+                <strong>Description:</strong> The model was asked to generate 10 independent human-like recalls 
+                of the narrative, as if produced by different people remembering the same story. Each recall 
+                varies in wording, level of detail, ordering, and omissions, while remaining plausible as 
+                genuine human recall.
+            </p>
+            <div class="prompt-box">prompts.emulate_recalls:
+You are given a narrative.
+
+Your task is to generate {{N}} independent human-like recalls of this narrative, as if produced by different people remembering the same story.
+
+Each recall should be written as free-form text and may vary in wording, level of detail, ordering, and omissions, while remaining plausible as a genuine human recall.
+
+Output format rules:
+- Separate each recall using the exact delimiter line: <<<RECALL>>>
+- Do not include the delimiter at the beginning or end.
+- Do not include any other text, labels, or formatting.
+
+Narrative:
+{{narrative}}</div>
+        </div>
+        
+        <div class="method-card">
+            <h4>3. Emulated Recalls (GPT-5.2)</h4>
+            <p>
+                <strong>Label:</strong> <code>costa_emulate-recall-gpt-5.2</code><br>
+                <strong>Model:</strong> GPT-5.2<br>
+                <strong>Prompt:</strong> <code>prompts.emulate_recalls</code><br>
+                <strong>Description:</strong> Same prompt as above, but using the GPT-5.2 model instead of GPT-4o. 
+                This allows us to compare how different model versions perform on the same emulation task.
+            </p>
+        </div>
+        
+        <div class="method-card">
+            <h4>4. Keypoints Summary (GPT-5.2)</h4>
+            <p>
+                <strong>Label:</strong> <code>costa_keypoints-gpt5-2</code><br>
+                <strong>Model:</strong> GPT-5.2<br>
+                <strong>Prompt:</strong> <code>prompts.summary_with_specified_number_of_key_points</code><br>
+                <strong>Description:</strong> The model was asked to summarize the narrative into a specified 
+                number of very simple key points, each containing a subject and a predicate told from the first 
+                person perspective. This represents a more structured, summary-based approach to capturing 
+                narrative content.
+            </p>
+            <div class="prompt-box">prompts.summary_with_specified_number_of_key_points:
+"Summarize the provided narrative into exactly {{n}} very simple key points that contains a subject and a predicate told from the first face.
+Format the output in JSON as follows:
+```json
+{
+  "keypoints": ["keypoint1", ... ,"keypoint{{n}}"]
+}
+```"</div>
+        </div>
+        
+        <div class="method-card">
+            <h4>5. Keypoints-Rephrased (GPT-4o)</h4>
+            <p>
+                <strong>Label:</strong> <code>costa_keypoints-rephrased</code><br>
+                <strong>Model:</strong> GPT-4o<br>
+                <strong>Prompt:</strong> <code>prompts.rephrase_gpt4o_summary</code><br>
+                <strong>Description:</strong> This method takes the result from the keypoints summary (method 4) 
+                and rephrases it using GPT-4o with different wording and phrasing while keeping the meaning essentially the same. 
+                This tests whether lexical and syntactic diversity affects the p-caught patterns.
+            </p>
+            <div class="prompt-box">prompts.rephrase_gpt4o_summary:
+Your task is to generate a paraphrase of a narrative, using different wording (lexical diversity) and phrasing (syntactic diversity), but keeping the meaning essentially the same.
+Format the output in JSON as follows:
+```json
+{
+  "rephrased_text": "rephrased  narrative"]
+}
+```</div>
+        </div>
+        
+        <h2>Understanding the Plot</h2>
+        <div class="plot-container">
+            <iframe src="pcaught_comparison.html" title="P-caught Comparison Plot"></iframe>
+        </div>
+        
+        <h3>Plot Interpretation</h3>
+        <ul>
+            <li><strong>X-axis (Segment ID):</strong> Each point represents a segment from the original narrative, numbered sequentially.</li>
+            <li><strong>Y-axis (P-caught %):</strong> The probability (as a percentage) that each segment appears across all recalls/summaries for that method.</li>
+            <li><strong>Lines:</strong> Each colored line represents one method. You can hover over points to see exact values.</li>
+            <li><strong>Correlation values (r):</strong> Shown in the legend for each method (except Humans), these indicate how well each method's p-caught pattern correlates with human recall patterns. Values closer to 1.0 indicate better alignment with human recall.</li>
+        </ul>
+        
+        <div class="correlation-info">
+            <h3>Pearson Correlation with Human Recall</h3>
+            <p>
+                The correlation coefficient (r) shown in the legend for each method measures the linear relationship 
+                between that method's p-caught values and the human baseline. 
+            </p>
+            <ul>
+                <li><strong>r ≈ 1.0:</strong> Strong positive correlation - the method's pattern closely matches human recall</li>
+                <li><strong>r ≈ 0.0:</strong> No correlation - the method's pattern is independent of human recall</li>
+                <li><strong>r ≈ -1.0:</strong> Strong negative correlation - the method captures segments that humans tend to miss, and vice versa</li>
+            </ul>
+            <p>
+                Higher correlation values suggest that the AI method is successfully emulating which segments 
+                humans are likely to remember and include in their recalls.
+            </p>
+        </div>
+        
+        <h2>Key Findings</h2>
+        <p>
+            The analysis reveals two important insights:
+        </p>
+        <ul>
+            <li><strong>Prompt is less important than model:</strong> The choice of prompt (emulation vs. keypoints vs. rephrased) has less impact on how well the results match human recall patterns compared to the choice of model.</li>
+            <li><strong>GPT-4o is much more human-like than GPT-5.2:</strong> When comparing emulated recalls using the same prompt, GPT-4o produces recall patterns that correlate significantly better with human recall patterns than GPT-5.2. This suggests that model architecture and training play a more crucial role in emulating human-like recall than the specific prompting strategy.</li>
+        </ul>
+        
+        <h2>Technical Details</h2>
+        <p>
+            <strong>Data Source:</strong> The p-caught values are calculated from <code>clauses_to_segments_set.csv</code> 
+            files in the <code>data/processed/{story_name}/</code> directories. Each file contains mappings between 
+            clauses (from recalls/summaries) and segments (from the original narrative).
+        </p>
+        <p>
+            <strong>Calculation:</strong> For each segment, p-caught is computed as the proportion of recalls/summaries 
+            that contain that segment, normalized to a percentage.
+        </p>
+        <p>
+            <strong>Correlation Calculation:</strong> Pearson correlation is computed between each method's p-caught 
+            array and the human baseline, using only segments that are present in both datasets.
+        </p>
+        
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+        <p style="color: #777; font-size: 0.9em; text-align: center;">
+            Generated for narrative analysis project | 
+            <a href="pcaught_comparison.html" target="_blank">View plot in new window</a>
+        </p>
+    </div>
+</body>
+</html>
+
