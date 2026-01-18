@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meaningful Bits Heatmaps Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #666;
+            margin-top: 20px;
+        }
+        .heatmap-container {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #fafafa;
+            border-radius: 5px;
+        }
+        .heatmap-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .heatmap-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .note {
+            background-color: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .highlight {
+            background-color: #fff9c4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Meaningful Bits Heatmap Analysis</h1>
+        
+        <h2>Overview</h2>
+        <p>
+            These heatmaps visualize the amount of information (measured in "meaningful bits" or <span class="highlight">mbits</span>) 
+            transferred between different text representations. Each cell in the heatmap represents the mbits value for a specific pair, 
+            where darker colors (blue) indicate lower information content and brighter colors (red/pink) indicate higher information content.
+        </p>
+        
+        <h2>Heatmap 1: Recalls vs Rephrased Summaries</h2>
+        <div class="heatmap-container">
+            <div class="heatmap-title">Recalls vs Rephrased Summaries</div>
+            <img src="recalls_vs_rephrased_heatmap.png" alt="Recalls vs Rephrased Summaries Heatmap">
+        </div>
+        <p>
+            This heatmap shows how much information each recall provides when predicting each rephrased summary.
+        </p>
+        <ul>
+            <li><strong>X-axis (columns)</strong>: Rephrased summaries, sorted from shortest to longest text length</li>
+            <li><strong>Y-axis (rows)</strong>: Recalls, represented by their maximum clause ID, sorted from highest to lowest (recalls with more clauses appear at the top)</li>
+        </ul>
+        <p>
+            This ordering helps identify whether there are systematic relationships between recall complexity (number of clauses), 
+            summary length, and information transfer.
+        </p>
+        
+        <h2>Heatmap 2: Original Summaries vs Rephrased Summaries</h2>
+        <div class="heatmap-container">
+            <div class="heatmap-title">Original Summaries vs Rephrased Summaries</div>
+            <img src="summaries_vs_rephrased_heatmap.png" alt="Original vs Rephrased Summaries Heatmap">
+        </div>
+        <p>
+            This heatmap shows how much information each original summary provides when predicting each rephrased summary.
+        </p>
+        <ul>
+            <li><strong>X-axis (columns)</strong>: Rephrased summaries, sorted from shortest to longest text length</li>
+            <li><strong>Y-axis (rows)</strong>: Original summaries, sorted from longest to shortest text length (lowest at bottom)</li>
+            <li><strong>Diagonal cells</strong>: Masked (white/uncolored) because they represent original summaries vs their own rephrased versions</li>
+        </ul>
+        <p>
+            This visualization helps identify cross-summary information relationships and whether rephrased versions capture 
+            information from other original summaries beyond their own source.
+        </p>
+        
+        <h2>Visualization Techniques</h2>
+        <p>
+            To ensure the heatmaps are readable despite wide value ranges, we apply two key techniques:
+        </p>
+        <ol>
+            <li>
+                <strong>Log Scale Transformation</strong>: Values are transformed using a base-10 logarithmic scale (<code>log10</code>). 
+                This is essential because mbits values can span several orders of magnitude. The log transformation compresses this range 
+                while preserving relative differences, making both small and large values visible on the same color scale.
+            </li>
+            <li>
+                <strong>Percentile-Based Normalization</strong>: The color scale is bounded using the 5th and 95th percentiles of the 
+                log-transformed values from the recalls vs rephrased summaries heatmap. This approach prevents extreme outliers from 
+                dominating the colormap and ensures that the majority of the data (90% of values) is mapped to the full color range, 
+                improving contrast and making patterns more apparent. <span class="highlight">Both heatmaps use the same color scale bounds</span> 
+                to enable direct visual comparison.
+            </li>
+        </ol>
+        
+        <h2>Interpretation</h2>
+        <ul>
+            <li><strong>Color intensity</strong> reflects the magnitude of information transfer (after log transformation)</li>
+            <li><strong>Horizontal patterns</strong> may indicate which summaries capture information from many recalls or original summaries</li>
+            <li><strong>Vertical patterns</strong> may reveal which recalls or original summaries are particularly informative for multiple summaries</li>
+            <li><strong>Outliers</strong> (values beyond the 5th–95th percentile range) are clamped to the color scale bounds but may represent 
+                particularly high or low information transfer relationships</li>
+        </ul>
+        
+        <div class="note">
+            <strong>Note:</strong> These visualizations help identify which pairs exhibit strong information relationships and whether these 
+            relationships correlate with structural features like recall complexity or summary length. The shared color scale between the two 
+            heatmaps allows for direct comparison of information transfer magnitudes across different types of relationships.
+        </div>
+    </div>
+</body>
+</html>
+
