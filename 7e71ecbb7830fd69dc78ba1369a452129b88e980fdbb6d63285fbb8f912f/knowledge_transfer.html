@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LLM Narrative Analysis – Knowledge Transfer</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+    h1, h2, h3 {
+      color: #111;
+    }
+    h1 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.2rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 0.2rem;
+    }
+    code {
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: #f0f0f0;
+      padding: 0.1rem 0.25rem;
+      border-radius: 3px;
+    }
+    pre {
+      background: #f5f5f5;
+      border-radius: 4px;
+      padding: 0.75rem 1rem;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      border: 1px solid #e0e0e0;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>LLM Narrative Analysis – Knowledge Transfer</h1>
+
+  <p class="note">
+    This page documents the end‑to‑end flow for narrative keypoint extraction, rephrasing, and MBits analysis,
+    so that another researcher can reproduce and extend the experiments.
+  </p>
+
+  <h2>Links</h2>
+  <ul>
+    <li>
+      <strong>Overleaf (paper draft)</strong>:
+      <a href="https://www.overleaf.com/project/67fe6232e8bac5228a29c490" target="_blank" rel="noopener noreferrer">
+        Story Recall Paper – Overleaf Project
+      </a>
+    </li>
+    <li>
+      <strong>GitHub (code)</strong>:
+      <a href="https://github.com/Ilyashn972/llm-narrative-analysis" target="_blank" rel="noopener noreferrer">
+        Ilyashn972/llm-narrative-analysis
+      </a>
+    </li>
+    <li>
+      <strong>GitHub Pages / HTML outputs</strong>:
+      <a href="https://ilyashn972.github.io/7e71ecbb7830fd69dc78ba1369a452129b88e980fdbb6d63285fbb8f912f/" target="_blank" rel="noopener noreferrer">
+        Story Recall Research site (GitHub Pages)
+      </a>
+      <span class="note">
+        (Source repo: <a href="https://github.com/Ilyashn972/ilyashn972.github.io" target="_blank" rel="noopener noreferrer">Ilyashn972/ilyashn972.github.io</a>)
+      </span>
+    </li>
+    <li>
+      <strong>Required API keys</strong>:
+      <ul>
+        <li><code>LAB_OPEN_API_KEY</code> (OpenAI, used by <code>key_point_tree/src/parse_story/generate_utils.py</code>)</li>
+        <li><code>TOGETHER_API_KEY</code> (Together.ai, used by <code>tools/get_mbits.py</code>)</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Flow</h2>
+
+  <h3>1. Story data format</h3>
+  <p>
+    Stories are stored as JSON files under:
+  </p>
+  <pre><code>data/processing/&lt;story&gt;/&lt;story&gt;.json</code></pre>
+  <p>
+    Each JSON contains at least:
+  </p>
+  <ul>
+    <li><code>narrative</code>: the full story text.</li>
+    <li><code>recalls</code>: a dictionary mapping <code>recall_id</code> → <code>recall_text</code> (human or model recalls).</li>
+  </ul>
+
+  <h3>2. From narrative to keypoints (GPT‑4o)</h3>
+  <p>
+    For a given story, we take the <code>narrative</code> text and ask GPT‑4o to produce keypoints.
+    This is driven by <code>experiments/summary_gpt4o_rate.py</code> and the prompt
+    <code>summary_with_specified_number_of_key_points</code> in <code>templates/prompts.py</code>.
+  </p>
+
+  <p><strong>Prompt used to extract keypoints</strong> (<code>summary_with_specified_number_of_key_points</code>):</p>
+  <pre><code>“Summarize the provided narrative into exactly {{n}} very simple key points that contains a subject and a predicate told from the first face.
+Format the output in JSON as follows:
+```json
+{
+  "keypoints": ["keypoint1", ... ,"keypoint{{n}}"]
+}
+```</code></pre>
+
+  <p><strong>Code that calls GPT‑4o to generate keypoints</strong>
+    (from <code>experiments/summary_gpt4o_rate.py</code>):</p>
+  <pre><code>def generate_summary(output_file, narrative, n):
+    if output_file.exists():
+        with open(output_file) as f:
+            result = json.load(f)
+    else:
+        result = json.loads(
+            generate_utils.generate4o_json(
+                prompts.summary_with_specified_number_of_key_points.replace(
+                    "{{n}}", str(n)
+                ),
+                narrative,
+                temperature=1,
+            )
+        )
+        with open(output_file, "w") as f:
+            json.dump(result, f, indent=4)
+    return result</code></pre>
+
+  <p>
+    The script loops over different numbers of keypoints <code>n</code> and attempts, calls
+    <code>generate_summary(...)</code>, and evaluates each keypoint set with MBits against the
+    segmented narrative. The aggregated results are written to:
+  </p>
+  <pre><code>html/&lt;story&gt;/summary_gpt4o_rate.csv</code></pre>
+
+  <p>
+    Model choice: <strong>OpenAI <code>gpt-4o</code></strong> (via
+    <code>generate_utils.generate4o_json</code>) is the only model that consistently gives
+    clean, usable keypoints with this prompt. Other models (e.g., <code>gpt-5.2</code>) were tested but
+    produced less reliable segment‑aligned keypoints.
+  </p>
+
+  <p>
+    Regarding the number of keypoints: we experimented with a range of values for <code>n</code>.
+    The primary goal was to generate GPT‑4o summaries whose total text length would closely match that
+    of corresponding human recalls. For <code>costa</code>, we also tried much longer summaries with
+    100–200 keypoints; these runs exist in the data but can make some plots harder to interpret.
+  </p>
+
+  <p>For each fixed number of keypoints, we ran multiple independent generations (attempts) in order to estimate both the average
+  behavior and the variability of the results.</p>
+  <p>
+    In addition to keypoint‑based summaries, we also tried a different, more direct approach:
+    asking the model to <em>emulate full human recalls</em>. The script
+    <code>experiments/emulate_recall.py</code> uses the <code>emulate_recalls</code> prompt in
+    <code>templates/prompts.py</code>, which instructs the model:
+  </p>
+
+  <pre><code>You are given a narrative.
+
+Your task is to generate {{N}} independent human-like recalls of this narrative, as if produced
+by different people remembering the same story.
+
+Each recall should be written as free-form text and may vary in wording, level of detail,
+ordering, and omissions, while remaining plausible as a genuine human recall.
+
+Output format rules:
+- Separate each recall using the exact delimiter line:
+  &lt;&lt;&lt;RECALL&gt;&gt;&gt;
+- Do not include the delimiter at the beginning or end.
+- Do not include any other text, labels, or formatting.
+
+Narrative:
+{{narrative}}</code></pre>
+
+  <p>
+    The script loads the original <code>narrative</code>, calls
+    <code>generate_recalls(model, narrative)</code> with either <code>gpt-4o</code> or
+    <code>gpt-5.2</code>, splits the model output on the <code>&lt;&lt;&lt;RECALL&gt;&gt;&gt;</code>
+    delimiter, and saves each emulated recall as a separate JSON file (with a hashed
+    <code>prolific_id</code>) for later analysis alongside real human recalls.
+  </p>
+  <p>
+  We have found that <code>gpt-4o</code> is able to generate good recalls and, with this approach, we do not need to match the length
+  of the summaries to the length of the human recalls (at least for the <code>costa</code> story).
+  </p>
+
+  <h3>3. P-caught comparison explanation</h3>
+  <p>
+    For an explanation of how <code>p_caught</code> is defined and compared across conditions,
+    see the HTML explanation for the <code>costa</code> story:
+  </p>
+  <p>
+    <a href="costa/pcaught_comparison_explanation.html" target="_blank" rel="noopener noreferrer">
+      P-caught comparison explanation (costa)
+    </a>
+  </p>
+
+  <h3>4. Rephrasing summaries and recalls (MBits pipeline)</h3>
+  <p>
+    Rephrasing and MBits analysis are implemented in
+    <code>experiments/mbits_tables_all_vs_rephrased.py</code>.
+    The script:
+  </p>
+  <ul>
+    <li>Loads clause‑level data from <code>data/processed/&lt;story&gt;/clauses_to_segments_set.csv</code>.</li>
+    <li>Loads summaries generated for the story from the cache:
+      <code>data/processed/&lt;story&gt;/cache/summary_gpt4o_*_&lt;attempt&gt;.json</code>.
+    </li>
+    <li>Rephrases each GPT‑4o summary using GPT‑4o again with
+      <code>prompts.rephrase_gpt4o_summary_in_your_own_words</code>, storing the result as JSON.</li>
+  </ul>
+
+  <p><strong>Rephrasing helper (GPT‑4o JSON, from <code>mbits_tables_all_vs_rephrased.py</code>)</strong>:</p>
+  <pre><code>def rephrase_gpt4o_summary_by_gpt4o(filename: Path, summary: str) -> str:
+    """Load or generate rephrased summary."""
+    if filename.exists():
+        with open(filename) as f:
+            result = json.load(f)
+    else:
+        from key_point_tree.src.parse_story import generate_utils
+        from templates import prompts
+        result = json.loads(
+            generate_utils.generate4o_json(
+                prompts.rephrase_gpt4o_summary_in_your_own_words + "\n\n" + summary
+            )
+        )
+        with open(filename, "w") as f:
+            json.dump(result, f, indent=4)
+    return result</code></pre>
+
+  <p><strong>Wrapper that applies the rephrasing to all summaries</strong>:</p>
+  <pre><code>def rephrase_summaries(cache_path: Path, summaries: Dict[str, List[str]]) -> Dict[str, Dict]:
+    """Rephrase summaries using the cache_path."""
+    rephrased_summaries = {}
+    for summary_name, summary in summaries.items():
+        rephrased_summary = rephrase_gpt4o_summary_by_gpt4o(
+            cache_path / f"rephrased_summary_in_your_own_words{summary_name}.json",
+            " ".join(summary)
+        )
+        rephrased_summaries[summary_name] = rephrased_summary
+    return rephrased_summaries</code></pre>
+
+  <p>
+    The same script also rephrases full recalls clause‑by‑clause using
+    <code>prompts.rephrase_narrative_like_doron</code> (see
+    <code>summary_gpt4o_rate.py</code> for the recall‑side rephrasing), so that both summaries
+    and human recalls are available in both original and rephrased form for MBits analysis.
+  </p>
+
+  <h3>5. Pivot tables and plots (MBits vs rephrased summaries)</h3>
+  <p>
+    In <code>experiments/mbits_tables_all_vs_rephrased.py</code>, after rephrasing, we build
+    several MBits tables:
+  </p>
+  <p class="note">
+    Before moving to these aggregate MBits tables, we first tried inspecting specific pairs of recalls
+    and summaries directly. That earlier analysis lives in
+    <code>experiments/mbits_summary_leave_one_out.py</code> and the (possibly obsolete) HTML page
+    <a href="costa/mbits_costa_summary_leave_one_out_5_explanation.html" target="_blank" rel="noopener noreferrer">
+      mbits_costa_summary_leave_one_out_5_explanation.html
+    </a>
+  </p>
+  <ul>
+    <li>
+      <strong>Summaries vs rephrased summaries</strong>:
+      for each original summary A and rephrased summary B, compute
+      <code>mbits(B, A)</code> and store in a long table, then pivot to a matrix:
+      <ul>
+        <li>Long format: <code>html/costa/all_summaries_vs_rephrased_table.csv</code></li>
+        <li>Pivot: <code>html/costa/all_summaries_vs_rephrased_pivot.csv</code></li>
+        <li>HTML table: <code>html/costa/all_summaries_vs_rephrased_pivot.html</code></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Recalls vs rephrased summaries</strong>:
+      MBits table of recalls (rows) vs rephrased summaries (columns), similarly saved as CSV and HTML:
+      <ul>
+        <li>Long format: <code>html/costa/recalls_vs_rephrased_table.csv</code></li>
+        <li>Pivot: <code>html/costa/recalls_vs_rephrased_pivot.csv</code></li>
+        <li>HTML table: <code>html/costa/recalls_vs_rephrased_pivot.html</code></li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><strong>Pivot helper</strong> (used for both summaries and recalls):</p>
+  <pre><code>def create_pivot_table(df: pd.DataFrame, row_col: str, col_col: str, value_col: str) -> pd.DataFrame:
+    """Create a pivot table from the DataFrame."""
+    return df.pivot_table(index=row_col, columns=col_col, values=value_col, aggfunc='first')</code></pre>
+
+  <p>
+    Once pivot tables are saved, the same script produces heatmap visualizations:
+  </p>
+  <ul>
+    <li><code>html/costa/recalls_vs_rephrased_heatmap.png</code></li>
+    <li><code>html/costa/summaries_vs_rephrased_heatmap.png</code></li>
+  </ul>
+  <p>
+    The heatmaps sort:
+  </p>
+  <ul>
+    <li>Columns (summaries) by rephrased summary length.</li>
+    <li>Rows (recalls) by maximum clause ID (a proxy for recall length/coverage).</li>
+  </ul>
+
+  <p class="note">
+    There may already be HTML pages explaining specific plots (e.g., reliability curves,
+    fan‑out plots, or <code>p_caught</code> behavior). These are typically generated into
+    the <code>html/costa/</code> directory and then linked into higher‑level summary
+    pages using <code>tools/insert_into_html.py</code>.
+  </p>
+
+</body>
+</html>
+
