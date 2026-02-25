@@ -220,6 +220,51 @@ Format the output in JSON as follows:
 ```</div>
         </div>
         
+        <div class="method-card">
+            <h4>6. Emulated Recalls (DeepSeek)</h4>
+            <p>
+                <strong>Label:</strong> <code>costa_emulate-recall-deepseek</code><br>
+                <strong>Model:</strong> DeepSeek-R1-0528 (via Together.ai)<br>
+                <strong>Prompt:</strong> <code>prompts.emulate_recalls</code><br>
+                <strong>Description:</strong> Additional emulated recalls generated with the same recall-emulation prompt as methods 2 and 3, 
+                but using the DeepSeek model. This lets us see how a non-OpenAI model aligns with human recall patterns under the same task.
+            </p>
+        </div>
+        
+        <div class="method-card">
+            <h4>7. Emulated Recalls (gpt-oss-120b)</h4>
+            <p>
+                <strong>Label:</strong> <code>costa_emulate-recall-gpt-oss-120b</code><br>
+                <strong>Model:</strong> gpt-oss-120b (via Together.ai)<br>
+                <strong>Prompt:</strong> <code>prompts.emulate_recalls</code><br>
+                <strong>Description:</strong> Emulated recalls produced with a large open-source model. This series helps compare how 
+                a high-parameter open model captures narrative segments relative to both humans and proprietary models.
+            </p>
+        </div>
+        
+        <div class="method-card">
+            <h4>8. Emulated Recalls (Llama-4 Maverick 17B)</h4>
+            <p>
+                <strong>Label:</strong> <code>costa_costa_emulate-recall-llama-4-maverick-17b</code><br>
+                <strong>Model:</strong> Llama-4-Maverick-17B-128E-Instruct-FP8 (via Together.ai)<br>
+                <strong>Prompt:</strong> <code>prompts.emulate_recalls</code><br>
+                <strong>Description:</strong> Another set of emulated recalls using a Llama-family model. Together with the DeepSeek and 
+                gpt-oss-120b series, this allows cross-model comparison of how well different architectures emulate human recall.
+            </p>
+        </div>
+        
+        <div class="method-card">
+            <h4>9. Emulated Recalls (Kimi-K2)</h4>
+            <p>
+                <strong>Label:</strong> <code>costa_costa_emulate-recall-kimi-k2</code><br>
+                <strong>Model:</strong> Kimi-K2-Instruct-0905 (via Together.ai)<br>
+                <strong>Prompt:</strong> <code>prompts.emulate_recalls</code><br>
+                <strong>Description:</strong> Emulated recalls generated with the Kimi-K2 model using the same recall-emulation prompt 
+                as the other Together.ai models. This series provides another comparison point for how different large models prioritize 
+                narrative segments when asked to recall the story in a human-like way.
+            </p>
+        </div>
+        
         <h2>Understanding the Plot</h2>
         <div class="plot-container">
             <iframe src="pcaught_comparison.html" title="P-caught Comparison Plot"></iframe>
@@ -269,6 +314,15 @@ Format the output in JSON as follows:
             <strong>Calculation:</strong> For each segment, p-caught is computed as the proportion of recalls/summaries 
             that contain that segment, normalized to a percentage.
         </p>
+        <p>
+            <strong>Pipeline and scripts:</strong> For the emulated recall models (GPT-4o, GPT-5.2, DeepSeek, gpt-oss-120b, Llama-4 Maverick 17B, Kimi-K2), 
+            the data underlying the plot is produced in three main steps:
+        </p>
+        <ul>
+            <li><strong>Generate recalls:</strong> <code>experiments/emulate_recall.py</code> uses <code>prompts.emulate_recalls</code> to ask each model to generate 10 independent human-like recalls of the original narrative, saving each recall as a JSON file.</li>
+            <li><strong>Build processed JSON:</strong> <code>tools/build_json_from_new_files.py</code> takes these raw recall JSON files (for a given version such as <code>costa_emulate-recall-gpt-4o</code> or <code>costa_emulate-recall-deepseek</code>) and builds the consolidated processed story data in <code>data/processed/</code>.</li>
+            <li><strong>Split into clauses and map to segments:</strong> <code>key_point_tree/src/map_story/map_to_segments.py</code> splits each recall into clauses and maps each clause to one or more narrative segments, producing the <code>clauses_to_segments_set.csv</code> and related files that are then used for the p-caught computation.</li>
+        </ul>
         <p>
             <strong>Correlation Calculation:</strong> Pearson correlation is computed between each method's p-caught 
             array and the human baseline, using only segments that are present in both datasets.
