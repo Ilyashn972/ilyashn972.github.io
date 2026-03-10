@@ -1,0 +1,811 @@
+story,segment_id,segment_rel_pos,models_mean,human_pcaught,mean_minus_human,segment_text,gpt4o_pcaught,llama4_pcaught,deep_seek_pcaught,oss_120_pcaught,models_min,models_max
+bear,72,0.59,19.094,78.0,-58.906,"or we're really going to get a bad time from the rest of the people,",22.222,3.774,32.11,18.269,3.774,32.11
+bear,73,0.6,16.52,73.0,-56.48,"'cause too many people know we'd gone bear hunting,",19.444,3.774,28.44,14.423,3.774,28.44
+bear,71,0.58,13.506,65.0,-51.494,"we've got to find a bear to take back home with us,",10.185,3.774,26.606,13.462,3.774,26.606
+hester_v2-church,7,0.13,7.865,57.0,-49.135,"There were only two of us siblings, my sister and me.",4.63,6.0,4.0,16.832,4.0,16.832
+bear,78,0.64,16.949,66.0,-49.051,"and the rest of them would skin him butcher him and pack him back down,",7.407,9.434,20.183,30.769,7.407,30.769
+bear,70,0.57,13.749,62.0,-48.251,if we don't go out and hunt some bear ...,12.963,4.717,23.853,13.462,4.717,23.853
+costa,153,0.79,27.467,67.742,-40.274,So when I got home – they took me home.,34.503,22.772,25.862,26.733,22.772,34.503
+costa,180,0.93,27.224,66.667,-39.443,"I said, “Go tell Aunt Millie and Aunt Jenny.”",40.936,27.723,22.414,17.822,17.822,40.936
+hester_v1-park,52,0.96,20.427,59.184,-38.756,"It's been, what, six or seven years since then?",0.0,11.0,8.333,62.376,0.0,62.376
+stein,35,0.27,12.188,50.515,-38.327,And while I was trying to tell her what had happened,10.092,16.0,12.381,10.28,10.092,16.0
+bear,88,0.72,23.802,62.0,-38.198,"and finally I heard a noise,",15.741,12.264,42.202,25.0,12.264,42.202
+costa,173,0.89,26.444,64.516,-38.073,"So, I got home and called everybody, told them what happened.",41.52,28.713,20.69,14.851,14.851,41.52
+bear,87,0.71,15.927,54.0,-38.073,"and I just wasn't seeing any bears or anything,",12.963,8.491,21.101,21.154,8.491,21.154
+hester_v2-church,47,0.87,38.012,76.0,-37.988,He celebrated his ninetieth birthday surrounded by family and friends.,25.0,13.0,19.0,95.05,13.0,95.05
+hester_v2-church,51,0.94,3.472,41.0,-37.528,"My grandpa passed away a few years later, but his spirit lives on in our hearts.",0.926,1.0,8.0,3.96,0.926,8.0
+costa,179,0.92,27.224,63.441,-36.217,"but instead, I sent my son James, he was little then.",40.936,27.723,22.414,17.822,17.822,40.936
+bear,91,0.75,11.265,47.0,-35.735,I'd never even seen a PICTURE of one THAT big.,5.556,11.321,13.761,14.423,5.556,14.423
+bear,86,0.7,26.634,62.0,-35.366,"I'm walking out there in the woods for hours it seems like,",14.815,11.321,47.706,32.692,11.321,47.706
+doSomething,54,0.67,14.736,49.474,-34.738,"I'd really feel bad if I read the papers the next day that the guy,",7.921,14.423,34.906,1.695,1.695,34.906
+costa,188,0.97,27.719,62.366,-34.647,"“Aunt Jenny, Aunt Millie, Marie died,” he said.",40.936,26.733,22.414,20.792,20.792,40.936
+bear,79,0.65,6.531,41.0,-34.469,so we could take him home with us.,4.63,4.717,11.009,5.769,4.63,11.009
+bear,92,0.75,37.221,71.0,-33.779,"I whipped up the gun,",50.0,11.321,58.716,28.846,11.321,58.716
+panic,36,0.64,30.443,64.0,-33.557,I could feel my world going dark,26.415,23.301,66.055,6.0,6.0,66.055
+bear,97,0.8,20.415,53.0,-32.585,"he just had no desires to have me in his territory,",12.037,10.377,47.706,11.538,10.377,47.706
+doSomething,51,0.63,44.46,76.842,-32.382,"like maybe he's having a heart attack or something,",31.683,47.115,90.566,8.475,8.475,90.566
+bear,82,0.67,27.277,59.0,-31.723,But I had agreed to play the game ...,37.963,17.925,33.028,20.192,17.925,37.963
+bear,107,0.88,55.527,87.0,-31.473,"I started yelling “OPEN THE DOOR, OPEN THE DOOR!”",65.741,16.981,80.734,58.654,16.981,80.734
+stein,52,0.4,42.871,74.227,-31.356,"He says, “I can't do anything with it.”",56.881,39.0,44.762,30.841,30.841,56.881
+hester_v1-park,47,0.87,13.577,44.898,-31.321,He hadn't been able to do that in months without assistance.,3.614,21.0,28.704,0.99,0.99,28.704
+doSomething,50,0.62,46.781,77.895,-31.113,"but at the same time if he's sick,",34.653,47.115,94.34,11.017,11.017,94.34
+bear,119,0.98,23.904,55.0,-31.096,"Now all this happened thirty years ago,",12.037,5.66,19.266,58.654,5.66,58.654
+bear,69,0.57,14.208,45.0,-30.792,"and somebody said “Hey,",8.333,4.717,29.358,14.423,4.717,29.358
+bear,102,0.84,37.366,68.0,-30.634,"and I thought I used to be pretty fast,",44.444,15.094,49.541,40.385,15.094,49.541
+bear,61,0.5,26.823,57.0,-30.177,"and slept,",18.519,7.547,50.459,30.769,7.547,50.459
+hester_v2-church,38,0.7,44.883,75.0,-30.117,My sister told me that he had suddenly felt a surge of energy and was able to stand up and walk.,21.296,31.0,51.0,76.238,21.296,76.238
+stein,48,0.37,10.532,40.206,-29.674,An' he didn't say black 'cause they didn't use black then.,3.67,11.0,19.048,8.411,3.67,19.048
+bear,89,0.73,32.654,62.0,-29.346,"and I turned around,",34.259,13.208,50.459,32.692,13.208,50.459
+bear,106,0.87,54.693,84.0,-29.307,And when I got within sight of that cabin,73.148,16.981,64.22,64.423,16.981,73.148
+stein,96,0.74,23.411,52.577,-29.166,And um all the neighbors came running out to see what was happening.,2.752,11.0,74.286,5.607,2.752,74.286
+costa,186,0.96,27.256,55.914,-28.658,"They said, “James, what’s the matter, honey?",40.936,26.733,21.552,19.802,19.802,40.936
+bear,98,0.8,20.435,49.0,-28.565,and he made for me.,11.111,10.377,46.789,13.462,10.377,46.789
+costa,185,0.95,27.471,55.914,-28.443,"But when he got there, the poor kid’s eyes were all red.",40.936,26.733,22.414,19.802,19.802,40.936
+costa,184,0.95,27.471,55.914,-28.443,“Maybe he’s come to tell us Marie’s home.”,40.936,27.723,22.414,18.812,18.812,40.936
+bear,103,0.84,42.457,70.0,-27.543,"but that old bear,",53.704,16.981,57.798,41.346,16.981,57.798
+bear,67,0.55,9.61,37.0,-27.39,"Well after we'd been there for three or four days,",3.704,4.717,15.596,14.423,3.704,15.596
+costa,187,0.96,27.471,54.839,-27.368,Why are you crying?”,40.936,26.733,22.414,19.802,19.802,40.936
+stein,84,0.65,34.738,61.856,-27.117,"She says, “You can take me home.”",14.679,52.0,66.667,5.607,5.607,66.667
+costa,174,0.9,25.587,52.688,-27.101,I called my brother-in-law.,40.936,26.733,19.828,14.851,14.851,40.936
+costa,103,0.53,26.964,53.763,-26.799,"And Rita said “That’s strange, the mother went to the hospital. She should be there.”",43.86,28.713,22.414,12.871,12.871,43.86
+bear,68,0.56,32.248,59.0,-26.752,"we got to talking it over,",47.222,13.208,33.945,34.615,13.208,47.222
+bear,81,0.66,32.262,59.0,-26.738,the guy that didn't even want to be there in the first place.,15.741,6.604,60.55,46.154,6.604,60.55
+costa,183,0.94,27.256,53.763,-26.508,"They said, “Here comes little Jamie,” and now they said,",40.936,27.723,21.552,18.812,18.812,40.936
+costa,182,0.94,27.256,53.763,-26.508,"and done the cement work, and they were cleaning the pavement.",40.936,27.723,21.552,18.812,18.812,40.936
+costa,158,0.81,24.189,50.538,-26.349,My husband was sitting on the step.,35.088,21.782,18.103,21.782,18.103,35.088
+costa,181,0.93,27.471,53.763,-26.292,"They had cleaned the pavement,",40.936,27.723,22.414,18.812,18.812,40.936
+panic,31,0.55,36.758,63.0,-26.242,it seems someone had noticed me,44.34,47.573,43.119,12.0,12.0,47.573
+stein,29,0.22,20.045,45.361,-25.316,And it was a Jewish neighborhood,2.752,8.0,14.286,55.14,2.752,55.14
+costa,175,0.9,25.339,50.538,-25.198,He was an undertaker.,40.936,26.733,19.828,13.861,13.861,40.936
+stein,40,0.31,28.567,53.608,-25.041,And then when he understood what the situation was he turned to my mother,21.101,44.0,30.476,18.692,18.692,44.0
+hester_v1-park,29,0.54,19.921,44.898,-24.977,And that it doesn't hurt to try.,13.253,17.0,29.63,19.802,13.253,29.63
+hester_v1-park,28,0.52,21.148,45.918,-24.771,I had been taught that prayers can make a difference.,13.253,19.0,30.556,21.782,13.253,30.556
+bear,77,0.63,54.411,79.0,-24.589,"Whoever got the high card ... would go out and get a bear,",59.259,21.698,56.881,79.808,21.698,79.808
+doSomething,55,0.68,13.321,37.895,-24.574,some guy died with a heart attack and there I was thinking he was drunk.,7.921,14.423,29.245,1.695,1.695,29.245
+costa,96,0.49,29.248,53.763,-24.516,"He came home, went upstairs to shave and wash, then sat on the step, waiting.",43.86,30.693,27.586,14.851,14.851,43.86
+doSomething,35,0.43,39.726,64.211,-24.484,"I looked in the mirror and sure enough he's right up there practically bumper to bumper,",20.792,53.846,45.283,38.983,20.792,53.846
+bear,74,0.61,9.537,34.0,-24.463,and if we come home skunked with no bear they're really going to give us a bad time.”,8.333,3.774,18.349,7.692,3.774,18.349
+stein,127,0.98,34.569,58.763,-24.194,When there was trouble they responded just like anyone else.,42.202,5.0,72.381,18.692,5.0,72.381
+panic,32,0.57,23.851,48.0,-24.149,was checking to see if I was alright,43.396,38.835,9.174,4.0,4.0,43.396
+stein,39,0.3,32.576,56.701,-24.125,and he wanted to find out what ha- what was wrong with me.,21.101,40.0,52.381,16.822,16.822,52.381
+bear,120,0.98,35.046,59.0,-23.954,and all my buddies agreed ... that I lived up to my commitment.,42.593,3.774,48.624,45.192,3.774,48.624
+costa,176,0.91,25.587,49.462,-23.876,My sister’s husband – he’s passed away now too. God rest his soul.,40.936,26.733,19.828,14.851,14.851,40.936
+costa,101,0.52,29.947,53.763,-23.817,"They asked, “When is the mother coming to pick up Marie?",46.784,26.733,28.448,17.822,17.822,46.784
+stein,79,0.61,12.373,36.082,-23.709,In that house you had to pay in advance.,3.67,9.0,20.0,16.822,3.67,20.0
+costa,95,0.49,30.155,53.763,-23.609,My husband was waiting for her.,45.029,30.693,31.034,13.861,13.861,45.029
+costa,112,0.58,29.187,52.688,-23.501,One doctor wanted to give me a shot.,44.444,29.703,19.828,22.772,19.828,44.444
+costa,110,0.57,24.045,47.312,-23.267,"And I was in the main hallway, at the office.",42.69,24.752,19.828,8.911,8.911,42.69
+costa,178,0.92,26.265,49.462,-23.197,"So they were waiting for my call, you know,",40.936,27.723,21.552,14.851,14.851,40.936
+bear,58,0.48,44.81,68.0,-23.19,"We sat around there for three or four days,",20.37,12.264,70.642,75.962,12.264,75.962
+costa,159,0.82,21.993,45.161,-23.168,"He asked, “What’s the matter? What happened to you?”",35.088,21.782,17.241,13.861,13.861,35.088
+doSomething,57,0.7,16.863,40.0,-23.137,"But I had made up my mind that I was going to,",14.851,18.269,29.245,5.085,5.085,29.245
+bear,60,0.49,37.879,61.0,-23.121,"and ate,",19.444,8.491,49.541,74.038,8.491,74.038
+stein,100,0.77,7.185,29.897,-22.712,And they had a long door in the back where you had to come down steps to get out the back of the – of this police patrol.,2.752,8.0,12.381,5.607,2.752,12.381
+stein,60,0.46,23.708,46.392,-22.684,"So uh she said, “Well if you can't do anything to help me, I'll go see who – if I can't find someone else to help me.”",39.45,26.0,21.905,7.477,7.477,39.45
+doSomething,48,0.59,16.35,38.947,-22.597,"'cause I'm thinking he's drunk,",20.792,20.192,15.094,9.322,9.322,20.792
+costa,102,0.53,28.074,50.538,-22.464,She’s discharged.”,43.86,25.743,25.862,16.832,16.832,43.86
+stein,53,0.41,37.392,59.794,-22.401,He was Irish himself.,31.193,39.0,46.667,32.71,31.193,46.667
+stein,55,0.42,19.956,42.268,-22.312,"So my mother said um, “Where is the uh precinct you work from?”",47.706,16.0,12.381,3.738,3.738,47.706
+bear,56,0.46,25.859,48.0,-22.141,And after we got to discussing it,37.037,16.981,32.11,17.308,16.981,37.037
+panic,2,0.04,63.914,86.0,-22.086,I was doing my usual job,80.189,61.165,63.303,51.0,51.0,80.189
+bear,35,0.29,39.966,62.0,-22.034,"I don't care anything really much about hunting period,",36.111,54.717,44.037,25.0,25.0,54.717
+costa,170,0.88,27.585,49.462,-21.877,"My younger sister had brought an orange for Marie, and I had never seen an orange like it. It was a big orange, like that.",41.52,26.733,23.276,18.812,18.812,41.52
+stein,75,0.58,10.099,31.959,-21.86,"An' he says, “I'm sure there was more than one person.”",2.752,12.0,21.905,3.738,2.752,21.905
+costa,100,0.52,28.728,50.538,-21.81,"They kept calling the store, trying to reach us.",45.614,27.723,26.724,14.851,14.851,45.614
+hester_v1-park,44,0.81,7.792,29.592,-21.8,It felt like a sign that my prayer had been heard.,4.819,13.0,7.407,5.941,4.819,13.0
+bear,66,0.54,20.216,42.0,-21.784,we stayed right there in the old cabin.,14.815,12.264,41.284,12.5,12.264,41.284
+hester_v2-church,20,0.37,29.266,51.0,-21.734,"On the other hand, she also said that prayers without faith were useless.",20.37,28.0,38.0,30.693,20.37,38.0
+costa,69,0.36,27.868,49.462,-21.594,"“Yes,” she said, “come on in.”",44.444,20.792,35.345,10.891,10.891,44.444
+doSomething,53,0.65,19.502,41.053,-21.55,You gotta do something.,9.901,25.0,40.566,2.542,2.542,40.566
+bear,104,0.85,50.464,72.0,-21.536,"man he was gaining,",70.37,16.038,58.716,56.731,16.038,70.37
+costa,52,0.27,12.996,34.409,-21.412,"She was with the girls, saying goodbye to everyone – you know how it is.",22.222,8.911,12.931,7.921,7.921,22.222
+bear,85,0.7,8.619,30.0,-21.381,I didn't like this at all.,4.63,6.604,16.514,6.731,4.63,16.514
+stein,78,0.6,47.762,69.072,-21.31,"They took all we had to, to pay the rent.",69.725,11.0,52.381,57.944,11.0,69.725
+costa,104,0.54,25.003,46.237,-21.233,So they came back to the hospital to look for us.,42.69,26.733,20.69,9.901,9.901,42.69
+costa,56,0.29,31.528,52.688,-21.16,And I went.,35.673,39.604,31.034,19.802,19.802,39.604
+costa,50,0.26,18.635,39.785,-21.15,"She saw me from the windows, from Wolf Street.",22.807,17.822,25.0,8.911,8.911,25.0
+stein,54,0.42,24.24,45.361,-21.121,“I can't do anything about it.”,15.596,18.0,40.0,23.364,15.596,40.0
+bear,96,0.79,7.038,28.0,-20.962,Well he had ...,3.704,5.66,9.174,9.615,3.704,9.615
+hester_v1-park,54,1.0,21.16,41.837,-20.677,"He's living life to the fullest, even in his seventies.",30.12,26.0,2.778,25.743,2.778,30.12
+costa,97,0.5,27.826,48.387,-20.561,“When is the mother coming?”,43.86,26.733,25.862,14.851,14.851,43.86
+hester_v1-park,16,0.3,10.078,30.612,-20.534,That feeling came back again.,0.0,5.0,33.333,1.98,0.0,33.333
+costa,117,0.6,24.667,45.161,-20.494,"See, they all knew me.",44.444,22.772,21.552,9.901,9.901,44.444
+costa,143,0.74,23.603,44.086,-20.483,"And all Marie said to that girl was, “Oh, I’ve got a pain in my leg and I can’t see.”",34.503,24.752,23.276,11.881,11.881,34.503
+bear,112,0.92,53.552,74.0,-20.448,"I made a quick turn to the left,",61.111,16.981,68.807,67.308,16.981,68.807
+bear,54,0.44,28.563,49.0,-20.437,"and got set up in the cabin,",10.185,15.094,29.358,59.615,10.185,59.615
+stein,99,0.76,7.423,27.835,-20.412,and opened the door in the back.,2.752,8.0,13.333,5.607,2.752,13.333
+stein,47,0.36,63.274,83.505,-20.231,"He says, “But they don't want any black people in there.”",17.431,49.0,86.667,100.0,17.431,100.0
+bear,95,0.78,27.791,48.0,-20.209,I'd forgot to LOAD that turkey.,21.296,7.547,47.706,34.615,7.547,47.706
+costa,99,0.51,29.35,49.462,-20.112,The people in the office didn’t know what had happened yet.,47.368,27.723,28.448,13.861,13.861,47.368
+costa,154,0.79,26.166,46.237,-20.071,I was screaming in the car.,34.503,25.743,27.586,16.832,16.832,34.503
+costa,118,0.61,24.09,44.086,-19.996,"I had three operations in no time, not even a year.",43.86,22.772,19.828,9.901,9.901,43.86
+stein,72,0.55,11.069,30.928,-19.859,"He says, “Because” – he said to me, “Did you see anyone?”",0.917,12.0,27.619,3.738,0.917,27.619
+costa,177,0.91,25.339,45.161,-19.822,Maybe you know him...,40.936,26.733,19.828,13.861,13.861,40.936
+bear,75,0.61,15.355,35.0,-19.645,"Soo ... no one wanted to go out,",23.148,4.717,22.018,11.538,4.717,23.148
+bear,110,0.9,52.372,72.0,-19.628,"and they opened the door,",59.259,16.038,68.807,65.385,16.038,68.807
+bear,62,0.51,11.436,31.0,-19.564,and we just couldn't ...,4.63,4.717,22.936,13.462,4.63,22.936
+hester_v1-park,13,0.24,18.241,37.755,-19.514,I didn't see anyone nearby.,0.0,10.0,62.963,0.0,0.0,62.963
+hester_v2-church,49,0.91,25.507,45.0,-19.493,That experience happened almost twenty years ago.,6.481,32.0,18.0,45.545,6.481,45.545
+costa,98,0.51,26.874,46.237,-19.363,The hospital kept calling.,43.275,24.752,27.586,11.881,11.881,43.275
+bear,111,0.91,46.65,66.0,-19.35,"and I got right to the cabin door,",51.852,16.981,50.459,67.308,16.981,67.308
+bear,20,0.16,33.678,53.0,-19.322,"Uh ... being born and raised on the farm I was used to the outdoors,",44.444,18.868,34.862,36.538,18.868,44.444
+stein,50,0.38,14.751,34.021,-19.269,"So uh, she said, “Well you're the law.",5.505,25.0,24.762,3.738,3.738,25.0
+stein,73,0.56,9.616,28.866,-19.25,"And I said, “No.”",0.917,10.0,23.81,3.738,0.917,23.81
+costa,144,0.74,28.115,47.312,-19.197,And then Marie collapsed.,38.596,29.703,29.31,14.851,14.851,38.596
+hester_v2-church,33,0.61,19.007,38.0,-18.993,I didn't hear any voice this time.,10.185,19.0,31.0,15.842,10.185,31.0
+bear,36,0.3,16.101,35.0,-18.899,let alone bear hunting.,10.185,9.434,28.44,16.346,9.434,28.44
+costa,156,0.8,27.403,46.237,-18.833,I was screaming!,34.503,25.743,27.586,21.782,21.782,34.503
+bear,108,0.89,33.356,52.0,-18.644,"Man I was whipping down there just as hard as I could go,",54.63,16.038,14.679,48.077,14.679,54.63
+hester_v2-church,30,0.56,15.618,34.0,-18.382,"I resumed my work, shelving books.",2.778,9.0,20.0,30.693,2.778,30.693
+costa,157,0.81,30.007,48.387,-18.38,"Everybody came out, coming out of their doors because they could hear the screams.",34.503,21.782,24.138,39.604,21.782,39.604
+panic,27,0.48,66.972,85.0,-18.028,Suddenly I heard a voice coming from across the warehouse.,64.151,41.748,88.991,73.0,41.748,88.991
+stein,122,0.94,56.318,74.227,-17.909,"If you don't want me here then you people get together and give me enough money to move somewhere else, because I do not have it.”",45.872,45.0,90.476,43.925,43.925,90.476
+bear,22,0.18,29.122,47.0,-17.878,"But these guys got a big kick out of it,",33.333,43.396,33.028,6.731,6.731,43.396
+bear,55,0.45,15.123,33.0,-17.877,and ... got our groceries stored and everything.,3.704,5.66,16.514,34.615,3.704,34.615
+costa,119,0.61,24.09,41.935,-17.845,And I knew all the nurses.,43.86,22.772,19.828,9.901,9.901,43.86
+costa,115,0.59,39.153,56.989,-17.836,"“You killed my daughter, now you want to kill me?”",50.877,46.535,41.379,17.822,17.822,50.877
+costa,105,0.54,26.328,44.086,-17.758,"Rita said, “Gee, that’s strange,”",42.69,27.723,25.0,9.901,9.901,42.69
+hester_v1-park,12,0.22,24.106,41.837,-17.731,I looked around my office.,0.0,9.0,81.481,5.941,0.0,81.481
+costa,106,0.55,25.397,43.011,-17.614,"she said, “Mother must’ve gotten really worked up about Marie.”",43.275,26.733,20.69,10.891,10.891,43.275
+doSomething,56,0.69,16.091,33.684,-17.593,And I didn't really want to get involved to be honest with you.,4.95,19.231,36.792,3.39,3.39,36.792
+doSomething,68,0.84,44.528,62.105,-17.577,So they started down there.,48.515,43.269,40.566,45.763,40.566,48.515
+stein,113,0.87,41.231,58.763,-17.531,She did not know beyond the month.,37.615,44.0,57.143,26.168,26.168,57.143
+costa,109,0.56,27.741,45.161,-17.42,"So she came over with my son-in-law, in the car.",42.69,25.743,33.621,8.911,8.911,42.69
+bear,38,0.31,9.586,27.0,-17.414,"But as I said,",2.778,4.717,18.349,12.5,2.778,18.349
+costa,111,0.57,27.759,45.161,-17.402,I was all pulled apart.,46.784,30.693,20.69,12.871,12.871,46.784
+bear,65,0.53,19.623,37.0,-17.377,"We never ventured outside at night,",6.481,16.038,35.78,20.192,6.481,35.78
+costa,161,0.83,21.384,38.71,-17.326,I didn’t know what I had done to myself.,34.503,21.782,16.379,12.871,12.871,34.503
+costa,160,0.82,23.58,40.86,-17.281,"Well, my hair was all pulled, and my face – I was a mess.",34.503,26.733,17.241,15.842,15.842,34.503
+bear,116,0.95,60.775,78.0,-17.225,"and said “THERE HE IS FELLOWS,",84.259,13.208,90.826,54.808,13.208,90.826
+costa,81,0.42,24.77,41.935,-17.166,She was a lady doctor.,42.105,17.822,16.379,22.772,16.379,42.105
+costa,86,0.44,23.741,40.86,-17.119,"The nurse said to me, “Talk to her.”",44.444,16.832,19.828,13.861,13.861,44.444
+bear,37,0.3,11.89,29.0,-17.11,Be about my luck the bear would wind up hunting me.,2.778,4.717,26.606,13.462,2.778,26.606
+doSomething,36,0.44,7.208,24.211,-17.002,"and I'm trying to keep an eye on him,",0.99,16.346,4.717,6.78,0.99,16.346
+stein,36,0.28,57.266,74.227,-16.961,a policeman went by.,36.697,78.0,68.571,45.794,36.697,78.0
+bear,93,0.76,51.058,68.0,-16.942,"and pulled the trigger,",65.741,10.377,75.229,52.885,10.377,75.229
+stein,74,0.57,24.299,41.237,-16.939,"He says, “Well how can – how can you” – to my mother – “how can you do anything if you don't know who – who to put the blame on?”",18.349,18.0,55.238,5.607,5.607,55.238
+costa,79,0.41,28.413,45.161,-16.748,She was a lady doctor.,42.69,16.832,15.517,38.614,15.517,42.69
+doSomething,61,0.75,29.574,46.316,-16.742,"and they whip across the road,",37.624,51.923,16.038,12.712,12.712,51.923
+bear,59,0.48,57.29,74.0,-16.71,"played cards,",33.333,15.094,80.734,100.0,15.094,100.0
+stein,67,0.52,8.045,24.742,-16.697,And they also had police wagons with horses attached to them. Believe it or not in those days.,0.917,4.0,8.571,18.692,0.917,18.692
+costa,155,0.8,25.24,41.935,-16.696,"I couldn’t get out, you know, I couldn’t –",34.503,24.752,25.862,15.842,15.842,34.503
+stein,65,0.5,20.625,37.113,-16.488,"And this was – let me see what year was this happening – well it must have been nineteen twenty-five, so you can see what – what the times were.",4.587,13.0,22.857,42.056,4.587,42.056
+costa,147,0.76,37.403,53.763,-16.36,I’ll burn this hospital down!,45.029,40.594,49.138,14.851,14.851,49.138
+stein,92,0.71,20.773,37.113,-16.34,"And – course with the horses and the police patrol, and the clang –",2.752,12.0,56.19,12.15,2.752,56.19
+costa,116,0.6,29.96,46.237,-16.276,Another nurse came over.,46.199,32.673,24.138,16.832,16.832,46.199
+bear,118,0.97,38.763,55.0,-16.237,I'LL GO GET ANOTHER ONE!”,40.741,11.321,57.798,45.192,11.321,57.798
+costa,121,0.62,35.468,51.613,-16.145,"“Get out!” I said, “Don’t you dare come near me.”",49.708,40.594,32.759,18.812,18.812,49.708
+costa,120,0.62,34.516,50.538,-16.021,"“Mrs. Costa, please, take –”",47.368,39.604,29.31,21.782,21.782,47.368
+stein,115,0.88,41.782,57.732,-15.95,But she knew they were going to be there for the month.,32.11,44.0,69.524,21.495,21.495,69.524
+stein,114,0.88,39.792,55.67,-15.878,Whether they'd have enough money to pay it for the next month.,35.78,42.0,54.286,27.103,27.103,54.286
+costa,68,0.35,38.999,54.839,-15.839,"“Oh my God!” I said, “Don’t tell me you’re running for my daughter!”",65.497,34.653,43.966,11.881,11.881,65.497
+bear,109,0.89,32.165,48.0,-15.835,"and that old bear right on my tail,",56.481,16.981,11.927,43.269,11.927,56.481
+stein,126,0.97,55.423,71.134,-15.711,And the neighbors were as nice as anybody could ever have been.,100.0,6.0,89.524,26.168,6.0,100.0
+stein,19,0.15,5.048,20.619,-15.57,And they were crying,2.752,7.0,8.571,1.869,1.869,8.571
+costa,41,0.21,37.284,52.688,-15.404,I’m going to get Marie; they called me.”,50.877,27.723,51.724,18.812,18.812,51.724
+costa,125,0.64,25.511,40.86,-15.349,"Then they brought me to the office, see.",43.86,25.743,21.552,10.891,10.891,43.86
+costa,113,0.58,34.117,49.462,-15.345,"I said, “Get out of here,",47.368,37.624,26.724,24.752,24.752,47.368
+costa,151,0.78,34.149,49.462,-15.313,"But if you touch my daughter, I’ll kill you.”",43.86,35.644,42.241,14.851,14.851,43.86
+costa,43,0.22,33.107,48.387,-15.28,"And I went myself. You know, I had the coat on my arm.",29.825,29.703,49.138,23.762,23.762,49.138
+bear,52,0.43,42.728,58.0,-15.272,"That was pretty spooky looking territory, let me tell you.",20.37,40.566,72.477,37.5,20.37,72.477
+costa,108,0.56,26.831,41.935,-15.104,"“Mother must’ve gotten so upset about Marie, she probably made herself sick,” Rita thought.",44.444,28.713,23.276,10.891,10.891,44.444
+costa,127,0.65,36.571,51.613,-15.042,"I said, “We lost Marie.",63.158,35.644,33.621,13.861,13.861,63.158
+panic,37,0.66,61.032,76.0,-14.968,I started to drop to the ground,90.566,47.573,88.991,17.0,17.0,90.566
+costa,142,0.73,22.677,37.634,-14.957,told the doctor that Marie was saying goodbye to Arlene.,34.503,23.762,21.552,10.891,10.891,34.503
+hester_v1-park,30,0.56,15.677,30.612,-14.935,"I knew I wasn't perfect, but I wanted to help my dad.",13.253,18.0,17.593,13.861,13.253,18.0
+hester_v1-park,22,0.41,8.657,23.469,-14.812,that feeling came back once more.,0.0,5.0,29.63,0.0,0.0,29.63
+costa,51,0.26,13.174,27.957,-14.783,"She said, “My mother’s just coming.”",22.807,8.911,12.069,8.911,8.911,22.807
+costa,107,0.55,24.045,38.71,-14.664,"You know, I’ve always had a bad heart.",42.69,23.762,19.828,9.901,9.901,42.69
+stein,70,0.54,29.744,44.33,-14.586,"And she says, “You mean to tell me that I have to live under those circumstances and there's nothing that you can do about it?”",33.028,49.0,26.667,10.28,10.28,49.0
+costa,169,0.87,27.585,41.935,-14.35,"They waited because they knew she was coming home that day, waiting for the call.",41.52,27.723,23.276,17.822,17.822,41.52
+costa,33,0.17,31.907,46.237,-14.33,Daddy will be home soon.”,55.556,18.812,41.379,11.881,11.881,55.556
+costa,53,0.27,11.557,25.806,-14.25,"They told me on the phone, it would be ten dollars more for her board.",21.637,8.911,7.759,7.921,7.759,21.637
+costa,54,0.28,11.557,25.806,-14.25,And to make sure I brought her girdle to put on.,21.637,8.911,7.759,7.921,7.759,21.637
+costa,148,0.76,33.071,47.312,-14.24,I don’t care who’s in it.”,43.86,38.614,37.931,11.881,11.881,43.86
+bear,94,0.77,70.778,85.0,-14.222,and nothing happened.,94.444,12.264,90.826,85.577,12.264,94.444
+costa,150,0.77,36.326,50.538,-14.212,You want to find out what she died from.”,45.029,41.584,44.828,13.861,13.861,45.029
+doSomething,37,0.46,10.013,24.211,-14.197,make sure he doesn't slam into me or anything.,0.99,21.154,9.434,8.475,0.99,21.154
+costa,171,0.88,25.802,39.785,-13.983,"She said, “Mary, look, when they call you, when you pick Marie up, let us know, and we’ll come over.”",40.936,26.733,20.69,14.851,14.851,40.936
+costa,189,0.97,26.882,40.86,-13.978,"Well, my sisters and my mother, you know, they were all alive.",43.275,29.703,20.69,13.861,13.861,43.275
+costa,146,0.75,37.671,51.613,-13.942,"I said, “Don’t you dare touch my daughter.",47.953,38.614,48.276,15.842,15.842,48.276
+hester_v2-church,24,0.44,72.12,86.0,-13.88,"Finally, I went inside the church and found a candle.",81.481,63.0,44.0,100.0,44.0,100.0
+stein,87,0.67,13.018,26.804,-13.786,So – I guess they figured “Let's get this lady out of here because she's talking loud and long.”,8.257,22.0,17.143,4.673,4.673,22.0
+stein,117,0.9,29.587,43.299,-13.712,And I cannot afford to be buying windows.”,28.44,34.0,40.952,14.953,14.953,40.952
+stein,98,0.75,6.947,20.619,-13.671,"I can see it right now – from where he was sitting up front there where the horses came around,",2.752,8.0,11.429,5.607,2.752,11.429
+bear,14,0.11,36.337,50.0,-13.663,"So being big macho men that we all were,",25.0,38.679,41.284,40.385,25.0,41.284
+bear,64,0.52,25.357,39.0,-13.643,'cause that's just a plain old spooky looking place.,6.481,14.151,39.45,41.346,6.481,41.346
+costa,129,0.66,20.808,34.409,-13.601,"Well, that’s this one. This is a picture of Rita.",38.012,20.792,15.517,8.911,8.911,38.012
+costa,135,0.7,30.496,44.086,-13.59,And that girl is suffering.,42.69,35.644,32.759,10.891,10.891,42.69
+bear,100,0.82,64.539,78.0,-13.461,"and I turned around,",82.407,16.038,77.982,81.731,16.038,82.407
+costa,80,0.41,27.423,40.86,-13.437,"Dr. Schwartz actually did the operation, but she was his assistant, Dr. Montique.",42.69,18.812,15.517,32.673,15.517,42.69
+bear,49,0.4,17.598,31.0,-13.402,"And after I got there,",10.185,14.151,22.018,24.038,10.185,24.038
+costa,34,0.18,26.393,39.785,-13.392,He was working down in the yard.,48.538,16.832,29.31,10.891,10.891,48.538
+costa,168,0.87,28.543,41.935,-13.392,"It was all – my two sisters were here, waiting until about half-past four.",41.52,27.723,24.138,20.792,20.792,41.52
+costa,126,0.65,36.139,49.462,-13.323,"When Rita came in and saw me like that, she asked, “Mother, what happened?”",53.801,36.634,42.241,11.881,11.881,53.801
+bear,99,0.81,75.732,89.0,-13.268,"Well there was nothing for me to do but run,",99.074,17.925,92.661,93.269,17.925,99.074
+costa,140,0.72,22.246,35.484,-13.238,And how did they figure how Marie died?,34.503,24.752,19.828,9.901,9.901,34.503
+costa,193,0.99,34.083,47.312,-13.229,"but she was so good, I can’t even tell you.",71.345,29.703,22.414,12.871,12.871,71.345
+hester_v1-park,25,0.46,3.102,16.327,-13.225,I looked up at the branches above me.,0.0,5.0,7.407,0.0,0.0,7.407
+bear,32,0.26,40.849,54.0,-13.151,"and I couldn't find any real reason not to go,",51.852,55.66,37.615,18.269,18.269,55.66
+doSomething,67,0.83,33.251,46.316,-13.064,And I said “He's got a definite problem...”,20.792,34.615,54.717,22.881,20.792,54.717
+stein,121,0.93,37.457,50.515,-13.058,So you might just as well make up your mind to that.,35.78,44.0,47.619,22.43,22.43,47.619
+costa,48,0.25,28.929,41.935,-13.007,"Oh, and I had everything in a bag,",27.485,16.832,52.586,18.812,16.832,52.586
+hester_v1-park,32,0.59,15.571,28.571,-13.001,But I was willing to give it a try.,9.036,14.0,19.444,19.802,9.036,19.802
+costa,149,0.77,37.581,50.538,-12.956,"I said, “Don’t you dare touch my daughter.",45.614,40.594,48.276,15.842,15.842,48.276
+costa,46,0.24,36.511,49.462,-12.952,"She was operated – ten days before, so that would be the twentieth.",35.673,49.505,30.172,30.693,30.172,49.505
+costa,114,0.59,39.74,52.688,-12.948,"I’ll kick you,” I said.",49.708,53.465,31.034,24.752,24.752,53.465
+costa,128,0.66,42.979,55.914,-12.935,Marie died.”,58.48,51.485,36.207,25.743,25.743,58.48
+bear,90,0.74,78.1,91.0,-12.9,"and there was the biggest old bear I'd ever seen in my life,",100.0,18.868,94.495,99.038,18.868,100.0
+stein,116,0.89,33.593,46.392,-12.799,"She said, “It is winter time and it is cold.",28.44,35.0,44.762,26.168,26.168,44.762
+costa,136,0.7,37.741,50.538,-12.797,"Thirty – no, twenty-eight years since her sister died?",50.877,51.485,32.759,15.842,15.842,51.485
+bear,4,0.03,37.22,50.0,-12.78,"Actually I met them before that,",41.667,35.849,15.596,55.769,15.596,55.769
+bear,105,0.86,49.221,62.0,-12.779,he was just right on my heels ...,62.963,12.264,49.541,72.115,12.264,72.115
+costa,194,1.0,23.796,36.559,-12.763,That’s all. So that’s what happened.,38.596,25.743,18.966,11.881,11.881,38.596
+costa,29,0.15,19.512,32.258,-12.746,She’s discharged.”,20.468,13.861,18.966,24.752,13.861,24.752
+hester_v1-park,20,0.37,13.798,26.531,-12.732,"I wasn't too far from my office, maybe a ten-minute walk.",0.0,7.0,4.63,43.564,0.0,43.564
+panic,1,0.02,61.285,74.0,-12.715,"Well, I was at work one day",99.057,70.874,53.211,22.0,22.0,99.057
+costa,94,0.48,28.166,40.86,-12.694,I had the clothes and everything ready.,48.538,29.703,21.552,12.871,12.871,48.538
+stein,97,0.75,6.947,19.588,-12.641,And of course they saw the man came around the back –,2.752,8.0,11.429,5.607,2.752,11.429
+costa,55,0.28,11.094,23.656,-12.562,"I said, “All right, I’ll be right over.”",21.637,8.911,6.897,6.931,6.897,21.637
+costa,132,0.68,29.379,41.935,-12.557,She went down like lightning.,40.936,35.644,31.034,9.901,9.901,40.936
+bear,17,0.14,35.585,48.0,-12.415,and help me do chores and things like that.,56.481,34.906,20.183,30.769,20.183,56.481
+costa,141,0.73,22.03,34.409,-12.378,"The girl who was walking with Marie,",34.503,23.762,18.966,10.891,10.891,34.503
+bear,63,0.52,48.634,61.0,-12.366,no one was in the mood to go out and hunt bear,34.259,18.868,58.716,82.692,18.868,82.692
+hester_v2-church,34,0.63,28.639,41.0,-12.361,It was just an overwhelming feeling that I needed to go.,14.815,37.0,37.0,25.743,14.815,37.0
+stein,91,0.7,18.621,30.928,-12.307,We weren't far from – from where it was – maybe Fifth street – from where we had moved.,5.505,22.0,13.333,33.645,5.505,33.645
+stein,30,0.23,12.672,24.742,-12.07,and they – they stayed open until – until all hours.,2.752,2.0,7.619,38.318,2.0,38.318
+costa,49,0.25,34.207,46.237,-12.03,and I had the coat on my arm and her dress hanging on my arm.,25.731,18.812,58.621,33.663,18.812,58.621
+costa,164,0.85,52.532,64.516,-11.984,"Yes, he had a heart attack.",59.649,39.604,53.448,57.426,39.604,59.649
+bear,121,0.99,48.017,60.0,-11.983,"But can you BELIEVE,",78.704,3.774,60.55,49.038,3.774,78.704
+stein,51,0.39,10.808,22.68,-11.873,You're supposed to protect us.”,4.587,13.0,21.905,3.738,3.738,21.905
+stein,124,0.95,6.699,18.557,-11.858,They probably didn't have any money either.,3.67,6.0,16.19,0.935,0.935,16.19
+stein,68,0.52,32.763,44.33,-11.567,"So my mother said, to the captain, “What are you going to do about it?”",11.927,51.0,44.762,23.364,11.927,51.0
+costa,172,0.89,25.06,36.559,-11.499,"I said, “All right.”",40.936,26.733,20.69,11.881,11.881,40.936
+stein,37,0.28,24.67,36.082,-11.413,And my voice was such that you could hardly make out what I was saying.,6.422,23.0,55.238,14.019,6.422,55.238
+costa,61,0.31,28.416,39.785,-11.369,"I prayed, “Oh dear God, don’t take that mother away from her children.”",28.07,11.881,10.345,63.366,10.345,63.366
+doSomething,15,0.19,1.295,12.632,-11.336,You know how you sit there and wait for the traffic to get by?,0.0,0.0,0.943,4.237,0.0,4.237
+costa,25,0.13,24.189,35.484,-11.295,I didn’t have a phone then.,29.24,19.802,12.069,35.644,12.069,35.644
+stein,85,0.65,9.391,20.619,-11.228,"He said, “Take you home?”",4.587,14.0,15.238,3.738,3.738,15.238
+costa,47,0.24,11.447,22.581,-11.134,"The twentieth of April, right? It was kind of chilly.",16.374,9.901,8.621,10.891,8.621,16.374
+stein,88,0.68,7.425,18.557,-11.131,And they had never come up with anybody like that.,5.505,10.0,9.524,4.673,4.673,10.0
+bear,114,0.93,50.896,62.0,-11.104,"I just reached back,",67.593,13.208,66.055,56.731,13.208,67.593
+costa,89,0.46,45.956,56.989,-11.033,My hair was all pulled out.,50.877,41.584,44.828,46.535,41.584,50.877
+costa,192,0.99,34.153,45.161,-11.009,"She was a real quiet girl, pleasant, didn’t talk much,",70.76,29.703,23.276,12.871,12.871,70.76
+costa,87,0.45,27.714,38.71,-10.996,"I said, “Talk to her? My daughter’s dying, what am I supposed to tell her?”",47.368,25.743,25.862,11.881,11.881,47.368
+doSomething,14,0.17,12.182,23.158,-10.975,and he's heading for the same spot that I'm going.,5.941,28.846,3.774,10.169,3.774,28.846
+bear,51,0.42,13.084,24.0,-10.916,'cause I didn't really need any part of that.,10.185,12.264,18.349,11.538,10.185,18.349
+doSomething,16,0.2,2.802,13.684,-10.882,Right there in the median?,0.0,0.0,1.887,9.322,0.0,9.322
+stein,31,0.24,5.732,16.495,-10.763,"Because they would, you know, however much money they could get they wanted.",0.0,3.0,16.19,3.738,0.0,16.19
+stein,101,0.78,14.097,24.742,-10.645,Well we got out of that police patrol –,2.752,9.0,38.095,6.542,2.752,38.095
+costa,60,0.31,25.198,35.484,-10.286,They had said she was in very bad shape.,28.07,13.861,10.345,48.515,10.345,48.515
+stein,105,0.81,51.585,61.856,-10.271,"She says, “I know that I am different from you, color wise,",77.982,43.0,66.667,18.692,18.692,77.982
+costa,59,0.3,27.426,37.634,-10.209,"She lived near my sister, and she had ten children.",28.07,10.891,10.345,60.396,10.345,60.396
+stein,49,0.38,16.599,26.804,-10.205,But “they don't want anybody in there.”,3.67,24.0,21.905,16.822,3.67,24.0
+costa,62,0.32,13.514,23.656,-10.142,"I was praying for her, you know.",27.485,8.911,7.759,9.901,7.759,27.485
+hester_v2-church,40,0.74,49.936,60.0,-10.064,He gradually regained his strength and independence.,36.111,54.0,73.0,36.634,36.111,73.0
+costa,42,0.22,16.867,26.882,-10.015,"“All right, mother, go ahead,” she said, “I’ll finish up.”",25.731,12.871,18.966,9.901,9.901,25.731
+hester_v1-park,18,0.33,19.63,29.592,-9.962,I still didn't see anyone nearby,0.0,10.0,68.519,0.0,0.0,68.519
+bear,101,0.83,71.062,81.0,-9.938,"I ran as hard as I could go,",97.222,16.038,83.486,87.5,16.038,97.222
+schissel_v1-pool,4,0.22,19.72,29.63,-9.91,"And the reason it happened,",8.571,22.857,39.45,8.0,8.0,39.45
+hester_v2-church,29,0.54,55.176,65.0,-9.824,"After saying my prayer, I returned to the bookstore.",46.296,63.0,52.0,59.406,46.296,63.0
+bear,57,0.47,63.206,73.0,-9.794,those guys weren't any more hot about going out in those woods and looking for a bear than I was.,100.0,31.132,68.807,52.885,31.132,100.0
+triplett_v1-rookie,18,0.56,27.666,37.374,-9.707,I was strategizing.,35.928,29.703,39.0,6.034,6.034,39.0
+costa,145,0.75,65.603,75.269,-9.666,"Later, they said it was a blood clot.",80.702,61.386,69.828,50.495,50.495,80.702
+stein,123,0.95,17.184,26.804,-9.621,Well of course you know they didn't do that.,2.752,6.0,59.048,0.935,0.935,59.048
+costa,85,0.44,21.671,31.183,-9.511,She took me away from the bed.,42.105,14.851,19.828,9.901,9.901,42.105
+bear,117,0.96,64.505,74.0,-9.495,"YOU SKIN HIM,",80.556,13.208,83.486,80.769,13.208,83.486
+stein,119,0.92,25.565,35.052,-9.486,But you can all see what has happened.,26.606,34.0,28.571,13.084,13.084,34.0
+costa,152,0.78,28.207,37.634,-9.427,I wouldn’t let them touch her.,39.766,22.772,41.379,8.911,8.911,41.379
+stein,20,0.15,4.06,13.402,-9.342,and carryin' on.,2.752,4.0,7.619,1.869,1.869,7.619
+stein,94,0.72,17.611,26.804,-9.193,you know they told you about the trolley that went “Clang.”,2.752,9.0,40.0,18.692,2.752,40.0
+costa,91,0.47,25.337,34.409,-9.072,"Beautiful girl, you can see from her picture.",49.708,20.792,18.966,11.881,11.881,49.708
+costa,162,0.84,60.97,69.892,-8.922,"I said, “Mike, we lost Marie. Marie died.” It was just a shock.",87.719,65.347,55.172,35.644,35.644,87.719
+stein,95,0.73,13.797,22.68,-8.883,"Well this police patrol that bell they had, it went “Clang clang clang.”",2.752,9.0,23.81,19.626,2.752,23.81
+panic,28,0.5,84.152,93.0,-8.848,It was the manager,98.113,88.35,76.147,74.0,74.0,98.113
+bear,42,0.34,49.199,58.0,-8.801,"and we landed on a lake,",1.852,52.83,44.037,98.077,1.852,98.077
+stein,118,0.91,26.291,35.052,-8.76,"“Now” she said, “Whoever threw the stones I don't know.",26.606,35.0,30.476,13.084,13.084,35.0
+stein,77,0.59,71.685,80.412,-8.727,"She says, “But one thing I know I'm not going to do is move. Because I have no money to move with.”",81.651,59.0,65.714,80.374,59.0,81.651
+stein,56,0.43,5.712,14.433,-8.721,And he told her.,4.587,5.0,9.524,3.738,3.738,9.524
+bear,53,0.43,24.303,33.0,-8.697,"So we got up there,",7.407,11.321,27.523,50.962,7.407,50.962
+bear,84,0.69,31.392,40.0,-8.608,and I go out bear hunting.,25.926,13.208,42.202,44.231,13.208,44.231
+doSomething,8,0.1,15.616,24.211,-8.595,"and as I was slowing down,",14.851,11.538,4.717,31.356,4.717,31.356
+stein,71,0.55,58.542,67.01,-8.468,"She says – he says, “Well uh the only thing I can tell you to do is to move.”",26.606,51.0,76.19,80.374,26.606,80.374
+costa,21,0.11,22.772,31.183,-8.411,"See, here, she never – I don’t know if they knew or what,",30.409,35.644,18.103,6.931,6.931,35.644
+stein,106,0.82,54.488,62.887,-8.398,"but in every other respect I'm just the same as you are,",77.982,48.0,70.476,21.495,21.495,77.982
+stein,110,0.85,45.43,53.608,-8.178,she had told them that was all the money she had.,52.294,37.0,44.762,47.664,37.0,52.294
+costa,78,0.4,26.294,34.409,-8.114,"see, they were trying to get the doctor, you know.",43.86,16.832,13.793,30.693,13.793,43.86
+panic,5,0.09,45.893,54.0,-8.107,organizing merchandise,56.604,30.097,45.872,51.0,30.097,56.604
+stein,112,0.86,45.537,53.608,-8.072,She knew she was going to be there for the month.,37.615,46.0,71.429,27.103,27.103,71.429
+stein,46,0.35,7.396,15.464,-8.068,"He says, “I dunno.”",7.339,9.0,8.571,4.673,4.673,9.0
+costa,40,0.21,29.637,37.634,-7.997,and send for some cake from the bakery.”,45.614,17.822,42.241,12.871,12.871,45.614
+bear,50,0.41,37.05,45.0,-7.95,"I was even more apprehensive than I had been even before we started,",25.0,53.774,55.963,13.462,13.462,55.963
+stein,120,0.92,32.259,40.206,-7.947,And now I'm telling you that we're going to be here for a month.,27.523,40.0,40.952,20.561,20.561,40.952
+schissel_v2-lake,4,0.22,4.335,12.245,-7.909,"The reason it all began,",3.96,2.778,4.0,6.604,2.778,6.604
+bear,113,0.93,71.182,79.0,-7.818,and that old bear went right on in.,100.0,16.981,90.826,76.923,16.981,100.0
+doSomething,19,0.23,32.21,40.0,-7.79,"I thought ""you jerk""...",14.851,63.462,30.189,20.339,14.851,63.462
+costa,64,0.33,22.373,30.108,-7.735,"I started getting the chills,",30.409,26.733,15.517,16.832,15.517,30.409
+panic,42,0.75,31.442,39.0,-7.558,He asked me questions about what was wrong,8.491,55.34,22.936,39.0,8.491,55.34
+costa,70,0.36,47.334,54.839,-7.504,"So, I went into the room.",48.538,43.564,58.621,38.614,38.614,58.621
+costa,58,0.3,37.669,45.161,-7.492,"So I sat down, and I was praying for another lady in the hospital that had an operation for her gall bladder.",29.825,15.842,12.931,92.079,12.931,92.079
+triplett_v2-catlady,3,0.09,72.12,79.592,-7.472,or had given them homes.,78.704,46.602,77.064,86.111,46.602,86.111
+doSomething,47,0.58,36.758,44.211,-7.453,"so I figured that when we get up to this stop sign I'm going to go back and find out what his problem is,",43.564,26.923,44.34,32.203,26.923,44.34
+stein,125,0.96,56.526,63.918,-7.392,"So in the meantime – not in the meantime but during, during the period of time that we were there, my father became sick.",98.165,5.0,77.143,45.794,5.0,98.165
+stein,10,0.08,48.3,55.67,-7.37,And of course I was left there with the kids.,66.055,59.0,45.714,22.43,22.43,66.055
+hester_v2-church,46,0.85,70.693,78.0,-7.307,My grandpa lived for many more years after that incident.,78.704,37.0,74.0,93.069,37.0,93.069
+costa,93,0.48,42.22,49.462,-7.242,She was getting ready to go home.,56.725,32.673,44.828,34.653,32.673,56.725
+costa,65,0.34,15.406,22.581,-7.175,"and I was thinking about it,",29.24,13.861,8.621,9.901,8.621,29.24
+bear,25,0.2,16.879,24.0,-7.121,"we did this for several years,",26.852,21.698,5.505,13.462,5.505,26.852
+schissel_v1-pool,17,0.94,31.835,38.889,-7.054,"and naturally, the first thing to do was to get out and dry off,",0.952,59.048,7.339,60.0,0.952,60.0
+costa,23,0.12,42.434,49.462,-7.028,"So, when she was walking around to come home after ten days,",58.48,45.545,50.862,14.851,14.851,58.48
+stein,76,0.58,10.567,17.526,-6.958,"So my mother said, “Well I don't know what I'm going to do.”",0.917,14.0,13.333,14.019,0.917,14.019
+hester_v1-park,8,0.15,42.026,48.98,-6.953,My younger sister was away at college –,100.0,24.0,6.481,37.624,6.481,100.0
+stein,86,0.66,45.672,52.577,-6.905,"She said, “Yes in the police patrol.”",40.367,51.0,85.714,5.607,5.607,85.714
+costa,77,0.4,35.072,41.935,-6.864,"And the doctor rushed in,",44.444,17.822,14.655,63.366,14.655,63.366
+hester_v2-church,37,0.69,77.153,84.0,-6.847,He hadn't been able to leave his bed for months without assistance.,56.481,87.0,78.0,87.129,56.481,87.129
+hester_v1-park,19,0.35,14.662,21.429,-6.766,but I decided to take a chance.,1.205,13.0,44.444,0.0,0.0,44.444
+costa,82,0.42,21.222,27.957,-6.735,"So, she came in and she said –",41.52,14.851,14.655,13.861,13.861,41.52
+hester_v1-park,36,0.67,27.012,33.673,-6.661,"I whispered, ""God, I don't know if you're listening.",0.0,11.0,42.593,54.455,0.0,54.455
+stein,111,0.85,50.109,56.701,-6.592,And they had paid that rent for a month.,41.284,42.0,67.619,49.533,41.284,67.619
+stein,61,0.47,16.089,22.68,-6.591,"Well in those days black people were so cowed by circumstances an' uniforms and white people, you know, they uh many times didn't assert themselves.",27.523,15.0,18.095,3.738,3.738,27.523
+stein,59,0.45,4.766,11.34,-6.575,but I've forgotten where he told her.,2.752,4.0,8.571,3.738,2.752,8.571
+costa,45,0.23,47.293,53.763,-6.47,"No, April! So that was the thirtieth.",40.351,66.337,37.931,44.554,37.931,66.337
+panic,43,0.77,27.55,34.0,-6.45,what happened,8.491,43.689,22.018,36.0,8.491,43.689
+doSomething,52,0.64,10.458,16.842,-6.384,you know.,5.941,12.5,21.698,1.695,1.695,21.698
+bear,27,0.22,41.731,48.0,-6.269,and hunting.,67.593,61.321,29.358,8.654,8.654,67.593
+panic,54,0.96,65.761,72.0,-6.239,it taught me to check in with myself,80.189,32.039,79.817,71.0,32.039,80.189
+costa,134,0.69,35.795,41.935,-6.14,"Hard like a pole, the back of her leg.",44.444,32.673,55.172,10.891,10.891,55.172
+stein,80,0.62,41.324,47.423,-6.099,"And she said, “If they didn't want me there they should not have rented the house to me.",74.312,26.0,26.667,38.318,26.0,74.312
+stein,38,0.29,32.327,38.144,-5.817,"I was so nervous and – and – my voice was shaking so,",12.844,31.0,72.381,13.084,12.844,72.381
+hester_v2-church,44,0.81,42.278,48.0,-5.722,I wondered if my prayer had anything to do with my grandpa's recovery.,43.519,15.0,70.0,40.594,15.0,70.0
+stein,83,0.64,7.697,13.402,-5.705,"And he says, “What's that?”",3.67,11.0,12.381,3.738,3.67,12.381
+panic,13,0.23,10.334,16.0,-5.666,returning items to their proper places,1.887,4.854,15.596,19.0,1.887,19.0
+costa,67,0.35,50.277,55.914,-5.637,"The nurse hung up the phone and came to me. She said, “Mrs. Costa, has your daughter ever had a fainting spell?”",43.86,38.614,61.207,57.426,38.614,61.207
+doSomething,79,0.98,55.418,61.053,-5.635,and he's just driving real slow and careful.,41.584,40.385,82.075,57.627,40.385,82.075
+stein,58,0.45,5.712,11.34,-5.628,I was right there with her,4.587,5.0,9.524,3.738,3.738,9.524
+stein,57,0.44,4.766,10.309,-5.544,I forgot now.,2.752,4.0,8.571,3.738,2.752,8.571
+bear,31,0.25,52.535,58.0,-5.465,"but I'd always been one of the group,",75.0,55.66,46.789,32.692,32.692,75.0
+bear,6,0.05,52.595,58.0,-5.405,went to school at the same place.,93.519,27.358,18.349,71.154,18.349,93.519
+hester_v2-church,48,0.89,19.652,25.0,-5.348,We cherished every moment we had with him.,54.63,17.0,5.0,1.98,1.98,54.63
+bear,80,0.66,80.699,86.0,-5.301,"So you know who YOU KNOW WHO got the high card,",100.0,28.302,94.495,100.0,28.302,100.0
+stein,23,0.18,11.204,16.495,-5.291,"And I didn't know what to do,",7.339,10.0,20.0,7.477,7.339,20.0
+hester_v2-church,23,0.43,5.748,11.0,-5.252,I thought about my grandpa and how much he meant to our family.,0.0,10.0,12.0,0.99,0.0,12.0
+costa,73,0.38,33.564,38.71,-5.145,It came – just poured from her –,41.52,38.614,42.241,11.881,11.881,42.241
+hester_v2-church,52,0.96,12.873,18.0,-5.127,"Sometimes, when I'm feeling lost or uncertain, I think back to that day.",2.778,4.0,16.0,28.713,2.778,28.713
+stein,45,0.35,32.02,37.113,-5.093,"My mother said, “I just moved in, how am I gonna move out?”",9.174,46.0,50.476,22.43,9.174,50.476
+doSomething,3,0.04,0.212,5.263,-5.051,You know where that's at?,0.0,0.0,0.0,0.847,0.0,0.847
+costa,10,0.05,27.241,32.258,-5.017,There was a chair there.,32.164,11.881,36.207,28.713,11.881,36.207
+hester_v1-park,21,0.39,59.327,64.286,-4.958,I found a bench to sit on and closed my eyes – uh – uh –,22.289,42.0,75.0,98.02,22.289,98.02
+hester_v2-church,12,0.22,28.055,33.0,-4.945,"I continued with my work, trying to ignore the voice.",28.704,29.0,6.0,48.515,6.0,48.515
+bear,30,0.25,61.276,66.0,-4.724,"Now that didn't really appeal to me,",99.074,64.151,56.881,25.0,25.0,99.074
+hester_v1-park,31,0.57,2.5,7.143,-4.643,I'd admit that to anyone.,0.602,1.0,7.407,0.99,0.602,7.407
+costa,130,0.67,45.902,50.538,-4.636,She went down like lightning.,42.69,45.545,84.483,10.891,10.891,84.483
+triplett_v1-rookie,1,0.03,91.324,95.96,-4.635,"Back in the days when I was a rookie in the police force, the Chief was a veteran.",100.0,70.297,95.0,100.0,70.297,100.0
+costa,32,0.16,41.802,46.237,-4.435,"I said, “Rita, finish the cooking.”",40.936,18.812,43.103,64.356,18.812,64.356
+costa,88,0.45,64.397,68.817,-4.42,And I was screaming.,57.895,76.238,62.069,61.386,57.895,76.238
+stein,66,0.51,77.065,81.443,-4.378,"And we went – she took me, and we went to the police station.",94.495,84.0,92.381,37.383,37.383,94.495
+panic,56,1.0,60.8,65.0,-4.2,eat to avoid further episodes,69.811,25.243,76.147,72.0,25.243,76.147
+costa,124,0.64,44.245,48.387,-4.142,They had to grab me.,52.047,48.515,38.793,37.624,37.624,52.047
+costa,76,0.39,52.947,56.989,-4.042,That’s what I kept yelling.,67.251,62.376,53.448,28.713,28.713,67.251
+hester_v2-church,26,0.48,42.99,47.0,-4.01,"I said, ""God, I don't know how to pray properly.",32.407,29.0,66.0,44.554,29.0,66.0
+doSomething,43,0.53,13.889,17.895,-4.006,How it's everybody's responsibility.,2.97,12.5,35.849,4.237,2.97,35.849
+costa,138,0.71,47.659,51.613,-3.954,"She suffers – seven, eight, nine weeks at a time.",55.556,57.426,63.793,13.861,13.861,63.793
+hester_v1-park,26,0.48,23.602,27.551,-3.949,Nobody was around.,0.0,12.0,82.407,0.0,0.0,82.407
+doSomething,6,0.07,19.277,23.158,-3.881,"and I was slowing down,",10.891,8.654,16.038,41.525,8.654,41.525
+bear,76,0.62,82.121,86.0,-3.879,so we all decided that we'd cut the cards.,100.0,34.906,93.578,100.0,34.906,100.0
+boyscout,13,0.68,26.045,29.897,-3.852,And so I started going down.,1.887,52.294,50.0,0.0,0.0,52.294
+doSomething,25,0.31,33.015,36.842,-3.827,"So we went on across as soon as traffic cleared,",23.762,50.0,6.604,51.695,6.604,51.695
+costa,167,0.86,51.026,54.839,-3.813,"He had a heart attack too, no kidding.",56.725,41.584,54.31,51.485,41.584,56.725
+doSomething,77,0.95,56.199,60.0,-3.801,"and he starts forward again,",28.713,50.962,60.377,84.746,28.713,84.746
+triplett_v2-catlady,5,0.16,63.584,67.347,-3.763,and back then I was quite the tomboy.,57.407,47.573,69.725,79.63,47.573,79.63
+doSomething,26,0.32,26.918,30.526,-3.608,"and we're headed up there towards that diamond,",14.851,28.846,20.755,43.22,14.851,43.22
+panic,50,0.89,4.419,8.0,-3.581,I escaped from the situation,0.0,2.913,13.761,1.0,0.0,13.761
+costa,131,0.68,42.749,46.237,-3.487,"Dropped to the floor, and that’s a marble floor.",40.936,42.574,77.586,9.901,9.901,77.586
+costa,139,0.72,39.551,43.011,-3.459,"She can’t walk, she goes through such pain since then.",52.632,44.554,49.138,11.881,11.881,52.632
+bear,39,0.32,49.641,53.0,-3.359,I left them talk me into it.,69.444,48.113,55.046,25.962,25.962,69.444
+stein,104,0.8,48.216,51.546,-3.331,"and she says, “Why you're doing this to me I don't know.”",84.404,44.0,48.571,15.888,15.888,84.404
+hester_v2-church,17,0.31,33.841,37.0,-3.159,"As I approached the church, I hesitated for a moment.",29.63,32.0,47.0,26.733,26.733,47.0
+panic,55,0.98,68.949,72.0,-3.051,make sure to properly rest,80.189,32.039,82.569,81.0,32.039,82.569
+costa,122,0.63,53.998,56.989,-2.991,I was so hysterical.,60.819,69.307,55.172,30.693,30.693,69.307
+doSomething,75,0.93,50.743,53.684,-2.941,he starts backing up going backwards down that road.,20.792,61.538,61.321,59.322,20.792,61.538
+stein,107,0.82,44.53,47.423,-2.893,and all I'm trying to do is provide a home for my family.”,71.56,46.0,40.0,20.561,20.561,71.56
+stein,81,0.62,28.036,30.928,-2.891,Now the real estate agent should be accountable.”,52.294,24.0,18.095,17.757,17.757,52.294
+stein,2,0.02,27.069,29.897,-2.828,We had gotten moved,14.679,50.0,32.381,11.215,11.215,50.0
+costa,191,0.98,43.449,46.237,-2.788,"The neighborhood – Annie at the store always says, “Mrs. Costa,” every time I go in there, she reminds me, “I just picture Marie standing at that step, looking over here.” She used to stand at that step.",71.345,35.644,30.172,36.634,30.172,71.345
+costa,44,0.23,32.717,35.484,-2.767,She was operated on in March –,33.333,46.535,23.276,27.723,23.276,46.535
+costa,165,0.85,51.005,53.763,-2.758,"Then my son, Michael, yeah. That night.",59.064,40.594,43.966,60.396,40.594,60.396
+doSomething,31,0.38,27.829,30.526,-2.697,"We're going up this hill,",7.921,31.731,54.717,16.949,7.921,54.717
+stein,82,0.63,21.023,23.711,-2.688,"So anyhow, she said to him, “Well I know one thing you can do.”",9.174,37.0,28.571,9.346,9.174,37.0
+doSomething,40,0.49,13.116,15.789,-2.674,Really ...bad news.,3.96,30.769,16.038,1.695,1.695,30.769
+boyscout,1,0.05,80.868,83.505,-2.637,"Yeah, I was in the boy scouts at the time.",96.226,54.128,85.0,88.119,54.128,96.226
+panic,6,0.11,14.383,17.0,-2.617,I had been working for a few hours,17.925,10.68,11.927,17.0,10.68,17.925
+stein,93,0.72,40.753,43.299,-2.546,they had a bell that clanged. Clang clang clang –,2.752,12.0,81.905,66.355,2.752,81.905
+stein,4,0.03,3.656,6.186,-2.529,"but it was still day,",0.917,9.0,1.905,2.804,0.917,9.0
+panic,4,0.07,65.488,68.0,-2.512,stocking boxes,71.698,40.777,72.477,77.0,40.777,77.0
+bear,1,0.01,54.497,57.0,-2.503,This is a story about three of my friends,62.963,25.472,85.321,44.231,25.472,85.321
+doSomething,7,0.09,23.866,26.316,-2.45,"got my turn signal on,",21.782,14.423,16.038,43.22,14.423,43.22
+costa,137,0.71,47.075,49.462,-2.387,"When she gets that pain, it’s like she has phlebitis from it.",57.31,52.475,64.655,13.861,13.861,64.655
+hester_v1-park,17,0.31,23.296,25.51,-2.214,I looked around once more.,0.0,8.0,85.185,0.0,0.0,85.185
+bear,83,0.68,71.837,74.0,-2.163,"So ... I took the old gun,",91.667,22.642,80.734,92.308,22.642,92.308
+stein,24,0.18,45.306,47.423,-2.117,but I remember saying a prayer as I went out the front door because I didn't know what was gonna hit me when I went out that door.,21.101,34.0,47.619,78.505,21.101,78.505
+doSomething,17,0.21,4.275,6.316,-2.041,"This guy starts,",0.99,3.846,12.264,0.0,0.0,12.264
+triplett_v2-catlady,27,0.84,12.393,14.286,-1.893,But – however – that resolved it for that day.,10.185,15.534,23.853,0.0,0.0,23.853
+hester_v2-church,32,0.59,35.185,37.0,-1.815,It was as if something was pulling me towards the house.,10.185,32.0,54.0,44.554,10.185,54.0
+triplett_v2-catlady,2,0.06,78.812,80.612,-1.8,She had adopted at least twenty –,90.741,46.602,86.239,91.667,46.602,91.667
+hester_v1-park,27,0.5,2.315,4.082,-1.767,"And uh I said to myself, well now,",0.0,0.0,9.259,0.0,0.0,9.259
+stein,18,0.14,4.559,6.186,-1.627,(We call our mother mom.),4.587,7.0,5.714,0.935,0.935,7.0
+triplett_v2-catlady,1,0.03,96.359,97.959,-1.6,"In the neighborhood I grew up in, Mrs. Baker was the resident cat lady.",100.0,85.437,100.0,100.0,85.437,100.0
+panic,3,0.05,90.589,92.0,-1.411,working on the warehouse floor,94.34,85.437,93.578,89.0,85.437,94.34
+doSomething,65,0.8,61.755,63.158,-1.403,but he's got a problem.,41.584,64.423,78.302,62.712,41.584,78.302
+hester_v2-church,53,0.98,42.617,44.0,-1.383,I remember the power of faith and the miracles it can bring.,34.259,9.0,48.0,79.208,9.0,79.208
+stein,8,0.06,16.146,17.526,-1.379,"He – stopped somewhere on – I dunno,",2.752,20.0,38.095,3.738,2.752,38.095
+stein,13,0.1,89.353,90.722,-1.369,And then of course they – they – well they stoned the house.,65.138,97.0,97.143,98.131,65.138,98.131
+hester_v1-park,7,0.13,85.398,86.735,-1.337,"The only person there with him during the day was a kind neighbor, a lady in her sixties.",100.0,49.0,92.593,100.0,49.0,100.0
+triplett_v1-rookie,29,0.91,77.485,78.788,-1.303,And I did.,100.0,26.733,97.0,86.207,26.733,100.0
+doSomething,73,0.9,62.915,64.211,-1.296,and starts backing up.,27.723,78.846,93.396,51.695,27.723,93.396
+hester_v1-park,23,0.43,3.972,5.102,-1.13,I just took a deep breath.,0.0,2.0,13.889,0.0,0.0,13.889
+doSomething,29,0.36,32.688,33.684,-0.997,as we're going up there this little hill right there.,14.851,45.192,45.283,25.424,14.851,45.283
+stein,9,0.07,14.476,15.464,-0.988,but he – how he – why he wasn't in the house.,3.67,20.0,31.429,2.804,2.804,31.429
+triplett_v1-rookie,28,0.88,85.889,86.869,-0.98,"But that evening the deputy, Frank Mitchell, said “You better transfer and leave because that old man never forgets anything once he gets it into his mind.”",100.0,44.554,99.0,100.0,44.554,100.0
+hester_v2-church,54,1.0,10.126,11.0,-0.874,"And I am reminded that we are never truly alone, even when it seems like we are.",1.852,1.0,3.0,34.653,1.0,34.653
+stein,32,0.25,28.077,28.866,-0.789,So uh that's where she was going to do her shopping.,22.936,25.0,43.81,20.561,20.561,43.81
+costa,31,0.16,49.874,50.538,-0.663,"And Rita was – I was cooking,",46.784,26.733,51.724,74.257,26.733,74.257
+triplett_v2-catlady,19,0.59,58.563,59.184,-0.621,So she took my advice.,84.259,90.291,52.294,7.407,7.407,90.291
+costa,123,0.63,62.032,62.366,-0.334,I was banging my head against the wall and everything.,63.158,69.307,61.207,54.455,54.455,69.307
+costa,190,0.98,44.878,45.161,-0.284,It was a shock to everybody. That was a shock that –,78.947,41.584,36.207,22.772,22.772,78.947
+panic,16,0.29,23.718,24.0,-0.282,I stopped what I was doing,20.755,22.33,46.789,5.0,5.0,46.789
+doSomething,64,0.79,82.068,82.105,-0.037,"and said to this deputy “This guy behind me is either sick or he's drunk,",54.455,81.731,97.17,94.915,54.455,97.17
+bear,46,0.38,51.991,52.0,-0.009,"Then after we ... went as far as we could in the canoes,",45.37,57.547,55.046,50.0,45.37,57.547
+costa,133,0.69,44.134,44.086,0.048,"And the back of her leg, it felt just like a pole.",45.614,41.584,78.448,10.891,10.891,78.448
+costa,83,0.43,71.102,70.968,0.134,"I said, “You killed my daughter – what did you do to her?”",61.404,71.287,78.448,73.267,61.404,78.448
+bear,26,0.21,49.145,49.0,0.145,"they were always coming out to the farm,",60.185,72.642,33.945,29.808,29.808,72.642
+hester_v2-church,16,0.3,31.209,31.0,0.209,"I was only a short distance away, maybe a quarter-mile.",6.481,31.0,23.0,64.356,6.481,64.356
+doSomething,63,0.78,54.02,53.684,0.336,"walked over there,",29.703,71.154,33.019,82.203,29.703,82.203
+doSomething,39,0.48,84.7,84.211,0.49,couldn't keep it in one lane.,88.119,83.654,92.453,74.576,74.576,92.453
+stein,109,0.84,44.929,44.33,0.599,"she told them how much money she had paid,",36.697,38.0,68.571,36.449,36.449,68.571
+bear,122,1.0,73.65,73.0,0.65,they haven't asked me to go hunting one time since that day.,100.0,3.774,90.826,100.0,3.774,100.0
+costa,38,0.2,34.105,33.333,0.771,"Since she’s gone, I never forget that.",52.047,23.762,31.897,28.713,23.762,52.047
+hester_v2-church,42,0.78,16.793,16.0,0.793,We became more grateful for the time we had together.,22.222,34.0,6.0,4.95,4.95,34.0
+costa,92,0.47,65.34,64.516,0.824,"And just as I turned my back, my daughter passed away.",83.041,68.317,79.31,30.693,30.693,83.041
+stein,26,0.2,48.31,47.423,0.888,I was ten years old at the time this happened –,13.761,36.0,76.19,67.29,13.761,76.19
+bear,41,0.34,72.91,72.0,0.91,"and we flew way up into Canada some place,",98.148,82.075,82.569,28.846,28.846,98.148
+costa,163,0.84,81.861,80.645,1.216,My husband had a heart attack.,88.889,64.356,87.069,87.129,64.356,88.889
+costa,28,0.14,84.041,82.796,1.245,Go Pick Marie up.,79.532,83.168,85.345,88.119,79.532,88.119
+doSomething,78,0.96,71.78,70.526,1.253,"and they make a U­-turn in the road and start following him,",81.188,63.462,50.943,91.525,50.943,91.525
+schissel_v1-pool,1,0.06,97.598,96.296,1.301,My best friend pushed me into the pool.,100.0,97.143,97.248,96.0,96.0,100.0
+costa,63,0.32,33.601,32.258,1.343,Then a little nurse’s aide went to the closet and got some blankets.,26.901,10.891,9.483,87.129,9.483,87.129
+stein,42,0.32,74.634,73.196,1.438,It's Irish.”,74.312,62.0,79.048,83.178,62.0,83.178
+bear,21,0.17,50.725,49.0,1.725,wasn't all that exciting to me.,68.519,45.283,46.789,42.308,42.308,68.519
+hester_v2-church,36,0.67,99.75,98.0,1.75,"To my surprise, I found my grandpa sitting in the living room, talking to my sister.",100.0,100.0,99.0,100.0,99.0,100.0
+bear,8,0.07,56.816,55.0,1.816,and so we were acquainted.,89.815,45.283,22.936,69.231,22.936,89.815
+triplett_v1-rookie,30,0.94,80.752,78.788,1.964,I transferred.,100.0,26.733,98.0,98.276,26.733,100.0
+costa,84,0.43,55.741,53.763,1.977,"She said, “We don’t know what happened, Mrs. Costa.”",57.31,44.554,37.931,83.168,37.931,83.168
+hester_v1-park,37,0.69,74.645,72.449,2.196,But I ask you to please help my father recover.,24.096,84.0,94.444,96.04,24.096,96.04
+triplett_v1-rookie,26,0.81,90.091,87.879,2.213,She hadn't run away.,100.0,77.228,84.0,99.138,77.228,100.0
+schissel_v2-lake,6,0.33,42.045,39.796,2.25,- this was at our favorite spot in the woods -,44.554,40.741,31.0,51.887,31.0,51.887
+stein,25,0.19,56.071,53.608,2.462,And I ran –,34.862,64.0,60.0,65.421,34.862,65.421
+costa,27,0.14,69.149,66.667,2.483,"“Mrs. Costa, they just called you from the hospital.",66.082,48.515,75.862,86.139,48.515,86.139
+panic,7,0.12,18.51,16.0,2.51,it was getting late,43.396,3.883,13.761,13.0,3.883,43.396
+stein,11,0.08,99.512,96.907,2.605,Well no sooner did my mother get out of the house – my father went first – then – oh it was such an awful crash came through the window.,100.0,99.0,99.048,100.0,99.0,100.0
+bear,24,0.2,15.683,13.0,2.683,"Things went on,",25.926,13.208,9.174,14.423,9.174,25.926
+schissel_v1-pool,2,0.11,93.454,90.741,2.713,"This happened during my cousin's wedding reception,",99.048,96.19,93.578,85.0,85.0,99.048
+costa,71,0.37,58.634,55.914,2.72,And my daughter was on the bed with her bedroom slippers and her housecoat on.,60.234,55.446,66.379,52.475,52.475,66.379
+hester_v2-church,11,0.2,41.749,39.0,2.749,"I looked around the bookstore, but no one was there.",27.778,50.0,11.0,78.218,11.0,78.218
+doSomething,49,0.6,26.962,24.211,2.752,"and I know I oughta do something about it,",27.723,22.115,53.774,4.237,4.237,53.774
+schissel_v2-lake,1,0.06,90.63,87.755,2.875,My best friend pushed me into the lake.,100.0,94.444,86.0,82.075,82.075,100.0
+hester_v2-church,13,0.24,85.887,83.0,2.887,"It spoke to me again, repeating the same message.",68.519,80.0,98.0,97.03,68.519,98.0
+hester_v2-church,2,0.04,16.905,14.0,2.905,I was staying in a small town about five miles from here.,25.926,11.0,0.0,30.693,0.0,30.693
+costa,4,0.02,64.238,61.29,2.947,She died at Methodist Hospital.,73.099,54.455,62.069,67.327,54.455,73.099
+hester_v1-park,14,0.26,97.119,93.878,3.242,"So, I went to the park during my break",99.398,97.0,100.0,92.079,92.079,100.0
+hester_v2-church,9,0.17,99.25,96.0,3.25,"As I was shelving books, I suddenly heard a voice inside my head.",100.0,100.0,97.0,100.0,97.0,100.0
+stein,108,0.83,49.674,46.392,3.282,"She told them that they had rented the house,",38.532,41.0,75.238,43.925,38.532,75.238
+panic,38,0.68,87.381,84.0,3.381,luckily the manager got to me in time,97.17,63.107,97.248,92.0,63.107,97.248
+bear,48,0.39,78.555,75.0,3.555,'till we got to this cabin that they had rented way up there in the north woods.,97.222,68.868,78.899,69.231,68.868,97.222
+schissel_v1-pool,18,1.0,92.619,88.889,3.73,"and my cousin just says, ""Just about a few inches more,"" she says, ""and you'd have landed on the cake.""",100.0,70.476,100.0,100.0,70.476,100.0
+doSomething,46,0.57,86.973,83.158,3.815,at least he appeared that way...,97.03,84.615,76.415,89.831,76.415,97.03
+stein,90,0.69,75.063,71.134,3.929,and they took us home.,98.165,59.0,55.238,87.85,55.238,98.165
+hester_v2-church,21,0.39,23.959,20.0,3.959,I admitted to myself that I was far from being a saint.,12.963,15.0,55.0,12.871,12.871,55.0
+costa,39,0.2,41.64,37.634,4.006,"So I said, “Put a pot of coffee on,",53.801,21.782,47.414,43.564,21.782,53.801
+bear,44,0.36,77.062,73.0,4.062,"and paddled for another ... day and a half it seemed to me,",50.0,83.019,75.229,100.0,50.0,100.0
+bear,11,0.09,72.079,68.0,4.079,and we became quite good friends.,100.0,61.321,38.532,88.462,38.532,100.0
+hester_v1-park,5,0.09,100.0,95.918,4.082,"My father, who was recovering from a surgery, hadn't been out in – in uh – well I'd say about eight months.",100.0,100.0,100.0,100.0,100.0,100.0
+bear,34,0.28,56.115,52.0,4.115,wasn't too hepped up on this at all.,90.741,56.604,55.963,21.154,21.154,90.741
+doSomething,44,0.54,48.371,44.211,4.16,So I was trying to make up my mind what to do.,50.495,60.577,60.377,22.034,22.034,60.577
+hester_v2-church,5,0.09,95.25,91.0,4.25,"My grandpa, who had been bedridden for almost a year, was at home with my sister.",100.0,100.0,81.0,100.0,81.0,100.0
+hester_v2-church,22,0.41,21.251,17.0,4.251,I had my share of mistakes and misdeeds.,11.111,15.0,48.0,10.891,10.891,48.0
+costa,37,0.19,39.766,35.484,4.282,"When I get up in the morning, the first cup is hers.",52.047,19.802,32.759,54.455,19.802,54.455
+triplett_v1-rookie,31,0.97,72.056,67.677,4.379,and left.,98.204,25.743,91.0,73.276,25.743,98.204
+hester_v1-park,33,0.61,22.87,18.367,4.503,I looked around one more time,0.0,10.0,81.481,0.0,0.0,81.481
+doSomething,45,0.56,89.77,85.263,4.507,I was pretty sure he was drunk...,100.0,85.577,81.132,92.373,81.132,100.0
+doSomething,41,0.51,17.195,12.632,4.564,And all the time this is going on...,14.851,33.654,16.038,4.237,4.237,33.654
+costa,90,0.46,72.542,67.742,4.8,"I went hysterical, you know what I mean? She was only eighteen years old.",69.591,79.208,68.103,73.267,68.103,79.208
+triplett_v1-rookie,12,0.38,99.75,94.949,4.801,Then she left a message one day saying she was going to run away because he was always scolding her about me.,100.0,100.0,99.0,100.0,99.0,100.0
+hester_v1-park,38,0.7,56.857,52.041,4.816,"So he can regain his independence and enjoy life again.""",16.265,43.0,87.963,80.198,16.265,87.963
+triplett_v1-rookie,25,0.78,98.76,93.939,4.821,she was sitting on a chair with a book in her hands.,100.0,96.04,99.0,100.0,96.04,100.0
+panic,12,0.21,22.844,18.0,4.844,"But then, as I was walking around the warehouse",5.66,16.505,53.211,16.0,5.66,53.211
+bear,10,0.08,81.848,77.0,4.848,"we found that the four of us were all now attending the same school,",96.296,67.925,66.055,97.115,66.055,97.115
+schissel_v2-lake,12,0.67,99.769,94.898,4.871,and gave me a little nudge.,100.0,99.074,100.0,100.0,99.074,100.0
+schissel_v1-pool,5,0.28,95.619,90.741,4.878,"she spotted a bee hovering near my face,",97.143,93.333,100.0,92.0,92.0,100.0
+hester_v2-church,19,0.35,63.896,59.0,4.896,I remembered my grandma always saying that prayers from a sincere heart could bring miracles.,30.556,56.0,72.0,97.03,30.556,97.03
+hester_v2-church,28,0.52,80.997,76.0,4.997,"Please help him regain his strength and guide us in taking care of him.""",90.741,80.0,78.0,75.248,75.248,90.741
+hester_v2-church,15,0.28,99.04,94.0,5.04,I decided to take a break and walk to the church.,98.148,100.0,99.0,99.01,98.148,100.0
+hester_v1-park,10,0.19,100.0,94.898,5.102,"One day, I got this strong feeling while I was at work.",100.0,100.0,100.0,100.0,100.0,100.0
+panic,49,0.88,91.165,86.0,5.165,It turned out I had been having a panic attack,100.0,83.495,98.165,83.0,83.0,100.0
+stein,69,0.53,72.19,67.01,5.18,"And he says, “Well lady there's nothing we can do about it.”",91.743,48.0,72.381,76.636,48.0,91.743
+bear,29,0.24,99.299,94.0,5.299,one of them got the idea they'd like to go bear hunting up in Canada.,100.0,98.113,99.083,100.0,98.113,100.0
+hester_v2-church,14,0.26,31.324,26.0,5.324,"I looked around once more, but still found no one.",12.037,30.0,9.0,74.257,9.0,74.257
+hester_v1-park,42,0.78,99.287,93.878,5.409,"It said, ""I just took a few steps with my walker.""",100.0,99.0,98.148,100.0,98.148,100.0
+doSomething,66,0.81,63.371,57.895,5.477,He can't keep his car on one side of the road.”,27.723,58.654,84.906,82.203,27.723,84.906
+costa,1,0.01,88.347,82.796,5.551,My daughter died.,98.83,95.05,79.31,80.198,79.31,98.83
+bear,115,0.94,71.561,66.0,5.561,"and pulled the door shut,",89.815,13.208,88.991,94.231,13.208,94.231
+panic,8,0.14,74.725,69.0,5.725,I had been feeling a bit strange,88.679,78.641,93.578,38.0,38.0,93.578
+bear,33,0.27,76.767,71.0,5.767,"so I left them talk me into it,",98.148,82.075,81.651,45.192,45.192,98.148
+stein,12,0.09,86.35,80.412,5.938,And I – and I looked and it was a big stone.,97.248,83.0,85.714,79.439,79.439,97.248
+bear,18,0.15,90.949,85.0,5.949,Then we'd go rabbit hunting and squirrel hunting and things of that nature.,90.741,87.736,85.321,100.0,85.321,100.0
+bear,12,0.1,92.996,87.0,5.996,"I was the kid from the farm,",100.0,82.075,89.908,100.0,82.075,100.0
+triplett_v1-rookie,4,0.12,94.89,88.889,6.001,But he had – a young daughter.,99.401,84.158,96.0,100.0,84.158,100.0
+hester_v2-church,10,0.19,99.021,93.0,6.021,"It said, ""If you go to the old church down the street and light a candle for your grandpa, he will get better.""",99.074,99.0,99.0,99.01,99.0,99.074
+schissel_v2-lake,11,0.61,100.0,93.878,6.122,So that's when she snuck up behind me,100.0,100.0,100.0,100.0,100.0,100.0
+hester_v1-park,39,0.72,11.252,5.102,6.15,I opened my eyes,0.0,5.0,37.037,2.97,0.0,37.037
+boyscout,7,0.37,100.0,93.814,6.186,"And, going down the third time, I caught cramps",100.0,100.0,100.0,100.0,100.0,100.0
+doSomething,60,0.74,86.226,80.0,6.226,"So I motion for him to come over,",98.02,87.5,83.962,75.424,75.424,98.02
+hester_v1-park,2,0.04,72.718,66.327,6.391,I was living in a small apartment near the city center.,100.0,41.0,51.852,98.02,41.0,100.0
+panic,30,0.54,73.443,67.0,6.443,called out to me,60.377,56.311,99.083,78.0,56.311,99.083
+triplett_v1-rookie,21,0.66,68.167,61.616,6.55,and we traced down a little more,32.335,77.228,70.0,93.103,32.335,93.103
+hester_v2-church,3,0.06,98.75,92.0,6.75,I had just started my first job at a local bookstore.,100.0,100.0,95.0,100.0,95.0,100.0
+bear,15,0.12,97.91,91.0,6.91,"they used to like to come out to the farm and hunt,",100.0,96.226,95.413,100.0,95.413,100.0
+panic,14,0.25,100.0,93.0,7.0,I started to feel a strange tightness,100.0,100.0,100.0,100.0,100.0,100.0
+panic,15,0.27,100.0,93.0,7.0,and pressure in my chest,100.0,100.0,100.0,100.0,100.0,100.0
+costa,166,0.86,80.318,73.118,7.2,"Right there, my Michael came, and my Michael collapsed.",86.55,63.366,86.207,85.149,63.366,86.55
+costa,66,0.34,41.675,34.409,7.267,"when the aide said to the nurse, “Oh, she’s going into a cold sweat now.”",31.579,43.564,30.172,61.386,30.172,61.386
+costa,74,0.38,84.761,77.419,7.342,"I said, “What did you do, kill my daughter?",74.269,80.198,90.517,94.059,74.269,94.059
+costa,36,0.19,46.062,38.71,7.352,"And you know, every morning, that first cup of coffee, I offered it to her.",54.971,19.802,36.207,73.267,19.802,73.267
+stein,43,0.33,64.075,56.701,7.374,"And he said, “They're known to do things like that,",79.817,63.0,71.429,42.056,42.056,79.817
+hester_v1-park,9,0.17,76.791,69.388,7.403,so it was just my dad and the neighbor lady at home during the day.,86.145,48.0,75.0,98.02,48.0,98.02
+doSomething,10,0.12,46.385,38.947,7.437,coming on to Twenty­-four.,27.723,76.923,53.774,27.119,27.119,76.923
+costa,16,0.08,40.782,33.333,7.448,“She’s too sick.”,56.725,39.604,56.897,9.901,9.901,56.897
+doSomething,71,0.88,29.623,22.105,7.518,"He stops,",27.723,48.077,19.811,22.881,19.811,48.077
+costa,75,0.39,69.94,62.366,7.574,You killed her! You killed her!”,58.48,57.426,76.724,87.129,57.426,87.129
+doSomething,4,0.05,84.443,76.842,7.601,"Well we're going up Twenty­-four,",85.149,78.846,75.472,98.305,75.472,98.305
+costa,20,0.1,39.927,32.258,7.669,and they had to put her back in bed.,33.333,33.663,22.414,70.297,22.414,70.297
+costa,26,0.13,84.051,76.344,7.707,"The lady from the store who had a phone called me, “Mrs. Costa,” at aquarter to five at night.",89.474,70.297,85.345,91.089,70.297,91.089
+schissel_v1-pool,12,0.67,89.356,81.481,7.875,and I tumbled into the water.,89.524,88.571,96.33,83.0,83.0,96.33
+triplett_v1-rookie,27,0.84,25.062,17.172,7.891,But – nevertheless – that resolved the issue for that day.,9.581,22.772,11.0,56.897,9.581,56.897
+hester_v2-church,50,0.93,28.892,21.0,7.892,It remains a vivid memory in my mind.,9.259,17.0,20.0,69.307,9.259,69.307
+costa,3,0.02,62.821,54.839,7.983,"The thirtieth of this month, yeah.",66.667,73.267,56.897,54.455,54.455,73.267
+bear,9,0.07,72.261,64.0,8.261,"But then after graduation when we all enrolled in school,",92.593,53.774,52.294,90.385,52.294,92.593
+doSomething,38,0.47,94.651,86.316,8.336,"He starts weaving back and forth,",100.0,85.577,98.113,94.915,85.577,100.0
+triplett_v2-catlady,4,0.12,92.183,83.673,8.509,But she had – a young grandson,95.37,83.495,94.495,95.37,83.495,95.37
+bear,7,0.06,79.691,71.0,8.691,"Previous to that during high school we'd all been high school athletes at different schools,",99.074,82.075,37.615,100.0,37.615,100.0
+triplett_v2-catlady,32,1.0,31.359,22.449,8.91,That was the second time.,0.0,0.971,57.798,66.667,0.0,66.667
+hester_v2-church,35,0.65,68.343,59.0,9.343,I locked up the store and rushed home.,45.37,63.0,65.0,100.0,45.37,100.0
+bear,5,0.04,45.588,36.0,9.588,we became friends after we all...,71.296,29.245,18.349,63.462,18.349,71.296
+doSomething,1,0.01,93.804,84.211,9.594,About a month ago see we were going to a church league softball game...,100.0,86.538,88.679,100.0,86.538,100.0
+hester_v2-church,43,0.8,36.604,27.0,9.604,I often thought back to that day in the church.,40.741,17.0,56.0,32.673,17.0,56.0
+triplett_v1-rookie,32,1.0,71.24,61.616,9.624,That was the end of my rookie year.,100.0,3.96,81.0,100.0,3.96,100.0
+triplett_v1-rookie,20,0.62,98.76,88.889,9.871,And we went to where they found her scarf – near a park.,100.0,96.04,99.0,100.0,96.04,100.0
+stein,17,0.13,76.915,67.01,9.905,And I'm gonna go and see if I can find mom” –,96.33,86.0,55.238,70.093,55.238,96.33
+panic,17,0.3,59.034,49.0,10.034,leaned against a nearby wall for a bit,93.396,46.602,65.138,31.0,31.0,93.396
+doSomething,30,0.37,42.718,32.632,10.086,At Ranch Eggs.,26.733,31.731,38.679,73.729,26.733,73.729
+hester_v1-park,53,0.98,91.725,81.633,10.092,My father is now able to walk without any assistance.,100.0,79.0,88.889,99.01,79.0,100.0
+hester_v1-park,11,0.2,97.0,86.735,10.265,"It told me: ""If you go to the nearby park during your lunch break and pray for your father's recovery, he'll start to improve.""",100.0,88.0,100.0,100.0,88.0,100.0
+triplett_v1-rookie,17,0.53,81.994,71.717,10.277,and if we can't locate her well you can – do whatever you think is right.”,89.222,48.515,98.0,92.241,48.515,98.0
+hester_v1-park,51,0.94,63.469,53.061,10.408,and regained most of his mobility within a year.,35.542,61.0,87.037,70.297,35.542,87.037
+bear,19,0.16,90.421,80.0,10.421,I never really enjoyed hunting.,100.0,74.528,87.156,100.0,74.528,100.0
+stein,128,0.98,29.048,18.557,10.492,But that was our welcoming to the neighborhood.,31.193,8.0,69.524,7.477,7.477,69.524
+hester_v1-park,41,0.76,99.519,88.776,10.743,"Suddenly, I received a text message from my father.",100.0,99.0,99.074,100.0,99.0,100.0
+triplett_v2-catlady,12,0.38,98.624,87.755,10.869,Then he left a note one day saying he was going to run away because she was always nagging about me.,100.0,100.0,94.495,100.0,94.495,100.0
+stein,89,0.68,84.068,73.196,10.872,So they put us in the police patrol,99.083,61.0,76.19,100.0,61.0,100.0
+schissel_v1-pool,11,0.61,97.918,87.037,10.881,"So that's when she gave me a little shove,",100.0,98.095,93.578,100.0,93.578,100.0
+hester_v2-church,31,0.57,88.065,77.0,11.065,"Suddenly, I felt a strong urge to go home.",59.259,94.0,99.0,100.0,59.259,100.0
+hester_v2-church,41,0.76,42.149,31.0,11.149,It was a turning point in our lives.,51.852,60.0,31.0,25.743,25.743,60.0
+stein,28,0.22,31.045,19.588,11.457,"They had push carts in those days, on Fourth street.",4.587,18.0,35.238,66.355,4.587,66.355
+hester_v2-church,6,0.11,92.521,81.0,11.521,"She had to care for him daily, as he couldn't move around on his own.",99.074,96.0,76.0,99.01,76.0,99.074
+schissel_v2-lake,2,0.11,93.222,81.633,11.59,This happened during our annual summer camping trip,99.01,95.37,87.0,91.509,87.0,99.01
+costa,35,0.18,54.601,43.011,11.591,"I said, “And put a big pot of coffee on,” because she had been wishing for coffee.",56.14,26.733,47.414,88.119,26.733,88.119
+panic,53,0.95,36.654,25.0,11.654,it really could have been much worse,47.17,47.573,45.872,6.0,6.0,47.573
+schissel_v1-pool,7,0.39,93.187,81.481,11.706,and she tried to save me from being stung.,100.0,86.667,99.083,87.0,86.667,100.0
+doSomething,22,0.27,72.764,61.053,11.711,Mean he's got Twenty­-four blocked.,55.446,72.115,66.038,97.458,55.446,97.458
+doSomething,42,0.52,79.266,67.368,11.897,I'm thinking how drunk driving is the number one killer of kids and all this business.,67.327,75.0,84.906,89.831,67.327,89.831
+doSomething,81,1.0,67.866,55.789,12.077,I don't know if they ever stopped him or not.,95.05,14.423,67.925,94.068,14.423,95.05
+bear,45,0.37,61.239,49.0,12.239,'till we got way up in the north woods.,74.074,65.094,59.633,46.154,46.154,74.074
+costa,13,0.07,53.205,40.86,12.344,"and she said to the nurse, “What’s this chair doing here?”",50.877,46.535,62.931,52.475,46.535,62.931
+stein,33,0.25,91.802,79.381,12.421,And I finally found my mother.,94.495,87.0,85.714,100.0,85.714,100.0
+stein,41,0.32,92.94,80.412,12.528,"and says, “This is a bad neighborhood.",100.0,84.0,95.238,92.523,84.0,100.0
+panic,11,0.2,77.618,65.0,12.618,not having eaten yet that day,100.0,59.223,97.248,54.0,54.0,100.0
+doSomething,18,0.22,48.479,35.789,12.689,"pulls out in the lane,",30.693,77.885,64.151,21.186,21.186,77.885
+triplett_v1-rookie,9,0.28,93.536,80.808,12.728,She was a charming girl until she opened her mouth.,100.0,82.178,98.0,93.966,82.178,100.0
+hester_v1-park,50,0.93,71.938,59.184,12.754,He continued to improve,34.94,82.0,92.593,78.218,34.94,92.593
+hester_v1-park,40,0.74,50.532,37.755,12.777,and went back to work.,0.0,62.0,63.889,76.238,0.0,76.238
+doSomething,59,0.73,98.081,85.263,12.818,and right across the road stopped a sheriff's car.,100.0,93.269,99.057,100.0,93.269,100.0
+stein,64,0.49,30.607,17.526,13.081,She went to Lackawanna high school.,8.257,12.0,16.19,85.981,8.257,85.981
+doSomething,62,0.77,74.239,61.053,13.187,"and I got out the car,",40.594,85.577,87.736,83.051,40.594,87.736
+hester_v2-church,1,0.02,94.276,81.0,13.276,"Let me share a story from when I was twenty-two years old, just fresh out of college.",99.074,94.0,87.0,97.03,87.0,99.074
+panic,10,0.18,76.29,63.0,13.29,but chalked it up to hunger,91.509,66.99,92.661,54.0,54.0,92.661
+panic,29,0.52,93.343,80.0,13.343,who had seen me,96.226,95.146,100.0,82.0,82.0,100.0
+stein,3,0.02,55.895,42.268,13.626,"but it was like – you remember I told you my father drank,",100.0,80.0,31.429,12.15,12.15,100.0
+hester_v2-church,25,0.46,81.665,68.0,13.665,I knelt down in front of the altar.,67.593,77.0,89.0,93.069,67.593,93.069
+doSomething,80,0.99,48.591,34.737,13.855,Ha ha it's pretty comical...,38.614,33.654,83.962,38.136,33.654,83.962
+panic,39,0.7,86.968,73.0,13.968,caught me just before my legs gave out,87.736,62.136,100.0,98.0,62.136,100.0
+hester_v1-park,48,0.89,39.631,25.51,14.121,"And there he was, taking small steps.",70.482,22.0,18.519,47.525,18.519,70.482
+panic,26,0.46,24.145,10.0,14.145,didn't know what to do.,33.962,19.417,42.202,1.0,1.0,42.202
+stein,62,0.48,40.093,25.773,14.32,But thankfully my mother was not one of those kind.,77.064,51.0,28.571,3.738,3.738,77.064
+triplett_v1-rookie,24,0.75,97.398,82.828,14.57,– it was a police station –,100.0,96.04,97.0,96.552,96.04,100.0
+costa,12,0.06,38.318,23.656,14.662,"So, Victoria saw the chair,",51.462,44.554,34.483,22.772,22.772,51.462
+panic,22,0.39,61.782,47.0,14.782,my arms,58.491,47.573,77.064,64.0,47.573,77.064
+panic,33,0.59,52.921,38.0,14.921,I tried to yell back that something was wrong,49.057,36.893,80.734,45.0,36.893,80.734
+bear,2,0.02,80.991,66.0,14.991,that I met in 1949,100.0,40.566,85.321,98.077,40.566,100.0
+triplett_v2-catlady,25,0.78,97.678,82.653,15.025,he was sitting on a branch with a comic book in his hand.,99.074,98.058,93.578,100.0,93.578,100.0
+hester_v2-church,27,0.5,99.037,84.0,15.037,But I am asking you with all my heart to heal my grandpa.,98.148,99.0,99.0,100.0,98.148,100.0
+doSomething,76,0.94,66.756,51.579,15.177,"Pretty soon they catch up with him,",81.188,65.385,59.434,61.017,59.434,81.188
+schissel_v2-lake,10,0.56,55.002,39.796,15.206,"'Course friends, y'know, they don't always take no for an answer.",37.624,42.593,53.0,86.792,37.624,86.792
+boyscout,9,0.47,99.752,84.536,15.216,"but the fellows didn't believe me, you know.",100.0,100.0,100.0,99.01,99.01,100.0
+doSomething,32,0.4,92.123,76.842,15.281,and this guy's right on my tail.,90.099,98.077,98.113,82.203,82.203,98.113
+costa,19,0.1,77.793,62.366,15.427,"and she passed out,",74.854,64.356,88.793,83.168,64.356,88.793
+stein,103,0.79,73.2,57.732,15.468,"and faced all those people that were standing around,",97.248,52.0,80.0,63.551,52.0,97.248
+costa,6,0.03,45.751,30.108,15.643,"It was late Saturday afternoon when they operated, very late.",47.368,39.604,26.724,69.307,26.724,69.307
+triplett_v2-catlady,28,0.88,93.324,77.551,15.773,"But that evening the local sheriff, Officer Dawson said “You better lay low and stay out of sight because that woman never forgets anything once she gets it into her mind.”",100.0,81.553,91.743,100.0,81.553,100.0
+stein,16,0.12,64.233,48.454,15.779,Don't move 'cause nothing will reach you here.,70.642,73.0,60.952,52.336,52.336,73.0
+panic,48,0.86,58.845,43.0,15.845,I started to feel better,61.321,85.437,48.624,40.0,40.0,85.437
+bear,47,0.39,88.853,73.0,15.853,"then we had to backpack for another ... five hundred miles I thought,",78.704,88.679,88.991,99.038,78.704,99.038
+doSomething,23,0.28,85.357,69.474,15.883,He's sitting there right in the middle of the highway.,59.406,97.115,84.906,100.0,59.406,100.0
+triplett_v1-rookie,5,0.16,73.663,57.576,16.087,And in those days I was a fitness enthusiast.,91.018,36.634,67.0,100.0,36.634,100.0
+doSomething,33,0.41,67.834,51.579,16.255,"And Lisa was with me,",50.495,66.346,85.849,68.644,50.495,85.849
+triplett_v1-rookie,19,0.59,75.221,58.586,16.635,So he accepted my offer.,79.641,86.139,42.0,93.103,42.0,93.103
+schissel_v2-lake,13,0.72,99.514,82.653,16.861,"When I emerged from the water, there was a frog on the shore,",100.0,100.0,99.0,99.057,99.0,100.0
+boyscout,5,0.26,98.505,81.443,17.062,and so we was doing the 50-yard dash.,100.0,100.0,96.0,98.02,96.0,100.0
+boyscout,16,0.84,93.663,76.289,17.374,But he didn't pay me no attention either.,100.0,81.651,93.0,100.0,81.651,100.0
+costa,24,0.12,87.327,69.892,17.434,I was waiting for the call from the hospital.,91.813,91.089,86.207,80.198,80.198,91.813
+panic,20,0.36,82.529,65.0,17.529,"Next thing I know, I started seeing spots",66.038,64.078,100.0,100.0,64.078,100.0
+costa,2,0.01,80.079,62.366,17.713,It’ll be twenty-eight years this month.,63.743,96.04,72.414,88.119,63.743,96.04
+hester_v1-park,24,0.44,70.884,53.061,17.823,I was sitting under a big oak tree now.,19.277,80.0,84.259,100.0,19.277,100.0
+stein,102,0.78,77.665,59.794,17.871,Before the patrol ever left my mother turned,99.083,53.0,83.81,74.766,53.0,99.083
+boyscout,3,0.16,63.351,45.361,17.991,"racing,",66.981,67.89,72.0,46.535,46.535,72.0
+panic,18,0.32,65.015,47.0,18.015,the pressure only got stronger,83.019,86.408,59.633,31.0,31.0,86.408
+hester_v1-park,34,0.63,42.545,24.49,18.056,and then I closed my eyes,13.855,13.0,46.296,97.03,13.0,97.03
+panic,52,0.93,36.058,18.0,18.058,It was never a fun experience,60.377,55.34,16.514,12.0,12.0,60.377
+schissel_v2-lake,7,0.39,100.0,81.633,18.367,and she dared me to catch it.,100.0,100.0,100.0,100.0,100.0,100.0
+panic,9,0.16,86.436,68.0,18.436,a bit lightheaded,95.283,87.379,99.083,64.0,64.0,99.083
+triplett_v1-rookie,16,0.5,99.25,80.808,18.442,and proposed “Well we'll search for her,100.0,100.0,97.0,100.0,97.0,100.0
+boyscout,2,0.11,100.0,81.443,18.557,"And we was doing the 50-yard dash,",100.0,100.0,100.0,100.0,100.0,100.0
+doSomething,24,0.3,74.536,55.789,18.747,Got it blocked.,44.554,89.423,72.642,91.525,44.554,91.525
+bear,13,0.11,89.749,71.0,18.749,the other three guys all lived in the city.,100.0,84.906,78.899,95.192,78.899,100.0
+costa,72,0.37,69.34,50.538,18.803,"And the beads of sweat – honest to God, not to exaggerate, they were that big.",47.368,83.168,91.379,55.446,47.368,91.379
+bear,28,0.23,65.852,47.0,18.852,"After we'd been acquainted for several years,",62.963,59.434,66.972,74.038,59.434,74.038
+costa,5,0.03,96.319,77.419,18.9,She had an operation for appendicitis.,100.0,97.03,99.138,89.109,89.109,100.0
+panic,34,0.61,69.935,51.0,18.935,I couldn't find my voice.,84.906,38.835,100.0,56.0,38.835,100.0
+bear,40,0.33,90.947,72.0,18.947,"So we took an airplane out of Fort Wayne,",98.148,84.906,80.734,100.0,80.734,100.0
+triplett_v2-catlady,26,0.81,79.194,60.204,18.99,He hadn't run away.,79.63,60.194,88.991,87.963,60.194,88.991
+costa,57,0.29,90.123,70.968,19.155,"But when I got there, the nurse said to me, “Sit down, Mrs. Costa, sit here for a while.”",86.55,92.079,88.793,93.069,86.55,93.069
+triplett_v1-rookie,10,0.31,100.0,80.808,19.192,She was a chatterbox.,100.0,100.0,100.0,100.0,100.0,100.0
+doSomething,27,0.33,59.428,40.0,19.428,"and it's about ... maybe mile, two miles... north of Twenty­-four on Aboite Center,",5.941,63.462,71.698,96.61,5.941,96.61
+panic,23,0.41,51.863,32.0,19.863,I tried to take some deep breaths,52.83,33.981,70.642,50.0,33.981,70.642
+costa,7,0.04,67.188,47.312,19.876,"Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was.",70.175,55.446,62.931,80.198,55.446,80.198
+costa,22,0.11,87.871,67.742,20.129,"but I blame them for the blood clot she got, taking her out of bed.",94.152,80.198,93.966,83.168,80.198,94.152
+panic,41,0.73,88.136,68.0,20.136,sat me down in a chair,83.962,80.583,100.0,88.0,80.583,100.0
+stein,1,0.01,99.274,78.351,20.923,We moved down to Third and Wharton.,100.0,99.0,98.095,100.0,98.095,100.0
+costa,30,0.15,68.242,47.312,20.93,I had all the clothes laid out on the table.,78.363,33.663,89.655,71.287,33.663,89.655
+hester_v1-park,35,0.65,96.584,75.51,21.074,and said a quiet prayer.,100.0,94.0,96.296,96.04,94.0,100.0
+hester_v1-park,43,0.8,47.629,26.531,21.098,I – I couldn't believe it.,98.193,58.0,33.333,0.99,0.99,98.193
+hester_v2-church,45,0.83,72.203,51.0,21.203,"I couldn't be sure, but it definitely changed my perspective on faith and the power of prayer.",94.444,36.0,95.0,63.366,36.0,95.0
+stein,15,0.12,73.826,52.577,21.248,"And I said to them, “Now you stay there.",70.642,73.0,63.81,87.85,63.81,87.85
+stein,130,1.0,30.617,9.278,21.339,and it certainly was frightening for me.,59.633,10.0,26.667,26.168,10.0,59.633
+doSomething,72,0.89,93.987,72.632,21.356,"and he throws his car into reverse,",97.03,82.692,96.226,100.0,82.692,100.0
+triplett_v1-rookie,11,0.34,99.186,77.778,21.408,"Goodness, she could talk.",97.605,100.0,100.0,99.138,97.605,100.0
+hester_v2-church,8,0.15,62.519,41.0,21.519,My parents had gone out of town for the weekend.,74.074,62.0,14.0,100.0,14.0,100.0
+bear,23,0.19,80.632,59.0,21.632,so I'd go along just to be one of the group.,70.37,74.528,85.321,92.308,70.37,92.308
+bear,16,0.13,72.702,51.0,21.702,"and they'd come out,",78.704,81.132,35.78,95.192,35.78,95.192
+schissel_v2-lake,18,1.0,99.306,77.551,21.755,"and I said, ""Just you wait,"" I said, ""you'll get yours soon enough.""",100.0,97.222,100.0,100.0,97.222,100.0
+triplett_v2-catlady,7,0.22,73.115,51.02,22.095,I never caught on.,89.815,74.757,88.073,39.815,39.815,89.815
+costa,17,0.09,69.473,47.312,22.161,"But the nurse said, “Well, that’s the doctor’s orders.”",69.006,59.406,80.172,69.307,59.406,80.172
+hester_v1-park,15,0.28,64.25,41.837,22.413,and found a quiet spot there.,99.398,52.0,62.037,43.564,43.564,99.398
+hester_v1-park,1,0.02,89.827,67.347,22.48,Let me share a story from when I was twenty-one years old.,100.0,64.0,96.296,99.01,64.0,100.0
+doSomething,28,0.35,95.195,72.632,22.564,"and this guy's following us see,",92.079,96.154,93.396,99.153,92.079,99.153
+panic,40,0.71,98.771,76.0,22.771,He took me to the staff room,100.0,100.0,99.083,96.0,96.0,100.0
+schissel_v2-lake,17,0.94,90.206,67.347,22.859,"And naturally, the first thing to do was to get revenge,",93.069,87.963,93.0,86.792,86.792,93.069
+triplett_v2-catlady,13,0.41,98.624,75.51,23.114,She came to my treehouse.,100.0,100.0,94.495,100.0,94.495,100.0
+triplett_v2-catlady,17,0.53,81.367,58.163,23.204,"and if we can't locate him, you can – go ahead and call the police if you need to.”",91.667,64.078,69.725,100.0,64.078,100.0
+triplett_v2-catlady,6,0.19,95.763,72.449,23.314,"And apparently, he was trying to befriend me.",100.0,92.233,91.743,99.074,91.743,100.0
+stein,34,0.26,66.759,43.299,23.46,I did find her.,81.651,63.0,47.619,74.766,47.619,81.651
+doSomething,69,0.85,57.174,33.684,23.49,"And as soon as he sees me get out of the car and walk over there to the police car,",87.129,68.269,70.755,2.542,2.542,87.129
+doSomething,13,0.16,96.394,72.632,23.763,"and he's blocking off the lane,",100.0,85.577,100.0,100.0,85.577,100.0
+schissel_v2-lake,14,0.78,97.598,73.469,24.129,she just scooped it up,100.0,97.222,96.0,97.17,96.0,100.0
+boyscout,15,0.79,84.149,59.794,24.355,He was watching me.,83.019,72.477,91.0,90.099,72.477,91.0
+panic,21,0.38,84.364,60.0,24.364,I could feel sweat dripping down my forehead,100.0,51.456,100.0,86.0,51.456,100.0
+schissel_v1-pool,10,0.56,48.461,24.074,24.387,"'Course friends, y'know, they don't always think things through.",64.762,34.286,57.798,37.0,34.286,64.762
+triplett_v2-catlady,24,0.75,85.687,61.224,24.462,– it was a treehouse club –,95.37,80.583,86.239,80.556,80.556,95.37
+panic,45,0.8,50.67,26.0,24.67,told me to rest for a bit,84.906,47.573,42.202,28.0,28.0,84.906
+doSomething,74,0.91,81.818,56.842,24.976,"When the cops went down there to check him out,",88.119,69.231,79.245,90.678,69.231,90.678
+panic,35,0.62,70.995,46.0,24.995,The manager started walking towards me,59.434,42.718,90.826,91.0,42.718,91.0
+boyscout,14,0.74,95.183,70.103,25.08,Scoutmaster was up there.,100.0,80.734,100.0,100.0,80.734,100.0
+stein,44,0.34,82.837,57.732,25.105,Better move out of there.”,100.0,69.0,85.714,76.636,69.0,100.0
+bear,43,0.35,93.236,68.0,25.236,"and then we rented canoes,",100.0,86.792,88.073,98.077,86.792,100.0
+triplett_v2-catlady,20,0.62,96.925,71.429,25.496,And we went to where they found his baseball cap – near the old mill,100.0,93.204,94.495,100.0,93.204,100.0
+doSomething,9,0.11,90.814,65.263,25.55,"there's this guy sitting over here to the right,",98.02,76.923,93.396,94.915,76.923,98.02
+schissel_v2-lake,5,0.28,94.096,68.367,25.728,she spotted a frog near the water's edge or,95.05,83.333,98.0,100.0,83.333,100.0
+panic,51,0.91,46.803,21.0,25.803,the help of the quick action of the manager,29.245,36.893,88.073,33.0,29.245,88.073
+stein,14,0.11,99.286,73.196,26.09,And I had sense enough to get the kids into the stairway so that they wouldn't get hurt by flyin' glass.,100.0,100.0,97.143,100.0,97.143,100.0
+boyscout,19,1.0,97.248,71.134,26.114,and grabbed me.,100.0,88.991,100.0,100.0,88.991,100.0
+triplett_v1-rookie,7,0.22,60.541,34.343,26.197,I never observed it.,47.904,53.465,77.0,63.793,47.904,77.0
+doSomething,58,0.72,84.298,57.895,26.403,"so we pulled up to the stop at this sign,",79.208,87.5,76.415,94.068,76.415,94.068
+schissel_v1-pool,16,0.89,95.017,68.519,26.499,"And... my beautiful dress was ruined,",100.0,81.905,98.165,100.0,81.905,100.0
+doSomething,2,0.02,68.745,42.105,26.64,They'd had the games all scheduled for the diamond at Homestead High School.,100.0,24.038,50.943,100.0,24.038,100.0
+doSomething,12,0.15,83.488,56.842,26.646,And he starts creeping out onto Twenty-four,88.119,96.154,80.189,69.492,69.492,96.154
+schissel_v1-pool,3,0.17,71.508,44.444,27.064,where everyone was dressed to impress.,82.857,63.81,40.367,99.0,40.367,99.0
+boyscout,17,0.89,97.248,70.103,27.145,"And for no reason at all there was another guy, who had just walked up that minute...",100.0,88.991,100.0,100.0,88.991,100.0
+stein,21,0.16,72.953,45.361,27.592,"I was scared to death,",99.083,66.0,80.0,46.729,46.729,99.083
+triplett_v2-catlady,21,0.66,83.857,56.122,27.735,and we trailed a bit more,90.741,82.524,86.239,75.926,75.926,90.741
+triplett_v2-catlady,18,0.56,47.237,19.388,27.849,I was strategizing.,75.926,52.427,55.963,4.63,4.63,75.926
+hester_v1-park,3,0.06,85.009,57.143,27.866,I had just started my first job.,97.59,48.0,94.444,100.0,48.0,100.0
+doSomething,70,0.86,79.527,51.579,27.948,the guy stops way far away from the intersection.,73.267,66.346,80.189,98.305,66.346,98.305
+triplett_v2-catlady,16,0.5,96.544,68.367,28.177,and said “Well we'll go find him,99.074,99.029,88.073,100.0,88.073,100.0
+triplett_v1-rookie,8,0.25,88.828,60.606,28.222,Truth is I wasn't very fond of her because she was –,97.006,83.168,76.0,99.138,76.0,99.138
+doSomething,11,0.14,76.793,48.421,28.372,Looked like he's about in his middle fifties.,91.089,42.308,75.472,98.305,42.308,98.305
+schissel_v2-lake,3,0.17,68.216,39.796,28.42,and we were enjoying a peaceful afternoon.,61.386,54.63,71.0,85.849,54.63,85.849
+triplett_v1-rookie,22,0.69,92.373,63.636,28.737,and we couldn't locate her.,100.0,85.149,99.0,85.345,85.149,100.0
+triplett_v1-rookie,6,0.19,93.552,64.646,28.906,And it seemed she was trying to impress me.,100.0,79.208,95.0,100.0,79.208,100.0
+triplett_v1-rookie,13,0.41,99.75,70.707,29.043,He arrived at my apartment.,100.0,100.0,99.0,100.0,99.0,100.0
+costa,14,0.07,86.155,56.989,29.166,"The nurse said, “Well, we’ve got to get her out of bed.”",90.643,80.198,96.552,77.228,77.228,96.552
+costa,9,0.05,63.732,34.409,29.324,"Back then, they used a lot of ether.",76.608,37.624,79.31,61.386,37.624,79.31
+boyscout,18,0.95,96.5,67.01,29.49,He just jumped over,100.0,88.991,98.0,99.01,88.991,100.0
+bear,3,0.02,95.588,66.0,29.588,when I started college.,100.0,95.283,88.991,98.077,88.991,100.0
+boyscout,6,0.32,97.874,68.041,29.833,"There was about 8 or 9 of us, you know, going down, coming back.",100.0,94.495,97.0,100.0,94.495,100.0
+hester_v2-church,39,0.72,93.954,64.0,29.954,That day marked the beginning of his recovery.,89.815,92.0,94.0,100.0,89.815,100.0
+schissel_v2-lake,9,0.5,85.189,55.102,30.087,and I told her I wasn't interested.,46.535,97.222,97.0,100.0,46.535,100.0
+panic,19,0.34,76.293,46.0,30.293,I could feel my heart pounding in my chest,64.151,66.019,100.0,75.0,64.151,100.0
+boyscout,10,0.53,96.33,65.979,30.351,"They thought I was just trying to catch up, because I was going on or slowing down.",100.0,85.321,100.0,100.0,85.321,100.0
+hester_v1-park,6,0.11,94.79,64.286,30.504,He had to use a wheelchair to get around.,100.0,82.0,98.148,99.01,82.0,100.0
+hester_v2-church,18,0.33,88.537,58.0,30.537,I was not a particularly religious person.,98.148,65.0,91.0,100.0,65.0,100.0
+schissel_v2-lake,8,0.44,93.981,63.265,30.716,I had just sat down to eat my sandwich,100.0,75.926,100.0,100.0,75.926,100.0
+costa,18,0.09,77.502,46.237,31.266,"So, they went to get her out of bed,",87.135,67.327,79.31,76.238,67.327,87.135
+hester_v1-park,46,0.85,95.608,64.286,31.322,and saw my father standing in the living room with the help of his walker.,96.988,91.0,94.444,100.0,91.0,100.0
+stein,63,0.48,66.473,35.052,31.421,And she – well I always thought of her as an educated person which she was because she was the only one I knew who had completed high school.,83.486,46.0,47.619,88.785,46.0,88.785
+stein,27,0.21,90.257,58.763,31.494,"I ran to Fourth street, because I knew my mother wa-",100.0,93.0,89.524,78.505,78.505,100.0
+stein,22,0.17,72.957,41.237,31.72,I really was frightened out of my wits.,99.083,66.0,80.952,45.794,45.794,99.083
+stein,5,0.04,99.762,68.041,31.721,"and after he had gotten in and put the furniture where it was supposed to go, my mother left, to go to market to get some food to bring into the house.",100.0,100.0,99.048,100.0,99.048,100.0
+doSomething,21,0.26,38.106,6.316,31.79,And he sits there and waits on.,20.792,16.346,16.981,98.305,16.346,98.305
+triplett_v2-catlady,8,0.25,92.09,60.204,31.886,Truth is I didn't take to him much because he had –,98.148,94.175,88.073,87.963,87.963,98.148
+boyscout,12,0.63,66.178,34.021,32.157,They leave me.,71.698,47.706,76.0,69.307,47.706,76.0
+triplett_v2-catlady,22,0.69,86.346,54.082,32.265,and we didn't find a trace.,99.074,59.223,94.495,92.593,59.223,99.074
+triplett_v2-catlady,9,0.28,97.624,65.306,32.318,He was a charming lad until you saw his manners.,99.074,94.175,97.248,100.0,94.175,100.0
+panic,44,0.79,99.05,66.0,33.05,He got me a glass of cold water,97.17,99.029,100.0,100.0,97.17,100.0
+hester_v1-park,45,0.83,78.202,43.878,34.325,I rushed home after work,74.699,52.0,86.111,100.0,52.0,100.0
+triplett_v2-catlady,11,0.34,97.624,63.265,34.359,Goodness gracious he had poor manners.,99.074,94.175,97.248,100.0,94.175,100.0
+triplett_v2-catlady,10,0.31,97.624,63.265,34.359,He had poor manners.,99.074,94.175,97.248,100.0,94.175,100.0
+triplett_v1-rookie,3,0.09,62.048,27.273,34.776,or had been awarded for bravery.,99.401,20.792,28.0,100.0,20.792,100.0
+doSomething,34,0.42,84.409,49.474,34.935,and she said “That guy is right on your tail!”,78.218,77.885,93.396,88.136,77.885,93.396
+triplett_v2-catlady,30,0.94,85.529,50.0,35.529,I laid low,88.889,66.99,86.239,100.0,66.99,100.0
+schissel_v1-pool,14,0.78,98.571,62.963,35.608,"she just started laughing,",100.0,94.286,100.0,100.0,94.286,100.0
+triplett_v1-rookie,2,0.06,59.049,23.232,35.817,He had caught a notorious criminal –,93.413,21.782,21.0,100.0,21.0,100.0
+triplett_v2-catlady,31,0.97,85.995,50.0,35.995,and stayed out of sight.,89.815,67.961,89.908,96.296,67.961,96.296
+boyscout,8,0.42,100.0,63.918,36.082,"and I started yelling ""Help!"",",100.0,100.0,100.0,100.0,100.0,100.0
+boyscout,11,0.58,92.876,56.701,36.175,So all of them kept going.,79.245,97.248,96.0,99.01,79.245,99.01
+costa,11,0.06,82.613,46.237,36.377,"They were just starting to get people out of bed, you know.",92.982,79.208,81.034,77.228,77.228,92.982
+triplett_v2-catlady,29,0.91,86.433,50.0,36.433,And I did.,89.815,66.019,90.826,99.074,66.019,99.074
+schissel_v1-pool,8,0.44,97.857,61.111,36.746,"And my aunt had just handed me a glass of champagne,",100.0,91.429,100.0,100.0,91.429,100.0
+boyscout,4,0.21,87.625,50.515,37.11,"but we was at the pier, marked off,",95.283,100.0,77.0,78.218,77.0,100.0
+schissel_v2-lake,16,0.89,100.0,62.245,37.755,And . . .; I couldn't help but laugh – uncontrollably.,100.0,100.0,100.0,100.0,100.0,100.0
+stein,6,0.05,94.345,55.67,38.675,And my father went to take the horses – take the team of horses back.,100.0,85.0,92.381,100.0,85.0,100.0
+costa,8,0.04,80.612,41.935,38.677,She was still under ether.,86.55,49.505,98.276,88.119,49.505,98.276
+doSomething,5,0.06,73.664,33.684,39.98,"and getting ready to turn there, at Ranch Eggs,",69.307,38.462,87.736,99.153,38.462,99.153
+triplett_v2-catlady,23,0.72,79.84,39.796,40.044,And returned,98.148,36.893,93.578,90.741,36.893,98.148
+triplett_v1-rookie,23,0.72,91.782,50.505,41.277,And returned,100.0,87.129,80.0,100.0,80.0,100.0
+hester_v1-park,4,0.07,97.435,56.122,41.313,And uh I was working as a graphic designer.,100.0,99.0,90.741,100.0,90.741,100.0
+stein,129,0.99,58.989,17.526,41.463,And it was terrible,91.743,29.0,63.81,51.402,29.0,91.743
+triplett_v1-rookie,14,0.44,99.255,57.576,41.679,Big intimidating look on his face.,100.0,98.02,99.0,100.0,98.02,100.0
+panic,47,0.84,85.881,44.0,41.881,the pressure in my chest slowly eased up,76.415,79.612,94.495,93.0,76.415,94.495
+costa,15,0.08,72.404,29.032,43.372,"She said, “What are you talking about? She’s still under ether.”",73.099,59.406,88.793,68.317,59.406,88.793
+panic,46,0.82,75.91,32.0,43.91,After a few minutes,71.698,73.786,87.156,71.0,71.0,87.156
+hester_v2-church,4,0.07,75.006,30.0,45.006,"It was a quiet afternoon, and I was alone in the store.",39.815,91.0,90.0,79.208,39.815,91.0
+panic,24,0.43,79.455,33.0,46.455,I just couldn't catch my breath,90.566,58.252,100.0,69.0,58.252,100.0
+schissel_v2-lake,15,0.83,98.595,52.041,46.554,and handed it to me.,99.01,95.37,100.0,100.0,95.37,100.0
+schissel_v1-pool,6,0.33,84.736,37.037,47.699,- this was at a fancy hotel garden -,100.0,65.714,75.229,98.0,65.714,100.0
+schissel_v1-pool,13,0.72,95.114,46.296,48.817,"When I resurfaced, gasping for air,",100.0,92.381,88.073,100.0,88.073,100.0
+triplett_v1-rookie,15,0.47,93.562,44.444,49.117,I managed to calm him down.,100.0,75.248,99.0,100.0,75.248,100.0
+panic,25,0.45,65.875,14.0,51.875,I was really scared,100.0,58.252,97.248,8.0,8.0,100.0
+stein,7,0.05,77.894,25.773,52.121,But he didn't come home.,99.083,39.0,81.905,91.589,39.0,99.083
+triplett_v2-catlady,14,0.44,92.07,37.755,54.315,Big old tabby cat in tow.,100.0,73.786,94.495,100.0,73.786,100.0
+schissel_v1-pool,9,0.5,71.001,16.667,54.334,and I warned her to be careful.,81.905,40.952,76.147,85.0,40.952,85.0
+doSomething,20,0.25,97.841,43.158,54.683,but I hurried up and got in there ahead of him.,100.0,92.308,99.057,100.0,92.308,100.0
+triplett_v2-catlady,15,0.47,94.367,37.755,56.612,I talked her down,99.074,91.262,89.908,97.222,89.908,99.074
+hester_v1-park,49,0.91,91.656,34.694,56.962,That was the turning point in his recovery.,100.0,77.0,92.593,97.03,77.0,100.0
+schissel_v1-pool,15,0.83,97.619,35.185,62.434,and she apologized profusely.,100.0,90.476,100.0,100.0,90.476,100.0

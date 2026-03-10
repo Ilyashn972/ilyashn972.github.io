@@ -1,0 +1,14 @@
+story,corr_human_vs_gpt4o,corr_human_vs_llama,corr_human_vs_deepseek,corr_human_vs_gpt_oss_120b
+schissel_v1-pool,0.437,0.733,0.608,0.445
+schissel_v2-lake,0.864,0.865,0.792,0.706
+boyscout,0.767,0.552,0.777,0.749
+triplett_v1-rookie,0.604,0.514,0.798,0.455
+triplett_v2-catlady,0.564,0.584,0.598,0.538
+hester_v1-park,0.72,0.826,0.688,0.792
+hester_v2-church,0.789,0.78,0.734,0.85
+panic,0.681,0.584,0.606,0.666
+doSomething,0.692,0.759,0.803,0.674
+bear,0.681,0.309,0.773,0.634
+stein,0.649,0.738,0.748,0.619
+costa,0.712,0.687,0.562,0.4
+mean,0.68,0.661,0.707,0.627

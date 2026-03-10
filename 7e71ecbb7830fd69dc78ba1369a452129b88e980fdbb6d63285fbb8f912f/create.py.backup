@@ -1,0 +1,10 @@
+def main():
+    prefix = input("Please enter default file name: ")
+    png_file = input(f"Please enter png file name: default: {prefix}.png") or f"{prefix}.png"
+    python_file = input(f"Please enter python file name: default: {prefix}.py") or f"{prefix}.py"
+    html_file = input(f"Please enter html file name: default: {prefix}.html") or f"{prefix}.html"
+    
+    # TODO read file template.html save it as html_file but replace all $PNG_FILE and $PYTHON_FILE with the corresponding values
+
+if __name__ == "__main__":
+    main()
