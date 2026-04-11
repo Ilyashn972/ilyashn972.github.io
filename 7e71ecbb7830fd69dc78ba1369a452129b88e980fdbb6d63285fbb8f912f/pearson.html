@@ -4,99 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pearson Correlation Images</title>
+    <title>Pearson</title>
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Pearson Correlation Images</h1>
-        <h3>Pearson correlation between segments recalled by the same clause.</h3>
+        <h1>Pearson</h1>
+    <h3>See code at <a
+            href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/pearson_heatmap.py">
+            experiments/pearson_heatmap.py</a>
+        and <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/tools/calculate_pearson_matrix.py">tools/calculate_pearson_matrix.py</a>
+    </h3>
     </header>
+
+    <section class="methodology" id="methodology">
+        <h2>How these plots were created</h2>
+        <p>
+            Each heatmap summarizes co-occurrence of <strong>story segments</strong> across <strong>clauses</strong>,
+            using the processed assignment file
+            <code>data/processed/&lt;story&gt;/clauses_to_segments_set.csv</code>.
+            Every row is one clause; the column <code>segment_ids</code> is a set of segment indices (1-based) that
+            clause was linked to (the same “fan-out” structure used elsewhere in this project).
+        </p>
+        <p>
+            For a story with <em>N</em> segments, the pipeline builds one <strong>binary vector per segment</strong>,
+            with length equal to the number of clauses. Entry <em>j</em> is 1 if segment <em>i</em> appears in clause
+            <em>j</em>&rsquo;s <code>segment_ids</code>, and 0 otherwise. Pairs of segments that tend to appear together
+            in the same clauses get vectors that rise and fall together; segments that rarely co-occur get vectors that
+            are more independent.
+        </p>
+        <p>
+            For each pair of distinct segments <em>i</em> and <em>j</em>, the code calls
+            <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html"><code>scipy.stats.pearsonr</code></a>
+            on the two binary vectors. That value is the off-diagonal entry in the heatmap (the diagonal is left unset in
+            the matrix used for plotting). The static PNG on this page is produced by
+            <code>plot_middle_level</code> in <code>pearson_heatmap.py</code>, which uses
+            <code>tools/plot_matrix.plot_matrix</code>: a Seaborn heatmap with the <code>&quot;cool&quot;</code> colormap,
+            axes labeled by segment id, and light grid lines every five segments.
+        </p>
+        <p>
+            <strong>How to read it:</strong> warmer colors mean stronger positive correlation between two segments&rsquo;
+            presence across clauses (they co-occur more than uncorrelated segments would). Negative values mean segments
+            tend to appear in disjoint sets of clauses. The companion page
+            <a href="pearson_p_value.html">Pearson <em>p</em>-value</a> shows the same pairs with emphasis on statistical
+            significance at <em>p</em> &le; 0.05.
+        </p>
+    </section>
 
     <section class="toc">
         <h2>Table of Contents</h2>
         <ul>
-            <li><a href="#bear">Bear</a></li>
+            <li><a href="#methodology">How these plots were created</a></li>
+            <li><a href="#schissel-v1-pool">Schissel v1 Pool</a></li>
+            <li><a href="#schissel-v2-lake">Schissel v2 Lake</a></li>
             <li><a href="#boy-scout">Boy Scout</a></li>
-            <li><a href="#costa">Costa</a></li>
-            <li><a href="#do-something">Do Something</a></li>
+            <li><a href="#triplett-v1-rookie">Triplett v1 Rookie</a></li>
+            <li><a href="#triplett-v2-cat-lady">Triplett v2 Cat Lady</a></li>
             <li><a href="#hester-v1-park">Hester v1 Park</a></li>
             <li><a href="#hester-v2-church">Hester v2 Church</a></li>
             <li><a href="#panic">Panic</a></li>
-            <li><a href="#schissel-v1-pool">Schissel v1 Pool</a></li>
-            <li><a href="#schissel-v2-lake">Schissel v2 Lake</a></li>
+            <li><a href="#do-something">Do Something</a></li>
+            <li><a href="#bear">Bear</a></li>
             <li><a href="#stein">Stein</a></li>
-            <li><a href="#stein-final">Stein Final</a></li>
-            <li><a href="#triplett-v1-rookie">Triplett v1 Rookie</a></li>
-            <li><a href="#triplett-v2-cat-lady">Triplett v2 Cat Lady</a></li>
+            <li><a href="#costa">Costa</a></li>
         </ul>
-    </section>
-
-    <section class="image-section" id="bear">
-        <h2>Bear</h2>
-        <img src="bear/pearson.png" alt="Bear">
-    </section>
-
-    <section class="image-section" id="boy-scout">
-        <h2>Boy Scout</h2>
-        <img src="boyscout/pearson.png" alt="Boy Scout">
-    </section>
-
-    <section class="image-section" id="costa">
-        <h2>Costa</h2>
-        <img src="costa/pearson.png" alt="Costa">
-    </section>
-
-    <section class="image-section" id="do-something">
-        <h2>Do Something</h2>
-        <img src="doSomething/pearson.png" alt="Do Something">
-    </section>
-
-    <section class="image-section" id="hester-v1-park">
-        <h2>Hester v1 Park</h2>
-        <img src="hester_v1-park/pearson.png" alt="Hester v1 Park">
-    </section>
-
-    <section class="image-section" id="hester-v2-church">
-        <h2>Hester v2 Church</h2>
-        <img src="hester_v2-church/pearson.png" alt="Hester v2 Church">
-    </section>
-
-    <section class="image-section" id="panic">
-        <h2>Panic</h2>
-        <img src="panic/pearson.png" alt="Panic">
-    </section>
-
-    <section class="image-section" id="schissel-v1-pool">
-        <h2>Schissel v1 Pool</h2>
-        <img src="schissel_v1-pool/pearson.png" alt="Schissel v1 Pool">
-    </section>
-
-    <section class="image-section" id="schissel-v2-lake">
-        <h2>Schissel v2 Lake</h2>
-        <img src="schissel_v2-lake/pearson.png" alt="Schissel v2 Lake">
-    </section>
-
-    <section class="image-section" id="stein">
-        <h2>Stein</h2>
-        <img src="stein/pearson.png" alt="Stein">
-    </section>
-
-    <section class="image-section" id="stein-final">
-        <h2>Stein Final</h2>
-        <img src="stein_final/pearson.png" alt="Stein Final">
-    </section>
-
-    <section class="image-section" id="triplett-v1-rookie">
-        <h2>Triplett v1 Rookie</h2>
-        <img src="triplett_v1-rookie/pearson.png" alt="Triplett v1 Rookie">
-    </section>
-
-    <section class="image-section" id="triplett-v2-cat-lady">
-        <h2>Triplett v2 Cat Lady</h2>
-        <img src="triplett_v2-catlady/pearson.png" alt="Triplett v2 Cat Lady">
-    </section>
+        </section>
+        
+        <section class="image-section" id="schissel-v1-pool">
+            <h2>Schissel v1 Pool</h2>
+            <img src="schissel_v1-pool/pearson.png" alt="Schissel v1 Pool">
+            <!-- schissel_v1-pool -->
+        </section>
+        
+        <section class="image-section" id="schissel-v2-lake">
+            <h2>Schissel v2 Lake</h2>
+            <img src="schissel_v2-lake/pearson.png" alt="Schissel v2 Lake">
+            <!-- schissel_v2-lake -->
+        </section>
+        
+        <section class="image-section" id="boy-scout">
+            <h2>Boy Scout</h2>
+            <img src="boyscout/pearson.png" alt="Boy Scout">
+            <!-- boyscout -->
+        </section>
+        
+        <section class="image-section" id="triplett-v1-rookie">
+            <h2>Triplett v1 Rookie</h2>
+            <img src="triplett_v1-rookie/pearson.png" alt="Triplett v1 Rookie">
+            <!-- triplett_v1-rookie -->
+        </section>
+        
+        <section class="image-section" id="triplett-v2-cat-lady">
+            <h2>Triplett v2 Cat Lady</h2>
+            <img src="triplett_v2-catlady/pearson.png" alt="Triplett v2 Cat Lady">
+            <!-- triplett_v2-catlady -->
+        </section>
+        
+        <section class="image-section" id="hester-v1-park">
+            <h2>Hester v1 Park</h2>
+            <img src="hester_v1-park/pearson.png" alt="Hester v1 Park">
+            <!-- hester_v1-park -->
+        </section>
+        
+        <section class="image-section" id="hester-v2-church">
+            <h2>Hester v2 Church</h2>
+            <img src="hester_v2-church/pearson.png" alt="Hester v2 Church">
+            <!-- hester_v2-church -->
+        </section>
+        
+        <section class="image-section" id="panic">
+            <h2>Panic</h2>
+            <img src="panic/pearson.png" alt="Panic">
+            <!-- panic -->
+        </section>
+        
+        <section class="image-section" id="do-something">
+            <h2>Do Something</h2>
+            <img src="doSomething/pearson.png" alt="Do Something">
+            <!-- doSomething -->
+        </section>
+        
+        <section class="image-section" id="bear">
+            <h2>Bear</h2>
+            <img src="bear/pearson.png" alt="Bear">
+            <!-- bear -->
+        </section>
+        
+        <section class="image-section" id="stein">
+            <h2>Stein</h2>
+            <img src="stein/pearson.png" alt="Stein">
+            <!-- stein -->
+        </section>
+        
+        <section class="image-section" id="costa">
+            <h2>Costa</h2>
+            <img src="costa/pearson.png" alt="Costa">
+            <!-- costa -->
+        </section>
 
 </body>
 
