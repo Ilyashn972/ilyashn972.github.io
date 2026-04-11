@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Per-story SVD views of recall-by-segment binary matrices built from clause-to-segment assignments; methodology and links to generating code.">
     <title>Projecting mappings to 2 components using SVD</title>
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
@@ -15,9 +17,45 @@
             and at <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/tools/svd_processor.py"> svd_processor.py</a></h3>
     </header>
 
+    <section class="methodology" id="methodology">
+        <h2>How these plots were created</h2>
+        <p>
+            Each figure summarizes the same <strong>clause-to-segment</strong> assignments as other analyses in this
+            project, but aggregated so each row is one <strong>recall</strong> instead of one clause. The script reads
+            <code>data/processed/&lt;story&gt;/clauses_to_segments_set.csv</code> (column <code>recall_id</code>,
+            <code>segment_ids</code> as Python sets of 1-based segment indices) and
+            <code>data/processed/&lt;story&gt;/segments.csv</code> for <code>max_segment_id</code>.
+        </p>
+        <p>
+            For each distinct <code>recall_id</code>, the pipeline builds one binary row of length <em>N</em> (number of
+            segments). Column <em>s</em> is 1 if <em>any</em> clause from that recall lists segment <em>s</em> in
+            <code>segment_ids</code>, and 0 otherwise (<code>create_segment_matrix</code> in
+            <code>experiments/chunks_monochrome.py</code>). The result is a dense recall&times;segment incidence matrix.
+        </p>
+        <p>
+            It runs an economy-size
+            <a href="https://numpy.org/doc/stable/reference/generated/numpy.linalg.svd.html"><code>numpy.linalg.svd</code></a>
+            on that matrix (<code>SVDProcessor</code> in <code>tools/svd_processor.py</code>). The saved PNG is the
+            Matplotlib figure from <code>present_svd</code>: a 2&times;2 layout with the <code>&quot;cool&quot;</code>
+            colormap on the heatmap. Rows of the heatmap are reordered by ascending scores from the second column of
+            <code>U</code> (0-based index 1) so recalls with similar loadings appear together. The other panels plot that
+            same column of <code>U</code> (after sorting), the corresponding row of <code>VT</code> from
+            <code>numpy.linalg.svd</code> (a right singular vector) over segment index, and the singular values
+            <code>S</code> (scree-style). Subplot titles follow the code&rsquo;s
+            wording (&ldquo;First&rdquo; singular vector / projection refer to that second singular direction).
+        </p>
+        <p>
+            <strong>How to read it:</strong> the heatmap shows which segments appear in which recalls; block-like
+            structure after row reordering suggests groups of recalls sharing segment patterns. The segment-axis curve
+            shows which segments rise or fall on the highlighted singular mode; the singular-value panel shows how
+            sharply the spectrum decays (how much structure is captured by the first few modes).
+        </p>
+    </section>
+
     <section class="toc">
         <h2>Table of Contents</h2>
         <ul>
+            <li><a href="#methodology">How these plots were created</a></li>
             <li><a href="#bear">Bear</a></li>
             <li><a href="#boy-scout">Boy Scout</a></li>
             <li><a href="#costa">Costa</a></li>
