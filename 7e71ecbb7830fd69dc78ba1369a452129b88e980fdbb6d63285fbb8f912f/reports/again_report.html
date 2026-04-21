@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delayed Recall (Again) Report</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <style>
+    table { border-collapse: collapse; margin: 1em 0; }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+    th { background: #f5f5f5; }
+  </style>
+</head>
+<body>
+  <h1>Delayed Recall (Again) — Narrative Report</h1>
+
+  <p>This report summarizes work on <strong>delayed recall</strong> experiments: subjects recalled the Costa story immediately and again after a delay (one month for text-only, one week for multimedia). It covers methodology, key statistics (c and n), structural findings (fan-out, intrusions), a notable result on the “orange” detail, and the use of an LLM to split and map recall chunks to the narrative.</p>
+
+  <h2>1. Experiments and methodology</h2>
+  <p>Two experiments were run:</p>
+  <ul>
+    <li><strong>Experiment 1 (text-only):</strong> Subjects read the Costa story as text and wrote recall immediately, then again after <strong>one month</strong>. 32 users returned for the delayed recall.</li>
+    <li><strong>Experiment 2 (multimedia):</strong> Subjects listened to an illustrated version (audio + images) and wrote recall immediately, then again after <strong>one week</strong>. 39 users returned for the delayed recall.</li>
+  </ul>
+  <p>All plots, raster views, and detailed analyses are collected on the experiments page:</p>
+  <p><a href="../again/experiments.html">Again experiments (plots and navigation)</a></p>
+
+  <h2>2. Average c and n (October 2025)</h2>
+  <p>Average <em>n</em> (number of segments) and <em>c</em> (caught segments, with and without intrusions) were computed for each condition:</p>
+  <table>
+    <thead>
+      <tr><th>Condition</th><th>Average n</th><th>Average c (no intrusions)</th><th>Average c (with intrusions)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Costa (text-only)</td><td>95.52</td><td>26.52</td><td>27.64</td></tr>
+      <tr><td>Costa after a month</td><td>106.56</td><td>17.3</td><td>19.25</td></tr>
+      <tr><td>Costa multimedia</td><td>109.67</td><td>32.45</td><td>34.21</td></tr>
+      <tr><td>Costa multimedia after a week</td><td>126.51</td><td>25.36</td><td>27.44</td></tr>
+    </tbody>
+  </table>
+  <p>Intrusions were identified with a simple heuristic: <code>fan_out == 0</code> (segments not mapped to any narrative clause in the recall).</p>
+
+  <h2>3. Fan-out distribution and intrusions</h2>
+  <p>The fan-out distribution was added to the report that compares immediate vs delayed recalls. Main observations:</p>
+  <ul>
+    <li><strong>fan_out == 0</strong> grows significantly for delayed recalls (more “intrusion-like” or unmapped segments).</li>
+    <li>Higher fan-out values are more frequent in delayed recalls.</li>
+  </ul>
+  <p>See the fan-out distribution section on the experiments page:</p>
+  <p><a href="../again/experiments.html#fan-out-dist">Fan-out distribution (again/experiments.html#fan-out-dist)</a></p>
+
+  <h2>4. Orange recall finding (September 2025)</h2>
+  <p>A concrete detail—the <strong>orange</strong> in the Costa story—was used to compare text-only vs multimedia and immediate vs delayed recall:</p>
+  <ul>
+    <li><strong>Text-only (no pictures):</strong> 7 of 44 subjects remembered the orange immediately; none after a month.</li>
+    <li><strong>Multimedia:</strong> 18 of 42 subjects recalled the orange immediately; 10 still remembered it after a week (39 recalls in total). Only 8 subjects recalled the orange both immediately and after a week.</li>
+  </ul>
+  <p>This illustrates how modality and delay affect recall of a specific visual detail.</p>
+
+  <h2>5. LLM split-and-map and compression ratio (December 2025)</h2>
+  <p>Recall-to-narrative mapping for delayed recalls is challenging: delayed recalls are more ambiguous, and segmenting the recall text itself was not fully reliable. To address this, an approach was tried where an <strong>LLM (GPT-5.2)</strong> is asked in a single call to both <strong>split the recall into chunks</strong> and <strong>map each chunk to contiguous narrative segments</strong>.</p>
+  <p>At first glance the results looked reasonably good. Example pages:</p>
+  <ul>
+    <li><a href="../again/costa_ilya-no-summary-again_all_recall_chunks_to_narrative_chunks_v2_014f1d545978.gpt-5.2.html">Costa (no summary) after a month — recall chunks to narrative chunks (GPT-5.2)</a></li>
+    <li><a href="../again/costa_multimedia-again_all_recall_chunks_to_narrative_chunks_v2_014f1d545978.gpt-5.2.html">Costa multimedia after a week — recall chunks to narrative chunks (GPT-5.2)</a></li>
+  </ul>
+  <p>The <strong>compression ratio</strong> (narrative length / recall length) was computed and plotted as a density (to account for shorter delayed recalls). Only subjects who provided both immediate and delayed recalls were included.</p>
+  <p>Plots and details:</p>
+  <p><a href="../again/experiments.html#compression-ratio">Compression ratio histogram (again/experiments.html#compression-ratio)</a></p>
+  <p><a href="../again/experiments.html#split-and-map">Split and map chunks analysis (again/experiments.html#split-and-map)</a></p>
+
+  <h2>6. Quick links</h2>
+  <ul>
+    <li><a href="../again/experiments.html">Again experiments (full page with all plots)</a></li>
+    <li><a href="../index.html">Back to Story Recall Research index</a></li>
+  </ul>
+</body>
+</html>

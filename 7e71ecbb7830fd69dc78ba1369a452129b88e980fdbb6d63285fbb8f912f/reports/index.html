@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports — Story Recall Research</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <style>
+    .report-list { list-style: none; padding-left: 0; }
+    .report-list li { margin-bottom: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 1em; }
+    .report-list li:last-child { border-bottom: none; }
+    .report-title { font-size: 1.1em; font-weight: bold; margin-bottom: 0.25em; }
+    .report-title a { color: #0645ad; text-decoration: none; }
+    .report-title a:hover { text-decoration: underline; }
+    .report-desc { color: #333; line-height: 1.5; margin: 0; }
+  </style>
+</head>
+<body>
+  <h1>Reports</h1>
+  <p>This page lists the main reports that describe the Story Recall Research work. Each report is linked below with a short description of its contents.</p>
+  <p><a href="../index.html">Back to Story Recall Research index</a></p>
+
+  <h2>Narrative and summary reports</h2>
+  <ul class="report-list">
+    <li>
+      <div class="report-title"><a href="again_report.html">Again report (delayed recall)</a></div>
+      <p class="report-desc">Narrative summary of delayed-recall experiments: methodology (text-only after one month, multimedia after one week), average <em>c</em> and <em>n</em>, fan-out and intrusions, the “orange” recall finding, and LLM split-and-map (GPT-5.2) with compression ratio. Links to the full again/experiments page.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="again.html">Again folder inventory</a></div>
+      <p class="report-desc">Index of everything in <code>again/</code>: entrypoints, counts by file type, largest/recent files, CSV-backed table-view symlinks, and per-subfolder listings with links.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="story_pairs_report.html">Story pairs report</a></div>
+      <p class="report-desc">Analysis of p-caught and p-rec correlation across story pairs (Schissel, Triplett, Hester). Method, scatter plots, and finding that there is no correlation for Hester. Links to story_pairs plots.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="model_comparison_report.html">Model comparison report</a></div>
+      <p class="report-desc">Comparison of GPT-4o vs GPT-5.2 and of different prompts for p-caught correlation with human recall. Main findings: prompt matters less than model; GPT-4o is more human-like than GPT-5.2. Notes on temperature and peak recall. Links to Costa p-caught comparison explanation.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="costa_multimedia_report.html">Costa multimedia report</a></div>
+      <p class="report-desc">Documentation of the Costa multimedia dataset: purpose, first illustration attempt (Jul 2025), limitations (TTS/STT, consistency). Links to review page, interactive story, and dataset zip.</p>
+    </li>
+  </ul>
+
+  <h2>Meaningful bits</h2>
+  <ul class="report-list">
+    <li>
+      <div class="report-title"><a href="leave_one_out_report.html">Comprehensive leave-one-out report (Costa MBits)</a></div>
+      <p class="report-desc">Canonical leave-one-out documentation for Costa MBits: research question, methodology, prompts/rephrasing context, full plot catalog (2,3,4,5,6,7,8,9,1000,1175,all), reproducibility commands, interpretation notes, and limitations.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="mbits.html">Mbits report</a></div>
+      <p class="report-desc">Results related to meaningful bits (difference in sum of log-probabilities with vs without recall as preceding context). Includes prompts, same-subject mbits plots, recall-vs-summaries plots, and links to various mbits visualizations and code.</p>
+    </li>
+  </ul>
+
+  <h2>Emulation and recall simulation</h2>
+  <ul class="report-list">
+    <li>
+      <div class="report-title"><a href="emulation.html">Emulation report</a></div>
+      <p class="report-desc">Toward emulating human recall: LLM-based emulation (keypoints vs clauses, correlation vs GPT-4o max clause id, heatmaps, etc.) and links to plots grouped by story. Compares emulated vs real recall patterns.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="emulation_by_robot.html">Emulation by Robot report</a></div>
+      <p class="report-desc">Model comparison table for emulating a person by a robot: different models and methods with thumbnails and links to detailed plots and data.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="recall_emulation_report.html">Recall emulation report</a></div>
+      <p class="report-desc">Main recall-emulation report: Pearson correlation (story × model) of human vs model p-caught for GPT-4o, Llama, DeepSeek, GPT-OSS-120B; self-correlation; text length stats; segment- and keypoint-level tables; links to CSV-backed tables and scripts.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="recall_emulation_plots.html">Recall emulation plots</a></div>
+      <p class="report-desc">Per-story p-caught comparison: one plot per story (schissel, boyscout, triplett, hester, panic, doSomething, bear, stein, costa). Human vs model p-caught. Links to individual plot pages; some views use iframes.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="correlation_bar.html">Correlation bar</a></div>
+      <p class="report-desc">Bar chart of story × model correlations (human p-caught vs each model’s p-caught) across stories, for quick comparison of how well each model matches human recall.</p>
+    </li>
+  </ul>
+
+  <h2>Aggregate tables</h2>
+  <ul class="report-list">
+    <li>
+      <div class="report-title"><a href="all_stories_pcaught_table.html">All stories p-caught table</a></div>
+      <p class="report-desc">Interactive, sortable table of segment-level p-caught across all stories: one row per (story, segment_id) with human and model p-caught, model mean/min/max, and <code>mean_minus_human</code>. Sorted so segments where models diverge most from humans are easy to find.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="all_stories_keypoints_table.html">All stories keypoints table</a></div>
+      <p class="report-desc">Interactive, sortable table of keypoint-level (clause) p-caught across all stories: one row per keypoint with aggregated human and model p-caught and <code>mean_minus_human</code>. For finding key ideas where models under- or over-catch relative to humans.</p>
+    </li>
+  </ul>
+
+  <p><a href="../index.html">Back to Story Recall Research index</a></p>
+</body>
+</html>

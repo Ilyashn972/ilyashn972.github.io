@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Comparison Report (GPT-4o vs GPT-5.2)</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <style>
+    table { border-collapse: collapse; margin: 1em 0; }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+    th { background: #f5f5f5; }
+  </style>
+</head>
+<body>
+  <h1>Model Comparison: GPT-4o vs GPT-5.2 for p-caught Correlation</h1>
+
+  <p>This report summarizes how different models (GPT-4o and GPT-5.2) and different prompts (e.g. emulation vs key points) affect how well generated recalls match human recall patterns, as measured by <strong>p-caught correlation</strong> with human data.</p>
+
+  <h2>Main findings (Jan 2026)</h2>
+  <p>Analysis of how models and prompts impact p-caught correlation led to two main conclusions:</p>
+  <ol>
+    <li><strong>Prompt is less important than model.</strong> The choice of prompt (e.g. “emulate recall” vs “extract key points”) has less impact on how well the results match human recall patterns than the choice of model.</li>
+    <li><strong>GPT-4o is more human-like than GPT-5.2.</strong> When comparing emulated recalls with the same prompt, GPT-4o produces recall patterns that correlate significantly better with human recall patterns than GPT-5.2.</li>
+  </ol>
+
+  <h2>Temperature and peak recall (Feb 2026)</h2>
+  <p>Follow-up work suggested that GPT-5.2’s lower correlation with human p-caught may be related to <strong>temperature</strong>: GPT-5.2 does not support temperature control, so its responses are more similar across runs. As a result, the most recalled segments (peaks) tend to be much higher than in human recalls, which can reduce correlation with human p-caught.</p>
+
+  <h2>Detailed comparison and plots</h2>
+  <p>The full explanation, method descriptions, and interactive plot are on the Costa p-caught comparison page:</p>
+  <p><a href="../costa/pcaught_comparison_explanation.html">P-caught comparison: Human recall emulation (GPT-4o vs GPT-5.2, prompts)</a></p>
+  <p>To open the plot in a new window, use the “View plot in new window” link on that page.</p>
+
+  <h2>Quick links</h2>
+  <ul>
+    <li><a href="../costa/pcaught_comparison_explanation.html">P-caught comparison explanation</a></li>
+    <li><a href="../index.html">Back to Story Recall Research index</a></li>
+  </ul>
+</body>
+</html>

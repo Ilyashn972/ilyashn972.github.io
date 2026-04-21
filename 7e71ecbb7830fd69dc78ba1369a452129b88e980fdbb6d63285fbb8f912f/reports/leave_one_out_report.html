@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprehensive Leave-One-Out Report (Costa MBits)</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <style>
+    table { border-collapse: collapse; margin: 1em 0; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; }
+    code { background: #f7f7f7; padding: 2px 4px; border-radius: 3px; }
+    .note { background: #f6fbff; border-left: 4px solid #4d93d9; padding: 10px 12px; margin: 1em 0; }
+    .warn { background: #fff9f0; border-left: 4px solid #d19a3f; padding: 10px 12px; margin: 1em 0; }
+    .mono-list li { margin: 0.35em 0; }
+  </style>
+</head>
+<body>
+  <h1>Comprehensive Leave-One-Out Report: Costa MBits</h1>
+
+  <p>
+    This report consolidates the leave-one-out MBits analysis for Costa into one canonical document.
+    It links all currently available leave-one-out plot variants, explains the pipeline and prompts,
+    and records reproducibility details for reruns and extensions.
+  </p>
+
+  <p>
+    Quick links:
+    <a href="../costa/mbits_costa_summary_leave_one_out_all.html">all</a> |
+    <a href="../costa/mbits_costa_summary_leave_one_out_2.html">2</a> |
+    <a href="../costa/mbits_costa_summary_leave_one_out_3.html">3</a> |
+    <a href="../costa/mbits_costa_summary_leave_one_out_4.html">4</a> |
+    <a href="../costa/mbits_costa_summary_leave_one_out_5.html">5</a> |
+    <a href="../costa/mbits_costa_summary_leave_one_out_6.html">6</a> |
+    <a href="../costa/mbits_costa_summary_leave_one_out_7.html">7</a> |
+    <a href="../costa/mbits_costa_summary_leave_one_out_8.html">8</a> |
+    <a href="../costa/mbits_costa_summary_leave_one_out_9.html">9</a> |
+    <a href="../costa/mbits_costa_summary_leave_one_out_1000.html">1000</a> |
+    <a href="../costa/mbits_costa_summary_leave_one_out_1175.html">1175</a>
+  </p>
+
+  <h2>1) Scope and research question</h2>
+  <p>
+    The leave-one-out analysis asks: <em>if one summary is held out, how do MBits change when comparing that held-out
+    summary against other summaries and against matched alternatives (recall, extractive Doron summary,
+    and random extractive Doron summary), including original and rephrased variants?</em>
+  </p>
+
+  <div class="note">
+    MBits here are computed as sums of token log-probability deltas through
+    <code>tools/get_mbits.py</code>, contrasting narrative probability with and without a preceding text context.
+  </div>
+
+  <h2>2) Main assets and scripts</h2>
+  <ul class="mono-list">
+    <li>Main generator: <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/experiments/mbits_summary_leave_one_out.py"><code>experiments/mbits_summary_leave_one_out.py</code></a></li>
+    <li>Core MBits function: <a href="https://github.com/Ilyashn972/llm-narrative-analysis/blob/main/tools/get_mbits.py"><code>tools/get_mbits.py</code></a></li>
+    <li>Detailed single-run explanation page: <a href="../costa/mbits_costa_summary_leave_one_out_5_explanation.html"><code>mbits_costa_summary_leave_one_out_5_explanation.html</code></a></li>
+  </ul>
+
+  <h2>3) Pipeline overview</h2>
+  <ol>
+    <li>Load Costa clauses and summary cache from processed data/cache paths in the script.</li>
+    <li>Choose an excluded summary (leave-one-out target) based on requested <code>target_length</code> logic.</li>
+    <li>Select length-matched comparators:
+      <ul>
+        <li>human recall closest in character count,</li>
+        <li>extractive Doron summary closest in character count,</li>
+        <li>random extractive Doron summary with similar length.</li>
+      </ul>
+    </li>
+    <li>Compute MBits for multiple modes in parallel (summary mode, recall mode, Doron mode, random Doron mode).</li>
+    <li>Compute additional “narrative/rephrased narrative after X” anchor points.</li>
+    <li>Render interactive Plotly output and write:
+      <code>html/costa/mbits_costa_summary_leave_one_out_{target_length}.html</code>.</li>
+  </ol>
+
+  <h2>4) Prompt and rephrasing context</h2>
+  <p>
+    The leave-one-out flow uses both original and rephrased text variants to separate content effects from lexical/syntactic wording effects.
+    Rephrasing prompts and the narrative rephrasing strategy are documented on:
+    <a href="../costa/mbits_costa_summary_leave_one_out_5_explanation.html">the dedicated explanation page</a>.
+  </p>
+
+  <h2>5) Experiment catalog</h2>
+  <p>
+    The following table inventories all currently available leave-one-out outputs under <code>html/costa/</code>.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Variant</th>
+        <th>Plot</th>
+        <th>Intended use</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>all</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_all.html">mbits_costa_summary_leave_one_out_all.html</a></td>
+        <td>Aggregate/overview variant for cross-checking broad behavior.</td>
+      </tr>
+      <tr>
+        <td><code>2</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_2.html">mbits_costa_summary_leave_one_out_2.html</a></td>
+        <td>Small-target setting to inspect behavior in very short summary regime.</td>
+      </tr>
+      <tr>
+        <td><code>3</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_3.html">mbits_costa_summary_leave_one_out_3.html</a></td>
+        <td>Short-summary leave-one-out stress test.</td>
+      </tr>
+      <tr>
+        <td><code>4</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_4.html">mbits_costa_summary_leave_one_out_4.html</a></td>
+        <td>Short-summary transition regime.</td>
+      </tr>
+      <tr>
+        <td><code>5</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_5.html">mbits_costa_summary_leave_one_out_5.html</a></td>
+        <td>Reference run with dedicated written explanation page.</td>
+      </tr>
+      <tr>
+        <td><code>6</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_6.html">mbits_costa_summary_leave_one_out_6.html</a></td>
+        <td>Mid-short summary setting for trend continuity checks.</td>
+      </tr>
+      <tr>
+        <td><code>7</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_7.html">mbits_costa_summary_leave_one_out_7.html</a></td>
+        <td>Near-default keypoint-sized region comparison.</td>
+      </tr>
+      <tr>
+        <td><code>8</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_8.html">mbits_costa_summary_leave_one_out_8.html</a></td>
+        <td>Medium-length leave-one-out view.</td>
+      </tr>
+      <tr>
+        <td><code>9</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_9.html">mbits_costa_summary_leave_one_out_9.html</a></td>
+        <td>Upper short-range setting before long-summary jumps.</td>
+      </tr>
+      <tr>
+        <td><code>1000</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_1000.html">mbits_costa_summary_leave_one_out_1000.html</a></td>
+        <td>Long-summary regime in character-length scale.</td>
+      </tr>
+      <tr>
+        <td><code>1175</code></td>
+        <td><a href="../costa/mbits_costa_summary_leave_one_out_1175.html">mbits_costa_summary_leave_one_out_1175.html</a></td>
+        <td>Long-summary regime with a different leave-one-out anchor.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>6) How to read the plots</h2>
+  <ul>
+    <li>X-axis: text length (character-based in this analysis context).</li>
+    <li>Y-axis: summed MBits/log-probability effect under the selected comparison mode.</li>
+    <li>Markers separate original vs rephrased variants (circles vs crosses in the documented reference run).</li>
+    <li>Traces are grouped by mode (summary, recall, extractive Doron, random extractive Doron), with narrative anchors.</li>
+    <li>The held-out summary defines the target context for leave-one-out in the given run.</li>
+  </ul>
+
+  <h2>7) Reproducibility</h2>
+  <p>
+    From project root, run:
+  </p>
+  <pre><code>python experiments/mbits_summary_leave_one_out.py costa 5
+python experiments/mbits_summary_leave_one_out.py costa 8
+python experiments/mbits_summary_leave_one_out.py costa 1000</code></pre>
+
+  <p>
+    Output convention:
+  </p>
+  <pre><code>html/costa/mbits_costa_summary_leave_one_out_{target_length}.html
+html/costa/mbits_costa_summary_leave_one_out_{target_length}.png</code></pre>
+
+  <p>
+    The script defaults to:
+    <code>story=costa</code> and <code>target_length=1000</code> when no CLI args are provided.
+  </p>
+
+  <h2>8) Interpretation notes</h2>
+  <ul>
+    <li>Consistency across nearby target lengths (e.g., 5–9) is useful as a robustness signal.</li>
+    <li>Divergence between original and rephrased traces can indicate wording sensitivity rather than content sensitivity.</li>
+    <li>Comparison to random extractive Doron acts as a control for structure-matched but semantically looser inputs.</li>
+    <li>Long-target runs (1000, 1175) can reveal scale effects that are not visible in short keypoint-like variants.</li>
+  </ul>
+
+  <h2>9) Limitations and threats to validity</h2>
+  <div class="warn">
+    <ul>
+      <li>Token-logprob derived MBits can vary by backend/model version and API behavior.</li>
+      <li>Length matching is approximate and may introduce residual confounding.</li>
+      <li>Rephrasing quality can differ by run/model response variability, affecting downstream MBits.</li>
+      <li>Single-story focus (Costa) limits direct generalization without repeating the protocol on additional stories.</li>
+    </ul>
+  </div>
+
+  <h2>10) Recommended next steps</h2>
+  <ul>
+    <li>Add a compact summary table with numeric deltas per target length directly on this page.</li>
+    <li>Add a cross-story leave-one-out replication page using the same pipeline interface.</li>
+    <li>Record exact cache/input files per run to strengthen provenance and exact rerun reproducibility.</li>
+  </ul>
+
+  <h2>11) Related pages</h2>
+  <ul>
+    <li><a href="../costa/mbits_costa_summary_leave_one_out_5_explanation.html">Detailed explanation for target length 5</a></li>
+    <li><a href="mbits.html">General MBits report index</a></li>
+    <li><a href="index.html">Reports index</a></li>
+    <li><a href="../index.html">Story Recall Research main index</a></li>
+  </ul>
+</body>
+</html>
