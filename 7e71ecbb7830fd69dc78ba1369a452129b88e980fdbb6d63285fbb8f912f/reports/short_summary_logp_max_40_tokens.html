@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Short summary logp vs story length (max 40 tokens)</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 2em; max-width: 1200px; }
+    table { border-collapse: collapse; margin: 1em 0; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+    th { background: #f5f5f5; }
+    .plot { margin: 2em 0; }
+    pre.prompt {
+      background: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: 12px;
+      white-space: pre-wrap;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Short summary logp vs narrative length</h1>
+  
+  <h2>Methodology</h2>
+  <h3>Summary generation</h3>
+  <ul>
+    <li><strong>Script</strong>: <code>experiments/short_summaries_max_tokens.py</code></li>
+    <li><strong>Model</strong>: <code>gpt-5.5</code></li>
+    <li><strong>System prompt</strong> (tokens limit N=40):</li>
+  </ul>
+  <pre class="prompt">
+I will give you a narrative below. Summarize it in at most 40 tokens per summary. Each summary should be as informative as possible within that token limit. Give me 10 such short summaries:
+The output must be in following JSON format:
+```json
+{
+  &quot;short_summaries&quot;: [&quot;short_summary1&quot;, &quot;short_summary2&quot;, ...]
+}
+```
+</pre>
+  <ul>
+    <li><strong>User message</strong>: the story narrative from <code>data/processed/{story}/{story}.json</code> (<code>narrative</code> field)</li>
+    <li><strong>Output</strong>: JSON with 10 summaries per story</li>
+  </ul>
+
+  <h3>Log-probability (logp) computation</h3>
+  <ul>
+    <li><strong>API</strong>: Together completions (<code>echo=True</code>, <code>logprobs=1</code>)</li>
+    <li><strong>Model</strong>: <code>meta-llama/Llama-3.3-70B-Instruct-Turbo</code></li>
+    <li><strong>Prompt template</strong>:</li>
+  </ul>
+  <pre class="prompt">&lt;|begin_of_text|&gt;{summary_text}</pre>
+  <ul>
+    <li><strong>Metric</strong>: unconditional <code>sum(logp)</code> over summary tokens (no story context)</li>
+    <li><strong>Hypothesis tested below</strong>: <code>sum(logp)</code> increases with narrative length</li>
+  </ul>
+
+  <h2>Summary length QA</h2>
+  <p>Check that generated summaries have similar length and do <strong>not</strong> depend on story length.
+  Target: at most 40 tokens per summary (GPT prompt); Llama token counts use meta-llama/Llama-3.3-70B-Instruct-Turbo.</p>
+  <table class='stats-table'><thead><tr><th>Metric</th><th>Mean</th><th>Std</th><th>Min</th><th>Max</th></tr></thead><tbody><tr><td>Summary length (characters)</td><td>119.1</td><td>11.7</td><td>89</td><td>146</td></tr><tr><td>Summary length (meta-llama/Llama-3.3-70B-Instruct-Turbo tokens)</td><td>23.5</td><td>2.5</td><td>16</td><td>30</td></tr></tbody></table>
+  <h3>Length vs narrative correlations</h3>
+  <p>Values near 0 (high p) support the claim that summary length is independent of story length.</p>
+  <table class='stats-table'><thead><tr><th>Comparison</th><th>n</th><th>Pearson r</th><th>p</th></tr></thead><tbody><tr><td>Narrative len vs summary len (chars)</td><td>120</td><td>0.3120</td><td>0.0005215</td></tr><tr><td>Narrative len vs summary len (tokens)</td><td>120</td><td>0.0076</td><td>0.934</td></tr><tr><td>Narrative len vs sum(logp)</td><td>120</td><td>-0.0461</td><td>0.6167</td></tr></tbody></table>
+
+  <p>Stories are ordered left-to-right by narrative length (characters, same order as
+  stories_names.txt). Each box summarizes 10 generated summaries for one story: the box spans the
+  interquartile range (25th–75th percentile), the line inside is the median, whiskers show the
+  remaining spread, and dots are individual summary lengths.</p>
+  <div class="plot"><div>                            <div id="24ed2860-fc5d-44bb-9641-b579830b9b38" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("24ed2860-fc5d-44bb-9641-b579830b9b38")) {                    Plotly.newPlot(                        "24ed2860-fc5d-44bb-9641-b579830b9b38",                        [{"boxpoints":"all","jitter":0.3,"name":"summary_len_tokens","pointpos":0,"x":["schissel_v1-pool","schissel_v1-pool","schissel_v1-pool","schissel_v1-pool","schissel_v1-pool","schissel_v1-pool","schissel_v1-pool","schissel_v1-pool","schissel_v1-pool","schissel_v1-pool","schissel_v2-lake","schissel_v2-lake","schissel_v2-lake","schissel_v2-lake","schissel_v2-lake","schissel_v2-lake","schissel_v2-lake","schissel_v2-lake","schissel_v2-lake","schissel_v2-lake","boyscout","boyscout","boyscout","boyscout","boyscout","boyscout","boyscout","boyscout","boyscout","boyscout","triplett_v1-rookie","triplett_v1-rookie","triplett_v1-rookie","triplett_v1-rookie","triplett_v1-rookie","triplett_v1-rookie","triplett_v1-rookie","triplett_v1-rookie","triplett_v1-rookie","triplett_v1-rookie","triplett_v2-catlady","triplett_v2-catlady","triplett_v2-catlady","triplett_v2-catlady","triplett_v2-catlady","triplett_v2-catlady","triplett_v2-catlady","triplett_v2-catlady","triplett_v2-catlady","triplett_v2-catlady","hester_v1-park","hester_v1-park","hester_v1-park","hester_v1-park","hester_v1-park","hester_v1-park","hester_v1-park","hester_v1-park","hester_v1-park","hester_v1-park","hester_v2-church","hester_v2-church","hester_v2-church","hester_v2-church","hester_v2-church","hester_v2-church","hester_v2-church","hester_v2-church","hester_v2-church","hester_v2-church","panic","panic","panic","panic","panic","panic","panic","panic","panic","panic","doSomething","doSomething","doSomething","doSomething","doSomething","doSomething","doSomething","doSomething","doSomething","doSomething","bear","bear","bear","bear","bear","bear","bear","bear","bear","bear","stein","stein","stein","stein","stein","stein","stein","stein","stein","stein","costa","costa","costa","costa","costa","costa","costa","costa","costa","costa"],"y":{"dtype":"f8","bdata":"AAAAAAAAN0AAAAAAAAA1QAAAAAAAADhAAAAAAAAANkAAAAAAAAA2QAAAAAAAADlAAAAAAAAAN0AAAAAAAAA0QAAAAAAAADVAAAAAAAAANEAAAAAAAAA4QAAAAAAAADdAAAAAAAAAOEAAAAAAAAA5QAAAAAAAADhAAAAAAAAAOEAAAAAAAAA1QAAAAAAAADdAAAAAAAAAN0AAAAAAAAA2QAAAAAAAADlAAAAAAAAAOEAAAAAAAAA7QAAAAAAAADVAAAAAAAAAO0AAAAAAAAA4QAAAAAAAADhAAAAAAAAANkAAAAAAAAA1QAAAAAAAADlAAAAAAAAAOEAAAAAAAAA5QAAAAAAAADdAAAAAAAAAN0AAAAAAAAA4QAAAAAAAADZAAAAAAAAAOUAAAAAAAAA5QAAAAAAAADdAAAAAAAAAOkAAAAAAAAA+QAAAAAAAADxAAAAAAAAAPkAAAAAAAAA6QAAAAAAAADdAAAAAAAAAOUAAAAAAAAA2QAAAAAAAADdAAAAAAAAANkAAAAAAAAA9QAAAAAAAAD5AAAAAAAAAOkAAAAAAAAA5QAAAAAAAADhAAAAAAAAAOEAAAAAAAAA3QAAAAAAAADdAAAAAAAAANkAAAAAAAAA4QAAAAAAAADdAAAAAAAAAOEAAAAAAAAA5QAAAAAAAADZAAAAAAAAAM0AAAAAAAAA4QAAAAAAAADRAAAAAAAAANkAAAAAAAAA0QAAAAAAAADVAAAAAAAAAN0AAAAAAAAA4QAAAAAAAADJAAAAAAAAAN0AAAAAAAAA2QAAAAAAAADZAAAAAAAAANEAAAAAAAAA0QAAAAAAAADBAAAAAAAAANUAAAAAAAAA3QAAAAAAAAD5AAAAAAAAAOUAAAAAAAAA5QAAAAAAAAD5AAAAAAAAAN0AAAAAAAAA4QAAAAAAAADZAAAAAAAAANUAAAAAAAAA1QAAAAAAAADdAAAAAAAAAOkAAAAAAAAA2QAAAAAAAADpAAAAAAAAAOUAAAAAAAAA4QAAAAAAAADpAAAAAAAAANkAAAAAAAAA3QAAAAAAAADVAAAAAAAAAOEAAAAAAAAA6QAAAAAAAADlAAAAAAAAANUAAAAAAAAA3QAAAAAAAADVAAAAAAAAAO0AAAAAAAAA2QAAAAAAAADpAAAAAAAAANkAAAAAAAAA3QAAAAAAAADxAAAAAAAAAOEAAAAAAAAA1QAAAAAAAADlAAAAAAAAANkAAAAAAAAAzQAAAAAAAADVAAAAAAAAAOUAAAAAAAAA3QAAAAAAAADpA"},"type":"box"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2d"}],"histogram":[{"marker":{"line":{"color":"white","width":0.6}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(237,237,237)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(217,217,217)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"colorscale":{"diverging":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"sequential":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"sequentialminus":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"colorway":["#1F77B4","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B","#E377C2","#7F7F7F","#BCBD22","#17BECF"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","radialaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"zaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"}},"shapedefaults":{"fillcolor":"black","line":{"width":0},"opacity":0.3},"ternary":{"aaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"baxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","caxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"}}},"xaxis":{"title":{"text":"Story"},"categoryorder":"array","categoryarray":["schissel_v1-pool","schissel_v2-lake","boyscout","triplett_v1-rookie","triplett_v2-catlady","hester_v1-park","hester_v2-church","panic","doSomething","bear","stein","costa"]},"title":{"text":"Summary token count by story (should be stable across stories)"},"yaxis":{"title":{"text":"Summary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens)"}}},                        {"responsive": true}                    )                };            </script>        </div></div>
+  <div class="plot"><div>                            <div id="f67b2be6-797b-459c-92b2-c466cff8701d" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("f67b2be6-797b-459c-92b2-c466cff8701d")) {                    Plotly.newPlot(                        "f67b2be6-797b-459c-92b2-c466cff8701d",                        [{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"schissel_v1-pool (avg 101 chars)","text":["At her cousin's wedding reception, a friend pushed her into a pool while trying to protect her from a bee.","A bee near her face led her best friend to shove her into a hotel garden pool during a wedding.","Dressed up at a fancy reception, she was pushed into the pool by a well-meaning friend avoiding a bee.","Her friend tried to save her from a bee, but instead ruined her dress by sending her into the pool.","During a cousin's wedding, champagne in hand, she was shoved into the water by her panicked best friend.","A bee scare at a fancy hotel garden ended with her gasping in the pool and her friend laughing apologetically.","Her best friend overreacted to a bee near her face, causing a splashy disaster at the wedding reception.","Instead of a bee sting, she got a soaked dress after her friend pushed her into the pool.","At a formal wedding, a friend's protective shove sent her into the pool, narrowly missing the cake.","Her cousin joked she nearly landed on the cake after a bee-related shove dumped her into the pool."],"x":{"dtype":"i2","bdata":"IgMiAyIDIgMiAyIDIgMiAyIDIgM="},"y":{"dtype":"i1","bdata":"al9mY2huaFljYg=="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"schissel_v2-lake (avg 108 chars)","text":["During a summer camping trip, my best friend shoved me into a lake after I refused her dare to catch a frog.","A peaceful lakeside sandwich break turned chaotic when my friend nudged me into the water over a frog-catching dare.","At our favorite woodland camping spot, my friend pushed me into the lake, then handed me the frog she wanted caught.","My friend dared me to catch a frog, ignored my refusal, pushed me into the lake, and made me laugh afterward.","On our annual summer campout, a frog dare led to my best friend surprising me with a shove into the lake.","I refused to catch a frog during lunch, so my mischievous best friend pushed me into the lake for fun.","After being pushed into the lake by my friend over a frog, I surfaced laughing and promised playful revenge.","A camping afternoon at the lake became hilarious when my best friend used a frog dare to prank me into the water.","My best friend spotted a frog, dared me to grab it, then pushed me into the lake when I declined.","Soaked but laughing, I accepted the frog from my friend and warned her she would get revenge soon enough."],"x":{"dtype":"i2","bdata":"BgMGAwYDBgMGAwYDBgMGAwYDBgM="},"y":{"dtype":"i1","bdata":"bHR0bWlmbHFhaQ=="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"boyscout (avg 111 chars)","text":["During a Boy Scouts pier race, the narrator cramped, cried for help, was ignored, and was rescued by a stranger.","While racing with scouts at a pier, he got cramps, began sinking, and survived because a newcomer jumped in.","A Boy Scout 50-yard dash turned dangerous when cramps struck; friends and scoutmaster ignored him, but a stranger saved him.","The narrator nearly drowned during a scout race after cramps hit and others mistook his cries as joking.","In a group race at the pier, he slowed from cramps, yelled help, and was abandoned until a passerby rescued him.","Scouts racing back and forth ignored his distress, thinking he was faking, while a newly arrived man jumped in.","A routine Boy Scouts pier sprint became a near-drowning when cramps overcame him and no one believed his pleas.","He was left behind in a scout race after cramping and sinking, despite shouting for help and being watched.","The scoutmaster and boys failed to respond when he cramped during the race; an unexpected stranger grabbed him.","At a Boy Scouts event, he almost drowned from cramps during a 50-yard race before an unknown rescuer intervened."],"x":{"dtype":"i2","bdata":"xwLHAscCxwLHAscCxwLHAscCxwI="},"y":{"dtype":"i1","bdata":"cGx8aHBvb2tvcA=="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"triplett_v1-rookie (avg 125 chars)","text":["As a rookie officer, he drew unwanted attention from the Chief’s talkative daughter, causing tension and an eventual transfer.","The Chief’s daughter pretended to run away over her father’s scolding about the narrator, prompting a search and later relief.","A rookie policeman avoided romance with the Chief’s chatterbox daughter, then left town after her fake disappearance stirred trouble.","The veteran Chief feared his daughter had fled because of the narrator, but she was safely found reading at the station.","After the Chief’s daughter left a runaway note, the narrator helped search, only to discover she had never really vanished.","The narrator’s rookie year ended when a misunderstanding involving the Chief’s daughter made staying in the department too risky.","The Chief’s daughter seemed infatuated with a fitness-minded rookie, but her fake runaway scare forced him to transfer away.","A veteran Chief confronted a rookie over his daughter’s supposed flight, but their search ended anticlimactically at the station.","Deputy Frank Mitchell warned the narrator that the Chief never forgot grudges, so the rookie wisely transferred out.","A talkative young woman’s dramatic note caused a police search, a relieved father, and the narrator’s departure from the force."],"x":{"dtype":"i2","bdata":"MQUxBTEFMQUxBTEFMQUxBTEFMQU="},"y":{"dtype":"i2","bdata":"fgB+AIUAeAB7AIEAfACBAHQAfwA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"triplett_v2-catlady (avg 128 chars)","text":["Mrs. Baker, the neighborhood cat lady, worried her poorly mannered grandson had run away after leaving a note about her nagging over the narrator.","As a tomboy, the narrator disliked Mrs. Baker’s charming but rude grandson, who seemed to be trying unsuccessfully to befriend her.","Mrs. Baker came to the narrator’s treehouse with a tabby, fearing her grandson had fled because she kept nagging him about the narrator.","The narrator calmed Mrs. Baker, suggesting they search for the boy first and call police only if they could not find him.","They searched near the old mill where the boy’s baseball cap was found, but discovered no further trace of him.","After searching unsuccessfully, they returned to the treehouse club and found the supposed runaway sitting on a branch reading a comic book.","The grandson’s runaway scare ended when he was found casually reading in the treehouse, having never truly disappeared.","Officer Dawson later warned the narrator to stay hidden because Mrs. Baker never forgot anything once fixated on it.","The narrator followed the sheriff’s advice, lying low and avoiding Mrs. Baker after the grandson’s staged disappearance.","A cat-loving neighbor’s false runaway crisis involved her rude grandson, a treehouse search, the old mill, and a sheriff’s ominous warning."],"x":{"dtype":"i2","bdata":"CwULBQsFCwULBQsFCwULBQsFCwU="},"y":{"dtype":"i2","bdata":"kgCDAIgAeQBvAIwAdwB0AHgAiwA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"hester_v1-park (avg 124 chars)","text":["At 21, a young graphic designer prayed in a park for his wheelchair-bound father, who soon texted he had taken steps with a walker.","While at work, the narrator felt urged to pray for his father’s recovery; moments later, his father unexpectedly stood and walked.","The narrator’s father had been homebound after surgery for eight months until a heartfelt lunchtime prayer seemed to spark his recovery.","A sudden intuition led the narrator to pray under an oak tree, after which his father took his first steps in months.","Living near the city center and working his first job, the narrator witnessed a powerful turning point in his father’s healing.","After months in a wheelchair, the narrator’s father began walking with a walker immediately after his child prayed for him.","The story recounts a young adult’s quiet park prayer and his father’s surprising same-day progress toward mobility and independence.","A father recovering from surgery regained hope and mobility after his child acted on a strong feeling to pray during lunch.","The narrator saw his father’s first unaided progress in months as a sign that a sincere prayer had been answered.","Years after that pivotal prayer, the narrator’s father now walks unassisted and lives actively in his seventies."],"x":{"dtype":"i2","bdata":"bgluCW4JbgluCW4JbgluCW4Jbgk="},"y":{"dtype":"i2","bdata":"gwCCAIgAdQB\u002fAHsAhAB7AHEAcAA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"hester_v2-church (avg 118 chars)","text":["At 22, a bookstore worker hears an inner voice urging prayer at a church for his bedridden grandfather’s healing.","Alone at his first bookstore job, the narrator repeatedly hears a message promising his grandfather’s recovery through a candlelit prayer.","Despite doubts about faith, the narrator visits a nearby church and sincerely asks God to heal his incapacitated grandfather.","After praying in church, the narrator feels an urgent pull to return home from the bookstore immediately.","Arriving home, he finds his formerly bedridden grandfather sitting in the living room, talking after suddenly regaining strength.","The grandfather’s unexpected ability to stand and walk begins a gradual recovery that transforms the family’s outlook.","The narrator cannot prove the prayer caused the healing, but the event reshapes his view of faith and miracles.","A mysterious inner voice, a hesitant prayer, and a sudden recovery become a lifelong spiritual turning point.","The grandfather lives many more years after the incident, eventually celebrating his ninetieth birthday with loved ones.","Nearly twenty years later, the narrator remembers the experience as proof of hope, faith, and not being truly alone."],"x":{"dtype":"i2","bdata":"mgyaDJoMmgyaDJoMmgyaDJoMmgw="},"y":{"dtype":"i2","bdata":"cQCKAH0AaQCBAHYAbwBtAHgAdAA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"panic (avg 116 chars)","text":["A warehouse worker felt lightheaded, developed chest pressure and breathlessness, and nearly collapsed before a manager intervened.","While stocking merchandise without eating, the narrator experienced a frightening panic attack on the warehouse floor.","Chest tightness, sweating, pounding heartbeat, and vision spots overwhelmed the worker until the manager noticed and helped.","A manager caught the narrator before they collapsed, brought them to the staff room, and gave water and support.","The narrator mistook early lightheadedness for hunger until symptoms escalated into a panic attack at work.","During a late warehouse shift, the worker suffered intense panic symptoms but recovered after resting with managerial assistance.","The episode taught the narrator to eat, rest, and monitor their condition to prevent future panic attacks.","A scary workplace health episode ended safely because a manager quickly recognized distress and intervened.","The narrator lost their voice, struggled to breathe, and blacked out briefly before being helped to safety.","After resting and drinking cold water, the worker’s chest pressure eased and they realized it had been a panic attack."],"x":{"dtype":"i2","bdata":"YgdiB2IHYgdiB2IHYgdiB2IHYgc="},"y":{"dtype":"i2","bdata":"gwB2AHwAcABrAIEAagBrAGsAdgA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"doSomething (avg 127 chars)","text":["Driving to a church softball game, the narrator encounters a reckless driver who blocks traffic, tailgates, weaves, and appears drunk or ill.","A middle-aged driver pulls dangerously onto Highway 24, then follows the narrator closely while swerving toward Homestead High School.","The narrator, worried a tailgating, weaving driver might be drunk or having a medical emergency, decides to alert police.","On the way to a softball game, a suspicious driver blocks a lane, nearly collides, tailgates, and cannot stay in one lane.","After observing erratic driving, the narrator flags down a sheriff’s car and reports the man as possibly drunk or sick.","The reckless driver notices the narrator speaking to deputies, stops far from the intersection, and begins backing away down the road.","Police pursue the erratic driver after he reverses down the road, then drives forward slowly and carefully when followed.","The narrator balances reluctance to get involved with concern about drunk driving and possible medical distress, then contacts deputies.","Lisa notices the vehicle riding their bumper; the narrator watches nervously as it weaves dangerously behind them.","A suspected drunk driver’s bizarre behavior prompts a sheriff’s response, though the narrator never learns whether he was stopped."],"x":{"dtype":"i2","bdata":"Yg1iDWINYg1iDWINYg1iDWINYg0="},"y":{"dtype":"i2","bdata":"jQCGAHkAegB3AIYAeQCIAHIAggA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"bear (avg 122 chars)","text":["A reluctant farm-raised college friend joins city buddies on a Canadian bear hunt, only to accidentally trap a bear in their cabin.","Four former athletes become college friends, bond through farm hunting, then plan a terrifying bear hunt deep in Canada.","The narrator dislikes hunting but joins friends in Canada, where cowardice, cards, and an unloaded gun create a comic bear encounter.","After days hiding in a remote cabin, friends draw cards to choose who must hunt; the narrator loses and finds a bear.","Sent to get a bear, the narrator forgets to load his gun and runs back with a giant bear chasing him.","A bear hunt becomes a farce when the narrator lures a charging bear into the cabin and locks it inside with his friends.","College friends seek macho hunting glory in Canada, but fear keeps them indoors until a card game forces action.","The narrator fulfills his bear-hunting duty by delivering a live bear straight into the cabin, shocking his companions.","A humorous tall tale follows reluctant hunters whose Canadian adventure ends with a bear trapped indoors and no future invitations.","The narrator’s friends never invite him hunting again after he technically catches a bear by letting it chase him into their cabin."],"x":{"dtype":"i2","bdata":"EhMSExITEhMSExITEhMSExITEhM="},"y":{"dtype":"i2","bdata":"gwB4AIUAdQBlAHgAcAB3AIMAgwA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"stein (avg 129 chars)","text":["In 1925, a Black family moved to Third and Wharton and was immediately attacked by neighbors throwing stones through their windows.","At age ten, the narrator protected younger children from flying glass, then ran terrified to find her mother at Fourth Street market.","An Irish policeman told the mother the neighborhood did not want Black residents and advised moving instead of offering protection.","The mother confronted police, insisting they were responsible for protection and refusing to move because rent had used all their money.","Police claimed they could do nothing without identifying the attackers, but the mother demanded a patrol wagon ride home.","Arriving in a horse-drawn police patrol, the mother publicly addressed gathered neighbors about racism, poverty, rent, and basic humanity.","The mother told hostile neighbors they must either accept the family for a month or pay for them to move elsewhere.","The narrator recalls her mother as educated, assertive, and unusually unafraid of challenging white authority during a cowed era.","Although the family’s arrival was violent and terrifying, neighbors later became kind and helpful when the father became sick.","The story recounts racial housing hostility, police indifference, and a mother’s courageous stand to secure shelter for her family."],"x":{"dtype":"i2","bdata":"mxybHJscmxybHJscmxybHJscmxw="},"y":{"dtype":"i2","bdata":"gwCFAIMAiAB5AIoAcwCBAH4AgwA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (characters): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"costa (avg 120 chars)","text":["Mrs. Costa recalls her 18-year-old daughter Marie dying at Methodist Hospital after an appendicitis operation, likely from a blood clot.","Marie was recovering from appendectomy and ready for discharge when she collapsed, sweating and complaining of leg pain and blindness.","The mother believes hospital staff caused Marie’s fatal clot by forcing her out of bed while still under ether.","Called to pick up discharged Marie, Mrs. Costa arrived with clothes and plans for coffee, only to find her daughter dying.","Marie died moments after her mother entered the hospital room, provoking hysteria, accusations, and lifelong grief.","Hospital staff kept calling home about Marie’s discharge, unaware she had collapsed and died before leaving.","Mrs. Costa refused an autopsy, threatened the hospital, and blamed doctors and nurses for killing her daughter.","The news devastated the family: Rita fainted, Mrs. Costa’s husband had a heart attack, and Michael collapsed too.","Relatives and neighbors had been awaiting Marie’s return home, but young James delivered the terrible news of her death.","Twenty-eight years later, Mrs. Costa still mourns Marie daily, remembering her kindness, quiet nature, and unfinished homecoming."],"x":{"dtype":"i2","bdata":"3SPdI90j3SPdI90j3SPdI90j3SM="},"y":{"dtype":"i2","bdata":"iACGAG8AegBzAGwAbwBxAHgAgQA="},"type":"scatter"},{"line":{"color":"black","dash":"dash"},"mode":"lines","name":"fit (r=0.312, p=0.000521)","x":{"dtype":"f8","bdata":"AAAAAAA4hkBu27Zt256LQG7btm3bgpBAJEmSJEk2k0Dctm3btumVQJIkSZIknZhASZIkSZJQm0AAAAAAAASeQNy2bdu2W6BAt23btm21oUCSJEmSJA+jQG7btm3baKRASZIkSZLCpUAlSZIkSRynQAAAAAAAdqhA3LZt27bPqUC3bdu2bSmrQJIkSZIkg6xAbtu2bdvcrUBJkiRJkjavQJIkSZIkSLBAAAAAAAD1sEBu27Zt26GxQNy2bdu2TrJASZIkSZL7skC3bdu2baizQCVJkiRJVbRAkiRJkiQCtUAAAAAAAK+1QG7btm3bW7ZA3LZt27YIt0BJkiRJkrW3QLdt27ZtYrhAJUmSJEkPuUCSJEmSJLy5QAAAAAAAabpAbtu2bdsVu0Dctm3btsK7QEmSJEmSb7xAt23btm0cvUAlSZIkScm9QJIkSZIkdr5AAAAAAAAjv0Bu27Zt28+\u002fQG7btm1bPsBAJEmSJMmUwEDctm3bNuvAQJIkSZKkQcFASZIkSRKYwUAAAAAAgO7BQA=="},"y":{"dtype":"f8","bdata":"Sx2AF+jyXECYKIjCOAJdQOUzkG2JEV1AMz+YGNogXUCASqDDKjBdQM1VqG57P11AG2GwGcxOXUBobLjEHF5dQLV3wG9tbV1AAoPIGr58XUBQjtDFDoxdQJ2Z2HBfm11A6qTgG7CqXUA4sOjGALpdQIW78HFRyV1A0sb4HKLYXUAf0gDI8uddQG3dCHND911AuugQHpQGXkAH9BjJ5BVeQFT\u002fIHQ1JV5AogopH4Y0XkDvFTHK1kNeQDwhOXUnU15AiixBIHhiXkDXN0nLyHFeQCRDUXYZgV5AcU5ZIWqQXkC\u002fWWHMup9eQAxlaXcLr15AWXBxIly+XkCme3nNrM1eQPSGgXj93F5AQZKJI07sXkCOnZHOnvteQNyomXnvCl9AKbShJEAaX0B2v6nPkClfQMPKsXrhOF9AEda5JTJIX0Be4cHQgldfQKvsyXvTZl9A+PfRJiR2X0BGA9rRdIVfQJMO4nzFlF9A4BnqJxakX0AuJfLSZrNfQHsw+n23wl9AyDsCKQjSX0AWRwrUWOFfQA=="},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2d"}],"histogram":[{"marker":{"line":{"color":"white","width":0.6}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(237,237,237)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(217,217,217)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"colorscale":{"diverging":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"sequential":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"sequentialminus":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"colorway":["#1F77B4","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B","#E377C2","#7F7F7F","#BCBD22","#17BECF"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","radialaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"zaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"}},"shapedefaults":{"fillcolor":"black","line":{"width":0},"opacity":0.3},"ternary":{"aaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"baxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","caxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"}}},"title":{"text":"Summary length (chars) vs narrative length\u003cbr\u003e\u003csup\u003er=0.312, p=0.000521, n=120\u003c\u002fsup\u003e"},"xaxis":{"title":{"text":"Narrative length (characters)"}},"yaxis":{"title":{"text":"Summary length (characters)"}},"hovermode":"closest"},                        {"responsive": true}                    )                };            </script>        </div></div>
+  <div class="plot"><div>                            <div id="e8f0000d-5561-439a-998a-a675762d165a" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e8f0000d-5561-439a-998a-a675762d165a")) {                    Plotly.newPlot(                        "e8f0000d-5561-439a-998a-a675762d165a",                        [{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"schissel_v1-pool","text":["At her cousin's wedding reception, a friend pushed her into a pool while trying to protect her from a bee.","A bee near her face led her best friend to shove her into a hotel garden pool during a wedding.","Dressed up at a fancy reception, she was pushed into the pool by a well-meaning friend avoiding a bee.","Her friend tried to save her from a bee, but instead ruined her dress by sending her into the pool.","During a cousin's wedding, champagne in hand, she was shoved into the water by her panicked best friend.","A bee scare at a fancy hotel garden ended with her gasping in the pool and her friend laughing apologetically.","Her best friend overreacted to a bee near her face, causing a splashy disaster at the wedding reception.","Instead of a bee sting, she got a soaked dress after her friend pushed her into the pool.","At a formal wedding, a friend's protective shove sent her into the pool, narrowly missing the cake.","Her cousin joked she nearly landed on the cake after a bee-related shove dumped her into the pool."],"x":{"dtype":"i2","bdata":"IgMiAyIDIgMiAyIDIgMiAyIDIgM="},"y":{"dtype":"f8","bdata":"AAAAAAAAN0AAAAAAAAA1QAAAAAAAADhAAAAAAAAANkAAAAAAAAA2QAAAAAAAADlAAAAAAAAAN0AAAAAAAAA0QAAAAAAAADVAAAAAAAAANEA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"schissel_v2-lake","text":["During a summer camping trip, my best friend shoved me into a lake after I refused her dare to catch a frog.","A peaceful lakeside sandwich break turned chaotic when my friend nudged me into the water over a frog-catching dare.","At our favorite woodland camping spot, my friend pushed me into the lake, then handed me the frog she wanted caught.","My friend dared me to catch a frog, ignored my refusal, pushed me into the lake, and made me laugh afterward.","On our annual summer campout, a frog dare led to my best friend surprising me with a shove into the lake.","I refused to catch a frog during lunch, so my mischievous best friend pushed me into the lake for fun.","After being pushed into the lake by my friend over a frog, I surfaced laughing and promised playful revenge.","A camping afternoon at the lake became hilarious when my best friend used a frog dare to prank me into the water.","My best friend spotted a frog, dared me to grab it, then pushed me into the lake when I declined.","Soaked but laughing, I accepted the frog from my friend and warned her she would get revenge soon enough."],"x":{"dtype":"i2","bdata":"BgMGAwYDBgMGAwYDBgMGAwYDBgM="},"y":{"dtype":"f8","bdata":"AAAAAAAAOEAAAAAAAAA3QAAAAAAAADhAAAAAAAAAOUAAAAAAAAA4QAAAAAAAADhAAAAAAAAANUAAAAAAAAA3QAAAAAAAADdAAAAAAAAANkA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"boyscout","text":["During a Boy Scouts pier race, the narrator cramped, cried for help, was ignored, and was rescued by a stranger.","While racing with scouts at a pier, he got cramps, began sinking, and survived because a newcomer jumped in.","A Boy Scout 50-yard dash turned dangerous when cramps struck; friends and scoutmaster ignored him, but a stranger saved him.","The narrator nearly drowned during a scout race after cramps hit and others mistook his cries as joking.","In a group race at the pier, he slowed from cramps, yelled help, and was abandoned until a passerby rescued him.","Scouts racing back and forth ignored his distress, thinking he was faking, while a newly arrived man jumped in.","A routine Boy Scouts pier sprint became a near-drowning when cramps overcame him and no one believed his pleas.","He was left behind in a scout race after cramping and sinking, despite shouting for help and being watched.","The scoutmaster and boys failed to respond when he cramped during the race; an unexpected stranger grabbed him.","At a Boy Scouts event, he almost drowned from cramps during a 50-yard race before an unknown rescuer intervened."],"x":{"dtype":"i2","bdata":"xwLHAscCxwLHAscCxwLHAscCxwI="},"y":{"dtype":"f8","bdata":"AAAAAAAAOUAAAAAAAAA4QAAAAAAAADtAAAAAAAAANUAAAAAAAAA7QAAAAAAAADhAAAAAAAAAOEAAAAAAAAA2QAAAAAAAADVAAAAAAAAAOUA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"triplett_v1-rookie","text":["As a rookie officer, he drew unwanted attention from the Chief’s talkative daughter, causing tension and an eventual transfer.","The Chief’s daughter pretended to run away over her father’s scolding about the narrator, prompting a search and later relief.","A rookie policeman avoided romance with the Chief’s chatterbox daughter, then left town after her fake disappearance stirred trouble.","The veteran Chief feared his daughter had fled because of the narrator, but she was safely found reading at the station.","After the Chief’s daughter left a runaway note, the narrator helped search, only to discover she had never really vanished.","The narrator’s rookie year ended when a misunderstanding involving the Chief’s daughter made staying in the department too risky.","The Chief’s daughter seemed infatuated with a fitness-minded rookie, but her fake runaway scare forced him to transfer away.","A veteran Chief confronted a rookie over his daughter’s supposed flight, but their search ended anticlimactically at the station.","Deputy Frank Mitchell warned the narrator that the Chief never forgot grudges, so the rookie wisely transferred out.","A talkative young woman’s dramatic note caused a police search, a relieved father, and the narrator’s departure from the force."],"x":{"dtype":"i2","bdata":"MQUxBTEFMQUxBTEFMQUxBTEFMQU="},"y":{"dtype":"f8","bdata":"AAAAAAAAOEAAAAAAAAA5QAAAAAAAADdAAAAAAAAAN0AAAAAAAAA4QAAAAAAAADZAAAAAAAAAOUAAAAAAAAA5QAAAAAAAADdAAAAAAAAAOkA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"triplett_v2-catlady","text":["Mrs. Baker, the neighborhood cat lady, worried her poorly mannered grandson had run away after leaving a note about her nagging over the narrator.","As a tomboy, the narrator disliked Mrs. Baker’s charming but rude grandson, who seemed to be trying unsuccessfully to befriend her.","Mrs. Baker came to the narrator’s treehouse with a tabby, fearing her grandson had fled because she kept nagging him about the narrator.","The narrator calmed Mrs. Baker, suggesting they search for the boy first and call police only if they could not find him.","They searched near the old mill where the boy’s baseball cap was found, but discovered no further trace of him.","After searching unsuccessfully, they returned to the treehouse club and found the supposed runaway sitting on a branch reading a comic book.","The grandson’s runaway scare ended when he was found casually reading in the treehouse, having never truly disappeared.","Officer Dawson later warned the narrator to stay hidden because Mrs. Baker never forgot anything once fixated on it.","The narrator followed the sheriff’s advice, lying low and avoiding Mrs. Baker after the grandson’s staged disappearance.","A cat-loving neighbor’s false runaway crisis involved her rude grandson, a treehouse search, the old mill, and a sheriff’s ominous warning."],"x":{"dtype":"i2","bdata":"CwULBQsFCwULBQsFCwULBQsFCwU="},"y":{"dtype":"f8","bdata":"AAAAAAAAPkAAAAAAAAA8QAAAAAAAAD5AAAAAAAAAOkAAAAAAAAA3QAAAAAAAADlAAAAAAAAANkAAAAAAAAA3QAAAAAAAADZAAAAAAAAAPUA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"hester_v1-park","text":["At 21, a young graphic designer prayed in a park for his wheelchair-bound father, who soon texted he had taken steps with a walker.","While at work, the narrator felt urged to pray for his father’s recovery; moments later, his father unexpectedly stood and walked.","The narrator’s father had been homebound after surgery for eight months until a heartfelt lunchtime prayer seemed to spark his recovery.","A sudden intuition led the narrator to pray under an oak tree, after which his father took his first steps in months.","Living near the city center and working his first job, the narrator witnessed a powerful turning point in his father’s healing.","After months in a wheelchair, the narrator’s father began walking with a walker immediately after his child prayed for him.","The story recounts a young adult’s quiet park prayer and his father’s surprising same-day progress toward mobility and independence.","A father recovering from surgery regained hope and mobility after his child acted on a strong feeling to pray during lunch.","The narrator saw his father’s first unaided progress in months as a sign that a sincere prayer had been answered.","Years after that pivotal prayer, the narrator’s father now walks unassisted and lives actively in his seventies."],"x":{"dtype":"i2","bdata":"bgluCW4JbgluCW4JbgluCW4Jbgk="},"y":{"dtype":"f8","bdata":"AAAAAAAAPkAAAAAAAAA6QAAAAAAAADlAAAAAAAAAOEAAAAAAAAA4QAAAAAAAADdAAAAAAAAAN0AAAAAAAAA2QAAAAAAAADhAAAAAAAAAN0A="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"hester_v2-church","text":["At 22, a bookstore worker hears an inner voice urging prayer at a church for his bedridden grandfather’s healing.","Alone at his first bookstore job, the narrator repeatedly hears a message promising his grandfather’s recovery through a candlelit prayer.","Despite doubts about faith, the narrator visits a nearby church and sincerely asks God to heal his incapacitated grandfather.","After praying in church, the narrator feels an urgent pull to return home from the bookstore immediately.","Arriving home, he finds his formerly bedridden grandfather sitting in the living room, talking after suddenly regaining strength.","The grandfather’s unexpected ability to stand and walk begins a gradual recovery that transforms the family’s outlook.","The narrator cannot prove the prayer caused the healing, but the event reshapes his view of faith and miracles.","A mysterious inner voice, a hesitant prayer, and a sudden recovery become a lifelong spiritual turning point.","The grandfather lives many more years after the incident, eventually celebrating his ninetieth birthday with loved ones.","Nearly twenty years later, the narrator remembers the experience as proof of hope, faith, and not being truly alone."],"x":{"dtype":"i2","bdata":"mgyaDJoMmgyaDJoMmgyaDJoMmgw="},"y":{"dtype":"f8","bdata":"AAAAAAAAOEAAAAAAAAA5QAAAAAAAADZAAAAAAAAAM0AAAAAAAAA4QAAAAAAAADRAAAAAAAAANkAAAAAAAAA0QAAAAAAAADVAAAAAAAAAN0A="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"panic","text":["A warehouse worker felt lightheaded, developed chest pressure and breathlessness, and nearly collapsed before a manager intervened.","While stocking merchandise without eating, the narrator experienced a frightening panic attack on the warehouse floor.","Chest tightness, sweating, pounding heartbeat, and vision spots overwhelmed the worker until the manager noticed and helped.","A manager caught the narrator before they collapsed, brought them to the staff room, and gave water and support.","The narrator mistook early lightheadedness for hunger until symptoms escalated into a panic attack at work.","During a late warehouse shift, the worker suffered intense panic symptoms but recovered after resting with managerial assistance.","The episode taught the narrator to eat, rest, and monitor their condition to prevent future panic attacks.","A scary workplace health episode ended safely because a manager quickly recognized distress and intervened.","The narrator lost their voice, struggled to breathe, and blacked out briefly before being helped to safety.","After resting and drinking cold water, the worker’s chest pressure eased and they realized it had been a panic attack."],"x":{"dtype":"i2","bdata":"YgdiB2IHYgdiB2IHYgdiB2IHYgc="},"y":{"dtype":"f8","bdata":"AAAAAAAAOEAAAAAAAAAyQAAAAAAAADdAAAAAAAAANkAAAAAAAAA2QAAAAAAAADRAAAAAAAAANEAAAAAAAAAwQAAAAAAAADVAAAAAAAAAN0A="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"doSomething","text":["Driving to a church softball game, the narrator encounters a reckless driver who blocks traffic, tailgates, weaves, and appears drunk or ill.","A middle-aged driver pulls dangerously onto Highway 24, then follows the narrator closely while swerving toward Homestead High School.","The narrator, worried a tailgating, weaving driver might be drunk or having a medical emergency, decides to alert police.","On the way to a softball game, a suspicious driver blocks a lane, nearly collides, tailgates, and cannot stay in one lane.","After observing erratic driving, the narrator flags down a sheriff’s car and reports the man as possibly drunk or sick.","The reckless driver notices the narrator speaking to deputies, stops far from the intersection, and begins backing away down the road.","Police pursue the erratic driver after he reverses down the road, then drives forward slowly and carefully when followed.","The narrator balances reluctance to get involved with concern about drunk driving and possible medical distress, then contacts deputies.","Lisa notices the vehicle riding their bumper; the narrator watches nervously as it weaves dangerously behind them.","A suspected drunk driver’s bizarre behavior prompts a sheriff’s response, though the narrator never learns whether he was stopped."],"x":{"dtype":"i2","bdata":"Yg1iDWINYg1iDWINYg1iDWINYg0="},"y":{"dtype":"f8","bdata":"AAAAAAAAPkAAAAAAAAA5QAAAAAAAADlAAAAAAAAAPkAAAAAAAAA3QAAAAAAAADhAAAAAAAAANkAAAAAAAAA1QAAAAAAAADVAAAAAAAAAN0A="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"bear","text":["A reluctant farm-raised college friend joins city buddies on a Canadian bear hunt, only to accidentally trap a bear in their cabin.","Four former athletes become college friends, bond through farm hunting, then plan a terrifying bear hunt deep in Canada.","The narrator dislikes hunting but joins friends in Canada, where cowardice, cards, and an unloaded gun create a comic bear encounter.","After days hiding in a remote cabin, friends draw cards to choose who must hunt; the narrator loses and finds a bear.","Sent to get a bear, the narrator forgets to load his gun and runs back with a giant bear chasing him.","A bear hunt becomes a farce when the narrator lures a charging bear into the cabin and locks it inside with his friends.","College friends seek macho hunting glory in Canada, but fear keeps them indoors until a card game forces action.","The narrator fulfills his bear-hunting duty by delivering a live bear straight into the cabin, shocking his companions.","A humorous tall tale follows reluctant hunters whose Canadian adventure ends with a bear trapped indoors and no future invitations.","The narrator’s friends never invite him hunting again after he technically catches a bear by letting it chase him into their cabin."],"x":{"dtype":"i2","bdata":"EhMSExITEhMSExITEhMSExITEhM="},"y":{"dtype":"f8","bdata":"AAAAAAAAOkAAAAAAAAA2QAAAAAAAADpAAAAAAAAAOUAAAAAAAAA4QAAAAAAAADpAAAAAAAAANkAAAAAAAAA3QAAAAAAAADVAAAAAAAAAOEA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"stein","text":["In 1925, a Black family moved to Third and Wharton and was immediately attacked by neighbors throwing stones through their windows.","At age ten, the narrator protected younger children from flying glass, then ran terrified to find her mother at Fourth Street market.","An Irish policeman told the mother the neighborhood did not want Black residents and advised moving instead of offering protection.","The mother confronted police, insisting they were responsible for protection and refusing to move because rent had used all their money.","Police claimed they could do nothing without identifying the attackers, but the mother demanded a patrol wagon ride home.","Arriving in a horse-drawn police patrol, the mother publicly addressed gathered neighbors about racism, poverty, rent, and basic humanity.","The mother told hostile neighbors they must either accept the family for a month or pay for them to move elsewhere.","The narrator recalls her mother as educated, assertive, and unusually unafraid of challenging white authority during a cowed era.","Although the family’s arrival was violent and terrifying, neighbors later became kind and helpful when the father became sick.","The story recounts racial housing hostility, police indifference, and a mother’s courageous stand to secure shelter for her family."],"x":{"dtype":"i2","bdata":"mxybHJscmxybHJscmxybHJscmxw="},"y":{"dtype":"f8","bdata":"AAAAAAAAOkAAAAAAAAA5QAAAAAAAADVAAAAAAAAAN0AAAAAAAAA1QAAAAAAAADtAAAAAAAAANkAAAAAAAAA6QAAAAAAAADZAAAAAAAAAN0A="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003eSummary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens): %{y}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"costa","text":["Mrs. Costa recalls her 18-year-old daughter Marie dying at Methodist Hospital after an appendicitis operation, likely from a blood clot.","Marie was recovering from appendectomy and ready for discharge when she collapsed, sweating and complaining of leg pain and blindness.","The mother believes hospital staff caused Marie’s fatal clot by forcing her out of bed while still under ether.","Called to pick up discharged Marie, Mrs. Costa arrived with clothes and plans for coffee, only to find her daughter dying.","Marie died moments after her mother entered the hospital room, provoking hysteria, accusations, and lifelong grief.","Hospital staff kept calling home about Marie’s discharge, unaware she had collapsed and died before leaving.","Mrs. Costa refused an autopsy, threatened the hospital, and blamed doctors and nurses for killing her daughter.","The news devastated the family: Rita fainted, Mrs. Costa’s husband had a heart attack, and Michael collapsed too.","Relatives and neighbors had been awaiting Marie’s return home, but young James delivered the terrible news of her death.","Twenty-eight years later, Mrs. Costa still mourns Marie daily, remembering her kindness, quiet nature, and unfinished homecoming."],"x":{"dtype":"i2","bdata":"3SPdI90j3SPdI90j3SPdI90j3SM="},"y":{"dtype":"f8","bdata":"AAAAAAAAPEAAAAAAAAA4QAAAAAAAADVAAAAAAAAAOUAAAAAAAAA2QAAAAAAAADNAAAAAAAAANUAAAAAAAAA5QAAAAAAAADdAAAAAAAAAOkA="},"type":"scatter"},{"line":{"color":"black","dash":"dash"},"mode":"lines","name":"fit (r=0.008, p=0.934)","x":{"dtype":"f8","bdata":"AAAAAAA4hkBu27Zt256LQG7btm3bgpBAJEmSJEk2k0Dctm3btumVQJIkSZIknZhASZIkSZJQm0AAAAAAAASeQNy2bdu2W6BAt23btm21oUCSJEmSJA+jQG7btm3baKRASZIkSZLCpUAlSZIkSRynQAAAAAAAdqhA3LZt27bPqUC3bdu2bSmrQJIkSZIkg6xAbtu2bdvcrUBJkiRJkjavQJIkSZIkSLBAAAAAAAD1sEBu27Zt26GxQNy2bdu2TrJASZIkSZL7skC3bdu2baizQCVJkiRJVbRAkiRJkiQCtUAAAAAAAK+1QG7btm3bW7ZA3LZt27YIt0BJkiRJkrW3QLdt27ZtYrhAJUmSJEkPuUCSJEmSJLy5QAAAAAAAabpAbtu2bdsVu0Dctm3btsK7QEmSJEmSb7xAt23btm0cvUAlSZIkScm9QJIkSZIkdr5AAAAAAAAjv0Bu27Zt28+\u002fQG7btm1bPsBAJEmSJMmUwEDctm3bNuvAQJIkSZKkQcFASZIkSRKYwUAAAAAAgO7BQA=="},"y":{"dtype":"f8","bdata":"fWQ9NUd3N0AwkSKXmXc3QOS9B\u002fnrdzdAmOrsWj54N0BMF9K8kHg3QABEtx7jeDdAs3CcgDV5N0BnnYHih3k3QBvKZkTaeTdAz\u002fZLpix6N0CDIzEIf3o3QDZQFmrRejdA6nz7yyN7N0CeqeAtdns3QFLWxY\u002fIezdABgOr8Rp8N0C5L5BTbXw3QG1cdbW\u002ffDdAIYlaFxJ9N0DVtT95ZH03QIniJNu2fTdAPA8KPQl+N0DwO++eW343QKRo1ACufjdAWJW5YgB\u002fN0AMwp7EUn83QL\u002fugyalfzdAcxtpiPd\u002fN0AnSE7qSYA3QNt0M0ycgDdAj6EYru6AN0BCzv0PQYE3QPb64nGTgTdAqifI0+WBN0BeVK01OII3QBKBkpeKgjdAxa13+dyCN0B52lxbL4M3QC0HQr2BgzdA4TMnH9SDN0CVYAyBJoQ3QEiN8eJ4hDdA\u002fLnWRMuEN0Cw5rumHYU3QGQToQhwhTdAGECGasKFN0DLbGvMFIY3QH+ZUC5nhjdAM8Y1kLmGN0Dn8hryC4c3QA=="},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2d"}],"histogram":[{"marker":{"line":{"color":"white","width":0.6}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(237,237,237)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(217,217,217)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"colorscale":{"diverging":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"sequential":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"sequentialminus":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"colorway":["#1F77B4","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B","#E377C2","#7F7F7F","#BCBD22","#17BECF"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","radialaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"zaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"}},"shapedefaults":{"fillcolor":"black","line":{"width":0},"opacity":0.3},"ternary":{"aaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"baxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","caxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"}}},"title":{"text":"Summary length (Llama tokens) vs narrative length\u003cbr\u003e\u003csup\u003er=0.008, p=0.934, n=120\u003c\u002fsup\u003e"},"xaxis":{"title":{"text":"Narrative length (characters)"}},"yaxis":{"title":{"text":"Summary length (meta-llama\u002fLlama-3.3-70B-Instruct-Turbo tokens)"}},"hovermode":"closest"},                        {"responsive": true}                    )                };            </script>        </div></div>
+  <h2>Hypothesis: sum(logp) vs narrative length</h2>
+  <h3>Per-story overview</h3>
+  <p>One row per story, sorted by narrative length (characters, same order as stories_names.txt).
+  Mean summary length in characters is shown for every story; token counts use
+  meta-llama/Llama-3.3-70B-Instruct-Turbo when available.</p>
+  <table class='stats-table'><thead><tr><th>#</th><th>Story</th><th>Narrative chars</th><th>Mean summary len (chars)</th><th>Mean summary len (meta-llama/Llama-3.3-70B-Instruct-Turbo tokens)</th><th>Std summary len</th><th>Mean sum(logp) ± std</th><th>n summaries</th></tr></thead><tbody><tr><td>1</td><td>schissel_v1-pool</td><td>802</td><td>100.6</td><td>22.1</td><td>1.7</td><td>-90.66 ± 15.62</td><td>10</td></tr><tr><td>2</td><td>schissel_v2-lake</td><td>774</td><td>107.9</td><td>23.3</td><td>1.2</td><td>-92.36 ± 10.03</td><td>10</td></tr><tr><td>3</td><td>boyscout</td><td>711</td><td>111.2</td><td>24.0</td><td>2.2</td><td>-111.73 ± 8.84</td><td>10</td></tr><tr><td>4</td><td>triplett_v1-rookie</td><td>1329</td><td>125.3</td><td>24.0</td><td>1.2</td><td>-112.42 ± 12.74</td><td>10</td></tr><tr><td>5</td><td>triplett_v2-catlady</td><td>1291</td><td>127.9</td><td>25.8</td><td>3.3</td><td>-112.23 ± 24.57</td><td>10</td></tr><tr><td>6</td><td>hester_v1-park</td><td>2414</td><td>124.4</td><td>24.4</td><td>2.3</td><td>-103.57 ± 11.22</td><td>10</td></tr><tr><td>7</td><td>hester_v2-church</td><td>3226</td><td>118.4</td><td>22.0</td><td>2.0</td><td>-91.22 ± 14.40</td><td>10</td></tr><tr><td>8</td><td>panic</td><td>1890</td><td>115.9</td><td>20.9</td><td>2.5</td><td>-89.14 ± 11.73</td><td>10</td></tr><tr><td>9</td><td>doSomething</td><td>3426</td><td>127.2</td><td>24.4</td><td>3.3</td><td>-99.39 ± 11.33</td><td>10</td></tr><tr><td>10</td><td>bear</td><td>4882</td><td>121.5</td><td>23.9</td><td>1.9</td><td>-108.04 ± 15.17</td><td>10</td></tr><tr><td>11</td><td>stein</td><td>7323</td><td>129.1</td><td>23.6</td><td>2.2</td><td>-102.50 ± 15.03</td><td>10</td></tr><tr><td>12</td><td>costa</td><td>9181</td><td>119.9</td><td>23.4</td><td>2.7</td><td>-103.61 ± 14.48</td><td>10</td></tr></tbody></table>
+  <p>Each point in the plots below is one generated summary. Narrative length is in characters.</p>
+  <table class='stats-table'><thead><tr><th>Level</th><th>n</th><th>Pearson r</th><th>p</th><th>slope</th></tr></thead><tbody><tr><td>All summaries</td><td>120</td><td>-0.0461</td><td>0.6167</td><td>-0.0003</td></tr><tr><td>Per-story means</td><td>12</td><td>-0.0873</td><td>0.7872</td><td>—</td></tr></tbody></table>
+  <div class="plot"><div>                            <div id="837245d0-fd44-491b-aae9-3b2c4c8d4867" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("837245d0-fd44-491b-aae9-3b2c4c8d4867")) {                    Plotly.newPlot(                        "837245d0-fd44-491b-aae9-3b2c4c8d4867",                        [{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"schissel_v1-pool","text":["At her cousin's wedding reception, a friend pushed her into a pool while trying to protect her from a bee.","A bee near her face led her best friend to shove her into a hotel garden pool during a wedding.","Dressed up at a fancy reception, she was pushed into the pool by a well-meaning friend avoiding a bee.","Her friend tried to save her from a bee, but instead ruined her dress by sending her into the pool.","During a cousin's wedding, champagne in hand, she was shoved into the water by her panicked best friend.","A bee scare at a fancy hotel garden ended with her gasping in the pool and her friend laughing apologetically.","Her best friend overreacted to a bee near her face, causing a splashy disaster at the wedding reception.","Instead of a bee sting, she got a soaked dress after her friend pushed her into the pool.","At a formal wedding, a friend's protective shove sent her into the pool, narrowly missing the cake.","Her cousin joked she nearly landed on the cake after a bee-related shove dumped her into the pool."],"x":{"dtype":"i2","bdata":"IgMiAyIDIgMiAyIDIgMiAyIDIgM="},"y":{"dtype":"f8","bdata":"TpXg7ns1UcAQUyr6ZlhYwLdj0KO3DFbAMCTHoMolVcCL8Dv1xGdWwLOmS78PzlzAgn4R+joTVMD47ObNdItSwPwouJL8DFfANJNybkgDXcA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"schissel_v2-lake","text":["During a summer camping trip, my best friend shoved me into a lake after I refused her dare to catch a frog.","A peaceful lakeside sandwich break turned chaotic when my friend nudged me into the water over a frog-catching dare.","At our favorite woodland camping spot, my friend pushed me into the lake, then handed me the frog she wanted caught.","My friend dared me to catch a frog, ignored my refusal, pushed me into the lake, and made me laugh afterward.","On our annual summer campout, a frog dare led to my best friend surprising me with a shove into the lake.","I refused to catch a frog during lunch, so my mischievous best friend pushed me into the lake for fun.","After being pushed into the lake by my friend over a frog, I surfaced laughing and promised playful revenge.","A camping afternoon at the lake became hilarious when my best friend used a frog dare to prank me into the water.","My best friend spotted a frog, dared me to grab it, then pushed me into the lake when I declined.","Soaked but laughing, I accepted the frog from my friend and warned her she would get revenge soon enough."],"x":{"dtype":"i2","bdata":"BgMGAwYDBgMGAwYDBgMGAwYDBgM="},"y":{"dtype":"f8","bdata":"c71H398VU8APsEfCzfRYwBi35eTEk1rAo36+\u002fZ67V8AW\u002fV99lUlWwGAV\u002fEgNMlXAM7neV6GjVsDYTaV28ehZwLv\u002fbASS8FPA93ZsgKmSWMA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"boyscout","text":["During a Boy Scouts pier race, the narrator cramped, cried for help, was ignored, and was rescued by a stranger.","While racing with scouts at a pier, he got cramps, began sinking, and survived because a newcomer jumped in.","A Boy Scout 50-yard dash turned dangerous when cramps struck; friends and scoutmaster ignored him, but a stranger saved him.","The narrator nearly drowned during a scout race after cramps hit and others mistook his cries as joking.","In a group race at the pier, he slowed from cramps, yelled help, and was abandoned until a passerby rescued him.","Scouts racing back and forth ignored his distress, thinking he was faking, while a newly arrived man jumped in.","A routine Boy Scouts pier sprint became a near-drowning when cramps overcame him and no one believed his pleas.","He was left behind in a scout race after cramping and sinking, despite shouting for help and being watched.","The scoutmaster and boys failed to respond when he cramped during the race; an unexpected stranger grabbed him.","At a Boy Scouts event, he almost drowned from cramps during a 50-yard race before an unknown rescuer intervened."],"x":{"dtype":"i2","bdata":"xwLHAscCxwLHAscCxwLHAscCxwI="},"y":{"dtype":"f8","bdata":"KnzPqy5vW8AIK+MZ02NcwPVCxy+4OV3Aplheh0SKWMDjPf8k27JfwItsoCZuP13AMGBw5kNeXcDzOqB0O69awFI+DMYrGlzAORKlylqlWMA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"triplett_v1-rookie","text":["As a rookie officer, he drew unwanted attention from the Chief’s talkative daughter, causing tension and an eventual transfer.","The Chief’s daughter pretended to run away over her father’s scolding about the narrator, prompting a search and later relief.","A rookie policeman avoided romance with the Chief’s chatterbox daughter, then left town after her fake disappearance stirred trouble.","The veteran Chief feared his daughter had fled because of the narrator, but she was safely found reading at the station.","After the Chief’s daughter left a runaway note, the narrator helped search, only to discover she had never really vanished.","The narrator’s rookie year ended when a misunderstanding involving the Chief’s daughter made staying in the department too risky.","The Chief’s daughter seemed infatuated with a fitness-minded rookie, but her fake runaway scare forced him to transfer away.","A veteran Chief confronted a rookie over his daughter’s supposed flight, but their search ended anticlimactically at the station.","Deputy Frank Mitchell warned the narrator that the Chief never forgot grudges, so the rookie wisely transferred out.","A talkative young woman’s dramatic note caused a police search, a relieved father, and the narrator’s departure from the force."],"x":{"dtype":"i2","bdata":"MQUxBTEFMQUxBTEFMQUxBTEFMQU="},"y":{"dtype":"f8","bdata":"4CKNkHUQVsDJNrIj3ApcwLUmtc56uF3APe\u002fGggLSW8DXNRjyIRtbwCqFiruLrVfA42qewKzwXsALAr9YRKtewEUH+cqpEmDAdc7LOHjdXMA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"triplett_v2-catlady","text":["Mrs. Baker, the neighborhood cat lady, worried her poorly mannered grandson had run away after leaving a note about her nagging over the narrator.","As a tomboy, the narrator disliked Mrs. Baker’s charming but rude grandson, who seemed to be trying unsuccessfully to befriend her.","Mrs. Baker came to the narrator’s treehouse with a tabby, fearing her grandson had fled because she kept nagging him about the narrator.","The narrator calmed Mrs. Baker, suggesting they search for the boy first and call police only if they could not find him.","They searched near the old mill where the boy’s baseball cap was found, but discovered no further trace of him.","After searching unsuccessfully, they returned to the treehouse club and found the supposed runaway sitting on a branch reading a comic book.","The grandson’s runaway scare ended when he was found casually reading in the treehouse, having never truly disappeared.","Officer Dawson later warned the narrator to stay hidden because Mrs. Baker never forgot anything once fixated on it.","The narrator followed the sheriff’s advice, lying low and avoiding Mrs. Baker after the grandson’s staged disappearance.","A cat-loving neighbor’s false runaway crisis involved her rude grandson, a treehouse search, the old mill, and a sheriff’s ominous warning."],"x":{"dtype":"i2","bdata":"CwULBQsFCwULBQsFCwULBQsFCwU="},"y":{"dtype":"f8","bdata":"lW3l83+bYMDAkw4G4pxdwLWzzSQZqGDACRkr3ub3VcB6gYIg+hlSwMxpaGYa3VjAlFKO0dPZWcBrn47HDFZdwLEyqKNUNFnAMt2x+ZSMY8A="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"hester_v1-park","text":["At 21, a young graphic designer prayed in a park for his wheelchair-bound father, who soon texted he had taken steps with a walker.","While at work, the narrator felt urged to pray for his father’s recovery; moments later, his father unexpectedly stood and walked.","The narrator’s father had been homebound after surgery for eight months until a heartfelt lunchtime prayer seemed to spark his recovery.","A sudden intuition led the narrator to pray under an oak tree, after which his father took his first steps in months.","Living near the city center and working his first job, the narrator witnessed a powerful turning point in his father’s healing.","After months in a wheelchair, the narrator’s father began walking with a walker immediately after his child prayed for him.","The story recounts a young adult’s quiet park prayer and his father’s surprising same-day progress toward mobility and independence.","A father recovering from surgery regained hope and mobility after his child acted on a strong feeling to pray during lunch.","The narrator saw his father’s first unaided progress in months as a sign that a sincere prayer had been answered.","Years after that pivotal prayer, the narrator’s father now walks unassisted and lives actively in his seventies."],"x":{"dtype":"i2","bdata":"bgluCW4JbgluCW4JbgluCW4Jbgk="},"y":{"dtype":"f8","bdata":"4BVhRNtyXsBnPzmnpcNawM6Y8dIHBlrAINosNkTSVsCkVTwUVvVawNvP943OqVbASzXcFXRGXsDssV89T7pYwPmktZdUQVfAjNhlCGD9WMA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"hester_v2-church","text":["At 22, a bookstore worker hears an inner voice urging prayer at a church for his bedridden grandfather’s healing.","Alone at his first bookstore job, the narrator repeatedly hears a message promising his grandfather’s recovery through a candlelit prayer.","Despite doubts about faith, the narrator visits a nearby church and sincerely asks God to heal his incapacitated grandfather.","After praying in church, the narrator feels an urgent pull to return home from the bookstore immediately.","Arriving home, he finds his formerly bedridden grandfather sitting in the living room, talking after suddenly regaining strength.","The grandfather’s unexpected ability to stand and walk begins a gradual recovery that transforms the family’s outlook.","The narrator cannot prove the prayer caused the healing, but the event reshapes his view of faith and miracles.","A mysterious inner voice, a hesitant prayer, and a sudden recovery become a lifelong spiritual turning point.","The grandfather lives many more years after the incident, eventually celebrating his ninetieth birthday with loved ones.","Nearly twenty years later, the narrator remembers the experience as proof of hope, faith, and not being truly alone."],"x":{"dtype":"i2","bdata":"mgyaDJoMmgyaDJoMmgyaDJoMmgw="},"y":{"dtype":"f8","bdata":"9AuV0BRyWsCdiNkmcM5dwAw8OTuAglbAkBnBKSA5VMDdWWqmY5JYwGDjG4YmwVTA4DQaTMUGU8AcyUhqPzVWwP00w7JhB1LA3C3JAft6WMA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"panic","text":["A warehouse worker felt lightheaded, developed chest pressure and breathlessness, and nearly collapsed before a manager intervened.","While stocking merchandise without eating, the narrator experienced a frightening panic attack on the warehouse floor.","Chest tightness, sweating, pounding heartbeat, and vision spots overwhelmed the worker until the manager noticed and helped.","A manager caught the narrator before they collapsed, brought them to the staff room, and gave water and support.","The narrator mistook early lightheadedness for hunger until symptoms escalated into a panic attack at work.","During a late warehouse shift, the worker suffered intense panic symptoms but recovered after resting with managerial assistance.","The episode taught the narrator to eat, rest, and monitor their condition to prevent future panic attacks.","A scary workplace health episode ended safely because a manager quickly recognized distress and intervened.","The narrator lost their voice, struggled to breathe, and blacked out briefly before being helped to safety.","After resting and drinking cold water, the worker’s chest pressure eased and they realized it had been a panic attack."],"x":{"dtype":"i2","bdata":"YgdiB2IHYgdiB2IHYgdiB2IHYgc="},"y":{"dtype":"f8","bdata":"EsjKFkHbVcAzSl1T3JpXwEddUL\u002fJrlvA2qETonlDVsBXiEnjsJxUwI6N5QL8iFrAF0cnQ\u002fx\u002fVMBBaQMLO6BUwA+Rcq7jAVLAh0zndtcoVcA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"doSomething","text":["Driving to a church softball game, the narrator encounters a reckless driver who blocks traffic, tailgates, weaves, and appears drunk or ill.","A middle-aged driver pulls dangerously onto Highway 24, then follows the narrator closely while swerving toward Homestead High School.","The narrator, worried a tailgating, weaving driver might be drunk or having a medical emergency, decides to alert police.","On the way to a softball game, a suspicious driver blocks a lane, nearly collides, tailgates, and cannot stay in one lane.","After observing erratic driving, the narrator flags down a sheriff’s car and reports the man as possibly drunk or sick.","The reckless driver notices the narrator speaking to deputies, stops far from the intersection, and begins backing away down the road.","Police pursue the erratic driver after he reverses down the road, then drives forward slowly and carefully when followed.","The narrator balances reluctance to get involved with concern about drunk driving and possible medical distress, then contacts deputies.","Lisa notices the vehicle riding their bumper; the narrator watches nervously as it weaves dangerously behind them.","A suspected drunk driver’s bizarre behavior prompts a sheriff’s response, though the narrator never learns whether he was stopped."],"x":{"dtype":"i2","bdata":"Yg1iDWINYg1iDWINYg1iDWINYg0="},"y":{"dtype":"f8","bdata":"ch8LQ5EpWsCmpMu+0kBdwD73koSs4lPAnwKxgwLiWMBddvJjuElUwFXA+7KtwlnAPkM0XSPKWMAvdIC7x4lawFmTvhVaQVrAY0TppX6rWMA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"bear","text":["A reluctant farm-raised college friend joins city buddies on a Canadian bear hunt, only to accidentally trap a bear in their cabin.","Four former athletes become college friends, bond through farm hunting, then plan a terrifying bear hunt deep in Canada.","The narrator dislikes hunting but joins friends in Canada, where cowardice, cards, and an unloaded gun create a comic bear encounter.","After days hiding in a remote cabin, friends draw cards to choose who must hunt; the narrator loses and finds a bear.","Sent to get a bear, the narrator forgets to load his gun and runs back with a giant bear chasing him.","A bear hunt becomes a farce when the narrator lures a charging bear into the cabin and locks it inside with his friends.","College friends seek macho hunting glory in Canada, but fear keeps them indoors until a card game forces action.","The narrator fulfills his bear-hunting duty by delivering a live bear straight into the cabin, shocking his companions.","A humorous tall tale follows reluctant hunters whose Canadian adventure ends with a bear trapped indoors and no future invitations.","The narrator’s friends never invite him hunting again after he technically catches a bear by letting it chase him into their cabin."],"x":{"dtype":"i2","bdata":"EhMSExITEhMSExITEhMSExITEhM="},"y":{"dtype":"f8","bdata":"XdhrmWutXMCIycgX\u002fCJfwK+GPU3jZl\u002fAR3gY5kbuXMBeuYN90BhXwOP7RX2QsFTAONK+Xgb5W8ChWssEhsJXwAFVWIAhX17A1BCwsYYQWMA="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"stein","text":["In 1925, a Black family moved to Third and Wharton and was immediately attacked by neighbors throwing stones through their windows.","At age ten, the narrator protected younger children from flying glass, then ran terrified to find her mother at Fourth Street market.","An Irish policeman told the mother the neighborhood did not want Black residents and advised moving instead of offering protection.","The mother confronted police, insisting they were responsible for protection and refusing to move because rent had used all their money.","Police claimed they could do nothing without identifying the attackers, but the mother demanded a patrol wagon ride home.","Arriving in a horse-drawn police patrol, the mother publicly addressed gathered neighbors about racism, poverty, rent, and basic humanity.","The mother told hostile neighbors they must either accept the family for a month or pay for them to move elsewhere.","The narrator recalls her mother as educated, assertive, and unusually unafraid of challenging white authority during a cowed era.","Although the family’s arrival was violent and terrifying, neighbors later became kind and helpful when the father became sick.","The story recounts racial housing hostility, police indifference, and a mother’s courageous stand to secure shelter for her family."],"x":{"dtype":"i2","bdata":"mxybHJscmxybHJscmxybHJscmxw="},"y":{"dtype":"f8","bdata":"R8MQ1vInVsAiVfOgic9bwGODfSLsWFrAasC4BZ\u002fjWsB4Ya3SRAhYwOzJD+7HZWHAowREWwoqVsCdxCz3\u002fhpZwNzPUkeBRlfAeNrxkRqsV8A="},"type":"scatter"},{"hovertemplate":"\u003cb\u003e%{fullData.name}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003esum_logp: %{y:.3f}\u003cbr\u003eSummary: %{text}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers","name":"costa","text":["Mrs. Costa recalls her 18-year-old daughter Marie dying at Methodist Hospital after an appendicitis operation, likely from a blood clot.","Marie was recovering from appendectomy and ready for discharge when she collapsed, sweating and complaining of leg pain and blindness.","The mother believes hospital staff caused Marie’s fatal clot by forcing her out of bed while still under ether.","Called to pick up discharged Marie, Mrs. Costa arrived with clothes and plans for coffee, only to find her daughter dying.","Marie died moments after her mother entered the hospital room, provoking hysteria, accusations, and lifelong grief.","Hospital staff kept calling home about Marie’s discharge, unaware she had collapsed and died before leaving.","Mrs. Costa refused an autopsy, threatened the hospital, and blamed doctors and nurses for killing her daughter.","The news devastated the family: Rita fainted, Mrs. Costa’s husband had a heart attack, and Michael collapsed too.","Relatives and neighbors had been awaiting Marie’s return home, but young James delivered the terrible news of her death.","Twenty-eight years later, Mrs. Costa still mourns Marie daily, remembering her kindness, quiet nature, and unfinished homecoming."],"x":{"dtype":"i2","bdata":"3SPdI90j3SPdI90j3SPdI90j3SM="},"y":{"dtype":"f8","bdata":"oFLlRpB3WsAyrHXxvdNYwBAjpVVEdlnAGz7nQ1ftX8D26eHU2g5YwL5O74RMTFjAJsnONlL6VMB4hDiufddYwOShC8QUqVfACzVmudxAYMA="},"type":"scatter"},{"line":{"color":"black","dash":"dash"},"mode":"lines","name":"fit (r=-0.046, p=0.617)","x":{"dtype":"f8","bdata":"AAAAAAA4hkBu27Zt256LQG7btm3bgpBAJEmSJEk2k0Dctm3btumVQJIkSZIknZhASZIkSZJQm0AAAAAAAASeQNy2bdu2W6BAt23btm21oUCSJEmSJA+jQG7btm3baKRASZIkSZLCpUAlSZIkSRynQAAAAAAAdqhA3LZt27bPqUC3bdu2bSmrQJIkSZIkg6xAbtu2bdvcrUBJkiRJkjavQJIkSZIkSLBAAAAAAAD1sEBu27Zt26GxQNy2bdu2TrJASZIkSZL7skC3bdu2baizQCVJkiRJVbRAkiRJkiQCtUAAAAAAAK+1QG7btm3bW7ZA3LZt27YIt0BJkiRJkrW3QLdt27ZtYrhAJUmSJEkPuUCSJEmSJLy5QAAAAAAAabpAbtu2bdsVu0Dctm3btsK7QEmSJEmSb7xAt23btm0cvUAlSZIkScm9QJIkSZIkdr5AAAAAAAAjv0Bu27Zt28+\u002fQG7btm1bPsBAJEmSJMmUwEDctm3bNuvAQJIkSZKkQcFASZIkSRKYwUAAAAAAgO7BQA=="},"y":{"dtype":"f8","bdata":"CLSU+AMvWcAhhh3FHjJZwDpYppE5NVnAUyovXlQ4WcBt\u002fLcqbztZwIbOQPeJPlnAn6DJw6RBWcC4clKQv0RZwNJE21zaR1nA6xZkKfVKWcAE6ez1D05ZwB67dcIqUVnAN43+jkVUWcBQX4dbYFdZwGkxECh7WlnAgwOZ9JVdWcCc1SHBsGBZwLWnqo3LY1nAznkzWuZmWcDoS7wmAWpZwAEeRfMbbVnAGvDNvzZwWcAzwlaMUXNZwE2U31hsdlnAZmZoJYd5WcB\u002fOPHxoXxZwJgKer68f1nAstwCi9eCWcDLrotX8oVZwOSAFCQNiVnA\u002fVKd8CeMWcAXJSa9Qo9ZwDD3roldklnASck3VniVWcBim8Aik5hZwHxtSe+tm1nAlT\u002fSu8ieWcCuEVuI46FZwMjj41T+pFnA4bVsIRmoWcD6h\u002fXtM6tZwBNafrpOrlnALSwHh2mxWcBG\u002fo9ThLRZwF\u002fQGCCft1nAeKKh7Lm6WcCSdCq51L1ZwKtGs4XvwFnAxBg8UgrEWcDd6sQeJcdZwA=="},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2d"}],"histogram":[{"marker":{"line":{"color":"white","width":0.6}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(237,237,237)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(217,217,217)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"colorscale":{"diverging":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"sequential":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"sequentialminus":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"colorway":["#1F77B4","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B","#E377C2","#7F7F7F","#BCBD22","#17BECF"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","radialaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"zaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"}},"shapedefaults":{"fillcolor":"black","line":{"width":0},"opacity":0.3},"ternary":{"aaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"baxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","caxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"}}},"title":{"text":"All summaries (max 40 tokens): sum(logp) vs narrative length\u003cbr\u003e\u003csup\u003er=-0.046, p=0.617, n=120\u003c\u002fsup\u003e"},"xaxis":{"title":{"text":"Narrative length (characters)"}},"yaxis":{"title":{"text":"sum(logp) of summary"}},"hovermode":"closest"},                        {"responsive": true}                    )                };            </script>        </div></div>
+  <div class="plot"><div>                            <div id="da7e8140-18a3-4271-8813-17992e75b74a" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("da7e8140-18a3-4271-8813-17992e75b74a")) {                    Plotly.newPlot(                        "da7e8140-18a3-4271-8813-17992e75b74a",                        [{"error_y":{"array":{"dtype":"f8","bdata":"hdF0Okc7L0DbZMxnIhAkQJ0m39lUsCFArJH\u002fvfd6KUBCJJtdBpI4QEE\u002fUU\u002fWciZAnetRhrfLLECeMsRe\u002f3YnQNKsLXsWqyZA8whEkPxYLkAlfWgGgBEuQHy0n2h19ixA"},"type":"data","visible":true},"hovertemplate":"\u003cb\u003e%{text}\u003c\u002fb\u003e\u003cbr\u003eNarrative len: %{x}\u003cbr\u003emean sum_logp: %{y:.3f}\u003cextra\u003e\u003c\u002fextra\u003e","mode":"markers+lines","name":"per-story mean","text":["schissel_v1-pool","schissel_v2-lake","boyscout","triplett_v1-rookie","triplett_v2-catlady","hester_v1-park","hester_v2-church","panic","doSomething","bear","stein","costa"],"x":{"dtype":"i2","bdata":"IgMGA8cCMQULBW4JmgxiB2INEhObHN0j"},"y":{"dtype":"f8","bdata":"uIRURB6qVsDyUTF28xZXwBj8OMUH71vA274lKewaXMDGxd56cQ5cwNih042K5FnAbdov5TTOVsCG+B9q5khWwPtZvUs52VjA4rCwi50CW8DqRvlY859ZwG3LKIcR51nA"},"type":"scatter"},{"line":{"color":"black","dash":"dash"},"mode":"lines","name":"fit (r=-0.087, p=0.787)","x":{"dtype":"f8","bdata":"AAAAAAA4hkBu27Zt256LQG7btm3bgpBAJEmSJEk2k0Dctm3btumVQJIkSZIknZhASZIkSZJQm0AAAAAAAASeQNy2bdu2W6BAt23btm21oUCSJEmSJA+jQG7btm3baKRASZIkSZLCpUAlSZIkSRynQAAAAAAAdqhA3LZt27bPqUC3bdu2bSmrQJIkSZIkg6xAbtu2bdvcrUBJkiRJkjavQJIkSZIkSLBAAAAAAAD1sEBu27Zt26GxQNy2bdu2TrJASZIkSZL7skC3bdu2baizQCVJkiRJVbRAkiRJkiQCtUAAAAAAAK+1QG7btm3bW7ZA3LZt27YIt0BJkiRJkrW3QLdt27ZtYrhAJUmSJEkPuUCSJEmSJLy5QAAAAAAAabpAbtu2bdsVu0Dctm3btsK7QEmSJEmSb7xAt23btm0cvUAlSZIkScm9QJIkSZIkdr5AAAAAAAAjv0Bu27Zt28+\u002fQG7btm1bPsBAJEmSJMmUwEDctm3bNuvAQJIkSZKkQcFASZIkSRKYwUAAAAAAgO7BQA=="},"y":{"dtype":"f8","bdata":"CbSU+AMvWcAihh3FHjJZwDtYppE5NVnAVCovXlQ4WcBu\u002fLcqbztZwIfOQPeJPlnAoKDJw6RBWcC5clKQv0RZwNNE21zaR1nA7BZkKfVKWcAF6ez1D05ZwB67dcIqUVnAOI3+jkVUWcBRX4dbYFdZwGoxECh7WlnAgwOZ9JVdWcCd1SHBsGBZwLanqo3LY1nAz3kzWuZmWcDoS7wmAWpZwAIeRfMbbVnAG\u002fDNvzZwWcA0wlaMUXNZwE2U31hsdlnAZ2ZoJYd5WcCAOPHxoXxZwJkKer68f1nAstwCi9eCWcDMrotX8oVZwOWAFCQNiVnA\u002flKd8CeMWcAXJSa9Qo9ZwDH3roldklnASsk3VniVWcBjm8Aik5hZwHxtSe+tm1nAlj\u002fSu8ieWcCvEVuI46FZwMjj41T+pFnA4bVsIRmoWcD7h\u002fXtM6tZwBRafrpOrlnALSwHh2mxWcBG\u002fo9ThLRZwGDQGCCft1nAeaKh7Lm6WcCSdCq51L1ZwKtGs4XvwFnAxRg8UgrEWcDe6sQeJcdZwA=="},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2d"}],"histogram":[{"marker":{"line":{"color":"white","width":0.6}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(237,237,237)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(217,217,217)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"colorscale":{"diverging":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"sequential":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"sequentialminus":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"colorway":["#1F77B4","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B","#E377C2","#7F7F7F","#BCBD22","#17BECF"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","radialaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"zaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"}},"shapedefaults":{"fillcolor":"black","line":{"width":0},"opacity":0.3},"ternary":{"aaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"baxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","caxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"}}},"title":{"text":"Per-story mean sum(logp) vs narrative length"},"xaxis":{"title":{"text":"Narrative length (characters)"}},"yaxis":{"title":{"text":"mean sum(logp)"}}},                        {"responsive": true}                    )                };            </script>        </div></div>
+  <h2>Per-story summaries</h2>
+  <p>Stories are listed in stories_names.txt order (shortest-to-longest narrative).</p>
+  <h3>schissel_v1-pool</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-68.836</td>
+      <td>106</td>
+      <td>23.0</td>
+      <td>At her cousin's wedding reception, a friend pushed her into a pool while trying to protect her from a bee.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-97.381</td>
+      <td>95</td>
+      <td>21.0</td>
+      <td>A bee near her face led her best friend to shove her into a hotel garden pool during a wedding.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-88.199</td>
+      <td>102</td>
+      <td>24.0</td>
+      <td>Dressed up at a fancy reception, she was pushed into the pool by a well-meaning friend avoiding a bee.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-84.590</td>
+      <td>99</td>
+      <td>22.0</td>
+      <td>Her friend tried to save her from a bee, but instead ruined her dress by sending her into the pool.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-89.621</td>
+      <td>104</td>
+      <td>22.0</td>
+      <td>During a cousin's wedding, champagne in hand, she was shoved into the water by her panicked best friend.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-115.220</td>
+      <td>110</td>
+      <td>25.0</td>
+      <td>A bee scare at a fancy hotel garden ended with her gasping in the pool and her friend laughing apologetically.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-80.300</td>
+      <td>104</td>
+      <td>23.0</td>
+      <td>Her best friend overreacted to a bee near her face, causing a splashy disaster at the wedding reception.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-74.179</td>
+      <td>89</td>
+      <td>20.0</td>
+      <td>Instead of a bee sting, she got a soaked dress after her friend pushed her into the pool.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-92.203</td>
+      <td>99</td>
+      <td>21.0</td>
+      <td>At a formal wedding, a friend's protective shove sent her into the pool, narrowly missing the cake.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-116.051</td>
+      <td>98</td>
+      <td>20.0</td>
+      <td>Her cousin joked she nearly landed on the cake after a bee-related shove dumped her into the pool.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>schissel_v2-lake</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-76.342</td>
+      <td>108</td>
+      <td>24.0</td>
+      <td>During a summer camping trip, my best friend shoved me into a lake after I refused her dare to catch a frog.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-99.825</td>
+      <td>116</td>
+      <td>23.0</td>
+      <td>A peaceful lakeside sandwich break turned chaotic when my friend nudged me into the water over a frog-catching dare.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-106.309</td>
+      <td>116</td>
+      <td>24.0</td>
+      <td>At our favorite woodland camping spot, my friend pushed me into the lake, then handed me the frog she wanted caught.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-94.932</td>
+      <td>109</td>
+      <td>25.0</td>
+      <td>My friend dared me to catch a frog, ignored my refusal, pushed me into the lake, and made me laugh afterward.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-89.150</td>
+      <td>105</td>
+      <td>24.0</td>
+      <td>On our annual summer campout, a frog dare led to my best friend surprising me with a shove into the lake.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-84.782</td>
+      <td>102</td>
+      <td>24.0</td>
+      <td>I refused to catch a frog during lunch, so my mischievous best friend pushed me into the lake for fun.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-90.557</td>
+      <td>108</td>
+      <td>21.0</td>
+      <td>After being pushed into the lake by my friend over a frog, I surfaced laughing and promised playful revenge.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-103.640</td>
+      <td>113</td>
+      <td>23.0</td>
+      <td>A camping afternoon at the lake became hilarious when my best friend used a frog dare to prank me into the water.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-79.759</td>
+      <td>97</td>
+      <td>23.0</td>
+      <td>My best friend spotted a frog, dared me to grab it, then pushed me into the lake when I declined.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-98.292</td>
+      <td>105</td>
+      <td>22.0</td>
+      <td>Soaked but laughing, I accepted the frog from my friend and warned her she would get revenge soon enough.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>boyscout</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-109.737</td>
+      <td>112</td>
+      <td>25.0</td>
+      <td>During a Boy Scouts pier race, the narrator cramped, cried for help, was ignored, and was rescued by a stranger.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-113.560</td>
+      <td>108</td>
+      <td>24.0</td>
+      <td>While racing with scouts at a pier, he got cramps, began sinking, and survived because a newcomer jumped in.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-116.902</td>
+      <td>124</td>
+      <td>27.0</td>
+      <td>A Boy Scout 50-yard dash turned dangerous when cramps struck; friends and scoutmaster ignored him, but a stranger saved him.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-98.160</td>
+      <td>104</td>
+      <td>21.0</td>
+      <td>The narrator nearly drowned during a scout race after cramps hit and others mistook his cries as joking.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-126.795</td>
+      <td>112</td>
+      <td>27.0</td>
+      <td>In a group race at the pier, he slowed from cramps, yelled help, and was abandoned until a passerby rescued him.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-116.991</td>
+      <td>111</td>
+      <td>24.0</td>
+      <td>Scouts racing back and forth ignored his distress, thinking he was faking, while a newly arrived man jumped in.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-117.473</td>
+      <td>111</td>
+      <td>24.0</td>
+      <td>A routine Boy Scouts pier sprint became a near-drowning when cramps overcame him and no one believed his pleas.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-106.738</td>
+      <td>107</td>
+      <td>22.0</td>
+      <td>He was left behind in a scout race after cramping and sinking, despite shouting for help and being watched.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-112.409</td>
+      <td>111</td>
+      <td>21.0</td>
+      <td>The scoutmaster and boys failed to respond when he cramped during the race; an unexpected stranger grabbed him.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-98.584</td>
+      <td>112</td>
+      <td>25.0</td>
+      <td>At a Boy Scouts event, he almost drowned from cramps during a 50-yard race before an unknown rescuer intervened.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>triplett_v1-rookie</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-88.257</td>
+      <td>126</td>
+      <td>24.0</td>
+      <td>As a rookie officer, he drew unwanted attention from the Chief’s talkative daughter, causing tension and an eventual transfer.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-112.170</td>
+      <td>126</td>
+      <td>25.0</td>
+      <td>The Chief’s daughter pretended to run away over her father’s scolding about the narrator, prompting a search and later relief.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-118.882</td>
+      <td>133</td>
+      <td>23.0</td>
+      <td>A rookie policeman avoided romance with the Chief’s chatterbox daughter, then left town after her fake disappearance stirred trouble.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-111.281</td>
+      <td>120</td>
+      <td>23.0</td>
+      <td>The veteran Chief feared his daughter had fled because of the narrator, but she was safely found reading at the station.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-108.424</td>
+      <td>123</td>
+      <td>24.0</td>
+      <td>After the Chief’s daughter left a runaway note, the narrator helped search, only to discover she had never really vanished.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-94.712</td>
+      <td>129</td>
+      <td>22.0</td>
+      <td>The narrator’s rookie year ended when a misunderstanding involving the Chief’s daughter made staying in the department too risky.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-123.761</td>
+      <td>124</td>
+      <td>25.0</td>
+      <td>The Chief’s daughter seemed infatuated with a fitness-minded rookie, but her fake runaway scare forced him to transfer away.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-122.676</td>
+      <td>129</td>
+      <td>25.0</td>
+      <td>A veteran Chief confronted a rookie over his daughter’s supposed flight, but their search ended anticlimactically at the station.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-128.583</td>
+      <td>116</td>
+      <td>23.0</td>
+      <td>Deputy Frank Mitchell warned the narrator that the Chief never forgot grudges, so the rookie wisely transferred out.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-115.460</td>
+      <td>127</td>
+      <td>26.0</td>
+      <td>A talkative young woman’s dramatic note caused a police search, a relieved father, and the narrator’s departure from the force.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>triplett_v2-catlady</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-132.859</td>
+      <td>146</td>
+      <td>30.0</td>
+      <td>Mrs. Baker, the neighborhood cat lady, worried her poorly mannered grandson had run away after leaving a note about her nagging over the narrator.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-118.451</td>
+      <td>131</td>
+      <td>28.0</td>
+      <td>As a tomboy, the narrator disliked Mrs. Baker’s charming but rude grandson, who seemed to be trying unsuccessfully to befriend her.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-133.253</td>
+      <td>136</td>
+      <td>30.0</td>
+      <td>Mrs. Baker came to the narrator’s treehouse with a tabby, fearing her grandson had fled because she kept nagging him about the narrator.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-87.873</td>
+      <td>121</td>
+      <td>26.0</td>
+      <td>The narrator calmed Mrs. Baker, suggesting they search for the boy first and call police only if they could not find him.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-72.406</td>
+      <td>111</td>
+      <td>23.0</td>
+      <td>They searched near the old mill where the boy’s baseball cap was found, but discovered no further trace of him.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-99.455</td>
+      <td>140</td>
+      <td>25.0</td>
+      <td>After searching unsuccessfully, they returned to the treehouse club and found the supposed runaway sitting on a branch reading a comic book.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-103.404</td>
+      <td>119</td>
+      <td>22.0</td>
+      <td>The grandson’s runaway scare ended when he was found casually reading in the treehouse, having never truly disappeared.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-117.345</td>
+      <td>116</td>
+      <td>23.0</td>
+      <td>Officer Dawson later warned the narrator to stay hidden because Mrs. Baker never forgot anything once fixated on it.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-100.818</td>
+      <td>120</td>
+      <td>22.0</td>
+      <td>The narrator followed the sheriff’s advice, lying low and avoiding Mrs. Baker after the grandson’s staged disappearance.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-156.393</td>
+      <td>139</td>
+      <td>29.0</td>
+      <td>A cat-loving neighbor’s false runaway crisis involved her rude grandson, a treehouse search, the old mill, and a sheriff’s ominous warning.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>hester_v1-park</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-121.795</td>
+      <td>131</td>
+      <td>30.0</td>
+      <td>At 21, a young graphic designer prayed in a park for his wheelchair-bound father, who soon texted he had taken steps with a walker.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-107.057</td>
+      <td>130</td>
+      <td>26.0</td>
+      <td>While at work, the narrator felt urged to pray for his father’s recovery; moments later, his father unexpectedly stood and walked.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-104.094</td>
+      <td>136</td>
+      <td>25.0</td>
+      <td>The narrator’s father had been homebound after surgery for eight months until a heartfelt lunchtime prayer seemed to spark his recovery.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-91.285</td>
+      <td>117</td>
+      <td>24.0</td>
+      <td>A sudden intuition led the narrator to pray under an oak tree, after which his father took his first steps in months.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-107.833</td>
+      <td>127</td>
+      <td>24.0</td>
+      <td>Living near the city center and working his first job, the narrator witnessed a powerful turning point in his father’s healing.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-90.653</td>
+      <td>123</td>
+      <td>23.0</td>
+      <td>After months in a wheelchair, the narrator’s father began walking with a walker immediately after his child prayed for him.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-121.101</td>
+      <td>132</td>
+      <td>23.0</td>
+      <td>The story recounts a young adult’s quiet park prayer and his father’s surprising same-day progress toward mobility and independence.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-98.911</td>
+      <td>123</td>
+      <td>22.0</td>
+      <td>A father recovering from surgery regained hope and mobility after his child acted on a strong feeling to pray during lunch.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-93.021</td>
+      <td>113</td>
+      <td>24.0</td>
+      <td>The narrator saw his father’s first unaided progress in months as a sign that a sincere prayer had been answered.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-99.959</td>
+      <td>112</td>
+      <td>23.0</td>
+      <td>Years after that pivotal prayer, the narrator’s father now walks unassisted and lives actively in his seventies.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>hester_v2-church</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-105.783</td>
+      <td>113</td>
+      <td>24.0</td>
+      <td>At 22, a bookstore worker hears an inner voice urging prayer at a church for his bedridden grandfather’s healing.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-119.226</td>
+      <td>138</td>
+      <td>25.0</td>
+      <td>Alone at his first bookstore job, the narrator repeatedly hears a message promising his grandfather’s recovery through a candlelit prayer.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-90.039</td>
+      <td>125</td>
+      <td>22.0</td>
+      <td>Despite doubts about faith, the narrator visits a nearby church and sincerely asks God to heal his incapacitated grandfather.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-80.893</td>
+      <td>105</td>
+      <td>19.0</td>
+      <td>After praying in church, the narrator feels an urgent pull to return home from the bookstore immediately.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-98.287</td>
+      <td>129</td>
+      <td>24.0</td>
+      <td>Arriving home, he finds his formerly bedridden grandfather sitting in the living room, talking after suddenly regaining strength.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-83.018</td>
+      <td>118</td>
+      <td>20.0</td>
+      <td>The grandfather’s unexpected ability to stand and walk begins a gradual recovery that transforms the family’s outlook.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-76.106</td>
+      <td>111</td>
+      <td>22.0</td>
+      <td>The narrator cannot prove the prayer caused the healing, but the event reshapes his view of faith and miracles.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-88.832</td>
+      <td>109</td>
+      <td>20.0</td>
+      <td>A mysterious inner voice, a hesitant prayer, and a sudden recovery become a lifelong spiritual turning point.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-72.115</td>
+      <td>120</td>
+      <td>21.0</td>
+      <td>The grandfather lives many more years after the incident, eventually celebrating his ninetieth birthday with loved ones.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-97.922</td>
+      <td>116</td>
+      <td>23.0</td>
+      <td>Nearly twenty years later, the narrator remembers the experience as proof of hope, faith, and not being truly alone.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>panic</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-87.426</td>
+      <td>131</td>
+      <td>24.0</td>
+      <td>A warehouse worker felt lightheaded, developed chest pressure and breathlessness, and nearly collapsed before a manager intervened.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-94.420</td>
+      <td>118</td>
+      <td>18.0</td>
+      <td>While stocking merchandise without eating, the narrator experienced a frightening panic attack on the warehouse floor.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-110.731</td>
+      <td>124</td>
+      <td>23.0</td>
+      <td>Chest tightness, sweating, pounding heartbeat, and vision spots overwhelmed the worker until the manager noticed and helped.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-89.054</td>
+      <td>112</td>
+      <td>22.0</td>
+      <td>A manager caught the narrator before they collapsed, brought them to the staff room, and gave water and support.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-82.448</td>
+      <td>107</td>
+      <td>22.0</td>
+      <td>The narrator mistook early lightheadedness for hunger until symptoms escalated into a panic attack at work.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-106.140</td>
+      <td>129</td>
+      <td>20.0</td>
+      <td>During a late warehouse shift, the worker suffered intense panic symptoms but recovered after resting with managerial assistance.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-82.000</td>
+      <td>106</td>
+      <td>20.0</td>
+      <td>The episode taught the narrator to eat, rest, and monitor their condition to prevent future panic attacks.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-82.504</td>
+      <td>107</td>
+      <td>16.0</td>
+      <td>A scary workplace health episode ended safely because a manager quickly recognized distress and intervened.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-72.030</td>
+      <td>107</td>
+      <td>21.0</td>
+      <td>The narrator lost their voice, struggled to breathe, and blacked out briefly before being helped to safety.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-84.638</td>
+      <td>118</td>
+      <td>23.0</td>
+      <td>After resting and drinking cold water, the worker’s chest pressure eased and they realized it had been a panic attack.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>doSomething</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-104.649</td>
+      <td>141</td>
+      <td>30.0</td>
+      <td>Driving to a church softball game, the narrator encounters a reckless driver who blocks traffic, tailgates, weaves, and appears drunk or ill.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-117.013</td>
+      <td>134</td>
+      <td>25.0</td>
+      <td>A middle-aged driver pulls dangerously onto Highway 24, then follows the narrator closely while swerving toward Homestead High School.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-79.542</td>
+      <td>121</td>
+      <td>25.0</td>
+      <td>The narrator, worried a tailgating, weaving driver might be drunk or having a medical emergency, decides to alert police.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-99.531</td>
+      <td>122</td>
+      <td>30.0</td>
+      <td>On the way to a softball game, a suspicious driver blocks a lane, nearly collides, tailgates, and cannot stay in one lane.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-81.152</td>
+      <td>119</td>
+      <td>23.0</td>
+      <td>After observing erratic driving, the narrator flags down a sheriff’s car and reports the man as possibly drunk or sick.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-103.042</td>
+      <td>134</td>
+      <td>24.0</td>
+      <td>The reckless driver notices the narrator speaking to deputies, stops far from the intersection, and begins backing away down the road.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-99.158</td>
+      <td>121</td>
+      <td>22.0</td>
+      <td>Police pursue the erratic driver after he reverses down the road, then drives forward slowly and carefully when followed.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-106.153</td>
+      <td>136</td>
+      <td>21.0</td>
+      <td>The narrator balances reluctance to get involved with concern about drunk driving and possible medical distress, then contacts deputies.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-105.021</td>
+      <td>114</td>
+      <td>21.0</td>
+      <td>Lisa notices the vehicle riding their bumper; the narrator watches nervously as it weaves dangerously behind them.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-98.680</td>
+      <td>130</td>
+      <td>23.0</td>
+      <td>A suspected drunk driver’s bizarre behavior prompts a sheriff’s response, though the narrator never learns whether he was stopped.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>bear</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-114.710</td>
+      <td>131</td>
+      <td>26.0</td>
+      <td>A reluctant farm-raised college friend joins city buddies on a Canadian bear hunt, only to accidentally trap a bear in their cabin.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-124.547</td>
+      <td>120</td>
+      <td>22.0</td>
+      <td>Four former athletes become college friends, bond through farm hunting, then plan a terrifying bear hunt deep in Canada.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-125.608</td>
+      <td>133</td>
+      <td>26.0</td>
+      <td>The narrator dislikes hunting but joins friends in Canada, where cowardice, cards, and an unloaded gun create a comic bear encounter.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-115.723</td>
+      <td>117</td>
+      <td>25.0</td>
+      <td>After days hiding in a remote cabin, friends draw cards to choose who must hunt; the narrator loses and finds a bear.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-92.388</td>
+      <td>101</td>
+      <td>24.0</td>
+      <td>Sent to get a bear, the narrator forgets to load his gun and runs back with a giant bear chasing him.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-82.759</td>
+      <td>120</td>
+      <td>26.0</td>
+      <td>A bear hunt becomes a farce when the narrator lures a charging bear into the cabin and locks it inside with his friends.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-111.891</td>
+      <td>112</td>
+      <td>22.0</td>
+      <td>College friends seek macho hunting glory in Canada, but fear keeps them indoors until a card game forces action.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-95.039</td>
+      <td>119</td>
+      <td>23.0</td>
+      <td>The narrator fulfills his bear-hunting duty by delivering a live bear straight into the cabin, shocking his companions.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-121.486</td>
+      <td>131</td>
+      <td>21.0</td>
+      <td>A humorous tall tale follows reluctant hunters whose Canadian adventure ends with a bear trapped indoors and no future invitations.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-96.258</td>
+      <td>131</td>
+      <td>24.0</td>
+      <td>The narrator’s friends never invite him hunting again after he technically catches a bear by letting it chase him into their cabin.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>stein</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-88.624</td>
+      <td>131</td>
+      <td>26.0</td>
+      <td>In 1925, a Black family moved to Third and Wharton and was immediately attacked by neighbors throwing stones through their windows.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-111.243</td>
+      <td>133</td>
+      <td>25.0</td>
+      <td>At age ten, the narrator protected younger children from flying glass, then ran terrified to find her mother at Fourth Street market.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-105.389</td>
+      <td>131</td>
+      <td>21.0</td>
+      <td>An Irish policeman told the mother the neighborhood did not want Black residents and advised moving instead of offering protection.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-107.557</td>
+      <td>136</td>
+      <td>23.0</td>
+      <td>The mother confronted police, insisting they were responsible for protection and refusing to move because rent had used all their money.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-96.129</td>
+      <td>121</td>
+      <td>21.0</td>
+      <td>Police claimed they could do nothing without identifying the attackers, but the mother demanded a patrol wagon ride home.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-139.181</td>
+      <td>138</td>
+      <td>27.0</td>
+      <td>Arriving in a horse-drawn police patrol, the mother publicly addressed gathered neighbors about racism, poverty, rent, and basic humanity.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-88.657</td>
+      <td>115</td>
+      <td>22.0</td>
+      <td>The mother told hostile neighbors they must either accept the family for a month or pay for them to move elsewhere.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-100.422</td>
+      <td>129</td>
+      <td>26.0</td>
+      <td>The narrator recalls her mother as educated, assertive, and unusually unafraid of challenging white authority during a cowed era.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-93.102</td>
+      <td>126</td>
+      <td>22.0</td>
+      <td>Although the family’s arrival was violent and terrifying, neighbors later became kind and helpful when the father became sick.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-94.689</td>
+      <td>131</td>
+      <td>23.0</td>
+      <td>The story recounts racial housing hostility, police indifference, and a mother’s courageous stand to secure shelter for her family.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>costa</h3>
+<table border="1" class="dataframe summary-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>summary_idx</th>
+      <th>sum_logp</th>
+      <th>summary_len_chars</th>
+      <th>summary_len_tokens</th>
+      <th>summary_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-105.868</td>
+      <td>136</td>
+      <td>28.0</td>
+      <td>Mrs. Costa recalls her 18-year-old daughter Marie dying at Methodist Hospital after an appendicitis operation, likely from a blood clot.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-99.308</td>
+      <td>134</td>
+      <td>24.0</td>
+      <td>Marie was recovering from appendectomy and ready for discharge when she collapsed, sweating and complaining of leg pain and blindness.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-101.848</td>
+      <td>111</td>
+      <td>21.0</td>
+      <td>The mother believes hospital staff caused Marie’s fatal clot by forcing her out of bed while still under ether.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-127.708</td>
+      <td>122</td>
+      <td>25.0</td>
+      <td>Called to pick up discharged Marie, Mrs. Costa arrived with clothes and plans for coffee, only to find her daughter dying.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>-96.232</td>
+      <td>115</td>
+      <td>22.0</td>
+      <td>Marie died moments after her mother entered the hospital room, provoking hysteria, accusations, and lifelong grief.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-97.192</td>
+      <td>108</td>
+      <td>19.0</td>
+      <td>Hospital staff kept calling home about Marie’s discharge, unaware she had collapsed and died before leaving.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>-83.911</td>
+      <td>111</td>
+      <td>21.0</td>
+      <td>Mrs. Costa refused an autopsy, threatened the hospital, and blamed doctors and nurses for killing her daughter.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>-99.367</td>
+      <td>113</td>
+      <td>25.0</td>
+      <td>The news devastated the family: Rita fainted, Mrs. Costa’s husband had a heart attack, and Michael collapsed too.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-94.642</td>
+      <td>120</td>
+      <td>23.0</td>
+      <td>Relatives and neighbors had been awaiting Marie’s return home, but young James delivered the terrible news of her death.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-130.027</td>
+      <td>129</td>
+      <td>26.0</td>
+      <td>Twenty-eight years later, Mrs. Costa still mourns Marie daily, remembering her kindness, quiet nature, and unfinished homecoming.</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
