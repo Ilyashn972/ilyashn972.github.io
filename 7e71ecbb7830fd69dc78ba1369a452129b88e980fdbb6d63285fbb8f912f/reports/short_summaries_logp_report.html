@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Short summaries and logp</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; max-width: 900px; line-height: 1.5; }
+    code, pre { background: #f4f4f4; }
+    pre { padding: 1rem; overflow-x: auto; }
+    code { padding: 2px 4px; }
+    ul.report-links { list-style: none; padding: 0; }
+    ul.report-links li { margin: 0.75rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Short summaries and logp</h1>
+  <p>
+    Narrative hub for experiments that score unconditional <code>sum(logp)</code> of short
+    LLM summaries against narrative length (characters). Compare three summary formats:
+    four keypoints with a calibrated total token budget, and single-sentence summaries
+    capped at 40 tokens or 110 characters.
+  </p>
+
+  <h2>Reports</h2>
+  <ul class="report-links">
+    <li><a href="four_keypoints_max_40_total_tokens.html">Four keypoints (max 40 total tokens, Costa-calibrated)</a></li>
+    <li><a href="short_summary_logp_max_40_tokens.html">Short summaries (max 40 tokens)</a></li>
+    <li><a href="short_summary_logp_max_110_chars.html">Short summaries (max 110 characters)</a></li>
+  </ul>
+
+  <h2>Reproducibility</h2>
+  <p>From the repository root, with dependencies installed (<code>.venv</code>):</p>
+  <pre>cd /Users/ilyashnayderman/projects/llm-narrative-analysis
+
+# Rebuild HTML from existing caches (no API calls)
+.venv/bin/python tools/build_four_keypoints_report.py --plots-only
+.venv/bin/python tools/build_short_summary_logp_report.py --max-tokens 40 --plots-only
+.venv/bin/python tools/build_short_summary_logp_report.py --max-chars 110 --plots-only</pre>
+  <p>
+    To refresh logp scores from Together, add <code>--compute-logp</code> (four keypoints)
+    or <code>--generate-summaries --compute-logp</code> (short summaries) instead of
+    <code>--plots-only</code>.
+  </p>
+</body>
+</html>

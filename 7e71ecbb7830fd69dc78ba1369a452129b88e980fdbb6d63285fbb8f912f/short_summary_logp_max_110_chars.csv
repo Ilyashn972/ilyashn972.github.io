@@ -1,0 +1,121 @@
+story,summary_idx,summary_text,narrative_len_chars,sum_logp,summary_len_chars,summary_len_tokens
+schissel_v1-pool,0,"At a wedding reception, my friend shoved me into a pool to save me from a bee.",802,-55.22338882,78,19
+schissel_v1-pool,1,A bee near my face led my best friend to push me into the hotel garden pool.,802,-76.58823095,76,18
+schissel_v1-pool,2,"My friend tried to prevent a bee sting, but ruined my dress by pushing me into the pool.",802,-81.80278989,88,20
+schissel_v1-pool,3,"During my cousin's wedding, a bee scare ended with me soaked in the pool.",802,-73.82034767,73,17
+schissel_v1-pool,4,"Champagne in hand, I was shoved into a pool by a friend trying to help.",802,-74.7556300783,71,19
+schissel_v1-pool,5,My best friend panicked over a bee and sent me tumbling into the reception pool.,802,-78.1939654557,80,17
+schissel_v1-pool,6,"A well-meant shove to dodge a bee left me gasping, soaked, and in a ruined dress.",802,-103.70778942775,81,22
+schissel_v1-pool,7,"At a fancy hotel wedding, my friend's bee rescue attempt became a pool disaster.",802,-95.2701837,80,17
+schissel_v1-pool,8,My friend apologized and laughed after pushing me into the pool to avoid a bee sting.,802,-66.97856076000001,85,17
+schissel_v1-pool,9,My cousin joked I nearly landed on the cake after my bee-fearing friend pushed me in.,802,-106.5760303415,85,19
+schissel_v2-lake,0,Best friend pushed me into a lake on a camping trip after I refused a frog-catching dare.,774,-78.93728098700001,89,19
+schissel_v2-lake,1,"At our favorite woods spot, a frog dare turned into a surprise shove into the lake.",774,-91.20301441,83,18
+schissel_v2-lake,2,"I ignored my friend's frog dare, so she nudged me into the water and handed me the frog.",774,-86.5181162855,88,22
+schissel_v2-lake,3,A peaceful camping lunch became chaos when my friend pushed me into the lake over a frog.,774,-87.58082288,89,18
+schissel_v2-lake,4,"After I surfaced laughing, my friend scooped up the frog and I vowed playful revenge.",774,-91.3933416,85,18
+schissel_v2-lake,5,My friend wouldn't take no for an answer and shoved me into the lake to catch a frog.,774,-66.26873847164,85,20
+schissel_v2-lake,6,"During summer camp, a rejected frog challenge ended with me soaked and plotting payback.",774,-98.47612397,88,17
+schissel_v2-lake,7,"She dared me to catch a shore frog, pushed me in, then proudly gave me the frog.",774,-96.22354581,80,20
+schissel_v2-lake,8,Our annual camping trip got hilarious when a frog prank left me dripping in the lake.,774,-86.828928084,85,17
+schissel_v2-lake,9,"A lake shove, a frog, and uncontrollable laughter sparked a friendly revenge promise.",774,-100.603019054,85,17
+boyscout,0,"During a Boy Scouts 50-yard dash at a pier, he cramped and cried for help.",711,-93.20038885,74,19
+boyscout,1,He got cramps while racing with scouts at the pier and began sinking.,711,-79.7115322,69,15
+boyscout,2,Other boys thought his calls for help were a trick to catch up and kept going.,711,-77.36603351,78,17
+boyscout,3,The scoutmaster saw him struggling but did not respond or take action.,711,-56.41022313,70,14
+boyscout,4,"After cramping during a pier race, he was left behind by the other scouts.",711,-79.76393545,74,17
+boyscout,5,"He yelled for help in the water, but his friends ignored him and continued racing.",711,-56.67685471,82,17
+boyscout,6,"As he started going under, a stranger who had just arrived jumped in to save him.",711,-59.46592718,81,18
+boyscout,7,A passerby unexpectedly rescued him when no one else believed he was drowning.,711,-65.07016039,78,15
+boyscout,8,"While racing back and forth at the pier, cramps left him unable to swim.",711,-71.11289613,72,17
+boyscout,9,He nearly drowned during a Boy Scouts race until a newly arrived man grabbed him.,711,-85.89125197,81,16
+triplett_v1-rookie,0,"As a rookie cop, he drew the chief's anger when the chief's talkative daughter seemed smitten with him.",1329,-82.8284862293,103,24
+triplett_v1-rookie,1,"The chief's daughter claimed she'd run away over scoldings about a rookie officer, sparking a search.",1329,-96.290275903,101,22
+triplett_v1-rookie,2,"A rookie officer searched for the chief's daughter, only to find her safe at the station reading.",1329,-80.291909667,97,20
+triplett_v1-rookie,3,"After a false runaway scare involving the chief's daughter, a deputy warned the rookie to transfer.",1329,-101.29949555,99,19
+triplett_v1-rookie,4,"The narrator, a fitness-loving rookie, was targeted by the chatterbox daughter of a fearsome chief.",1329,-106.5958901418,99,21
+triplett_v1-rookie,5,The veteran chief threatened a rookie after his daughter left a runaway note tied to her crush.,1329,-110.82342065,95,18
+triplett_v1-rookie,6,"A supposed escape by the chief's daughter ended harmlessly, but the rookie still fled the precinct.",1329,-108.449797468,99,20
+triplett_v1-rookie,7,"Frank Mitchell warned the rookie the chief never forgets, so he transferred after his first year.",1329,-99.754858385,97,19
+triplett_v1-rookie,8,The chief's daughter caused a scare with a runaway message; she was later found calmly reading.,1329,-92.93500736,95,19
+triplett_v1-rookie,9,A rookie's first year ended in transfer after the chief's daughter's antics made him a marked man.,1329,-94.154084478,98,21
+triplett_v2-catlady,0,"Mrs. Baker, the cat lady, feared her rude grandson ran away over her nagging about me.",1291,-101.0986897449,86,21
+triplett_v2-catlady,1,A cat-loving neighbor asked me to help find her grandson after he left a runaway note.,1291,-75.3157361,86,18
+triplett_v2-catlady,2,"Mrs. Baker's ill-mannered grandson claimed he ran off, but was found in my treehouse.",1291,-101.28600150184,85,22
+triplett_v2-catlady,3,"I helped Mrs. Baker search near the old mill, only to find her grandson reading in my club.",1291,-107.68069703,91,21
+triplett_v2-catlady,4,A rude boy's fake runaway note sent Mrs. Baker and me on a search ending at my treehouse.,1291,-110.19895212,89,22
+triplett_v2-catlady,5,"Mrs. Baker panicked over her grandson's note, but he was hiding with a comic in my treehouse.",1291,-108.46872817,93,22
+triplett_v2-catlady,6,"The cat lady's grandson wanted my friendship, then staged a runaway scare after being nagged.",1291,-103.947150694,93,19
+triplett_v2-catlady,7,"After a search by the old mill, Mrs. Baker's missing grandson turned up safe in a treehouse.",1291,-83.38609841499999,92,22
+triplett_v2-catlady,8,Officer Dawson warned me to lay low because Mrs. Baker never forgot a grudge or suspicion.,1291,-101.82131649914,90,20
+triplett_v2-catlady,9,"As a tomboy, I got caught in Mrs. Baker's family drama when her grandson faked running away.",1291,-99.619708964,92,23
+hester_v1-park,0,"At 21, a designer prayed in a park for his disabled dad, who then took first steps in months.",2414,-101.65158881,93,23
+hester_v1-park,1,A lunch-break prayer for a wheelchair-bound father became the turning point in his recovery.,2414,-80.556653597,92,17
+hester_v1-park,2,"After months immobile, the narrator's father texted he walked right after a park prayer.",2414,-115.559671057,88,19
+hester_v1-park,3,"Feeling urged to pray, a young worker asked God to help his father recover—and saw quick progress.",2414,-102.53462473,98,21
+hester_v1-park,4,A father's first walker steps followed his child's quiet prayer under an oak tree.,2414,-92.98503376,82,17
+hester_v1-park,5,The narrator links a sudden park prayer to his father's recovery from surgery and regained mobility.,2414,-97.3520516,100,18
+hester_v1-park,6,"With his sister away and dad homebound, a young designer prayed and witnessed a breakthrough.",2414,-96.6955926,93,18
+hester_v1-park,7,A man recovering from surgery began walking again after his child prayed during lunch.,2414,-77.741787345,86,15
+hester_v1-park,8,A quiet plea for a father's independence was answered by a text: he had taken steps.,2414,-99.9481558,84,19
+hester_v1-park,9,"Years after a seemingly answered prayer, the father walks unaided and enjoys life in his seventies.",2414,-93.2585949372,99,21
+hester_v2-church,0,"At 22, a bookstore worker hears a voice urging prayer; Grandpa soon rises and recovers.",3226,-114.87349387,87,21
+hester_v2-church,1,"A mysterious inner voice leads a young clerk to light a candle, after which Grandpa walks again.",3226,-101.98052118,96,20
+hester_v2-church,2,"Alone at work, the narrator prays for a bedridden grandpa and returns to find him sitting up.",3226,-97.85240045,93,23
+hester_v2-church,3,A nonreligious young adult follows a sudden call to church; Grandpa's recovery begins that day.,3226,-109.6582632,95,20
+hester_v2-church,4,A candlelit prayer at an old church coincides with a bedridden grandfather regaining his strength.,3226,-86.142674113,98,20
+hester_v2-church,5,The narrator's plea for healing is followed by Grandpa's sudden energy and years of renewed life.,3226,-90.751475237,97,20
+hester_v2-church,6,"Prompted by an unseen voice, a bookstore clerk prays, sparking a lifelong belief in miracles.",3226,-95.669458485,93,20
+hester_v2-church,7,"Grandpa rises after months bedridden, just after the narrator obeys a strange urge to pray.",3226,-103.91761624845,91,20
+hester_v2-church,8,A family miracle reshapes the narrator's faith after a church prayer for an ailing grandfather.,3226,-89.7962379769,95,19
+hester_v2-church,9,"Twenty years later, a prayer-linked recovery still reminds the narrator they are never alone.",3226,-96.60656271,93,17
+panic,0,"Warehouse worker felt chest pressure, nearly fainted, and was rescued by an alert manager.",1890,-86.5898773453,90,18
+panic,1,"After skipping food at work, narrator had a panic attack while stocking a warehouse.",1890,-90.02620903,84,16
+panic,2,"Lightheaded and sweating on the warehouse floor, the narrator was caught before collapsing.",1890,-83.37237166,91,18
+panic,3,"A manager noticed the narrator in distress, helped them sit, hydrate, and recover.",1890,-84.756094093,82,18
+panic,4,"Chest tightness, pounding heart, and breathlessness turned out to be a panic attack.",1890,-54.9653476578,84,19
+panic,5,"The narrator learned to eat, rest, and monitor stress after a scary workplace episode.",1890,-88.37638824,86,17
+panic,6,An ordinary warehouse shift became frightening when panic symptoms struck suddenly.,1890,-75.28813257,83,12
+panic,7,"Unable to call for help, the narrator was saved when their manager checked on them.",1890,-74.08632485,83,17
+panic,8,Cold water and rest eased the narrator's panic attack after they nearly passed out.,1890,-84.3779422775,83,16
+panic,9,A quick-thinking manager prevented a warehouse collapse from becoming much worse.,1890,-61.68534344,81,13
+doSomething,0,"On the way to softball, a driver pulled into traffic, tailgated, and weaved behind the narrator.",3426,-95.576141453,96,23
+doSomething,1,"A middle-aged man blocked Highway 24, then followed closely as the narrator drove to Homestead.",3426,-94.94898611,95,20
+doSomething,2,"The narrator suspected a tailgating, weaving driver was drunk or ill and felt compelled to act.",3426,-83.441958892,95,20
+doSomething,3,"Concerned about drunk driving and a possible medical emergency, the narrator flagged a sheriff.",3426,-79.80378551,95,17
+doSomething,4,"At a stop sign, the narrator told deputies the driver behind him couldn't stay in his lane.",3426,-81.034043744,91,20
+doSomething,5,"When the driver saw police being alerted, he stopped far back and began reversing down the road.",3426,-81.52603825,96,19
+doSomething,6,"Deputies pursued the erratic driver, who reversed, then crept forward slowly and carefully.",3426,-91.85000353,91,18
+doSomething,7,Lisa noticed the car riding their bumper as they drove north on Aboite Center toward the diamond.,3426,-101.26893263,97,20
+doSomething,8,The narrator wrestled with getting involved but feared ignoring a drunk or sick driver.,3426,-91.06988649,87,16
+doSomething,9,A risky drive to a church softball game ended with the narrator reporting an erratic motorist.,3426,-90.387822858,94,18
+bear,0,"Farm-raised college friends go to Canada for bear hunting, but fear keeps them in the cabin.",4882,-93.295868928,92,20
+bear,1,"Reluctant hunter draws high card, meets a huge bear, then realizes his gun is unloaded.",4882,-100.6117443,87,20
+bear,2,A farm kid joins city friends on a Canadian bear hunt none of them actually wants to do.,4882,-97.29053393,88,19
+bear,3,"After days hiding in a cabin, friends draw cards to decide who must bring back a bear.",4882,-90.76771017,86,19
+bear,4,The narrator runs from a giant bear and tricks it into entering the cabin for his friends.,4882,-75.37101575,90,18
+bear,5,"He shuts the cabin door on the bear: You skin him, I'll go get another one!",4882,-88.40390842,75,20
+bear,6,"College buddies bond through farm hunts, then overreach with a spooky bear trip to Canada.",4882,-117.6788353,90,18
+bear,7,"Afraid of mockery, the group makes one unlucky friend hunt a bear, and he delivers it alive.",4882,-113.81037045,92,21
+bear,8,"An unloaded rifle turns a bear hunt into a sprint, ending with the bear trapped indoors.",4882,-90.28451385,88,18
+bear,9,"His friends accept he kept his promise, but never invite him hunting again.",4882,-71.117277011,75,15
+stein,0,"In 1925, a Black family’s new home was stoned in an Irish neighborhood, terrifying a 10-year-old.",7323,-87.713086506,97,26
+stein,1,A girl sheltered her siblings from flying glass after racists hurled stones through their windows.,7323,-71.604214277377,98,19
+stein,2,"Police told the family to move because neighbors didn’t want Black residents, offering no protection.",7323,-81.8775296,101,18
+stein,3,"The mother demanded help at the precinct, then made police escort her home in a horse patrol wagon.",7323,-95.64177974,99,20
+stein,4,"Facing hostile neighbors, the mother declared she had paid rent and would not leave without moving money.",7323,-91.2521246,105,19
+stein,5,"A racist attack greeted the family’s move to Third and Wharton, but the mother stood her ground.",7323,-90.1354667377,96,21
+stein,6,The narrator recalls praying and running to find her mother while stones smashed the new house.,7323,-88.0035779,95,17
+stein,7,Authorities excused the violence as a bad Irish neighborhood and said they could do nothing.,7323,-81.42906654000001,92,17
+stein,8,"The mother publicly challenged the crowd, saying she only wanted a home for her family.",7323,-68.64878665,87,17
+stein,9,"Despite the terrifying welcome, neighbors later became kind when the father fell ill.",7323,-79.58647244,85,15
+costa,0,"Marie, 18, died from a blood clot after appendicitis surgery as her mother arrived to take her home.",9181,-82.74438433254,100,25
+costa,1,"A mother blames hospital staff for making her ether-sedated daughter get up, causing a fatal clot.",9181,-91.882260125,98,21
+costa,2,"On discharge day, Marie collapsed with leg pain and blindness; doctors later cited a blood clot.",9181,-96.563258124,96,19
+costa,3,"Mrs. Costa brought clothes and coffee plans for Marie, but found her sweating and dying in bed.",9181,-108.15624394,95,20
+costa,4,The hospital kept calling for Marie’s pickup even as her mother learned Marie had died.,9181,-80.8809839,87,17
+costa,5,"Marie’s death shattered the family: her father and brother had heart attacks, Rita collapsed.",9181,-88.9107899,93,19
+costa,6,Rita fainted on the hospital’s marble floor and suffered recurring leg pain for decades afterward.,9181,-89.577101333,98,19
+costa,7,"Mrs. Costa refused an autopsy, raging that the hospital had killed her beloved daughter.",9181,-76.23450192,88,17
+costa,8,Relatives waiting to welcome Marie home instead heard from little James that she had died.,9181,-90.79158533,90,17
+costa,9,"Twenty-eight years later, Marie’s mother still mourns, offering her first morning coffee to her.",9181,-90.53259422,96,20
