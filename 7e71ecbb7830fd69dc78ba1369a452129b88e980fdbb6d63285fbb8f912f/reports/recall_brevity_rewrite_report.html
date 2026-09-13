@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recall brevity rewrite</title>
+  <style>
+    :root {
+      --ink:#1a2332; --muted:#5a6577; --line:#d8dee8; --bg:#f4f1ea;
+      --card:#fff; --accent:#1f4e79; --soft:#eef2f7;
+    }
+    body {
+      margin:0; font-family:"Source Serif 4",Palatino,Georgia,serif; color:var(--ink);
+      background: radial-gradient(1000px 500px at 10% -10%, #dde7f2, transparent 55%),
+                  radial-gradient(800px 400px at 100% 0%, #efe6db, transparent 50%), var(--bg);
+      line-height:1.6;
+    }
+    .wrap { max-width:1100px; margin:0 auto; padding:2.2rem 1.2rem 3.5rem; }
+    h1 { font-size:clamp(1.7rem,3vw,2.2rem); max-width:28ch; margin:0 0 .6rem; }
+    h2 { border-bottom:1px solid var(--line); padding-bottom:.3rem; margin-top:2.2rem; }
+    .lede { color:var(--muted); font-size:1.08rem; max-width:48rem; }
+    .eyebrow { font-family:"IBM Plex Sans",sans-serif; text-transform:uppercase;
+      letter-spacing:.08em; font-size:.72rem; color:var(--muted); }
+    .toc { font-family:"IBM Plex Sans",sans-serif; font-size:.9rem; background:var(--soft);
+      border:1px solid var(--line); border-radius:10px; padding:.8rem 1rem; max-width:42rem; }
+    .toc a { margin-right:.8rem; }
+    .explain { background:var(--card); border:1px solid var(--line); border-radius:12px;
+      padding:1rem 1.2rem; margin:1rem 0; max-width:52rem; }
+    .ok { background:#f3faf4; border-left:4px solid #2d6a4f; padding:.85rem 1rem;
+      margin:1rem 0; border-radius:0 10px 10px 0; }
+    .warn { background:#fff8f0; border-left:4px solid #d35400; padding:.85rem 1rem;
+      margin:1rem 0; border-radius:0 10px 10px 0; }
+    .claim { background:var(--card); border-left:4px solid var(--accent); padding:.85rem 1rem;
+      margin:1rem 0; border-radius:0 10px 10px 0; }
+    .callouts { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:.8rem; }
+    .callout { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:.85rem 1rem; }
+    .callout strong { display:block; margin-bottom:.25rem; }
+    .callout span { color:var(--muted); font-size:.95rem; }
+    .plot { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:.4rem; margin:1rem 0; }
+    .table-wrap { overflow-x:auto; background:var(--card); border:1px solid var(--line); border-radius:10px; }
+    table.raw { border-collapse:collapse; width:100%; font-family:"IBM Plex Sans",sans-serif; font-size:.8rem; }
+    th,td { border-bottom:1px solid var(--line); padding:.4rem .5rem; white-space:nowrap; }
+    th { background:var(--soft); text-align:left; }
+    td.num { text-align:right; font-variant-numeric:tabular-nums; }
+    .note { color:var(--muted); font-size:.92rem; }
+    .excerpt { background:var(--card); border:1px solid var(--line); border-radius:10px;
+      padding:.8rem 1rem; margin:.7rem 0; }
+    .excerpt span { display:block; color:var(--muted); font-size:.85rem;
+      font-family:"IBM Plex Sans",sans-serif; }
+    pre.prompt {
+      font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.78rem; line-height:1.45;
+      background:#1a2332; color:#e8eef6; padding:1rem 1.1rem; border-radius:10px;
+      overflow-x:auto; white-space:pre-wrap; word-break:break-word; margin:.5rem 0 1.2rem;
+    }
+    footer { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--line);
+      color:var(--muted); font-size:.9rem; }
+    a { color:var(--accent); }
+    code { font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.88em;
+      background:var(--soft); padding:.05em .3em; border-radius:4px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Narrative m-bits · human-recall brevity</p>
+  <h1>What happens if we rewrite a recall more briefly without changing the events?</h1>
+  <p class="lede">
+    Human recalls lose to GPT summaries on m-bit <em>rate</em>. This experiment
+    compresses the recall itself: same event set, shorter wording, then rescores.
+  </p>
+
+  <nav class="toc" aria-label="On this page">
+    <strong>On this page:</strong>
+    <a href="#predict">Predictions</a>
+    <a href="#design">Design</a>
+    <a href="#findings">Findings</a>
+    <a href="#plots">Plots</a>
+    <a href="#tables">Tables</a>
+    <a href="#example">Example</a>
+    <a href="#limits">Limits</a>
+  </nav>
+
+  <h2 id="predict">Predictions (written before looking at numbers)</h2>
+  <div class="claim">
+    <p>Rate is m-bits ÷ context characters. Three nested bets:</p>
+    <ol>
+      <li><strong>If the gate holds and only wording shrinks:</strong> length
+          down, total m-bits roughly stable, <em>rate up</em>. That is the
+          identity, not a memory claim.</li>
+      <li><strong>If the model still drops events:</strong> total m-bits fall
+          with length (anatomy <code>simple_brief</code> on paste: rate 0.10→0.22
+          but m-bits 145→83). The segment-set gate is there to catch this;
+          primary tables use <code>verify_ok</code> only.</li>
+      <li><strong>A clean rate gain need not close the GPT-summary gap.</strong>
+          Costa’s recall-scale comparison already shows extractive summary &gt;
+          matched recall at the same length. A brief human recall tests
+          <em>density of human-selected events</em>; leftover gap vs GPT
+          summaries is still <em>which events</em>.</li>
+    </ol>
+  </div>
+
+  <h2 id="design">Design</h2>
+  <div class="explain">
+    <p>
+      Same seed-42 sample as the
+      <a href="sampled_summary_target_efficiency_report.html">efficiency study</a>:
+      4 length-quartile human recalls × 4 rephrased GPT summary targets per story.
+      GPT-4o rewrites each recall with the prompt below. We map the rewrite back
+      onto narrative segments and keep it only when it stays on the original
+      recall’s event set S<sub>r</sub> (Jaccard ≥ 0.8, coverage ≥
+      0.85, extra-segment fraction ≤ 0.15).
+    </p>
+    <p>
+      Scorer: Llama-3.3 <code>---</code> <code>get_mbits</code>. Primary target =
+      held-out rephrased summaries. Secondary = rephrased full narrative.
+      Original-recall summary-target cells reuse the efficiency-sample scores
+      when the pair matches.
+    </p>
+  </div>
+  <pre class="prompt">Rewrite the recall below more briefly.
+
+Rules:
+- Do not add any facts, events, people, or details that are not in the original.
+- Do not remove any facts, events, people, or details that are in the original.
+- You may drop only filler, repetition, hedges, and wording that does not change meaning.
+- Keep the same grammatical person and voice as the original (first person stays first person).
+
+Return JSON only:
+```json
+{
+  &quot;text&quot;: &quot;brief rewrite&quot;
+}
+```
+
+Recall:</pre>
+  <div class="warn">
+    Gate passed for <strong>8 / 48</strong> brief rewrites
+    (48 sampled recalls). Failed rewrites are scored but dropped from
+    the primary means.
+  </div>
+
+  <h2 id="findings">What we found</h2>
+  <div class="ok">
+    <strong>Matched pairs only</strong> (the 8 recalls whose rewrite passed the event-set gate).
+    Original mean rate 0.1458 vs brief 0.2003
+    (Δ +0.0545).
+    Mean m-bits 55.7 → 54.7
+    (Δ -1.0).
+    Mean length 460 → 302
+    (Δ -158).
+    Rate rose for 8 / 8 paired recalls.
+    Total m-bits stayed within 15% for 6 / 8.
+    The gate is strict: most rewrites look like they dropped events to the mapper
+    (prediction 2), so the primary claim is only about the 8 that kept S<sub>r</sub>.
+  </div>
+
+  <div class="callouts">
+    <div class="callout">
+      <strong>Δ rate</strong>
+      <span>+0.0545 (brief − original)</span>
+    </div>
+    <div class="callout">
+      <strong>Δ m-bits</strong>
+      <span>-1.0</span>
+    </div>
+    <div class="callout">
+      <strong>Δ length</strong>
+      <span>-158 characters</span>
+    </div>
+    <div class="callout">
+      <strong>Gate</strong>
+      <span>8 / 48 rewrites kept</span>
+    </div>
+  </div>
+
+  <h2 id="plots">Plots</h2>
+  <div class="plot"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="448673a4-e005-4911-ab8b-fa159707833d" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("448673a4-e005-4911-ab8b-fa159707833d")) {                    Plotly.newPlot(                        "448673a4-e005-4911-ab8b-fa159707833d",                        [{"hovertemplate":"%{x}\u003cbr\u003eoriginal rate=%{y:.4f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#1e7a46"},"name":"original","x":["boyscout","schissel_v1-pool","schissel_v2-lake","triplett_v1-rookie","triplett_v2-catlady","hester_v1-park","hester_v2-church","panic","doSomething","bear","stein","costa"],"y":{"dtype":"f8","bdata":"lL985juyxj+WuDiJbhfIP+pHFO+HsMU\u002fvhTHMxf+uT8AAAAAAAD4fwAAAAAAAPh\u002fAAAAAAAA+H8AAAAAAAD4f0AOo4Zzw7U\u002fwKCoqNNetj8AAAAAAAD4fwAAAAAAAPh\u002f"},"type":"bar"},{"hovertemplate":"%{x}\u003cbr\u003ebrief rate=%{y:.4f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#1f4e79"},"name":"brief","x":["boyscout","schissel_v1-pool","schissel_v2-lake","triplett_v1-rookie","triplett_v2-catlady","hester_v1-park","hester_v2-church","panic","doSomething","bear","stein","costa"],"y":{"dtype":"f8","bdata":"8QiTxzmszz\u002f8J+SNDI\u002fQPxHFalOu9sk\u002fuAqtwsKjxz8AAAAAAAD4fwAAAAAAAPh\u002fAAAAAAAA+H8AAAAAAAD4f1Rex\u002fDUbLw\u002f99CVIThwwT8AAAAAAAD4fwAAAAAAAPh\u002f"},"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"margin":{"l":40,"r":20,"t":50,"b":80},"legend":{"orientation":"h","y":1.12},"barmode":"group","title":{"text":"Summary-target mean rate (verify_ok only)"},"yaxis":{"title":{"text":"m-bits \u002f character"}},"height":360},                        {"responsive": true}                    )                };            </script>        </div></div>
+  <p class="note">Higher bar = more m-bits per character when predicting held-out rephrased summaries.</p>
+  <div class="plot"><div>                            <div id="395a5a97-2698-42e1-91da-1df8e84cf36f" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("395a5a97-2698-42e1-91da-1df8e84cf36f")) {                    Plotly.newPlot(                        "395a5a97-2698-42e1-91da-1df8e84cf36f",                        [{"hovertemplate":"%{x}\u003cbr\u003eoriginal m-bits=%{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#1e7a46"},"name":"original","x":["boyscout","schissel_v1-pool","schissel_v2-lake","triplett_v1-rookie","triplett_v2-catlady","hester_v1-park","hester_v2-church","panic","doSomething","bear","stein","costa"],"y":{"dtype":"f8","bdata":"q2iruwcWQkAVlFospjhFQP7mmL6Px0pALJZ4a\u002fExVUAAAAAAAAD4fwAAAAAAAPh\u002fAAAAAAAA+H8AAAAAAAD4f4wHEYW5Xj9AloTN4zJoWUAAAAAAAAD4fwAAAAAAAPh\u002f"},"type":"bar"},{"hovertemplate":"%{x}\u003cbr\u003ebrief m-bits=%{y:.1f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#1f4e79"},"name":"brief","x":["boyscout","schissel_v1-pool","schissel_v2-lake","triplett_v1-rookie","triplett_v2-catlady","hester_v1-park","hester_v2-church","panic","doSomething","bear","stein","costa"],"y":{"dtype":"f8","bdata":"SmJToBhFRkBetQ\u002fOsM5EQMCsswc03ElA30s2y9LaVkAAAAAAAAD4fwAAAAAAAPh\u002fAAAAAAAA+H8AAAAAAAD4fzzU0z+iMz5ArpbuaMRAVUAAAAAAAAD4fwAAAAAAAPh\u002f"},"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"margin":{"l":40,"r":20,"t":50,"b":80},"legend":{"orientation":"h","y":1.12},"barmode":"group","title":{"text":"Summary-target mean total m-bits (verify_ok only)"},"yaxis":{"title":{"text":"Mean m-bits"}},"height":360},                        {"responsive": true}                    )                };            </script>        </div></div>
+  <p class="note">If meaning is preserved, these bars should stay close while the rate bars move.</p>
+  <div class="plot"><div>                            <div id="60b0e8ea-893e-4a26-80b2-7900ee39b739" class="plotly-graph-div" style="height:380px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("60b0e8ea-893e-4a26-80b2-7900ee39b739")) {                    Plotly.newPlot(                        "60b0e8ea-893e-4a26-80b2-7900ee39b739",                        [{"hovertemplate":"%{text}\u003cbr\u003eorig=%{x:.4f}\u003cbr\u003ebrief=%{y:.4f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#1f4e79","size":9},"mode":"markers","text":["bear \u002f 665c7ba6b596a3558adbf2ec","boyscout \u002f 5d11cf66e555d5001ac10ceb","doSomething \u002f 37","schissel_v1-pool \u002f 5e25ca0e637b4103e19e7168","schissel_v1-pool \u002f 5f54b7bc649418811db24711","schissel_v2-lake \u002f 5b95f22749835d0001dc0608","schissel_v2-lake \u002f 5d39c859babfbf00185c09ac","triplett_v1-rookie \u002f 5df252f758a5c71603afc39a"],"x":{"dtype":"f8","bdata":"wKCoqNNetj+Uv3zmO7LGP0AOo4Zzw7U\u002f5AJMiLiiyT9IbiWKJIzGPx+tZAJw8ME\u002ftuLD259wyT++FMczF\u002f65Pw=="},"y":{"dtype":"f8","bdata":"99CVIThwwT\u002fxCJPHOazPP1Rex\u002fDUbLw\u002f9m5lXbdH0j8EwsV8w6zNP67xfdogDcg\u002fdJhXzDvgyz+4Cq3CwqPHPw=="},"type":"scatter"},{"line":{"color":"#999","dash":"dash"},"mode":"lines","showlegend":false,"x":[0.08501359974894118,0.28562721367573773],"y":[0.08501359974894118,0.28562721367573773],"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"margin":{"l":50,"r":20,"t":50,"b":50},"title":{"text":"Paired recall means: original rate vs brief rate"},"xaxis":{"title":{"text":"Original recall rate"}},"yaxis":{"title":{"text":"Brief rewrite rate"}},"height":380},                        {"responsive": true}                    )                };            </script>        </div></div>
+  <p class="note">Points above the diagonal: brief rewrite has higher summary-target rate than the original recall.</p>
+
+  <h2 id="tables">Tables</h2>
+  <h3>Pooled means (summary targets, matched gated pairs)</h3>
+  <div class="table-wrap">
+    <table class="raw">
+      <thead><tr><th>variant</th><th>mean rate</th><th>mean m-bits</th><th>mean len</th><th>n</th></tr></thead>
+      <tbody><tr><td>original</td><td class='num'>0.1458</td><td class='num'>55.7</td><td class='num'>460</td><td class='num'>32</td></tr><tr><td>brief</td><td class='num'>0.2003</td><td class='num'>54.7</td><td class='num'>302</td><td class='num'>32</td></tr></tbody>
+    </table>
+  </div>
+  <h3>Ungated sensitivity (all rewrites, including event-set failures)</h3>
+  <p class="note">If GPT-4o silently drops facts, this table should look like anatomy <code>simple_brief</code>: length and m-bits both fall, rate still rises.</p>
+  <div class="table-wrap">
+    <table class="raw">
+      <thead><tr><th>variant</th><th>mean rate</th><th>mean m-bits</th><th>mean len</th><th>n</th></tr></thead>
+      <tbody><tr><td>original</td><td class='num'>0.1119</td><td class='num'>62.1</td><td class='num'>716</td><td class='num'>192</td></tr><tr><td>brief</td><td class='num'>0.1589</td><td class='num'>55.6</td><td class='num'>396</td><td class='num'>192</td></tr></tbody>
+    </table>
+  </div>
+  <h3>Pooled means (narrative target, matched gated pairs)</h3>
+  <div class="table-wrap">
+    <table class="raw">
+      <thead><tr><th>variant</th><th>mean rate</th><th>mean m-bits</th><th>mean len</th><th>n</th></tr></thead>
+      <tbody><tr><td>original</td><td class='num'>0.2187</td><td class='num'>85.4</td><td class='num'>460</td><td class='num'>8</td></tr><tr><td>brief</td><td class='num'>0.2794</td><td class='num'>78.1</td><td class='num'>302</td><td class='num'>8</td></tr></tbody>
+    </table>
+  </div>
+  <h3>Per-story mean summary-target rate</h3>
+  <div class="table-wrap">
+    <table class="raw">
+      <thead><tr><th>story</th><th>original</th><th>brief</th></tr></thead>
+      <tbody><tr><td>boyscout</td><td class='num'>0.1773</td><td class='num'>0.2474</td></tr><tr><td>schissel_v1-pool</td><td class='num'>0.1882</td><td class='num'>0.2587</td></tr><tr><td>schissel_v2-lake</td><td class='num'>0.1694</td><td class='num'>0.2028</td></tr><tr><td>triplett_v1-rookie</td><td class='num'>0.1015</td><td class='num'>0.1847</td></tr><tr><td>triplett_v2-catlady</td><td class='num'>—</td><td class='num'>—</td></tr><tr><td>hester_v1-park</td><td class='num'>—</td><td class='num'>—</td></tr><tr><td>hester_v2-church</td><td class='num'>—</td><td class='num'>—</td></tr><tr><td>panic</td><td class='num'>—</td><td class='num'>—</td></tr><tr><td>doSomething</td><td class='num'>0.0850</td><td class='num'>0.1110</td></tr><tr><td>bear</td><td class='num'>0.0874</td><td class='num'>0.1362</td></tr><tr><td>stein</td><td class='num'>—</td><td class='num'>—</td></tr><tr><td>costa</td><td class='num'>—</td><td class='num'>—</td></tr></tbody>
+    </table>
+  </div>
+
+  <h2 id="example">Largest rate gain (verified)</h2>
+  
+    <div class="excerpt">
+      <strong>schissel_v1-pool · 5e25ca0e637b4103e19e7168</strong>
+      <span>Δ rate +0.0853 · length 189 → 125</span>
+      <p><em>Original</em></p>
+      <blockquote>The person was at their cousins wedding and got pushed into the pool. The friend spotted a bee by their mouth so tried to push the person away from it but pushed them into the pool instead.</blockquote>
+      <p><em>Brief rewrite</em></p>
+      <blockquote>At my cousin&#x27;s wedding, a friend saw a bee near my mouth and tried to push me away, but accidentally pushed me into the pool.</blockquote>
+    </div>
+
+
+  <h2 id="limits">Limits</h2>
+  <div class="explain">
+    <ul>
+      <li>The gate uses an LLM clause→segment map, not human annotation of the rewrite.</li>
+      <li>Same-event is not the same as same total m-bits: register can still move rate on frozen S (see
+          <a href="fixed_s_reformulation_controls_report.html">fixed-S controls</a>).</li>
+      <li>Sampled design (4 recalls × 4 summary targets), not every recall.</li>
+      <li>Anatomy <code>simple_brief</code> compressed <em>extractive paste</em>, not human recall, and did not forbid dropping facts.</li>
+    </ul>
+    <p>
+      Related:
+      <a href="held_out_context_report.html">Costa held-out context comparison</a> ·
+      <a href="fixed_s_summaryese_anatomy_report.html">summaryese anatomy</a> ·
+      <a href="sampled_summary_target_efficiency_report.html">summary-target efficiency</a>.
+    </p>
+  </div>
+
+  <footer>
+    Rows: 480 · Stories: boyscout, schissel_v1-pool, schissel_v2-lake, triplett_v1-rookie, triplett_v2-catlady, hester_v1-park, hester_v2-church, panic, doSomething, bear, stein, costa ·
+    Memo: papers/mbits_rephrased_narrative/drafts/recall_brevity_rewrite_memo.md
+  </footer>
+</div>
+</body>
+</html>

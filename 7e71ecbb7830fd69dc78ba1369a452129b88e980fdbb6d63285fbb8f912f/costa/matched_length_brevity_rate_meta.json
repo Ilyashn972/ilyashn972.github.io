@@ -1,0 +1,84 @@
+{
+  "story": "costa",
+  "model_id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "tags": {
+    "1000": {
+      "summary_id": "summary_gpt4o_23_1",
+      "summary_text": "My daughter Marie died 28 years ago. Marie died at Methodist Hospital. Marie had an operation for appendicitis. Victoria visited Marie on Sunday morning. Marie was still under ether post-operation. The nurse tried to get Marie out of bed. I blame them for Marie's blood clot. I was called to pick up Marie after 10 days. I made preparations for Marie's return. Marie was saying goodbye to friends at the hospital. The hospital informed me of extra charges for Marie's board. I went to the hospital with Marie\u2019s clothes. The nurse asked me to sit and wait. I prayed for another patient at the hospital. A nurse informed me Marie was unwell. I accused the staff of harming Marie. Marie passed away as I turned my back. My husband was waiting for Marie's return. The hospital repeatedly tried to contact us. My daughter Rita suffered from shock. Marie\u2019s death was attributed to a blood clot. My family had heart attacks from shock. The news of Marie\u2019s death devastated everyone.",
+      "recall_id": "3",
+      "recall_text": "My daughter died twenty-eight years ago. It was the thirteenth of the month. She was operated on for appendicitis. The next morning, her older sister went to see her in the hospital. She was still under ether. They used a lot of ether for the operation. There was a chair in the room. They just started getting people out of bed. She asked the nurses. It was the doctor's order, they replied. They got her out of bed. She suffered a blood clot. She was put back to bed again. They called us from the hospital. They called on a phone in a nearby store. We were informed about her discharge. Rita was cooking. She will finish the cooking. Her dad is preparing upstairs. He said to prepare coffee for her. He said to get a cake. I went to the hospital with her clothes. She saw me coming into the hospital through her window. She was walking. She fainted again. The nurses were running. I asked if they were running for my daughter. I saw her on the bed. She was in her dress. She had her slippers on.",
+      "brief_text": "My daughter died twenty-eight years ago on the thirteenth. She had an appendicitis operation and was under ether. Her older sister visited her in the hospital the next morning. They got her out of bed as per the doctor's order, but she suffered a blood clot and was put back to bed. The hospital called us from a nearby store to inform us about her discharge. Rita was cooking, and her dad was preparing upstairs. He asked for coffee and a cake. I went to the hospital with her clothes. She saw me through the window, was walking, then fainted again. The nurses ran, and I saw her on the bed in her dress and slippers.",
+      "short_summary_id": "summary_gpt4o_11_1",
+      "short_summary_text": "My daughter Marie died 28 years ago this month. She had an operation for appendicitis at Methodist Hospital. My oldest daughter, Victoria, visited her after the surgery. They tried to get Marie out of bed too soon after surgery. I blame early mobilization for causing a blood clot. I was called to pick up Marie, believing she was discharged. At the hospital, I found out Marie was in critical condition. Marie died after suffering from a massive blood clot. My family was devastated at the news of Marie's death. My husband and son both had heart attacks from the shock. The entire neighborhood was shocked by Marie's sudden death.",
+      "short_summary_len": 632,
+      "brief": {
+        "recall_id": "3",
+        "verify_ok": false,
+        "jac": 0.5813953488372093,
+        "coverage": 0.7575757575757576,
+        "extra_frac": 0.30303030303030304,
+        "notes": "try=3;|S|=33;|Sm|=35;cov=0.758",
+        "orig_len": 998,
+        "brief_len": 618
+      },
+      "n_targets": 105,
+      "totals": {
+        "summary": {
+          "narrative": 212.31342834657463,
+          "rephrased_narrative": 239.30517092339414
+        },
+        "short_summary": {
+          "narrative": 86.73465213886404,
+          "rephrased_narrative": 114.85788092995273
+        },
+        "recall": {
+          "narrative": 145.6398651832709,
+          "rephrased_narrative": 196.69771239725497
+        },
+        "brief": {
+          "narrative": 101.92640721460486,
+          "rephrased_narrative": 123.7128864600214
+        }
+      }
+    },
+    "1175": {
+      "summary_id": "summary_gpt4o_32_1",
+      "summary_text": "My daughter died twenty-eight years ago. She died at Methodist Hospital. She had an operation for appendicitis. Victoria went to the hospital to see her. She was still under ether. The nurse tried to get her out of bed. I blame them for the blood clot. I waited for a call to pick her up. I prepared clothes and coffee for her return. The hospital called to say she was discharged. I went to the hospital to get her. The nurse asked me to sit down. I prayed for another woman there. The nurse said Marie had a fainting spell. I was taken to my daughter\u2019s room. Marie was sweating heavily. I accused them of killing my daughter. The doctor said they didn\u2019t know what happened. I became hysterical. Marie was only eighteen years old. My husband was waiting for her at home. The hospital called again for me. Rita thought I got upset over Marie. I refused medical help at the hospital. I told Rita that Marie died. Rita fainted upon hearing the news. They said a blood clot caused her death. I threatened them not to touch Marie. I screamed all the way home. Everyone heard my screams. My husband had a heart attack. My son Michael collapsed too. The neighborhood was shocked.",
+      "recall_id": "91",
+      "recall_text": "My daughter died twenty eight years ago at a Methodist church. She was operated on for appendicitis. Victoria went to visit her to see how she was. They were getting people out of bed. Victoria asked the nurse about the chairs. Victoria said she was too ill to get out of bed. She was blamed for the blood cot for getting her out of bed. She came home after ten days and I was waiting for a call from the hospital. She was operated on in April on the twentieth. It was chilly and I had a coat on my arm and a bag. She saw from the window on Wolf Street. She said my mother was coming and was just saying bye to everyone. When I got to the hospital I was told to sit down and I prayed for another patient who had ten children and lived near my mother. Dr. Schwartz did the operation but his assistant was Dr. Monique who was a lady doctor. I had all her clothes ready for her to go home. My husband was waiting for me. He came home and washed and shaved and then waited for me. They called the store to find out when mother was coming home. A doctor wanted to give me a shot but I said no I'll kick you. You killed my daughter and now want to kill me, don't dare come near me.",
+      "brief_text": "My daughter died 28 years ago at a Methodist church after an appendicitis operation. Victoria visited her and questioned the nurse about getting patients out of bed, as my daughter was too ill. She was blamed for a blood clot from being out of bed. After ten days, I awaited a call from the hospital. The operation was on April 20th. It was chilly, and I had a coat and bag. She saw me from a window on Wolf Street, saying goodbye to everyone. At the hospital, I prayed for another patient with ten children. Dr. Schwartz operated, assisted by Dr. Monique. I had her clothes ready to go home. My husband waited for me, having washed and shaved. They called the store about my return. A doctor wanted to give me a shot, but I refused, accusing them of killing my daughter.",
+      "short_summary_id": "summary_gpt4o_16_1",
+      "short_summary_text": "My daughter died from a blood clot. She died 28 years ago on the thirtieth of this month. She had an operation for appendicitis at Methodist Hospital. Victoria saw her under ether at the hospital. The nurse insisted on doctor\u2019s orders to move her. I blame the hospital for the blood clot. I prepared for her return home after 10 days. We even planned a celebration with coffee and cake. Marie was discharged and I went to pick her up. I was called to sit by the nurse at the hospital. I was told Marie was in critical condition. Marie died as I was taken into her room. I was hysterical and screamed at the hospital staff. Rita collapsed when I told her Marie died. The family was shocked and my husband had a heart attack. Our community was deeply impacted by Marie\u2019s death.",
+      "short_summary_len": 775,
+      "brief": {
+        "recall_id": "91",
+        "verify_ok": false,
+        "jac": 0.5686274509803921,
+        "coverage": 0.6744186046511628,
+        "extra_frac": 0.18604651162790697,
+        "notes": "try=3;|S|=43;|Sm|=37;cov=0.674",
+        "orig_len": 1175,
+        "brief_len": 771
+      },
+      "n_targets": 105,
+      "totals": {
+        "summary": {
+          "narrative": 234.38177769932025,
+          "rephrased_narrative": 256.52904441869134
+        },
+        "short_summary": {
+          "narrative": 125.80502082949877,
+          "rephrased_narrative": 136.2150001208133
+        },
+        "recall": {
+          "narrative": 275.50411415099944,
+          "rephrased_narrative": 298.25915062740114
+        },
+        "brief": {
+          "narrative": 130.7509709440289,
+          "rephrased_narrative": 197.15134380188547
+        }
+      }
+    }
+  }
+}

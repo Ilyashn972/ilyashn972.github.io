@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which context predicts other Costa summaries?</title>
+  <style>
+    :root {
+      --ink:#1a2332; --muted:#5a6577; --line:#d8dee8; --bg:#f4f1ea;
+      --card:#fff; --accent:#1f4e79; --soft:#eef2f7;
+    }
+    body {
+      margin:0; font-family:"Source Serif 4",Palatino,Georgia,serif; color:var(--ink);
+      background: radial-gradient(1000px 500px at 10% -10%, #dde7f2, transparent 55%),
+                  radial-gradient(800px 400px at 100% 0%, #efe6db, transparent 50%), var(--bg);
+      line-height:1.6;
+    }
+    .wrap { max-width:1100px; margin:0 auto; padding:2.2rem 1.2rem 3.5rem; }
+    h1 { font-size:clamp(1.7rem,3vw,2.2rem); max-width:28ch; margin:0 0 .6rem; }
+    h2 { border-bottom:1px solid var(--line); padding-bottom:.3rem; margin-top:2.2rem; }
+    h3 { font-size:1.05rem; margin:1.4rem 0 .4rem; }
+    .lede { color:var(--muted); font-size:1.08rem; max-width:48rem; }
+    .eyebrow { font-family:"IBM Plex Sans",sans-serif; text-transform:uppercase;
+      letter-spacing:.08em; font-size:.72rem; color:var(--muted); }
+    .toc { font-family:"IBM Plex Sans",sans-serif; font-size:.9rem; background:var(--soft);
+      border:1px solid var(--line); border-radius:10px; padding:.8rem 1rem; max-width:42rem; }
+    .toc a { margin-right:.8rem; }
+    .explain { background:var(--card); border:1px solid var(--line); border-radius:12px;
+      padding:1rem 1.2rem; margin:1rem 0; max-width:52rem; }
+    .explain p { margin:.55rem 0; }
+    .explain ul { margin:.4rem 0 .6rem 1.2rem; padding:0; }
+    .ok { background:#f3faf4; border-left:4px solid #2d6a4f; padding:.85rem 1rem;
+      margin:1rem 0; border-radius:0 10px 10px 0; }
+    .warn { background:#fff8f0; border-left:4px solid #d35400; padding:.85rem 1rem;
+      margin:1rem 0; border-radius:0 10px 10px 0; }
+    .claim { background:var(--card); border-left:4px solid var(--accent); padding:.85rem 1rem;
+      margin:1rem 0; border-radius:0 10px 10px 0; }
+    .callouts { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:.8rem; }
+    .callout { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:.85rem 1rem; }
+    .callout strong { display:block; margin-bottom:.25rem; }
+    .callout span { color:var(--muted); font-size:.95rem; }
+    .plot { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:.4rem; margin:1rem 0; }
+    .table-wrap { overflow-x:auto; background:var(--card); border:1px solid var(--line); border-radius:10px; }
+    table.raw { border-collapse:collapse; width:100%; font-family:"IBM Plex Sans",sans-serif; font-size:.8rem; }
+    th,td { border-bottom:1px solid var(--line); padding:.4rem .5rem; white-space:nowrap; }
+    th { background:var(--soft); text-align:left; }
+    td.num { text-align:right; font-variant-numeric:tabular-nums; }
+    .note { color:var(--muted); font-size:.92rem; }
+    .excerpt { background:var(--card); border:1px solid var(--line); border-radius:10px;
+      padding:.8rem 1rem; margin:.7rem 0; }
+    .excerpt span { display:block; color:var(--muted); font-size:.85rem;
+      font-family:"IBM Plex Sans",sans-serif; }
+    .excerpt blockquote { margin:.4rem 0 0; font-size:.95rem; }
+    footer { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--line);
+      color:var(--muted); font-size:.9rem; }
+    a { color:var(--accent); }
+    code { font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.88em;
+      background:var(--soft); padding:.05em .3em; border-radius:4px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Narrative m-bits · recall-scale held-out context comparison</p>
+  <h1>Which context predicts other Costa summaries?</h1>
+  <p class="lede">
+    At lengths typical of a human Costa recall, we hold out one GPT-4o summary
+    and ask how well <em>that</em> text — versus a matched recall, an extractive
+    condensation, or a random excerpt — predicts the remaining summaries.
+  </p>
+
+  <nav class="toc" aria-label="On this page">
+    <strong>On this page:</strong>
+    <a href="#question">Question</a>
+    <a href="#design">Design</a>
+    <a href="#not">Not LOO</a>
+    <a href="#results">Results</a>
+    <a href="#read">How to read</a>
+    <a href="#excerpts">Contexts</a>
+    <a href="#next">Next question</a>
+    <a href="#legacy">Legacy files</a>
+  </nav>
+
+  <h2 id="question">The question</h2>
+  <div class="explain">
+    <p>
+      Costa pairwise rates already show GPT-4o summaries beating human recalls
+      when predicting <em>other</em> GPT-4o summaries. That comparison mixes
+      many lengths. Here we freeze length near a typical recall
+      (Costa mean 1071 characters, median
+      996; n=93) and ask:
+      <strong>does the summary still win when every context is recall-sized?</strong>
+    </p>
+    <p>
+      The four preceding contexts are length-matched. The targets are the other
+      GPT-4o summaries. We emphasize <strong>rephrased</strong> targets so shared
+      GPT-4o wording is not the whole story.
+    </p>
+  </div>
+
+  <h2 id="design">What we actually do</h2>
+  <div class="explain">
+    <ol>
+      <li>Pick the GPT-4o summary whose character length is closest to a
+          target of <strong>1000</strong> or <strong>1175</strong>.</li>
+      <li>Hold that summary out as a <em>context</em> (not a training fold).</li>
+      <li>Score total m-bits of every remaining summary against four
+          preceding texts of similar length:
+          <ul>
+            <li><strong>Held-out summary</strong> — the GPT-4o summary itself.</li>
+            <li><strong>Extractive summary</strong> — an LLM-prompted condensation
+                that keeps selected narrative segments.</li>
+            <li><strong>Matched recall</strong> — the human recall closest in
+                character count.</li>
+            <li><strong>Random excerpt</strong> — randomly chosen narrative
+                segments concatenated to a similar length.</li>
+          </ul>
+        </li>
+      <li>Repeat with original vs rephrased wording of contexts and targets.</li>
+    </ol>
+    <p>
+      Realized context lengths at tag 1000: held-out summary
+      975, recall
+      998, extractive
+      1188, random excerpt
+      1057.
+      At tag 1175: 1173 /
+      1175 /
+      1188 /
+      1057.
+    </p>
+  </div>
+
+  <h2 id="not">Why this is not “leave-one-out”</h2>
+  <div class="warn">
+    <p>
+      Older pages called this a leave-one-out analysis. That name is misleading
+      in two ways, so this hub no longer uses it.
+    </p>
+    <ul>
+      <li>It is <strong>not</strong> ML-style LOO (train on n−1, test on one).
+          We hold out one summary as a <em>preceding context</em> and score how
+          well it predicts the others.</li>
+      <li>It is <strong>not</strong> “drop Costa from the 12-story average”
+          of narrative-target correlations. That sensitivity check answers a
+          different question on a different target.</li>
+    </ul>
+  </div>
+
+  <h2 id="results">What we found</h2>
+  <div class="ok">
+    <strong>Same ordering at both recall-scale lengths, on rephrased targets:</strong>
+    held-out summary &gt; extractive summary &gt; matched recall &gt; random excerpt.
+    At ~1000 characters the means are
+    203 &gt; 170 &gt; 109 &gt; 48 m-bits.
+    At ~1175 they are
+    237 &gt; 170 &gt; 132 &gt; 48.
+    Length alone, and arbitrary sampling of the narrative, do not explain
+    the summary-context advantage.
+  </div>
+
+  <div class="callouts">
+    <div class="callout">
+      <strong>Held-out summary</strong>
+      <span>1000: 202.6 · 1175: 237.2 m-bits</span>
+    </div>
+    <div class="callout">
+      <strong>Extractive summary</strong>
+      <span>both tags: 169.8 m-bits (84% / 72% of held-out)</span>
+    </div>
+    <div class="callout">
+      <strong>Matched recall</strong>
+      <span>1000: 109.4 (54%) · 1175: 132.1 (56%)</span>
+    </div>
+    <div class="callout">
+      <strong>Random excerpt</strong>
+      <span>both tags: 47.9 m-bits</span>
+    </div>
+  </div>
+
+  <div class="plot"><div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="cd8bdd99-5e2a-4aa4-b3a3-1b3bfc811043" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("cd8bdd99-5e2a-4aa4-b3a3-1b3bfc811043")) {                    Plotly.newPlot(                        "cd8bdd99-5e2a-4aa4-b3a3-1b3bfc811043",                        [{"hovertemplate":"%{x}\u003cbr\u003e1000: %{y:.1f} m-bits\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":["#c0392b","#1f4e79","#1e7a46","#7f8c8d"]},"name":"~1000 characters","opacity":0.85,"x":["Held-out summary","Extractive summary","Matched recall","Random excerpt"],"y":[202.6,169.75,109.41,47.89],"type":"bar"},{"hovertemplate":"%{x}\u003cbr\u003e1175: %{y:.1f} m-bits\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":["#c0392b","#1f4e79","#1e7a46","#7f8c8d"]},"name":"~1175 characters","opacity":0.45,"x":["Held-out summary","Extractive summary","Matched recall","Random excerpt"],"y":[237.15,169.75,132.1,47.89],"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"margin":{"l":40,"r":20,"t":50,"b":40},"legend":{"orientation":"h","y":1.12},"barmode":"group","title":{"text":"Rephrased-target mean total m-bits (recall-scale contexts)"},"yaxis":{"title":{"text":"Mean total m-bits"}},"height":360},                        {"responsive": true}                    )                };            </script>        </div></div>
+  <p class="note">
+    Bars use rephrased-target series (the conservative comparison). Legacy
+    Llama-3.1 scores reused from existing Costa HTML; nothing was rescored for
+    this page.
+  </p>
+
+  
+  <h3>Character target 1000</h3>
+  <div class="table-wrap">
+    <table class="raw">
+      <thead>
+        <tr>
+          <th>Preceding context</th>
+          <th>Mean total m-bits</th>
+          <th>Mean rate</th>
+          <th>Frac. of held-out</th>
+          <th>n</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Held-out summary</td><td class='num'>202.6</td><td class='num'>0.1156</td><td class='num'>1.00</td><td class='num'>106</td></tr><tr><td>Extractive summary</td><td class='num'>169.8</td><td class='num'>0.0965</td><td class='num'>0.84</td><td class='num'>107</td></tr><tr><td>Matched recall</td><td class='num'>109.4</td><td class='num'>0.0607</td><td class='num'>0.54</td><td class='num'>107</td></tr><tr><td>Random excerpt</td><td class='num'>47.9</td><td class='num'>0.0256</td><td class='num'>0.24</td><td class='num'>107</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">
+    Interactive scatter (total m-bits vs target length):
+    <a href="../costa/mbits_costa_summary_leave_one_out_1000.html">
+      mbits_costa_summary_leave_one_out_1000.html</a>
+    · rate vs rephrased targets, including a brief rewrite of the matched recall:
+    <a href="costa_matched_length_brevity_rate_1000.html">
+      costa_matched_length_brevity_rate_1000.html</a>
+    · comparison CSV
+    <a href="../costa/summary_comparison_1000.csv">summary_comparison_1000.csv</a>.
+  </p>
+
+  
+  <h3>Character target 1175</h3>
+  <div class="table-wrap">
+    <table class="raw">
+      <thead>
+        <tr>
+          <th>Preceding context</th>
+          <th>Mean total m-bits</th>
+          <th>Mean rate</th>
+          <th>Frac. of held-out</th>
+          <th>n</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Held-out summary</td><td class='num'>237.2</td><td class='num'>0.1305</td><td class='num'>1.00</td><td class='num'>106</td></tr><tr><td>Extractive summary</td><td class='num'>169.8</td><td class='num'>0.0965</td><td class='num'>0.72</td><td class='num'>107</td></tr><tr><td>Matched recall</td><td class='num'>132.1</td><td class='num'>0.0724</td><td class='num'>0.56</td><td class='num'>107</td></tr><tr><td>Random excerpt</td><td class='num'>47.9</td><td class='num'>0.0256</td><td class='num'>0.20</td><td class='num'>107</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">
+    Interactive scatter (total m-bits vs target length):
+    <a href="../costa/mbits_costa_summary_leave_one_out_1175.html">
+      mbits_costa_summary_leave_one_out_1175.html</a>
+    · rate vs rephrased targets, including a brief rewrite of the matched recall:
+    <a href="costa_matched_length_brevity_rate_1175.html">
+      costa_matched_length_brevity_rate_1175.html</a>
+    · comparison CSV
+    <a href="../costa/summary_comparison_1175.csv">summary_comparison_1175.csv</a>.
+  </p>
+
+
+  <h2 id="read">How to read the interactive plots</h2>
+  <div class="explain">
+    <p>
+      Each linked plot is a scatter of <strong>total m-bits</strong> (y) against
+      <strong>summary length</strong> (x) for the remaining GPT-4o summaries.
+      Circles are original wording; crosses are GPT-4o rephrases. Horizontal
+      spread is the length of the <em>target</em> summaries, not of the four
+      contexts — those contexts are already length-matched.
+    </p>
+    <p>
+      Unlike the 12-story narrative figures, this comparison is about
+      <em>amount</em> of predictive information at a fixed context length, so
+      the vertical axis is total m-bits rather than rate. Rate is still in the
+      tables (m-bits ÷ context characters).
+    </p>
+  </div>
+
+  <h2 id="excerpts">The four contexts (tag 1000)</h2>
+  
+    <div class="excerpt">
+      <strong>Held-out summary</strong>
+      <span>975 characters · summary_gpt4o_23_1</span>
+      <blockquote>My daughter Marie died 28 years ago. Marie died at Methodist Hospital. Marie had an operation for appendicitis. Victoria visited Marie on Sunday morning. Marie was still under ether post-operation. The nurse tried to get Marie out of bed. I blame them for Marie&#x27;s blood clot. I was called to pick up Marie after 10 days. I made preparations for Marie&#x27;s return. Marie was saying goodbye to friends at the hospital. The h…</blockquote>
+    </div>
+
+    <div class="excerpt">
+      <strong>Matched recall</strong>
+      <span>998 characters · recall_3</span>
+      <blockquote>My daughter died twenty-eight years ago. It was the thirteenth of the month. She was operated on for appendicitis. The next morning, her older sister went to see her in the hospital. She was still under ether. They used a lot of ether for the operation. There was a chair in the room. They just started getting people out of bed. She asked the nurses. It was the doctor&#x27;s order, they replied. They got her out of bed. S…</blockquote>
+    </div>
+
+    <div class="excerpt">
+      <strong>Extractive summary</strong>
+      <span>1188 characters · extractive_doron_summary_10</span>
+      <blockquote>My daughter died. It’ll be twenty-eight years this month. She died at Methodist Hospital. She had an operation for appendicitis. It was late Saturday afternoon when they operated. Sunday morning, my oldest daughter, Victoria, went to the hospital to see how she was. She was still under ether. The nurse said, “Well, that’s the doctor’s orders.” So, they went to get her out of bed, and she passed out. I blame them for…</blockquote>
+    </div>
+
+    <div class="excerpt">
+      <strong>Random excerpt</strong>
+      <span>1057 characters · random_extractive_doron_summary_1</span>
+      <blockquote>It was late Saturday afternoon when they operated—very late. “She’s too sick,” someone said. But the nurse replied, “Well, that’s the doctor’s orders. She’s discharged.” Rita was—well, I was cooking, and I said, “Put a big pot of coffee on,” because she had been wishing for coffee. When I get up in the morning, the first cup is hers. “All right, Mother, go ahead,” she said. “I’ll finish up.” She also said, “My mothe…</blockquote>
+    </div>
+
+  <h2 id="next">Open next question: is recall just verbose?</h2>
+  <div class="claim">
+    Matched recall loses on <em>rate</em> as well as total m-bits
+    (0.061 vs 0.116 at tag 1000).
+    That could be extra words around the same events, or a different event set.
+    The direct test on <em>these</em> matched Costa recalls is a meaning-preserving
+    brevity rewrite, plotted as rate against every remaining rephrased summary:
+    <a href="costa_matched_length_brevity_rate_1000.html">length 1000</a>
+    ·
+    <a href="costa_matched_length_brevity_rate_1175.html">length 1175</a>.
+    The 12-story sample of other recalls is
+    <a href="recall_brevity_rewrite_report.html">recall_brevity_rewrite_report.html</a>.
+  </div>
+
+  <h2 id="legacy">Legacy files (not paper results)</h2>
+  <div class="warn">
+    Filename tags <strong>2–9</strong> are old <em>keypoint-count deciles</em>
+    (tag 5 ≈ the median-length summary), <strong>not</strong> character lengths.
+    Tag 5 is not “five characters.” Incomplete decile runs lack full extractive
+    scatters. Paper figures use <strong>1000</strong> and <strong>1175</strong> only.
+  </div>
+  <p class="note">
+    Decile plots: <a href="../costa/mbits_costa_summary_leave_one_out_2.html">2</a> · <a href="../costa/mbits_costa_summary_leave_one_out_3.html">3</a> · <a href="../costa/mbits_costa_summary_leave_one_out_4.html">4</a> · <a href="../costa/mbits_costa_summary_leave_one_out_5.html">5</a> · <a href="../costa/mbits_costa_summary_leave_one_out_6.html">6</a> · <a href="../costa/mbits_costa_summary_leave_one_out_7.html">7</a> · <a href="../costa/mbits_costa_summary_leave_one_out_8.html">8</a> · <a href="../costa/mbits_costa_summary_leave_one_out_9.html">9</a>.
+    Overview: <a href="../costa/mbits_costa_summary_leave_one_out_all.html">all</a>.
+    Old methodology writeup (still uses the retired name):
+    <a href="../costa/mbits_costa_summary_leave_one_out_5_explanation.html">
+      mbits_costa_summary_leave_one_out_5_explanation.html</a>.
+  </p>
+
+  <footer>
+    Generator: <code>experiments/mbits_summary_leave_one_out.py</code>.
+    This hub: <code>experiments/build_held_out_context_report.py</code>.
+    Means parsed in
+    <code>papers/mbits_rephrased_narrative/drafts/costa_loo_all_targets.json</code>.
+    Related: <a href="index.html">reports index</a> ·
+    <a href="sampled_summary_target_efficiency_report.html">summary-target efficiency</a> ·
+    <a href="recall_brevity_rewrite_report.html">recall brevity rewrite</a> ·
+    <a href="costa_matched_length_brevity_rate_1000.html">Costa brevity rate 1000</a> ·
+    <a href="costa_matched_length_brevity_rate_1175.html">1175</a>.
+  </footer>
+</div>
+</body>
+</html>

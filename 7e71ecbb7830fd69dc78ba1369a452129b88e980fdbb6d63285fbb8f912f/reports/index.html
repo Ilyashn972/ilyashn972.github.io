@@ -51,12 +51,24 @@
   <h2>Meaningful bits</h2>
   <ul class="report-list">
     <li>
-      <div class="report-title"><a href="leave_one_out_report.html">Comprehensive leave-one-out report (Costa MBits)</a></div>
-      <p class="report-desc">Canonical leave-one-out documentation for Costa MBits: research question, methodology, prompts/rephrasing context, full plot catalog (2,3,4,5,6,7,8,9,1000,1175,all), reproducibility commands, interpretation notes, and limitations.</p>
+      <div class="report-title"><a href="held_out_context_report.html">Which context predicts other Costa summaries?</a></div>
+      <p class="report-desc">Recall-scale held-out context comparison for Costa: a GPT-4o summary near typical recall length is held out as context and scored against remaining summaries, versus a length-matched human recall, extractive summary, and random excerpt. Paper figures use character targets 1000 and 1175. Replaces the retired “leave-one-out” name.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="costa_matched_length_brevity_rate_1000.html">Costa matched-length recall brevity rate</a></div>
+      <p class="report-desc">For Costa lengths 1000 and 1175: m-bit rate of one held-out summary, one length-matched recall, and that recall rewritten more briefly, against each remaining rephrased GPT-4o summary. Pages: <a href="costa_matched_length_brevity_rate_1000.html">1000</a> · <a href="costa_matched_length_brevity_rate_1175.html">1175</a>.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="recall_brevity_rewrite_report.html">Recall brevity rewrite</a></div>
+      <p class="report-desc">Meaning-preserving brevity rewrite of human recalls (same events, shorter wording). Asks what happens to m-bit rate when an LLM compresses a recall without adding or removing facts. Paired original vs rewrite, gated by segment-set overlap.</p>
     </li>
     <li>
       <div class="report-title"><a href="mbits.html">Mbits report</a></div>
       <p class="report-desc">Results related to meaningful bits (difference in sum of log-probabilities with vs without recall as preceding context). Includes prompts, same-subject mbits plots, recall-vs-summaries plots, and links to various mbits visualizations and code.</p>
+    </li>
+    <li>
+      <div class="report-title"><a href="../costa/random_extractive_doron_summaries.html">Costa random extractive Doron summaries</a></div>
+      <p class="report-desc">Full table of all random extractive Doron summaries currently stored for Costa, with requested and realized word counts. Useful as a direct source page for the random-extractive baselines referenced by the MBits analyses.</p>
     </li>
   </ul>
 
